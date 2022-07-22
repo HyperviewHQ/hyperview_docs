@@ -1,0 +1,7 @@
+sphinx==4.5.0
+sphinx-design
+restructuredtext-lint
+pylint
+furo
+sphinxcontrib-gtagjs
+myst-parser

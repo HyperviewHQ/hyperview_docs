@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf8" />
+	<title>{{title}}</title>
+	<!-- needed for adaptive design -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body {
+			padding: 0;
+			margin: 0;
+		}
+
+		#redoc .gdtRWl,
+		#redoc .jveiGz,
+		#redoc .CvVzT,
+		#redoc .iieAzF,
+		#redoc .buCtgC,
+		#redoc .ixzWHz,
+		#redoc .hYwnSl,
+		#redoc .iVoVLJ,
+		#redoc .gBpxOL,
+		#redoc .jIStei,
+		#redoc .lgtQfB,
+		#redoc .knTven,
+		#redoc .fjEWKb,
+		#redoc .fOPsDV,
+		#redoc .kTNhJK,
+		#redoc .knTven,
+		#redoc .kLMFNY.kLMFNY,
+		#redoc .kLMFNY.kLMFNY .dropdown-selector-value,
+		#redoc .jGVUna.jGVUna .dropdown-selector-value {
+			font-family: 'Roboto', Arial, Helvetica, sans-serif;
+		}
+
+		.navbar {
+			position: relative;
+			display: -ms-flexbox;
+			display: flex;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			-ms-flex-align: center;
+			align-items: center;
+			padding: .5rem 1rem 0.46875rem 1rem;
+			background-color: #201e30;
+			-ms-flex-flow: row nowrap;
+			flex-flow: row nowrap;
+			-ms-flex-pack: start;
+			justify-content: flex-start;
+			font-family: 'Roboto', Arial, Helvetica, sans-serif;
+			font-size: 1em;
+		}
+
+		.navbar-brand {
+			display: inline-block;
+			padding-top: 0.5625rem;
+			padding-bottom: 0.0625rem;
+			margin-right: 1rem;
+			font-size: 1.25rem;
+			line-height: inherit;
+			white-space: nowrap;
+		}
+
+		.navbar .navbar-brand img.logo {
+			margin-top: 0;
+			height: 27px !important;
+		}
+
+		.navbar-nav {
+			display: -ms-flexbox;
+			display: flex;
+			padding-left: 0;
+			margin-top: 0;
+			margin-bottom: 0;
+			list-style: none;
+			-ms-flex-direction: row;
+			flex-direction: row;
+		}
+
+		.nav-link {
+			display: block;
+			padding: 0.375rem .5rem .5rem .5rem;
+			color: rgba(255, 255, 255, .5);
+			text-decoration: none;
+			background-color: transparent;
+		}
+
+		.navbar-collapse {
+			display: -ms-flexbox !important;
+			display: flex !important;
+			-ms-flex-preferred-size: auto;
+			flex-basis: auto;
+			flex-grow: 1;
+			-ms-flex-align: center;
+			align-items: center;
+		}
+	</style>
+	{{{redocHead}}}
+	{{#unless disableGoogleFont}}
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:300,400,700" rel="stylesheet">
+	{{/unless}}
+</head>
+
+<body>
+	<nav class="navbar">
+		<a class="navbar-brand" href="https://www.hyperviewhq.com">
+			<img class="logo img-fluid" src="_static/logo.png" alt="Hyperview">
+		</a>
+		<div class="collapse navbar-collapse">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="/" role="button">
+						docs.hyperviewhq.com
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	{{{redocHTML}}}
+</body>
+
+</html>
