@@ -9,6 +9,10 @@ Hyperview 3.6 (July 15, 2022)
 *****************************
 This section covers significant changes and bug fixes in Hyperview 3.6.x since version 3.5.x.
 
+.. raw :: html
+
+	<div class="pb-3"><iframe src="https://player.vimeo.com/video/733686558?h=d127d279dc" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+
 .. note:: Please install the latest Data Collector for optimal device monitoring and discovery.
 
 ========================
