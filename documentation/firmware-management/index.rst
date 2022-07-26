@@ -5,15 +5,16 @@
 Firmware Management
 *******************
 
-Hyperview Firmware Management is a separately licensed set of features that lets you view and interact with firmware records. Firmware Management is powered by the Hyperview Catalog service. With a Firmware Management license you can, for example:
+Hyperview Firmware Management is a separately licensed set of features that lets you view and interact with firmware records. Firmware Management is powered by the Hyperview Catalog service.
+
+With a Firmware Management license you can, for example:
 
 * Look up assets that have a specific firmware version installed
 * Review firmware versions and associated assets
 * Download firmware
 * View firmware release notes
 * Get alerted to outdated firmware
-
-Additional features are planned in upcoming releases.
+* Update firmware for device models with managed firmware, individually or in bulk
 
 .. note:: Only licensed instances will have relevant features. To confirm if you have a Firmware Management license, check the License page (*Settings → License*, Administrator-only).
 
@@ -49,7 +50,7 @@ Note that firmware can only be managed for discoverable physical devices. These 
 * Environmental
 * Fire Control Panel
 * Generator
-* In Row Colling
+* In Row Cooling
 * KVM Switch
 * Monitor
 * Network Device
@@ -66,8 +67,6 @@ Note that firmware can only be managed for discoverable physical devices. These 
 * UPS
 * Utility Breaker
 
-.. note:: Please contact Hyperview Support to ensure firmware versions of your target devices are correctly mapped in Catalog.
-
 ===================================
 How are firmware versions detected?
 ===================================
@@ -78,7 +77,7 @@ Hyperview uses the Firmware Version property (asset → *Information → Propert
 
 In both contexts, an asset is considered to have "managed firmware" only if the asset's firmware group is mapped in Hyperview Product Catalog. (A "firmware group" consists of firmware versions for a specific product model.)
 
-Upon discovery the Firmware Version property becomes read-only to prevent human error (it automatically gets updated upon rediscovery if the installed version has changed). If you merge two assets with discovered and manually updated Firmware Version values, the discovered value is retained and rendered read-only. In other words, discovered firmware versions are always preferred.
+Upon discovery, the Firmware Version property becomes read-only to prevent human error (it automatically gets updated upon rediscovery if the installed version has changed). If you merge two assets with discovered and manually updated Firmware Version values, the discovered value is retained and rendered read-only. In other words, discovered firmware versions are always preferred.
 
 |fv-property|
 
@@ -87,32 +86,29 @@ Upon discovery the Firmware Version property becomes read-only to prevent human 
 ============================================
 Who can access Firmware Management features?
 ============================================
-As of Hyperview 3.4, any user can access Firmware Management features as long as:
-
-* You are using a Firmware Management-licensed instance (see :ref:`View license<View-license-doc>`.
-* You have access to at least one asset with managed firmware.
+As of Hyperview 3.4, any user can access Firmware Management features as long as you are using a Firmware Management-licensed instance (see :ref:`View license<View-license-doc>`.
 
 ====================================
 Navigating Firmware Management pages
 ====================================
 Hyperview features two main Firmware Management pages that can be considered "landing pages" for the feature set. These are:
 
-* The Firmware page (*Assets → Firmware*), which opens a grid of managed firmware that is grouped by manufacturer, asset type, and installed firmware version. It features a Details button at the row level to look up assets that have the same firmware version installed.
+* The Firmware page (*Assets → Firmware*), which opens a grid of managed and unmanaged firmware that is grouped by manufacturer, asset type, and installed firmware version. It features a Details button at the row level to look up assets that have the same firmware version installed.
 * The Information → Firmware page (asset → *Information → Firmware*), which opens a grid of installed and available firmware versions, as well as relevant action buttons.
 
 Why is my Firmware page empty?
 ------------------------------
-The Firmware grid (*Assets → Firmware*) only gets populated when there is at least one asset with a managed firmware version installed.
+The Firmware grid (*Assets → Firmware*) only gets populated when there is at least one asset with a firmware version.
 
 * Administrators can run discoveries to detect assets with firmware version metadata.
 * Power Users and above can specify a Firmware Version value for manually created assets.
 
-In both cases, the asset's firmware group must be mapped in Hyperview Product Catalog. Furthermore, you must :ref:`have access<Who-can-access-doc>` to the asset records to be able to see them.
+In both cases you must :ref:`have access<Who-can-access-doc>` to the asset records to be able to see them.
 
 =====================================================
 Reviewing firmware installations for a firmware group
 =====================================================
-* Go to *Assets → Firmware → Details → Installations* (the Installations tab opens by default).
+* Go to *Assets → Firmware → Managed or Unmanaged → Details → Installations* (the Installations tab opens by default).
 
 The grid will show assets that have a relevant firmware version installed. Note that you must have access to the assets in question to be able to see them.
 
@@ -123,10 +119,8 @@ The grid will show assets that have a relevant firmware version installed. Note 
 ===========================
 Reviewing firmware versions
 ===========================
-To look up firmware versions at the firmware group level:
-* Go to *Assets → Firmware → Details → Versions*.
-
-.. note:: As of Hyperview 3.4, the Firmware grid (*Assets → Firmware*) only shows firmware groups that are mapped in the Hyperview Product Catalog.
+For Managed Firmware, to look up versions at the firmware group level:
+* Go to *Assets → Firmware → Managed → Details → Versions*.
 
 To look up firmware versions for a given asset:
 * Browse to the asset → *Information → Firmware*.
@@ -135,13 +129,17 @@ Note that the Information → Firmware page will indicate the currently installe
 
 |info-firmware|
 
-Downloading a firmware version / Viewing firmware release notes
----------------------------------------------------------------
-The Firmware and Information → Firmware pages both feature Download Firmware and View Release Notes buttons, which allow you to download a certain firmware version or look up its release notes, respectively. Clicking on either button will download the corresponding file to your browser's default download location (or prompt you to choose a download folder, as per your browser configuration).
+The Unmanaged firmware tab *Assets → Firmware → Unmanaged* will contain a list of all detected firmware, firmware versions and installations.
+
+|unmanaged-firmware|
+
+Updating / Downloading a firmware version / Viewing firmware release notes
+--------------------------------------------------------------------------
+The Firmware and Information → Firmware pages both feature Update, View Release Notes and Download Firmware buttons, which allow you to update a firmware version, look up its release notes or download it respectively.
 
 |versions|
 
-.. note:: The exact file format of the firmware installer and release notes file depends on the manufacturer. The Download Firmware and View Release Notes buttons will only be active if the corresponding firmware installer or release notes file are mapped in Hyperview Product Catalog.
+.. note:: The exact file format of the firmware installer and release notes file depends on the manufacturer. The functions will only be active if the corresponding firmware is mapped in Hyperview Product Catalog.
 
 ==================================
 Alarm events for outdated firmware
