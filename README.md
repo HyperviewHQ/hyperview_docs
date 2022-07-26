@@ -45,7 +45,7 @@ npm ci
 
 * Install Visual Studio Code
 
-* Install Visual Studio Code Extension: EditoConfig for VS Code
+* Install Visual Studio Code Extension: EditorConfig for VS Code
 
 * Install Visual Studio Code Extension: SpellChecker
 

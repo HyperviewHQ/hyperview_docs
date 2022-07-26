@@ -81,7 +81,7 @@ html_theme_options = {
     "footer_icons": [
         {
             "name": "GitHub",
-                    "url": "https://github.com/HyperviewHQ",
+                    "url": "https://github.com/HyperviewHQ/hyperview-docs",
                     "html": '<i class="fa-solid fa-brands fa-github fa-2x"></i>',
                     "class": "",
         },
