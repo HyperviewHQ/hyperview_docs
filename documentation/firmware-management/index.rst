@@ -86,7 +86,7 @@ Upon discovery, the Firmware Version property becomes read-only to prevent human
 ============================================
 Who can access Firmware Management features?
 ============================================
-As of Hyperview 3.4, any user can access Firmware Management features as long as you are using a Firmware Management-licensed instance (see :ref:`View license<View-license-doc>`.
+As of Hyperview 3.4, any user can access Firmware Management features as long as you are using a Firmware Management-licensed instance (see :ref:`View license<View-license-doc>`).
 
 ====================================
 Navigating Firmware Management pages
