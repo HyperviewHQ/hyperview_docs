@@ -75,7 +75,7 @@ Hyperview uses the Firmware Version property (asset → *Information → Propert
 * Upon :ref:`discovering assets<Discoveries-doc>` with discoverable firmware versions
 * When a Power User or above updates the Firmware Version property of a manually created asset
 
-In both contexts, an asset is considered to have "managed firmware" only if the asset's firmware group is mapped in Hyperview Product Catalog. (A "firmware group" consists of firmware versions for a specific product model.)
+In both contexts, an asset is considered to have "managed firmware" only if the asset's firmware group is mapped in Hyperview Catalog. (A "firmware group" consists of firmware versions for a specific product model.)
 
 Upon discovery, the Firmware Version property becomes read-only to prevent human error (it automatically gets updated upon rediscovery if the installed version has changed). If you merge two assets with discovered and manually updated Firmware Version values, the discovered value is retained and rendered read-only. In other words, discovered firmware versions are always preferred.
 
@@ -139,7 +139,7 @@ The Firmware and Information → Firmware pages both feature Update, View Releas
 
 |versions|
 
-.. note:: The exact file format of the firmware installer and release notes file depends on the manufacturer. The functions will only be active if the corresponding firmware is mapped in Hyperview Product Catalog.
+.. note:: The exact file format of the firmware installer and release notes file depends on the manufacturer. The functions will only be active if the corresponding firmware is mapped in Hyperview Catalog.
 
 ==================================
 Alarm events for outdated firmware
