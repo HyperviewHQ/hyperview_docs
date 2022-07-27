@@ -29,3 +29,8 @@
    :width: 5.65307in
    :height: 4.21896in
    :class: border-black
+
+.. |unmanaged-firmware| image:: /firmware-management/media/unmanaged-firmware.png
+   :width: 5.65307in
+   :height: 4.21896in
+   :class: border-black

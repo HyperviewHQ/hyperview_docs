@@ -155,7 +155,7 @@ Notable bug fixes
 ============
 Known issues
 ============
-* **AS-11248** Certain products have their Rated Power set to 0 in the Hyperview Product Catalog, which is incorrect and throwing computed sensor analyzer exceptions.
+* **AS-11248** Certain products have their Rated Power set to 0 in the Hyperview Catalog, which is incorrect and throwing computed sensor analyzer exceptions.
 * **AS-11399** Sensor graphs do not appear if you switch from a time range with no data to a time range that has data. This persists as long as the current graph modal is open.
 * **AS-11412** While aligning objects on a floor plan layout, selecting the Snap to Grid option makes it read-only for the remainder of the Edit session.
 
