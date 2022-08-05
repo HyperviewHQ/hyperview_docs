@@ -10,15 +10,15 @@ npm_ci:
 	npm ci
 
 pip_install:
-	python -mpip install -r requirements.txt
+	python3 -mpip install -r requirements.txt
 
 setup: npm_ci pip_install
 
 clean:
-	python -msphinx -M clean $(SOURCEDIR) $(BUILDDIR)
+	python3 -msphinx -M clean $(SOURCEDIR) $(BUILDDIR)
 
 html:
-	python -msphinx -M html $(SOURCEDIR) $(BUILDDIR)
+	python3 -msphinx -M html $(SOURCEDIR) $(BUILDDIR)
 
 redoc:
 	$(REDOCCLI) build $(REDOCTARGET) -t redoc-template/hyperview.hbs
