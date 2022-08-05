@@ -10,36 +10,33 @@ The following steps are for Windows and Linux users and assume that they have a 
 
 * Install Python using scoop
 
-```
+```console
 scoop install python
 ```
 
 * Install nodejs using scoop
 
-```
+```console
 scoop install nodejs-lts
 ```
 
-* Install Nginx using scoop. This is an optional step.
+* Install make
 
+```console
+scoop install make
 ```
-scoop install nginx
-```
-
-Add an NGINX_HOME environment variable, and point it to the default location that scoop sets up for Nginx.
-This is usually ``` c:\Users\<username>\scoop\persist\nginx ```
 
 * Install Sphinx by opening a command prompt and running the following
   Python command. (Note that this operation might take a few minutes to
   complete.)
 
-```
+```console
 pip install -r ./requirements.txt
 ```
 
 * Install redoc CLI to generate API docs bundle
 
-```
+```console
 npm ci
 ```
 
@@ -51,12 +48,25 @@ npm ci
 
 * reStructuredText [reference](http://www.sphinx-doc.org/en/stable/rest.html)
 
-* To make the HTML version of the documentation; Run the applicable script
+* To make the HTML version of the documentation perform the following commands from the repository root
 
-``` windows_make_all_html.ps1 ```
-``` linux_make_all_html.sh ```
+```console
+make site
+```
 
-* Building the HTML docs will also build the API docs redoc bundle, which is then moved to the HTML folder of the docs.
+* To browse the site on your machine
+
+```console
+# To build the local docker container
+make docker_build
+
+# To stop and clean the local docker container (if needed)
+make docker_stop
+
+# To start the docker container
+make docker_start
+```
+* Navigate to 127.0.0.1 to browse the docs site
 
 ### Generate API Changes file ###
 

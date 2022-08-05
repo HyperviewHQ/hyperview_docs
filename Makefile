@@ -4,7 +4,7 @@ REDOCCLI = "node_modules/.bin/redoc-cli"
 REDOCTARGET = "https://nightly.hyperviewhq.com/api/docs/manager/3.0/swagger.json"
 
 docker:
-        docker build --pull -t $(IMAGE_NAME):$(IMAGE_VERSION) .
+        docker build -t $(IMAGE_NAME):$(IMAGE_VERSION) .
 
 npm_ci:
 	npm ci
@@ -35,5 +35,5 @@ docker_stop:
 	docker container stop hvdocs && docker container rm hvdocs
 
 docker_start:
-	docker run --name hvdocs -d -p 80:80 hvdocs:latest
+	docker run --name hvdocs -d -p 127.0.0.1:80:80 hvdocs:latest
 
