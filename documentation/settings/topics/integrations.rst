@@ -15,7 +15,17 @@ ServiceNow CMDB Sync
 
 .. note:: At this time only the Rome release of ServiceNow has been tested with this integration.
 
-The ServiceNow CMDB Sync integration is a data mapping and push service to the `ServiceNow Import Set API <https://docs.servicenow.com/bundle/rome-application-development/page/integrate/inbound-rest/concept/c_ImportSetAPI.html>`_.
+The ServiceNow CMDB Sync integration is a data mapping and data push service to the `ServiceNow Import Set API <https://docs.servicenow.com/bundle/rome-application-development/page/integrate/inbound-rest/concept/c_ImportSetAPI.html>`_.
+
+Prerequisites
+-------------
+
+1. Setup an import Set Table to receive the data from Hyperview. For the current release, the schema and data map is pre-defined. This is expected to change to be user defined in a future release. The schema is defined below.
+
+2. Setup an OAuth client that is mapped to a user and take note of the Client ID, Client Secret, Username and Password.
+
+3. Take note of the ImportSet API endpoint and the refresh token endpoint. These will be needed configuration parameters.
+
 
 Supported asset types
 ---------------------
@@ -35,3 +45,5 @@ Supported asset types
 - SmallUps
 - Transfer Switch
 
+FAQ
+---
