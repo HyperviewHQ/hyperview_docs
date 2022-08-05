@@ -15,3 +15,4 @@ Administrators can configure system-wide application settings to a consistent us
    topics/view-license
    topics/configuring-locale
    topics/configuring-sensors
+   topics/integrations
