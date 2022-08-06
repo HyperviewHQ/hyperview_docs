@@ -74,4 +74,6 @@ We use a tool called openapi-diff from the openapitools project.
 
 ### Resources ###
 
-* This is a good blog post to get you started http://tjelvarolsson.com/blog/how-to-generate-beautiful-technical-documentation/
+* [How to generate beautiful technical documentation](http://tjelvarolsson.com/blog/how-to-generate-beautiful-technical-documentation/)
+* [Sublime and Sphinx guide](https://sublime-and-sphinx-guide.readthedocs.io/en/latest/index.html)
+* [Sphinx Project](https://www.sphinx-doc.org/)
