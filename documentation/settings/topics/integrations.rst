@@ -61,7 +61,7 @@ Supported asset types
 - Network Device
 - Network Storage
 - Server
-- SmallUps
+- Small UPS
 - Transfer Switch
 
 Field mapping
