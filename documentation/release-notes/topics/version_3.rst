@@ -5,6 +5,45 @@ Version 3
 #########
 
 *****************************
+Hyperview 3.7 (TBD)
+*****************************
+This section covers significant changes and bug fixes in Hyperview 3.6.x since version 3.5.x.
+
+.. note:: Please install the latest Data Collector for optimal device monitoring and discovery.
+
+=======================
+New feature: Work Notes
+=======================
+
+=================================================================
+Enhanced licensed feature: Firmware Management -> Update Firmware
+=================================================================
+
+.. note:: Please contact our Sales team if you are interested in getting a Firmware Management license.
+
+==========================
+Other notable improvements
+==========================
+
+- License page has been improved
+
+===========
+API changes
+===========
+.. tip:: As of version 3.6 API changes are now in the :ref:`API Changelog<Api_changelog-doc>` section of the documentation.
+
+=================
+Notable bug fixes
+=================
+
+============
+Known issues
+============
+
+*****
+
+
+*****************************
 Hyperview 3.6 (July 15, 2022)
 *****************************
 This section covers significant changes and bug fixes in Hyperview 3.6.x since version 3.5.x.
