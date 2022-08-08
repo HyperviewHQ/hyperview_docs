@@ -4,9 +4,9 @@
 Version 3
 #########
 
-*****************************
+*******************
 Hyperview 3.7 (TBD)
-*****************************
+*******************
 This section covers significant changes and bug fixes in Hyperview 3.6.x since version 3.5.x.
 
 .. note:: Please install the latest Data Collector for optimal device monitoring and discovery.
@@ -39,8 +39,6 @@ Notable bug fixes
 ============
 Known issues
 ============
-
-*****
 
 
 *****************************
