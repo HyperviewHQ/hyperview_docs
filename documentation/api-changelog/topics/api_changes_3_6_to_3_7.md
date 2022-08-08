@@ -765,11 +765,6 @@ Changed response : **200 OK**
 
     * Changed property `id` (string)
 
-        Added enum values:
-
-        * `serviceNowCmdbIntegrationHttpRetryCount`
-        * `serviceNowCmdbIntegrationAssetBatchSize`
-        * `serviceNowCmdbIntegrationRetrySleepIntervalInSeconds`
 ### `PUT` /api/setting/systemSettings
 
 
@@ -781,11 +776,6 @@ Changed items (object):
 
 * Changed property `id` (string)
 
-    Added enum values:
-
-    * `serviceNowCmdbIntegrationHttpRetryCount`
-    * `serviceNowCmdbIntegrationAssetBatchSize`
-    * `serviceNowCmdbIntegrationRetrySleepIntervalInSeconds`
 #### Return Type:
 
 Changed response : **200 OK**
@@ -797,11 +787,6 @@ Changed response : **200 OK**
 
     * Changed property `id` (string)
 
-        Added enum values:
-
-        * `serviceNowCmdbIntegrationHttpRetryCount`
-        * `serviceNowCmdbIntegrationAssetBatchSize`
-        * `serviceNowCmdbIntegrationRetrySleepIntervalInSeconds`
 ### `GET` /api/setting/systemSettings/{systemSettingId}
 
 
@@ -819,11 +804,6 @@ Changed response : **200 OK**
 
     * Changed property `id` (string)
 
-        Added enum values:
-
-        * `serviceNowCmdbIntegrationHttpRetryCount`
-        * `serviceNowCmdbIntegrationAssetBatchSize`
-        * `serviceNowCmdbIntegrationRetrySleepIntervalInSeconds`
 ### `GET` /api/setting/systemSettings/dataCollector/{dataCollectorSetting}
 
 
@@ -867,6 +847,7 @@ Changed response : **200 OK**
         * `workNoteDocumentDeleted`
         * `workNoteDocumentAdded`
         * `workNoteImportanceUpdated`
+
 ### `GET` /api/asset/assetChangeEventLogs
 
 
@@ -889,6 +870,7 @@ Changed response : **200 OK**
         * `workNoteDocumentDeleted`
         * `workNoteDocumentAdded`
         * `workNoteImportanceUpdated`
+
 ### `GET` /api/asset/assetTrackerContainedAssets
 
 
