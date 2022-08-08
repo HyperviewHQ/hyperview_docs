@@ -31,6 +31,21 @@ Prerequisites
 3. Take note of the ImportSet API endpoint and the refresh token endpoint. These will be needed configuration parameters.
 
 
+Configuration
+-------------
+
+Enter the information prepared earlier in their corresponding configuration field.
+
+.. image:: /settings/media/servicenow_cmdb_configuration.png
+   :width: 1917
+   :alt: ServiceNow CMDB integration configuration
+
+The Last Sync Date, if populated, notes the last timestamp sync has started and finished successfully. This timestamp is used to sync changed assets since the last successful run.
+
+To force a full sync the next time the process runs, reset the last sync date.
+
+Scheduling the sync is optional and if a schedule is selected, the time the process runs will be within plus or minus 15 minutes of the selected schedule configuration.
+
 Supported asset types
 ---------------------
 
@@ -57,7 +72,7 @@ Field mapping
    :align: center
 
    * - Hyperview
-     - ImportSet
+     - Import Set
      - Data Type
      - Required
    * - hyperview_id
@@ -133,8 +148,9 @@ Field mapping
      - String
      - No
 
+Note that when there are ID and name fields returned as an array, the sorting order will be the same. For example, if the asset has two power-providing assets, the name and ID order in their respective arrays will be the same. This is done to make it easier to write data reconciliation rules on the ServiceNow side.
 
-Example ImportSet JSON
+ImportSet JSON Example
 ^^^^^^^^^^^^^^^^^^^^^^
 
 .. code::
@@ -183,3 +199,4 @@ Example ImportSet JSON
        }
      ]
    }
+
