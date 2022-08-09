@@ -7,7 +7,7 @@ Version 3
 *******************
 Hyperview 3.7 (TBD)
 *******************
-This section covers significant changes and bug fixes in Hyperview 3.6.x since version 3.5.x.
+This section covers significant changes and bug fixes in Hyperview 3.7.x since version 3.6.x.
 
 .. note:: Please install the latest Data Collector for optimal device monitoring and discovery.
 
@@ -25,7 +25,8 @@ Enhanced licensed feature: Firmware Management -> Update Firmware
 Other notable improvements
 ==========================
 
-- License page has been improved
+- License page has been improved to show full license information
+- Management for AssetTracker alarms has been improved
 
 ===========
 API changes
@@ -35,6 +36,13 @@ API changes
 =================
 Notable bug fixes
 =================
+
+- **AS-11399:** Sensor graph does not get generated upon switching from a time range that has no data to a time range with data
+- **AS-10909:** Unknown Tags alarm event do not get cleared when you remove an Unknown Tag from Master Module
+- **AS-11306:** Information dropdown not optimized for lower screens
+- **AS-11412:** While editing a floor plan layout, Snap to Grid becomes read-only upon selection
+- **AS-11795:** All location status not updated under certain circumstances
+- **AS-11908:** Mobile navbar cuts off for lower resolution mobile devices
 
 ============
 Known issues
