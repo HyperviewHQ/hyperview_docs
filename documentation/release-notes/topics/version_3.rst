@@ -15,9 +15,9 @@ This section covers significant changes and bug fixes in Hyperview 3.7.x since v
 New feature: Work Notes
 =======================
 
-Work Notes is a new feature that is part of the core application license and is available to allow users. It enables new asset-centric collaboration workflows. For example:
+Work Notes is a new feature that is part of the core application license and is available to all users. It enables new asset-centric collaboration workflows. For example:
 
-- Write prioritized notes on the asset
+- Write prioritized notes on an asset
 - Attach documents and images to Work Notes
 - Tag users in Work Notes and receive notifications when tagged in a note
 
