@@ -28,11 +28,6 @@ Other notable improvements
 - License page has been improved to show full license information
 - Management for AssetTracker alarms has been improved
 
-===========
-API changes
-===========
-.. tip:: As of version 3.6 API changes are now in the :ref:`API Changelog<Api_changelog-doc>` section of the documentation.
-
 =================
 Notable bug fixes
 =================
