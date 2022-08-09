@@ -34,7 +34,7 @@ npm ci
 make site
 ```
 
-* To browse the site on your machine
+* To browse the site on your machine, you need to have [Docker](https://docs.docker.com/get-docker/) installed.
 
 ```console
 # To build the local docker container
