@@ -15,9 +15,17 @@ This section covers significant changes and bug fixes in Hyperview 3.7.x since v
 New feature: Work Notes
 =======================
 
+Work Notes is a new feature that is part of the core application license and is available to allow users. It enables new asset-centric collaboration workflows. For example:
+
+- Write prioritized notes on the asset
+- Attach documents and images to Work Notes
+- Tag users in Work Notes and receive notifications when tagged in a note
+
 =================================================================
 Enhanced licensed feature: Firmware Management -> Update Firmware
 =================================================================
+
+Firmware update capability is now enabled on the **Linux** version of the Data Collector on the AMD64 and ARM64 versions.
 
 .. note:: Please contact our Sales team if you are interested in getting a Firmware Management license.
 
@@ -25,8 +33,9 @@ Enhanced licensed feature: Firmware Management -> Update Firmware
 Other notable improvements
 ==========================
 
-- License page has been improved to show full license information
-- Management for AssetTracker alarms has been improved
+- The Raspberry Pi version of the Linux Data Collector is now out of beta
+- The License page has been improved to show full license information
+- The Management of AssetTracker alarms has been improved, with more analytics and automatic resolution of certain alarm events once the issue is detected to be resolved
 
 =================
 Notable bug fixes
@@ -39,10 +48,7 @@ Notable bug fixes
 - **AS-11795:** All location status not updated under certain circumstances
 - **AS-11908:** Mobile navbar cuts off for lower resolution mobile devices
 
-============
-Known issues
-============
-
+*****
 
 *****************************
 Hyperview 3.6 (July 15, 2022)
