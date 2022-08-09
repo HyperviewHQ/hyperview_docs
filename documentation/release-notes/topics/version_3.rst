@@ -35,15 +35,14 @@ Other notable improvements
 
 - The Raspberry Pi version of the Linux Data Collector is now out of beta
 - The License page has been improved to show full license information
-- The Management of AssetTracker alarms has been improved, with more analytics and automatic resolution of certain alarm events once the issue is detected to be resolved
+- The Management of AssetTracker alarms has been improved, with more analytics and automatic resolution of certain alarm events.
 
 =================
 Notable bug fixes
 =================
 
 - **AS-11399:** Sensor graph does not get generated upon switching from a time range that has no data to a time range with data
-- **AS-10909:** Unknown Tags alarm event do not get cleared when you remove an Unknown Tag from Master Module
-- **AS-11306:** Information dropdown not optimized for lower screens
+- **AS-11306:** Information dropdown not optimized for lower resolution screens
 - **AS-11412:** While editing a floor plan layout, Snap to Grid becomes read-only upon selection
 - **AS-11795:** All location status not updated under certain circumstances
 - **AS-11908:** Mobile navbar cuts off for lower resolution mobile devices
