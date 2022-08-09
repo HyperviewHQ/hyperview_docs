@@ -50,7 +50,7 @@ make docker_start
 
 ### Generate API Changes file ###
 
-We use a tool called openapi-diff from the openapitools project.
+We use a tool called [openapi-diff](https://github.com/OpenAPITools/openapi-diff) from the [openapitools](https://github.com/OpenAPITools) project.
 
 ## Editing documentation ##
 
