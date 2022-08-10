@@ -16,17 +16,13 @@ scoop install nodejs-lts
 scoop install make
 ```
 
-* Install Sphinx by opening a command prompt and running the following Python command. (Note that this operation might take a few minutes to complete.)
+* Install Sphinx and Redoc CLI; Using your favorite console app, run the following command from the **repository root**.
 
 ```console
-pip install -r ./requirements.txt
+make setup
 ```
 
-* Install redoc CLI to generate API docs bundle
-
-```console
-npm ci
-```
+> **_NOTE:_**  All subsequent Make commands must be run from the repository root.
 
 * To make the HTML version of the documentation perform the following commands from the repository root
 
@@ -48,7 +44,7 @@ make docker_start
 ```
 * Navigate to 127.0.0.1 to browse the docs site
 
-### Generate API Changes file ###
+## API Changes ##
 
 We use a tool called [openapi-diff](https://github.com/OpenAPITools/openapi-diff) from the [openapitools](https://github.com/OpenAPITools) project.
 
