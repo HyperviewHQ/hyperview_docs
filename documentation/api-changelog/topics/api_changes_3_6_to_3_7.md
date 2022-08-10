@@ -6,6 +6,11 @@
 
 > Returns an asset's associated data collectors.
 
+### `GET` /api/user/users/access/{accessPolicyId}
+
+> Returns an array of users associate with an access policy or associated to a group that is
+> associated with an access policy. All users of Administrator role are included.
+
 ### `DELETE` /api/asset/workNoteDocuments/{workNoteDocumentId}
 
 > Removes an association between a work note and document.
@@ -765,6 +770,11 @@ Changed response : **200 OK**
 
     * Changed property `id` (string)
 
+        Added enum values:
+
+        * `serviceNowCmdbIntegrationHttpRetryCount`
+        * `serviceNowCmdbIntegrationAssetBatchSize`
+        * `serviceNowCmdbIntegrationRetrySleepIntervalInSeconds`
 ### `PUT` /api/setting/systemSettings
 
 
@@ -776,6 +786,11 @@ Changed items (object):
 
 * Changed property `id` (string)
 
+    Added enum values:
+
+    * `serviceNowCmdbIntegrationHttpRetryCount`
+    * `serviceNowCmdbIntegrationAssetBatchSize`
+    * `serviceNowCmdbIntegrationRetrySleepIntervalInSeconds`
 #### Return Type:
 
 Changed response : **200 OK**
@@ -787,6 +802,11 @@ Changed response : **200 OK**
 
     * Changed property `id` (string)
 
+        Added enum values:
+
+        * `serviceNowCmdbIntegrationHttpRetryCount`
+        * `serviceNowCmdbIntegrationAssetBatchSize`
+        * `serviceNowCmdbIntegrationRetrySleepIntervalInSeconds`
 ### `GET` /api/setting/systemSettings/{systemSettingId}
 
 
@@ -804,6 +824,11 @@ Changed response : **200 OK**
 
     * Changed property `id` (string)
 
+        Added enum values:
+
+        * `serviceNowCmdbIntegrationHttpRetryCount`
+        * `serviceNowCmdbIntegrationAssetBatchSize`
+        * `serviceNowCmdbIntegrationRetrySleepIntervalInSeconds`
 ### `GET` /api/setting/systemSettings/dataCollector/{dataCollectorSetting}
 
 
@@ -847,7 +872,6 @@ Changed response : **200 OK**
         * `workNoteDocumentDeleted`
         * `workNoteDocumentAdded`
         * `workNoteImportanceUpdated`
-
 ### `GET` /api/asset/assetChangeEventLogs
 
 
@@ -870,7 +894,6 @@ Changed response : **200 OK**
         * `workNoteDocumentDeleted`
         * `workNoteDocumentAdded`
         * `workNoteImportanceUpdated`
-
 ### `GET` /api/asset/assetTrackerContainedAssets
 
 
