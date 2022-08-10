@@ -24,13 +24,13 @@ make setup
 
 > **_NOTE:_**  All subsequent Make commands must be run from the repository root.
 
-* To make the HTML version of the documentation perform the following commands from the repository root
+* To make the HTML version of the documentation run the following command.
 
 ```console
 make site
 ```
 
-* To browse the site on your machine, you need to have [Docker](https://docs.docker.com/get-docker/) installed.
+* To browse the site on your machine, you need to have [Docker](https://docs.docker.com/get-docker/) installed. Then run the following commands.
 
 ```console
 # To build the local docker container
