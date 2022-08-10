@@ -71,6 +71,7 @@ Field mapping
 .. list-table::
    :header-rows: 1
    :align: center
+   :class: datatable display compact
 
    * - Hyperview
      - Import Set
