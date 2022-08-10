@@ -4,31 +4,19 @@
 
 This is the Hyperview documentation repository.
 
-## How do I get set up? ##
+## Quickstart ##
 
-The following steps are for Windows and Linux users and assume that they have a package manager such as scoop, apt or dnf installed.
+The following steps assume that you are using a package manager such as [scoop](https://scoop.sh/), [apt](https://www.debian.org/), [dnf](https://getfedora.org/) or [brew](https://brew.sh/) installed.
 
-* Install Python using scoop
+* Install Python 3, NodeJS-LTS and Make using your favorite package manager. For example on Windows run the following commands.
 
 ```console
 scoop install python
-```
-
-* Install nodejs using scoop
-
-```console
 scoop install nodejs-lts
-```
-
-* Install make
-
-```console
 scoop install make
 ```
 
-* Install Sphinx by opening a command prompt and running the following
-  Python command. (Note that this operation might take a few minutes to
-  complete.)
+* Install Sphinx by opening a command prompt and running the following Python command. (Note that this operation might take a few minutes to complete.)
 
 ```console
 pip install -r ./requirements.txt
@@ -40,21 +28,13 @@ pip install -r ./requirements.txt
 npm ci
 ```
 
-* Install Visual Studio Code
-
-* Install Visual Studio Code Extension: EditorConfig for VS Code
-
-* Install Visual Studio Code Extension: SpellChecker
-
-* reStructuredText [reference](http://www.sphinx-doc.org/en/stable/rest.html)
-
 * To make the HTML version of the documentation perform the following commands from the repository root
 
 ```console
 make site
 ```
 
-* To browse the site on your machine
+* To browse the site on your machine, you need to have [Docker](https://docs.docker.com/get-docker/) installed.
 
 ```console
 # To build the local docker container
@@ -70,8 +50,22 @@ make docker_start
 
 ### Generate API Changes file ###
 
-We use a tool called openapi-diff from the openapitools project.
+We use a tool called [openapi-diff](https://github.com/OpenAPITools/openapi-diff) from the [openapitools](https://github.com/OpenAPITools) project.
 
-### Resources ###
+## Editing documentation ##
 
-* This is a good blog post to get you started http://tjelvarolsson.com/blog/how-to-generate-beautiful-technical-documentation/
+Use your favorite text or code editor. For [VSCode](https://code.visualstudio.com/) the instructions are below
+
+* Install Visual Studio Code
+
+* Install Visual Studio Code Extension: EditorConfig for VS Code
+
+* Install Visual Studio Code Extension: SpellChecker
+
+* reStructuredText [reference](http://www.sphinx-doc.org/en/stable/rest.html)
+
+## Resources ##
+
+* [How to generate beautiful technical documentation](http://tjelvarolsson.com/blog/how-to-generate-beautiful-technical-documentation/)
+* [Sublime and Sphinx guide](https://sublime-and-sphinx-guide.readthedocs.io/en/latest/index.html)
+* [Sphinx Project](https://www.sphinx-doc.org/)
