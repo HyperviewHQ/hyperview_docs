@@ -27,9 +27,10 @@ show_breadcrumb_rel_links = "false"
 # Add any Sphinx extension module names here, as strings.
 
 extensions = [
-    "sphinx_design",
-    "sphinxcontrib.gtagjs",
-    "myst_parser",
+    'sphinx_design',
+    'sphinxcontrib.gtagjs',
+    'myst_parser',
+    'sphinx_copybutton',
 ]
 
 # The suffix(es) of source filenames.

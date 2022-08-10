@@ -44,13 +44,11 @@ The Last Sync Date, if populated, notes the last timestamp sync has started and 
 
 To force a full sync the next time the process runs, reset the last sync date.
 
-Scheduling the sync is optional and if a schedule is selected, the time the process runs will be within plus or minus 15 minutes of the selected schedule configuration.
+Scheduling the sync is optional and if a schedule is selected, the time the process runs will be within plus or minus 30 minutes of the selected schedule configuration.
 
 Supported asset types
 ---------------------
 
-- Rack
-- Rack PDU
 - Blade Enclosure
 - Blade Network
 - Blade Server
@@ -60,9 +58,12 @@ Supported asset types
 - Monitor
 - Network Device
 - Network Storage
+- Rack
+- Rack PDU
 - Server
 - Small UPS
 - Transfer Switch
+- UPS
 
 Field mapping
 -------------
