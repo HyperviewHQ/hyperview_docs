@@ -42,7 +42,7 @@ make docker_stop
 # To start the docker container
 make docker_start
 ```
-* Navigate to 127.0.0.1 to browse the docs site
+* Navigate to 127.0.0.1 to browse the docs site.
 
 ## API Changes ##
 
@@ -50,7 +50,7 @@ We use a tool called [openapi-diff](https://github.com/OpenAPITools/openapi-diff
 
 ## Editing documentation ##
 
-Use your favorite text or code editor. For [VSCode](https://code.visualstudio.com/) the instructions are below
+Use your favorite text or code editor. For [VSCode](https://code.visualstudio.com/) the instructions are below.
 
 * Install Visual Studio Code
 
