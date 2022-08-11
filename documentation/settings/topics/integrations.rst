@@ -30,7 +30,6 @@ Prerequisites
 
 3. Take note of the ImportSet API endpoint and the refresh token endpoint. These will be needed configuration parameters.
 
-
 Configuration
 -------------
 
