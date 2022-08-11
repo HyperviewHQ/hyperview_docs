@@ -30,7 +30,6 @@ Prerequisites
 
 3. Take note of the ImportSet API endpoint and the refresh token endpoint. These will be needed configuration parameters.
 
-
 Configuration
 -------------
 
@@ -166,7 +165,7 @@ ImportSet JSON Example
          "u_lifecycle_state": "Active",
          "u_location_path": "All / datacenter1 / room1 / rack1",
          "u_manufacturer": "Dell",
-         "u_model": "Power-edge R740",
+         "u_model": "PowerEdge R740",
          "u_name": "dell-server-1",
          "u_operating_system": "Windows Server 2019",
          "u_power_providing_asset_ids": "[\"49919266-a6ba-4c31-85ca-c625342d0593\",\" 5877dab3-b4f2-4ae6-8af9-71330916abbc\"]",
@@ -186,7 +185,7 @@ ImportSet JSON Example
          "u_lifecycle_state": "Active",
          "u_location_path": "All / datacenter1 / room1 / rack1",
          "u_manufacturer": "Dell",
-         "u_model": "Power-edge R740",
+         "u_model": "PowerEdge R740",
          "u_name": "dell-server-2",
          "u_operating_system": "Windows Server 2019",
          "u_power_providing_asset_ids": "[\"49919266-a6ba-4c31-85ca-c625342d0593\",\" 5877dab3-b4f2-4ae6-8af9-71330916abbc\"]",
