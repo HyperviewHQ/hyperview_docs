@@ -156,48 +156,63 @@ ImportSet JSON Example
 
 .. code::
 
-   {
-     "records": [
-       {
-         "u_dns_hostname": [\"dell-server-1.internal\"],
-         "u_hyperview_asset_type": "server",
-         "u_hyperview_id": "c9dfa9c3-fe06-44fc-b5b0-6bf02fa22457",
-         "u_lifecycle_state": "Active",
-         "u_location_path": "All / datacenter1 / room1 / rack1",
-         "u_manufacturer": "Dell",
-         "u_model": "PowerEdge R740",
-         "u_name": "dell-server-1",
-         "u_operating_system": "Windows Server 2019",
-         "u_power_providing_asset_ids": "[\"49919266-a6ba-4c31-85ca-c625342d0593\",\" 5877dab3-b4f2-4ae6-8af9-71330916abbc\"]",
-         "u_power_providing_assets": "[\"Rack1_left_pdu\",\" Rack1_left_pdu\"]",
-         "u_rack_elevation": "22",
-         "u_rack_location": "rack1",
-         "u_rack_location_id": "8bffed90-fbc6-4853-acae-af1461221078",
-         "u_rack_side": "Front",
-         "u_room_location": "Room1",
-         "u_room_location_id": "63e87bd1-0945-496d-9b68-088a7825ea48",
-         "u_serial_number": "[\"2acd3873\"]"
-       },
-       {
-         "u_dns_hostname": [\"dell-server-2.internal\"],
-         "u_hyperview_asset_type": "server",
-         "u_hyperview_id": "c9dfa9c3-fe06-44fc-b5b0-6bf02fa22458",
-         "u_lifecycle_state": "Active",
-         "u_location_path": "All / datacenter1 / room1 / rack1",
-         "u_manufacturer": "Dell",
-         "u_model": "PowerEdge R740",
-         "u_name": "dell-server-2",
-         "u_operating_system": "Windows Server 2019",
-         "u_power_providing_asset_ids": "[\"49919266-a6ba-4c31-85ca-c625342d0593\",\" 5877dab3-b4f2-4ae6-8af9-71330916abbc\"]",
-         "u_power_providing_assets": "[\"Rack1_left_pdu\",\" Rack1_left_pdu\"]",
-         "u_rack_elevation": "23",
-         "u_rack_location": "rack1",
-         "u_rack_location_id": "8bffed90-fbc6-4853-acae-af1461221078",
-         "u_rack_side": "Front",
-         "u_room_location": "Room1",
-         "u_room_location_id": "63e87bd1-0945-496d-9b68-088a7825ea48",
-         "u_serial_number": "[\"2acd3874\"]"
-       }
-     ]
-   }
-
+    {
+        "records": [{
+            "u_hyperview_id": "0ff3ba9d-f8e8-4e0a-ae4f-ead3c2f7b90d",
+            "u_dns_hostname": "[]",
+            "u_hyperview_asset_type": "server",
+            "u_lifecycle_state": "Active",
+            "u_location_path": "All/Vancouver",
+            "u_manufacturer": "Supermicro",
+            "u_model": "SYS-6018U-TR4+",
+            "u_name": "Server-1",
+            "u_operating_system": null,
+            "u_power_providing_asset_ids": "[\"775a9bef-7e68-464d-bf69-473e0e60a860\"]",
+            "u_power_providing_assets": "[\"PDU1\"]",
+            "u_rack_elevation": 44,
+            "u_rack_location": "Afco 45U",
+            "u_rack_location_id": "9c40fcbd-46d9-43eb-b7ca-3e9ae18446b0",
+            "u_rack_side": "Front",
+            "u_room_location": "Vancouver",
+            "u_room_location_id": "2644c8d2-fc68-4e64-9a7c-4bf7b2f52712",
+            "u_serial_number": "[\"S16579724910784\"]"
+        }, {
+            "u_hyperview_id": "2029182c-3e88-43d8-bb20-ea84e871a12f",
+            "u_dns_hostname": "[]",
+            "u_hyperview_asset_type": "environmental",
+            "u_lifecycle_state": "Active",
+            "u_location_path": "All/Vancouver/Afco 45U/Watchdog 1000",
+            "u_manufacturer": "Geist",
+            "u_model": "Watchdog 1000",
+            "u_name": "Watchdog 1000",
+            "u_operating_system": null,
+            "u_power_providing_asset_ids": "[]",
+            "u_power_providing_assets": "[]",
+            "u_rack_elevation": 42,
+            "u_rack_location": "Afco 45U",
+            "u_rack_location_id": "9c40fcbd-46d9-43eb-b7ca-3e9ae18446b0",
+            "u_rack_side": "Front",
+            "u_room_location": "Vancouver",
+            "u_room_location_id": "2644c8d2-fc68-4e64-9a7c-4bf7b2f52712",
+            "u_serial_number": "[\"280DB814060000C2\"]"
+        }, {
+            "u_hyperview_id": "26c45e46-8a6d-4f34-a771-afb56db3205c",
+            "u_dns_hostname": "[]",
+            "u_hyperview_asset_type": "ups",
+            "u_lifecycle_state": "Active",
+            "u_location_path": "All/ABB UPS",
+            "u_manufacturer": "ABB",
+            "u_model": "DPA 500",
+            "u_name": "ABB UPS",
+            "u_operating_system": null,
+            "u_power_providing_asset_ids": "[]",
+            "u_power_providing_assets": "[]",
+            "u_rack_elevation": null,
+            "u_rack_location": null,
+            "u_rack_location_id": null,
+            "u_rack_side": null,
+            "u_room_location": "All",
+            "u_room_location_id": "11223344-5566-7788-99aa-bbccddeeff00",
+            "u_serial_number": "[\"XP023\"]"
+        }]
+    }
