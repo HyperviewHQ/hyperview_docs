@@ -33,7 +33,7 @@ Minimum requirements for a Linux (AMD64) Data Collector server
 --------------------------------------------------------------
 * 4 CPU cores
 * 8 GB of RAM
-* 64 GB of free space
+* 64 GB of free space in the /opt partition or where the /opt directory resides
 * One of the following supported Linux distributions installed:
 
   * CentOS 7.xx or later
