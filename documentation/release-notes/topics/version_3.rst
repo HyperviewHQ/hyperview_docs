@@ -4,9 +4,9 @@
 Version 3
 #########
 
-*******************
-Hyperview 3.7 (TBD)
-*******************
+*******************************
+Hyperview 3.7 (August 24, 2022)
+*******************************
 This section covers significant changes and bug fixes in Hyperview 3.7.x since version 3.6.x.
 
 .. note:: Please install the latest Data Collector for optimal device monitoring and discovery.
@@ -35,7 +35,8 @@ Other notable improvements
 
 - The Raspberry Pi version of the Linux Data Collector is now out of beta
 - The License page has been improved to show full license information
-- The Management of AssetTracker alarms has been improved, with more analytics and automatic resolution of certain alarm events.
+- The Management of AssetTracker alarms has been improved, with more analytics and automatic resolution of certain alarm events
+- The Design Value property has been added to Advanced Search
 
 =================
 Notable bug fixes
