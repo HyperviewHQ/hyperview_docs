@@ -27,9 +27,10 @@ show_breadcrumb_rel_links = "false"
 # Add any Sphinx extension module names here, as strings.
 
 extensions = [
-    "sphinx_design",
-    "sphinxcontrib.gtagjs",
-    "myst_parser",
+    'sphinx_design',
+    'sphinxcontrib.gtagjs',
+    'myst_parser',
+    'sphinx_copybutton',
 ]
 
 # The suffix(es) of source filenames.
@@ -68,12 +69,15 @@ html_logo = "../_static/logo.png"
 html_favicon = "../_static/favicon.ico"
 
 html_css_files = [
-    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css",
-    "css/hv-styles.css",
+    'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css',
+    'https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css',
+    'css/hv-styles.css',
 ]
 
 html_js_files = [
     'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js',
+    'https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js',
+    'js/main.js',
 ]
 
 html_theme_options = {

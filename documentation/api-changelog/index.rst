@@ -13,3 +13,5 @@ API changes are reflected in the corresponding Open API (aka Swagger) interfaces
    :maxdepth: 2
 
    topics/api_changes_3_5_to_3_6
+   topics/api_changes_3_6_to_3_7
+

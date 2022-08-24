@@ -1,1 +1,0 @@
-stop-process -name nginx

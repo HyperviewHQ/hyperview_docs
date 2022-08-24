@@ -32,7 +32,7 @@ The first three thresholds are presented visually on the page to help you gauge 
 
 What counts as a "floor mounted asset"?
 ---------------------------------------
-From a licensing standpoint, a floor mounted asset (or FMA) includes racks, UPS, PDUs, CRAC units, chillers, and generators. Your Hyperview pricing plan is based on the number of FMAs you wish to manage and monitor. Rack-mounted IT devices, such as servers, storage, network gear, patch panels, and switch ports are not counted or charged for, provided that they do not exceed the maximum number of sensors within a chosen plan. The default (free) plan supports up to 10 FMAs.
+From a licensing standpoint, a floor-mounted asset (or FMA) includes racks, UPS, PDUs, CRAC units, chillers, and generators. Your Hyperview pricing plan is based on the number of FMAs you wish to manage and monitor. Rack-mounted IT devices, such as servers, storage, network gear, patch panels, and switch ports are not counted or charged for, provided that they do not exceed the maximum number of sensors within a chosen plan. The default (free) plan supports up to 10 FMAs.
 
 What kinds of sensors are supported?
 ------------------------------------
@@ -53,7 +53,7 @@ General information about your license
 ======================================
 The General Information section of the License page lists:
 
-* Your host name (typically in the form of *instancename.hyperviewhq.com*)
+* Your hostname (typically in the form of *instancename.hyperviewhq.com*)
 * The product version you are using (starting with the major and minor version numbers)
 * Your unique Hyperview tenant ID
 

@@ -137,3 +137,12 @@ a.external-link:after {
 img.border-black {
 	border: 1px solid black;
 }
+
+h1, h2, h3, h4, h5, h6 {
+	overflow-wrap: anywhere;
+}
+
+section[id*="api-changelog"] h3,
+section[id*="api-changelog"] h4 {
+    font-size: 1em;
+}

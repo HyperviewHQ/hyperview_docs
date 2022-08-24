@@ -2,7 +2,7 @@
 :sd_hide_title:
 
 .. div::
-   :style: padding: 0 0.5rem 0.6rem 0; background-color: #6ca6ed; background-image: radial-gradient(circle at center center, #3a81c4 15%,#201e30 400%); clip-path: polygon(0px 0px, 100% 0%, 100% 100%, 0% calc(100% - 1.5rem)); -webkit-clip-path: polygon(0px 0px, 100% 0%, 100% 100%, 0% calc(100% - 1.5rem));
+   :style: padding: 0 0.5rem 0.6rem 0; background-color: #201e30; background-image: radial-gradient(circle at center center, #201e30 15%,#6ca6ed 400%); clip-path: polygon(0px 0px, 100% 0%, 100% 100%, 0% calc(100% - 1.5rem)); -webkit-clip-path: polygon(0px 0px, 100% 0%, 100% 100%, 0% calc(100% - 1.5rem));
 
    .. grid:: 2
       :reverse:
@@ -12,7 +12,7 @@
       .. grid-item::
 
          .. image:: ../_static/dc-illustrate.png
-			:width: 400
+			:width: 200
 			:alt: DC Illustration
 
       .. grid-item::
