@@ -4,6 +4,52 @@
 Version 3
 #########
 
+*******************************
+Hyperview 3.7 (August 24, 2022)
+*******************************
+This section covers significant changes and bug fixes in Hyperview 3.7.x since version 3.6.x.
+
+.. note:: Please install the latest Data Collector for optimal device monitoring and discovery.
+
+=======================
+New feature: Work Notes
+=======================
+
+Work Notes is a new feature that is part of the core application license and is available to all users. It enables new asset-centric collaboration workflows. For example:
+
+- Write prioritized notes on an asset
+- Attach documents and images to Work Notes
+- Tag users in Work Notes and receive notifications when tagged in a note
+
+=================================================================
+Enhanced licensed feature: Firmware Management -> Update Firmware
+=================================================================
+
+Firmware update capability is now enabled on the **Linux** version of the Data Collector on the AMD64 and ARM64 versions.
+
+.. note:: Please contact our Sales team if you are interested in getting a Firmware Management license.
+
+==========================
+Other notable improvements
+==========================
+
+- The Raspberry Pi version of the Linux Data Collector is now out of beta
+- The License page has been improved to show full license information
+- The Management of AssetTracker alarms has been improved, with more analytics and automatic resolution of certain alarm events
+- The Design Value property has been added to Advanced Search
+
+=================
+Notable bug fixes
+=================
+
+- **AS-11399:** Sensor graph does not get generated upon switching from a time range that has no data to a time range with data
+- **AS-11306:** Information dropdown not optimized for lower resolution screens
+- **AS-11412:** While editing a floor plan layout, Snap to Grid becomes read-only upon selection
+- **AS-11795:** All location status not updated under certain circumstances
+- **AS-11908:** Mobile navbar cuts off for lower resolution mobile devices
+
+*****
+
 *****************************
 Hyperview 3.6 (July 15, 2022)
 *****************************
