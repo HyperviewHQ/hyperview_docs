@@ -18,9 +18,9 @@ ServiceNow CMDB Sync schedule and report are now available in the Work Orders se
 
 .. note:: Please contact our Sales team if you are interested in getting a ServiceNow CMDB Sync license.
 
-===================================================================
-2D and 3D Layout Visualization: Power Utilization Percentage Filter
-===================================================================
+============================================================
+2D and 3D Layout Visualization: Power Utilization Percentage
+============================================================
 
 Rack Power Utilization has been added as a visualization option in the 2D and 3D view panel asset data.
 
