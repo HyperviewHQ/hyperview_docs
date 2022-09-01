@@ -40,7 +40,7 @@ Other notable improvements
 Notable bug fixes
 =================
 - **AS-11969** Unable to clear some asset properties after setting them to null
-- **AS-11555** certain conditions can cause the Linux Data Collector update script to ignore errors
+- **AS-11555** Certain conditions can cause the Linux Data Collector update script to ignore errors
 - **AS-11772** Firmware update data grid does not match partial IP addresses consistently
 
 *****
