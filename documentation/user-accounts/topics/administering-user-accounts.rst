@@ -67,7 +67,7 @@ A success message will appear, and the user details will be updated in the Users
 
 Enforcing external login
 ------------------------
-You can force users to log into Hyperview using their external login (refer to "Managing external logins" in :ref:`My-account-doc`). As of Hyperview 1.5, Microsoft is the only supported external login provider.
+You can force users to log into Hyperview using their **configured external login** (refer to "Managing external logins" in :ref:`My-account-doc`). As of Hyperview 1.5, Microsoft is the only supported external login provider.
 
 To enforce external login for a user, turn on the External Login Required toggle in the user grid. Once this is turned on, the user can no longer access Hyperview using a username/password combination.
 
