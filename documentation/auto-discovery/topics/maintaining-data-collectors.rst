@@ -10,11 +10,11 @@ Data Collectors must be up-to-date and communicating consistently with the Hyper
 ===========================================
 Tracking stale and outdated Data Collectors
 ===========================================
-The Last Communicated column in the Data Collectors grid indicates the UTC datetime when a particular Data Collector last communicated with Hyperview. The Version column shows the Data Collector version number.
+The Last Communicated column in the Data Collectors grid indicates the date & time when a particular Data Collector last communicated with Hyperview. The Version column shows the Data Collector version number.
 
 |dc_grid|
 
-Distinct alarm event messages are generated for the All location (*Asset Hierarchy → All → Events*) if:
+Distinct alarm event messages are generated for the **All** location (*Asset Hierarchy → All → Events*) if:
 
 * a Data Collector has not communicated with Hyperview within 2x the usual polling frequency; or
 * the Data Collector version is out of date.
@@ -22,6 +22,8 @@ Distinct alarm event messages are generated for the All location (*Asset Hierarc
 Consult your IT department to address any connectivity issues, and/or update the Data Collector accordingly.
 
 |events|
+
+To receive email notifications if any of these alarm events trigger simply add the All location to your watched assets.
 
 ========================
 Updating Data Collectors

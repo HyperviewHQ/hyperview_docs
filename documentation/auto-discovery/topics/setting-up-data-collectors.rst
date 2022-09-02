@@ -6,7 +6,7 @@ Setting up Data Collectors
 
 The Hyperview Data Collector collects and relays data back to the Hyperview platform. It covers the following functional areas: discovery, monitoring, control operations (for example, :ref:`setting control credentials <Setting-control-credentials>`), and trap listening.
 
-All communication between the Hyperview platform and networked devices must be initiated by the Data Collector. You must register a Data Collector before it can relay information. The registration process can only be triggered from the machine that hosts the Data Collector, and requires a unique key that is generated for that particular Data Collector.
+All communication between the Hyperview platform and networked devices must be initiated by the Data Collector. You must register a Data Collector before it can relay information. The registration process can only be triggered from the machine that hosts the Data Collector and requires a unique key that is generated for that particular Data Collector.
 
 Once registered, the Data Collector saves the key in a local configuration file in a secure manner. It then polls the Hyperview platform for data collection jobs.
 
@@ -43,10 +43,12 @@ Minimum requirements for a Linux (AMD64) Data Collector server
 
 * You must also have the following software installed:
 
-  * Docker 19.03.15 or later
-  * Docker Compose 1.29.2 or later
+  * Docker CE
+  * Docker Compose Plugin
 
-The supported Linux distributions typically install environment dependencies for the Data Collector by default. Please refer to the Read Me file included in the setup package for a complete list of dependencies.
+Docker Inc. provides `detailed installation documentation <https://docs.docker.com/engine/install/>`_.
+
+The supported Linux distributions typically install environment dependencies for the Data Collector by default. Please refer to the README file included in the setup package for a complete list of dependencies.
 
 Minimum requirements for a Linux (RPI ARM64) Data Collector device
 ------------------------------------------------------------------
