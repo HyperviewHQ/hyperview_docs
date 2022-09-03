@@ -80,7 +80,7 @@ The following tables describe SNMP and SSH support.
 +---------------------+------------------------------------------------------------------------------------+
 | Asset Type Examples | All                                                                                |
 +---------------------+------------------------------------------------------------------------------------+
-| Default Port        | 162 (configurable)                                                                 |
+| Default Port        | 161 (configurable)                                                                 |
 +---------------------+------------------------------------------------------------------------------------+
 | Information         | Anything contained in manufacturer MIB and Hyperview device definitions            |
 +---------------------+------------------------------------------------------------------------------------+
@@ -116,7 +116,7 @@ Monitoring-only definition-based protocols include Building Automation and Contr
 +---------------------+------------------------------------------------------------------------------------+
 | Default Port        | 47808 (configurable)                                                               |
 +---------------------+------------------------------------------------------------------------------------+
-| Information         | Custom-built from protocol definition, varies per unit                             |
+| Information         | Custom-built from protocol definition and varies per device                        |
 +---------------------+------------------------------------------------------------------------------------+
 | Credentials         | None                                                                               |
 +---------------------+------------------------------------------------------------------------------------+
@@ -130,7 +130,7 @@ Monitoring-only definition-based protocols include Building Automation and Contr
 +---------------------+------------------------------------------------------------------------------------+
 | Default Port        | 502 (configurable)                                                                 |
 +---------------------+------------------------------------------------------------------------------------+
-| Information         | Custom-built from protocol definition, varies per unit                             |
+| Information         | Custom-built from protocol definition and varies per device                        |
 +---------------------+------------------------------------------------------------------------------------+
 | Credentials         | None                                                                               |
 +----------------------------------------------------------------------------------------------------------+

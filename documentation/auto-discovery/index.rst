@@ -27,3 +27,4 @@ Upon running the discovery, the Data Collector software will automatically find 
    topics/reviewing-discovery-reports
    topics/maintaining-data-collectors
    topics/best-practices
+   topics/advanced-discovery-topics

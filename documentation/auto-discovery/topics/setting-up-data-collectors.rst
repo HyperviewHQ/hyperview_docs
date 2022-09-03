@@ -71,24 +71,37 @@ By default, Hyperview uses the following network ports to monitor and discover d
 
 .. note:: Linux Data Collectors currently only support SSH, SNMP, IPMI, and Modbus TCP protocols.
 
-+------------+--------------------+-------------------------------+
-| Protocol   | Ports              | Credential Requirements       |
-+============+====================+===============================+
-| SNMP       | 161 (gets, sets),  | Community string or           |
-|            | 162 (traps)        | user/password                 |
-+------------+--------------------+-------------------------------+
-| Modbus/TCP | 502                | Not required                  |
-+------------+--------------------+-------------------------------+
-| BACnet IP  | 87808              | Not required                  |
-+------------+--------------------+-------------------------------+
-| IPMI       | 623, 1900          | User/password                 |
-+------------+--------------------+-------------------------------+
-| SSH        | 22                 | User/password or user/key     |
-+------------+--------------------+-------------------------------+
-| WMI        | 135                | User/password                 |
-+------------+--------------------+-------------------------------+
-| VMware     | 883                | User/password                 |
-+------------+--------------------+-------------------------------+
+.. list-table::
+   :header-rows: 1
+   :align: left
+
+   * - Protocol
+     - Ports
+     - Credential Requirements
+   * - SNMP
+     - 161 (gets, sets) and 162 (traps)
+     - Community string or SNMPv3 credentials
+   * - Modbus/TCP
+     - 502
+     - Not required
+   * - BACnet IP
+     - 47808
+     - Not required
+   * - IPMI
+     - 623
+     - Username & Password
+   * - SSH
+     - 22
+     - Username & Password or Username & Key
+   * - WMI
+     - 135
+     - Username & Password
+   * - VMware
+     - 443
+     - Username & Password
+   * - AssetTracker
+     - 4242
+     - Not required
 
 ==============================
 Downloading the Data Collector
