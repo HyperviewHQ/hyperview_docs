@@ -5,7 +5,6 @@
 Managing your user profile
 **************************
 
-
 All users have access to the following profile management features:
 
 * Updating profile information
