@@ -23,7 +23,7 @@ Consult your IT department to address any connectivity issues, and/or update the
 
 |events|
 
-To receive email notifications if any of these alarm events trigger simply add the All location to your watched assets.
+To receive email notifications if any of these alarm events trigger, simply add the All location to your watched assets.
 
 ========================
 Updating Data Collectors

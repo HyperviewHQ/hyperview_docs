@@ -2,7 +2,7 @@
 .. _Account-security-doc:
 
 *******************************
-Account Security Best Practices
+Account security best practices
 *******************************
 
 1. Use trusted devices. Hyperview recommends using only trusted business and personal devices that are up to date on security.

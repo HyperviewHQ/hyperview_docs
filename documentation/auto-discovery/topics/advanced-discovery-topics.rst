@@ -48,22 +48,23 @@ You can install net-snmp on macOS using `Homebrew <https://brew.sh/>`_
 
     brew install net-snmp
 
-Once the application is installed, the **snmpwalk** command can be used to obtain a full walk of a device. For example:
+Once the application is installed, the **snmpwalk** command can be used to obtain a full walk of a device. The amount of time it takes to perform the walk can vary from device to device and depends on external factors such as network speed and target device CPU load. Generally, expect the process to take a few minutes unless the device has a large amount of information such as a large network switch, in which case, it may take longer.
+
+**Example:**
 
 .. code::
 
-    #
-    # The -ObentU command line option is required and important
-    #
     snmpwalk -v2c -c public -ObentU 192.168.10.10 . > /my_home_dir/snmpwalks/newrackpdu.snmpwalk
     #
     # Compress the snmpwalk file
     #
     gzip /my_home_dir/snmpwalks/newrackpdu.snmpwalk
 
-Once the walk is obtained, then it can be transferred to Hyperview support by uploading the compressed file to the applicable support ticket, or a different method arranged with Hyperview support.
+.. note:: The **-ObentU** command option is required and important to be able to parse the output with our tools.
 
-Utilities like scp/sftp, `winscp <https://winscp.net/>`_ can be used to transfer files from the machine that has the files if there is a need.
+Once the walk is obtained, then it can be transferred to Hyperview support by uploading the compressed file to the applicable support ticket.
+
+Utilities like scp/sftp or `winscp <https://winscp.net/>`_ can be used to transfer files around if there is a need.
 
 If these options are not possible then contact Hyperview Support.
 
