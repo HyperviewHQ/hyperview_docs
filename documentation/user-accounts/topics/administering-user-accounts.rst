@@ -208,7 +208,7 @@ Adding an API client account
 
 |addapiuser|
 
-.. note:: Please treat your API client credentials as you would for a human user, and store them in a safe place. The Client ID and Secret values **cannot** be modified after the API client has been created. If you have previously downloaded the client credentials file, an incremental digit will automatically get appended to the filename (such as "client_credential (2).json" in Google Chrome).
+.. note:: Please treat your API client credentials as you would for a human user, and store them in a safe place. The Client ID and Secret values **cannot** be modified after the API client has been created.
 
 Deleting an API client account
 ------------------------------
