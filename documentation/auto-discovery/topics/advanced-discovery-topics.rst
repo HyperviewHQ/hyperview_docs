@@ -6,7 +6,7 @@ Advanced discovery topics
 *************************
 
 ====================
-Obtaining SNMP Walks
+Obtaining SNMP walks
 ====================
 
 Hyperview uses SNMP walks to enhance device definitions, to model and support devices that are discoverable with the SNMP protocol. The **snmpwalk file** is used to simulate the device and to test definitions.
@@ -42,7 +42,7 @@ There are multiple options.
 macOS
 -----
 
-You can install net-snmp on MacOS using `Homebrew <https://brew.sh/>`_
+You can install net-snmp on macOS using `Homebrew <https://brew.sh/>`_
 
 .. code::
 
@@ -68,7 +68,7 @@ Utilities like scp/sftp, `winscp <https://winscp.net/>`_ can be used to transfer
 If these options are not possible then contact Hyperview Support.
 
 ====================================================
-Downloading the Linux Data Collector Via Artifactory
+Downloading the Linux Data Collector via Artifactory
 ====================================================
 
 `Artifactory <https://jfrog.com/artifactory/>`_ is an artifact repository that some organizations use to centralize the management of their software supply chain. If you have a requirement to use this solution for your Linux Data Collector then you will have to customize the **docker-compose.yaml** file that ships with the Linux Data Collector installation package.
@@ -82,7 +82,7 @@ Standard Linux command line tools such as **diff** and **vim** can be used to ac
 Please note that Hyperview only tests and supports the default configuration that ships with the installation package.
 
 ============================
-Docker Daemon Log Management
+Docker daemon log management
 ============================
 
 By default, the Docker software does not perform log rotation for the "local/JSON" logging driver. For a standard installation of the Linux Data Collector on a standalone machine, it is easy to miss setting that up and risk potential disk space exhaustion. This is especially relevant if you are running the Data Collector software in **trace mode** while troubleshooting an issue.
