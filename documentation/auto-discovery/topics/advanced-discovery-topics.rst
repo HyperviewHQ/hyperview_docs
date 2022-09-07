@@ -50,19 +50,21 @@ You can install net-snmp on macOS using `Homebrew <https://brew.sh/>`_
 
 Once the application is installed, the **snmpwalk** command can be used to obtain a full walk of a device. The amount of time it takes to perform the walk can vary from device to device and depends on external factors such as network speed and target device CPU load. Generally, expect the process to take a few minutes unless the device has a large amount of information such as a large network switch, in which case, it may take longer.
 
+.. note:: If you are logged in to a remote machine when performing the walk via **ssh/putty** watch out for session timeouts. This would end the snmpwalk job. Standard UNIX/Linux tools such as **tmux, screen or nohup** may help in managing sessions and avoiding a timeout.
+
 **Example:**
 
 .. code::
 
     snmpwalk -v2c -c public -ObentU 192.168.10.10 . > /my_home_dir/snmpwalks/newrackpdu.snmpwalk
     #
-    # Compress the snmpwalk file
+    # Check the output file for errors and compress it
     #
     gzip /my_home_dir/snmpwalks/newrackpdu.snmpwalk
 
 .. note:: The **-ObentU** command option is required and important to be able to parse the output with our tools.
 
-Once the walk is obtained, then it can be transferred to Hyperview support by uploading the compressed file to the applicable support ticket.
+Once the walk is obtained, inspect that it is complete. Look for a "``No more variables left in this MIB View (It is past the end of the MIB tree)``" message at the end of the file. Then, transfer it to Hyperview support by uploading the compressed file to the applicable support ticket.
 
 Utilities like scp/sftp or `winscp <https://winscp.net/>`_ can be used to transfer files around if there is a need.
 
