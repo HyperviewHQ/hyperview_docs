@@ -67,7 +67,7 @@ A success message will appear, and the user details will be updated in the Users
 
 Enforcing external login
 ------------------------
-You can force users to log into Hyperview using their external login (refer to "Managing external logins" in :ref:`My-account-doc`). As of Hyperview 1.5, Microsoft is the only supported external login provider.
+You can force users to log into Hyperview using their **configured external login** (refer to "Managing external logins" in :ref:`My-account-doc`). As of Hyperview 1.5, Microsoft is the only supported external login provider.
 
 To enforce external login for a user, turn on the External Login Required toggle in the user grid. Once this is turned on, the user can no longer access Hyperview using a username/password combination.
 
@@ -84,8 +84,6 @@ You can lock a user account indefinitely. Locked users cannot access the applica
 
 A success message will appear, and the Lock/Unlock button for the user will be updated accordingly.
 
-.. note:: The lock/unlock action will take effect immediately.
-
 Deleting a user
 ---------------
 
@@ -93,6 +91,8 @@ Deleting a user
 2. Click *Delete* in the Delete User modal.
 
 A success message will appear and the user will no longer be listed in the system. Deleting a user account will automatically remove it from any associated groups.
+
+.. note:: Locking or deleting an account is immediate, however, if the user is logged in when the action is performed it can take up to **300 seconds** for the action to take effect.
 
 Performing bulk actions
 -----------------------
@@ -163,7 +163,7 @@ You can auto-provision user accounts for Azure Active Directory domains that are
 
 Unprovisioned users who do not belong to a configured Azure AD domain will get an "Access Denied" error upon trying to log in with their external login credentials.
 
-.. note:: The Azure AD domain must be a login domain (not an alias). For associated user accounts, the username must be the primary email account/username for the user, and have the same domain as the intended Azure AD domain.
+.. note:: The Azure AD domain must be a login domain (not an alias). For associated user accounts, the username must be the primary email account/username for the user and have the same domain as the intended Azure AD domain.
 
 |ad_domain|
 
@@ -208,7 +208,7 @@ Adding an API client account
 
 |addapiuser|
 
-.. note:: Please treat your API client credentials as you would for a human user, and store it in a safe place. The Client ID and Secret values **cannot** be modified after the API client has been created. If you have previously downloaded the client credentials file, an incremental digit will automatically get appended to the filename (such as "client_credential (2).json" in Google Chrome).
+.. note:: Please treat your API client credentials as you would for a human user, and store them in a safe place. The Client ID and Secret values **cannot** be modified after the API client has been created.
 
 Deleting an API client account
 ------------------------------
