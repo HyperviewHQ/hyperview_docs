@@ -35,6 +35,7 @@ Other notable improvements
 - A new analyzer was added to automatically calculate the power utilization percentage for racks and locations
 - The Rack Space KPIs dashboard widget has been improved to work better on small screens
 - Improved multi-rack layout view to page data properly on high-resolution screens with large zoom levels
+- Improved Dell iDRAC SNMP definitions to support power consumption sensors
 
 =================
 Notable bug fixes
