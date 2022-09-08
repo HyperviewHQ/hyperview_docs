@@ -5,6 +5,47 @@ Version 3
 #########
 
 *******************************
+Hyperview 3.8 (TBD)
+*******************************
+This section covers significant changes and bug fixes in Hyperview 3.8.x since version 3.7.x.
+
+.. note:: Please install the latest Data Collector for optimal device monitoring and discovery.
+
+============================================================================
+Enhanced Licensed Feature: ServiceNow CMDB Sync Integration With Work Orders
+============================================================================
+ServiceNow CMDB Sync schedule and report are now available in the Work Orders section of the product.
+
+.. note:: Please contact our Sales team if you are interested in getting a ServiceNow CMDB Sync license.
+
+============================================================
+2D and 3D Layout Visualization: Power Utilization Percentage
+============================================================
+
+Rack Power Utilization has been added as a visualization option in the 2D and 3D view panel asset data.
+
+==========================
+Other notable improvements
+==========================
+
+- SVG background image support has been improved in 3D layouts
+- Serial Number matching algorithm has been improved
+- Location picker improvements across the product
+- Advanced Grids have been improved to deal better with browser disconnections and timeouts
+- A new analyzer was added to automatically calculate the power utilization percentage for racks and locations
+- The Rack Space KPIs dashboard widget has been improved to work better on small screens
+- Improved multi-rack layout view to page data properly on high-resolution screens with large zoom levels
+
+=================
+Notable bug fixes
+=================
+- **AS-11969** Unable to clear some asset properties after setting them to null
+- **AS-11555** Certain conditions can cause the Linux Data Collector update script to ignore errors
+- **AS-11772** Firmware installations data grid does not match partial IP addresses consistently
+
+*****
+
+*******************************
 Hyperview 3.7 (August 24, 2022)
 *******************************
 This section covers significant changes and bug fixes in Hyperview 3.7.x since version 3.6.x.

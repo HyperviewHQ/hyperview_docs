@@ -20,7 +20,7 @@ Understanding license thresholds
 ================================
 The following license thresholds apply:
 
-* Floor Mounted Assets
+* Assets
 * Sensors
 * Max Storage Size (GB)
 * Raw Sensor Data (Days)
@@ -30,23 +30,23 @@ The first three thresholds are presented visually on the page to help you gauge 
 
 .. note:: There is no restriction on the number of users or locations that you can have. As of Hyperview 2.5, Monitored IP Addresses is no longer considered a license threshold.
 
-What counts as a "floor mounted asset"?
+What counts as an "asset"?
 ---------------------------------------
-From a licensing standpoint, a floor-mounted asset (or FMA) includes racks, UPS, PDUs, CRAC units, chillers, and generators. Your Hyperview pricing plan is based on the number of FMAs you wish to manage and monitor. Rack-mounted IT devices, such as servers, storage, network gear, patch panels, and switch ports are not counted or charged for, provided that they do not exceed the maximum number of sensors within a chosen plan. The default (free) plan supports up to 10 FMAs.
+An asset is any physical or virtual asset within your digital infrastructure that you discover (if network-connected) or manually add, manage, and/or monitor with Hyperview. These include operational technologies (racks, generators, UPSs, PDUs, CRACs, CRAHs, RPPs, chillers), hardware (servers, storage, network devices, sensors/IoT, patch panels, and firewalls), and virtual machines (VMs).
 
 What kinds of sensors are supported?
 ------------------------------------
-Hyperview currently supports direct, computed, linked and manual sensors for assets (see :ref:`Managing sensors<Managing-sensors-doc>`). What sensors are available for a given asset depends on the asset itself. However, from a licensing standpoint, only sensors that consume monitoring cycles are considered. The default (free) plan supports up to 2500 monitored sensors.
+Hyperview currently supports direct, computed, linked and manual sensors for assets (see :ref:`Managing sensors<Managing-sensors-doc>`). What sensors are available for a given asset depends on the asset itself.
 
 What is "Max Storage Size (GB)"?
 --------------------------------
-The Max Storage Size (GB) threshold only applies if you have the Document Management license, which is a feature add-on. It indicates how much space you have to store document files for your assets. For more information see :ref:`Document Management<Document-management-doc>`. Default Document Management licenses have a maximum storage size of 5 GB.
+The Document Management license, which is a feature add-on, increases document management capacity to 50MB per asset from 5MB. The Threshold indicates how much space you have to store document files for your assets. For more information see :ref:`Document Management<Document-management-doc>`.
 
 What is "Raw Sensor Data (Days)" and "Sensor Daily Summary (Days)"?
 -------------------------------------------------------------------
-Sensor readings create raw data points. They are listed in Sensors grids and appear for sensor graphs showing up to the last three days' data. The Raw Sensor Data (Days) threshold indicates the retention period for raw sensor data. For default (free) plan holders, the threshold is the last 7 consecutive days (calculated from the current instant).
+Sensor readings create raw data points. They are listed in Sensors grids and appear for sensor graphs showing up to the last three days' data. The Raw Sensor Data (Days) threshold indicates the retention period for raw sensor data.
 
-Daily summary data points are generated based on raw data for a given day (UTC). They are listed in Sensors grids and appear in sensor graphs for a seven-day time frame or longer. The Sensor Daily Summary (Days) threshold indicates how long daily summary data will be retained. For default (free) plan holders, the threshold is the last 365 consecutive days (calculated from the current day).
+Daily summary data points are generated based on raw data for a given day (UTC). They are listed in Sensor grids and appear in sensor graphs for a seven-day time frame or longer. The Sensor Daily Summary (Days) threshold indicates how long daily summary data will be retained.
 
 ======================================
 General information about your license
@@ -69,3 +69,4 @@ The Features section lists what Hyperview feature licenses you have. Available l
 * :ref:`Firmware Management<Firmware-management-doc>` (add-on)
 * Infrastructure Management (default application license)
 * :ref:`Rack Security<Rack-security-doc>` (add-on)
+* :ref:`ServiceNow CMDB Integration<Integrations-doc>` (add-on)

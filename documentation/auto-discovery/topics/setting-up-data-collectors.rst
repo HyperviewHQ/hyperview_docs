@@ -6,7 +6,7 @@ Setting up Data Collectors
 
 The Hyperview Data Collector collects and relays data back to the Hyperview platform. It covers the following functional areas: discovery, monitoring, control operations (for example, :ref:`setting control credentials <Setting-control-credentials>`), and trap listening.
 
-All communication between the Hyperview platform and networked devices must be initiated by the Data Collector. You must register a Data Collector before it can relay information. The registration process can only be triggered from the machine that hosts the Data Collector, and requires a unique key that is generated for that particular Data Collector.
+All communication between the Hyperview platform and networked devices must be initiated by the Data Collector. You must register a Data Collector before it can relay information. The registration process can only be triggered from the machine that hosts the Data Collector and requires a unique key that is generated for that particular Data Collector.
 
 Once registered, the Data Collector saves the key in a local configuration file in a secure manner. It then polls the Hyperview platform for data collection jobs.
 
@@ -43,10 +43,12 @@ Minimum requirements for a Linux (AMD64) Data Collector server
 
 * You must also have the following software installed:
 
-  * Docker 19.03.15 or later
-  * Docker Compose 1.29.2 or later
+  * Docker CE
+  * Docker Compose Plugin
 
-The supported Linux distributions typically install environment dependencies for the Data Collector by default. Please refer to the Read Me file included in the setup package for a complete list of dependencies.
+Docker Inc. provides `detailed installation documentation <https://docs.docker.com/engine/install/>`_.
+
+The supported Linux distributions typically install environment dependencies for the Data Collector by default. Please refer to the README file included in the setup package for a complete list of dependencies.
 
 Minimum requirements for a Linux (RPI ARM64) Data Collector device
 ------------------------------------------------------------------
@@ -69,24 +71,37 @@ By default, Hyperview uses the following network ports to monitor and discover d
 
 .. note:: Linux Data Collectors currently only support SSH, SNMP, IPMI, and Modbus TCP protocols.
 
-+------------+--------------------+-------------------------------+
-| Protocol   | Ports              | Credential Requirements       |
-+============+====================+===============================+
-| SNMP       | 161 (gets, sets),  | Community string or           |
-|            | 162 (traps)        | user/password                 |
-+------------+--------------------+-------------------------------+
-| Modbus/TCP | 502                | Not required                  |
-+------------+--------------------+-------------------------------+
-| BACnet IP  | 87808              | Not required                  |
-+------------+--------------------+-------------------------------+
-| IPMI       | 623, 1900          | User/password                 |
-+------------+--------------------+-------------------------------+
-| SSH        | 22                 | User/password or user/key     |
-+------------+--------------------+-------------------------------+
-| WMI        | 135                | User/password                 |
-+------------+--------------------+-------------------------------+
-| VMware     | 883                | User/password                 |
-+------------+--------------------+-------------------------------+
+.. list-table::
+   :header-rows: 1
+   :align: left
+
+   * - Protocol
+     - Ports
+     - Credential Requirements
+   * - SNMP
+     - 161 (gets, sets) and 162 (traps)
+     - Community string or SNMPv3 credentials
+   * - Modbus/TCP
+     - 502
+     - Not required
+   * - BACnet IP
+     - 47808
+     - Not required
+   * - IPMI
+     - 623
+     - Username & Password
+   * - SSH
+     - 22
+     - Username & Password or Username & Key
+   * - WMI
+     - 135
+     - Username & Password
+   * - VMware
+     - 443
+     - Username & Password
+   * - AssetTracker
+     - 4242
+     - Not required
 
 ==============================
 Downloading the Data Collector
