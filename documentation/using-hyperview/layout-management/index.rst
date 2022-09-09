@@ -1,5 +1,3 @@
-.. include:: /using-hyperview/layout-management/media.rst
-
 #################
 Layout Management
 #################
