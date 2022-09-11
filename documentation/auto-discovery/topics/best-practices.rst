@@ -42,8 +42,8 @@ The Data Collector user will need to be able to run **dmidecode** to gather stru
 
 Consider using an automation tool such as Ansible or Puppet, if you have a large number of Linux hosts to configure.
 
-Using SSH Keys
---------------
+Using SSH keys for discovery
+----------------------------
 
 If you plan to use a username and private key instead username and password for Data Collector authentication, generate the private key in RSA format.
 
