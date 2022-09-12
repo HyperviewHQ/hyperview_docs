@@ -40,7 +40,7 @@ The Data Collector user will need to be able to run **dmidecode** to gather stru
     # Allow Data Collector to execute dmidecode without needing password
     datacollector ALL=(ALL) NOPASSWD: /usr/sbin/dmidecode
 
-Consider using an automation tool such as Ansible or Puppet, if you have a large number of Linux hosts to configure.
+Consider using an automation tool such as `Ansible <https://www.ansible.com/>`_, if you have a large number of Linux hosts to configure.
 
 Using SSH keys for discovery
 ----------------------------
