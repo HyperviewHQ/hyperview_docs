@@ -4,9 +4,9 @@
 Version 3
 #########
 
-*******************************
-Hyperview 3.8 (TBD)
-*******************************
+**********************************
+Hyperview 3.8 (September 16, 2022)
+**********************************
 This section covers significant changes and bug fixes in Hyperview 3.8.x since version 3.7.x.
 
 .. note:: Please install the latest Data Collector for optimal device monitoring and discovery.
