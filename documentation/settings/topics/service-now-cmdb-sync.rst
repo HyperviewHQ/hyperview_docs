@@ -212,3 +212,23 @@ ImportSet JSON Example
             "u_serial_number": "[\"XP023\"]"
         }]
     }
+
+
+=======================
+Work Orders integration
+=======================
+
+The ServiceNow CMDB Sync system integrates with Work Orders. Once the feature is enabled and configured it will automatically create a Work Order. Work Orders serve as a means to track the job status and as a way to troubleshoot issues if any arise.
+
+Work orders will be listed in the Hyperview Work Orders area.
+
+.. image:: /settings/media/scheduled_work_order.png
+   :width: 2374
+   :alt: Scheduled Work Order
+
+The Work Order details will list the assets that were synced to ServiceNow CMDB. The details page will show an appropriate notification if there are no assets to sync and if there were any errors.
+
+.. image:: /settings/media/scheduled_work_order_with_assets.png
+   :width: 2374
+   :alt: Scheduled Work Order with assets
+
