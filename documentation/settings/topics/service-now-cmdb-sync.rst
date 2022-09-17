@@ -147,7 +147,7 @@ Field mapping
 
 Note that when there are ID and name fields returned as an array, the sorting order will be the same. For example, if the asset has two power-providing assets, the name and ID order in their respective arrays will be the same. This is done to make it easier to write data reconciliation rules on the ServiceNow side.
 
-ImportSet JSON Example
+ImportSet JSON example
 ----------------------
 
 .. code::
