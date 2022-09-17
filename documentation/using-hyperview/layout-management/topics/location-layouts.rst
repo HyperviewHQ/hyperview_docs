@@ -1,4 +1,3 @@
-.. include:: /using-hyperview/layout-management/media.rst
 .. _Location-layouts-doc:
 
 ****************
@@ -11,6 +10,8 @@ The Location Layout page is typically used in the following contexts:
 * You want to view and customize a data center's floor plan layout to be able to visually interact with it (Floor Plan Mode).
 
 By default the Layout page is empty — an Administrator, Data Center Manager, or Power User must add the necessary information to generate a map or floor plan layout.
+
+.. note:: The **All** location has Map Mode enabled by default. The map will automatically be generated upon adding child locations with the appropriate address information.
 
 ==================
 Editing the layout
@@ -73,10 +74,16 @@ Furthermore, you can click the "Keyboard shortcuts" in the bottom-right of the m
 =====================
 Using Floor Plan Mode
 =====================
+
 Floor Plan Mode displays a location's floor plan. For example, you can add a background image, grids, tiles, shapes, and labels to a location layout until you arrive at an accurate representation of your data center floor's plan. You can also add racks, select a particular asset data view (such as Rack Space Utilization), and visualize heatmaps and environmental sensors.
 
 Setting up Floor Plan Mode
 --------------------------
+
+.. raw :: html
+
+	<div class="pb-3"><iframe src="https://player.vimeo.com/video/519224361" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+
 #. Browse to a data center location (*Assets → Overview → Asset Hierarchy →* location).
 #. Click *Layout → Edit → Mode → Floor Plan Mode*. You can proceed to add a background image, a grid, and other objects as needed.
 #. Click *Save* when you are done.
