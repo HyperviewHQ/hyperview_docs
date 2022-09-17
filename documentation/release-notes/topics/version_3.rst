@@ -4,9 +4,9 @@
 Version 3
 #########
 
-*******************************
-Hyperview 3.8 (TBD)
-*******************************
+**********************************
+Hyperview 3.8 (September 16, 2022)
+**********************************
 This section covers significant changes and bug fixes in Hyperview 3.8.x since version 3.7.x.
 
 .. note:: Please install the latest Data Collector for optimal device monitoring and discovery.
@@ -35,6 +35,7 @@ Other notable improvements
 - A new analyzer was added to automatically calculate the power utilization percentage for racks and locations
 - The Rack Space KPIs dashboard widget has been improved to work better on small screens
 - Improved multi-rack layout view to page data properly on high-resolution screens with large zoom levels
+- Improved Dell iDRAC SNMP definitions to support power consumption sensors
 
 =================
 Notable bug fixes
