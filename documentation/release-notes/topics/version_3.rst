@@ -44,6 +44,16 @@ Notable bug fixes
 - **AS-11555** Certain conditions can cause the Linux Data Collector update script to ignore errors
 - **AS-11772** Firmware installations data grid does not match partial IP addresses consistently
 
+========================
+Changes in version 3.8.1
+========================
+- **AS-12076** Addressed a bug that could trigger errors during WMI discovery
+
+========================
+Changes in version 3.8.2
+========================
+- Enhanced reaction time to the **Sync Now** request in the ServiceNow CMDB Sync feature
+
 *****
 
 *******************************
