@@ -16,6 +16,10 @@ Enhanced Licensed Feature: ServiceNow CMDB Sync Integration With Work Orders
 ============================================================================
 ServiceNow CMDB Sync schedule and report are now available in the Work Orders section of the product.
 
+.. image:: /release-notes/media/sn_cmdb_sync_workorder.png
+   :width: 1919
+   :alt: ServiceNow CMDB Sync work order
+
 .. note:: Please contact our Sales team if you are interested in getting a ServiceNow CMDB Sync license.
 
 ============================================================
@@ -23,6 +27,10 @@ ServiceNow CMDB Sync schedule and report are now available in the Work Orders se
 ============================================================
 
 Rack Power Utilization has been added as a visualization option in the 2D and 3D view panel asset data.
+
+.. image:: /release-notes/media/power_utilization_percentage_view.png
+   :width: 1919
+   :alt: Power utilization percentage layout view
 
 ==========================
 Other notable improvements
@@ -62,6 +70,7 @@ Changes in version 3.8.3
 ========================
 Changes in version 3.8.4
 ========================
+- **AS-12138** Fixed a table width issue in the rack asset audit page
 - **AS-12139** and **AS-12140** Optimized sensor indexing efficiency
 - **AS-12141** Changed steady state sensor computations for container assets, e.g. racks, from every 15 minutes to every 20 minutes
 
