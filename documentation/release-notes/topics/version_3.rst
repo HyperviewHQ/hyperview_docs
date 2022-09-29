@@ -52,7 +52,18 @@ Changes in version 3.8.1
 ========================
 Changes in version 3.8.2
 ========================
-- Enhanced reaction time to the **Sync Now** request in the ServiceNow CMDB Sync feature
+- **AS-12103** Enhanced reaction time to the **Sync Now** request in the ServiceNow CMDB Sync feature
+
+========================
+Changes in version 3.8.3
+========================
+- **AS-12128** Optimized discovery analyzer data dequeue algorithm
+
+========================
+Changes in version 3.8.4
+========================
+- **AS-12139** and **AS-12140** Optimized sensor indexing efficiency
+- **AS-12141** Changed steady state sensor computations for container assets, e.g. racks, from every 15 minutes to every 20 minutes
 
 *****
 
