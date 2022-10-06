@@ -32,7 +32,7 @@ The first three thresholds are presented visually on the page to help you gauge 
 
 What counts as an "asset"?
 ---------------------------------------
-An asset is any physical or virtual asset within your digital infrastructure that you discover (if network-connected) or manually add, manage, and/or monitor with Hyperview. These include operational technologies (racks, generators, UPSs, PDUs, CRACs, CRAHs, RPPs, chillers), hardware (servers, storage, network devices, sensors/IoT, patch panels, and firewalls), and virtual machines (VMs).
+An asset is any physical or virtual device within your digital infrastructure that you discover (if network-connected) or manually add, manage, and/or monitor with Hyperview. These include racks, operational technology assets, such as generators, UPSs, PDUs, CRACs, CRAHs, RPPs, chillers, and IT assets, such as servers, storage, network devices, sensors/IoT, patch panels, firewalls, and virtual machines.
 
 What kinds of sensors are supported?
 ------------------------------------
