@@ -67,7 +67,14 @@ The supported Linux distributions typically install environment dependencies for
 
 Network requirements
 --------------------
-By default, Hyperview uses the following network ports to monitor and discover devices. You must grant the Data Collector access (unless you have configured other ports for any of the protocols, and have allowed access accordingly).
+
+Data Collector to Hyperview
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The Data Collector uses HTTPS/TLS (TCP/443) to communicate with Hyperview. The direction is **outbound** from the Data Collector to Hyperview.
+
+Data Collector to assets
+^^^^^^^^^^^^^^^^^^^^^^^^
+By default, Hyperview uses the following network ports to monitor and discover devices. Please make sure that the Data Collector can reach the targeted assets on the applicable ports for your site.
 
 .. note:: Linux Data Collectors currently only support SSH, SNMP, IPMI, and Modbus TCP protocols.
 
