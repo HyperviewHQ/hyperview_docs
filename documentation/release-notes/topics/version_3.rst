@@ -74,6 +74,11 @@ Changes in version 3.8.4
 - **AS-12139** and **AS-12140** Optimized sensor indexing efficiency
 - **AS-12141** Changed steady state sensor computations for container assets, e.g. racks, from every 15 minutes to every 20 minutes
 
+========================
+Changes in version 3.8.5
+========================
+- **AS-12186** Fixed an issue that could cause the change log data grid to not render properly when certain log messages are detected
+
 *****
 
 *******************************
