@@ -20,9 +20,9 @@ Prerequisites
 
 Minimum requirements for a Windows Data Collector server
 --------------------------------------------------------
-* 2 CPU cores
-* 4 GB of RAM
-* 20 GB of free space
+* 4 CPU cores
+* 8 GB of RAM
+* 64 GB of free space
 * One of the following supported Windows versions installed:
 
   * Windows Server 2016 (for production or testing)
@@ -52,7 +52,6 @@ The supported Linux distributions typically install environment dependencies for
 
 Minimum requirements for a Linux (RPI ARM64) Data Collector device
 ------------------------------------------------------------------
-.. note:: The Linux (RPI ARM64) Data Collector is currently in beta.
 
 * Raspberry Pi 4 Model B (8GB)
 * 64 GB of free space (note: you must be using an SSD drive)
@@ -60,10 +59,12 @@ Minimum requirements for a Linux (RPI ARM64) Data Collector device
 
 * You must also have the following software installed:
 
-  * Docker 19.03.15 or later
-  * Docker Compose 1.29.2 or later
+  * Docker CE
+  * Docker Compose Plugin
 
-The supported Linux distributions typically install environment dependencies for the Data Collector by default. Please refer to the Read Me file included in the setup package for a complete list of dependencies.
+Docker Inc. provides `detailed installation documentation <https://docs.docker.com/engine/install/>`_.
+
+The supported Linux distributions typically install environment dependencies for the Data Collector by default. Please refer to the README file included in the setup package for a complete list of dependencies.
 
 Network requirements
 --------------------
@@ -76,7 +77,7 @@ Data Collector to assets
 ^^^^^^^^^^^^^^^^^^^^^^^^
 By default, Hyperview uses the following network ports to monitor and discover devices. Please make sure that the Data Collector can reach the targeted assets on the applicable ports for your site.
 
-.. note:: Linux Data Collectors currently only support SSH, SNMP, IPMI, and Modbus TCP protocols.
+.. note:: Linux Data Collectors currently only support SSH, SNMP, IPMI, Modbus TCP, and BACnet/IP protocols.
 
 .. list-table::
    :header-rows: 1
@@ -109,6 +110,9 @@ By default, Hyperview uses the following network ports to monitor and discover d
    * - AssetTracker
      - 4242
      - Not required
+   * - IxOS
+     - 443
+     - Username & Password
 
 ==============================
 Downloading the Data Collector
