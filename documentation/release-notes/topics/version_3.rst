@@ -60,6 +60,12 @@ Bulk Action improvements
 - Users can now update certain asset properties such as design value or desired temperature in bulk
 - Users can now set the Data Collector when doing Control Operations bulk updates
 
+============================
+Control Operations: Firmware
+============================
+
+For devices that use HTTP/HTTPS for firmware update. Users can now select either HTTP or HTTPS for the protocol and customize the port. The defaults will remain HTTPS and 443 for protocol and port respectively.
+
 ==========================
 Other notable improvements
 ==========================
