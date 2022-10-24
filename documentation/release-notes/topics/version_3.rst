@@ -4,9 +4,9 @@
 Version 3
 #########
 
-**********************************
+*******************
 Hyperview 3.9 (TBD)
-**********************************
+*******************
 This section covers significant changes and bug fixes in Hyperview 3.9.x since version 3.8.x.
 
 .. note:: This release has changes and improvements to the Data Collector software. It is strongly recommended to update your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
@@ -24,7 +24,6 @@ ServiceNow CMDB Sync has been improved in two ways:
 =========================================
 2D and 3D Layout Visualization: New Icons
 =========================================
-
 Power users and above can now add fire safety shapes to 2D and 3D layouts. The following new shapes have been added:
 
 - Sprinkler head
@@ -38,7 +37,6 @@ In addition, there was a host of minor bug fixes, usability and performance impr
 ======================================================
 BACnet/IP is now supported in the Linux Data Collector
 ======================================================
-
 The Linux Data Collector is now able to monitor BACnet/IP assets.
 
 .. note:: As part of this work, the Data Collector will act as a BACnet/IP client. The BACnet server functionality has been removed from the product.
@@ -46,46 +44,42 @@ The Linux Data Collector is now able to monitor BACnet/IP assets.
 ===========================
 Rack Temperature Management
 ===========================
-
 Rack temperature management has been improved.
 
-The Desired temperature property can now be set on the location and inherited by child racks. It is also customizable on a rack-by-rack basis.
+The desired temperature property can now be set on the location and inherited by child racks. It is also customizable on a rack-by-rack basis.
 
 Additional temperature thresholds have been added to allow users to trigger alarm events based on this new property. These thresholds are disabled by default and can be enabled by administrators.
 
 ========================
 Bulk Action improvements
 ========================
-
 - Users can now update certain asset properties such as design value or desired temperature in bulk
-- Users can now set the Data Collector when doing Control Operations bulk updates
+- Users can now set the Data Collector when doing control operations bulk updates
 
 ============================
 Control Operations: Firmware
 ============================
-
-For devices that use HTTP/HTTPS for firmware update. Users can now select either HTTP or HTTPS for the protocol and customize the port. The defaults will remain HTTPS and 443 for protocol and port respectively.
+For devices that use HTTP/HTTPS for firmware updates. Users can now select either HTTP or HTTPS for the protocol and customize the port. The defaults will remain HTTPS and 443 for protocol and port respectively.
 
 ==========================
 Other notable improvements
 ==========================
-
 - IPMI discovery for Supermicro has been improved. **Please make sure to update to the latest version of the Data Collector**
 - New customers will receive a new activation email template from the platform
 - The sensor value retrieval API has been refactored for more performance
 - The Settings navigation menu has been improved for better usability
 - User password validation rules have been improved
 - Asset weight is now indexed and can be used in Advanced Search
-- Asset properties that are inherited from the catalog data (such as rated power) are now indexed and can used in Advanced Search
+- Asset properties that are inherited from the catalog data (such as rated power) are now indexed and can be used in Advanced Search
 
 =================
 Notable bug fixes
 =================
 
-- **AS-12016** Fan sensors detected over IPMI had the wrong type. This is now fixed
-- **AS-12043** Certain browser settings can cause exported data filename to have the word "undefined" in place of timezone. This is now fixed
-- **AS-11959** AssetTracker RFID Tag collision Alarm Events could not be cleared under certain circumstances, this is now fixed
-- **AS-12145** Advanced search did not convert filter values to user locale settings. This is now fixed
+- **AS-12016** Fan sensors detected over IPMI had the wrong type
+- **AS-12043** Certain browser settings can cause exported data filename to have the word "undefined" in place of timezone
+- **AS-11959** AssetTracker RFID Tag collision alarm events could not be cleared under certain circumstances
+- **AS-12145** Advanced Search did not convert filter values to user locale settings
 
 *****
 
