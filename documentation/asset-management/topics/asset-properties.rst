@@ -1,10 +1,10 @@
 .. include:: /asset-management/media.rst
 .. _Important-asset-properties-doc:
 
-**************************
-Important asset properties
-**************************
-Assets can have many properties and many property types. These properties can be detected in one of three methods:
+****************
+Asset properties
+****************
+Assets can have many properties and many property types. These properties can be updated using one of the following methods:
 
 1. Discovery
 2. Inherited from catalog data
@@ -14,24 +14,26 @@ Assets can have many properties and many property types. These properties can be
 
 Asset properties can have an impact on how the system behaves. Some critical properties, especially identifying properties like serial number and GUID, cannot be changed once they have been populated by the auto-discovery process.
 
-Below is a list of some of the important ones.
+Asset properties are usually grouped using the following classifications.
 
 ====
 Base
 ====
-These are the properties of Name, Location, Type, Manufacturer and Model. The base properties tell Hyperview what the asset is and where it is in the system. The base properties of an asset are usually detected by the auto-discovery process. However, a user can always add an asset manually or override the data filled in by auto-discovery.
+These are the properties of Name, Location, Type, Manufacturer and Model. The base properties answer the what and where of the asset. What is it? and where is it?
+
+Base properties of an asset are usually detected by the auto-discovery process. However, a user can always update an asset manually or override the data filled in by auto-discovery.
 
 =======
 Contact
 =======
-For the location asset type, these properties contain, address, latitude, longitude and location contact information. The address property is always checked using the GoogleMaps API and once a match is found, the validated address is stored along with a reported latitude and longitude of the location.
+These are location-specific properties. They contain, the address, latitude, longitude and the location's human contact information. The address property is always checked using the GoogleMaps API and once a match is found, the validated address is stored along with the latitude and longitude reported by the API.
 
-This data is used to plot the asset on the map layout and is also used to read the available weather forecast. In addition to providing valuable contact information relating to the location to the platform users.
+This data is used to plot the asset on the map layout and is also used to read the available weather forecast.
 
 =======
 Cooling
 =======
-This section applies to locations and racks. It controls the behavior of the Delta-T calculation for racks that have linked temperature sensors. When set on a location, new racks will inherit the set value of the parent. Users however can override this value on rack-by-rack bases or in bulk if there is a need.
+This section applies to locations and racks. It controls the behavior of the Delta-T calculation for racks that have linked temperature sensors. New racks will use the parent location's setting. Users can override this value on rack-by-rack bases or in bulk if there is a need.
 
 =================
 Location Settings
@@ -41,17 +43,21 @@ Location settings contain properties that provide metadata about the location su
 =============
 Asset Tracker
 =============
-This applies to racks and assets that can be mounted in a rack. The AssetTracker Id property holds the RFID tag id which is used to automatically track the location of the asset. The Master Module Id property is rack specific and holds the ID of the master module assigned to the rack. More information is provided in the :ref:`Asset Tracker <AssetTracker-doc>` section.
+This applies to racks and assets that can be mounted in a rack. The **AssetTracker Id** property holds the RFID tag id which is used to automatically track the location of the asset.
+
+The **Master Module Id** property is rack specific and holds the ID of the master module assigned to the rack.
+
+More information is provided in the :ref:`Asset Tracker <AssetTracker-doc>` section.
 
 =======
 General
 =======
-These properties contain asset information such as serial number, firmware version and GUID. General properties can vary by asset type.
+These properties contain asset information such as serial number, firmware version and GUID. General properties can vary by asset type. It is required, however, that assets have at least a unique serial number.
 
 =====
 Model
 =====
-These properties are filled in from the product catalog. More information about model data and how it is managed is provided in the :ref:`Catalog Management <Catalog-management-doc>` section.
+These properties are usually filled in from the product catalog. More information about model data and how it is managed is provided in the :ref:`Catalog Management <Catalog-management-doc>` section.
 
 =====
 Power
