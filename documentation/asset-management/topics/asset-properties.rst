@@ -14,38 +14,44 @@ Assets can have many properties and many property types. These properties can be
 
 Asset properties can have an impact on how the system behaves. Some critical properties, especially identifying properties like serial number and GUID, cannot be changed once they have been populated by the auto-discovery process.
 
-Asset properties are usually grouped using the following classifications.
+Asset properties are usually grouped under the following types:
 
 ====
 Base
 ====
-These are the properties of Name, Location, Type, Manufacturer and Model. The base properties answer the what and where of the asset. What is it? and where is it?
+These are the properties of Name, Location, Type, Manufacturer and Model. The base properties answer the **what** and **where** questions of an asset.
 
 Base properties of an asset are usually detected by the auto-discovery process. However, a user can always update an asset manually or override the data filled in by auto-discovery.
+
+For manually added assets, these properties can be set individually or in bulk using the **Import** feature.
 
 =======
 Contact
 =======
-These are location-specific properties. They contain, the address, latitude, longitude and the location's human contact information. The address property is always checked using the GoogleMaps API and once a match is found, the validated address is stored along with the latitude and longitude reported by the API.
+These are location-specific properties. They contain, the address, latitude, longitude and the location's human contact information.
+
+The address property is always checked using the GoogleMaps API and once a match is found, the validated address is stored along with the latitude and longitude reported by the API.
 
 This data is used to plot the asset on the map layout and is also used to read the available weather forecast.
 
 =======
 Cooling
 =======
-This section applies to locations and racks. It controls the behavior of the Delta-T calculation for racks that have linked temperature sensors. New racks will use the parent location's setting. Users can override this value on rack-by-rack bases or in bulk if there is a need.
+This type applies to locations and racks. It controls the behavior of the Delta-T calculation for racks that have linked temperature sensors. New racks will use the parent location's setting. Users can override this value on rack-by-rack bases or in bulk if there is a need.
 
 =================
 Location Settings
 =================
-Location settings contain properties that provide metadata about the location such as location type, and properties that dictate the default values set for new racks created under the location. The rack design property sets the power "design value" which is the power budget for the rack and the "desired temperature" sets the desired temperature value.
+This type applies to locations. Location settings contain properties that provide metadata about the location such as location type, and properties that dictate the default values set for new racks created under the location.
+
+The **Rack Design** property sets the power **Design Value** which is the power budget for the rack and the **Desired Temperature** sets the desired average temperature value for the rack.
 
 =============
 Asset Tracker
 =============
-This applies to racks and assets that can be mounted in a rack. The **AssetTracker Id** property holds the RFID tag id which is used to automatically track the location of the asset.
+This type applies to racks and assets that can be mounted in a rack. The **AssetTracker Id** property holds the RFID tag id which is used to automatically track the location of the asset.
 
-The **Master Module Id** property is rack specific and holds the ID of the master module assigned to the rack.
+The **Master Module Id** property is rack specific and it holds the ID of the master module assigned to the rack.
 
 More information is provided in the :ref:`Asset Tracker <AssetTracker-doc>` section.
 
@@ -62,22 +68,24 @@ These properties are usually filled in from the product catalog. More informatio
 =====
 Power
 =====
-These properties hold information such as the number of phases, rated power, number of outlets and power factor. These properties are usually provided by the product catalog or by the auto-discovery process. In some cases, for example, they can be provided by the user when an asset is added manually.
+This type applies to power-providing and power consuming assets. They hold information such as the number of phases, rated power, number of outlets, power factor and other power properties.
 
-Power properties are especially important for power-providing assets such as rack PDUs. They can influence alarm event triggers, such as a warning when reaching 80% of rated power. Or can influence the behavior of other asset pages such as the layout page.
+Power properties are usually provided by the product catalog or by the auto-discovery process. In some cases, they can be updated by the user when an asset is added manually.
 
-Location-specific
------------------
+Power properties are especially important for power-providing assets such as rack PDUs. They can influence alarm event triggers, such as a warning when reaching 80% of rated power. Or can influence the behavior of other power-related asset pages such as the layout page of a rack PDU.
+
+Location-specific power properties
+----------------------------------
 - **Design value** is the power budget in Watts for the location, this setting influences alarm event thresholds and power charts for the location
-- **IT Energy Setting** controls how the IT Energy sensor for the location is derived, and it impacts PUE calculations
+- **IT Energy Setting** controls how the IT Energy sensor for the location is derived, and it selects the appropriate PUE calculation for the location.
 - **Rack Total Power Setting** controls the default total power sensor calculation for child racks created under the location. Users can override this setting for specific racks
 
-Rack-specific
--------------
+Rack-specific power properties
+------------------------------
 - **Design value** is the power budget in Watts for the rack, this setting influences alarm event thresholds and power charts for the rack. The default setting of this value is set by the parent location's "Rack Design" property. Users can override this setting for specific racks
 - **Rack Total Power Setting** controls the calculation method for the Total Power sensor. The default method is set by the parent location. Users can override this setting for specific racks
 
 ====
 SNMP
 ====
-Where applicable, some SNMP properties are read by the auto-discovery process and provided to users as extra meta data, such as configured device contact, system Description, etc. This data is useful when seeing if devices have been configured properly and when troubleshooting issues.
+Where applicable, some SNMP properties are read by the auto-discovery process and provided to users as extra metadata, such as configured device contact, and system Description. This data is useful when seeing if devices have been configured properly and when troubleshooting issues.
