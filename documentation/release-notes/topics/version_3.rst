@@ -206,7 +206,7 @@ Notable bug fixes
 - **AS-11399:** Sensor graph does not get generated upon switching from a time range that has no data to a time range with data
 - **AS-11306:** Information dropdown not optimized for lower resolution screens
 - **AS-11412:** While editing a floor plan layout, Snap to Grid becomes read-only upon selection
-- **AS-11795:** All location status not updated under certain circumstances
+- **AS-11795:** All-location status not updated under certain circumstances
 - **AS-11908:** Mobile navbar cuts off for lower resolution mobile devices
 
 *****
