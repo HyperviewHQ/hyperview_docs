@@ -65,6 +65,7 @@ For devices that use HTTP/HTTPS for firmware updates. Users can now select eithe
 Other notable improvements
 ==========================
 - IPMI discovery for Supermicro has been improved. **Please make sure to update to the latest version of the Data Collector**
+- Network devices will now show the interface alias if there is one configured and the device supports RFC2863
 - New customers will receive a new activation email template from the platform
 - The sensor value retrieval API has been refactored for more performance
 - The Settings navigation menu has been improved for better usability
