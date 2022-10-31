@@ -68,7 +68,7 @@ These properties are usually filled in from the product catalog. More informatio
 =====
 Power
 =====
-This type applies to power-providing and power consuming assets. They hold information such as the number of phases, rated power, number of outlets, power factor and other power properties.
+This type applies to power-providing and power-consuming assets. They hold information such as the number of phases, rated power, number of outlets, power factor and other power properties.
 
 Power properties are usually provided by the product catalog or by the auto-discovery process. In some cases, they can be updated by the user when an asset is added manually.
 
