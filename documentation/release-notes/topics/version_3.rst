@@ -71,7 +71,7 @@ Other notable improvements
 - The Settings navigation menu has been improved for better usability
 - User password validation rules have been improved
 - Asset weight is now indexed and can be used in Advanced Search
-- Asset properties that are inherited from the catalog data (such as rated power) are now indexed and can be used in Advanced Search
+- Asset properties that are inherited from the catalog, such as rated power, rated voltage and consumed rack units, are now indexed and can be used in Advanced Search
 
 =================
 Notable bug fixes
