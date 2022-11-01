@@ -77,7 +77,7 @@ Availability of bulk actions depends on two factors: your :ref:`user role<User-a
      - Power User
      - Infrastructure Management
    * - *Update Control Operations Data Collector*
-     - Sets a Control Operations Data Collector for selected assets
+     - Updates Control Operations Data Collector for selected assets
      - Administrator
      - Rack Security or Firmware Management
    * - *Update Firmware Control Credentials*
