@@ -31,6 +31,9 @@ Minimum requirements for a Windows Data Collector server
 
 Minimum requirements for a Linux (AMD64) Data Collector server
 --------------------------------------------------------------
+
+.. note:: The Linux Data Collector does not support VMWare, IxOS, and WMI discovery protocols.
+
 * 4 CPU cores
 * 8 GB of RAM
 * 64 GB of free space in the /opt partition or where the /opt directory resides
@@ -52,6 +55,8 @@ The supported Linux distributions typically install environment dependencies for
 
 Minimum requirements for a Linux (RPI ARM64) Data Collector device
 ------------------------------------------------------------------
+
+.. note:: The Linux Data Collector does not support VMWare, IxOS, and WMI discovery protocols.
 
 * Raspberry Pi 4 Model B (8GB)
 * 64 GB of free space (note: you must be using an SSD drive)
@@ -75,9 +80,7 @@ The Data Collector uses HTTPS/TLS (TCP/443) to communicate with Hyperview. The d
 
 Data Collector to assets
 ^^^^^^^^^^^^^^^^^^^^^^^^
-By default, Hyperview uses the following network ports to monitor and discover devices. Please make sure that the Data Collector can reach the targeted assets on the applicable ports for your site.
-
-.. note:: Linux Data Collectors currently only support SSH, SNMP, IPMI, Modbus TCP, and BACnet/IP protocols.
+Please make sure that the Data Collector can reach the targeted assets on the applicable ports for your site. Below is a list of the default ports the Data Collector will use, other ports can be used if needed or applicable.
 
 .. list-table::
    :header-rows: 1
@@ -87,7 +90,7 @@ By default, Hyperview uses the following network ports to monitor and discover d
      - Ports
      - Credential Requirements
    * - SNMP
-     - 161 (gets, sets) and 162 (traps)
+     - 161 (gets, sets)
      - Community string or SNMPv3 credentials
    * - Modbus/TCP
      - 502
@@ -107,12 +110,34 @@ By default, Hyperview uses the following network ports to monitor and discover d
    * - VMware
      - 443
      - Username & Password
-   * - AssetTracker
-     - 4242
-     - Not required
    * - IxOS
      - 443
      - Username & Password
+   * - Firmware update
+     - 443 or 80
+     - Username & Password
+
+Assets to Data Collector
+^^^^^^^^^^^^^^^^^^^^^^^^
+Please make sure that the asset can reach the targeted Data Collector on the applicable ports for your site. Below is a list of the default ports the Data Collector will use, other ports can be used if needed or applicable.
+
+.. list-table::
+   :header-rows: 1
+   :align: left
+
+   * - Protocol
+     - Ports
+     - Credential Requirements
+   * - SNMP traps
+     - 162
+     - None
+   * - AssetTracker
+     - 4242
+     - Not required
+
+Firewall considerations
+^^^^^^^^^^^^^^^^^^^^^^^
+Firewalls can interfere with Data Collector communication. It is recommended to test connectivity for the protocols and features you use. The asset discovery report can provide information that may be helpful in troubleshooting connectivity issues.
 
 ==============================
 Downloading the Data Collector
