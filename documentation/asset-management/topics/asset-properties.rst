@@ -14,6 +14,8 @@ Assets can have many properties and many property types. These properties can be
 
 Asset properties can have an impact on how the system behaves. Some critical properties, especially identifying properties like Serial Number and GUID, cannot be changed once they have been populated by the auto-discovery process.
 
+.. note:: Certain properties such as "Rack Design" are copied from a property set on the parent location. This is done on asset creation only.
+
 Asset properties are usually grouped under the following types:
 
 ====
@@ -78,12 +80,12 @@ Location-specific power properties
 ----------------------------------
 - **Design Value** is the power budget in Watts for the location, this setting influences alarm event thresholds and power charts for the location.
 - **IT Energy Setting** controls how the IT Energy sensor for the location is derived, and it selects the appropriate PUE calculation for the location.
-- **Rack Total Power Setting** controls the default total power sensor calculation for child racks created under the location. Users can override this setting per rack.
+- **Rack Total Power Setting** sets the initial default total power sensor calculation for child racks created under the location. Users can override this setting per rack.
 
 Rack-specific power properties
 ------------------------------
-- **Design Value** is the power budget in Watts for the rack, this setting influences alarm event thresholds and power charts for the rack. The default setting of this value is set by the parent location's "Rack Design" property. Users can override this setting for specific racks.
-- **Rack Total Power Setting** controls the calculation method for the Total Power sensor. The default method is set by the parent location. Users can override this setting per rack.
+- **Design Value** is the power budget in Watts for the rack, this setting influences alarm event thresholds and power charts for the rack. The default setting of this value is copied from the parent location's "Rack Design" property at creation. Users can override this setting for specific racks.
+- **Rack Total Power Setting** controls the calculation method for the Total Power sensor. TThe default method is copied from the parent location at creation. Users can override this setting per rack.
 
 ====
 SNMP
