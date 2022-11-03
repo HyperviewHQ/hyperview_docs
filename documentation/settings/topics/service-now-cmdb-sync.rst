@@ -46,7 +46,7 @@ Users are able to customize which asset types to sync. By default, all types are
 
 .. image:: /settings/media/servicenow_asset_types.png
    :width: 1801
-   :alt: ServiceNow CMDB Supported asset types
+   :alt: ServiceNow CMDB supported asset types
 
 ================
 Property mapping
