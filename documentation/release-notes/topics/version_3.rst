@@ -72,6 +72,7 @@ Other notable improvements
 - User password validation rules have been improved
 - Asset weight is now indexed and can be used in Advanced Search
 - Asset properties that are inherited from the catalog, such as rated power, rated voltage and consumed rack units, are now indexed and can be used in Advanced Search
+- Power Supplies can now be added as custom components
 
 =================
 Notable bug fixes
