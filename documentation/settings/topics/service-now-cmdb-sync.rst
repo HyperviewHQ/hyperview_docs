@@ -9,6 +9,7 @@ ServiceNow CMDB Sync
 
 The ServiceNow CMDB Sync integration is a data mapping and data push service to the `ServiceNow Import Set API <https://docs.servicenow.com/bundle/rome-application-development/page/integrate/inbound-rest/concept/c_ImportSetAPI.html>`_.
 
+
 .. image:: /settings/media/servicenow_cmdb_diagram.png
    :width: 975
    :alt: ServiceNow CMDB integration diagram
@@ -45,7 +46,7 @@ Users are able to customize which asset types to sync. By default, all types are
 
 .. image:: /settings/media/servicenow_asset_types.png
    :width: 1801
-   :alt: ServiceNow CMDB integration overview
+   :alt: ServiceNow CMDB Supported asset types
 
 ================
 Property mapping
@@ -55,7 +56,7 @@ Property mapping is customizable. Properties can be enabled or disabled, and the
 
 .. image:: /settings/media/servicenow_field_mapping.png
    :width: 1800
-   :alt: ServiceNow CMDB integration field mapping
+   :alt: ServiceNow CMDB integration property mapping
 
 Note that when there are ID and name fields returned as an array, the sorting order will be the same. For example, if the asset has two power-providing assets, the name and ID order in their respective arrays will be the same. This is done to make it easier to write data reconciliation rules on the ServiceNow side.
 
