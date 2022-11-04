@@ -1,4 +1,5 @@
 .. include:: /auto-discovery/media.rst
+.. _Setting-up-data-collectors-doc:
 
 **************************
 Setting up Data Collectors
