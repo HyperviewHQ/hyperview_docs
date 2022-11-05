@@ -54,7 +54,8 @@ Additional temperature thresholds have been added to allow users to trigger alar
 Bulk Action improvements
 ========================
 - Users can now update certain asset properties such as design value or desired rack temperature in bulk
-- Users can now set the Data Collector when doing control operations bulk updates
+- Users can now set the control operations Data Collector
+- Users can now set the control operations firmware update credentials
 
 ============================
 Control Operations: Firmware
@@ -73,6 +74,7 @@ Other notable improvements
 - Asset weight is now indexed and can be used in Advanced Search
 - Asset properties that are inherited from the catalog, such as rated power, rated voltage and consumed rack units, are now indexed and can be used in Advanced Search
 - Power Supplies can now be added as custom components
+- The "Desired Temperature" property name has been renamed to "Desired Rack Temperature" to better reflect its function
 
 =================
 Notable bug fixes
