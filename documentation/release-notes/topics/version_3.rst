@@ -46,14 +46,14 @@ Rack Temperature Management
 ===========================
 Rack temperature management has been improved.
 
-The desired temperature property can now be set on the location and inherited by child racks. It is also customizable on a rack-by-rack basis.
+The desired rack temperature property can now be set on the location and inherited by child racks. It is also customizable on a rack-by-rack basis.
 
 Additional temperature thresholds have been added to allow users to trigger alarm events based on this new property. These thresholds are disabled by default and can be enabled by administrators.
 
 ========================
 Bulk Action improvements
 ========================
-- Users can now update certain asset properties such as design value or desired temperature in bulk
+- Users can now update certain asset properties such as design value or desired rack temperature in bulk
 - Users can now set the Data Collector when doing control operations bulk updates
 
 ============================
