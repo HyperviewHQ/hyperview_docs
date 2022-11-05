@@ -46,7 +46,7 @@ Location settings
 =================
 These properties apply to locations. Location settings contain properties that provide metadata about the location such as location type, and properties that dictate the default values set for new racks created under the location.
 
-The **Rack Design** property sets the power **Design Value** which is the power budget for the rack and the **Desired Temperature** sets the desired average temperature value for the rack.
+The **Rack Design** property sets the power **Design Value** which is the power budget for the rack and the **Desired Rack Temperature** sets the desired average temperature value for the rack.
 
 ============
 AssetTracker
