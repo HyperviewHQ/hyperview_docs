@@ -8,7 +8,7 @@ Assets can have many properties and many property types. These properties can be
 
 1. Discovery
 2. Inherited from catalog data
-3. Inherited from the parent asset
+3. Inherited from the parent asset at creation
 4. Filled by a third-party integration
 5. Inputted by the user
 

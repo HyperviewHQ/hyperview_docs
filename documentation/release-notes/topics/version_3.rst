@@ -80,7 +80,7 @@ Other notable improvements
 Known issues
 ============
 - **AS-12305** When navigating to advanced search results from a direct link, further filtering can be broken if the search location is not the All location
-- **AS-12317** If a PDU with Rack Door Security is moved between two racks the Asset Tree decoration will be displayed on both racks until the next browser refresh
+- **AS-12317** If a Rack PDU with rack door security is moved between two racks the Asset Tree decoration will be displayed on both racks until the next browser refresh
 
 =================
 Notable bug fixes
