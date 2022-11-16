@@ -4,6 +4,95 @@
 Version 3
 #########
 
+*********************************
+Hyperview 3.9 (November 16, 2022)
+*********************************
+This section covers significant changes and bug fixes in Hyperview 3.9.x since version 3.8.x.
+
+.. note:: This release has changes and improvements to the Data Collector software. It is strongly recommended to update your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
+
+=============================================================
+Enhanced Licensed Feature: ServiceNow CMDB Sync Field Mapping
+=============================================================
+ServiceNow CMDB Sync has been improved in two ways:
+
+1. Hyperview asset data fields are now exposed and can be mapped to custom import field names within the Import Set Table
+2. Administrators can now control which asset types to sync to ServiceNow CMDB
+
+.. note:: Please contact our Sales team if you are interested in getting a ServiceNow CMDB Sync license.
+
+=========================================
+2D and 3D Layout Visualization: New Icons
+=========================================
+Power users and above can now add fire safety shapes to 2D and 3D layouts. The following new shapes have been added:
+
+- Sprinkler head
+- Fire extinguisher
+- Smoke detector
+- Fire strobe
+- Fire alarm pull
+
+In addition, there was a host of minor bug fixes, usability and performance improvements.
+
+======================================================
+BACnet/IP is now supported in the Linux Data Collector
+======================================================
+The Linux Data Collector is now able to monitor BACnet/IP assets.
+
+.. note:: As part of this work, the Data Collector will act as a BACnet/IP client. The BACnet server functionality has been removed from the product.
+
+===========================
+Rack Temperature Management
+===========================
+Rack temperature management has been improved.
+
+The desired rack temperature property can now be set on the location and inherited by child racks. It is also customizable on a rack-by-rack basis.
+
+Additional temperature thresholds have been added to allow users to trigger alarm events based on this new property. These thresholds are disabled by default and can be enabled by administrators.
+
+========================
+Bulk Action improvements
+========================
+- Users can now update certain asset properties such as design value or desired rack temperature in bulk
+- Users can now set the control operations Data Collector
+- Users can now set the control operations firmware update credentials
+
+============================
+Control Operations: Firmware
+============================
+For devices that use HTTP/HTTPS for firmware updates. Users can now select either HTTP or HTTPS for the protocol and customize the port. The defaults will remain HTTPS and 443 for protocol and port respectively.
+
+==========================
+Other notable improvements
+==========================
+- IPMI discovery for Supermicro has been improved. **Please make sure to update to the latest version of the Data Collector**
+- Network devices will now show the interface alias if there is one configured and the device supports RFC2863
+- New customers will receive a new activation email template from the platform
+- The sensor value retrieval API has been refactored for more performance
+- The Settings navigation menu has been improved for better usability
+- User password validation rules have been improved
+- Asset weight is now indexed and can be used in Advanced Search
+- Asset properties that are inherited from the catalog, such as rated power, rated voltage and consumed rack units, are now indexed and can be used in Advanced Search
+- Power Supplies can now be added as custom components
+- The "Desired Temperature" property name has been renamed to "Desired Rack Temperature" to better reflect its function
+
+============
+Known issues
+============
+- **AS-12305** When navigating to advanced search results from a direct link, further filtering can be broken if the search location is not the All location
+- **AS-12317** If a Rack PDU with rack door security is moved between two racks the Asset Tree decoration will be displayed on both racks until the next browser refresh
+
+=================
+Notable bug fixes
+=================
+- **AS-12016** Fan sensors detected over IPMI had the wrong type
+- **AS-12043** Certain browser settings can cause exported data filename to have the word "undefined" in place of timezone
+- **AS-11959** AssetTracker RFID Tag collision alarm events could not be cleared under certain circumstances
+- **AS-12145** Advanced Search did not convert filter values to user locale settings
+- **AS-12288** Small rectangle grids could not be created in 2D location layout
+
+*****
+
 **********************************
 Hyperview 3.8 (September 16, 2022)
 **********************************
@@ -126,7 +215,7 @@ Notable bug fixes
 - **AS-11399:** Sensor graph does not get generated upon switching from a time range that has no data to a time range with data
 - **AS-11306:** Information dropdown not optimized for lower resolution screens
 - **AS-11412:** While editing a floor plan layout, Snap to Grid becomes read-only upon selection
-- **AS-11795:** All location status not updated under certain circumstances
+- **AS-11795:** All-location status not updated under certain circumstances
 - **AS-11908:** Mobile navbar cuts off for lower resolution mobile devices
 
 *****

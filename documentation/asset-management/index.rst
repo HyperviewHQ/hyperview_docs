@@ -18,5 +18,7 @@ As an application Hyperview is robust enough to recognize and correctly categori
    topics/navigating-assets
    topics/overview-of-asset-pages
    topics/adding-assets
+   topics/asset-properties
+   topics/custom-properties
    topics/bulk-actions
    topics/managing-sensors

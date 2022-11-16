@@ -20,40 +20,81 @@ Supported bulk actions
 ======================
 Availability of bulk actions depends on two factors: your :ref:`user role<User-accounts-doc>` and your :ref:`feature licenses<View-license-doc>`. The following bulks actions are currently supported in Hyperview:
 
-+----------------------------------+-----------------------------------------------------------------------------+---------------------+---------------------------+
-| Bulk Action                      | Description                                                                 | Minimum User Role   | Relevant Feature License  |
-+==================================+=============================================================================+=====================+===========================+
-| *Add Document Association*       | Associates a document with the selected assets                              | Power User          | Document Management       |
-+----------------------------------+-----------------------------------------------------------------------------+---------------------+---------------------------+
-| *Remove Document Association*    | Removes a document association from the selected assets                     | Power User          | Document Management       |
-+----------------------------------+-----------------------------------------------------------------------------+---------------------+---------------------------+
-| *Delete*                         | Deletes the selected assets                                                 | Data Center Manager | Infrastructure Management |
-+----------------------------------+-----------------------------------------------------------------------------+---------------------+---------------------------+
-| *Enable Monitoring*              | Turns on asset monitoring for the selected assets                           | Power User          | Infrastructure Management |
-+----------------------------------+-----------------------------------------------------------------------------+---------------------+---------------------------+
-| *Disable Monitoring*             | Turns off asset monitoring for the selected assets                          | Power User          | Infrastructure Management |
-+----------------------------------+-----------------------------------------------------------------------------+---------------------+---------------------------+
-| *Start Watching*                 | Starts watching the selected assets for the current user                    | Read Only           | Infrastructure Management |
-+----------------------------------+-----------------------------------------------------------------------------+---------------------+---------------------------+
-| *Stop Watching*                  | Stops watching the selected assets for the current user                     | Read Only           | Infrastructure Management |
-+----------------------------------+-----------------------------------------------------------------------------+---------------------+---------------------------+
-| *Update Access Policy*           | Updates the access policy for selected assets                               | Administrator       | Infrastructure Management |
-+----------------------------------+-----------------------------------------------------------------------------+---------------------+---------------------------+
-| *Update Control Credentials*     | Updates control credentials for the selected assets                         | Administrator       | Rack Security             |
-+----------------------------------+-----------------------------------------------------------------------------+---------------------+---------------------------+
-| *Update Custom Property*         | Updates a certain custom property for the selected assets                   | Power User          | Infrastructure Management |
-+----------------------------------+-----------------------------------------------------------------------------+---------------------+---------------------------+
-| *Update Lifecycle*               | Updates asset lifecycle properties of the selected assets                   | Power User          | Infrastructure Management |
-+----------------------------------+-----------------------------------------------------------------------------+---------------------+---------------------------+
-| *Update Model*                   | Updates the type, model, and manufacturer for selected assets               | Power User          | Infrastructure Management |
-+----------------------------------+-----------------------------------------------------------------------------+---------------------+---------------------------+
+.. list-table::
+   :header-rows: 1
+   :align: left
+
+   * - Bulk Action
+     - Description
+     - Minimum User Role
+     - Relevant Feature License
+   * - *Add Document Association*
+     - Associates a document with the selected assets
+     - Power User
+     - Document Management
+   * - *Remove Document Association*
+     - Removes a document association from the selected assets
+     - Power User
+     - Document Management
+   * - *Delete*
+     - Deletes the selected assets
+     - Data Center Manager
+     - Infrastructure Management
+   * - *Enable Monitoring*
+     - Turns on asset monitoring for the selected assets
+     - Power User
+     - Infrastructure Management
+   * - *Disable Monitoring*
+     - Turns off asset monitoring for the selected assets
+     - Power User
+     - Infrastructure Management
+   * - *Start Watching*
+     - Starts watching the selected assets for the current user
+     - Read Only
+     - Infrastructure Management
+   * - *Stop Watching*
+     - Stops watching the selected assets for the current user
+     - Read Only
+     - Infrastructure Management
+   * - *Update Access Policy*
+     - Updates the access policy for selected assets
+     - Administrator
+     - Infrastructure Management
+   * - *Update Asset Property*
+     - Updates a certain property for the selected assets
+     - Power User
+     - Infrastructure Management
+   * - *Update Custom Property*
+     - Updates a certain custom property for the selected assets
+     - Power User
+     - Infrastructure Management
+   * - *Update Lifecycle*
+     - Updates asset lifecycle properties of the selected assets
+     - Power User
+     - Infrastructure Management
+   * - *Update Model*
+     - Updates the type, model, and manufacturer for selected assets
+     - Power User
+     - Infrastructure Management
+   * - *Update Control Operations Data Collector*
+     - Updates the control operations Data Collector for selected assets
+     - Administrator
+     - Rack Security or Firmware Management
+   * - *Update Firmware Control Credentials*
+     - Updates firmware control credentials for the selected assets
+     - Administrator
+     - Rack Security or Firmware Management
+   * - *Update SNMP Control Credentials*
+     - Updates SNMP control credentials for the selected assets
+     - Administrator
+     - Rack Security or Firmware Management
 
 ========================
 Performing a bulk action
 ========================
 The user experience of performing a bulk action is virtually identical for most bulk actions (see Bulk Delete example below) except Update Lifecycle and Update Model (see below). For all bulk actions, **only** the user who initiated it will receive an email notification if the "Receive email notification..." option was selected.
 
-.. note:: You can perform a bulk action against a maximum of 1,000 rows (spread across any number of pages in a multi-page grid). 
+.. note:: You can perform a bulk action against a maximum of 1,000 rows (spread across any number of pages in a multi-page grid).
 
 .. tip:: Clicking the selection checkbox in the grid header selects all rows on the **current** grid page. To select rows on other grid pages, click a page link and proceed to select rows (all or individually, as needed).
 
