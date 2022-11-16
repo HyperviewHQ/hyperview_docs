@@ -12,7 +12,7 @@ Asset custom properties allow users to extend the range of data that is stored i
 
 Custom properties can be managed by navigating to the :ref:`Settings -> Custom properties<Managing-custom-properties-doc>` page.
 
-Custom properties can be updated in the following ways.
+Custom properties can be updated in the following ways:
 
 - Manual input by the user
 - Import (CSV file)

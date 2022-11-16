@@ -39,7 +39,7 @@ This data is used to plot the location on the map layout and is also used to rea
 =======
 Cooling
 =======
-These properties apply to locations and racks. It controls the behavior of the Delta-T calculation for racks that have linked temperature sensors. New racks will clone their parent location's setting. Users can override this value per rack or in bulk.
+These properties apply to locations and racks. The Rack Delta-T Calculation Orientation property controls the behavior of the Delta-T calculation for racks that have linked temperature sensors. New racks will clone their parent location's setting. Users can override this value per rack or in bulk.
 
 =================
 Location settings
@@ -85,7 +85,7 @@ Location-specific power properties
 Rack-specific power properties
 ------------------------------
 - **Design Value** is the power budget in Watts for the rack, this setting influences alarm event thresholds and power charts for the rack. The default setting of this value is copied from the parent location's "Rack Design" property at creation. Users can override this setting for specific racks.
-- **Rack Total Power Setting** controls the calculation method for the Total Power sensor. TThe default method is copied from the parent location at creation. Users can override this setting per rack.
+- **Rack Total Power Setting** controls the calculation method for the Total Power sensor. The default method is copied from the parent location at creation. Users can override this setting per rack.
 
 ====
 SNMP
