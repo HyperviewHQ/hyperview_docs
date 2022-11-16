@@ -4,9 +4,9 @@
 Version 3
 #########
 
-*******************
-Hyperview 3.9 (TBD)
-*******************
+*********************************
+Hyperview 3.9 (November 16, 2022)
+*********************************
 This section covers significant changes and bug fixes in Hyperview 3.9.x since version 3.8.x.
 
 .. note:: This release has changes and improvements to the Data Collector software. It is strongly recommended to update your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
@@ -76,14 +76,20 @@ Other notable improvements
 - Power Supplies can now be added as custom components
 - The "Desired Temperature" property name has been renamed to "Desired Rack Temperature" to better reflect its function
 
+============
+Known issues
+============
+- **AS-12305** When navigating to advanced search results from a direct link, further filtering can be broken if the search location is not the All location
+- **AS-12317** If a PDU with Rack Door Security is moved between two racks the Asset Tree decoration will be displayed on both racks until the next browser refresh
+
 =================
 Notable bug fixes
 =================
-
 - **AS-12016** Fan sensors detected over IPMI had the wrong type
 - **AS-12043** Certain browser settings can cause exported data filename to have the word "undefined" in place of timezone
 - **AS-11959** AssetTracker RFID Tag collision alarm events could not be cleared under certain circumstances
 - **AS-12145** Advanced Search did not convert filter values to user locale settings
+- **AS-12288** Small rectangles could not be created in 2D location layout
 
 *****
 
