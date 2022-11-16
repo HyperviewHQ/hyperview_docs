@@ -89,7 +89,7 @@ Notable bug fixes
 - **AS-12043** Certain browser settings can cause exported data filename to have the word "undefined" in place of timezone
 - **AS-11959** AssetTracker RFID Tag collision alarm events could not be cleared under certain circumstances
 - **AS-12145** Advanced Search did not convert filter values to user locale settings
-- **AS-12288** Small rectangles could not be created in 2D location layout
+- **AS-12288** Small rectangle grids could not be created in 2D location layout
 
 *****
 
