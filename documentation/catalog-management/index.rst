@@ -1,4 +1,5 @@
 .. include:: /catalog-management/media.rst
+.. _Catalog-management-doc:
 
 ##################
 Catalog Management

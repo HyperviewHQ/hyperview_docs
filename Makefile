@@ -1,6 +1,6 @@
 SOURCEDIR = "./documentation"
 BUILDDIR = "./site/documentation/_build"
-REDOCCLI = "node_modules/.bin/redoc-cli"
+REDOCCLI = "./node_modules/.bin/redoc-cli"
 REDOCTARGET = "https://nightly.hyperviewhq.com/api/docs/manager/3.0/swagger.json"
 
 docker:

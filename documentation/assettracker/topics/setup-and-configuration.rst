@@ -76,3 +76,9 @@ Adding and auditing asset tags
 |audit|
 
 Assuming there are no placement collisions or errors, the asset will be moved to the correct rack U in the Rack Elevation within a few minutes. It will also be surfaced on the Asset Audit page for the rack (rack → *Information → Asset Audit*). Proceed to add more asset tags for other racked devices. Please contact Hyperview Support if you need to attach extension modules.
+
+====================
+Network requirements
+====================
+
+AssetTracker master modules must be configured to communicate with a Data Collector. Communication is from the module to the Data Collector. The AssetTracker Service listens on TCP Port 4242. The :ref:`Data Collector setup documentation<Setting-up-data-collectors-doc>` has more information on the network requirements.
