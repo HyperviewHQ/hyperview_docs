@@ -91,6 +91,13 @@ Notable bug fixes
 - **AS-12145** Advanced Search did not convert filter values to user locale settings
 - **AS-12288** Small rectangle grids could not be created in 2D location layout
 
+========================
+Changes in version 3.9.1
+========================
+- **AS-12289** Fixed an issue where the same GUID returned over IPMI can cause Dell servers to be merged
+- **AS-12326** Fixed an issue that caused layouts without a grid to not be rendered correctly
+- **AS-6832** Enhanced results view in the asset picker component to support more than 10 search results
+
 *****
 
 **********************************
