@@ -98,6 +98,13 @@ Changes in version 3.9.1
 - **AS-12326** Fixed an issue that caused layouts without a grid to not be rendered correctly
 - **AS-6832** Enhanced results view in the asset picker component to support more than 10 search results
 
+========================
+Changes in version 3.9.2
+========================
+- **AS-12199** Fixed an issue that caused the NICs discovered in a Juniper EX switch stack to be added to the primary switch instead of the applicable member of the stack
+- **AS-12329** Fixed an issue that caused the Desired Rack Temperature warning threshold to be missing a "less than" condition
+- **AS-12242** Enhanced Juniper EX series switch support to discover and monitor internal sensors
+
 *****
 
 **********************************
