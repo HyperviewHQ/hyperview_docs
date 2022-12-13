@@ -104,6 +104,17 @@ Changes in version 3.9.2
 - **AS-12329** Fixed an issue that caused the Desired Rack Temperature warning threshold to be missing a "less than" condition
 - **AS-12392** Fixed an issue that caused the property list to be empty when adding new property-based sensor thresholds
 
+========================
+Changes in version 3.9.3
+========================
+- **AS-11880** Fixed an issue that caused certain switches to be merged
+- **AS-12397** Fixed a bug that caused the storage gauge to appear broken under certain conditions
+- **AS-12199** Enhanced Juniper EX virtual chassis support
+- **AS-12217** Enhanced support for RLE technologies sensors
+- **AS-12242** Enhanced support for Juniper EX switch sensors
+- **AS-12318** Enhanced support for Rittal LCP Cooling systems
+- **AS-12346** Added support for Servercheck SensorGateway
+
 *****
 
 **********************************
