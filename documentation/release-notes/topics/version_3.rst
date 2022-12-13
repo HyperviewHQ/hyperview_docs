@@ -107,7 +107,7 @@ Changes in version 3.9.2
 ========================
 Changes in version 3.9.3
 ========================
-- **AS-11880** Fixed an issue that caused certain Cisco switches to be merged
+- **AS-11880** Fixed an issue that caused certain switches to be merged
 - **AS-12397** Fixed a bug that caused the storage gauge to appear broken under certain conditions
 - **AS-12199** Enhanced Juniper EX virtual chassis support
 - **AS-12217** Enhanced support for RLE technologies sensors

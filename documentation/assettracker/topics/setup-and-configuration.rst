@@ -35,7 +35,9 @@ Since rack sizes can vary, please refer to the following table for assembly conf
 
 .. note:: You can use the Expected Rack Units and Top of Rack Offset (RU) fields on the rack's Properties page (*rack → Information → Properties*) to fine-tune your setup or accommodate additional assembly configurations and rack sizes, as needed. Please attach master modules and extension modules accordingly.
 
-Rack assemblies must be configured with a tool to point them to an applicable Data Collector. The first-generation Rack Assemblies will listen on port 502/TCP. The configuration must be done from a Windows machine running the configuration tool on the same network as the Rack Assemblies.
+Rack assemblies must be configured with a tool to point them to an applicable Data Collector. The first-generation Rack Assemblies listen on port 502/TCP by default. Second-generation Rack Assemblies listen on port 5656/TCP.
+
+The configuration must be done from a Windows machine running the configuration tool. It is recommended, though not required, to be on the same network as the Rack Assemblies.
 
 A copy of the configuration tool will be provided as part of the license activation and onboarding process.
 
