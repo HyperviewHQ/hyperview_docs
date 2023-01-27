@@ -3,6 +3,21 @@
 #########
 Version 3
 #########
+*********************************
+Hyperview 3.10 (January 18, 2023)
+*********************************
+This section covers significant changes and bug fixes in Hyperview 3.10.x since version 3.9.x.
+
+.. note:: This release has changes and improvements to the Data Collector software. It is strongly recommended to update your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
+
+====================================================================
+Enhanced Licensed Feature: Asset Tracker Gen2 Hardware Certification
+====================================================================
+This release adds support for MQTT-based second-generation RFID asset-tracking hardware from Digitalor. This support is available only on the Linux version of the Data Collector.
+
+.. note:: Please contact our Sales team if you are interested in getting a ServiceNow CMDB Sync license.
+
+*****
 
 *********************************
 Hyperview 3.9 (November 16, 2022)
