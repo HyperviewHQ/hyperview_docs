@@ -5,7 +5,7 @@
 Moving and deleting modules
 ***************************
 
-AssetTracker automatically handles asset moves. Assuming there are no collisions, if you physically move a tagged device, the corresponding asset in Hyperview will get moved to the new position during the next DCAT monitoring cycle (which occurs every 10 minutes). Asset move events appear in the rack and asset Change Log pages. If the asset does not get moved, proceed to the AssetTracker page (*Assets → AssetTracker*) to review and address any relevant issues.
+AssetTracker automatically handles asset moves. Assuming there are no collisions if you physically move a tagged device, the corresponding asset in Hyperview will get moved to the new position during the next DCAT monitoring cycle (which occurs every 10 minutes). Asset move events appear in the rack and asset Change Log pages. If the asset does not get moved, proceed to the AssetTracker page (*Assets → AssetTracker*) to review and address any relevant issues.
 
 ================================
 Searching asset tags and modules
@@ -26,7 +26,7 @@ Collisions and warnings
 =======================
 Under certain circumstances AssetTracker will fail to move an asset into the intended rack U. This could be due to:
 
-* The asset tag is placed in the wrong slot on the AssetTracker module, or the wrong module.
+* The asset tag is placed in the wrong slot on the AssetTracker module or the wrong module.
 * The model information for the incoming asset, the existing asset, or both is incorrect.
 * An untagged asset already exists in the target position.
 

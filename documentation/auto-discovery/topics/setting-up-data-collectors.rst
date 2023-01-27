@@ -135,6 +135,9 @@ Please make sure that the asset can reach the targeted Data Collector on the app
    * - AssetTracker
      - 4242
      - Not required
+   * - AssetTracker Gen2/MQTT Port
+     - 1883
+     - Not required
 
 Firewall considerations
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -176,7 +179,7 @@ Windows installation
    |dc_install_3|
 
 #. Click *Install*.
-#. Towards the end of the process, the Data Collector Configuration Tool will appear. You will need to provide details to register your data collector. Refer to the following section ("Registering the Data Collector") for instructions.
+#. Toward the end of the process, the Data Collector Configuration Tool will appear. You will need to provide details to register your data collector. Refer to the following section ("Registering the Data Collector") for instructions.
 
    |dc_install_9|
 
@@ -191,7 +194,7 @@ Linux installation (for both AMD64 and RPI ARM64)
 
    |ldc-eula|
 
-#. Proceed to register the Data Collector (see following section).
+#. Proceed to register the Data Collector.
 
 .. _Register:
 
@@ -215,11 +218,11 @@ Registering a Windows Data Collector
 .. tip:: You can also run the Windows Data Collector Configuration Tool from `C:\\Program Files\\Hyperview\\Hyperview Data Collector\\configurationTool\\AgentConfigurer.exe`, assuming you have installed the Data Collector at the default location.
 
 #. Paste the registration token and enter your API hostname (for example, "yourcompany.hyperviewhq.com").
-#. Click Advanced to specify additional values, or leave as default.
+#. Click Advanced to specify additional values, or leave it as default.
 
    * If you want the Data Collector to use a specific port to communicate with Hyperview, enter an API Port Number.
 
-   * Specify an alternate API Endpoint Name if applicable. Note that ``api`` is the only endpoint name that is currently supported.
+   * Specify an alternate API Endpoint Name if applicable. Note that ``API`` is the only endpoint name that is currently supported.
 
    * Deselect the Use HTTPS checkbox if applicable. Note that all our customer-facing APIs are HTTPS-only.
 
@@ -239,7 +242,7 @@ Registering a Linux Data Collector (for both AMD64 and RPI ARM64)
    |ldc-install|
 
 #. Enter the API Port Number, or leave it at default (443).
-#. Select the protocol (https or http), or leave it at default (https).
+#. Select the protocol (HTTPS or HTTP), or leave it at default (HTTPS).
 #. (Optional) Enter proxy details.
 
 The Data Collector will be registered.
