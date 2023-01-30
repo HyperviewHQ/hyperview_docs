@@ -17,3 +17,4 @@ API changes are reflected in the corresponding Open API (aka Swagger) interfaces
    topics/api_changes_3_7_to_3_8
    topics/api_changes_3_8_to_3_9
    topics/api_changes_3_9_to_3_10
+   topics/api_changes_3_10_to_3_11
