@@ -55,12 +55,12 @@ Rack Security control actions have been enhanced to integrate with Work Orders. 
 ================================================
 Heatmap visualization has been enhanced to be more accurate and more performant.
 
-In addition, there was a host of minor bug fixes, usability and performance improvements.
+In addition, there was a host of bug fixes, usability and performance improvements.
 
 ========================
 Bulk Action Improvements
 ========================
-- Desired rack temperature update bulk action has been extended to racks.
+- Desired rack temperature update bulk action has been extended to racks
 
 ============================
 Asset Lifecycle Improvements
