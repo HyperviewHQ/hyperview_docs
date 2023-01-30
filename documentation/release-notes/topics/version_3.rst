@@ -3,6 +3,89 @@
 #########
 Version 3
 #########
+********************
+Hyperview 3.11 (TBD)
+********************
+This section covers significant changes and bug fixes in Hyperview 3.9.x since version 3.8.x.
+
+.. note:: This release has changes and improvements to the Data Collector software. It is strongly recommended to update your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
+
+=============================================
+New Licensed Feature: Rack PDU Outlet Control
+=============================================
+Outlet Control is a new licensed feature that allows users to:
+
+- Power on
+- Power off
+- Power Cycle
+
+Supported Rack PDU hardware.
+
+.. note:: Please contact our Sales team if you are interested in getting an Outlet Control license.
+
+============================================
+New Feature: Automated Catalog Data Feedback
+============================================
+A new feature was added to enable automated feedback to Hyperview when previously unknown asset models are added. This feature will allow Hyperview to add support to new models more rapidly.
+
+Hyperview Administrators can manage this setting from the "Settings -> General -> Catalog Data" page.
+
+It is turned *Off* by default.
+
+=============================
+New Feature: Sensor Dashboard
+=============================
+A new sensor dashboard has been added to allow users to better visualize collected sensor data for an asset. Users will be able to toggle between list and card view for sensors.
+
+===============================
+Application Layout Improvements
+===============================
+- The search navigation bar has been added to the top of the product to allow for better access to Quick and Advanced Search features
+- The Account Management link has been moved from the bottom left of the application layout to the top right
+
+========================================
+Enhanced Licensed Feature: Rack Security
+========================================
+Rack Security control actions have been enhanced to integrate with Work Orders. A rack open operation will create a corresponding Work Order to document and track the action.
+
+.. note:: Please contact our Sales team if you are interested in getting a Rack Security license.
+
+================================================
+2D and 3D Layout: Enhanced Heatmap Visualization
+================================================
+Heatmap visualization has been enhanced to be more accurate and more performant.
+
+In addition, there was a host of minor bug fixes, usability and performance improvements.
+
+========================
+Bulk Action Improvements
+========================
+- Desired rack temperature update bulk action has been extended to racks.
+
+============================
+Asset Lifecycle Improvements
+============================
+"Inventory" has been added as an asset lifecycle state with support throughout the product.
+
+=================================
+Sensor Data Download Improvements
+=================================
+Sensor data export has been improved to allow for up to 180 days of raw or daily summary data. Provided that the range falls within license limits and there is corresponding collected data for the selected sensor. This feature is available from both the application GUI and the API.
+
+==========================
+Other notable improvements
+==========================
+- Improvements have been done to the discovery and monitoring sub-systems to allow for better automatic detection and management of asset IP Address changes
+- The multi-rack view has been enhanced to allow for image or PDF export of side-by-side rack elevations
+- Data grids have been improved throughout the product with better column filtering, clear column filter buttons, responsive behavior, and paging enhancements
+
+=================
+Notable bug fixes
+=================
+- **AS-12016** Fan sensors detected over IPMI had the wrong type
+
+*****
+
 *********************************
 Hyperview 3.10 (January 18, 2023)
 *********************************
