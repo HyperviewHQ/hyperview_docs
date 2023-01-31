@@ -23,6 +23,17 @@ Supported Rack PDU hardware.
 
 .. note:: Please contact our Sales team if you are interested in getting an Outlet Control license.
 
+.. warning:: The latest Data Collector software is needed to take advantage of this feature.
+
+========================================
+Enhanced Licensed Feature: Rack Security
+========================================
+Rack Security control actions have been enhanced to integrate with Work Orders. A rack open operation will create a corresponding Work Order to document and track the action.
+
+.. note:: Please contact our Sales team if you are interested in getting a Rack Security license.
+
+.. warning:: The latest Data Collector software is needed to take advantage of this feature.
+
 ============================================
 New Feature: Automated Catalog Data Feedback
 ============================================
@@ -42,13 +53,6 @@ Application Layout Improvements
 ===============================
 - The search navigation bar has been added to the top of the product to allow for better access to Quick and Advanced Search features
 - The Account Management link has been moved from the bottom left of the application layout to the top right
-
-========================================
-Enhanced Licensed Feature: Rack Security
-========================================
-Rack Security control actions have been enhanced to integrate with Work Orders. A rack open operation will create a corresponding Work Order to document and track the action.
-
-.. note:: Please contact our Sales team if you are interested in getting a Rack Security license.
 
 ================================================
 2D and 3D Layout: Enhanced Heatmap Visualization
