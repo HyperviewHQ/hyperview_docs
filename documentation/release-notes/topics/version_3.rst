@@ -17,7 +17,7 @@ Outlet Control is a new licensed feature that allows users to:
 
 - Power on
 - Power off
-- Power Cycle
+- Power cycle
 
 Supported Rack PDU hardware.
 
@@ -79,7 +79,7 @@ Other notable improvements
 - The multi-rack view has been enhanced to allow for image or PDF export of side-by-side rack elevations
 - Data grids have been improved throughout the product with better column filtering, clear column filter buttons, responsive behavior, and paging enhancements
 - The rack audit page has been improved with a set of UX improvements and bug fixes
-- Improvements were done to the asset hierarchy tree load time
+- The asset hierarchy tree load time has been improved
 
 =================
 Notable bug fixes
