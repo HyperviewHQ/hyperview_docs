@@ -57,16 +57,6 @@ Heatmap visualization has been enhanced to be more accurate and more performant.
 
 In addition, there was a host of bug fixes, usability and performance improvements.
 
-========================
-Bulk Action Improvements
-========================
-- Desired rack temperature update bulk action has been extended to racks
-
-============================
-Asset Lifecycle Improvements
-============================
-"Inventory" has been added as an asset lifecycle state with support throughout the product.
-
 =================================
 Sensor Data Download Improvements
 =================================
@@ -75,6 +65,8 @@ Sensor data export has been improved to allow for up to 180 days of raw or daily
 ==========================
 Other notable improvements
 ==========================
+- "Inventory" has been added as an asset lifecycle state with support throughout the product
+- Desired rack temperature property update bulk action has been extended to racks
 - Improvements have been done to the discovery and monitoring sub-systems to allow for better automatic detection and management of asset IP Address changes
 - The multi-rack view has been enhanced to allow for image or PDF export of side-by-side rack elevations
 - Data grids have been improved throughout the product with better column filtering, clear column filter buttons, responsive behavior, and paging enhancements
