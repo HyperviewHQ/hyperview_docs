@@ -78,11 +78,17 @@ Other notable improvements
 - Improvements have been done to the discovery and monitoring sub-systems to allow for better automatic detection and management of asset IP Address changes
 - The multi-rack view has been enhanced to allow for image or PDF export of side-by-side rack elevations
 - Data grids have been improved throughout the product with better column filtering, clear column filter buttons, responsive behavior, and paging enhancements
+- The rack audit page has been improved with a set of UX improvements and bug fixes
+- Improvements were done to the asset hierarchy tree load time
 
 =================
 Notable bug fixes
 =================
-- **AS-12016** Fan sensors detected over IPMI had the wrong type
+- **AS-11999** Fixed an issue that caused WorkOrder grid export to have a blank asset name under certain conditions
+- **AS-12235** Fixed an issue that caused redundant asset change logs to be generated when updating an asset property
+- **AS-12273** Fixed an issue that caused the display of desired rack temperature alarm threshold to not be converted to locale settings
+- **AS-12401** Fixed an issue that caused the asset property unit of measure to not display correctly
+- **AS-12511** Fixed an issue that caused a ServiceNow Sync WorkOrder to be created even if a sync schedule is not configured
 
 *****
 
