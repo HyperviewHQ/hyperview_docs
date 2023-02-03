@@ -1,4 +1,3 @@
-.. include:: /assettracker/media.rst
 .. _Moving-and-deleting-modules-doc:
 
 ***************************
@@ -32,7 +31,9 @@ Under certain circumstances AssetTracker will fail to move an asset into the int
 
 These kinds of placement conflicts are referred to as "collisions". Hyperview issues a warning whenever it encounters collisions (and/or other issues) so that you can take the appropriate corrective action.
 
-|events|
+.. image:: ../media/events.png
+   :width: 1920px
+   :alt: AssetTracker events page
 
 Possible warnings
 -----------------

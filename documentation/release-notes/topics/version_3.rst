@@ -102,7 +102,11 @@ This section covers significant changes and bug fixes in Hyperview 3.10.x since 
 ====================================================================
 Enhanced Licensed Feature: Asset Tracker Gen2 Hardware Certification
 ====================================================================
-This release adds support for MQTT-based second-generation RFID asset-tracking hardware from Digitalor. This support is available only on the Linux version of the Data Collector.
+This release adds support for MQTT-based second-generation RFID asset-tracking hardware from |Digitalor|. This support is available only on the Linux version of the Data Collector.
+
+.. |Digitalor| raw:: html
+
+   <a href="https://www.digitalor.com/en/" target="_blank">Digitalor</a>
 
 .. note:: Please contact our Sales team if you are interested in getting a ServiceNow CMDB Sync license.
 
