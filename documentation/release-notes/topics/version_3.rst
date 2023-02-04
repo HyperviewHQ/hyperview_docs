@@ -34,6 +34,13 @@ Rack Security control actions have been enhanced to integrate with Work Orders. 
 
 .. warning:: The latest Data Collector software is needed to take advantage of this feature.
 
+===============================================
+Enhanced Licensed Feature: ServiceNow CMDB Sync
+===============================================
+Administrators are now able to test the provided ServiceNow credentials from the configuration page before any sync job is attempted.
+
+.. note:: Please contact our Sales team if you are interested in getting a Rack Security license.
+
 ============================================
 New Feature: Automated Catalog Data Feedback
 ============================================
