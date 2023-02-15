@@ -6,7 +6,7 @@ Version 3
 ********************
 Hyperview 3.11 (TBD)
 ********************
-This section covers significant changes and bug fixes in Hyperview 3.9.x since version 3.8.x.
+This section covers significant changes and bug fixes in Hyperview 3.11.x since version 3.10.x.
 
 .. note:: This release has changes and improvements to the Data Collector software. It is strongly recommended to update your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
 
@@ -37,9 +37,9 @@ Rack Security control actions have been enhanced to integrate with Work Orders. 
 ===============================================
 Enhanced Licensed Feature: ServiceNow CMDB Sync
 ===============================================
-Administrators are now able to test the provided ServiceNow credentials from the configuration page before any sync job is attempted.
+Administrators are now able to test the ServiceNow credentials from the configuration page before any sync job is attempted.
 
-.. note:: Please contact our Sales team if you are interested in getting a Rack Security license.
+.. note:: Please contact our Sales team if you are interested in getting a ServiceNow CMDB Integration license.
 
 ============================================
 New Feature: Automated Catalog Data Feedback
