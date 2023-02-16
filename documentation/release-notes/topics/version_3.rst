@@ -96,7 +96,7 @@ Known issues
 =================
 Notable bug fixes
 =================
-- **AS-11999** Fixed an issue that caused WorkOrder grid export to have a blank asset name under certain conditions
+- **AS-11999** Fixed an issue that caused work order grid export to have a blank asset name under certain conditions
 - **AS-12235** Fixed an issue that caused redundant asset change logs to be generated when updating an asset property
 - **AS-12273** Fixed an issue that caused the display of desired rack temperature alarm threshold to not be converted to locale settings
 - **AS-12401** Fixed an issue that caused the asset property unit of measure to not display correctly
