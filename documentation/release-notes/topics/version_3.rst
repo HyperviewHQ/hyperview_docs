@@ -19,7 +19,7 @@ Outlet Control is a new licensed feature that allows users to:
 - Power off
 - Power cycle
 
-Supported Rack PDU hardware.
+supported Rack PDU hardware.
 
 .. note:: Please contact our Sales team if you are interested in getting an Outlet Control license.
 
