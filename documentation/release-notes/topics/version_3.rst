@@ -88,6 +88,11 @@ Other notable improvements
 - The main navbar -> settings area has been re-organized to improve UX
 - The license page has been improved to improve UX
 
+============
+Known issues
+============
+- **AS-12726** Certain Rack PDUs (usually older models) may return unexpected data when an outlet control operation is performed, this may cause the work order to be marked as failed even if it was performed correctly. Standard troubleshooting techniques such as making sure the latest firmware is loaded and restarting the rack PDU controller may resolve the issue. if this fails, please contact Hyperview support.
+
 =================
 Notable bug fixes
 =================
