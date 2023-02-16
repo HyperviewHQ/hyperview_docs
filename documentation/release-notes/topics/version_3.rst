@@ -44,7 +44,7 @@ Administrators are now able to test the ServiceNow credentials from the configur
 ============================================
 New Feature: Automated Catalog Data Feedback
 ============================================
-A new feature was added to enable automated feedback to Hyperview when previously unknown asset models are added. This feature will allow Hyperview to add support to new models more rapidly.
+A new feature was added to enable the automatic submission of model data to Hyperview when a previously unknown asset model is created. The information is added to a catalog improvement request queue for review and will allow Hyperview to add support to new device models more rapidly.
 
 Hyperview Administrators can manage this setting from the "Settings -> General -> Catalog Data" page.
 
