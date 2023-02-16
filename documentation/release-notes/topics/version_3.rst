@@ -100,7 +100,7 @@ Notable bug fixes
 - **AS-12235** Fixed an issue that caused redundant asset change logs to be generated when updating an asset property
 - **AS-12273** Fixed an issue that caused the display of desired rack temperature alarm threshold to not be converted to locale settings
 - **AS-12401** Fixed an issue that caused the asset property unit of measure to not display correctly
-- **AS-12511** Fixed an issue that caused a ServiceNow Sync WorkOrder to be created even if a sync schedule is not configured
+- **AS-12511** Fixed an issue that caused a ServiceNow Sync work order to be created even if a sync schedule is not configured
 
 *****
 
