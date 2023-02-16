@@ -71,7 +71,7 @@ In addition, there was a host of bug fixes, usability and performance improvemen
 =================================
 Sensor Data Download Improvements
 =================================
-Sensor data export has been improved to allow for up to 180 days of raw or daily summary data. Provided that the range falls within license limits and there is corresponding collected data for the selected sensor. This feature is available from both the application GUI and the API.
+Sensor data export has been improved to allow for up to 180 days of raw or daily summary data, provided that the range falls within license limits and corresponding data exists. This feature is available from both the application GUI and the API.
 
 ==========================
 Other notable improvements
