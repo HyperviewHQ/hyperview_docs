@@ -3,9 +3,9 @@
 #########
 Version 3
 #########
-********************
-Hyperview 3.11 (TBD)
-********************
+**********************************
+Hyperview 3.11 (February 15, 2023)
+**********************************
 This section covers significant changes and bug fixes in Hyperview 3.11.x since version 3.10.x.
 
 .. note:: This release has changes and improvements to the Data Collector software. It is strongly recommended to update your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
@@ -120,7 +120,7 @@ This release adds support for MQTT-based second-generation RFID asset-tracking h
 
    <a href="https://www.digitalor.com/en/" target="_blank">Digitalor</a>
 
-.. note:: Please contact our Sales team if you are interested in getting a ServiceNow CMDB Sync license.
+.. note:: Please contact our Sales team if you are interested in getting an Asset Tracker license.
 
 *****
 
