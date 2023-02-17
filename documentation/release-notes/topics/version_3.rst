@@ -120,7 +120,7 @@ This release adds support for MQTT-based second-generation RFID asset-tracking h
 
    <a href="https://www.digitalor.com/en/" target="_blank">Digitalor</a>
 
-.. note:: Please contact our Sales team if you are interested in getting an Asset Tracker license.
+.. note:: Please contact our Sales team if you are interested in getting an AssetTracker license.
 
 *****
 
