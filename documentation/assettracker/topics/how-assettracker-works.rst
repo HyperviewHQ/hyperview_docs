@@ -10,7 +10,7 @@ AssetTracker builds on Hyperview's existing distributed architecture by adding s
    :width: 1004px
    :alt: AssetTracker deployment diagram 3
 
-Master modules are powered by an AssetTracker gateway. Gateways depending on the model, are powered by a POE power source or by connecting them directly to a RackPDU.
+Master modules are powered by an AssetTracker gateway. Gateways depending on the model, are powered by a POE power source or a rack PDU.
 
 Master Modules are 6 RUs long and can be expanded using extension modules. Each master module has a unique Master Module ID that is associated with a rack. Master modules connect to a gateway and gateways are configured to communicate with a dedicated Data Collector which in turn communicates with Hyperview.
 
