@@ -102,6 +102,12 @@ Notable bug fixes
 - **AS-12401** Fixed an issue that caused the asset property unit of measure to not display correctly
 - **AS-12511** Fixed an issue that caused a ServiceNow Sync work order to be created even if a sync schedule is not configured
 
+
+=========================
+Changes in version 3.11.1
+=========================
+- **AS-12741** Fixed an error that could be triggered under certain conditions while cleaning up stale monitoring IP addresses from assets
+
 *****
 
 *********************************
