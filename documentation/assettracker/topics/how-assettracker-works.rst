@@ -1,21 +1,30 @@
-.. include:: /assettracker/media.rst
 .. _How-assettracker-works-doc:
 
 **********************
 How AssetTracker works
 **********************
 
-AssetTracker builds on Hyperview's existing distributed architecture by adding specialized hardware and software to achieve automated Rack U level tracking. On the customer site, the Data Collector's AssetTracker component (DCAT) communicates with hardware modules called "master modules" that are installed on racks.
+AssetTracker builds on Hyperview's existing distributed architecture by adding specialized hardware and software to achieve automated Rack U-level tracking across one or more data centers. The Data Collector's AssetTracker component (DCAT) communicates with hardware modules called "master modules" that are installed on racks.
 
-Master modules are powered by a POE (Power Over Ethernet) switch or standard POE injector (48V) and connected to an upstream network. They are typically 5 or 6 RUs long, but can be expanded using extension modules. Each master module has a unique Master Module ID and must be specifically configured to communicate with a dedicated Data Collector.
+.. image:: ../media/AT-diagram3.png
+   :width: 1004px
+   :alt: AssetTracker deployment diagram 3
 
-|AT-diagram1|
+Master modules are powered by an AssetTracker gateway. Gateways depending on the model, are powered by a POE power source or a rack PDU.
 
-AssetTracker modules in turn are magnetically connected to specialized RFID tags that are attached to assets ("asset tags"). Each asset tag has its unique AssetTracker ID. You can scan asset tags using a compatible barcode or QR code scanner to input AssetTracker ID values directly in Hyperview. As soon as the Data Collector is registered with Hyperview, the DCAT starts listening for AssetTracker tag operations and heartbeats on TCP port 4242.
+Master Modules are 6 RUs long and can be expanded using extension modules. Each master module has a unique Master Module ID that is associated with a rack. Master modules connect to a gateway and gateways are configured to communicate with a dedicated Data Collector which in turn communicates with Hyperview.
+
+.. image:: ../media/AT-diagram1.png
+   :width: 1920px
+   :alt: AssetTracker deployment diagram 1
+
+AssetTracker modules in turn are magnetically connected to specialized RFID tags that are attached to assets ("asset tags"). Each asset tag has its unique AssetTracker ID. You can scan asset tags using a compatible barcode or QR code scanner to input AssetTracker ID values directly in Hyperview. As soon as the Data Collector is registered with Hyperview, the DCAT starts listening for AssetTracker tag operations and heartbeats.
 
 Users can specify Master Module IDs (for racks) and AssetTracker IDs (for racked devices) while creating or updating relevant assets. Detected AssetTracker modules appear on the AssetTracker page (*Assets → AssetTracker*). Tagged assets can be reviewed from the parent rack's Asset Audit page (rack → *Information → Asset Audit*).
 
-|AT-diagram2|
+.. image:: ../media/AT-diagram2.png
+   :width: 748px
+   :alt: AssetTrack deployment diagram 2
 
 ========================
 Typical hybrid scenarios
@@ -44,7 +53,7 @@ The following table describes placement outcomes for an AssetTracker-licensed da
 =================
 Known limitations
 =================
-The first generation of AssetTracker has the following known limitations. We aim to address some of these in future releases.
+AssetTracker has the following known limitations. We aim to address some of these in future releases.
 
 * AssetTracker can only place assets in the front of the rack.
 * Tagged zero U assets can be tracked to the specific rack, but not at the Rack Elevation level.
@@ -56,9 +65,5 @@ Tested barcode scanners
 =======================
 .. note:: The following barcode scanners have been tested officially tested for AssetTracker. However, other scanners should work as well (provided they are properly configured; please refer to your scanner's documentation). The scanner must be connected to a device running Hyperview on a supported web browser to be able to input AssetTracker IDs.
 
-* **NETUM NT-1228BL.** You must configure the device by scanning the Terminator barcode (3030052 CR). See page 9 of the |scannerManual|.
+* **NETUM NT-1228BL.** You must configure the device by scanning the Terminator barcode (3030052 CR).
 * **KOAMTAC KDC300.** The specific model we tested is KDC300iM-SR.
-
-.. |scannerManual| raw:: html
-
-   <a href="https://cdn.shopify.com/s/files/1/2144/8019/files/NT-1228BL_Full_Manual_V2.27.pdf?v=1644137515" class="external-link" target="_blank">current NT-1228BL manual</a>

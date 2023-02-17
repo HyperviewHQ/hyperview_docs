@@ -137,7 +137,7 @@ Please make sure that the asset can reach the targeted Data Collector on the app
      - Not required
    * - AssetTracker Gen2/MQTT Port
      - 1883
-     - Not required
+     - Username & Password
 
 Firewall considerations
 ^^^^^^^^^^^^^^^^^^^^^^^
