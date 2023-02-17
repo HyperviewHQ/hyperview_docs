@@ -47,9 +47,9 @@ You can bulk import assets using a CSV template that you can download from the a
    +------------------+--------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------+
    | RackUNumber      | The number of the rack unit where the asset will be placed                                             | Optional (only relevant for non-Zero U assets)                       |
    +------------------+--------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------+
-   | RackSide         | The rack side (Front, Rear, or Unknown) where the asset will be placed                                 | Required for Zero U assets (not allowed for unplaced rackable assets)|
+   | RackSide         | The rack side (Front, Rear, or Unknown) where the asset will be placed                                 | Required for 0+ U assets (not allowed for unplaced rackable assets)  |
    +------------------+--------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------+
-   | RackPosition     | The rack position (Left, Right, Top, Bottom, Above, Below, or Unknown) where the asset will be placed  | Required for Zero U assets (not allowed for unplaced rackable assets)|
+   | RackPosition     | The rack position (Left, Right, Top, Bottom, Above, Below, or Unknown) where the asset will be placed  | Required for 0+ U assets (not allowed for unplaced rackable assets)  |
    +------------------+--------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------+
 
    |import_bulkfile|
