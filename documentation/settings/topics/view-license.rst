@@ -68,5 +68,6 @@ The Features section lists what Hyperview feature licenses you have. Available l
 * :ref:`Document Management<Document-management-doc>` (add-on)
 * :ref:`Firmware Management<Firmware-management-doc>` (add-on)
 * Infrastructure Management (default application license)
+* Outlet Control (add-on)
 * :ref:`Rack Security<Rack-security-doc>` (add-on)
 * :ref:`ServiceNow CMDB Integration<Integrations-doc>` (add-on)

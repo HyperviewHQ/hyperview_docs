@@ -3,6 +3,107 @@
 #########
 Version 3
 #########
+**********************************
+Hyperview 3.11 (February 15, 2023)
+**********************************
+This section covers significant changes and bug fixes in Hyperview 3.11.x since version 3.10.x.
+
+.. note:: This release has changes and improvements to the Data Collector software. It is strongly recommended to update your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
+
+=============================================
+New Licensed Feature: Rack PDU Outlet Control
+=============================================
+Outlet Control is a new licensed feature that allows users to:
+
+- Power on
+- Power off
+- Power cycle
+
+supported Rack PDU hardware.
+
+.. note:: Please contact our Sales team if you are interested in getting an Outlet Control license.
+
+.. warning:: The latest Data Collector software is needed to take advantage of this feature.
+
+========================================
+Enhanced Licensed Feature: Rack Security
+========================================
+Rack Security control actions have been enhanced to integrate with Work Orders. A rack open operation will create a corresponding Work Order to document and track the action.
+
+.. note:: Please contact our Sales team if you are interested in getting a Rack Security license.
+
+.. warning:: The latest Data Collector software is needed to take advantage of this feature.
+
+===============================================
+Enhanced Licensed Feature: ServiceNow CMDB Sync
+===============================================
+Administrators are now able to test the ServiceNow credentials from the configuration page before any sync job is attempted.
+
+.. note:: Please contact our Sales team if you are interested in getting a ServiceNow CMDB Integration license.
+
+============================================
+New Feature: Automated Catalog Data Feedback
+============================================
+A new feature was added to enable the automatic submission of model data to Hyperview when a previously unknown asset model is created. The information is added to a catalog improvement request queue for review and will allow Hyperview to add support to new device models more rapidly.
+
+Hyperview Administrators can manage this setting from the "Settings -> General -> Catalog Data" page.
+
+It is turned *Off* by default.
+
+=============================
+New Feature: Sensor Dashboard
+=============================
+A new sensor dashboard has been added to allow users to better visualize collected sensor data for an asset. Users will be able to toggle between list and card view for sensors.
+
+===============================
+Application Layout Improvements
+===============================
+- The search navigation bar has been added to the top of the product to allow for better access to Quick and Advanced Search features
+- The Account Management link has been moved from the bottom left of the application layout to the top right
+
+================================================
+2D and 3D Layout: Enhanced Heatmap Visualization
+================================================
+Heatmap visualization has been enhanced to be more accurate and more performant.
+
+In addition, there was a host of bug fixes, usability and performance improvements.
+
+=================================
+Sensor Data Download Improvements
+=================================
+Sensor data export has been improved to allow for up to 180 days of raw or daily summary data, provided that the range falls within license limits and corresponding data exists. This feature is available from both the application GUI and the API.
+
+==========================
+Other notable improvements
+==========================
+- "Inventory" has been added as an asset lifecycle state with support throughout the product
+- Desired rack temperature property update bulk action has been extended to racks
+- Improvements have been done to the discovery and monitoring sub-systems to allow for better automatic detection and management of asset IP Address changes
+- The multi-rack view has been enhanced to allow for image or PDF export of side-by-side rack elevations
+- Data grids have been improved throughout the product with better column filtering, clear column filter buttons, responsive behavior, and paging enhancements
+- The asset status has been added to the assets by type and by location grids
+- The asset monitoring state has been added to the advanced search column selector
+- The asset hierarchy tree load time has been improved
+- The rack asset audit page has been improved with a set of UX improvements and bug fixes
+- The main navbar -> settings area has been re-organized to improve UX
+- The license page has been improved to improve UX
+
+============
+Known issues
+============
+- **AS-12726** Certain Rack PDUs (usually older models) may return unexpected data when an outlet control operation is performed, this may cause the work order to be marked as failed even if it was performed correctly. Standard troubleshooting techniques such as making sure the latest firmware is loaded and restarting the rack PDU controller may resolve the issue. if this fails, please contact Hyperview support.
+
+=================
+Notable bug fixes
+=================
+- **AS-11999** Fixed an issue that caused work order grid export to have a blank asset name under certain conditions
+- **AS-12235** Fixed an issue that caused redundant asset change logs to be generated when updating an asset property
+- **AS-12273** Fixed an issue that caused the display of desired rack temperature alarm threshold to not be converted to locale settings
+- **AS-12401** Fixed an issue that caused the asset property unit of measure to not display correctly
+- **AS-12511** Fixed an issue that caused a ServiceNow Sync work order to be created even if a sync schedule is not configured
+
+*****
+
 *********************************
 Hyperview 3.10 (January 18, 2023)
 *********************************
@@ -10,12 +111,16 @@ This section covers significant changes and bug fixes in Hyperview 3.10.x since 
 
 .. note:: This release has changes and improvements to the Data Collector software. It is strongly recommended to update your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
 
-====================================================================
-Enhanced Licensed Feature: Asset Tracker Gen2 Hardware Certification
-====================================================================
-This release adds support for MQTT-based second-generation RFID asset-tracking hardware from Digitalor. This support is available only on the Linux version of the Data Collector.
+===================================================================
+Enhanced Licensed Feature: AssetTracker Gen2 Hardware Certification
+===================================================================
+This release adds support for MQTT-based second-generation RFID asset-tracking hardware from |Digitalor|. This support is available only on the Linux version of the Data Collector.
 
-.. note:: Please contact our Sales team if you are interested in getting a ServiceNow CMDB Sync license.
+.. |Digitalor| raw:: html
+
+   <a href="https://www.digitalor.com/en/" target="_blank">Digitalor</a>
+
+.. note:: Please contact our Sales team if you are interested in getting an AssetTracker license.
 
 *****
 

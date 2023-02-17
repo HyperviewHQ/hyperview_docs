@@ -28,10 +28,10 @@ Prerequisites
 Configuration
 =============
 
-Enter the information prepared earlier in their corresponding configuration field.
+Enter the information prepared earlier in their corresponding configuration field. It is recommended that the entered credentials be tested using the **Test Authentication** button before a sync is attempted.
 
 .. image:: /settings/media/servicenow_overview.png
-   :width: 1781
+   :width: 1908
    :alt: ServiceNow CMDB integration overview
 
 The Last Sync Date, if populated, notes the last timestamp sync has started and finished successfully. This timestamp is used to sync changed assets since the last successful run.

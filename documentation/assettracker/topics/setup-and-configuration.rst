@@ -1,4 +1,3 @@
-.. include:: /assettracker/media.rst
 .. _AT-Setup-and-configuration-doc:
 
 ***********************
@@ -57,7 +56,9 @@ Create or update a rack in Hyperview to correspond to the physical rack that wil
 
 The module will appear on the AssetTracker page (*Assets → AssetTracker*) within a few minutes. Proceed to add asset tags.
 
-|properties|
+.. image:: ../media/properties.png
+   :width: 1920px
+   :alt: AssetTracker properties page
 
 Aligning RUs
 ------------
@@ -83,7 +84,9 @@ Adding and auditing asset tags
 
    * For example, if you are tagging a 4-U device placed between locations 20 and 23, place the tag on location 23.
 
-|audit|
+.. image:: ../media/asset-audit.png
+   :width: 1920px
+   :alt: Asset audit page
 
 Assuming there are no placement collisions or errors, the asset will be moved to the correct rack U in the Rack Elevation within a few minutes. It will also be surfaced on the Asset Audit page for the rack (rack → *Information → Asset Audit*). Proceed to add more asset tags for other racked devices. Please contact Hyperview Support if you need to attach extension modules.
 
