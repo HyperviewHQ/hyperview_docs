@@ -111,9 +111,9 @@ This section covers significant changes and bug fixes in Hyperview 3.10.x since 
 
 .. note:: This release has changes and improvements to the Data Collector software. It is strongly recommended to update your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
 
-====================================================================
-Enhanced Licensed Feature: Asset Tracker Gen2 Hardware Certification
-====================================================================
+===================================================================
+Enhanced Licensed Feature: AssetTracker Gen2 Hardware Certification
+===================================================================
 This release adds support for MQTT-based second-generation RFID asset-tracking hardware from |Digitalor|. This support is available only on the Linux version of the Data Collector.
 
 .. |Digitalor| raw:: html
