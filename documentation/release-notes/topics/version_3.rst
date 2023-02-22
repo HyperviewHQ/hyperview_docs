@@ -112,7 +112,7 @@ Changes in version 3.11.1
 Changes in version 3.11.2
 =========================
 - **AS-12751** Improved UX when moving a rackable asset with a NULL value for the "Consumed Rack Units" model property
-- **AS-12756** Fixed an issue that prevented users from moving a Virtual Machine from being moved to its host server from the location picker
+- **AS-12756** Fixed an issue that prevented a Virtual Machine from being moved to its host server from the location picker
 
 *****
 
