@@ -8,6 +8,10 @@ Hyperview 3.11 (February 15, 2023)
 **********************************
 This section covers significant changes and bug fixes in Hyperview 3.11.x since version 3.10.x.
 
+.. raw :: html
+
+	<div class="pb-3"><iframe src="https://player.vimeo.com/video/801783109?h=c1542f621e" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+
 .. note:: This release has changes and improvements to the Data Collector software. It is strongly recommended to update your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
 
 =============================================
@@ -333,7 +337,7 @@ This section covers significant changes and bug fixes in Hyperview 3.7.x since v
 
 .. raw :: html
 
-	<div class="pb-3"><<iframe title="vimeo-player" src="https://player.vimeo.com/video/745165617?h=e0e366da7e" width="640" height="360" frameborder="0" allowfullscreen></iframe></div>
+	<div class="pb-3"><iframe title="vimeo-player" src="https://player.vimeo.com/video/745165617?h=e0e366da7e" width="640" height="360" frameborder="0" allowfullscreen></iframe></div>
 
 .. note:: Please install the latest Data Collector for optimal device monitoring and discovery.
 
