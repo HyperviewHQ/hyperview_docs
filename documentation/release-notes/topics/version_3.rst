@@ -118,6 +118,13 @@ Changes in version 3.11.2
 - **AS-12751** Improved UX when moving a rackable asset with a NULL value for the "Consumed Rack Units" model property
 - **AS-12756** Fixed an issue that prevented a Virtual Machine from being moved to its host server from the location picker
 
+=========================
+Changes in version 3.11.3
+=========================
+- **AS-12801** Fixed an issue that caused the 3D view slide-out state to reset if it was opened and closed
+- **AS-12814** Fixed an issue that caused an asset to fail discovery if there are invalid values returned to some properties
+- **AS-12816** Fixed an issue that caused some properties with very long string values to fail discovery under certain circumstances
+
 *****
 
 *********************************
