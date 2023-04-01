@@ -23,10 +23,6 @@
 ..
    <!-- Uncategorized images -->
 
-.. |introduction_1| image:: /quickstart/media/introduction_1.png
-   :width: 5.65307in
-   :height: 0.421896in
-
 .. |user_administration| image:: /quickstart/media/user_administration.png
    :width: 5.65307in
    :height: 4.21896in

@@ -4,11 +4,13 @@
 Quickstart
 **********
 
-Hyperview is a next generation, cloud-based Data Center Infrastructure Management (DCIM) software designed to provide a superior monitoring, capacity planning, and administration experience. This document is intended for a first-time Hyperview user who will set up the application for their organization as an Administrator. A relevant link will be emailed to you to complete your user account registration.
+Hyperview is a next-generation, cloud-based Data Center Infrastructure Management (DCIM) software designed to provide superior monitoring, capacity planning, and administration experience. This document is intended for a first-time Hyperview user who will set up the application for their organization as an Administrator. A relevant link will be emailed to you to complete your user account registration.
 
-The following high-level diagram depicts the application setup process from start to finish.
+The following high-level diagram depicts the application onboarding process from start to finish.
 
-|introduction_1|
+.. image:: media/onboarding.png
+   :width: 1920
+   :alt: Onboarding process
 
 =============
 Prerequisites
