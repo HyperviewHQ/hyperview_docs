@@ -18,9 +18,9 @@ Work Orders maintain a comprehensive paper trail of all control requests made by
 
 .. note:: Only licensed instances will have relevant features. To confirm if you have an Outlet Control license, check the License page (*Settings → License*, Administrator-only).
 
-**************************
+==========================
 Supported hardware vendors
-**************************
+==========================
 The Outlet Control feature is **definition based** meaning that the system is adaptive and support can be added quickly with the right information.
 
 At the time of release, a large number of device models from the following vendors are supported:
@@ -39,9 +39,20 @@ At the time of release, a large number of device models from the following vendo
 
 If you would like Hyperview to add support for a new model or manufacturer please contract Hyperview support.
 
-********************
+====================
+Using outlet control
+====================
+Outlet control will not work without the following:
+
+1. A Control license. This turns on the Outlet Control, Firmware Management and Rack Security features
+2. A supported rPDU
+3. A configured rPDU. I.e. The rPDU itself is configured to allow outlet control and the appropriate :ref:`control operations<Control-operations-doc>` parameters set. This can be done in bulk or on an individual rPDU basis
+
+
+
+====================
 Troubleshooting Tips
-********************
+====================
 There can be a lot of hardware, software and configuration variations within an rPDU model family. When troubleshooting issues with Outlet Control please consider the following troubleshooting tips:
 
 - License is enabled. You can verify that the control license flag is enabled for your Hyperview instance by navigating to Settings -> License.
