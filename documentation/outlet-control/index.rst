@@ -4,7 +4,7 @@
 Outlet control
 **************
 
-.. warning:: Outlet control operations will affect connected devices. These operations have the same effect as the corresponding physical actions. It is the responsibility of the user to assess the situation and act accordingly. Hyperview takes no responsibility for any damage incurred as a result of using this feature. For more information please refer to our `terms of service <https://www.hyperviewhq.com/legal/>`_.
+.. warning:: Outlet control operations will affect connected devices. These operations have the same effect as the corresponding physical actions. It is the responsibility of the user to assess the situation and act accordingly.
 
 Hyperview Outlet Control has been designed to help you manage and control the power state of compatible Smart Power Distribution Units (rPDUs) while maintaining a detailed record of all actions taken by users.
 
@@ -50,6 +50,10 @@ For an rPDU, outlet control functions are exposed on the Layout page. Please not
 2. A supported rPDU
 3. A configured rPDU. I.e. The rPDU itself is configured to allow outlet control and the appropriate :ref:`control operations<Control-operations-doc>` parameters set. This can be done in bulk or on an individual rPDU basis
 
+.. image:: media/rpdu-layout.png
+   :width: 1920px
+   :alt: Rack PDU Layout
+
 Powering on an outlet
 ---------------------
 A switched outlet that is detected as powered off will allow a user with the appropriate permissions the ability to power on the outlet.
@@ -70,11 +74,19 @@ A switched outlet that is detected as powered on will allow a user with appropri
 
 Once a power-off request is made a work order is created and assigned. Progress can be tracked from the Work Orders page.
 
+.. image:: media/power-off-work-order.png
+   :width: 1920px
+   :alt: Power Off Work Order
+
 Power cycling an outlet
 -----------------------
 A switched outlet that is detected as powered on will allow a user with appropriate permissions the ability to power cycle the outlet.
 
 Once a power-cycle request is made a work order is created and assigned. Progress can be tracked from the Work Orders page.
+
+.. image:: media/power-cycle-work-order.png
+   :width: 1920px
+   :alt: Power Cycle Work Order
 
 .. note:: To make sure the latest outlet status is displayed, Outlet Control operations will trigger a sensor refresh on affected rPDU. Due to the distributed nature of the application, the refresh operation may take a few minutes to complete.
 

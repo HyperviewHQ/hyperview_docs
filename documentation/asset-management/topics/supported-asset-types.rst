@@ -65,7 +65,7 @@ Additional types
 =====================
 Component asset types
 =====================
-The following asset types are only supported as component assets — that is, assets which constitute other assets. Component assets appear on the Components (*asset → Information → Components*) and Network Components (*asset → Information → Network Components*) pages in Hyperview.
+The following asset types are only supported as component assets — that is, assets that constitute other assets. Component assets appear on the Components (*asset → Information → Components*) and Network Components (*asset → Information → Network Components*) pages in Hyperview.
 
 .. note:: Component assets are auto-detected by Hyperview. You can :ref:`search for them<Search-features>`, but you cannot :ref:`add or import them manually<Adding-assets-doc>`.
 
