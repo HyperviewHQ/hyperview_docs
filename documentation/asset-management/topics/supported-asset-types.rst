@@ -57,7 +57,7 @@ Container types
 ================
 Additional types
 ================
-* Other Device (for devices which do not belong to any of the other asset types)
+* Other Device (for devices that do not belong to any of the other asset types)
 * Unknown (discovery-only; cannot be added or imported manually)
 
 .. tip:: You can use :ref:`the Asset Types tree<Navigating-assets-doc>` to see which asset types (except Location) are present in your system. If you are not an Administrator, you will only see asset types corresponding to devices that you :ref:`have access to<Who-can-access-doc>`.
