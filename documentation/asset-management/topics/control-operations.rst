@@ -14,5 +14,23 @@ These operations require appropriate authentication. The control operations page
 
 Equivalent bulk actions allow for the bulk configuration of these credentials.
 
+.. image:: ../media/information-control-operations.png
+   :width: 1503px
+   :alt: Information Control Operations
 
+========================
+Configuration parameters
+========================
+
+Data collector
+--------------
+Sets the data collector responsible that will receive the request.
+
+SNMP
+----
+SNMP set credential.
+
+Firmware
+--------
+Firmware update credential.
 
