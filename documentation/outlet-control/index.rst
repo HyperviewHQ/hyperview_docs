@@ -39,7 +39,7 @@ At the time of release, a large number of device models from the following vendo
 - Server Technology
 - Tripp Lite
 
-If you would like Hyperview to add support for a new model or manufacturer please contract Hyperview support.
+If you would like Hyperview to add support for a new model or manufacturer please contact Hyperview support.
 
 ====================
 Using outlet control
@@ -95,7 +95,7 @@ Troubleshooting Tips
 ====================
 There can be a lot of hardware, software and configuration variations within an rPDU model family. When troubleshooting issues with Outlet Control please consider the following troubleshooting tips:
 
-- License is enabled. You can verify that the control license flag is enabled for your Hyperview instance by navigating to Settings -> License.
+- License is enabled. You can verify that the Outlet Control license flag is enabled for your Hyperview instance by navigating to Settings -> License.
 
 - The device supports outlet control. You can consult your device's datasheet or user manual.
 
