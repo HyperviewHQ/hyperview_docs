@@ -1,7 +1,7 @@
 .. _Outlet-control-doc:
 
 **************
-Outlet control
+Outlet Control
 **************
 
 .. warning:: Outlet control operations will affect connected devices. These operations have the same effect as the corresponding physical actions. It is the responsibility of the user to assess the situation and act accordingly.
