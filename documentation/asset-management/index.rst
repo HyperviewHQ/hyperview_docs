@@ -22,3 +22,4 @@ As an application Hyperview is robust enough to recognize and correctly categori
    topics/custom-properties
    topics/bulk-actions
    topics/managing-sensors
+   topics/control-operations
