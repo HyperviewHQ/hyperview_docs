@@ -60,6 +60,11 @@
 
       Manage the firmware of your connected assets.
 
+   .. grid-item-card:: :fas:`fa-solid fa-power-off` Outlet Control
+	  :link: outlet-control/index.html
+
+	  Control smart rack PDU outlets remotely.
+
    .. grid-item-card:: :fas:`fa-solid fa-lock` Rack Security
       :link: rack-security/index.html
 
@@ -106,6 +111,7 @@
    catalog-management/index
    document-management/index
    firmware-management/index
+   outlet-control/index
    rack-security/index
    settings/index
    user-accounts/index
