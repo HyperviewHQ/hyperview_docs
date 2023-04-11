@@ -16,7 +16,7 @@ This feature allows you to:
 
 - Power cycle compatible rPDUs - Remotely perform power cycling on individual outlets, enabling you to reset unresponsive equipment and troubleshoot potential issues without the need for onsite intervention.
 
-Work Orders maintain a comprehensive paper trail of all control requests made by users, allowing you to review historical actions and ensure accountability for any changes made.
+Work Orders maintain a comprehensive audit trail of all control requests made by users, allowing you to review historical actions and ensure accountability for any changes made.
 
 .. note:: Only licensed instances will have relevant features. To confirm if you have an Outlet Control license, check the License page (*Settings → License*, Administrator-only).
 
