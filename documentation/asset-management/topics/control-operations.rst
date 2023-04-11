@@ -17,6 +17,7 @@ Equivalent bulk actions allow for the bulk configuration of these credentials.
 .. image:: ../media/information-control-operations.png
    :width: 1503px
    :alt: Information Control Operations
+   :class: border-black
 
 ========================
 Configuration parameters

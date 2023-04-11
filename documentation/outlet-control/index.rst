@@ -53,6 +53,7 @@ For an rPDU, outlet control functions are exposed on the Layout page. Please not
 .. image:: media/rpdu-layout.png
    :width: 1920px
    :alt: Rack PDU Layout
+   :class: border-black
 
 Powering on an outlet
 ---------------------
@@ -61,12 +62,14 @@ A switched outlet that is detected as powered off will allow a user with the app
 .. image:: media/power-on-modal.png
    :width: 1920px
    :alt: Power On Modal
+   :class: border-black
 
 Once a power-on request is made a work order is created and assigned. Progress can be tracked from the Work Orders page.
 
 .. image:: media/power-on-work-order.png
    :width: 1920px
    :alt: Power On Work Order
+   :class: border-black
 
 Powering off an outlet
 ----------------------
@@ -77,6 +80,7 @@ Once a power-off request is made a work order is created and assigned. Progress 
 .. image:: media/power-off-work-order.png
    :width: 1920px
    :alt: Power Off Work Order
+   :class: border-black
 
 Power cycling an outlet
 -----------------------
@@ -87,6 +91,7 @@ Once a power-cycle request is made a work order is created and assigned. Progres
 .. image:: media/power-cycle-work-order.png
    :width: 1920px
    :alt: Power Cycle Work Order
+   :class: border-black
 
 .. note:: To make sure the latest outlet status is displayed, Outlet Control operations will trigger a sensor refresh on affected rPDU. Due to the distributed nature of the application, the refresh operation may take a few minutes to complete.
 
