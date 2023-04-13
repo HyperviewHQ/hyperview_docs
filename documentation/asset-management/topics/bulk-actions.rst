@@ -18,7 +18,7 @@ A "bulk action" is an action that you can perform against multiple records. For 
 ======================
 Supported bulk actions
 ======================
-Availability of bulk actions depends on two factors: your :ref:`user role<User-accounts-doc>` and your :ref:`feature licenses<View-license-doc>`. The following bulks actions are currently supported in Hyperview:
+Availability of bulk actions depends on two factors: your :ref:`user role<User-accounts-doc>` and your :ref:`feature licenses<View-license-doc>`. The following bulk actions are currently supported in Hyperview:
 
 .. list-table::
    :header-rows: 1
@@ -92,7 +92,7 @@ Availability of bulk actions depends on two factors: your :ref:`user role<User-a
 ========================
 Performing a bulk action
 ========================
-The user experience of performing a bulk action is virtually identical for most bulk actions (see Bulk Delete example below) except Update Lifecycle and Update Model (see below). For all bulk actions, **only** the user who initiated it will receive an email notification if the "Receive email notification..." option was selected.
+The user experience of performing a bulk action is virtually identical (see Bulk Delete example below) except for Update Lifecycle and Update Model (see below). For all bulk actions, **only** the user who initiated it will receive an email notification if the "Receive email notification..." option was selected.
 
 .. note:: You can perform a bulk action against a maximum of 1,000 rows (spread across any number of pages in a multi-page grid).
 
