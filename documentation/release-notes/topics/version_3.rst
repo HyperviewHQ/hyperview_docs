@@ -22,7 +22,7 @@ Network documentation can be a daunting, time-consuming task that often involves
 5. Export, import and update all aspects of connection information individually or in bulk
 6. Set access policies on connections
 
-.. note:: Please contact our Sales team if you are interested in getting a Connectivity license.
+.. note:: Please contact our Sales team if you are interested in getting a Connectivity Management license.
 
 ==================================
 Enhanced Feature: Sensor Dashboard
