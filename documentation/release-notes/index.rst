@@ -1,5 +1,3 @@
-
-.. include:: /release-notes/media.rst
 .. _Release-notes-doc:
 
 #############

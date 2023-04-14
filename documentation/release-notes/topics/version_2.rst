@@ -1,5 +1,3 @@
-.. include:: /release-notes/media.rst
-
 #########
 Version 2
 #########
