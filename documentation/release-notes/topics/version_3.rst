@@ -8,9 +8,9 @@ This section covers significant changes and bug fixes in Hyperview 3.12.x since 
 
 .. note:: This release has changes and improvements to the Data Collector software. It is strongly recommended to update your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
 
-==================================
-New Licensed Feature: Connectivity
-==================================
+=============================================
+New Licensed Feature: Connectivity Management
+=============================================
 This is the first public phase of Connectivity. Hyperview Connectivity is designed to simplify network documentation for network engineers and IT professionals. Connectivity is a comprehensive tool that streamlines structured cabling management, network mapping, reporting, change tracking, and document asset association to network connections.
 
 Network documentation can be a daunting, time-consuming task that often involves searching for critical information and troubleshooting issues. Connectivity is here to alleviate these challenges by consolidating your network documentation into a centralized, easy-to-manage platform. With this release, you will be able to:
