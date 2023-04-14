@@ -28,6 +28,7 @@ Minimum requirements for a Windows Data Collector server
 
   * Windows Server 2016 (for production or testing)
   * Windows Server 2019 (for production or testing)
+  * Windows Server 2022 (for production or testing)
   * Windows 10 (testing only)
 
 Minimum requirements for a Linux (AMD64) Data Collector server

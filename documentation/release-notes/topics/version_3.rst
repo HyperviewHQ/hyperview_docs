@@ -11,19 +11,44 @@ This section covers significant changes and bug fixes in Hyperview 3.12.x since 
 ==================================
 New Licensed Feature: Connectivity
 ==================================
+This is the first public phase of Connectivity. Hyperview Connectivity is designed to simplify network documentation for network engineers and IT professionals. Connectivity is a comprehensive tool that streamlines structured cabling management, network mapping, reporting, change tracking, and document asset association to network connections.
+
+Network documentation can be a daunting, time-consuming task that often involves searching for critical information and troubleshooting issues. Connectivity is here to alleviate these challenges by consolidating your network documentation into a centralized, easy-to-manage platform. With this release, you will be able to:
+
+1. Document connection information between assets
+2. Capture metadata, such as connection type, port configuration, length and any number of custom user-defined properties
+3. Define physical ports on all network-connected devices and associate those with connections
+4. Centrally manage associations in a Connectivity centric Layout tab available on network devices and patch panels
+5. Export, import and update all aspects of connection information individually or in bulk
+6. Set access policies on connections
 
 .. note:: Please contact our Sales team if you are interested in getting a Connectivity license.
 
 ==================================
 Enhanced Feature: Sensor Dashboard
 ==================================
-The sensor dashboard has now been promoted to a main tab to make it easy for users to access the data.
+The sensor dashboard has been promoted to a main tab to make it easy for users to access the data. Furthermore, sensor card titles have been enhanced to display more sensor-identifying information.
 
 ============================================
 Change in behavior: Location Power IT Energy
 ============================================
 The location IT Energy sensor has been updated to aggregate IT energy for all applicable downstream assets.
 
+===========================
+Windows Server 2022 support
+===========================
+This release adds support for Windows Server 2022 for Windows Data Collector deployment.
+
+==========================
+Other notable improvements
+==========================
+- The Add Data Collector modal will now display the appropriate hostname in addition to the registration token
+
+=================
+Notable bug fixes
+=================
+- **AS-12819** Fixed an issue that caused chart height to not scale property at certain browser zoom levels
+- **AS-12869** Fixed an issue that caused the ServiceNow CMDB Sync, test authentication button to display a spinner indefinitely if there are any API errors
 
 *****
 
