@@ -44,7 +44,7 @@ Minimum requirements for a Linux (AMD64) Data Collector server
   * CentOS 7.xx or later
   * Debian 10.xx or 11.xx
   * Red Hat Enterprise Linux 7.xx or 8.xx
-  * Ubuntu Server LTS 18.04.xx or 20.04.xx
+  * Ubuntu Server LTS 18.04.xx or later
 
 * You must also have the following software installed:
 
