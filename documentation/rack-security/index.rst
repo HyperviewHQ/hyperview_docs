@@ -1,4 +1,3 @@
-.. include:: /rack-security/media.rst
 .. _Rack-security-doc:
 
 *************
