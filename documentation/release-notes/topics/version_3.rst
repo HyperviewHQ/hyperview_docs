@@ -11,9 +11,9 @@ This section covers significant changes and bug fixes in Hyperview 3.12.x since 
 =============================================
 New Licensed Feature: Connectivity Management
 =============================================
-This is the first public phase of Connectivity. Hyperview Connectivity is designed to simplify network documentation for network engineers and IT professionals. Connectivity is a comprehensive tool that streamlines structured cabling management, network mapping, reporting, change tracking, and document asset association to network connections.
+This is the first public phase of this feature. Hyperview Connectivity Management is designed to simplify network documentation for network engineers and IT professionals. Connectivity Management is a comprehensive tool that streamlines structured cabling management, network mapping, reporting, change tracking, and document asset association to network connections.
 
-Network documentation can be a daunting, time-consuming task that often involves searching for critical information and troubleshooting issues. Connectivity is here to alleviate these challenges by consolidating your network documentation into a centralized, easy-to-manage platform. With this release, you will be able to:
+Network documentation can be a daunting, time-consuming task that often involves searching for critical information and troubleshooting issues. Connectivity Management is here to alleviate these challenges by consolidating your network documentation into a centralized, easy-to-manage platform. With this release, you will be able to:
 
 1. Document connection information between assets
 2. Capture metadata, such as connection type, port configuration, length and any number of custom user-defined properties
