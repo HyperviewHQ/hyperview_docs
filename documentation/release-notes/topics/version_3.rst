@@ -1,8 +1,32 @@
-.. include:: /release-notes/media.rst
-
 #########
 Version 3
 #########
+*******************************
+Hyperview 3.12 (April 14, 2023)
+*******************************
+This section covers significant changes and bug fixes in Hyperview 3.12.x since version 3.11.x.
+
+.. note:: This release has changes and improvements to the Data Collector software. It is strongly recommended to update your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
+
+==================================
+New Licensed Feature: Connectivity
+==================================
+
+.. note:: Please contact our Sales team if you are interested in getting a Connectivity license.
+
+==================================
+Enhanced Feature: Sensor Dashboard
+==================================
+The sensor dashboard has now been promoted to a main tab to make it easy for users to access the data.
+
+============================================
+Change in behavior: Location Power IT Energy
+============================================
+The location IT Energy sensor has been updated to aggregate IT energy for all applicable downstream assets.
+
+
+*****
+
 **********************************
 Hyperview 3.11 (February 15, 2023)
 **********************************
