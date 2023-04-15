@@ -48,7 +48,7 @@ Other notable improvements
 Notable bug fixes
 =================
 - **AS-12819** Fixed an issue that caused chart height to not scale property at certain browser zoom levels
-- **AS-12869** Fixed an issue that caused the ServiceNow CMDB Sync, test authentication button to display a spinner indefinitely if there are any API errors
+- **AS-12869** Fixed an issue that caused the ServiceNow CMDB Sync, test authentication button, to display a spinner indefinitely under certain edge conditions
 
 *****
 
