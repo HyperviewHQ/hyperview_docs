@@ -853,7 +853,7 @@ Hyperview is DCIM reinvented. A cloud-based Data Center Infrastructure Managemen
 
 It's the very embodiment of our mission to make critical infrastructure think.
 
-.. image: ../media/open_hv.png
+.. image:: ../media/open_hv.png
    :width: 1342px
    :alt: Hyperview Screenshot
    :class: border-black
