@@ -62,7 +62,7 @@ Standards-based protocols (such as WMI, IPMI, and VMware) are typically from a s
 ==========================
 Definition-based protocols
 ==========================
-Definition-based protocols (such as SNMP, SSH, and BACNet/IP) can have many variations across devices or operating systems, with the only common element being the protocol or language to query the devices. SNMP, for example, can be implemented on power, network, and facility devices. Each of these devices can have its own level of support for the protocol and its unique sensor map.
+Definition-based protocols (such as SNMP, SSH, and BACnet/IP) can have many variations across devices or operating systems, with the only common element being the protocol or language to query the devices. SNMP, for example, can be implemented on power, network, and facility devices. Each of these devices can have its own level of support for the protocol and its unique sensor map.
 
 Within definition-based protocols, there are two subcategories:
 
@@ -105,9 +105,9 @@ The following tables describe SNMP and SSH support.
 
 Monitoring-only protocols
 -------------------------
-Monitoring-only definition-based protocols include Building Automation and Control (BACNet/IP) and Modbus TCP. These protocols are mostly used for building management and industrial control applications.
+Monitoring-only definition-based protocols include Building Automation and Control (BACnet/IP) and Modbus TCP. These protocols are mostly used for building management and industrial control applications.
 
-.. note:: Since every BACNet/IP and Modbus TCP implementation is unique, you must create custom definitions in Hyperview to describe sensors and sensor mappings so that relevant device and device properties can be discovered.
+.. note:: Since every BACnet/IP and Modbus TCP implementation is unique, you must create custom definitions in Hyperview to describe sensors and sensor mappings so that relevant device and device properties can be discovered.
 
 **BACnet/IP**
 
@@ -136,3 +136,9 @@ Monitoring-only definition-based protocols include Building Automation and Contr
 +----------------------------------------------------------------------------------------------------------+
 | Point of Contact    | Modbus master, Modbus gateway, or each device                                      |
 +---------------------+------------------------------------------------------------------------------------+
+
+Other protocols
+---------------
+Hyperview has support for the MQTT protocol. If you have MQTT-based hardware that you would like supported please contact the Hyperview support team.
+
+.. note:: Support for MQTT is limited to the Linux Data Collector.
