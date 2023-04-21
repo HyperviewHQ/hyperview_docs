@@ -18,6 +18,8 @@ This feature allows you to:
 
 Work Orders maintain a comprehensive audit trail of all control requests made by users, allowing you to review historical actions and ensure accountability for any changes made.
 
+Outlet control can be accessed by..
+
 .. note:: Only licensed instances will have relevant features. To confirm if you have an Outlet Control license, check the License page (*Settings → License*, Administrator-only).
 
 ==========================
