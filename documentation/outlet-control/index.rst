@@ -18,8 +18,6 @@ This feature allows you to:
 
 Work Orders maintain a comprehensive audit trail of all control requests made by users, allowing you to review historical actions and ensure accountability for any changes made.
 
-Outlet control can be accessed by..
-
 .. note:: Only licensed instances will have relevant features. To confirm if you have an Outlet Control license, check the License page (*Settings → License*, Administrator-only).
 
 ==========================
@@ -51,6 +49,8 @@ For an rPDU, outlet control functions are exposed on the Layout page. Please not
 1. A Control license. This enables the Outlet Control, Firmware Management and Rack Security features
 2. A supported rPDU
 3. A configured rPDU. I.e. The rPDU itself is configured to allow outlet control and the appropriate :ref:`control operations<Control-operations-doc>` parameters set. This can be done in bulk or on an individual rPDU basis
+
+.. note:: All user roles can access the Layout page for outlet control, but only Administrator and Data Center Manager users can initiate a control action.
 
 .. image:: media/rpdu-layout.png
    :width: 1920px

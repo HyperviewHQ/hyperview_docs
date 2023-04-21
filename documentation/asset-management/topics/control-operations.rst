@@ -10,6 +10,8 @@ Some asset types allow Hyperview to perform certain control functions. For examp
 - Update firmware
 - Power on, off or cycle a rack PDU outlet
 
+.. note:: Only Administrator users can access and set an asset's control operation settings.
+
 These operations require appropriate authentication. The control operations page allows users with the appropriate permissions to configure authentication parameters and if needed assign a data collector.
 
 Equivalent bulk actions allow for the bulk configuration of these credentials.
