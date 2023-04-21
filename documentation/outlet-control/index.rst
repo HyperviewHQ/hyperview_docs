@@ -50,6 +50,8 @@ For an rPDU, outlet control functions are exposed on the Layout page. Please not
 2. A supported rPDU
 3. A configured rPDU. I.e. The rPDU itself is configured to allow outlet control and the appropriate :ref:`control operations<Control-operations-doc>` parameters set. This can be done in bulk or on an individual rPDU basis
 
+.. note:: All user roles can access the Layout page for outlet control, but only Administrator and Data Center Manager users can initiate a control action.
+
 .. image:: media/rpdu-layout.png
    :width: 1920px
    :alt: Rack PDU Layout
