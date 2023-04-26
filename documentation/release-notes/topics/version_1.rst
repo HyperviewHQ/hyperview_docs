@@ -8,7 +8,7 @@ Hyperview 1.6 (February 01, 2021)
 
 This section covers significant new features, enhancements, and bug fixes in Hyperview 1.6.x since version 1.5.x.
 
-.. raw :: html
+.. raw:: html
 
 	<iframe src="https://player.vimeo.com/video/509055125" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
@@ -114,7 +114,7 @@ Hyperview 1.5 (December 22, 2020)
 
 This section covers significant new features, enhancements, and bug fixes in Hyperview 1.5.x since version 1.4.x.
 
-.. raw :: html
+.. raw:: html
 
 	<iframe src="https://player.vimeo.com/video/493474498" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
@@ -142,13 +142,13 @@ Power Users and above can now use the Monitoring page (browse to asset → *Info
 ========================
 Enhanced user management
 ========================
-User-related features have been significantly enhanced to support external login-only access on a per-user basis, and to allow for applying asset access policies across groups of people.
+User-related features have been significantly enhanced to support external login-only access on a per-user basis and to allow for applying asset access policies across groups of people.
 
 External login enforcement
 --------------------------
 Administrators can now force users to access Hyperview using their external login provider from the Users grid (*Account → Profile → Users*).
 
-From a user's standpoint, attempting to log into an external login enforced-account using a Hyperview username and password will throw an error. Additionally, the "Manage your account" page (*Account → Profile*) will no longer feature *Password*, *External Logins*, and *Two-Factor Authentication* links.
+From a user's standpoint, attempting to log into an external login-enforced account using a Hyperview username and password will throw an error. Additionally, the "Manage your account" page (*Account → Profile*) will no longer feature *Password*, *External Logins*, and *Two-Factor Authentication* links.
 
 User groups
 -----------
@@ -265,7 +265,7 @@ Hyperview 1.4 (November 27, 2020)
 
 This section covers significant new features, enhancements, and bug fixes in Hyperview 1.4.x since version 1.3.x.
 
-.. raw :: html
+.. raw:: html
 
 	<iframe src="https://player.vimeo.com/video/485601861" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
@@ -312,7 +312,7 @@ The process of adding a Blade Server, Blade Network or Blade Storage to a Blade 
 
 Improved Blade Enclosure sensors
 --------------------------------
-The ``rackTotalPowerBasedOnChildConsumingDevices`` computed sensor for racks has been improved to account for all related power consuming devices. Power from Blade Enclosures is now taken into account.
+The ``rackTotalPowerBasedOnChildConsumingDevices`` computed sensor for racks has been improved to account for all related power-consuming devices. Power from Blade Enclosures is now taken into account.
 
 =============================================
 Rack Security enhancements (licensed feature)
@@ -362,7 +362,7 @@ In addition, the ``(after)``, ``(limit)``, ``(sort)`` and ``(filter)`` query par
 
 Enhanced /search
 ----------------
-The ``/api/v1/asset/search`` endpoint has been improved to allow searching for comparative custom property values. For UTC datetime/numeric comparisons you can use:
+The ``/api/v1/asset/search`` endpoint has been improved to allow searching for comparative custom property values. For UTC datetime/numeric comparisons, you can use:
 
 * ``lt`` (less than)
 * ``gt`` (greater than)
@@ -393,8 +393,8 @@ In addition, various object definitions have been improved for the Hyperview and
 ============
 Known issues
 ============
-* **AS-2355** If you maximize the browser window while in a mobile window width, the number of pages does not get updated.
-* **AS-5781** Devices in the "Juniper EX Stacked Switch" definition stack are merging together when they should not.
+* **AS-2355** If you maximize the browser window while in a mobile-sized window width, the number of pages does not get updated.
+* **AS-5781** Devices in the "Juniper EX Stacked Switch" definition stack are merging when they should not.
 * **AS-6161** The Rack Space KPIs widget for location dashboards is repeating legend values.
 * **AS-6484** IPMI device discovery collects device data but does not surface it in the UI.
 * **AS-6821** Tooltips for Change Log events are not consistent across supported browsers.
@@ -424,14 +424,14 @@ Hyperview 1.3 (October 21, 2020)
 
 This section covers significant new features, enhancements, and bug fixes in Hyperview 1.3.x since version 1.2.x.
 
-.. raw :: html
+.. raw:: html
 
 	<iframe src="https://player.vimeo.com/video/471100686" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 ===============
 Advanced Search
 ===============
-An "Advanced" button now appears in the Search panel that lets you drill down to exactly the data you want. You can search for a specific asset type, location, manufacturer, and model. Additionally you can apply property filters, such as to find racks with available size and power. On top, you can export the Advanced Search grid, perform bulk operations, and even specify which columns to include in search results.
+An "Advanced" button now appears in the Search panel that lets you drill down to exactly the data you want. You can search for a specific asset type, location, manufacturer, and model. Additionally, you can apply property filters, such as to find racks with available size and power. On top, you can export the Advanced Search grid, perform bulk operations, and even specify which columns to include in search results.
 
 ==========================
 Power aggregations and PUE
@@ -530,11 +530,11 @@ Known issues
 * **AS-7631** SSH key discoveries do not work using new keys.
 * **AS-7635** Some IPMI servers show the same NIC twice.
 * **AS-7641** Info boxes are missing on discovery details pages for Included IP Addresses and Excluded IP Addresses.
-* **AS-7654** Panduit Gen3 (Unite/Sinetica based) rack PDUs appear as environmental monitors.
+* **AS-7654** Panduit Gen3 (Unite/Sinetica-based) rack PDUs appear as environmental monitors.
 * **AS-7746** The Model dropdown is not showing discovered models during asset creation.
 * **AS-7755** Attempting to update virtual server names throws an API exception.
 * **AS-7761** Asset discovery reports are not updating the discovery time for the last discovery run.
-* **AS-7769** Discovering Eaton rack PDUs throw an unhandled exception.
+* **AS-7769** Discovering Eaton rack PDUs throws an unhandled exception.
 * **AS-7804** The Swagger interfaces for Hyperview API and Data Collector API (under the *Help* menu) cannot be used to make API calls. As a workaround, you can copy the generated code from Swagger to make calls using a REST API client, such as Postman.
 
 =================
@@ -542,7 +542,7 @@ Notable bug fixes
 =================
 * **AS-6819** Addressed a firmware issue with Panduit Gen5 PDUs that was arbitrarily swapping temperature sensor names.
 * **AS-5462** Fixed a scrolling issue with the Rack Elevation widget.
-* **AS-7282** In some cases, invalid outlet status values were being generated for Panduit Gen5 rack PDUs. This has been addressed.
+* **AS-7282** In some cases, invalid outlet status values were generated for Panduit Gen5 rack PDUs. This has been addressed.
 * **AS-7759** The Add New modal would crash while adding certain assets. This has been fixed.
 
 ========================
@@ -585,7 +585,7 @@ For assets that can contain other assets (locations, blade enclosures, blade ser
 ===========================================
 New Assets by Type view and related changes
 ===========================================
-Previously, in the Asset Types treeview (*Assets → Overview → select "Asset Types" instead of "Hierarchy"*) you could expand a certain asset type's branch to reveal existing assets of that type. Starting with this version, the Asset Types treeview is no longer expandable. Clicking on an asset type in the treeview will open its own Asset By Types page. The grid can be filtered, sorted, searched, and exported; you can also use it to navigate to any of the assets of that type.
+Previously, in the Asset Types tree view (*Assets → Overview → select "Asset Types" instead of "Hierarchy"*) you could expand a certain asset type's branch to reveal existing assets of that type. Starting with this version, the Asset Types treeview is no longer expandable. Clicking on an asset type in the treeview will open its own Asset By Types page. The grid can be filtered, sorted, searched, and exported; you can also use it to navigate to any of the assets of that type.
 
 =================================
 Control credentials for rack PDUs
@@ -668,7 +668,7 @@ Other rack security improvements
 Other notable improvements
 ==========================
 * You can now delete computed and direct sensors from an asset's Sensors page (*Information → Sensors*).
-* The bulk import feature has been improved to allow importing more assets.
+* The bulk import feature has been improved to allow importing of more assets.
 * Starting with this version, motherboard serial numbers can be retrieved via SSH (will appear as Board Serial Number in the dashboard).
 * Password requirement hints are displayed during new user creation.
 
@@ -712,7 +712,7 @@ Known issues
 * **AS-7118** Some SNMP v3 control credential combinations are not working for Panduit Gen 5 rack PDUs. For example, using MD5 or SHA1 as the authentication scheme with no privacy algorithm will work, but using MD5 or SHA1 with AES128 will not.
 * **AS-7126** The External Login button disappears from the Log In page if you attempt to log in with an incorrect email or password.
 * **AS-7132** Assets with large amounts of discovered data (such as very large network switches) are currently not being indexed. As a result, those assets will presently not appear in search results.
-* **AS-7183** PDU breakers do not merge correctly from manually created device to discovered device (note: fixed in 1.2.1).
+* **AS-7183** PDU breakers do not merge correctly from a manually created device to discovered device (note: fixed in 1.2.1).
 * **AS-7186** APC AP8961 rack PDUs are incorrectly showing a Rated Voltage value of -1.
 * **AS-7196** Sensors do not always get generated while concurrent jobs are running (note: fixed in 1.2.1).
 
@@ -779,7 +779,7 @@ Support for rack door access sensors
 Starting with this version, Hyperview supports security-enabled racks that have door sensors attached to them. (Note: this is a licensed feature which is not available in the product by default; please contact us if you are interested). For instance, if the rack's front or rear door is open, the rack security status will be marked as Critical so that you are alerted to the issue. Relevant features and improvements also include:
 
 * Event notifications for watched security-enabled racks
-* Rack security traps can be reviewed in the asset's Events page
+* Rack security traps can be reviewed on the asset's Events page
 * Columns for rack door sensors on the Assets by Type page
 * Rack Elevation widget highlights the rack security status
 * A new Rack Security widget, which can be added from the rack's Dashboard
@@ -836,7 +836,7 @@ Changes in version 1.1.2
 ========================
 Bug fixes
 ---------
-* **AS-6860** Fixed an issue regarding sensor data handling for devices which do not return sensor names.
+* **AS-6860** Fixed an issue regarding sensor data handling for devices that do not return sensor names.
 
 *****
 
@@ -873,7 +873,7 @@ You can auto-discover devices connected to your network via Data Collectors inst
 
 Role-based access
 -----------------
-What features and data that you can access in Hyperview depends on your user role. For example, if you're a Data Center Manager you can perform everything you'll need to do in your position, but you can't apply any global changes (such as change the locale settings) like Administrators can.
+What features and data you can access in Hyperview depends on your user role. For example, if you're a Data Center Manager you can perform everything you'll need to do in your position, but you can't apply any global changes (such as changing the locale settings) like Administrators can.
 
 Ease of integration
 -------------------
@@ -890,11 +890,11 @@ This section covers significant new features, enhancements, and bug fixes in the
 
 External Login feature
 ----------------------
-Users can use third-party credentials to single sign-on to Hyperview. Currently only Microsoft Authentication is supported. The associated Microsoft account (such as a Microsoft 365 account)must be linked to the current Hyperview user before using the feature.
+Users can use third-party credentials to single sign-on to Hyperview. Currently, only Microsoft Authentication is supported. The associated Microsoft account (such as a Microsoft 365 account)must be linked to the current Hyperview user before using the feature.
 
 SNMP trap management
 --------------------
-Starting with this version, Hyperview features improved asset event management. Specifically, we have added support for SNMP traps. For example if a device overheatsand sends an SNMP trap, then the change will result in an event on the asset. Events can now be managed under the Events tab on asset pages.
+Starting with this version, Hyperview features improved asset event management. Specifically, we have added support for SNMP traps. For example, if a device overheats and sends an SNMP trap, then the change will result in an event on the asset. Events can now be managed under the Events tab on asset pages.
 
 Asset notification subscriptions
 --------------------------------

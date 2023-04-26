@@ -7,7 +7,7 @@ Hyperview 2.6 (July 26, 2021)
 *****************************
 This section covers significant changes and bug fixes in Hyperview 2.6.x since version 2.5.x.
 
-.. raw :: html
+.. raw:: html
 
 	<div class="pb-3"><iframe src="https://player.vimeo.com/video/580811013" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
 
@@ -45,7 +45,7 @@ Hyperview 2.5 (July 14, 2021)
 *****************************
 This section covers significant changes and bug fixes in Hyperview 2.5.x since version 2.4.x.
 
-.. raw :: html
+.. raw:: html
 
 	<div class="pb-3"><iframe src="https://player.vimeo.com/video/574699786" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
 
@@ -82,7 +82,7 @@ Miscellaneous improvements
 * You can now generate sensor graphs for the last one hour (*asset → Information → Sensors → Graph → Time Range (UTC) → Last Hour*), starting from the time you generate the graph.
 * Dashboard editing privileges have been updated to Administrator-only.
 * Location pickers have been improved to automatically open the asset location while selecting a power source.
-* Watch notification emails now mention the asset location path.
+* Watch notification emails now show the asset location path.
 * The Refresh button has been added to the following pages: Assets by Type pages, Assets by Location pages, the Watched Assets page, and the Discovery Report page for assets (*asset → Information → Discovery Report*).
 
 ===========
@@ -184,7 +184,7 @@ Hyperview 2.4 (June 18, 2021)
 *****************************
 This section covers significant changes and bug fixes in Hyperview 2.4.x since version 2.3.x.
 
-.. raw :: html
+.. raw:: html
 
 	<div class="pb-3"><iframe src="https://player.vimeo.com/video/564296210" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
 
@@ -219,7 +219,7 @@ Hyperview 2.3 (May 21, 2021)
 ****************************
 This section covers significant changes and bug fixes in Hyperview 2.3.x since version 2.2.x.
 
-.. raw :: html
+.. raw:: html
 
 	<div class="pb-3"><iframe src="https://player.vimeo.com/video/553112832" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
 
@@ -275,7 +275,7 @@ Hyperview 2.2 (April 28, 2021)
 ******************************
 This section covers significant changes and bug fixes in Hyperview 2.2.x since version 2.1.x.
 
-.. raw :: html
+.. raw:: html
 
 	<div class="pb-3"><iframe src="https://player.vimeo.com/video/544745950" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
 
@@ -286,7 +286,7 @@ Document Management feature
 ===========================
 Document Management is a new, separately licensed feature that lets you create and maintain asset-document associations. For example, you can associate device documentation for a particular rack PDU model with relevant rack PDU records. A document association can be a document file (such as a PDF), or a hyperlink. The default maximum storage for documents is 5 GB.
 
-Licensed instances will have an *Assets → Documents* link in the sidebar, and an *Information → Documents* link that can be accessed from asset Dashboard pages. You can search, download documents, and visit document links.
+Licensed instances will have an *Assets → Documents* link in the sidebar and an *Information → Documents* link that can be accessed from asset Dashboard pages. You can search, download documents, and visit document links.
 
 Furthermore, Power Users and above can manage documents, update asset associations per document, apply access control, and even bulk-add or bulk-remove document associations (note: Power Users cannot delete documents).
 
@@ -413,7 +413,7 @@ Notable bug fixes
 =================
 * **AS-5489** The "Show Selected Racks" button was active even when there were no racks to select in a layout. This has been fixed.
 * **AS-8630** Custom property deletion events in the Change Log mentioned "nothing" instead of the actual property value. This has been fixed.
-* **AS-8701** Some UI text was not getting translated to Spanish upon updating Locale settings. This has been fixed.
+* **AS-8701** Some UI text was not getting translated to Spanish upon updating the Locale settings. This has been fixed.
 * **AS-8953** For sensors, the state of the Unlink button would not respect access policies. (Please note that this only affected the button state, and not the underlying functionality.) This has been addressed.
 * **AS-9178** In some cases, temperature sensors returned Celsius values even when Locale settings were set to use Fahrenheit. This has been fixed.
 
@@ -431,7 +431,7 @@ Hyperview 2.1 (March 16, 2021)
 ******************************
 This section covers significant changes and bug fixes in Hyperview 2.1.x since version 2.0.x.
 
-.. raw :: html
+.. raw:: html
 
 	<div class="pb-3"><iframe src="https://player.vimeo.com/video/524566298" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
 
@@ -459,8 +459,8 @@ Miscellaneous improvements
 =================
 Notable bug fixes
 =================
-* **AS-8626** Pressing the Enter key while adding a custom property would clear form values. This has been fixed.
-* **AS-8737** Power providing devices could be associated with unknown devices. This has been fixed.
+* **AS-8626** Pressing the Enter key while adding a custom property would clear out form values. This has been fixed.
+* **AS-8737** Power-providing devices could be associated with unknown devices. This has been fixed.
 * **AS-8924** On the Power Path page, double-clicking on an asset that you don't have access to would open the No Access page. This has been fixed.
 
 ============
@@ -511,7 +511,7 @@ Miscellaneous improvements
 * Asset Change Log messages related to refreshing BACnet/IP and Modbus TCP definitions have been improved to mention the definition.
 * Busway tap-off names are now unique.
 * Grid export performance has been improved.
-* Google maps API and map rendering support has been improved.
+* Google Maps API and map rendering support have been improved.
 * Various significant backend improvements have been made to enhance the stability, responsiveness, and scalability of the application.
 
 =================

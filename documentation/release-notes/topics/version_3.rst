@@ -6,6 +6,10 @@ Hyperview 3.12 (April 14, 2023)
 *******************************
 This section covers significant changes and bug fixes in Hyperview 3.12.x since version 3.11.x.
 
+.. raw:: html
+
+	<div class="pb-3"><iframe src="https://player.vimeo.com/video/821341778?h=f93c6d3fb1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+
 .. note:: This release has changes and improvements to the Data Collector software. It is strongly recommended to update your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
 
 =============================================
@@ -57,7 +61,7 @@ Hyperview 3.11 (February 15, 2023)
 **********************************
 This section covers significant changes and bug fixes in Hyperview 3.11.x since version 3.10.x.
 
-.. raw :: html
+.. raw:: html
 
 	<div class="pb-3"><iframe src="https://player.vimeo.com/video/801783109?h=c1542f621e" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
 
@@ -391,7 +395,7 @@ Hyperview 3.7 (August 24, 2022)
 *******************************
 This section covers significant changes and bug fixes in Hyperview 3.7.x since version 3.6.x.
 
-.. raw :: html
+.. raw:: html
 
 	<div class="pb-3"><iframe title="vimeo-player" src="https://player.vimeo.com/video/745165617?h=e0e366da7e" width="640" height="360" frameborder="0" allowfullscreen></iframe></div>
 
@@ -441,7 +445,7 @@ Hyperview 3.6 (July 15, 2022)
 *****************************
 This section covers significant changes and bug fixes in Hyperview 3.6.x since version 3.5.x.
 
-.. raw :: html
+.. raw:: html
 
 	<div class="pb-3"><iframe src="https://player.vimeo.com/video/733686558?h=d127d279dc" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
 
@@ -522,7 +526,7 @@ Hyperview 3.5 (May 3, 2022)
 ***************************
 This section covers significant changes and bug fixes in Hyperview 3.5.x since version 3.4.x.
 
-.. raw :: html
+.. raw:: html
 
 	<div class="pb-3"><iframe src="https://player.vimeo.com/video/709661189?h=bbbe16c9b7" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
 
@@ -559,7 +563,7 @@ The Type field is now optional in the Advanced Search Filters pane (*Search → 
 ==========================
 Other notable improvements
 ==========================
-While updating an asset's location from the *Information → Properties* page, a warning appears if the new location's access policy differs from that of the current location. If you are an Administrator, the warning message will allow you to select which access policy to apply. For Data Center Managers and Power Users the options in the warning message will be read-only.
+While updating an asset's location from the *Information → Properties* page, a warning appears if the new location's access policy differs from that of the current location. If you are an Administrator, the warning message will allow you to select which access policy to apply. For Data Center Managers and Power Users, the options in the warning message will be read-only.
 
 ===========
 API changes
@@ -606,7 +610,7 @@ Hyperview 3.4 (April 6, 2022)
 *****************************
 This section covers significant changes and bug fixes in Hyperview 3.4.x since version 3.3.x.
 
-.. raw :: html
+.. raw:: html
 
 	<div class="pb-3"><iframe src="https://player.vimeo.com/video/698389123" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
 
@@ -653,18 +657,18 @@ Hyperview has two new bulk actions:
 * Update Access Policy (which lets Administrators update the Access Policy for selected assets), and
 * Update Model (which allows Power Users and above to update the asset model for selected assets of interchangeable types).
 
-Both actions are available from the Bulk Actions menu on Assets By Type, Assets By Location, and Advanced Search pages.
+Both actions are available from the Bulk Actions menu on the Assets By Type, Assets By Location, and Advanced Search pages.
 
 =====================================================
 New Delta-T and average temperature sensors for racks
 =====================================================
 The following new computed sensors have been added for racks with linked temperature sensors:
 
-* Average Temperature Front Top (shows the average temperature in the front-top part of the rack)
+* Average Temperature Front Top (shows the average temperature in the front top part of the rack)
 * Average Temperature Rear Top (shows the average temperature in the rear-top part of the rack)
 * Average Temperature Front Middle (shows the average temperature in the front-middle part of the rack)
 * Average Temperature Rear Middle (shows the average temperature in the rear-middle part of the rack)
-* Average Temperature Front Bottom (shows the average temperature in the front-bottom part of the rack)
+* Average Temperature Front Bottom (shows the average temperature in the front bottom part of the rack)
 * Average Temperature Rear Bottom (shows the average temperature in the rear-bottom part of the rack)
 * Delta-T Top (shows the difference between the average front and rear temperatures for the top of the rack)
 * Delta-T Middle (shows the difference between the average front and rear temperatures for the middle of the rack)
@@ -840,7 +844,7 @@ Hyperview 3.3 (January 17, 2022)
 ********************************
 This section covers significant changes and bug fixes in Hyperview 3.3.x since version 3.2.x.
 
-.. raw :: html
+.. raw:: html
 
 	<div class="pb-3"><iframe src="https://player.vimeo.com/video/669621536" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
 
@@ -851,7 +855,7 @@ New licensed feature: AssetTracker
 ==================================
 AssetTracker is an RFID asset tracking solution for data centers that lets you detect and audit assets at the rack U level in real-time. AssetTracker master modules are physically installed on racks you wish to track, which in turn host RFID tags that are attached to racked assets. Expansion modules can be daisy-chained to master modules as needed. Module and asset tag records can be viewed and managed from the new licensee-only AssetTracker page (*Assets → AssetTracker*).
 
-The Hyperview Data Collector has been enhanced in this version to communicate with AssetTracker modules. Relevant alarm events are generated at the rack or All location level, as appropriate, which makes it convenient to stay on top of changes. Fields for AssetTracker Master Module ID (the unique identifier for a given module) and AssetTracker ID (the unique identifier for a tag) now appear across the Properties page, the Add New page, and modals to add or update asset records. Furthermore, the Advanced Search page has been enhanced to include new Asset Property (String) filters for AssetTracker Master Module ID and AssetTracker ID.
+The Hyperview Data Collector has been enhanced in this version to communicate with AssetTracker modules. Relevant alarm events are generated at the rack or All location levels, as appropriate, which makes it convenient to stay on top of changes. Fields for AssetTracker Master Module ID (the unique identifier for a given module) and AssetTracker ID (the unique identifier for a tag) now appear across the Properties page, the Add New page, and modals to add or update asset records. Furthermore, the Advanced Search page has been enhanced to include new Asset Property (String) filters for AssetTracker Master Module ID and AssetTracker ID.
 
 .. note:: Please contact our Sales team if you are interested in getting an AssetTracker license.
 
@@ -916,7 +920,7 @@ Hyperview 3.2 (November 18, 2021)
 *********************************
 This section covers significant changes and bug fixes in Hyperview 3.2.x since version 3.1.x.
 
-.. raw :: html
+.. raw:: html
 
 	<div class="pb-3"><iframe src="https://player.vimeo.com/video/646672064" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
 
@@ -925,12 +929,12 @@ This section covers significant changes and bug fixes in Hyperview 3.2.x since v
 =================================
 New bulk action: Update Lifecycle
 =================================
-You can now update lifecycle values for one or more eligible assets from the Bulk Actions menu, which in turn is available from Advanced Search, Assets By Type, and Assets By Location pages. Eligible assets are all asset types except Location, Rack, and Unknown. The Bulk Update Lifecycle modal allows you to set values for one or more of the following fields: State, Commission Date, Retirement Date, End of Life Date.
+You can now update lifecycle values for one or more eligible assets from the Bulk Actions menu, which in turn is available from Advanced Search, Assets By Type, and Assets By Location pages. Eligible assets are all asset types except Location, Rack, and Unknown. The Bulk Update Lifecycle modal allows you to set values for one or more of the following fields: State, Commission Date, Retirement Date and End of Life Date.
 
 ========================================================
 New Saved Search feature and various search enhancements
 ========================================================
-The Advanced Search page now lets you save searches to be re-run later. There are two new buttons on the page: *Save* (lets you save a search) and *Saved Searches* (opens the Saved Searches panel, which lists existing saved personal and global searches). Any user can perform an Advanced Search, applied via filters, writing a manual query, or both, and then save it. Personal saved searches are only available to the user who created them and are listed under My Searches in the Saved Searches panel. Only Administrators can save and manage global searches, which are available to all users and appear under Global Searches in the Saved Searches panel. To apply a personal or global saved search, simply select it in the panel and click Search.
+The Advanced Search page now lets you save searches to be re-run later. There are two new buttons on the page: *Save* (lets you save a search) and *Saved Searches* (opens the Saved Searches panel, which lists existing saved personal and global searches). Any user can perform an Advanced Search, apply filters, write a manual query, or both, and then save it. Personal saved searches are only available to the user who created them and are listed under My Searches in the Saved Searches panel. Only Administrators can save and manage global searches, which are available to all users and appear under Global Searches in the Saved Searches panel. To apply a personal or global saved search, simply select it in the panel and click Search.
 
 Furthermore, starting with this version:
 
@@ -978,14 +982,14 @@ Notable bug fixes
 =================
 * **AS-9609** Creating two busway tap-offs with the same number would throw a console error. This has been fixed.
 * **AS-9826** Unknown assets were visible in the linked sensor location picker. This has been fixed.
-* **AS-10130** An incorrect success message was being displayed upon adding a new custom property or custom property group. This has been addressed.
+* **AS-10130** An incorrect success message was displayed upon adding a new custom property or custom property group. This has been addressed.
 * **AS-10193** Discoveries would not run if ports were blocked and the Data Collector was configured to use a proxy URL. This has been fixed.
 
 ============
 Known issues
 ============
-* **AS-9983** While entering a value for custom property of Date type, the date format isn't always consistent and may throw a console error.
-* **AS-10513** (Document Management licensees only) A false error message and console error is shown upon adding a document of Link type; the document still gets created, and appears in the Documents grid.
+* **AS-9983** While entering a value for a custom property of Date type, the date format isn't always consistent and may throw a console error.
+* **AS-10513** (Document Management licensees only) A false error message and console error are shown upon adding a document of Link type; the document still gets created and appears in the Documents grid.
 * **AS-10536** (API) As an API client, moving a rackable asset with an Unknown rack side to a rack should throw an exception, but currently does not.
 * **AS-10540** For rackable devices, updating the Rack Unit property value from 1 or more to 0, and then back to the original value currently throws an exception, even though it should not.
 * **AS-10573** (API) Negative RU values while creating or updating rack asset properties are allowed despite being invalid.
@@ -1004,7 +1008,7 @@ Hyperview 3.1 (September 17, 2021)
 **********************************
 This section covers significant changes and bug fixes in Hyperview 3.1.x since version 3.0.x.
 
-.. raw :: html
+.. raw:: html
 
 	<div class="pb-3"><iframe src="https://player.vimeo.com/video/610373544" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
 
@@ -1067,7 +1071,7 @@ Advanced Search improvements
 ============================
 * Type is no longer a mandatory filter (unless you want to add an asset property, custom property, or sensor filter).
 * The Location filter now defaults to All to prevent ambiguity.
-* Queries now also take child and descendent assets into consideration, and include them in search results (if they match the query).
+* Queries now also take the child and descendent assets into consideration and include them in search results (if they match the query).
 * The width of the Filters panel has been increased for improved navigation on mobile screens.
 * You can now filter by Enclosure Serial Number and Board Serial Number asset properties, as well as add corresponding grid columns.
 
