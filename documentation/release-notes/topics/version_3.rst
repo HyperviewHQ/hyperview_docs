@@ -8,13 +8,47 @@ This section covers significant changes and bug fixes in Hyperview 3.13.x since 
 
 .. note:: This release has changes and improvements to the Data Collector software. It is strongly recommended to update your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
 
+===========================
+New Feature: Alarm Policies
+===========================
+Hyperview administrators can now set global policies for alarm event notifications based on asset type, location, user and/or user group. This will make it easier for teams to manage alarm events.
+
+With this feature, alarm event notifications can be sent by global policy or by individual user watch policy, giving customers much more flexibility.
+
+Alarm Policies is a base feature available to all Customers.
+
 =================================
 Enhanced Feature: Asset Dashboard
 =================================
+The asset dashboard has been enhanced with two new features:
+
+1. Auto-refresh: Dashboards can be automatically refreshed every 2 minutes or on demand.
+2. Per-asset Dashboard: Dashboards can now be customized for a specific asset as well as globally for an asset type.
 
 ==================================
 Enhanced Feature: Sensor Dashboard
 ==================================
+The sensor dashboard has been enhanced with two new features:
+
+1. Auto-refresh: Dashboards can be automatically refreshed every 2 minutes or on demand.
+2. Enhanced graph titles: Titles have been enhanced to detect sensors with the same name and add differentiating information if available.
+
+====================================
+Enhanced Feature: Rack Layout Export
+====================================
+Rack layouts can now be exported to PDF, JPG or PNG.
+
+==========================================
+Enhanced Feature: ASHRAE Temperature Banda
+==========================================
+Temperature bands in 2D and 3D Location layouts have been aligned to be more compliant with ASHRAE 2021 Thermal Guidelines for Data Processing Environments.
+
+Where technically possible and applicable the view selector and heatmap will also be aligned.
+
+===========================================
+VMware Support for the Linux Data Collector
+===========================================
+The Linux Data Collector has been updated to support VMware vCenter and ESXi discovery.
 
 ===================
 AlmaLinux 9 support
