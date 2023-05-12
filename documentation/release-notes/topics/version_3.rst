@@ -1,6 +1,36 @@
 #########
 Version 3
 #########
+********************
+Hyperview 3.13 (TBD)
+********************
+This section covers significant changes and bug fixes in Hyperview 3.13.x since version 3.12.x.
+
+.. note:: This release has changes and improvements to the Data Collector software. It is strongly recommended to update your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
+
+=================================
+Enhanced Feature: Asset Dashboard
+=================================
+
+==================================
+Enhanced Feature: Sensor Dashboard
+==================================
+
+===================
+AlmaLinux 9 support
+===================
+This release adds support for AlmaLinux9 for Linux Data Collector deployment.
+
+==========================
+Other notable improvements
+==========================
+
+=================
+Notable bug fixes
+=================
+
+*****
+
 *******************************
 Hyperview 3.12 (April 14, 2023)
 *******************************
