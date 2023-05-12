@@ -15,7 +15,7 @@ Hyperview administrators can now set global policies for alarm event notificatio
 
 With this feature, alarm event notifications can be sent by global policy or by individual user watch policy, giving customers much more flexibility.
 
-Alarm Policies is a base feature available to all Customers.
+.. note:: Alarm Policies is a base feature available to all customers.
 
 =======================================
 Enhanced Feature: Bulk event management
