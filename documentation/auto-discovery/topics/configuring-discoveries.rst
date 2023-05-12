@@ -40,7 +40,7 @@ You can specify IP addresses to include or exclude from your discovery as follow
   * Provide a Description (optional).
   * Specify the IP address or range using relevant Type-specific fields.
 
-.. note:: We recommend keeping the total number of IP addresses in a discovery under 1,000 to keep the discovery runtime manageable. It is also best practice to separate discoveries by asset type and protocol to keep discoveries organized and simplify any troubleshooting scenarios.
+.. note:: We recommend keeping the total number of IP addresses in a Discovery under 1,000 to keep the runtime manageable. It is also best practice to separate discoveries by asset type and protocol to keep discoveries organized and simplify any troubleshooting scenarios.
 
 ==========================
 Updating protocol settings
@@ -64,7 +64,7 @@ Relevant port numbers are automatically added for each protocol upon discovery c
 ===========================
 Adding a discovery schedule
 ===========================
-Click the *Schedules* tab to open the Schedule page, which lets you specify a runtime schedule for your discovery. By default the Schedule value is set to None, which implies that the discovery will only be run manually.
+Click the *Schedules* tab to open the Schedule page, which lets you specify a runtime schedule for your discovery. By default, the Schedule value is set to None, which implies that the discovery will only be run manually.
 
 1. Select Daily, Weekly, or Monthly from the Schedule dropdown.
 2. Provide values and click *Save*.
