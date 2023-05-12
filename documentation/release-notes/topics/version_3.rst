@@ -17,6 +17,11 @@ With this feature, alarm event notifications can be sent by global policy or by 
 
 Alarm Policies is a base feature available to all Customers.
 
+=======================================
+Enhanced Feature: Bulk event management
+=======================================
+Hyperview power users and above are now able to bulk acknowledge, un-acknowledge and close events from the event tab of an asset and the Asset Tracker info panel.
+
 =================================
 Enhanced Feature: Asset Dashboard
 =================================
@@ -38,6 +43,11 @@ Enhanced Feature: Rack Layout Export
 ====================================
 Rack layouts can now be exported to PDF, JPG or PNG.
 
+===========================
+Enhanced Feature: 3D Layout
+===========================
+Asset dimension is now rendered in 3D layouts if the data is available. Customers can now update the data on the asset properties page and visualize it on the 3D Layout page.
+
 ==========================================
 Enhanced Feature: ASHRAE Temperature Bands
 ==========================================
@@ -58,10 +68,23 @@ This release adds support for AlmaLinux9 for Linux Data Collector deployment.
 ==========================
 Other notable improvements
 ==========================
+- Sensor polling interval and thresholds are now two different settings pages under the Settings -> Sensors page
+- Advanced search will now show the applicable unit of measure on columns and the filter panel
+- Updating access policies on a container asset like location or rack by clicking "Save and Apply to Descendant Assets", is performed as a bulk action
+- Matching manufacturer, asset type and device model has been improved when performing bulk asset import
+- Power meters can now be added to racks
+- The Linux Data Collector software bundle has two new support tools for troubleshooting BACnet and VMware discovery and monitoring issues
+- Minimum value validation has been improved on asset properties
+- Discovery algorithm was enhanced for better model detection when different models are reported by the same asset using different protocols
+- Port number validation has been improved on the Asset -> Information -> Network Ports page.
 
 =================
 Notable bug fixes
 =================
+- **AS-11794** Fixed an issue that caused the Data Collector to be changed on a done work order when changed on the linked asset
+- **AS-12229** and **AS-12231** Fixed issues with aligning selected shapes in the layout editor top and left
+- **AS-12255** Fixed an issue that, under certain circumstances, caused Javascript console errors when adding or modifying a rack
+- **AS-12632** Fixed an issue that caused units of measure to not show based on user-specified Locale settings when performing an Advanced Search
 
 *****
 
