@@ -39,7 +39,7 @@ Enhanced Feature: Rack Layout Export
 Rack layouts can now be exported to PDF, JPG or PNG.
 
 ==========================================
-Enhanced Feature: ASHRAE Temperature Banda
+Enhanced Feature: ASHRAE Temperature Bands
 ==========================================
 Temperature bands in 2D and 3D Location layouts have been aligned to be more compliant with ASHRAE 2021 Thermal Guidelines for Data Processing Environments.
 
