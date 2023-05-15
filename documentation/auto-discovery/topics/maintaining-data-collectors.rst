@@ -5,7 +5,7 @@
 Maintaining Data Collectors
 ***************************
 
-Data Collectors must be up-to-date and communicating consistently with the Hyperview platform. This is crucial because sensors are assigned to Data Collectors. Using a stale or non-functioning Data Collector will result in incorrect sensor data and therefore an inaccurate representation of your assets in Hyperview.
+Data Collectors must be up-to-date and communicate consistently with the Hyperview platform. This is crucial because sensors are assigned to Data Collectors. Using a stale or non-functioning Data Collector will result in incorrect sensor data and therefore an inaccurate representation of your assets in Hyperview.
 
 ===========================================
 Tracking stale and outdated Data Collectors
@@ -16,8 +16,8 @@ The Last Communicated column in the Data Collectors grid indicates the date & ti
 
 Distinct alarm event messages are generated for the **All** location (*Asset Hierarchy → All → Events*) if:
 
-* a Data Collector has not communicated with Hyperview within 2x the usual polling frequency; or
-* the Data Collector version is out of date.
+* A Data Collector has not communicated with Hyperview within 2x the usual polling frequency; or
+* The Data Collector version is out of date.
 
 Consult your IT department to address any connectivity issues, and/or update the Data Collector accordingly.
 
