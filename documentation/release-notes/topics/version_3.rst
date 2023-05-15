@@ -1,6 +1,93 @@
 #########
 Version 3
 #########
+********************
+Hyperview 3.13 (TBD)
+********************
+This section covers significant changes and bug fixes in Hyperview 3.13.x since version 3.12.x.
+
+.. note:: This release has changes and improvements to the Data Collector software. It is strongly recommended to update your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
+
+===========================
+New Feature: Alarm Policies
+===========================
+Hyperview administrators can now set global policies for alarm event notifications based on asset type, location, user and/or user group. This will make it easier for teams to manage alarm events.
+
+With this feature, alarm event notifications can be sent by global policy or by individual user watch policy, giving customers much more flexibility.
+
+.. note:: Alarm Policies is a base feature available to all customers.
+
+=======================================
+Enhanced Feature: Bulk event management
+=======================================
+Hyperview power users and above are now able to bulk acknowledge, un-acknowledge and close events from the event tab of an asset and the AssetTracker info panel.
+
+=================================
+Enhanced Feature: Asset Dashboard
+=================================
+The asset dashboard has been enhanced with two new features:
+
+1. Auto-refresh: Dashboards can be automatically refreshed every 2 minutes or on demand.
+2. Per-asset Dashboard: Dashboards can now be customized for a specific asset as well as globally for an asset type.
+
+==================================
+Enhanced Feature: Sensor Dashboard
+==================================
+The sensor dashboard has been enhanced with two new features:
+
+1. Auto-refresh: Dashboards can be automatically refreshed every 2 minutes or on demand.
+2. Enhanced graph titles: Titles have been enhanced to detect sensors with the same name and add differentiating information if available.
+
+====================================
+Enhanced Feature: Rack Layout Export
+====================================
+Rack layouts can now be exported to PDF, JPG or PNG.
+
+===========================
+Enhanced Feature: 3D Layout
+===========================
+Asset dimension is now rendered in 3D layouts if the data is available. Customers can now update the data on the asset properties page and visualize it on the 3D Layout page.
+
+==========================================
+Enhanced Feature: ASHRAE Temperature Bands
+==========================================
+Temperature bands in 2D and 3D Location layouts have been aligned to be more compliant with ASHRAE 2021 Thermal Guidelines for Data Processing Environments.
+
+Where technically possible and applicable the view selector and heatmap will also be aligned.
+
+===========================================
+VMware Support for the Linux Data Collector
+===========================================
+The Linux Data Collector has been updated to support VMware vCenter and ESXi discovery.
+
+===================
+AlmaLinux 9 support
+===================
+This release adds support for AlmaLinux9 for Linux Data Collector deployment.
+
+==========================
+Other notable improvements
+==========================
+- Sensor polling interval and thresholds are now two different settings pages under the Settings -> Sensors page
+- Advanced search will now show the applicable unit of measure on columns and the filter panel
+- Updating access policies on a container asset like location or rack by clicking "Save and Apply to Descendant Assets", is performed as a bulk action
+- Matching manufacturer, asset type and device model has been improved when performing bulk asset import
+- Power meters can now be added to racks
+- The Linux Data Collector software bundle has two new support tools for troubleshooting BACnet and VMware discovery and monitoring issues
+- Minimum value validation has been improved on asset properties
+- Discovery algorithm was enhanced for better model detection when different models are reported by the same asset using different protocols
+- Port number validation has been improved on the Asset -> Information -> Network Ports page.
+
+=================
+Notable bug fixes
+=================
+- **AS-11794** Fixed an issue that caused the Data Collector to be changed on a done work order when changed on the linked asset
+- **AS-12229** and **AS-12231** Fixed issues with aligning selected shapes in the layout editor top and left
+- **AS-12255** Fixed an issue that, under certain circumstances, caused Javascript console errors when adding or modifying a rack
+- **AS-12632** Fixed an issue that caused units of measure to not show based on user-specified Locale settings when performing an Advanced Search
+
+*****
+
 *******************************
 Hyperview 3.12 (April 14, 2023)
 *******************************
