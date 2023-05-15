@@ -20,7 +20,7 @@ With this feature, alarm event notifications can be sent by global policy or by 
 =======================================
 Enhanced Feature: Bulk event management
 =======================================
-Hyperview power users and above are now able to bulk acknowledge, un-acknowledge and close events from the event tab of an asset and the Asset Tracker info panel.
+Hyperview power users and above are now able to bulk acknowledge, un-acknowledge and close events from the event tab of an asset and the AssetTracker info panel.
 
 =================================
 Enhanced Feature: Asset Dashboard
