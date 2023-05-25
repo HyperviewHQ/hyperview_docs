@@ -1,9 +1,9 @@
 #########
 Version 3
 #########
-********************
-Hyperview 3.13 (TBD)
-********************
+*****************************
+Hyperview 3.13 (May 24, 2023)
+*****************************
 This section covers significant changes and bug fixes in Hyperview 3.13.x since version 3.12.x.
 
 .. note:: This release has changes and improvements to the Data Collector software. It is strongly recommended to update your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
@@ -85,6 +85,11 @@ Notable bug fixes
 - **AS-12229** and **AS-12231** Fixed issues with aligning selected shapes in the layout editor top and left
 - **AS-12255** Fixed an issue that, under certain circumstances, caused Javascript console errors when adding or modifying a rack
 - **AS-12632** Fixed an issue that caused units of measure to not show based on user-specified Locale settings when performing an Advanced Search
+
+=========================
+Changes in version 3.13.1
+=========================
+- **AS-13159** Fixed an issue that could cause data migrations to fail in certain circumstances
 
 *****
 
