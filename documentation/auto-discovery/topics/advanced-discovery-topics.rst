@@ -13,6 +13,9 @@ Hyperview uses SNMP walks to enhance device definitions, to model and support de
 
 It is recommended to install the applicable net-snmp package alongside the (Linux) Data Collector software. If that is not possible it can be installed on any machine that has a network line of sight to the target device.
 
+.. warning::
+    Complete snmpwalk files must be submitted with specific formatting in order to enhance device definitions. Contact `Hyperview Support <https://system.hyperviewhq.com/helpdesk>` for additional assistance with tool usage and formatting.
+
 Linux
 -----
 
