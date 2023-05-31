@@ -6,6 +6,10 @@ Hyperview 3.13 (May 24, 2023)
 *****************************
 This section covers significant changes and bug fixes in Hyperview 3.13.x since version 3.12.x.
 
+.. raw:: html
+
+	<div class="pb-3"><iframe src="https://player.vimeo.com/video/832040873?h=380400491b" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+
 .. note:: This release has changes and improvements to the Data Collector software. It is strongly recommended to update your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
 
 ===========================
