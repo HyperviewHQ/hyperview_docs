@@ -13,7 +13,7 @@ This section covers significant changes and bug fixes in Hyperview 3.14.x since 
 Enhanced Licensed Feature: Connectivity
 =======================================
 - RJ11 has been added as a connector type
-- Ports will be created automatically if they do not exist when importing connections
+- A setting was added to auto-create ports if they do not exist when importing connections
 - Users can now add Port 0 if needed
 - Port numbering will start at 0 for new network and network-connected devices, for example, network switches and servers
 
@@ -21,7 +21,8 @@ Enhanced Licensed Feature: Connectivity
 Other notable improvements
 ==========================
 - Double-clicking on an asset in a Work Order will navigate the user to the asset
-- Sensor graph headings have been improved to make sensor names more readable. This impacts both the sensor dashboard and the sensor graph modal window
+- Sensor name readability has been improved across the product. Sensor names will be auto-formatted to "title case" in the sensor dashboard, sensor graph modal, sensor list, asset dashboard and other areas of the product
+- Various improvements have been added to backend services which should improve API performance
 
 =================
 Notable bug fixes
