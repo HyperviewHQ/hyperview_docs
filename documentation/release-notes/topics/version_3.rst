@@ -22,7 +22,7 @@ Other notable improvements
 ==========================
 - Double-clicking on an asset in a Work Order will navigate the user to the asset
 - Sensor name readability has been improved across the product. Sensor names will be auto-formatted to "title case" in the sensor dashboard, sensor graph modal, sensor list, asset dashboard and other areas of the product
-- Various improvements have been added to backend services which should improve API performance
+- Various improvements have been added to backend services which should enhance overall performance
 
 =================
 Notable bug fixes
