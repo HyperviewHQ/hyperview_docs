@@ -2,6 +2,31 @@
 Version 3
 #########
 *****************************
+Hyperview 3.14 (June 7, 2023)
+*****************************
+This section covers significant changes and bug fixes in Hyperview 3.14.x since version 3.13.x.
+
+.. note:: This release has changes and improvements to the Data Collector software. It is strongly recommended to update your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
+
+=======================================
+Enhanced Licenced Feature: Connectivity
+=======================================
+
+==================================
+Enhanced Feature: Sensor Dashboard
+==================================
+
+==========================
+Other notable improvements
+==========================
+
+=================
+Notable bug fixes
+=================
+
+*****
+
+*****************************
 Hyperview 3.13 (May 24, 2023)
 *****************************
 This section covers significant changes and bug fixes in Hyperview 3.13.x since version 3.12.x.
