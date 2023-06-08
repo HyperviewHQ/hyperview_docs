@@ -1,6 +1,38 @@
 #########
 Version 3
 #########
+
+*****************************
+Hyperview 3.14 (June 7, 2023)
+*****************************
+This section covers significant changes and bug fixes in Hyperview 3.14.x since version 3.13.x.
+
+.. note:: This release has changes and improvements to the Data Collector software. It is strongly recommended to update your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
+
+=======================================
+Enhanced Licensed Feature: Connectivity
+=======================================
+- RJ11 has been added as a connector type
+- A setting was added to auto-create ports if they do not exist when importing connections
+- Users can now add Port 0 if needed
+- Port numbering will start at 0 for new network and network-connected devices, for example, network switches and servers
+
+==========================
+Other notable improvements
+==========================
+- Double-clicking on an asset in a Work Order will navigate the user to the asset
+- Sensor name readability has been improved across the product. Sensor names will be auto-formatted to "title case" in the sensor dashboard, sensor graph modal, sensor list, asset dashboard and other areas of the product
+- Various improvements have been added to backend services which should enhance overall performance
+
+=================
+Notable bug fixes
+=================
+- **AS-11055** Fixed an issue that could cause some sensor values to not show in the advanced search results grid
+- **AS-13202** Fixed an issue that could cause sensor charts to not show data when selecting time spans greater than 3 days
+- **AS-13221** Fixed an issue that could cause bulk close of alarm events to fail
+
+*****
+
 *****************************
 Hyperview 3.13 (May 24, 2023)
 *****************************
