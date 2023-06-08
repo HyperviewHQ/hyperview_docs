@@ -12,18 +12,23 @@ This section covers significant changes and bug fixes in Hyperview 3.14.x since 
 =======================================
 Enhanced Licensed Feature: Connectivity
 =======================================
-
-==================================
-Enhanced Feature: Sensor Dashboard
-==================================
+- RJ11 has been added as a connector type
+- Ports will be created automatically if they do not exist when importing connections
+- Users can now add Port 0 if needed
+- Port numbering will start at 0 for new network and network-connected devices, for example, network switches and servers
 
 ==========================
 Other notable improvements
 ==========================
+- Double-clicking on an asset in a Work Order will navigate the user to the asset
+- Sensor graph headings have been improved to make sensor names more readable. This impacts both the sensor dashboard and the sensor graph modal window
 
 =================
 Notable bug fixes
 =================
+- **AS-11055** Fixed an issue that could cause some sensor values to not show in the advanced search results grid
+- **AS-13202** Fixed an issue that could cause sensor charts to not show data when selecting time spans greater than 3 days
+- **AS-13221** Fixed an issue that could cause bulk close of alarm events to fail
 
 *****
 
