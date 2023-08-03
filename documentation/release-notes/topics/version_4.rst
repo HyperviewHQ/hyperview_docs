@@ -27,12 +27,20 @@ New Feature - User Inbox
 =====================================================
 Enhanced Feature - SNMP V3 authentication and privacy
 =====================================================
-
+- New supported auth and priv protocols in the LDC
+- SNMPv3 authentication password length is now enforced to be at least 8 characters to comply with RFC-3414
 
 ===========================
 Enhance Feature - API Users
 ===========================
 - API user role and access can now be edited
+
+
+===========================================
+Enhanced Feature - Power Path Visualization
+===========================================
+- Power path visualization will allow you to double-click and explore various nodes in the power path
+- Power path can now be exported to PDF and various image formats
 
 =========
 New Tools
@@ -44,13 +52,13 @@ New Tools
 ======================================
 Other notable changes and improvements
 ======================================
+- All API routes that were deprecated in 3.X have been removed
+- The Hyperview API link under the Help navigation menu has been renamed to "API Explorer"
 - The Rack PDU layout can now be exported to MS Excel
 - The document storage calculation will take into account user inbox message space usage
-- Credentials Management will not allow you to view multiple passwords at once, it will also log when a user views a password
+- Credentials Management will not allow you to view multiple passwords at once, it will also add an application log when a user views a password
 - Credentials Management will enforce SNMPv3 password length limitations for AES
-- Power path visualization will allow you to double-click and explore various nodes in the power path
 - Various improvements to the sensor card visualization
-- The Hyperview API link under the Help navigation menu has been renamed to "API Explorer"
 
 ============
 Known issues
