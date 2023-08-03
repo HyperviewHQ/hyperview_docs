@@ -40,7 +40,7 @@ Hyperview currently supports direct, computed, linked and manual sensors for ass
 
 What is "Max Storage Size (GB)"?
 --------------------------------
-The Document Management license, which is a feature add-on, increases document management capacity to 50MB per asset from 5MB. The Threshold indicates how much space you have to store document files for your assets. For more information see :ref:`Document Management<Document-management-doc>`.
+The Document Management license, which is a feature add-on, increases document management capacity to 50MB per asset from 5MB. The Threshold indicates how much space you have to store document files for your assets. For more information see :ref:`Document Management<Document-management-doc>`. The calculation takes into account the total space used by user-uploaded documents and by User Inbox messages.
 
 What is "Raw Sensor Data (Days)" and "Sensor Daily Summary (Days)"?
 -------------------------------------------------------------------
