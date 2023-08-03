@@ -69,6 +69,3 @@ Known issues
 Notable bug fixes
 =================
 
-
-*****
-

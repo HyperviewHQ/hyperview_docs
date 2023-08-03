@@ -1,7 +1,7 @@
 SOURCEDIR = "./documentation"
 BUILDDIR = "./site/documentation/_build"
 REDOCCLI = "./node_modules/.bin/redocly"
-REDOCTARGET = "https://nightly.hyperviewhq.com/api/docs/manager/3.0/swagger.json"
+REDOCTARGET = "https://nightly.hyperviewhq.com/api/docs/manager/4.0/swagger.json"
 
 docker:
         docker build -t $(IMAGE_NAME):$(IMAGE_VERSION) .
