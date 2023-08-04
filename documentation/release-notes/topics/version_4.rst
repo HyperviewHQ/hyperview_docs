@@ -30,7 +30,7 @@ New Feature - User Inbox
 Enhanced Feature - SNMPv3 authentication and privacy
 ====================================================
 - The Linux Data Collector SNMPv3 system has been improved to support SHA256, SHA384 and SHA512 for authentication and AES192 and AES256 for Privacy.
-- SNMPv3 authentication password length is now enforced to be at least 8 characters to comply with RFC-3414
+- SNMPv3 authentication and privacy password length is now enforced to be at least 8 characters to comply with RFC-3414
 
 =============================
 Enhanced Feature - API Clients
@@ -46,7 +46,7 @@ Enhanced Feature - Power Path Visualization
 =========================================
 Enhanced Feature - Credentials Management
 =========================================
-- Credentials Management will not allow you to view multiple passwords at once, it will also add an application log when a user views a password
+- Credentials management will not allow you to view multiple passwords at once
 - Credentials management has been enhanced to create an application log when an Administrator views a credential
 - Credentials management API has been enhanced to not allow an Administrator to view multiple passwords at once
 
