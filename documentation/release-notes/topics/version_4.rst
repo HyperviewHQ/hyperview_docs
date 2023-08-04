@@ -12,29 +12,30 @@ This section covers significant changes and bug fixes in Hyperview 4.0.x since v
 ============================================================
 Enhanced Licensed Feature: Connectivity - Circuit Management
 ============================================================
-Connectivity has been enhanced to add circuit management.
 
 =========================================
 Enhanced Licensed Feature: Outlet Control
 =========================================
-- Enhancements to rack PDU layout
-- Enhancements to the asset power page
+Outlet control has been enhanced to allow administrators to control multiple outlets at the same time.
+
+The rack PDU layout has been enhanced to allow the selection of multiple outlets at once and then initiate an action to control turn on, off or cycle selected outlets.
+
+For power-consuming devices, such as servers, the Information -> Power page has been improved to allow for outlet control action on multiple power sources. The page was further enhanced to display the latest available output total power and load for connected Rack PDUs.
 
 ========================
 New Feature - User Inbox
 ========================
 
-=====================================================
-Enhanced Feature - SNMP V3 authentication and privacy
-=====================================================
-- New supported auth and priv protocols in the LDC
+====================================================
+Enhanced Feature - SNMPv3 authentication and privacy
+====================================================
+- The Linux Data Collector SNMPv3 system has been improved to support SHA256, SHA384 and SHA512 for authentication and AES192 and AES256 for Privacy.
 - SNMPv3 authentication password length is now enforced to be at least 8 characters to comply with RFC-3414
 
-===========================
-Enhance Feature - API Users
-===========================
-- API user role and access can now be edited
-
+=============================
+Enhanced Feature - API Clients
+=============================
+- Previously API client permissions such as Role and Access Policies we not editable. With this version, API user permissions can be modified by an Administrator
 
 ===========================================
 Enhanced Feature - Power Path Visualization
@@ -42,23 +43,31 @@ Enhanced Feature - Power Path Visualization
 - Power path visualization will allow you to double-click and explore various nodes in the power path
 - Power path can now be exported to PDF and various image formats
 
-=========
-New Tools
-=========
+=========================================
+Enhanced Feature - Credentials Management
+=========================================
+- Credentials Management will not allow you to view multiple passwords at once, it will also add an application log when a user views a password
+- Credentials management has been enhanced to create an application log when an Administrator views a credential
+- Credentials management API has been enhanced to not allow an Administrator to view multiple passwords at once
+
+============================================
+Enhanced Feature - New Troubleshooting Tools
+============================================
 - Net-SNMP docker container
 - SNMP Get troubleshooting tool
-
+- The BacnetIpWalkerCli diagnostic tool has been improved to allow binding to different ports
 
 ======================================
 Other notable changes and improvements
 ======================================
-- All API routes that were deprecated in 3.X have been removed
+- Any API route that has been deprecated before this release has been removed
 - The Hyperview API link under the Help navigation menu has been renamed to "API Explorer"
+- Within the connectivity feature, Connection Type has been renamed to Media Type
 - The Rack PDU layout can now be exported to MS Excel
 - The document storage calculation will take into account user inbox message space usage
-- Credentials Management will not allow you to view multiple passwords at once, it will also add an application log when a user views a password
-- Credentials Management will enforce SNMPv3 password length limitations for AES
+- The License page has been improved to show Licensed and consumed connections
 - Various improvements to the sensor card visualization
+- Various improvements to the discovery subsystem that should improve speed
 
 ============
 Known issues
@@ -68,4 +77,7 @@ Known issues
 =================
 Notable bug fixes
 =================
-
+- **AS-13435** Fixed a bug that could cause large asset delete operations to deadlock
+- **AS-12012** Fixed a bug that caused a discovery CIDR range details to not display when adding an address range to a discovery
+- **AS-13088** Fixed a bug that caused shaped edits to not work after a floor plan layout shape is saved
+- **AS-13257** Fixed a bug that caused the 3D layout popover information to not be localized
