@@ -68,16 +68,18 @@ Other notable changes and improvements
 - The License page has been improved to show Licensed and consumed connections
 - Various improvements to the sensor card visualization
 - Various improvements to the discovery subsystem that should improve speed
+- Various additional improvements to manual discovery and discovery abort controls in the Linux version of the data collector
 
 ============
 Known issues
 ============
-- **AS-13409** In some cases the browser alert to save changes does not appear when closing a tab with a pending edit
+- **AS-13409** When there is a pending edit, the browser doesn't display the unsaved changes alert when closing a tab, reloading, or navigating to a new URL
 
 =================
 Notable bug fixes
 =================
-- **AS-13435** Fixed a bug that could cause large asset delete operations to deadlock
 - **AS-12012** Fixed a bug that caused a discovery CIDR range details to not display when adding an address range to a discovery
 - **AS-13088** Fixed a bug that caused shaped edits to not work after a floor plan layout shape is saved
+- **AS-13157** Fixed a bug that caused certain component-level sensors not to trigger thresholds
 - **AS-13257** Fixed a bug that caused the 3D layout popover information to not be localized
+- **AS-13435** Fixed a bug that could cause large asset delete operations to deadlock
