@@ -12,6 +12,15 @@ This section covers significant changes and bug fixes in Hyperview 4.0.x since v
 ============================================================
 Enhanced Licensed Feature: Connectivity - Circuit Management
 ============================================================
+Circuit management is a new component of the connectivity feature. It adds to the existing work done for connection management and documentation and extends that to give customers the ability to group multiple connections into an end-to-end circuit. Some of the capabilities in this feature include:
+
+- Set and manage different circuit types and statuses
+- Extend circuit properties with custom properties
+- Manage access control on different circuits
+- manage sort and search associated connection segments and set A and Z termination points
+- Bulk import data
+
+.. note:: Please contact the Hyperview Sales or Support teams for more information.
 
 =========================================
 Enhanced Licensed Feature: Outlet Control
@@ -22,9 +31,16 @@ The rack PDU layout has been enhanced to allow the selection of multiple outlets
 
 For power-consuming devices, such as servers, the Information -> Power page has been improved to allow for outlet control action on multiple power sources. The page was further enhanced to display the latest available output total power and load for connected Rack PDUs.
 
+.. note:: Please contact the Hyperview Sales or Support teams for more information.
+
 ========================
 New Feature - User Inbox
 ========================
+User Inbox is a new standard feature in Hyperview. It allows users to view all the notifications they have received from the system. For example:
+
+- Worknotes mentions
+- Notifications from bulk actions
+- Alarm events from notification policies and watched assets
 
 ====================================================
 Enhanced Feature - SNMPv3 authentication and privacy
