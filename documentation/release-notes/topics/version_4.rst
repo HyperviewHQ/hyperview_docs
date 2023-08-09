@@ -45,12 +45,12 @@ User Inbox is a new standard feature in Hyperview. It allows users to view all t
 ====================================================
 Enhanced Feature - SNMPv3 authentication and privacy
 ====================================================
-- The Linux Data Collector SNMPv3 system has been improved to support SHA256, SHA384 and SHA512 for authentication and AES192 and AES256 for Privacy.
+- The **Linux Data Collector** SNMPv3 system has been improved to support SHA256, SHA384 and SHA512 for authentication and AES192 and AES256 for Privacy.
 - SNMPv3 authentication and privacy password length is now enforced to be at least 8 characters to comply with RFC-3414
 
-=============================
+==============================
 Enhanced Feature - API Clients
-=============================
+==============================
 - Previously API client permissions such as Role and Access Policies we not editable. With this version, API user permissions can be modified by an Administrator
 
 ===========================================
@@ -99,3 +99,4 @@ Notable bug fixes
 - **AS-13157** Fixed a bug that caused certain component-level sensors not to trigger thresholds
 - **AS-13257** Fixed a bug that caused the 3D layout popover information to not be localized
 - **AS-13435** Fixed a bug that could cause large asset delete operations to deadlock
+
