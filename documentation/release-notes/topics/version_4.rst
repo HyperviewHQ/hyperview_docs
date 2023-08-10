@@ -63,8 +63,8 @@ Enhanced Feature - Power Path Visualization
 Enhanced Feature - Credentials Management
 =========================================
 - Credentials management will not allow you to view multiple passwords at once
-- Credentials management has been enhanced to create an application log when an Administrator views a credential
-- Credentials management API has been enhanced to not allow an Administrator to view multiple passwords at once
+- Credentials management has been enhanced to create an application log when an Administrator views the password within a credential record
+- Credentials management API has been enhanced to not allow an Administrator to view multiple passwords within a credentials collection
 
 ============================================
 Enhanced Feature - New Troubleshooting Tools
@@ -98,5 +98,6 @@ Notable bug fixes
 - **AS-13088** Fixed a bug that caused shaped edits to not work after a floor plan layout shape is saved
 - **AS-13157** Fixed a bug that caused certain component-level sensors not to trigger thresholds
 - **AS-13257** Fixed a bug that caused the 3D layout popover information to not be localized
+- **AS-13360** Fixed a bug in the asset discovery report, where under certain conditions the "Credential Description" remained empty if the asset fails to discover with SNMPv3
 - **AS-13435** Fixed a bug that could cause large asset delete operations to deadlock
 
