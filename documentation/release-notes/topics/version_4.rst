@@ -51,7 +51,7 @@ Enhanced Feature - SNMPv3 authentication and privacy
 ==============================
 Enhanced Feature - API Clients
 ==============================
-- Previously API client permissions such as Role and Access Policies we not editable. With this version, API user permissions can be modified by an Administrator
+- Previously API client permissions such as Role and Access Policies were not editable. With this version, API user permissions can be modified by an Administrator
 
 ===========================================
 Enhanced Feature - Power Path Visualization
