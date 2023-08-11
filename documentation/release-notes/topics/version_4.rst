@@ -29,7 +29,7 @@ Outlet Control has been enhanced to allow administrators to control multiple out
 
 The rack PDU layout has been enhanced to allow the selection of multiple outlets at once and then initiate an action to control turn on, off or cycle selected outlets.
 
-For power-consuming devices, such as servers, the Information -> Power page has been improved to allow for outlet control actions on multiple power sources. The page was further enhanced to display the latest available output total power and load for connected Rack PDUs.
+For power-consuming devices, such as servers, the Information -> Power page has been improved to allow for outlet control actions on multiple power sources. The page was further enhanced to display the latest available output total power and load for connected power providers if that data is available.
 
 .. note:: Please contact the Hyperview sales or support teams for more information.
 
