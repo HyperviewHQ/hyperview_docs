@@ -12,7 +12,7 @@ This section covers significant changes and bug fixes in Hyperview 4.0.x since v
 ============================================================
 Enhanced Licensed Feature: Connectivity - Circuit Management
 ============================================================
-Circuit management is a new component of the connectivity feature. It adds to the existing work done for connection management and documentation and extends that to give customers the ability to group multiple connections into an end-to-end circuit. Some of the capabilities in this feature include:
+Circuit management is a new component of the Connectivity add-on feature. It adds to the existing work done for connection management and documentation and extends that to give customers the ability to group multiple connections into an end-to-end circuit. Some of the capabilities in this feature include:
 
 - Set and manage different circuit types and statuses
 - Extend circuit properties with custom properties
@@ -20,18 +20,18 @@ Circuit management is a new component of the connectivity feature. It adds to th
 - Manage sort and search associated connection segments and set side A and Z termination points
 - Bulk import data
 
-.. note:: Please contact the Hyperview Sales or Support teams for more information.
+.. note:: Please contact the Hyperview sales or support teams for more information.
 
 =========================================
 Enhanced Licensed Feature: Outlet Control
 =========================================
-Outlet control has been enhanced to allow administrators to control multiple outlets at the same time.
+Outlet Control has been enhanced to allow administrators to control multiple outlets at the same time.
 
 The rack PDU layout has been enhanced to allow the selection of multiple outlets at once and then initiate an action to control turn on, off or cycle selected outlets.
 
 For power-consuming devices, such as servers, the Information -> Power page has been improved to allow for outlet control actions on multiple power sources. The page was further enhanced to display the latest available output total power and load for connected Rack PDUs.
 
-.. note:: Please contact the Hyperview Sales or Support teams for more information.
+.. note:: Please contact the Hyperview sales or support teams for more information.
 
 ========================
 New Feature - User Inbox
@@ -45,7 +45,7 @@ User Inbox is a new standard feature in Hyperview. It allows users to view all t
 ====================================================
 Enhanced Feature - SNMPv3 authentication and privacy
 ====================================================
-- The **Linux Data Collector** SNMPv3 system has been improved to support SHA256, SHA384 and SHA512 for authentication and AES192 and AES256 for Privacy.
+- The **Linux Data Collector** SNMPv3 system has been improved to support SHA256, SHA384 and SHA512 for authentication and AES192 and AES256 for Privacy
 - SNMPv3 authentication and privacy password length is now enforced to be at least 8 characters to comply with RFC-3414
 
 ==============================
@@ -78,7 +78,7 @@ Other notable changes and improvements
 ======================================
 - Any API route that has been deprecated before this release has been removed
 - The Hyperview API link under the Help navigation menu has been renamed to "API Explorer"
-- Within the connectivity feature, Connection Type has been renamed to Media Type
+- Within the Connectivity add-on feature, Connection Type has been renamed to Media Type
 - The Rack PDU layout can now be exported to MS Excel
 - The document storage calculation will take into account user inbox message space usage
 - The License page has been improved to show Licensed and consumed connections
