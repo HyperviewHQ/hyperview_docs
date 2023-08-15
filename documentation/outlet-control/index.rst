@@ -73,8 +73,8 @@ Once a power-on request is made a work order is created and assigned. Progress c
    :alt: Power On Work Order
    :class: border-black
 
-Powering off an outlet
-----------------------
+Powering off outlets
+--------------------
 A switched outlet that is detected as powered on will allow a user with appropriate permissions the ability to power off the outlet.
 
 Once a power-off request is made a work order is created and assigned. Progress can be tracked from the Work Orders page.
@@ -84,8 +84,8 @@ Once a power-off request is made a work order is created and assigned. Progress 
    :alt: Power Off Work Order
    :class: border-black
 
-Power cycling an outlet
------------------------
+Power cycling outlets
+---------------------
 A switched outlet that is detected as powered on will allow a user with appropriate permissions the ability to power cycle the outlet.
 
 Once a power-cycle request is made a work order is created and assigned. Progress can be tracked from the Work Orders page.
