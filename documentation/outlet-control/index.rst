@@ -10,11 +10,11 @@ Hyperview Outlet Control has been designed to help you manage and control the po
 
 This feature allows you to:
 
-- Turn on compatible rPDUs - Remotely power up individual outlets, ensuring that power is allocated only when and where it is required.
+- Turn on compatible rPDUs - Remotely power up a single or a group of outlets, ensuring that power is allocated only when and where it is required.
 
-- Turn off compatible rPDUs - Remotely power down individual outlets, allowing you to save energy and reduce operational costs.
+- Turn off compatible rPDUs - Remotely power down a single or a group of outlets, allowing you to save energy and reduce operational costs.
 
-- Power cycle compatible rPDUs - Remotely perform power cycling on individual outlets, enabling you to reset unresponsive equipment and troubleshoot potential issues without the need for onsite intervention.
+- Power cycle compatible rPDUs - Remotely power cycle a single or a group of outlets, enabling you to reset unresponsive equipment and troubleshoot potential issues without the need for onsite intervention.
 
 Work Orders maintain a comprehensive audit trail of all control requests made by users, allowing you to review historical actions and ensure accountability for any changes made.
 
@@ -47,18 +47,18 @@ Using outlet control
 For an rPDU, outlet control functions are exposed on the Layout page. Please note the following requirements:
 
 1. A Control license. This enables the Outlet Control, Firmware Management and Rack Security features
-2. A supported rPDU
-3. A configured rPDU. I.e. The rPDU itself is configured to allow outlet control and the appropriate :ref:`control operations<Control-operations-doc>` parameters set. This can be done in bulk or on an individual rPDU basis
+2. A supported rack PDU
+3. A configured rack PDU. I.e. The rack PDU itself is configured to allow outlet control and the appropriate :ref:`control operations<Control-operations-doc>` parameters set.
 
 .. note:: All user roles can access the Layout page for outlet control, but only Administrator and Data Center Manager users can initiate a control action.
 
 .. image:: media/rpdu-layout.png
-   :width: 1920px
+   :width: 1912px
    :alt: Rack PDU Layout
    :class: border-black
 
-Powering on an outlet
----------------------
+Powering on outlets
+-------------------
 A switched outlet that is detected as powered off will allow a user with the appropriate permissions the ability to power on the outlet.
 
 .. image:: media/power-on-modal.png
