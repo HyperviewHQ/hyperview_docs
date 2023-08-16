@@ -19,17 +19,49 @@ Prerequisites
 
 .. note:: You must install the Hyperview Data Collector on at least one device (physical or virtual, running a supported Windows or Linux OS) that is networked with your devices. You **cannot** install multiple instances of the Data Collector on the same device, or register the same device with multiple Hyperview instances. For larger organizations, we recommend having the Data Collector installed and running on one or more devices per data center.
 
-Minimum requirements for a Windows Data Collector server
---------------------------------------------------------
-* 4 CPU cores
-* 8 GB of RAM
-* 64 GB of free space
-* One of the following supported Windows versions installed:
 
-  * Windows Server 2016 (for production or testing)
-  * Windows Server 2019 (for production or testing)
-  * Windows Server 2022 (for production or testing)
-  * Windows 10 (testing only)
+Linux and Windows Data Collector Protocol Support
+-------------------------------------------------
+
+.. list-table::
+   :header-rows: 1
+   :align: left
+
+   * - Protocol
+     - Linux
+     - Windows
+   * - SNMP V1/V2c/V3
+     - Yes
+     - Yes [#note]_
+   * - IPMI
+     - Yes
+     - Yes
+   * - SSH
+     - Yes
+     - Yes
+   * - Modbus/TCP
+     - Yes
+     - Yes
+   * - BACnet IP
+     - Yes
+     - Yes
+   * - VMware
+     - Yes
+     - Yes
+   * - Firmware update
+     - Yes
+     - Yes
+   * - AssetTracker
+     - Yes
+     - **No**
+   * - WMI
+     - **No**
+     - Yes
+   * - IxOS
+     - **No**
+     - Yes
+
+.. [#note] Does not support SNMPv3 SHA256, SHA384 and SHA512 for authentication and AES192 and AES256 for Privacy
 
 Minimum requirements for a Linux (AMD64) Data Collector server
 --------------------------------------------------------------
@@ -74,15 +106,28 @@ Docker Inc. provides `detailed installation documentation <https://docs.docker.c
 
 The supported Linux distributions typically install environment dependencies for the Data Collector by default. Please refer to the README file included in the setup package for a complete list of dependencies.
 
+Minimum requirements for a Windows Data Collector server
+--------------------------------------------------------
+* 4 CPU cores
+* 8 GB of RAM
+* 64 GB of free space
+* One of the following supported Windows versions installed:
+
+  * Windows Server 2016 (for production or testing)
+  * Windows Server 2019 (for production or testing)
+  * Windows Server 2022 (for production or testing)
+  * Windows 10 (testing only)
+
+====================
 Network requirements
---------------------
+====================
 
 Data Collector to Hyperview
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------
 The Data Collector uses HTTPS/TLS (TCP/443) to communicate with Hyperview. The direction is **outbound** from the Data Collector to Hyperview.
 
 Data Collector to assets
-^^^^^^^^^^^^^^^^^^^^^^^^
+------------------------
 Please make sure that the Data Collector can reach the targeted assets on the applicable ports for your site. Below is a list of the default ports the Data Collector will use, other ports can be used if needed or applicable.
 
 .. list-table::
@@ -121,7 +166,7 @@ Please make sure that the Data Collector can reach the targeted assets on the ap
      - Username & Password
 
 Assets to Data Collector
-^^^^^^^^^^^^^^^^^^^^^^^^
+------------------------
 Please make sure that the asset can reach the targeted Data Collector on the applicable ports for your site. Below is a list of the default ports the Data Collector will use, other ports can be used if needed or applicable.
 
 .. list-table::
@@ -142,7 +187,7 @@ Please make sure that the asset can reach the targeted Data Collector on the app
      - Username & Password
 
 Firewall considerations
-^^^^^^^^^^^^^^^^^^^^^^^
+-----------------------
 Firewalls can interfere with Data Collector communication. It is recommended to test connectivity for the protocols and features you use. The asset discovery report can provide information that may be helpful in troubleshooting connectivity issues.
 
 ==============================
@@ -262,8 +307,12 @@ If your Data Collector was set up correctly, the Services view in Windows (searc
 
 In Linux (for both AMD64 and RPI ARM64)
 ---------------------------------------
-Verify that Docker containers resembling the following services are running:
+Verify that Docker containers with the following names are running:
 
-* `datacollector-stack_monitoring-service`
-* `datacollector-stack_snmptrapreceiver-service`
-* `datacollector-stack_discovery-service`
+- dc-docker-stack-assettracker-service-1
+- dc-docker-stack-discovery-service-1
+- dc-docker-stack-monitoring-service-1
+- dc-docker-stack-mqtt-broker-1
+- dc-docker-stack-mqtt-service-1
+- dc-docker-stack-snmptrapreceiver-service-1
+

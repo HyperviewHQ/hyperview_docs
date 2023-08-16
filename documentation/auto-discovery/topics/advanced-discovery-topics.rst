@@ -14,11 +14,10 @@ Hyperview uses SNMP walks to enhance device definitions, to model and support de
 It is recommended to install the applicable net-snmp package alongside the (Linux) Data Collector software. If that is not possible it can be installed on any machine that has a network line of sight to the target device.
 
 .. warning::
-    Complete snmpwalk files must be submitted with specific formatting in order to enhance device definitions. Contact `Hyperview Support <https://system.hyperviewhq.com/helpdesk>` for additional assistance with tool usage and formatting.
+    Complete snmpwalk files must be submitted with specific formatting to enhance device definitions. Contact `Hyperview Support <https://system.hyperviewhq.com/helpdesk>` for additional assistance with tool usage and formatting.
 
 Linux
 -----
-
 The `net-snmp <http://www.net-snmp.org/>`_ utilities are available on all supported Linux distributions.
 
 On Debian-based distributions:
@@ -35,7 +34,6 @@ On RedHat-based distributions:
 
 Windows
 -------
-
 There are multiple options.
 
 1. Use net-snmp using a UNIX environment simulator such as `Cygwin <https://www.cygwin.com/>`_ or `WSL <https://docs.microsoft.com/en-us/windows/wsl/>`_.
@@ -44,7 +42,6 @@ There are multiple options.
 
 macOS
 -----
-
 You can install net-snmp on macOS using `Homebrew <https://brew.sh/>`_
 
 .. code::
@@ -53,12 +50,19 @@ You can install net-snmp on macOS using `Homebrew <https://brew.sh/>`_
 
 Once the application is installed, the **snmpwalk** command can be used to obtain a full walk of a device. The amount of time it takes to perform the walk can vary from device to device and depends on external factors such as network speed and target device CPU load. It is recommended to perform the walk from the Data Collector machine, and for that machine to be on the same network as the device being walked. Expect the process to take a few minutes unless the device has a large amount of information such as a large network switch, in which case, it may take longer.
 
-.. note:: If you are logged in to a remote machine when performing the walk via **ssh/putty** watch out for session timeouts. This would end the snmpwalk job. Standard UNIX/Linux tools such as **tmux, screen or nohup** may help in managing sessions and avoiding a timeout.
+Docker
+------
+Hyperview builds a helper docker container that includes the net-snmp-utils. This container can be run using a docker command. The entry point for the container can be set to access the various net-snmp-utils.
 
-**Example:**
+Usage examples
+--------------
+
+Standard
+^^^^^^^^
 
 .. code::
 
+    # SNMPv2c
     snmpwalk -v2c -c public -ObentU 192.168.10.10 . > /my_home_dir/snmpwalks/newrackpdu.snmpwalk
     #
     # Check the output file for errors and compress it
@@ -67,11 +71,30 @@ Once the application is installed, the **snmpwalk** command can be used to obtai
 
 .. note:: The **-ObentU** command option is required and important to be able to parse the output with our tools.
 
+Docker
+^^^^^^
+
+.. code::
+
+    # SNMPv3
+    docker run -it --entrypoint snmpwalk  hvpublic.azurecr.io/hv-net-snmp-tools:latest -v3  -l authPriv -u v3user -a SHA1 -A "AUTH_PASSPHRASE"  -x AES-256 -X "PRIVACY_PASSPHRASE" -ObentU 192.168.10.10 . > /my_home_dir/snmpwalks/newrackpdu.snmpwalk
+    #
+    # Check the output file for errors and compress it
+    #
+    gzip /my_home_dir/snmpwalks/newrackpdu.snmpwalk
+
+.. note:: The **-ObentU** command option is required and important to be able to parse the output with our tools.
+
+Walk file handling
+^^^^^^^^^^^^^^^^^^
+
 Once the walk is obtained, inspect that it is complete. Look for a "``No more variables left in this MIB View (It is past the end of the MIB tree)``" message at the end of the file. Transfer the file to Hyperview support by uploading it to the applicable support ticket.
 
-Utilities like scp/sftp or `winscp <https://winscp.net/>`_ can be used to transfer files around if there is a need.
+Utilities like scp, sftp or `winscp <https://winscp.net/>`_ can be used to transfer files around if there is a need.
 
 If these options are not possible then contact Hyperview Support.
+
+.. note:: If you are logged in to a remote machine when performing the walk via **ssh/putty** watch out for session timeouts. This would end the snmpwalk job. Standard UNIX/Linux tools such as **tmux, screen or nohup** may help in managing sessions and avoiding a timeout.
 
 ====================================================
 Downloading the Linux Data Collector via Artifactory
