@@ -95,7 +95,7 @@ Once a power-cycle request is made a work order is created and assigned. Progres
    :alt: Power Cycle Work Order
    :class: border-black
 
-.. note:: To make sure the latest outlet status is displayed, Outlet Control operations will trigger a sensor refresh on affected rPDU. Due to the distributed nature of the application, the refresh operation may take a few minutes to complete.
+.. note:: To make sure the latest outlet status is displayed, Outlet Control operations will trigger a sensor refresh on affected rack PDU. Due to the distributed nature of the application, the refresh operation may take a few minutes to complete.
 
 ====================
 Troubleshooting Tips
