@@ -27,12 +27,6 @@
 .. |custom_properties_3| image:: /settings/media/custom_properties_3.png
    :class: border-black
 
-.. |license| image:: /settings/media/license.png
-   :class: border-black
-
-.. |license_2| image:: /settings/media/license_2.png
-   :class: border-black
-
 .. |locale| image:: /settings/media/locale.png
    :class: border-black
 

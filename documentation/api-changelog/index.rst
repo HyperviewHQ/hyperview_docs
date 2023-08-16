@@ -12,12 +12,13 @@ API changes are reflected in the corresponding Open API (aka Swagger) interfaces
 .. toctree::
    :maxdepth: 2
 
-   topics/api_changes_3_5_to_3_6
-   topics/api_changes_3_6_to_3_7
-   topics/api_changes_3_7_to_3_8
-   topics/api_changes_3_8_to_3_9
-   topics/api_changes_3_9_to_3_10
-   topics/api_changes_3_10_to_3_11
-   topics/api_changes_3_11_to_3_12
-   topics/api_changes_3_12_to_3_13
+   topics/api_changes_3_14_to_4_0
    topics/api_changes_3_13_to_3_14
+   topics/api_changes_3_12_to_3_13
+   topics/api_changes_3_11_to_3_12
+   topics/api_changes_3_10_to_3_11
+   topics/api_changes_3_9_to_3_10
+   topics/api_changes_3_8_to_3_9
+   topics/api_changes_3_7_to_3_8
+   topics/api_changes_3_6_to_3_7
+   topics/api_changes_3_5_to_3_6

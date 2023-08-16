@@ -1,4 +1,5 @@
 .. include:: /auto-discovery/media.rst
+.. _Discovery-best-practices-doc:
 
 **************
 Best practices
