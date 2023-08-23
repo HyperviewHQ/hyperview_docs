@@ -7,6 +7,10 @@ Hyperview 4.0 (August 15, 2023)
 *******************************
 This section covers significant changes and bug fixes in Hyperview 4.0.x since version 3.14.x.
 
+.. raw:: html
+
+	<div class="pb-3"><iframe src="https://player.vimeo.com/video/856952277?h=db346fc3e3&color=6ca6ed&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+
 .. note:: This release has changes and improvements to the Data Collector software. It is strongly recommended to update your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
 
 ============================================================
