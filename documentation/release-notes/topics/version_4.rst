@@ -104,3 +104,9 @@ Notable bug fixes
 - **AS-13257** Fixed a bug that caused the 3D layout popover information to not be localized
 - **AS-13360** Fixed a bug in the asset discovery report, where under certain conditions the "Credential Description" remained empty if the asset fails to discover with SNMPv3
 - **AS-13435** Fixed a bug that could cause a delete operation to deadlock when deleting a large number of assets
+
+========================
+Changes in version 4.0.1
+========================
+- **AS-13772** Added a feature to limit the number of concurrent discoveries per data collector to ten or less
+
