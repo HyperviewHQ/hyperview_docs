@@ -5,6 +5,35 @@
 Advanced discovery topics
 *************************
 
+================================================
+SNMP privacy with AES 192 and 256 considerations
+================================================
+
+The Linux version of the data collector is capable of using AES-192 and AES-256 when communicating with SNMP devices. When using these algorithms it is important to note that they are not standardized across all devices. There are two major non-compatible implementations. `RFC-3826 <https://datatracker.ietf.org/doc/html/rfc3826>`_ outlines arguably the closest thing to a standard and most new devices that support AES-192/256 will support this implementation. However, devices may follow an older reference implementation usually referred to as the Cisco approach.
+
+The Linux version of the data collector is compatible with RFC-3826.
+
+If the information is not available from the device manual or interface, the Net-SNMP -> snmpget command can be used:
+
+Example
+-------
+
+Assuming the device is configured with SHA1 for Authentication and AES-256 for Privacy.
+
+Devices that use RFC-3826 will respond with this configuration to the command:
+
+.. code::
+
+   snmpget -v3 -l authPriv -a SHA -A <password> -x AES256 -X <passphrase> -u <SNMP user> <IP Address> .1.3.6.1.2.1.1.1.0
+
+Devices that use the Cisco implementation will respond with this configuration to the command, note the "C" after AES256:
+
+.. code::
+
+   snmpget -v3 -l authPriv -a SHA -A <password> -x AES256C -X <passphrase> -u <SNMP user> <IP Address> .1.3.6.1.2.1.1.1.0
+
+.. note:: These commands were tested on Debian 12 and Fedora 38 using the default version of the snmpget command.
+
 ====================
 Obtaining SNMP walks
 ====================
