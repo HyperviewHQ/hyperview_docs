@@ -5,6 +5,8 @@
 Advanced discovery topics
 *************************
 
+.. _SNMP-AES_192_256_considerations:
+
 ================================================
 SNMP privacy with AES 192 and 256 considerations
 ================================================
