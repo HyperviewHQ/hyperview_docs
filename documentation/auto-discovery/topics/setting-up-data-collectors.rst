@@ -82,7 +82,7 @@ Minimum requirements for a Linux (AMD64) Data Collector server
   * Red Hat Enterprise Linux 7 or 8
   * AlmaLinux 9
   * Debian 11 or later
-  * Ubuntu Server LTS 18.04 or later
+  * Ubuntu Server LTS 20.04 or later
 
 * You must also have the following software installed:
 
@@ -100,7 +100,7 @@ Minimum requirements for a Linux (RPI ARM64) Data Collector device
 
 * Raspberry Pi 4 Model B (8GB)
 * 64 GB of free space (note: you must be using an SSD drive)
-* Only Ubuntu Server LTS 20.04 is supported and tested as of Hyperview 3.4
+* Only Ubuntu Server LTS 20.04 and 22.04 are supported
 
 * You must also have the following software installed:
 
