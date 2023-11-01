@@ -11,11 +11,11 @@ Advanced discovery topics
 SNMP privacy with AES 192 and 256 considerations
 ================================================
 
-The Linux version of the data collector is capable of using AES-192 and AES-256 when communicating with SNMP devices. When using these algorithms it is important to note that they are not standardized across all devices. There are two major non-compatible implementations. `RFC-3826 <https://datatracker.ietf.org/doc/html/rfc3826>`_ outlines arguably the closest thing to a standard and most new devices that support AES-192/256 will support this implementation. However, devices may follow an older reference implementation usually referred to as the Cisco approach.
+The Linux version of the data collector is capable of using AES-192 and AES-256 when communicating with SNMP devices. When using these algorithms it is important to note that they are not standardized across all manufacturers and SNMP implementations. There are two major non-compatible implementations. `RFC-3826 <https://datatracker.ietf.org/doc/html/rfc3826>`_ outlines arguably the closest thing to a standard. Most new devices that support AES-192/256 will support this implementation. However, some may follow an older reference implementation written by Cisco while the standard was still being discussed in the early 2000s.
 
-The Linux version of the data collector is compatible with RFC-3826.
+The Linux version of the data collector is compatible with RFC-3826 also known as the Blumenthal implementation.
 
-If the information is not available from the device manual or interface, the Net-SNMP -> snmpget command can be used:
+To determine what a device supports, check the device's interface, manual or datasheet. if the information is not available, the Net-SNMP -> snmpget command can be used:
 
 Example
 -------
