@@ -47,7 +47,7 @@ The Document Management license, which is a feature add-on, increases document m
 
 What are "Raw Sensor Data (Days)" and "Sensor Daily Summary (Days)"?
 --------------------------------------------------------------------
-Sensor readings create raw data points. They are listed in Sensors grids and appear for sensor graphs showing up to the last three days' data. The Raw Sensor Data (Days) threshold indicates the retention period for raw sensor data.
+Sensor readings create raw data points. They are listed in sensor grids and appear for sensor graphs showing up to the last three days' data. The Raw Sensor Data (Days) threshold indicates the retention period for raw sensor data.
 
 Daily summary data points are generated based on raw data for a given day (UTC). They are listed in Sensor grids and appear in sensor graphs for a seven-day time frame or longer. The Sensor Daily Summary (Days) threshold indicates how long daily summary data will be retained.
 
@@ -74,4 +74,3 @@ The Features section lists what Hyperview feature licenses you have. Available l
 * :ref:`Outlet Control<Outlet-control-doc>` (add-on)
 * :ref:`Rack Security<Rack-security-doc>` (add-on)
 * :ref:`ServiceNow CMDB Integration<Servicenow-cmdb-integration-doc>` (add-on)
-
