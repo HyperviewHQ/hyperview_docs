@@ -68,9 +68,10 @@ The Features section lists what Hyperview feature licenses you have. Available l
 * :ref:`AssetTracker<AssetTracker-doc>` (add-on)
 * Connectivity Management (add-on)
 * :ref:`Document Management<Document-management-doc>` (add-on)
+* :ref:`Equinix Smart View Integration<Equinix-smart-view-integration-doc>` (add-on)
 * :ref:`Firmware Management<Firmware-management-doc>` (add-on)
 * Infrastructure Management (default application license)
 * :ref:`Outlet Control<Outlet-control-doc>` (add-on)
 * :ref:`Rack Security<Rack-security-doc>` (add-on)
-* :ref:`ServiceNow CMDB Integration<Integrations-doc>` (add-on)
+* :ref:`ServiceNow CMDB Integration<Servicenow-cmdb-integration-doc>` (add-on)
 

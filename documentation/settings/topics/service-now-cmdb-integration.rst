@@ -1,5 +1,5 @@
 .. include:: /settings/media.rst
-.. _Servicenow-cmdb-integration-doc:
+.. _Servicenow-cmdb-sync-doc:
 
 ***************************
 ServiceNow CMDB Integration
