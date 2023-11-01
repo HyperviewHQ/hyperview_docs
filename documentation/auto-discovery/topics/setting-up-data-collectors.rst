@@ -26,6 +26,7 @@ Linux and Windows Data Collector Protocol Support
 .. list-table::
    :header-rows: 1
    :align: left
+   :widths: 33, 33, 33
 
    * - Protocol
      - Linux
@@ -64,7 +65,7 @@ Linux and Windows Data Collector Protocol Support
      - Yes
      - **No**
 
-.. [#] See :ref:`SNMP-AES_192_256_considerations` for more information on AES192 and AES256 support.
+.. [#] See :ref:`SNMP-AES_192_256` for more information on AES192 and AES256 support.
 .. [#] Does not support SNMPv3 SHA256, SHA384 and SHA512 for authentication and AES192 and AES256 for privacy.
 
 Minimum requirements for a Linux (AMD64) Data Collector server
