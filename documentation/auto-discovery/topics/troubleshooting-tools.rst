@@ -4,7 +4,7 @@ Troubleshooting Tools
 
 The Linux version of the Data Collector comes with a set of troubleshooting tools that can help in troubleshooting discovery and monitoring issues.
 
-Below is a list of those tools and their function:
+Below is a list of those tools and their functions:
 
 1. BacnetIpWalkerCli is used for BACnet/IP protocol troubleshooting
 2. IpmiScannerCli is used for IPMI protocol troubleshooting
