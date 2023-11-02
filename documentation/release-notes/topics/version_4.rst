@@ -9,9 +9,9 @@ This section covers significant changes and bug fixes in Hyperview 4.1.x since v
 
 .. note:: This release has changes and improvements to the Data Collector software. It is strongly recommended to update your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
 
-============================================
-New Feature - Equinix Smart View integration
-============================================
+=====================================================
+New Licensed Feature - Equinix Smart View integration
+=====================================================
 - This integration is a data synchronization service that allows Hyperview Customers to get information about the infrastructure products they have with Equinix. The service will automatically synchronize and map the location hierarchy, available power and environmental sensors
 - Once configured, The location hierarchy from IBX to racks will be created. Sensors exposed through the Equinix Smart View API will be created, mapped to the right asset and tracked
 - The integration requires an Equinix Smart View account. Please contact your Equinix representative for more information on that product
@@ -53,15 +53,19 @@ Other notable changes and improvements
 - Ubuntu 18.04 is no longer supported to run the Linux version of the data collector
 - Tripplite SNMP trap support has been improved
 - Cisco SNMP trap support has been improved
+- Cisco SNMP support has been enhanced to detect and monitor more sensors
 - General improvements have been added to bulk asset import
-
-============
-Known issues
-============
+- New computed sensors have been added for Location average temperature and humidity
+- Interface alias/description is now searchable
+- Column sort order and selection will be automatically saved for PDU/RPP layout grids
 
 =================
 Notable bug fixes
 =================
+- **AS-13108** Fixed a bug in the Assets By Type dashboard widget that could make it unclear which bar belongs to what asset type
+- **AS-13638** Fixed a bug where under certain conditions, the asset lifecycle state would be set to active when updating the monitoring state
+- **AS-13779** Fixed a bug where under certain conditions, racks with environmental sensors from assets with a different access policy can cause the "no access" pages to be shown instead of the device dashboard
+-
 
 *******************************
 Hyperview 4.0 (August 15, 2023)
