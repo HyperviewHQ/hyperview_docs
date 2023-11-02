@@ -2,6 +2,67 @@
 Version 4
 #########
 
+*******************
+Hyperview 4.1 (TBD)
+*******************
+This section covers significant changes and bug fixes in Hyperview 4.1.x since version 4.0.X
+
+.. note:: This release has changes and improvements to the Data Collector software. It is strongly recommended to update your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
+
+============================================
+New Feature - Equinix Smart View integration
+============================================
+- This integration is a data synchronization service that allows Hyperview Customers to get information about the infrastructure products they have with Equinix. The service will automatically synchronize and map the location hierarchy, available power and environmental sensors
+- Once configured, The location hierarchy from IBX to racks will be created. Sensors exposed through the Equinix Smart View API will be created, mapped to the right asset and tracked
+- The integration requires an Equinix Smart View account. Please contact your Equinix representative for more information on that product
+
+=====================================================
+New Feature - Autodetection of web management address
+=====================================================
+- A new property was added and automatically filled by the discovery process for the device web interface address
+- A new action was added to allow users to launch the interface of an asset
+- The address will use the SNMP communication IP address for rack PDUs and small UPSs and the IPMI/BMC for servers
+- The property can be manually set by users with a Power User and above role access
+
+==========================================
+Enhanced Licensed Feature: Firmware Update
+==========================================
+- Panduit Gen5 rack power distribution units are now supported by the firmware update system
+- nVent Enlogic EN2.0 rack power distribution units are now supported by the firmware update system
+
+===============================================
+Enhanced Licensed Feature: ServiceNow CMDB Sync
+===============================================
+- The sync process now factors indirect changes to asset hierarchy during incremental updates
+
+=================================
+Enhanced Feature: Location Layout
+=================================
+- Floorplan layout has been improved to show the temperature and humidity values on hover
+- Export functionality to PDF, PNG, and JPEG has been added to the location layout
+
+======================================
+Enhanced Feature: Linux data collector
+======================================
+- The Linux version of the data collector has been improved to support IxOS and WMI
+
+======================================
+Other notable changes and improvements
+======================================
+- Debian 12 is supported to run the Linux version of the data collector
+- Ubuntu 18.04 is no longer supported to run the Linux version of the data collector
+- Tripplite SNMP trap support has been improved
+- Cisco SNMP trap support has been improved
+- General improvements have been added to bulk asset import
+
+============
+Known issues
+============
+
+=================
+Notable bug fixes
+=================
+
 *******************************
 Hyperview 4.0 (August 15, 2023)
 *******************************
