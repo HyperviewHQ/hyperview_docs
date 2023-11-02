@@ -25,8 +25,6 @@ Adding a discovery will create a base record to discover assets to a specific lo
 
 3. Click *Create*.
 
-.. note:: By default, discoveries are sorted alphabetically in the Discoveries → Overview grid. However, upon creation, discoveries will appear as the last entry in the grid. If the grid spans multiple pages, the discovery will appear as the last entry on the last page.
-
 ====================
 Deleting a discovery
 ====================

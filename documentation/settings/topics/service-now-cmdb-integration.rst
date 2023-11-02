@@ -18,11 +18,11 @@ The ServiceNow CMDB Sync integration is a data mapping and data push service to 
 Prerequisites
 =============
 
-1. Setup an import Set Table to receive the data from Hyperview. A default asset type list and property data map are set. They can be customized as needed.
+1. Set up an import Set Table to receive the data from Hyperview. A default asset type list and property data map are set. They can be customized as needed
 
-2. Setup an OAuth client that is mapped to a user. Take note of the Client ID, Client Secret, Username and Password, these will be needed configuration parameters.
+2. Set up an OAuth client that is mapped to a user. Take note of the Client ID, Client Secret, Username and Password, these will be needed configuration parameters
 
-3. Take note of the ImportSet API endpoint and the refresh token endpoint. These will be needed configuration parameters.
+3. Take note of the ImportSet API endpoint and the refresh token endpoint. These will be needed as configuration parameters
 
 =============
 Configuration

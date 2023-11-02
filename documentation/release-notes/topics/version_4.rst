@@ -14,12 +14,12 @@ New Licensed Feature - Equinix Smart View integration
 =====================================================
 - This integration is a data synchronization service that allows Hyperview customers to get information about the infrastructure products they have with Equinix. The service will automatically synchronize and map the location hierarchy, available power and environmental sensors
 - Once configured, the location hierarchy from IBX to racks will be created. Sensors exposed through the Equinix Smart View API will be created, mapped to the right asset and tracked
-- The integration requires an Equinix Smart View account. Please contact your Equinix representative for more information on that product
+- The integration requires an Equinix Smart View account. Please contact your Equinix representative for more information
 
 =====================================================
 New Feature - Autodetection of web management address
 =====================================================
-- A new property was added and automatically filled by the discovery process for the device web interface address
+- A new property was added and will be automatically filled by the discovery process for the device web interface address
 - A new action was added to allow users to launch the interface of an asset
 - The address will use the SNMP communication IP address for rack PDUs and small UPSs and the IPMI/BMC for servers
 - The property can be manually set by users with a Power User and above role access
@@ -42,15 +42,16 @@ Enhanced Feature: Location Layout
 - Export functionality to PDF, PNG, and JPEG has been added to the location layout
 
 ======================================
-Enhanced Feature: Linux data collector
+Enhanced Feature: Linux Data Collector
 ======================================
-- The Linux version of the data collector has been improved to support IxOS and WMI
+- The Linux version of the Data Collector has been improved to support IxOS and WMI
 
 ======================================
 Other notable changes and improvements
 ======================================
-- Debian 12 is supported to run the Linux version of the data collector
-- Ubuntu 18.04 is no longer supported to run the Linux version of the data collector
+- Debian 12 is supported to run the Linux version of the Data Collector
+- Debian 10 is no longer supported to run the Linux version of the Data Collector
+- Ubuntu 18.04 is no longer supported to run the Linux version of the Data Collector
 - Tripp lite SNMP trap support has been improved
 - Cisco SNMP trap support has been improved
 - Cisco SNMP support has been enhanced to detect and monitor more sensors
@@ -155,7 +156,7 @@ Other notable changes and improvements
 - The License page has been improved to show Licensed and consumed connections
 - Various improvements to the sensor card visualization
 - Various improvements to the discovery subsystem that should improve speed
-- Various additional improvements to manual discovery and discovery abort controls in the Linux version of the data collector
+- Various additional improvements to manual discovery and discovery abort controls in the Linux version of the Data Collector
 
 ============
 Known issues
@@ -175,5 +176,5 @@ Notable bug fixes
 ========================
 Changes in version 4.0.1
 ========================
-- **AS-13772** Added a feature to limit the number of concurrent discoveries per data collector to ten or less
+- **AS-13772** Added a feature to limit the number of concurrent discoveries per Data Collector to ten or less
 

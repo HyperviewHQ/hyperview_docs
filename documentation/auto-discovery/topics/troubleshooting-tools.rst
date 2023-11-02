@@ -2,7 +2,7 @@
 Troubleshooting Tools
 *********************
 
-The Linux version of the data collector comes with a set of troubleshooting tools that can help in troubleshooting discovery and monitoring issues.
+The Linux version of the Data Collector comes with a set of troubleshooting tools that can help in troubleshooting discovery and monitoring issues.
 
 Below is a list of those tools and their function:
 
@@ -15,7 +15,7 @@ Below is a list of those tools and their function:
 
 Other general tools bundled with the data collector are:
 
-1. RegistrationCli is used to manually register the data collector and as part of the installation and reconfiguration process
-2. UpdateLinksCli is used to refresh update links when checking for data collector updates
+1. RegistrationCli is used to register the Data Collector as part of the installation and reconfiguration process, or manually
+2. UpdateLinksCli is used to refresh update links when checking for Data Collector updates
 
 .. note:: These tools are meant to be used when working with the Hyperview support team to troubleshoot discovery and monitoring issues.
