@@ -12,7 +12,7 @@ This section covers significant changes and bug fixes in Hyperview 4.1.x since v
 =====================================================
 New Licensed Feature - Equinix Smart View integration
 =====================================================
-- This integration is a data synchronization service that allows Hyperview Customers to get information about the infrastructure products they have with Equinix. The service will automatically synchronize and map the location hierarchy, available power and environmental sensors
+- This integration is a data synchronization service that allows Hyperview customers to get information about the infrastructure products they have with Equinix. The service will automatically synchronize and map the location hierarchy, available power and environmental sensors
 - Once configured, the location hierarchy from IBX to racks will be created. Sensors exposed through the Equinix Smart View API will be created, mapped to the right asset and tracked
 - The integration requires an Equinix Smart View account. Please contact your Equinix representative for more information on that product
 
@@ -38,7 +38,7 @@ Enhanced Licensed Feature: ServiceNow CMDB Sync
 =================================
 Enhanced Feature: Location Layout
 =================================
-- Floorplan layout has been improved to show the temperature and humidity values on hover
+- Floor plan layout has been improved to show the temperature and humidity values on hover
 - Export functionality to PDF, PNG, and JPEG has been added to the location layout
 
 ======================================
@@ -51,7 +51,7 @@ Other notable changes and improvements
 ======================================
 - Debian 12 is supported to run the Linux version of the data collector
 - Ubuntu 18.04 is no longer supported to run the Linux version of the data collector
-- Tripplite SNMP trap support has been improved
+- Tripp lite SNMP trap support has been improved
 - Cisco SNMP trap support has been improved
 - Cisco SNMP support has been enhanced to detect and monitor more sensors
 - General improvements have been added to bulk asset import
