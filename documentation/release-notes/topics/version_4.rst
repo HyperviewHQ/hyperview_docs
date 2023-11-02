@@ -13,7 +13,7 @@ This section covers significant changes and bug fixes in Hyperview 4.1.x since v
 New Licensed Feature - Equinix Smart View integration
 =====================================================
 - This integration is a data synchronization service that allows Hyperview Customers to get information about the infrastructure products they have with Equinix. The service will automatically synchronize and map the location hierarchy, available power and environmental sensors
-- Once configured, The location hierarchy from IBX to racks will be created. Sensors exposed through the Equinix Smart View API will be created, mapped to the right asset and tracked
+- Once configured, the location hierarchy from IBX to racks will be created. Sensors exposed through the Equinix Smart View API will be created, mapped to the right asset and tracked
 - The integration requires an Equinix Smart View account. Please contact your Equinix representative for more information on that product
 
 =====================================================
@@ -58,6 +58,7 @@ Other notable changes and improvements
 - New computed sensors have been added for Location average temperature and humidity
 - Interface alias/description is now searchable
 - Column sort order and selection will be automatically saved for PDU/RPP layout grids
+- PDU/RPP max breaker size has been increased to 1000 Amps, and the main breaker size max has been increased to 7500 Amps
 
 =================
 Notable bug fixes
