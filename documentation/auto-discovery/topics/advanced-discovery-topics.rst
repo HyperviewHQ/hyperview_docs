@@ -137,7 +137,7 @@ Once the **docker-compose.yaml** file is configured to your satisfaction then fo
 
 Note that once you are running with a customized docker-compose file you will need to maintain that between releases. Hyperview may add new services, change default environment variables or default startup options for the various containers that compose the Linux Data Collector.
 
-Standard Linux command line tools such as **diff** and **vim** can be used to access any differences between the two files and the applicable changes can be ported to your environment.
+Standard Linux command line tools such as **diff** and **vim** can be used to assess any differences between the two files and the applicable changes can be ported to your environment.
 
 Please note that Hyperview only tests and supports the default configuration that ships with the installation package.
 
