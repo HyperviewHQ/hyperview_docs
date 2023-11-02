@@ -4,8 +4,9 @@
   "requires": true,
   "packages": {
     "": {
+      "name": "hyperview-docs",
       "dependencies": {
-        "@redocly/cli": "^1.0.0"
+        "@redocly/cli": "^1.4.0"
       }
     },
     "node_modules/@babel/runtime": {
