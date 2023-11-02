@@ -65,7 +65,8 @@ Notable bug fixes
 - **AS-13108** Fixed a bug in the Assets By Type dashboard widget that could make it unclear which bar belongs to what asset type
 - **AS-13638** Fixed a bug where under certain conditions, the asset lifecycle state would be set to active when updating the monitoring state
 - **AS-13779** Fixed a bug where under certain conditions, racks with environmental sensors from assets with a different access policy can cause the "no access" pages to be shown instead of the device dashboard
--
+- **AS-13790** Fixed a bug that could cause assets to show outside of the rack in 3D view
+- **AS-13865** Fixed a bug that could cause the events page grid to not auto-adjust size to the browser content area
 
 *******************************
 Hyperview 4.0 (August 15, 2023)
