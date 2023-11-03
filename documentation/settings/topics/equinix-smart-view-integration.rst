@@ -7,9 +7,9 @@ Equinix Smart View Integration
 
 .. note:: The integration is available to customers who are also Equinix customers and have Smart View access. Please contact your Equinix representative to enable access to Smart View.
 
-This integration is a data synchronization service that allows Hyperview Customers to get information about the infrastructure products they have with Equinix. The service will automatically synchronize and map the location hierarchy, available power and environmental sensors.
+This integration is a data synchronization service that allows Hyperview customers to get information about the infrastructure products they have with Equinix. The service will automatically synchronize and map the location hierarchy, available power and environmental sensors.
 
-Once configured, The location hierarchy from IBX to rack will be created. Sensors exposed through the Equinix Smart View API will be created, mapped to the right asset and tracked.
+Once configured, the location hierarchy from IBX to rack will be created. Sensors exposed through the Equinix Smart View API will be created, mapped to the right asset and tracked.
 
 =============
 Prerequisites
@@ -28,12 +28,14 @@ Enter the Client ID and Client Secret in their corresponding configuration field
 .. image:: /settings/media/equinix_smart_view_settings_overview.png
    :width: 2874px
    :alt: Equinix Smart View integration overview
+   :class: border-black
 
 Next, add your IBX and Account number information. If you have infrastructure in multiple IBX locations simply add them to the list and Sync the information. Please take care to confirm the rack make and model before you enter the information or simply add your configuration in the Catalog before adding an IBX.
 
 .. image:: /settings/media/equinix_smart_view_settings_ibx_config.png
    :width: 2874px
    :alt: Equinix Smart View integration IBX configuration
+   :class: border-black
 
 An **optional** step is to change the default sensor polling interval. It is recommended to keep that the same as the global sensor polling interval. Both settings default to once every 10 minutes.
 
@@ -46,10 +48,12 @@ When a sync job is triggered a corresponding Work Order is created that tracks w
 .. image:: /settings/media/equinix_smart_view_workorder_list.png
    :width: 2874px
    :alt: Equinix Smart View Work Order List
+   :class: border-black
 
 The Work Order details will display which assets were received from the Smart View API. If those assets were previously synced, the details page will display if a change has been detected since the last sync.
 
 .. image:: /settings/media/equinix_smart_view_workorder_details.png
    :width: 2874px
    :alt: Equinix Smart View Work Order Details
+   :class: border-black
 

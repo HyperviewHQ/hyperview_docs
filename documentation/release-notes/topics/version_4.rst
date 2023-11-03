@@ -56,7 +56,7 @@ Other notable changes and improvements
 - Cisco SNMP trap support has been improved
 - Cisco SNMP support has been enhanced to detect and monitor more sensors
 - General improvements have been added to bulk asset import
-- New computed sensors have been added for Location average temperature and humidity
+- New computed sensors have been added for location average temperature and humidity
 - Interface alias/description is now searchable
 - Column sort order and selection will be automatically saved for PDU/RPP layout grids
 - PDU/RPP max breaker size has been increased to 1000 Amps, and the main breaker size max has been increased to 7500 Amps
