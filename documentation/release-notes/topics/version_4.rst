@@ -52,7 +52,7 @@ Other notable changes and improvements
 - Debian 12 is supported to run the Linux version of the Data Collector
 - Debian 10 is no longer supported to run the Linux version of the Data Collector
 - Ubuntu 18.04 is no longer supported to run the Linux version of the Data Collector
-- Tripp lite SNMP trap support has been improved
+- Tripp Lite SNMP trap support has been improved
 - Cisco SNMP trap support has been improved
 - Cisco SNMP support has been enhanced to detect and monitor more sensors
 - General improvements have been added to bulk asset import

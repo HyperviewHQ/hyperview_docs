@@ -17,7 +17,7 @@ A "document" can be a file or a URL. The following file types are supported:
 .. list-table::
    :header-rows: 1
    :align: left
-   :widths: 50, 50
+   :widths: 30, 70
 
    * - Category
      - Supported file types
