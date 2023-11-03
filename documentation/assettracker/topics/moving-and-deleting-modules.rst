@@ -34,6 +34,7 @@ These kinds of placement conflicts are referred to as "collisions". Hyperview is
 .. image:: ../media/events.png
    :width: 1920px
    :alt: AssetTracker events page
+   :class: border-black
 
 Possible warnings
 -----------------

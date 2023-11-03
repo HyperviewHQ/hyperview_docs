@@ -9,6 +9,7 @@ AssetTracker builds on Hyperview's existing distributed architecture by adding s
 .. image:: ../media/AT-diagram3.png
    :width: 1004px
    :alt: AssetTracker deployment diagram 3
+   :class: border-black
 
 Master modules are powered by an AssetTracker gateway. Gateways depending on the model, are powered by a POE power source or a rack PDU.
 
@@ -17,6 +18,7 @@ Master Modules are 6 RUs long and can be expanded using extension modules. Each 
 .. image:: ../media/AT-diagram1.png
    :width: 1920px
    :alt: AssetTracker deployment diagram 1
+   :class: border-black
 
 AssetTracker modules in turn are magnetically connected to specialized RFID tags that are attached to assets ("asset tags"). Each asset tag has its unique AssetTracker ID. You can scan asset tags using a compatible barcode or QR code scanner to input AssetTracker ID values directly in Hyperview. As soon as the Data Collector is registered with Hyperview, the DCAT starts listening for AssetTracker tag operations and heartbeats.
 
@@ -25,6 +27,7 @@ Users can specify Master Module IDs (for racks) and AssetTracker IDs (for racked
 .. image:: ../media/AT-diagram2.png
    :width: 748px
    :alt: AssetTrack deployment diagram 2
+   :class: border-black
 
 ========================
 Typical hybrid scenarios
