@@ -13,7 +13,6 @@ The ServiceNow CMDB Sync integration is a data mapping and data push service to 
 .. image:: /settings/media/servicenow_cmdb_diagram.png
    :width: 975
    :alt: ServiceNow CMDB integration diagram
-   :class: border-black
 
 =============
 Prerequisites
