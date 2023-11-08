@@ -30,7 +30,7 @@ Please ensure the following programs are installed on your machines
 - sed
 - awk
 
-Ensure that hosts are allowing ssh connections from the Data Collector.
+Ensure that hosts are allowing SSH connections from the Data Collector.
 
 Create a dedicated user for the Data Collector to use, e.g. datacollector.
 
@@ -38,7 +38,7 @@ The Data Collector user will need to be able to run **dmidecode** to gather stru
 
 .. code::
 
-    # Allow Data Collector to execute dmidecode without needing password
+    # Allow Data Collector to execute dmidecode without needing a password
     datacollector ALL=(ALL) NOPASSWD: /usr/sbin/dmidecode
 
 Consider using an automation tool such as `Ansible <https://www.ansible.com/>`_, if you have a large number of Linux hosts to configure.

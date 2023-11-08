@@ -26,13 +26,14 @@ Linux and Windows Data Collector Protocol Support
 .. list-table::
    :header-rows: 1
    :align: left
+   :widths: 33, 33, 33
 
    * - Protocol
      - Linux
      - Windows
    * - SNMP V1/V2c/V3
-     - Yes
-     - Yes [#note]_
+     - Yes [#]_
+     - Yes [#]_
    * - IPMI
      - Yes
      - Yes
@@ -51,17 +52,21 @@ Linux and Windows Data Collector Protocol Support
    * - Firmware update
      - Yes
      - Yes
+   * - WMI
+     - Yes
+     - Yes
+   * - IxOS
+     - Yes
+     - Yes
    * - AssetTracker
      - Yes
      - **No**
-   * - WMI
-     - **No**
+   * - MQTT Broker
      - Yes
-   * - IxOS
      - **No**
-     - Yes
 
-.. [#note] Does not support SNMPv3 SHA256, SHA384 and SHA512 for authentication and AES192 and AES256 for Privacy
+.. [#] See :ref:`SNMP-AES_192_256` for more information on AES192 and AES256 support.
+.. [#] Does not support SNMPv3 SHA256, SHA384 and SHA512 for authentication and AES192 and AES256 for privacy.
 
 Minimum requirements for a Linux (AMD64) Data Collector server
 --------------------------------------------------------------
@@ -76,8 +81,8 @@ Minimum requirements for a Linux (AMD64) Data Collector server
   * CentOS 7.xx or later
   * Red Hat Enterprise Linux 7 or 8
   * AlmaLinux 9
-  * Debian 10 or 11
-  * Ubuntu Server LTS 18.04 or later
+  * Debian 11 or later
+  * Ubuntu Server LTS 20.04 or later
 
 * You must also have the following software installed:
 
@@ -95,7 +100,7 @@ Minimum requirements for a Linux (RPI ARM64) Data Collector device
 
 * Raspberry Pi 4 Model B (8GB)
 * 64 GB of free space (note: you must be using an SSD drive)
-* Only Ubuntu Server LTS 20.04 is supported and tested as of Hyperview 3.4
+* Only Ubuntu Server LTS 20.04 and 22.04 are supported
 
 * You must also have the following software installed:
 
@@ -213,7 +218,7 @@ Windows installation
 #. Extract the downloaded Data Collector zip file to a local folder.
 #. Browse to the folder and double-click "setup.exe".
 
-   .. tip:: Some security software (such as Microsoft Defender SmartScreen) or Windows features (such as UAC) may interrupt the installation. In such cases you will need to manually allow the Data Collector installer to run, typically via a "run anyway" or similar action.
+   .. tip:: Some security software (such as Microsoft Defender SmartScreen) or Windows features (such as UAC) may interrupt the installation. In such cases, you will need to manually allow the Data Collector installer to run, typically via a "run anyway" or similar action.
 
 #. Depending on your environment, you might get prompted to install one or more of the following: .NET framework, Visual C++ runtime libraries, WinPcap. If you do, simply click *Install* and proceed to install the prerequisite software using default values.
 
@@ -271,7 +276,7 @@ Registering a Windows Data Collector
 
    * Specify an alternate API Endpoint Name if applicable. Note that ``API`` is the only endpoint name that is currently supported.
 
-   * Deselect the Use HTTPS checkbox if applicable. Note that all our customer-facing APIs are HTTPS-only.
+   * Select the Use HTTPS checkbox. Note that all our customer-facing APIs are HTTPS/TLS. HTTP is used for internal testing and in special situations under the supervision of Hyperview Support.
 
    * In certain scenarios the Data Collector can only communicate via a proxy server. Specify the Proxy URL if applicable.
 

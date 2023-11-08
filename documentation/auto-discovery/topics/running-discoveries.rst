@@ -15,7 +15,7 @@ Once you have added and configured a discovery, you can run it manually.
 1. Go to *Discoveries → Overview*.
 2. Click *Run Now* from the discovery row.
 
-The discovery's Status will update in the grid. Once it has finished running, you can look up the discovery report.
+The discovery's Status will be updated in the grid. Once it has finished running, you can look up the discovery report.
 
 Newly discovered assets will appear in the Asset Hierarchy under the :ref:`location you specified<Adding-or-deleting-discoveries-doc>`. Re-discovered assets (which were previously discovered by other discoveries, and currently exist on your system) will remain at the current locations.
 

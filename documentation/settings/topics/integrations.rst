@@ -20,4 +20,5 @@ In addition to open APIs, Hyperview offers separately licensed integrations that
 .. toctree::
    :maxdepth: 2
 
-   service-now-cmdb-sync
+   service-now-cmdb-integration
+   equinix-smart-view-integration

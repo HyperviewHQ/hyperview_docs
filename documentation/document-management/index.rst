@@ -14,21 +14,25 @@ Supported file types
 ====================
 A "document" can be a file or a URL. The following file types are supported:
 
-+------------------+------------------------------------------------------------------------------------------+
-| **Category**     | **Supported file types**                                                                 |
-+------------------+------------------------------------------------------------------------------------------+
-| Document format  | .doc, .docx, .odt, .pdf, .rtf, .txt                                                      |
-+------------------+------------------------------------------------------------------------------------------+
-| Image            | .bmp, .dib, .gif, .ico, .jfi, .jfif, jif, .jpe, .jpeg, .jpg, .png, .svg, .tif, .tiff     |
-+------------------+------------------------------------------------------------------------------------------+
-| List/Spreadsheet | .csv, .ods, .xls, .xlsx                                                                  |
-+------------------+------------------------------------------------------------------------------------------+
-| Presentation     | .odp, .pps, .ppsx, .ppt, .pptx                                                           |
-+------------------+------------------------------------------------------------------------------------------+
-| Visio            | .vsd, .vss, .vst, .vdx, .vsx, .vtx, .vsdx, .vssx, .vstx, .vsdm, .vssm, .vstm, .vsw, .vsl |
-+------------------+------------------------------------------------------------------------------------------+
-| Other            | .mib, .xml, .zip                                                                         |
-+------------------+------------------------------------------------------------------------------------------+
+.. list-table::
+   :header-rows: 1
+   :align: left
+   :widths: 30, 70
+
+   * - Category
+     - Supported file types
+   * - Document format
+     - .doc, .docx, .odt, .pdf, .rtf, .txt
+   * - Image
+     - .bmp, .dib, .gif, .ico, .jfi, .jfif, jif, .jpe, .jpeg, .jpg, .png, .svg, .tif, .tiff
+   * - List/Spreadsheet
+     - .csv, .ods, .xls, .xlsx
+   * - Presentation
+     - .odp, .pps, .ppsx, .ppt, .pptx
+   * - Visio
+     - .vsd, .vss, .vst, .vdx, .vsx, .vtx, .vsdx, .vssx, .vstx, .vsdm, .vssm, .vstm, .vsw, .vsl
+   * - Other
+     - .mib, .xml, .zip
 
 .. note:: The maximum upload size is 10 MB. The default total document storage size is 5 GB.
 
@@ -97,7 +101,7 @@ Adding a document from *Information → Documents*
 	* Provide a name for the document.
 	* Provide a brief description.
 	* Select or drag-and-drop the file (if uploading a file; see :ref:`Document-file-types`), or enter the full URL, including the protocol (if adding a link).
-	* Select an Access Policy from the dropdown, or leave as the asset default (note: Power Users and Data Center Managers can only view and select access policies that they are a member of).
+	* Select an Access Policy from the dropdown, or leave the asset defaults (note: Power Users and Data Center Managers can only view and select access policies that they are a member of).
 
 3. Click Save. A success message will appear.
 
@@ -144,7 +148,7 @@ You can bulk-add or bulk-remove document associations while accessing assets fro
 1. Browse to the Assets By Type or Assets By Location grid, or perform an Advanced Search to find the intended assets. For example, to view all Virtual Servers, open *Assets → Asset Types → Virtual Server*.
 2. Select the assets that you want to associate with a certain document.
 3. Click *Bulk Actions → Add Document Association* to add associations, or *Bulk Actions → Remove Document Association* to remove them. A corresponding modal will open.
-4. Select the checkbox if you want to receive an email notification when the bulk job will have completed.
+4. Select the checkbox if you want to receive an email notification when the bulk job is completed.
 5. Select the document from the dropdown, and click Add (if you are adding associations) or Remove (if you are removing them).
 
 |bulk_assoc|

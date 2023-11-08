@@ -17,6 +17,7 @@ Usage examples include, but aren't limited to:
 .. image:: media/healthy.png
    :width: 1919px
    :alt: AssetTrack page
+   :class: border-black
 
 .. note::
 	- Hyperview AssetTracker is licensed per rack
