@@ -5,6 +5,37 @@
 Advanced discovery topics
 *************************
 
+.. _SNMP-AES_192_256:
+
+=================================
+SNMP privacy with AES 192 and 256
+=================================
+
+The Linux version of the Data Collector is capable of using AES-192 and AES-256 when communicating with SNMP devices. When using these algorithms it is important to note that they are not standardized across all manufacturers and SNMP implementations. There are two major non-compatible implementations. `RFC-3826 <https://datatracker.ietf.org/doc/html/rfc3826>`_ outlines arguably the closest thing to a standard. Most new devices that support AES-192/256 will support this implementation. However, some may follow an older reference implementation written by Cisco while the standard was still being discussed in the early 2000s.
+
+The Linux version of the Data Collector is compatible with RFC-3826 also known as the Blumenthal implementation.
+
+To determine what a device supports, check the device's interface, manual or datasheet. If the information is not available, the Net-SNMP -> snmpget command can be used:
+
+Example
+-------
+
+Assuming the device is configured with SHA1 for Authentication and AES-256 for Privacy.
+
+Devices that use RFC-3826 will respond with this configuration to the command:
+
+.. code::
+
+   snmpget -v3 -l authPriv -a SHA -A <password> -x AES256 -X <passphrase> -u <SNMP user> <IP Address> .1.3.6.1.2.1.1.1.0
+
+Devices that use the Cisco implementation will respond with this configuration to the command, note the "C" after AES256:
+
+.. code::
+
+   snmpget -v3 -l authPriv -a SHA -A <password> -x AES256C -X <passphrase> -u <SNMP user> <IP Address> .1.3.6.1.2.1.1.1.0
+
+.. note:: These commands were tested on Debian 12 and Fedora 38 using the default version of the snmpget command.
+
 ====================
 Obtaining SNMP walks
 ====================
@@ -106,7 +137,7 @@ Once the **docker-compose.yaml** file is configured to your satisfaction then fo
 
 Note that once you are running with a customized docker-compose file you will need to maintain that between releases. Hyperview may add new services, change default environment variables or default startup options for the various containers that compose the Linux Data Collector.
 
-Standard Linux command line tools such as **diff** and **vim** can be used to access any differences between the two files and the applicable changes can be ported to your environment.
+Standard Linux command line tools such as **diff** and **vim** can be used to assess any differences between the two files and the applicable changes can be ported to your environment.
 
 Please note that Hyperview only tests and supports the default configuration that ships with the installation package.
 

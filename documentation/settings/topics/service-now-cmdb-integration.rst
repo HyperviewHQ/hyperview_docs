@@ -1,9 +1,9 @@
 .. include:: /settings/media.rst
-.. _Servicenow-cmdb-sync-doc:
+.. _Servicenow-cmdb-integration-doc:
 
-********************
-ServiceNow CMDB Sync
-********************
+***************************
+ServiceNow CMDB Integration
+***************************
 
 .. note:: At this time only the Rome release of ServiceNow has been tested with this integration.
 
@@ -18,11 +18,11 @@ The ServiceNow CMDB Sync integration is a data mapping and data push service to 
 Prerequisites
 =============
 
-1. Setup an import Set Table to receive the data from Hyperview. A default asset type list and property data map are set. They can be customized as needed.
+1. Set up an import Set Table to receive the data from Hyperview. A default asset type list and property data map are set. They can be customized as needed
 
-2. Setup an OAuth client that is mapped to a user. Take note of the Client ID, Client Secret, Username and Password, these will be needed configuration parameters.
+2. Set up an OAuth client that is mapped to a user. Take note of the Client ID, Client Secret, Username and Password, these will be needed configuration parameters
 
-3. Take note of the ImportSet API endpoint and the refresh token endpoint. These will be needed configuration parameters.
+3. Take note of the ImportSet API endpoint and the refresh token endpoint. These will be needed as configuration parameters
 
 =============
 Configuration
@@ -33,6 +33,7 @@ Enter the information prepared earlier in their corresponding configuration fiel
 .. image:: /settings/media/servicenow_overview.png
    :width: 1908
    :alt: ServiceNow CMDB integration overview
+   :class: border-black
 
 The Last Sync Date, if populated, notes the last timestamp sync has started and finished successfully. This timestamp is used to sync changed assets since the last successful run.
 
@@ -42,11 +43,12 @@ To force a full sync the next time the process runs, reset the last sync date.
 Supported asset types
 =====================
 
-Users are able to customize which asset types to sync. By default, all types are synced.
+Users can customize which asset types to sync. By default, all types are synced.
 
 .. image:: /settings/media/servicenow_asset_types.png
    :width: 1801
    :alt: ServiceNow CMDB supported asset types
+   :class: border-black
 
 ================
 Property mapping
@@ -57,6 +59,7 @@ Property mapping is customizable. Properties can be enabled or disabled, and the
 .. image:: /settings/media/servicenow_field_mapping.png
    :width: 1800
    :alt: ServiceNow CMDB integration property mapping
+   :class: border-black
 
 Note that when there are ID and name fields returned as an array, the sorting order will be the same. For example, if the asset has two power-providing assets, the name and ID order in their respective arrays will be the same. This is done to make it easier to write data reconciliation rules on the ServiceNow side.
 
@@ -138,10 +141,12 @@ Work orders will be listed in the Hyperview Work Orders area.
 .. image:: /settings/media/scheduled_work_order.png
    :width: 2374
    :alt: Scheduled Work Order
+   :class: border-black
 
-The Work Order details will list the assets that were synced to ServiceNow CMDB. The details page will show an appropriate notification if there are no assets to sync and if there were any errors.
+The Work Order details will list the assets that were synced to ServiceNow CMDB. The details page will show an appropriate notification if there are no assets to sync or if there are any errors.
 
 .. image:: /settings/media/scheduled_work_order_with_assets.png
    :width: 2374
    :alt: Scheduled Work Order with assets
+   :class: border-black
 

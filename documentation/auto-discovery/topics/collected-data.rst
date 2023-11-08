@@ -4,7 +4,7 @@
 What kind of data is collected?
 *******************************
 
-Three types of data is collected by Hyperview:
+Three types of data are collected by Hyperview:
 
 * Data needed to identify assets (e.g. make, model and serial number)
 * Data to monitor the utilization of assets (e.g. power draw or CPU utilization)
@@ -13,11 +13,11 @@ Three types of data is collected by Hyperview:
 With that in mind, data collection follows these design tenants to ensure security and privacy:
 
 - *The customer is in control of what protocols to enable.*
-- *The customer is in control of the privilege level of the user used to collect data. Data collection will function with read only access levels.*
+- *The customer is in control of the privilege level of the user used to collect data. Data collection will function with read-only access levels.*
 - *The customer is in control of what networks and IP ranges to discover and monitor.*
-- *The customer is in control on where to place a data collector in the network and which networks it will have access to.*
+- *The customer is in control of where to place a data collector in the network and which networks it will have access to.*
 
-Only data needed to perform the aforementioned tasks is collected. Below is a list of data types that is discovered and monitored by protocol and, where applicable, by device type.
+Only data needed to perform the aforementioned tasks is collected. Below is a list of data types that are discovered and monitored by protocol and, where applicable, by device type.
 
 .. note:: The following list may change based on the capabilities of the target systems, vendors, firmware versions, allowed access, and protocol versions. While every effort has been made to ensure the list is comprehensive, Hyperview is a continuously developed product that operates in a multi-vendor environment where networked assets are constantly changing, and where vendors extend standard protocols or implement them in a non-standard way. As a result, there may be some variation in what data is collected and monitored between vendors and generations of hardware/firmware.
 
@@ -45,12 +45,12 @@ BMC-based Protocols: IPMI, iLo, ILOM, and iDRAC
 ========================
 Modbus TCP and BACnet/IP
 ========================
-Modbus TCP and BACNet/IP protocols are monitoring-only. Because of the nature of these two protocols, Hyperview includes a constructor that allows customers to create custom definitions for what they want to monitor.
+Modbus TCP and BACnet/IP protocols offer limited discoverability options and can only be monitored. Because of the nature of these two protocols, Hyperview includes a constructor that allows customers to create custom definitions for what they want to monitor.
 
 ====
 SNMP
 ====
-SNMP is a definitions-based protocol and supports a large variety of devices, types and manufacturers. Below is a list of the general types of data and sensors discovered and monitored by Hyperview based on device type. Please note that the intention is to give the reader a good idea on what is monitored. The specific list of sensors read on an asset depends on the manufacturer, asset type, the capabilities embedded in the SNMP implementation and the device definition provided by Hyperview.
+SNMP is a definitions-based protocol and supports a large variety of devices, types and manufacturers. Below is a list of the general types of data and sensors discovered and monitored by Hyperview based on device type. Please note that the intention is to give the reader a good idea of what is monitored. The specific list of sensors read on an asset depends on the manufacturer, asset type, the capabilities embedded in the SNMP implementation and the device definition provided by Hyperview.
 
 Network Device
 --------------

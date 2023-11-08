@@ -2,6 +2,74 @@
 Version 4
 #########
 
+********************************
+Hyperview 4.1 (November 8, 2023)
+********************************
+This section covers significant changes and bug fixes in Hyperview 4.1.x since version 4.0.X
+
+.. note:: This release has changes and improvements to the Data Collector software. It is strongly recommended to update your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
+
+=====================================================
+New Licensed Feature - Equinix Smart View integration
+=====================================================
+- This integration is a data synchronization service that allows Hyperview customers to get information about the infrastructure products they have with Equinix. The service will automatically synchronize and map the location hierarchy, available power and environmental sensors
+- Once configured, the location hierarchy from IBX to racks will be created. Sensors exposed through the Equinix Smart View API will be created, mapped to the right asset and tracked
+- The integration requires an Equinix Smart View account. Please contact your Equinix representative for more information
+
+=====================================================
+New Feature - Autodetection of web management address
+=====================================================
+- A new property was added and will be automatically filled by the discovery process for the device web interface address
+- A new action was added to allow users to launch the interface of an asset
+- The address will use the SNMP communication IP address for rack PDUs and small UPSs and the IPMI/BMC for servers
+- The property can be manually set by users with a Power User and above role access
+
+==========================================
+Enhanced Licensed Feature: Firmware Update
+==========================================
+- Panduit Gen5 rack power distribution units are now supported by the firmware update system
+- nVent Enlogic EN2.0 rack power distribution units are now supported by the firmware update system
+
+===============================================
+Enhanced Licensed Feature: ServiceNow CMDB Sync
+===============================================
+- The sync process now factors indirect changes to asset hierarchy during incremental updates
+
+=================================
+Enhanced Feature: Location Layout
+=================================
+- Floor plan layout has been improved to show the temperature and humidity values on hover
+- Export functionality to PDF, PNG, and JPEG has been added to the location layout
+
+======================================
+Enhanced Feature: Linux Data Collector
+======================================
+- The Linux version of the Data Collector has been improved to support IxOS and WMI
+
+======================================
+Other notable changes and improvements
+======================================
+- Debian 12 is supported to run the Linux version of the Data Collector
+- Debian 10 is no longer supported to run the Linux version of the Data Collector
+- Ubuntu 18.04 is no longer supported to run the Linux version of the Data Collector
+- Tripp Lite SNMP trap support has been improved
+- Cisco SNMP trap support has been improved
+- Cisco SNMP support has been enhanced to detect and monitor more sensors
+- General improvements have been added to bulk asset import
+- New computed sensors have been added for location average temperature and humidity
+- Interface alias/description is now searchable
+- Column sort order and selection will be automatically saved for PDU/RPP layout grids
+- PDU/RPP max breaker size has been increased to 1000 Amps, and the main breaker size max has been increased to 7500 Amps
+
+=================
+Notable bug fixes
+=================
+- **AS-13108** Fixed a bug in the Assets By Type dashboard widget that could make it unclear which bar belongs to what asset type
+- **AS-13638** Fixed a bug where under certain conditions, the asset lifecycle state would be set to active when updating the monitoring state
+- **AS-13779** Fixed a bug where under certain conditions, racks with environmental sensors from assets with a different access policy can cause the "no access" pages to be shown instead of the device dashboard
+- **AS-13790** Fixed a bug that could cause assets to show outside of the rack in 3D view
+- **AS-13865** Fixed a bug that could cause the events page grid to not auto-adjust size to the browser content area
+
 *******************************
 Hyperview 4.0 (August 15, 2023)
 *******************************
@@ -88,7 +156,7 @@ Other notable changes and improvements
 - The License page has been improved to show Licensed and consumed connections
 - Various improvements to the sensor card visualization
 - Various improvements to the discovery subsystem that should improve speed
-- Various additional improvements to manual discovery and discovery abort controls in the Linux version of the data collector
+- Various additional improvements to manual discovery and discovery abort controls in the Linux version of the Data Collector
 
 ============
 Known issues
@@ -108,5 +176,5 @@ Notable bug fixes
 ========================
 Changes in version 4.0.1
 ========================
-- **AS-13772** Added a feature to limit the number of concurrent discoveries per data collector to ten or less
+- **AS-13772** Added a feature to limit the number of concurrent discoveries per Data Collector to ten or less
 

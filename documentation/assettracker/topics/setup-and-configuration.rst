@@ -59,6 +59,7 @@ The module will appear on the AssetTracker page (*Assets → AssetTracker*) with
 .. image:: ../media/properties.png
    :width: 1920px
    :alt: AssetTracker properties page
+   :class: border-black
 
 Aligning RUs
 ------------
@@ -87,8 +88,9 @@ Adding and auditing asset tags
 .. image:: ../media/asset-audit.png
    :width: 1920px
    :alt: Asset audit page
+   :class: border-black
 
-Assuming there are no placement collisions or errors, the asset will be moved to the correct rack U in the Rack Elevation within a few minutes. It will also be surfaced on the Asset Audit page for the rack (rack → *Information → Asset Audit*). Proceed to add more asset tags for other racked devices. Please contact Hyperview Support if you need to attach extension modules.
+Assuming there are no placement collisions or errors, the asset will be moved to the correct rack U in the Rack Elevation within a few minutes. It will also be shown on the Asset Audit page for the rack (rack → *Information → Asset Audit*). Proceed to add more asset tags for other racked devices. Please contact Hyperview Support if you need to attach extension modules.
 
 ====================
 Network requirements
