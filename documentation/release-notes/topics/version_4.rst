@@ -2,9 +2,9 @@
 Version 4
 #########
 
-*******************
-Hyperview 4.1 (TBD)
-*******************
+********************************
+Hyperview 4.1 (November 8, 2023)
+********************************
 This section covers significant changes and bug fixes in Hyperview 4.1.x since version 4.0.X
 
 .. note:: This release has changes and improvements to the Data Collector software. It is strongly recommended to update your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
