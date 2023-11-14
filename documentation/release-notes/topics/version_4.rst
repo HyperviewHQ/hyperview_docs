@@ -70,6 +70,11 @@ Notable bug fixes
 - **AS-13790** Fixed a bug that could cause assets to show outside of the rack in 3D view
 - **AS-13865** Fixed a bug that could cause the events page grid to not auto-adjust size to the browser content area
 
+========================
+Changes in version 4.1.1
+========================
+- **AS-13907** Updated the base operating system container for Linux Data Collector services to the latest patch level
+
 *******************************
 Hyperview 4.0 (August 15, 2023)
 *******************************
