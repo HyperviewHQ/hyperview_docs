@@ -16,6 +16,18 @@ scoop install nodejs-lts
 scoop install make
 ```
 
+* Initialize a virtual environment in the root of the repository
+
+```console
+python3 -m venv .
+```
+
+* Activate virtual environment
+
+```console
+source bin/activate
+```
+
 * Install Sphinx and Redoc CLI; Using your favorite console app, run the following command from the **repository root**.
 
 ```console
