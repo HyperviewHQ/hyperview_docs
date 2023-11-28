@@ -5,7 +5,7 @@
 Equinix Smart View Integration
 ******************************
 
-.. note:: The integration is available to customers who are also Equinix customers and have Smart View access. Please contact your Equinix representative to enable access to Smart View.
+.. note:: The integration is available to Hyperview users who are also Equinix customers and have Smart View access. Please contact your Equinix representative to enable access to Smart View.
 
 This integration is a data synchronization service that allows Hyperview customers to get information about the infrastructure products they have with Equinix. The service will automatically synchronize and map the location hierarchy, available power and environmental sensors.
 
@@ -15,10 +15,11 @@ Once configured, the location hierarchy from IBX to rack will be created. Sensor
 Prerequisites
 =============
 
-1. An Equinix Smart View Account. Please contact your Equinix representative if you do not have access to Smart View
-2. `API Credentials <https://developer.equinix.com/docs?page=/dev-docs/smartview/overview>`_ in the form of a Client ID and a Client Secret
-3. The `IBX codes <https://www.equinix.com/data-centers>`_ for where the equipment is deployed. For example, the Ottawa Canada IBX code is OT1
-4. Your Equinix Account number
+1. Equinix Smart View is `available for the IBX <https://docs.equinix.com/en-us/Content/Colocation/SmartView/smartview-availability.htm>`_ you are deployed in
+2. An Equinix Smart View Account. Please contact your Equinix representative if you do not have access to Smart View
+3. `API Credentials <https://developer.equinix.com/docs?page=/dev-docs/smartview/overview>`_ in the form of a Client ID and a Client Secret
+4. The `IBX codes <https://www.equinix.com/data-centers>`_ for where the equipment is deployed. For example, the Ottawa Canada IBX code is OT1
+5. Your Equinix Account number
 
 =============
 Configuration
