@@ -22,9 +22,8 @@ Port management has been greatly improved:
 Enhanced Feature: New Bulk Actions
 ==================================
 Bulk actions have been added to:
-- Add network ports in bulk
-- Edit network ports in bulk
-- Delete network ports in bulk
+- Add network ports
+- Edit network ports
 
 ======================================
 Enhanced Feature: Linux Data Collector
