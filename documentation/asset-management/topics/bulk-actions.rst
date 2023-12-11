@@ -36,6 +36,18 @@ Availability of bulk actions depends on two factors: your :ref:`user role<User-a
      - Removes a document association from the selected assets
      - Power User
      - Document Management
+   * - *Add Patch Panel Network Port(s)*
+     - Add new ports to selected patch panels
+     - Power User
+     - Connectivity
+   * - *Add Network Port(s)*
+     - Add new ports to selected assets
+     - Power User
+     - Connectivity
+   * - *Update Network Ports*
+     - Update port properties for selected assets
+     - Power User
+     - Connectivity
    * - *Delete*
      - Deletes the selected assets
      - Data Center Manager
