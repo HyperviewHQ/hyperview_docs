@@ -41,7 +41,8 @@ Other notable changes and improvements
 =================
 Notable bug fixes
 =================
-- **AS-13845** A bug was fixed that allowed users to edit shelves with incorrect start and end rack-u location
+- **AS-13845** Fixed a bug that allowed users to edit shelves with incorrect start and end rack-u location
+- **AS-13969** Fixed a bug that caused an API error when setting the connector type of a patch panel port
 
 ********************************
 Hyperview 4.1 (November 8, 2023)
