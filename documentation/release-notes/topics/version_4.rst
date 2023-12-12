@@ -13,17 +13,19 @@ This section covers significant changes and bug fixes in Hyperview 4.2.x since v
 Enhanced Licensed Feature: Connectivity
 =======================================
 Port management has been greatly improved:
-- The port name template is editable when adding new ports from the Information -> Network Ports
+
+- The port name template is editable when adding new ports from the Information -> Network Ports page
 - The port name template is editable when adding new ports from the Layout page of network devices and patch panels
-- Port names are now editable in bulk from the Information -> Network Ports Page. This will allow bulk changes to port names to align with internal or manufacturer port naming conventions
-- Ports can now be deleted in bulk from the Layout page of network devices and patch panels
+- Port names are now editable in bulk from the Information -> Network Ports page. This will allow bulk changes to port names to align with internal or manufacturer port naming conventions
+- Ports can now be deleted in bulk from the Layout page of network devices, patch panels, and the Information -> Network Ports page of applicable assets
 
 ==================================
 Enhanced Feature: New Bulk Actions
 ==================================
 Bulk actions have been added to:
+
 - Add network ports
-- Edit network ports
+- Edit/update network ports
 
 ======================================
 Enhanced Feature: Linux Data Collector
@@ -34,7 +36,7 @@ Enhanced Feature: Linux Data Collector
 ======================================
 Other notable changes and improvements
 ======================================
-- Discovery state has been added to the Asset -> Information -> Properties page. This will allow users to tell the source of the asset and if has been discovered or manually added
+- Discovery state has been added to the Information -> Properties page. This will allow users to tell if an asset has been discovered or manually added
 - Dell iDRAC9 SNMP discovery will add sensors for system run time, power supply current and power supply redundancy
 - BIOS version has been added to standard asset properties and will be automatically populated if the asset is discovered
 
