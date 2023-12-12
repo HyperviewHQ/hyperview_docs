@@ -16,7 +16,7 @@ Port management has been greatly improved:
 
 - The port name template is editable when adding new ports from the Information -> Network Ports page
 - The port name template is editable when adding new ports from the Layout page of network devices and patch panels
-- Port names are now editable in bulk from the Information -> Network Ports page. This will allow bulk changes to port names to align with internal or manufacturer port naming conventions
+- Port names are now editable in bulk from the Information -> Network Ports page and the Layout page of network devices and patch panels. This will allow for better alignment with internal or manufacturer port naming conventions
 - Ports can now be deleted in bulk from the Layout page of network devices, patch panels, and the Information -> Network Ports page of applicable assets
 
 ==================================
