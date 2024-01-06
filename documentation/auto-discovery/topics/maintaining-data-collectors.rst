@@ -59,8 +59,6 @@ You may want to retire a Data Collector for various reasons, such as:
 
 Retiring a Data Collector will **permanently** remove it from the system. During the retirement process, you must specify a substitute Data Collector that will take over the responsibilities of the Data Collector you are retiring. If you only have one Data Collector, you cannot retire it unless you add a substitute.
 
-.. note:: As of Hyperview 3.4, Linux Data Collectors only support SSH, SNMP, IPMI, and Modbus TCP protocols. If you retire a Windows Data Collector in favor of a Linux one, the Linux Data Collector **will not** communicate with devices that use WMI, VMware, or BACnet/IP.
-
 |retire|
 
 #. Log in to your Hyperview instance as an Administrator.

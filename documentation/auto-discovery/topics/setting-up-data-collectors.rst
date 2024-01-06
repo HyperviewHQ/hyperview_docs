@@ -66,12 +66,10 @@ Linux and Windows Data Collector Protocol Support
      - **No**
 
 .. [#] See :ref:`SNMP-AES_192_256` for more information on AES192 and AES256 support.
-.. [#] Does not support SNMPv3 SHA256, SHA384 and SHA512 for authentication and AES192 and AES256 for privacy.
+.. [#] The Windows version has limited SNMPv3 support. It does not support SNMPv3 SHA256, SHA384 and SHA512 for authentication and AES192 and AES256 for privacy.
 
 Minimum requirements for a Linux (AMD64) Data Collector server
 --------------------------------------------------------------
-
-.. note:: The Linux Data Collector does not support VMWare, IxOS, and WMI discovery protocols.
 
 * 4 CPU cores
 * 8 GB of RAM
@@ -96,8 +94,6 @@ The supported Linux distributions typically install environment dependencies for
 Minimum requirements for a Linux (RPI ARM64) Data Collector device
 ------------------------------------------------------------------
 
-.. note:: The Linux Data Collector does not support VMWare, IxOS, and WMI discovery protocols.
-
 * Raspberry Pi 4 Model B (8GB)
 * 64 GB of free space (note: you must be using an SSD drive)
 * Only Ubuntu Server LTS 20.04 and 22.04 are supported
@@ -113,6 +109,7 @@ The supported Linux distributions typically install environment dependencies for
 
 Minimum requirements for a Windows Data Collector server
 --------------------------------------------------------
+
 * 4 CPU cores
 * 8 GB of RAM
 * 64 GB of free space
