@@ -47,6 +47,11 @@ Notable bug fixes
 - **AS-13969** Fixed a bug that caused an API error when setting the connector type of a patch panel port
 - **AS-13409** Fixed a bug that caused the browser alert to not be displayed when closing a tab with unsaved changes
 
+========================
+Changes in version 4.2.1
+========================
+- **AS-14114** Fixed an issue that caused invalid device merges while discovering Nutanix hardware using the VMware protocol
+
 ********************************
 Hyperview 4.1 (November 8, 2023)
 ********************************
