@@ -90,7 +90,7 @@ Linux Environment Dependencies
 
 .. [#] Docker Inc. provides `detailed installation documentation <https://docs.docker.com/engine/install/>`_.
 
-Please note that the `jq` package may not be available from the official RedHat repository for RedHat Enterprise Linux. If that is the case, the Extra Packages for Enterprise Linux `EPEL <https://docs.fedoraproject.org/en-US/epel/>`_` project will have it.
+Please note that the `jq` package may not be available from the official RedHat repository for RedHat Enterprise Linux. If that is the case, the Extra Packages for Enterprise Linux `EPEL <https://docs.fedoraproject.org/en-US/epel/>`_ project will have it.
 
 Minimum requirements for a Linux (AMD64/X86_64)
 -----------------------------------------------
