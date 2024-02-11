@@ -1,7 +1,9 @@
-FROM nginx:stable-alpine
+FROM busybox:musl
 
-# Update packages
-RUN apk update && apk upgrade
+RUN adduser -D site
+USER site
+WORKDIR /home/site
 
-COPY site/documentation/_build/html /usr/share/nginx/html
+COPY site/documentation/_build/html .
 
+CMD ["busybox", "httpd", "-f", "-v", "-p", "80"]
