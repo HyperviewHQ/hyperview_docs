@@ -7,21 +7,17 @@ Setting up Data Collectors
 
 The Hyperview Data Collector collects and relays data back to the Hyperview platform. It covers the following functional areas: discovery, monitoring, control operations (for example, :ref:`setting control credentials <Setting-control-credentials>`), and trap listening.
 
-All communication between the Hyperview platform and networked devices must be initiated by the Data Collector. You must register a Data Collector before it can relay information. The registration process can only be triggered from the machine that hosts the Data Collector and requires a unique key that is generated for that particular Data Collector.
+You must register a Data Collector before it can relay information. The registration process can only be triggered from the machine that hosts the Data Collector and requires a unique Registration Token generated for that particular Data Collector.
 
 Once registered, the Data Collector saves the key in a local configuration file in a secure manner. It then polls the Hyperview platform for data collection jobs.
 
+The Data Collector must initiate all communication between the Data Collector and Hyperview. All communication is encrypted using TLS.
+
 .. _Setup-data-collectors:
 
-=============
-Prerequisites
-=============
-
-.. note:: You must install the Hyperview Data Collector on at least one device (physical or virtual, running a supported Windows or Linux OS) that is networked with your devices. You **cannot** install multiple instances of the Data Collector on the same device, or register the same device with multiple Hyperview instances. For larger organizations, we recommend having the Data Collector installed and running on one or more devices per data center.
-
-
-Linux and Windows Data Collector Protocol Support
--------------------------------------------------
+===============================
+Data Collector Protocol Support
+===============================
 
 .. list-table::
    :header-rows: 1
@@ -66,30 +62,49 @@ Linux and Windows Data Collector Protocol Support
      - **No**
 
 .. [#] See :ref:`SNMP-AES_192_256` for more information on AES192 and AES256 support.
-.. [#] The Windows version has limited SNMPv3 support. It does not support SNMPv3 SHA256, SHA384 and SHA512 for authentication and AES192 and AES256 for privacy.
+.. [#] The Windows version has limited SNMPv3 support. It does not support SNMPv3 SHA256, SHA384, and SHA512 for authentication and AES192 and AES256 for privacy.
 
-Minimum requirements for a Linux (AMD64) Data Collector server
---------------------------------------------------------------
+=============
+Prerequisites
+=============
+
+You must install the Hyperview Data Collector on at least one machine (physical or virtual, running a supported operating system) with network access to your devices. You **cannot** install multiple instances of the Data Collector on the same device or register the same device with more than one Hyperview instance.
+
+Linux Environment Dependencies
+------------------------------
+
+**Please use apt, yum or dnf (depending on the distribution) to install the following packages**
+
+* bind9-host (for the host command)
+* coreutils (for the cut command)
+* grep (for pattern matching)
+* jq (for JSON file manipulation)
+* libicu (for Unicode support)
+* mawk or gawk (for the awk command)
+* newt or whiptail, depending on the Linux distribution
+* sed (for file editing)
+* tar (to unpack the archive)
+* uuidgen (to generate UUIDs)
+* docker-ce (for the docker command) [#]_
+* docker-compose-plugin (for the docker compose command)
+
+.. [#] Docker Inc. provides `detailed installation documentation <https://docs.docker.com/engine/install/>`_.
+
+Please note that the `jq` package may not be available from the official RedHat repository for RedHat Enterprise Linux. If that is the case, the Extra Packages for Enterprise Linux `EPEL <https://docs.fedoraproject.org/en-US/epel/>`_` project will have it.
+
+Minimum requirements for a Linux (AMD64/X86_64)
+-----------------------------------------------
 
 * 4 CPU cores
 * 8 GB of RAM
 * 64 GB of free space in the /opt partition or where the /opt directory resides
 * One of the following supported Linux distributions installed:
 
-  * CentOS 7.xx or later
-  * Red Hat Enterprise Linux 7 or 8
-  * AlmaLinux 9
-  * Debian 11 or later
-  * Ubuntu Server LTS 20.04 or later
-
-* You must also have the following software installed:
-
-  * Docker CE
-  * Docker Compose Plugin
-
-Docker Inc. provides `detailed installation documentation <https://docs.docker.com/engine/install/>`_.
-
-The supported Linux distributions typically install environment dependencies for the Data Collector by default. Please refer to the README file included in the setup package for a complete list of dependencies.
+  * AlmaLinux 9 (Using the CentOS 9 instructions)
+  * CentOS 9
+  * RedHat Enterprise Linux 8
+  * Debian 11 or 12
+  * Ubuntu Server LTS 20.04 or 22.04
 
 Minimum requirements for a Linux (RPI ARM64) Data Collector device
 ------------------------------------------------------------------
@@ -97,15 +112,6 @@ Minimum requirements for a Linux (RPI ARM64) Data Collector device
 * Raspberry Pi 4 Model B (8GB)
 * 64 GB of free space (note: you must be using an SSD drive)
 * Only Ubuntu Server LTS 20.04 and 22.04 are supported
-
-* You must also have the following software installed:
-
-  * Docker CE
-  * Docker Compose Plugin
-
-Docker Inc. provides `detailed installation documentation <https://docs.docker.com/engine/install/>`_.
-
-The supported Linux distributions typically install environment dependencies for the Data Collector by default. Please refer to the README file included in the setup package for a complete list of dependencies.
 
 Minimum requirements for a Windows Data Collector server
 --------------------------------------------------------
@@ -130,7 +136,7 @@ The Data Collector uses HTTPS/TLS (TCP/443) to communicate with Hyperview. The d
 
 Data Collector to assets
 ------------------------
-Please make sure that the Data Collector can reach the targeted assets on the applicable ports for your site. Below is a list of the default ports the Data Collector will use, other ports can be used if needed or applicable.
+Please ensure the Data Collector can reach the targeted assets on the applicable ports for your site. Below is a list of the default ports the Data Collector will use; other ports can be used if needed.
 
 .. list-table::
    :header-rows: 1
@@ -169,7 +175,7 @@ Please make sure that the Data Collector can reach the targeted assets on the ap
 
 Assets to Data Collector
 ------------------------
-Please make sure that the asset can reach the targeted Data Collector on the applicable ports for your site. Below is a list of the default ports the Data Collector will use, other ports can be used if needed or applicable.
+Please ensure the asset can reach the targeted Data Collector on the applicable ports for your site. Below is a list of the default ports the Data Collector will use; other ports can be used if needed or applicable.
 
 .. list-table::
    :header-rows: 1
@@ -190,39 +196,39 @@ Please make sure that the asset can reach the targeted Data Collector on the app
 
 Firewall considerations
 -----------------------
-Firewalls can interfere with Data Collector communication. It is recommended to test connectivity for the protocols and features you use. The asset discovery report can provide information that may be helpful in troubleshooting connectivity issues.
+Firewalls can interfere with Data Collector communication. We recommended that you test connectivity for the protocols and features you use. The asset discovery report can provide information that may be helpful in troubleshooting connectivity issues.
 
 ==============================
 Downloading the Data Collector
 ==============================
 #. Log in to your Hyperview instance as an Administrator.
 #. Go to *Discoveries → Data Collectors → Download Data Collector*.
-#. Select the Operating System. If you select Linux (AMD64) or Linux (RPI ARM64), download and SHA256 checksum links will appear which you can use directly from your terminal.
+#. Select the Operating System. If you select Linux (AMD64) or Linux (RPI ARM64), download and SHA256 checksum links will appear, which you can use directly from your terminal.
 
    |download|
 
 #. Click Download.
 
-.. note:: If you are using Linux, please make sure you are downloading the Data Collector type that is relevant to your CPU architecture. The Linux (AMD64) Data Collector is only intended for Intel and AMD CPU-based systems. Linux (RPI ARM64) Data Collector is for Raspberry Pi 4B systems.
+.. note:: If you are using Linux, please download the Data Collector type relevant to your CPU architecture. The Linux (AMD64) Data Collector is intended for Intel and AMD CPU-based systems. Linux (RPI ARM64) Data Collector is for Raspberry Pi 4B systems.
 
-A compressed Data Collector setup package will be downloaded to your browser's default download location, as per your OS. The filename will resemble "dataCollector-9999.zip" (or "linuxDataCollector-9999.tgz" for Linux), where "9999" represents the version number.
+A compressed Data Collector setup package will be downloaded to your browser's default download location. The filename will resemble "dataCollector-9999.zip" (or "linuxDataCollector-9999.tgz" for Linux), where "9999" represents the version number.
 
 =============================
 Installing the Data Collector
 =============================
 Windows installation
 --------------------
-#. Extract the downloaded Data Collector zip file to a local folder.
-#. Browse to the folder and double-click "setup.exe".
+#. Extract the downloaded Data Collector zip file to a local folder
+#. Browse to the folder and double-click "setup.exe"
 
    .. tip:: Some security software (such as Microsoft Defender SmartScreen) or Windows features (such as UAC) may interrupt the installation. In such cases, you will need to manually allow the Data Collector installer to run, typically via a "run anyway" or similar action.
 
-#. Depending on your environment, you might get prompted to install one or more of the following: .NET framework, Visual C++ runtime libraries, WinPcap. If you do, simply click *Install* and proceed to install the prerequisite software using default values.
+#. Depending on your environment, you might get prompted to install one or more of the following: .NET framework, Visual C++ runtime libraries, WinPcap. If you do, click *Install* and install the prerequisite software using default values.
 
    .. note:: While installing WinPCap ensure the "Automatically start the WinPcap drive at boot time" option is selected.
 
 #. Click *Next* to start the Data Collector setup.
-#. Accept the license terms by selecting "I accept...", then click *Next*.
+#. Accept the license terms by selecting "I accept..." and then clicking *Next*.
 #. Choose a different installation folder or click *Next* to accept the default location.
 
    |dc_install_3|
@@ -275,9 +281,9 @@ Registering a Windows Data Collector
 
    * Select the Use HTTPS checkbox. Note that all our customer-facing APIs are HTTPS/TLS. HTTP is used for internal testing and in special situations under the supervision of Hyperview Support.
 
-   * In certain scenarios the Data Collector can only communicate via a proxy server. Specify the Proxy URL if applicable.
+   * In certain scenarios, the Data Collector can only communicate via a proxy server. Specify the Proxy URL if applicable.
 
-   * If you are using a custom BACnet device ID, select "Use Custom BACnet Server Device ID" and enter the custom device ID. (If you do not provide the custom device ID the device will still get discovered, but will be assigned a default ID.)
+   * If you are using a custom BACnet device ID, select "Use Custom BACnet Server Device ID" and enter the custom device ID. (If you do not provide the custom device ID, the device will still get discovered but will be assigned a default ID.)
 
 #. Click *Register* to complete the Data Collector registration.
 
@@ -299,9 +305,10 @@ The Data Collector will be registered.
 ===================================
 Verifying your Data Collector setup
 ===================================
+
 In Windows
 ----------
-If your Data Collector was set up correctly, the Services view in Windows (search for the "Services" app from the Windows search bar) will indicate that the Hyperview Data Collector and Hyperview SNMP Trap Listener services are running and set to start automatically, as seen below.
+If the Data Collector was set up correctly. The Services view in Windows (search for the "Services" app from the Windows search bar) will indicate that the Hyperview Data Collector and Hyperview SNMP Trap Listener services are running and set to start automatically, as seen below.
 
 |services|
 
