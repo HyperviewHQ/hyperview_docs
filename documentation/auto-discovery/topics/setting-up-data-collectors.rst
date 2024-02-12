@@ -73,24 +73,24 @@ You must install the Hyperview Data Collector on at least one machine (physical 
 Linux Environment Dependencies
 ------------------------------
 
-**Please use apt, yum or dnf (depending on the distribution) to install the following packages**
+**Please use apt, yum or, dnf, depending on the distribution, to install the following packages**
 
-* bind9-host (for the host command)
-* coreutils (for the cut command)
-* grep (for pattern matching)
-* jq (for JSON file manipulation)
+* bind9-host (for the *host* command)
+* coreutils (for the *cut* command)
+* *grep* (for pattern matching)
+* mawk or gawk (for the *awk* command)
+* newt or whiptail (for the *whiptail* command)
+* *sed* (for file editing)
+* *tar* (to unpack the archive)
+* *uuidgen* (to generate UUIDs)
+* docker-ce (for the *docker* command) [#]_
+* docker-compose-plugin (for the *docker compose* command)
+* *jq* (for JSON file manipulation) [#]_
 * libicu (for Unicode support)
-* mawk or gawk (for the awk command)
-* newt or whiptail, depending on the Linux distribution
-* sed (for file editing)
-* tar (to unpack the archive)
-* uuidgen (to generate UUIDs)
-* docker-ce (for the docker command) [#]_
-* docker-compose-plugin (for the docker compose command)
 
 .. [#] Docker Inc. provides `detailed installation documentation <https://docs.docker.com/engine/install/>`_.
 
-Please note that the `jq` package may not be available from the official RedHat repository for RedHat Enterprise Linux. If that is the case, the Extra Packages for Enterprise Linux `EPEL <https://docs.fedoraproject.org/en-US/epel/>`_ project will have it.
+.. [#] The `jq` package may not be available from the official RedHat repository for RedHat Enterprise Linux or derivatives. If that is the case, the Extra Packages for Enterprise Linux `EPEL <https://docs.fedoraproject.org/en-US/epel/>`_ project will have it.
 
 Minimum requirements for a Linux (AMD64/X86_64)
 -----------------------------------------------
