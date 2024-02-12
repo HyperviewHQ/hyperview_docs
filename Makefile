@@ -35,5 +35,5 @@ docker_stop:
 	docker container stop hvdocs && docker container rm hvdocs
 
 docker_start:
-	docker run --name hvdocs -d -p 127.0.0.1:80:80 hvdocs:latest
+	docker run --name hvdocs -d -p 127.0.0.1:80:8080 hvdocs:latest
 
