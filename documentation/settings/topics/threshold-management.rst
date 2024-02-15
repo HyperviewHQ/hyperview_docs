@@ -1,31 +1,9 @@
 .. include:: /settings/media.rst
-.. _Configuring-sensors-doc:
+.. _Threshold-management-doc:
 
-*******************
-Configuring sensors
-*******************
-
-Administrators can define sensor polling intervals and sensor thresholds across the application.
-
-=================================
-Updating sensor polling intervals
-=================================
-The polling interval indicates the time between one successful attempt (or retry) to retrieve sensor data and the next one. However, please note that the exact polling interval can vary due to network latency and saturation, destination device load, data collector load, and device reachability. Traps received for a given asset will also trigger the Data Collector to retrieve the latest asset information, including sensor data.
-
-The default sensor polling interval is 10 minutes, which implies that all sensor data in your Hyperview instance typically refreshes every 10 minutes. The minimum polling interval is 5 minutes. The maximum polling interval is 24 hours.
-
-|sensors_1|
-
-To update the polling interval:
-
-1. Go to *Settings → Sensors → Polling*.
-2. Select the intended interval → *Save*.
-
-A success message will appear.
-
-==========================
-Managing sensor thresholds
-==========================
+********************
+Threshold Management
+********************
 By default Hyperview ships with a number of application-defined sensor thresholds. Additionally, Administrators can define sensor thresholds to trigger related application events and event notifications.
 
 For example, you can define a sensor threshold to throw a warning whenever a server’s temperature exceeds 85°F or goes below 50°F. If the threshold is reached, Hyperview will create an alarm event. Depending on the event severity and event notification rules, a notification email will also get sent.

@@ -15,4 +15,4 @@ Administrators can configure system-wide application settings to a consistent us
    topics/general-settings
    topics/integrations
    topics/view-license
-   topics/configuring-sensors
+   topics/sensors
