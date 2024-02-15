@@ -1,9 +1,9 @@
 .. include:: /settings/media.rst
-.. _Configure-locale-settings-doc:
+.. _Locale-settings-doc:
 
-***************************
-Configuring locale settings
-***************************
+***************
+Locale settings
+***************
 
 Administrators can configure application-wide locale settings from the Locale page. Only English and Español locales are currently supported.
 

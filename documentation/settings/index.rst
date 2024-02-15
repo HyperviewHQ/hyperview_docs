@@ -13,6 +13,6 @@ Administrators can configure system-wide application settings to a consistent us
    topics/managing-access-policies
    topics/managing-custom-properties
    topics/view-license
-   topics/configuring-locale
    topics/configuring-sensors
+   topics/general-settings
    topics/integrations
