@@ -48,7 +48,7 @@
    .. grid-item-card:: :fas:`fa-solid fa-book-open` Catalog Management
       :link: catalog-management/index.html
 
-      Access the product catalog, and add your own models and images.
+      Access the product catalog, and add your device models and images.
 
    .. grid-item-card:: :fas:`fa-solid fa-file` Document Management
       :link: document-management/index.html
