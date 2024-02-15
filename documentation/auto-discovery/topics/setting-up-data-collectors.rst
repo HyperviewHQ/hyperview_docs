@@ -218,6 +218,9 @@ Installing the Data Collector
 =============================
 Windows installation
 --------------------
+
+.. warning:: Support for installing the data collector software on Windows will end on January 31, 2025. Customers using Windows should make arrangements to switch to Linux by that time.
+
 #. Extract the downloaded Data Collector zip file to a local folder
 #. Browse to the folder and double-click "setup.exe"
 
