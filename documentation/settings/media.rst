@@ -30,6 +30,9 @@
 .. |locale| image:: /settings/media/locale.png
    :class: border-black
 
+.. |catalog-data| image:: /settings/media/catalog-data.png
+   :class: border-black
+
 .. |sensors_1| image:: /settings/media/sensors_1.png
    :class: border-black
 
