@@ -4,7 +4,7 @@
 Quickstart
 **********
 
-Hyperview is a next-generation, cloud-based Data Center Infrastructure Management (DCIM) software designed to provide superior monitoring, capacity planning, and administration experience. This document is intended for a first-time Hyperview user who will set up the application for their organization as an Administrator. A relevant link will be emailed to you to complete your user account registration.
+Hyperview is a next-generation, cloud-based Data Center Infrastructure Management (DCIM) software with superior monitoring, capacity planning, and administration experience. This document is for a first-time Hyperview user who will set up the application for their organization as an Administrator.
 
 The following high-level diagram depicts the application onboarding process from start to finish.
 
@@ -17,7 +17,7 @@ Prerequisites
 =============
 Supported web browsers
 ----------------------
-You can run Hyperview on |chromeLink|, |firefoxLink|, or |edgeLink|. For security reasons, we always recommend using the latest stable version of your preferred browser.
+You can run Hyperview on |chromeLink|, |firefoxLink|, or |edgeLink|. We recommend using your preferred browser's latest stable version for security and compatibility reasons.
 
 .. |chromeLink| raw:: html
 
@@ -42,16 +42,16 @@ Gathering data
 We recommend collecting the following information beforehand to streamline the process.
 
 * A list of web domains used by your company (for example, “yourcompany.com”)
-* A list of users including their email addresses and intended application role (Administrator, Data Center Manager, Power User, Read Only, or Reporting)
+* A list of users, including their email addresses and intended application role (Administrator, Data Center Manager, Power User, Read Only, or Reporting)
 * Physical addresses and background images (such as floor maps) for all your data center locations
-* A list of all your racks including their location, model, and manufacturer
-* A list of all your assets including their location, model, manufacturer, and serial number
+* A list of all your racks, including their location, model, and manufacturer
+* A list of all your assets, including their location, model, manufacturer, and serial number
 * A list of IP addresses or ranges for devices that you wish to include or exclude from discovery scans
 
 =====================================
 Setting up domains, groups, and users
 =====================================
-A user account in Hyperview corresponds to a real-world user. Individuals can have more than one user account to satisfy different job functions (for example, IT Manager and QA). To set up initial users, you must create domains, groups, and user accounts. Refer to :ref:`Administering user accounts<User-administration-doc>` for detailed documentation.
+A user account in Hyperview corresponds to a real-world user. Individuals can have multiple user accounts to satisfy different job functions (for example, IT Manager and QA). You must create domains, groups, and user accounts. Refer to :ref:`Administering user accounts<User-administration-doc>` for detailed documentation.
 
 .. raw :: html
 
@@ -104,11 +104,11 @@ Adding assets
 =============
 An "asset" in Hyperview lingo refers to devices and objects at a given location. These include IT equipment, facility infrastructure, containers, virtual machines, blades, and so on (see :ref:`Supported asset types<Supported-asset-types-doc>` for a complete list).
 
-You can add assets manually, as you did for locations and racks, but typically you will want to bulk import or discover them. See :ref:`Adding assets<Adding-assets-doc>` for detailed documentation on bulk importing and manually adding assets. Discoveries are covered in the following section.
+You can add assets manually, as you did for locations and racks, but typically, you will want to bulk import or discover them. See :ref:`Adding assets<Adding-assets-doc>` for detailed documentation on bulk importing and manually adding assets. Discoveries are covered in the following section.
 
 .. raw :: html
 
-	<div class="pb-3"><iframe src="https://player.vimeo.com/video/487015511" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+	<div class="pb-3"><iframe src="https://player.vimeo.com/video/913490838" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
 
 Moving an asset to a rack elevation
 -----------------------------------
@@ -141,7 +141,7 @@ While configuring the discovery, refer to the list of IP addresses that you had 
 
 Running a discovery
 -------------------
-You can run a discovery at any time, as well as schedule it to run later (on a one-time or recurring basis). Upon discovery, discovered assets will be generated or updated in the location that you specified. Review the discovery report to confirm that the target devices were discovered as intended.
+You can run a discovery at any time and schedule it to run later (on a one-time or recurring basis). Discovered assets will be generated or updated in your specified location upon discovery. Review the discovery report to confirm that the target devices were discovered and created as intended.
 
 .. raw :: html
 
@@ -158,4 +158,4 @@ A report will be generated once the discovery has finished running. Discovered a
 ============
 What's next?
 ============
-If you made it this far, congratulations! You've successfully set up the application for your team, as well as mastered the basics along the way. Continue to explore Hyperview documentation to keep learning. To stay informed about the latest features and changes, visit our :ref:`Release notes page<Release-notes-doc>`.
+If you made it this far, congratulations! You've successfully set up the application for your team and mastered the basics. Continue to explore Hyperview documentation to keep learning. To stay informed about the latest features and changes, visit our :ref:`Release notes page<Release-notes-doc>`.
