@@ -48,5 +48,11 @@
 .. |access_policies_2| image:: /settings/media/access_policies_2.png
    :class: border-black
 
+.. |alarm_policies_1| image:: /settings/media/alarm-policies_1.png
+   :class: border-black
+
+.. |alarm_policies_2| image:: /settings/media/alarm-policies_2.png
+   :class: border-black
+
 .. |add-notification-channel| image:: /settings/media/add-notification-channel.png
    :class: border-black
