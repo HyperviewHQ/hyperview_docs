@@ -22,9 +22,18 @@ Enhanced Licensed Feature: Connectivity
 =======================================
 
 
-======================================
-Enhanced Feature: Linux Data Collector
-======================================
+===============================
+Enhanced Feature: Notifications
+===============================
+- Single notification template
+- Multi-select asset types in alarm policies
+- Ability to select a notification channel in an alarm policy
+- Notification channels - Microsoft Teams integration
+
+================================================
+Enhanced Feature: Linux & Windows Data Collector
+================================================
+- VMware protocol has been enhanced to add a monitoring pipeline for discovered sensors.
 
 
 ======================================
@@ -35,6 +44,8 @@ Other notable changes and improvements
 =================
 Notable bug fixes
 =================
+- **AS-11359** Fixed a bug in the Debian Linux SSH protocol definition that caused storage capacity sensors not to be updated during the monitoring cycle
+- **AS-13941** Fixed a bug that, under certain conditions, caused the page not to render correctly when navigating from the asset summary widget to Advanced Search
 
 
 *********************************
@@ -42,7 +53,7 @@ Hyperview 4.2 (December 12, 2023)
 *********************************
 This section covers significant changes and bug fixes in Hyperview 4.2.x since version 4.1.X
 
-.. note:: This release has changes and improvements to the Data Collector software. It is strongly recommended to update your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
+.. note:: This release has changes and improvements to the Data Collector software. It is strongly recommended that you update your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
 
 =======================================
 Enhanced Licensed Feature: Connectivity
