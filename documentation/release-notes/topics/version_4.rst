@@ -2,6 +2,41 @@
 Version 4
 #########
 
+*******************
+Hyperview 4.3 (TBD)
+*******************
+This section covers significant changes and bug fixes in Hyperview 4.3.x since version 4.2.X
+
+.. note:: This release has changes and improvements to the Data Collector software. It is strongly recommended that you update your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
+
+======================================================
+Important Notes: Windows version of the Data Collector
+======================================================
+
+Support for the *Windows* version of the Data Collector will end on *January 31, 2025*. Customers are encouraged to switch to the Linux version before then. Detailed :ref:`installation instructions <Setting-up-data-collectors-doc>` are in the product documentation.
+
+`CentOS Linux 7 End of Life, is June 30, 2024 <https://blog.centos.org/2023/04/end-dates-are-coming-for-centos-stream-8-and-centos-linux-7/>`_. With that, installing the Data Collector will not be supported on this version of CentOS.
+
+=======================================
+Enhanced Licensed Feature: Connectivity
+=======================================
+
+
+======================================
+Enhanced Feature: Linux Data Collector
+======================================
+
+
+======================================
+Other notable changes and improvements
+======================================
+
+
+=================
+Notable bug fixes
+=================
+
+
 *********************************
 Hyperview 4.2 (December 12, 2023)
 *********************************

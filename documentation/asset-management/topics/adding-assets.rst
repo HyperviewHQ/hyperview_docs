@@ -21,7 +21,7 @@ You can bulk import assets using a CSV template that you can download from the a
 
 .. raw :: html
 
-	<div class="pb-3"><iframe src="https://player.vimeo.com/video/487015511" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+   <div class="pb-3"><iframe src="https://player.vimeo.com/video/913490838" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
 
 .. note:: You cannot bulk import Location or Rack type assets.
 
