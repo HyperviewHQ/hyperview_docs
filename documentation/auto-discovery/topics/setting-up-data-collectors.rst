@@ -73,7 +73,7 @@ You must install the Hyperview Data Collector on at least one machine (physical 
 Linux Environment Dependencies
 ------------------------------
 
-**Please use apt, yum, or DNF, depending on the distribution, to install the following packages**
+**Please use apt, yum, or dnf, depending on the distribution, to install the following packages**
 
 * bind9-host (for the *host* command)
 * coreutils (for the *cut* command)
