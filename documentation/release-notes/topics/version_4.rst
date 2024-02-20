@@ -61,6 +61,14 @@ Notable bug fixes
 - **AS-13941** Fixed a bug that, under certain conditions, caused the page not to render with search results when navigating from the asset summary widget to Advanced Search
 
 
+============
+Known Issues
+============
+- CentOS 7
+- Alarm Close 
+
+
+
 *********************************
 Hyperview 4.2 (December 12, 2023)
 *********************************
