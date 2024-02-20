@@ -9,13 +9,9 @@ This section covers significant changes and bug fixes in Hyperview 4.3.x since v
 
 .. note:: This release has changes and improvements to the Data Collector software. It is strongly recommended that you update your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
 
-======================================================
-Important Notes: Windows version of the Data Collector
-======================================================
-
-Support for the *Windows* version of the Data Collector will end on *January 31, 2025*. Customers are encouraged to switch to the Linux version before then. Detailed :ref:`installation instructions <Setting-up-data-collectors-doc>` are in the product documentation.
-
-`CentOS Linux 7 End of Life, is June 30, 2024 <https://blog.centos.org/2023/04/end-dates-are-coming-for-centos-stream-8-and-centos-linux-7/>`_. With that, installing the Data Collector will not be supported on this version of CentOS.
+.. important::
+   1. Support for the *Windows* version of the Data Collector will end on *January 31, 2025*. Customers are encouraged to switch to the Linux version before then. Detailed :ref:`installation instructions <Setting-up-data-collectors-doc>` are in the product documentation.
+   2. `CentOS Linux 7 End of Life, is June 30, 2024 <https://blog.centos.org/2023/04/end-dates-are-coming-for-centos-stream-8-and-centos-linux-7/>`_. With that, installing the Data Collector will not be supported on this version of CentOS.
 
 =======================================
 Enhanced Licensed Feature: Connectivity
@@ -45,7 +41,7 @@ Other notable changes and improvements
 Notable bug fixes
 =================
 - **AS-11359** Fixed a bug in the Debian Linux SSH protocol definition that caused storage capacity sensors not to be updated during the monitoring cycle
-- **AS-13941** Fixed a bug that, under certain conditions, caused the page not to render correctly when navigating from the asset summary widget to Advanced Search
+- **AS-13941** Fixed a bug that, under certain conditions, caused the page not to render with search results when navigating from the asset summary widget to Advanced Search
 
 
 *********************************

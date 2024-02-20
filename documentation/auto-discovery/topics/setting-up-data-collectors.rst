@@ -7,7 +7,7 @@ Setting up Data Collectors
 
 The Hyperview Data Collector collects and relays data back to the Hyperview platform. It covers the following functional areas: discovery, monitoring, control operations (for example, :ref:`setting control credentials <Setting-control-credentials>`), and trap listening.
 
-You must register a Data Collector before it can relay information. The registration process can only be triggered from the machine that hosts the Data Collector and requires a unique Registration Token generated for that particular Data Collector.
+You must register a Data Collector before it can relay information. You can only trigger the registration from the machine that hosts the Data Collector, and the process requires a unique, one-time-use Registration Token for that particular Data Collector.
 
 Once registered, the Data Collector saves the key in a local configuration file in a secure manner. It then polls the Hyperview platform for data collection jobs.
 
@@ -73,7 +73,7 @@ You must install the Hyperview Data Collector on at least one machine (physical 
 Linux Environment Dependencies
 ------------------------------
 
-**Please use apt, yum or, dnf, depending on the distribution, to install the following packages**
+**Please use apt, yum, or DNF, depending on the distribution, to install the following packages**
 
 * bind9-host (for the *host* command)
 * coreutils (for the *cut* command)
@@ -102,7 +102,7 @@ Minimum requirements for a Linux (AMD64/X86_64)
 
   * AlmaLinux 9 (Using the CentOS 9 instructions)
   * CentOS 9
-  * RedHat Enterprise Linux 8
+  * RedHat Enterprise Linux 8 (With access to Docker-CE software for the distribution)
   * Debian 11 or 12
   * Ubuntu Server LTS 20.04 or 22.04
 
