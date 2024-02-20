@@ -16,26 +16,43 @@ This section covers significant changes and bug fixes in Hyperview 4.3.x since v
 =======================================
 Enhanced Licensed Feature: Connectivity
 =======================================
+- Connections and Circuits have been enhanced to allow users to attach documents, images, and links.
 
 
-===============================
-Enhanced Feature: Notifications
-===============================
-- Single notification template
-- Multi-select asset types in alarm policies
-- Ability to select a notification channel in an alarm policy
-- Notification channels - Microsoft Teams integration
+========================================
+Enhanced Feature: Alarm Event Management
+========================================
+- A new *Assets -> Events* page was added to the application to allow for consolidated events management. The events displayed will be a global view of all events on assets the user can access. 
+
+- Users can export, filter, and sort the events list by various criteria.
+
+- Events can be acknowledged or closed individually and in bulk.
+
+=================================================
+Enhanced Feature: Notifications -> Alarm Policies
+=================================================
+- The notification template has been updated to aggregate multiple events in one email. This enhancement will reduce email noise in the case of event spikes.
+
+- Administrators can now select All or multiple asset types from the same Alarm Policy. Previously, users were allowed to choose a single asset type for policy.
+
+- Administrators can now select a notification channel for an Alarm Policy; more information on Notification Channels is provided below.
+
+========================================================
+Enhanced Feature: Notifications -> Notification Channels
+========================================================
+- This feature allows Administrators to create an Alarm Policy to channel notifications to an external communication or alerting system such as Microsoft Teams.
+
+- This release adds the integration with Microsoft Teams. Administrators can configure a link to a specific Microsoft Teams Channel. Administrators can add multiple Teams channels and target them with different Alarm Policies.
 
 ================================================
 Enhanced Feature: Linux & Windows Data Collector
 ================================================
 - VMware protocol has been enhanced to add a monitoring pipeline for discovered sensors.
 
-
 ======================================
 Other notable changes and improvements
 ======================================
-
+- Launch Web Interface has been added as a primary action button on device asset types. 
 
 =================
 Notable bug fixes
