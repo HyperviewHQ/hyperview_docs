@@ -7,11 +7,10 @@ Hyperview 4.3 (TBD)
 *******************
 This section covers significant changes and bug fixes in Hyperview 4.3.x since version 4.2.X
 
-.. note:: This release has changes and improvements to the Data Collector software. It is strongly recommended that you update your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
-
 .. important::
-   1. Support for the *Windows* version of the Data Collector will end on *January 31, 2025*. Customers are encouraged to switch to the Linux version before then. Detailed :ref:`installation instructions <Setting-up-data-collectors-doc>` are in the product documentation.
-   2. `CentOS Linux 7 End of Life, is June 30, 2024 <https://blog.centos.org/2023/04/end-dates-are-coming-for-centos-stream-8-and-centos-linux-7/>`_. With that, installing the Data Collector will not be supported on this version of CentOS. Customers **must** update to a supported version of Linux to use the latest version of the Data Collector.
+   1. This release has changes and improvements to the Data Collector software. It is strongly recommended that you update your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
+   2. Support for the *Windows* version of the Data Collector will end on *January 31, 2025*. Customers are encouraged to switch to the Linux version before then. Detailed :ref:`installation instructions <Setting-up-data-collectors-doc>` are in the product documentation.
+   3. `CentOS Linux 7 End of Life, is June 30, 2024 <https://blog.centos.org/2023/04/end-dates-are-coming-for-centos-stream-8-and-centos-linux-7/>`_. With that, installing the Data Collector will not be supported on this version of CentOS. If you are using this version of Linux, you must update to a supported version to use the latest version of the Data Collector.
 
 =======================================
 Enhanced Licensed Feature: Connectivity
@@ -21,7 +20,7 @@ Enhanced Licensed Feature: Connectivity
 ========================================
 Enhanced Feature: Alarm Event Management
 ========================================
-- A new *Assets -> Events* page was added to the application to allow for consolidated events management. The events displayed will be a global view of all events on assets the user can access. 
+- A new *Assets -> Events* page was added to the application to allow for consolidated events management. The events displayed will be a global view of all events on assets the user can access.
 
 - Users can export, filter, and sort the events list by various criteria.
 
@@ -34,39 +33,37 @@ Enhanced Feature: Notifications -> Alarm Policies
 
 - Administrators can now select All or multiple asset types from the same Alarm Policy. Previously, users were allowed to choose a single asset type for policy.
 
-- Administrators can now select a notification channel for an Alarm Policy; more information on Notification Channels is provided below.
+- Administrators can now select a notification channel for an Alarm Policy; more information on Notification Channels is below.
 
 ========================================================
 Enhanced Feature: Notifications -> Notification Channels
 ========================================================
 - This feature allows Administrators to create an Alarm Policy to channel notifications to an external communication or alerting system such as Microsoft Teams.
 
-- This release adds the integration with Microsoft Teams. Administrators can configure a link to a specific Microsoft Teams Channel. Administrators can add multiple Teams channels and target them with different Alarm Policies.
+- This release adds the integration with Microsoft Teams. Administrators can configure a link to a specific Microsoft Teams Channel. Administrators can add multiple channels and target them with different Alarm Policies.
 
 ================================================
 Enhanced Feature: Linux & Windows Data Collector
 ================================================
-- VMware protocol has been enhanced to add a monitoring pipeline for discovered sensors.
+- VMware protocol has been enhanced to add a monitoring pipeline for discovered sensors. To use this enhancement, customers must update to the latest version of the Data Collector and rediscover the assets.
 
 ======================================
 Other notable changes and improvements
 ======================================
-- Launch Web Interface has been added as a primary action button on device asset types. 
+- Launch Web Interface has been added as a primary action button on device asset types.
 
 =================
 Notable bug fixes
 =================
 - **AS-11359** Fixed a bug in the Debian Linux SSH protocol definition that caused storage capacity sensors not to be updated during the monitoring cycle
 - **AS-13941** Fixed a bug that, under certain conditions, caused the page not to render with search results when navigating from the asset summary widget to Advanced Search
-
+- **AS-14306** Fixed a bug that, under certain conditions, caused the sensor threshold alarm event to be closed and opened. While the result was the same, it caused extra logging and, in some cases, extra notifications.
 
 ============
 Known Issues
 ============
 - CentOS 7
-- Alarm Close 
-
-
+- Alarm Close
 
 *********************************
 Hyperview 4.2 (December 12, 2023)
