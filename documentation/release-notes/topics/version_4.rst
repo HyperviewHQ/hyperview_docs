@@ -11,13 +11,12 @@ This section covers significant changes and bug fixes in Hyperview 4.3.x since v
 
 .. important::
    1. Support for the *Windows* version of the Data Collector will end on *January 31, 2025*. Customers are encouraged to switch to the Linux version before then. Detailed :ref:`installation instructions <Setting-up-data-collectors-doc>` are in the product documentation.
-   2. `CentOS Linux 7 End of Life, is June 30, 2024 <https://blog.centos.org/2023/04/end-dates-are-coming-for-centos-stream-8-and-centos-linux-7/>`_. With that, installing the Data Collector will not be supported on this version of CentOS.
+   2. `CentOS Linux 7 End of Life, is June 30, 2024 <https://blog.centos.org/2023/04/end-dates-are-coming-for-centos-stream-8-and-centos-linux-7/>`_. With that, installing the Data Collector will not be supported on this version of CentOS. Customers **must** update to a supported version of Linux to use the latest version of the Data Collector.
 
 =======================================
 Enhanced Licensed Feature: Connectivity
 =======================================
 - Connections and Circuits have been enhanced to allow users to attach documents, images, and links.
-
 
 ========================================
 Enhanced Feature: Alarm Event Management
