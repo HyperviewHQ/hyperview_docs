@@ -11,6 +11,6 @@ This data is anonymized and aggregated by Hyperview. It will be added to the glo
 1. Go to *Settings → Catalog Data*.
 2. Toggle the switch to enable catalog feedback
 
-A success message will appear, and the application UI will reload to reflect your changes.
+A success message will appear.
 
 |catalog-data|
