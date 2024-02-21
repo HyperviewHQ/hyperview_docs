@@ -17,6 +17,8 @@ Enhanced Licensed Feature: Connectivity
 =======================================
 - Connections and Circuits have been enhanced to allow users to attach documents, images, and links.
 
+- You can also now add Work Notes to Connections and Circuits.
+
 ========================================
 Enhanced Feature: Alarm Event Management
 ========================================
