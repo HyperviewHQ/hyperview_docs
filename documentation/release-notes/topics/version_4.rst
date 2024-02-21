@@ -52,6 +52,8 @@ Other notable changes and improvements
 ======================================
 - Launch Web Interface has been added as a primary action button on device asset types.
 
+- Volume Unit has been added as a :ref:`locale setting <Locale-settings-doc>` in the application.
+
 =================
 Notable bug fixes
 =================
