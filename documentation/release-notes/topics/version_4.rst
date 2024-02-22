@@ -42,7 +42,7 @@ Enhanced Feature: Notifications -> Notification Channels
 ========================================================
 - This feature allows Administrators to create an Alarm Policy to channel notifications to an external communication or alerting system such as Microsoft Teams.
 
-- This release adds the integration with Microsoft Teams. Administrators can configure a link to a specific Microsoft Teams Channel. Administrators can add multiple channels and target them with different Alarm Policies.
+- This release adds the integration with Microsoft Teams. Administrators can configure a link to a specific Microsoft Teams channel. Administrators can add multiple channels and target them with different Alarm Policies.
 
 ================================================
 Enhanced Feature: Linux & Windows Data Collector
@@ -62,7 +62,7 @@ Other notable changes and improvements
 
 - The location layout editor now supports adding triangular shapes.
 
-- Sorting order has been updated to be case-insensitive alphanumeric for devices that report multiple serial numbers.
+- Multi-value asset properties like, serial numbers, IP addresses, MAC addresses, and others have been updated to have consistent sorting order in search results and other display contexts, where applicable.
 
 =================
 Notable bug fixes
