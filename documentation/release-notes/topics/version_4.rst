@@ -238,7 +238,7 @@ Enhanced Licensed Feature: Outlet Control
 =========================================
 Outlet Control has been enhanced to allow administrators to control multiple outlets at the same time.
 
-The rack PDU layout has been enhanced to allow the selection of multiple outlets at once and then initiate an action to control turn on, off or cycle selected outlets.
+The rack PDU layout has been enhanced to allow the selection of multiple outlets at once and then initiate an action to control turning on, off, or cycling selected outlets.
 
 For power-consuming devices, such as servers, the Information -> Power page has been improved to allow for outlet control actions on multiple power sources. The page was further enhanced to display the latest available output total power and load for connected power providers if that data is available.
 
@@ -257,12 +257,12 @@ User Inbox is a new standard feature in Hyperview. It allows users to view all t
 Enhanced Feature - SNMPv3 authentication and privacy
 ====================================================
 - The **Linux Data Collector** SNMPv3 system has been improved to support SHA256, SHA384 and SHA512 for authentication and AES192 and AES256 for Privacy
-- SNMPv3 authentication and privacy password length is now enforced to be at least 8 characters to comply with RFC-3414
+- SNMPv3 authentication and privacy password length is now enforced to be at least eight characters to comply with RFC-3414
 
 ==============================
 Enhanced Feature - API Clients
 ==============================
-- Previously API client permissions such as Role and Access Policies were not editable. With this version, API user permissions can be modified by an Administrator
+- Previously, API client permissions such as Role and Access Policies were not editable. With this version, API user permissions can be modified by an Administrator
 
 ===========================================
 Enhanced Feature - Power Path Visualization
