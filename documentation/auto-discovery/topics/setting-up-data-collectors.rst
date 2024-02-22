@@ -64,11 +64,14 @@ Data Collector Protocol Support
 .. [#] See :ref:`SNMP-AES_192_256` for more information on AES192 and AES256 support.
 .. [#] The Windows version has limited SNMPv3 support. It does not support SNMPv3 SHA256, SHA384, and SHA512 for authentication and AES192 and AES256 for privacy.
 
+
 =============
 Prerequisites
 =============
 
 You must install the Hyperview Data Collector on at least one machine (physical or virtual, running a supported operating system) with network access to your devices. You **cannot** install multiple instances of the Data Collector on the same device or register the same device with more than one Hyperview instance.
+
+.. _linux-prerequisites:
 
 Linux Environment Dependencies
 ------------------------------
