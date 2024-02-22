@@ -62,7 +62,7 @@ Other notable changes and improvements
 
 - The location layout editor now supports adding triangular shapes.
 
-- Multi-value asset properties like, serial numbers, IP addresses, MAC addresses, and others have been updated to have consistent sorting order in search results and other display contexts, where applicable.
+- Multi-value asset properties like serial numbers, IP addresses, and MAC addresses have been updated to have consistent sorting order in search results and other display contexts, where applicable.
 
 =================
 Notable bug fixes
