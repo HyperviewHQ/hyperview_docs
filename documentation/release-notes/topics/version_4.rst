@@ -8,7 +8,7 @@ Hyperview 4.3 (TBD)
 This section covers significant changes and bug fixes in Hyperview 4.3.x since version 4.2.X
 
 .. important::
-   1. This release has changes and improvements to the Data Collector software. It is strongly recommended that you update your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
+   1. This release has changes and improvements to the Data Collector software. We strongly recommend updating your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
    2. Support for the *Windows* version of the Data Collector will end on *January 31, 2025*. Customers are encouraged to switch to the Linux version before then. Detailed :ref:`installation instructions <Setting-up-data-collectors-doc>` are in the product documentation.
    3. `CentOS Linux 7 End of Life, is June 30, 2024 <https://blog.centos.org/2023/04/end-dates-are-coming-for-centos-stream-8-and-centos-linux-7/>`_. With that, installing the Data Collector will not be supported on this version of CentOS. If you are using this version of Linux, you must update to a supported version to use the latest version of the Data Collector.
 
@@ -84,7 +84,8 @@ Hyperview 4.2 (December 12, 2023)
 *********************************
 This section covers significant changes and bug fixes in Hyperview 4.2.x since version 4.1.X
 
-.. note:: This release has changes and improvements to the Data Collector software. It is strongly recommended that you update your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
+.. important::
+   This release has changes and improvements to the Data Collector software. We strongly recommend updating your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
 
 =======================================
 Enhanced Licensed Feature: Connectivity
@@ -138,7 +139,8 @@ This section covers significant changes and bug fixes in Hyperview 4.1.x since v
 
    <div class="pb-3"><iframe src="https://player.vimeo.com/video/888833956?h=1f86b7e17a&color=6ca6ed&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
 
-.. note:: This release has changes and improvements to the Data Collector software. It is strongly recommended to update your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
+.. important::
+   This release has changes and improvements to the Data Collector software. We strongly recommend updating your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
 
 =====================================================
 New Licensed Feature - Equinix Smart View integration
@@ -215,7 +217,8 @@ This section covers significant changes and bug fixes in Hyperview 4.0.x since v
 
 	<div class="pb-3"><iframe src="https://player.vimeo.com/video/856952277?h=db346fc3e3&color=6ca6ed&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
 
-.. note:: This release has changes and improvements to the Data Collector software. It is strongly recommended to update your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
+.. important::
+   This release has changes and improvements to the Data Collector software. We strongly recommend updating your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
 
 ============================================================
 Enhanced Licensed Feature: Connectivity - Circuit Management
@@ -306,7 +309,7 @@ Notable bug fixes
 - **AS-13088** Fixed a bug that caused shape type edits to not work after a floor plan layout shape is saved
 - **AS-13157** Fixed a bug that caused certain component-level sensors not to trigger thresholds
 - **AS-13257** Fixed a bug that caused the 3D layout popover information to not be localized
-- **AS-13360** Fixed a bug in the asset discovery report, where under certain conditions the "Credential Description" remained empty if the asset fails to discover with SNMPv3
+- **AS-13360** Fixed a bug in the asset discovery report, where under certain conditions, the "Credential Description" remained empty if the asset failed to discover with SNMPv3
 - **AS-13435** Fixed a bug that could cause a delete operation to deadlock when deleting a large number of assets
 
 ========================
