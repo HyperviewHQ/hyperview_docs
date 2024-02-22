@@ -77,7 +77,7 @@ Notable bug fixes
 
 - **AS-14252** Fixed a bug that caused authentication to fail when discovering IxOS-based devices.
 
-- **AS-14306** Fixed a bug that, under certain conditions, caused a sensor threshold alarm event to be closed and opened. While the result was the same, it caused extra logging and, in some cases, extra notifications. The bug fix will close any open sensor threshold alarm event where applicable. The system will re-evaluate and re-open with the next monitoring cycle.
+- **AS-14306** Fixed a bug that, under certain conditions, caused a sensor threshold alarm event to be closed and opened. While the result was the same, it caused extra logging and, in some cases, extra notifications. The bug fix will close any open sensor threshold alarm event where applicable. The system will re-evaluate and open new alarm events where needed with the next monitoring cycle.
 
 
 *********************************
