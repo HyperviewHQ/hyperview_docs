@@ -52,22 +52,33 @@ Enhanced Feature: Linux & Windows Data Collector
 ======================================
 Other notable changes and improvements
 ======================================
+- Data grids will save column selection and sorting order by default.
+
 - Launch Web Interface has been added as a primary action button on device asset types.
 
 - Volume Unit has been added as a :ref:`locale setting <Locale-settings-doc>` in the application.
 
+- The Documents section has been moved to be a main navigation menu item. Previously, it was under the Assets section.
+
+- The location layout editor now supports adding triangular shapes.
+
+- Sorting order has been updated to be case-insensitive alphanumeric for devices that report multiple serial numbers.
+
 =================
 Notable bug fixes
 =================
-- **AS-11359** Fixed a bug in the Debian Linux SSH protocol definition that caused storage capacity sensors not to be updated during the monitoring cycle
-- **AS-13941** Fixed a bug that, under certain conditions, caused the page not to render with search results when navigating from the asset summary widget to Advanced Search
-- **AS-14306** Fixed a bug that, under certain conditions, caused the sensor threshold alarm event to be closed and opened. While the result was the same, it caused extra logging and, in some cases, extra notifications.
+- **AS-11359** Fixed a bug in the Debian Linux SSH protocol definition that caused storage capacity sensors not to be updated during the monitoring cycle.
 
-============
-Known Issues
-============
-- CentOS 7
-- Alarm Close
+- **AS-13941** Fixed a bug that, under certain conditions, caused the page not to render with search results when navigating from the asset summary widget to Advanced Search.
+
+- **AS-14086** Fixed a bug that caused user password resets to fail under certain conditions.
+
+- **AS-14107** Fixed a bug that, under certain conditions, caused the breaker information of certain Eaton Large PDUs to be discovered incorrectly.
+
+- **AS-14252** Fixed a bug that caused authentication to fail when discovering IxOS-based devices.
+
+- **AS-14306** Fixed a bug that, under certain conditions, caused a sensor threshold alarm event to be closed and opened. While the result was the same, it caused extra logging and, in some cases, extra notifications. The bug fix will close any open sensor threshold alarm event where applicable. The system will re-evaluate and re-open with the next monitoring cycle.
+
 
 *********************************
 Hyperview 4.2 (December 12, 2023)
