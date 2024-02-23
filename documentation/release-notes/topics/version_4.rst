@@ -64,6 +64,8 @@ Other notable changes and improvements
 
 - Multi-value asset properties like serial numbers, IP addresses, and MAC addresses have been updated to have consistent sorting order in search results and other display contexts, where applicable.
 
+- Tape Drive can now be added as a custom component on device asset types.
+
 =================
 Notable bug fixes
 =================
