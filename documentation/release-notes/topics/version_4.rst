@@ -66,7 +66,7 @@ Other notable changes and improvements
 
 - Tape Drive can now be added as a custom component on device asset types.
 
-- We added a shortcut to the asset sensor list from *Information -> Sensors List*.
+- We added a shortcut to the asset sensors list from the Information menu: *Information -> Sensors List*.
 
 =================
 Notable bug fixes
