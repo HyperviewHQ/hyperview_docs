@@ -58,7 +58,7 @@ Other notable changes and improvements
 
 - Volume Unit has been added as a :ref:`locale setting <Locale-settings-doc>` in the application.
 
-- The Documents section has been moved to be a main navigation menu item. Previously, it was under the Assets section.
+- The Documents section has been moved to be a primary navigation menu item. Previously, it was under the Assets section.
 
 - The location layout editor now supports adding triangular shapes.
 
