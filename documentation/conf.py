@@ -121,6 +121,7 @@ html_sidebars = {
         "../_templates/hv-docs-home.html",
         "sidebar/search.html",
         "sidebar/navigation.html",
+        "../_templates/hv-api-docs-link.html",
         "sidebar/scroll-end.html",
     ]
 }
