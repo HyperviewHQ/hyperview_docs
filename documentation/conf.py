@@ -70,14 +70,11 @@ html_favicon = "../_static/favicon.ico"
 
 html_css_files = [
     'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css',
-    'https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css',
     'css/hv-styles.css',
 ]
 
 html_js_files = [
     'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js',
-    'https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js',
-    'js/main.js',
 ]
 
 html_theme_options = {
