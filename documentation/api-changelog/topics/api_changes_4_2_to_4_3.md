@@ -32,7 +32,7 @@
 > Verifies the notification channel webhook uri by attempting to send a test notification.
 
 
-## What's Moved [^1]
+## What's Deleted
 
 ### `GET` /api/setting/credentials
 
@@ -43,7 +43,7 @@
 
 > Returns an individual credential.
 
-[^1]: These endpoints have moved to version 5 of the API.
+> *These endpoints have moved to version 5 of the API.*
 
 ## What's Changed
 
@@ -2343,7 +2343,7 @@ Changed content type : `application/json`
             Added enum value:
 
             * `iso`
-            
+
             Removed enum value:
 
             * `osi`
