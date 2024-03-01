@@ -49,6 +49,8 @@ Enhanced Feature: Linux & Windows Data Collector
 ================================================
 - VMware protocol has been enhanced to add a monitoring pipeline for discovered sensors. To use this enhancement, customers must update to the latest version of the Data Collector and rediscover the assets.
 
+- Rocky Linux 9 was tested with the Linux version of the Data Collector.
+
 ======================================
 Other notable changes and improvements
 ======================================
