@@ -105,8 +105,8 @@ Minimum requirements for a Linux (AMD64/X86_64)
 
   * CentOS 9
   * Rocky Linux 9 (Using the CentOS 9 instructions)
-  * AlmaLinux 9 (Using the CentOS 9 instructions)
-  * RedHat Enterprise Linux 8 (With access to Docker-CE software for the distribution)
+  * Alma Linux 9 (Using the CentOS 9 instructions)
+  * Red Hat Enterprise Linux 8 (With access to Docker-CE software for the distribution)
   * Debian 11 or 12
   * Ubuntu Server LTS 20.04 or 22.04
 
