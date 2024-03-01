@@ -13,9 +13,9 @@ SNMP privacy with AES 192 and 256
 
 The Linux version of the Data Collector is capable of using AES-192 and AES-256 when communicating with SNMP devices. When using these algorithms it is important to note that they are not standardized across all manufacturers and SNMP implementations. There are two major non-compatible implementations. `RFC-3826 <https://datatracker.ietf.org/doc/html/rfc3826>`_ outlines arguably the closest thing to a standard. Most new devices that support AES-192/256 will support this implementation. However, some may follow an older reference implementation written by Cisco while the standard was still being discussed in the early 2000s.
 
-The Linux version of the Data Collector is compatible with RFC-3826 also known as the Blumenthal implementation.
+The Linux version of the Data Collector is compatible with RFC-3826, also known as the Blumenthal implementation.
 
-To determine what a device supports, check the device's interface, manual or datasheet. If the information is not available, the Net-SNMP -> snmpget command can be used:
+To determine what a device supports, check the device's interface, manual, or datasheet. If the information is not available, the Net-SNMP -> snmpget command can be used:
 
 Example
 -------
@@ -40,12 +40,12 @@ Devices that use the Cisco implementation will respond with this configuration t
 Obtaining SNMP walks
 ====================
 
-Hyperview uses SNMP walks to enhance device definitions, to model and support devices that are discoverable with the SNMP protocol. The **snmpwalk file** is used to simulate the device and to test definitions.
+Hyperview uses SNMP walks to enhance device definitions to model and support devices that are discoverable with the SNMP protocol. The **snmpwalk file** is used to simulate the device and to test definitions.
 
-It is recommended to install the applicable net-snmp package alongside the (Linux) Data Collector software. If that is not possible it can be installed on any machine that has a network line of sight to the target device.
+Installing the applicable net-snmp package alongside the (Linux) Data Collector software is recommended. If that is not possible, it can be installed on any machine with network line of sight to the target device.
 
 .. warning::
-    Complete snmpwalk files must be submitted with specific formatting to enhance device definitions. Contact `Hyperview Support <https://system.hyperviewhq.com/helpdesk>` for additional assistance with tool usage and formatting.
+   Complete snmpwalk files must be submitted with specific formatting to enhance device definitions. Contact `Hyperview Support <https://system.hyperviewhq.com/helpdesk>`_ for additional assistance with tool usage and formatting.
 
 Linux
 -----
@@ -79,7 +79,7 @@ You can install net-snmp on macOS using `Homebrew <https://brew.sh/>`_
 
     brew install net-snmp
 
-Once the application is installed, the **snmpwalk** command can be used to obtain a full walk of a device. The amount of time it takes to perform the walk can vary from device to device and depends on external factors such as network speed and target device CPU load. It is recommended to perform the walk from the Data Collector machine, and for that machine to be on the same network as the device being walked. Expect the process to take a few minutes unless the device has a large amount of information such as a large network switch, in which case, it may take longer.
+Once the application is installed, the **snmpwalk** command can be used to obtain a full walk of a device. The time it takes to perform the walk can vary from device to device and depends on external factors such as network speed and target device CPU load. It is recommended to perform the walk from the Data Collector machine, and for that machine to be on the same network as the device being walked. Expect the process to take a few minutes unless the device has a large amount of information, such as a large network switch, in which case, it may take longer.
 
 Docker
 ------
@@ -123,7 +123,7 @@ Once the walk is obtained, inspect that it is complete. Look for a "``No more va
 
 Utilities like scp, sftp or `winscp <https://winscp.net/>`_ can be used to transfer files around if there is a need.
 
-If these options are not possible then contact Hyperview Support.
+If these options are not possible, then contact Hyperview Support.
 
 .. note:: If you are logged in to a remote machine when performing the walk via **ssh/putty** watch out for session timeouts. This would end the snmpwalk job. Standard UNIX/Linux tools such as **tmux, screen or nohup** may help in managing sessions and avoiding a timeout.
 
@@ -135,11 +135,11 @@ Downloading the Linux Data Collector via Artifactory
 
 Once the **docker-compose.yaml** file is configured to your satisfaction then follow the :ref:`standard installation instructions <Setup-data-collectors>`.
 
-Note that once you are running with a customized docker-compose file you will need to maintain that between releases. Hyperview may add new services, change default environment variables or default startup options for the various containers that compose the Linux Data Collector.
+Note that once you run with a customized docker-compose file, you must maintain that between releases. Hyperview may add new services or change default environment variables or startup options for the various containers composing the Linux Data Collector.
 
-Standard Linux command line tools such as **diff** and **vim** can be used to assess any differences between the two files and the applicable changes can be ported to your environment.
+Standard Linux command line tools such as **diff** and **vim** can be used to assess any differences between the two files, and the applicable changes can be ported to your environment.
 
-Please note that Hyperview only tests and supports the default configuration that ships with the installation package.
+Hyperview only tests and supports the default configuration that ships with the installation package.
 
 ============================
 Docker daemon log management
