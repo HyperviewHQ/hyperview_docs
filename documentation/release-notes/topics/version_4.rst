@@ -73,7 +73,7 @@ Other notable changes and improvements
 ============
 Known issues
 ============
-- **AS-14401** Custom property columns will appear in the order they are added to the grid and not in alphabetical order. 
+- **AS-14401** Custom property columns may appear not in alphabetical order when added to a data grid. 
 
 =================
 Notable bug fixes
