@@ -7,7 +7,7 @@ Setting up Data Collectors
 
 The Hyperview Data Collector collects and relays data back to the Hyperview platform. It covers the following functional areas: discovery, monitoring, control operations (for example, :ref:`setting control credentials <Setting-control-credentials>`), and trap listening.
 
-You must register a Data Collector before it can relay information. The registration process can only be triggered from the machine that hosts the Data Collector and requires a unique Registration Token generated for that particular Data Collector.
+You must register a Data Collector before it can relay information. You can only trigger the registration from the machine that hosts the Data Collector, and the process requires a unique, one-time-use Registration Token for that particular Data Collector.
 
 Once registered, the Data Collector saves the key in a local configuration file in a secure manner. It then polls the Hyperview platform for data collection jobs.
 
@@ -64,16 +64,19 @@ Data Collector Protocol Support
 .. [#] See :ref:`SNMP-AES_192_256` for more information on AES192 and AES256 support.
 .. [#] The Windows version has limited SNMPv3 support. It does not support SNMPv3 SHA256, SHA384, and SHA512 for authentication and AES192 and AES256 for privacy.
 
+
 =============
 Prerequisites
 =============
 
 You must install the Hyperview Data Collector on at least one machine (physical or virtual, running a supported operating system) with network access to your devices. You **cannot** install multiple instances of the Data Collector on the same device or register the same device with more than one Hyperview instance.
 
+.. _linux-prerequisites:
+
 Linux Environment Dependencies
 ------------------------------
 
-**Please use apt, yum or, dnf, depending on the distribution, to install the following packages**
+**Please use apt, yum, or dnf, depending on the distribution, to install the following packages**
 
 * bind9-host (for the *host* command)
 * coreutils (for the *cut* command)
@@ -100,9 +103,10 @@ Minimum requirements for a Linux (AMD64/X86_64)
 * 64 GB of free space in the /opt partition or where the /opt directory resides
 * One of the following supported Linux distributions installed:
 
-  * AlmaLinux 9 (Using the CentOS 9 instructions)
   * CentOS 9
-  * RedHat Enterprise Linux 8
+  * Rocky Linux 9 (Using the CentOS 9 instructions)
+  * Alma Linux 9 (Using the CentOS 9 instructions)
+  * Red Hat Enterprise Linux 8 (With access to Docker-CE software for the distribution)
   * Debian 11 or 12
   * Ubuntu Server LTS 20.04 or 22.04
 
@@ -218,6 +222,9 @@ Installing the Data Collector
 =============================
 Windows installation
 --------------------
+
+.. warning:: Support for installing the data collector software on Windows will end on January 31, 2025. Customers using Windows should make arrangements to switch to Linux by that time.
+
 #. Extract the downloaded Data Collector zip file to a local folder
 #. Browse to the folder and double-click "setup.exe"
 

@@ -35,25 +35,25 @@
 
       Asset management and related functionality.
 
-   .. grid-item-card:: :fas:`fa-solid fa-tag` AssetTracker
-      :link: assettracker/index.html
-
-      Automatically track asset moves using our RFID technology.
-
    .. grid-item-card:: :fas:`fa-solid fa-eye` Auto Discovery
       :link: auto-discovery/index.html
 
-      Auto-discovering assets, and related concepts.
+      Auto-discovering assets and related concepts.
 
    .. grid-item-card:: :fas:`fa-solid fa-book-open` Catalog Management
       :link: catalog-management/index.html
 
-      Access the product catalog, and add your own models and images.
+      Access the product catalog and add your device models and images.
 
    .. grid-item-card:: :fas:`fa-solid fa-file` Document Management
       :link: document-management/index.html
 
-      Attach documents, manuals, contracts, images and links to your assets.
+      Attach documents, manuals, contracts, images, and links to your assets.
+
+   .. grid-item-card:: :fas:`fa-solid fa-note-sticky` Work Notes
+      :link: work-notes/index.html
+
+      Add operational notes, tag team members, and annotate assets.
 
    .. grid-item-card:: :fas:`fa-solid fa-star` Firmware Management
       :link: firmware-management/index.html
@@ -70,6 +70,11 @@
 
       Control rack access remotely.
 
+   .. grid-item-card:: :fas:`fa-solid fa-tag` AssetTracker
+      :link: assettracker/index.html
+
+      Automatically track asset moves using our RFID technology.
+
    .. grid-item-card:: :fas:`fa-solid fa-gear` Settings
       :link: settings/index.html
 
@@ -83,7 +88,7 @@
    .. grid-item-card:: :fas:`fa-solid fa-laptop` Using Hyperview
       :link: using-hyperview/index.html
 
-      Quick search, advanced search, data extraction and much more.
+      Quick search, advanced search, data extraction, and much more.
 
    .. grid-item-card:: :fas:`fa-solid fa-clipboard` Release Notes
       :link: release-notes/index.html
@@ -93,7 +98,7 @@
    .. grid-item-card:: :fas:`fa-solid fa-list` API Changelog
       :link: api-changelog/index.html
 
-      New API endpoints, deprecations and changes.
+      New API endpoints, deprecations, and changes.
 
    .. grid-item-card:: :fas:`fa-solid fa-code` API Documentation
       :link: redoc-static.html
@@ -106,16 +111,16 @@
 
    quickstart/index
    asset-management/index
-   assettracker/index
    auto-discovery/index
    catalog-management/index
    document-management/index
+   work-notes/index
    firmware-management/index
    outlet-control/index
    rack-security/index
-   settings/index
+   assettracker/index
    user-accounts/index
+   settings/index
    using-hyperview/index
    release-notes/index
    api-changelog/index
-

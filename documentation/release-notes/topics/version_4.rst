@@ -2,12 +2,101 @@
 Version 4
 #########
 
+******************************
+Hyperview 4.3 (March 11, 2024)
+******************************
+This section covers significant changes and bug fixes in Hyperview 4.3.x since version 4.2.X
+
+.. important::
+   1. This release has changes and improvements to the Data Collector software. We strongly recommend updating your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
+   2. Support for the *Windows* version of the Data Collector will end on *January 31, 2025*. Customers are encouraged to switch to the Linux version before then. Detailed :ref:`installation instructions <Setting-up-data-collectors-doc>` are in the product documentation.
+   3. `CentOS Linux 7 End of Life, is June 30, 2024, <https://blog.centos.org/2023/04/end-dates-are-coming-for-centos-stream-8-and-centos-linux-7/>`_. With that, installing the Data Collector will not be supported on this version of CentOS. If you are using this version of Linux, you must update to a :ref:`supported version <linux-prerequisites>` to use the latest version of the Data Collector.
+
+=======================================
+Enhanced Licensed Feature: Connectivity
+=======================================
+- Connections and Circuits have been enhanced to allow users to attach documents, images, and links.
+
+- You can also now add Work Notes to Connections and Circuits.
+
+========================================
+Enhanced Feature: Alarm Event Management
+========================================
+- A new *Assets -> Events* page was added to the application to allow for consolidated events management. The events displayed will be a global view of all events on assets the user can access.
+
+- Users can export, filter, and sort the events list by various criteria.
+
+- Events can be acknowledged or closed individually and in bulk.
+
+=================================================
+Enhanced Feature: Notifications -> Alarm Policies
+=================================================
+- The notification template has been updated to aggregate multiple events in one email. This enhancement will reduce email noise in the case of event spikes.
+
+- Administrators can now select All or multiple asset types from the same Alarm Policy. Previously, users were allowed to choose a single asset type for policy.
+
+- Administrators can now select a notification channel for an Alarm Policy; more information on Notification Channels is below.
+
+========================================================
+Enhanced Feature: Notifications -> Notification Channels
+========================================================
+- This feature allows administrators to create an Alarm Policy to channel notifications to an external system such as Microsoft Teams.
+
+- This release adds the integration with Microsoft Teams. Administrators can configure a link to a specific Microsoft Teams channel. Administrators can add multiple channels and target them with different Alarm Policies.
+
+================================================
+Enhanced Feature: Linux & Windows Data Collector
+================================================
+- VMware protocol has been enhanced to add a monitoring pipeline for discovered sensors. To use this enhancement, customers must update to the latest version of the Data Collector and rediscover the assets.
+
+- Rocky Linux 9 was tested with the Linux version of the Data Collector.
+
+======================================
+Other notable changes and improvements
+======================================
+- Data grids will save column selection and sorting order by default.
+
+- Launch Web Interface has been added as a primary action button on device asset types.
+
+- Volume Unit has been added as a :ref:`locale setting <Locale-settings-doc>` in the application.
+
+- The Documents section has been moved to be a primary navigation menu item. Previously, it was under the Assets section.
+
+- The location layout editor now supports adding triangular shapes.
+
+- Multi-value asset properties like serial numbers, IP addresses, and MAC addresses have been updated to have consistent sorting order in search results and other display contexts, where applicable.
+
+- Tape Drive can now be added as a custom component on device asset types.
+
+- We added a shortcut to the asset sensors list from the Information menu: *Information -> Sensors List*.
+
+============
+Known issues
+============
+- **AS-14401** Custom property columns may appear not in alphabetical order when added to a data grid. 
+
+=================
+Notable bug fixes
+=================
+- **AS-11359** Fixed a bug in the Debian Linux SSH protocol definition that caused storage capacity sensors not to be updated during the monitoring cycle.
+
+- **AS-13941** Fixed a bug that, under certain conditions, caused the page not to render with search results when navigating from the asset summary widget to Advanced Search.
+
+- **AS-14086** Fixed a bug that caused user password resets to fail under certain conditions.
+
+- **AS-14107** Fixed a bug that, under certain conditions, caused the breaker information of certain Eaton Large PDUs to be discovered incorrectly.
+
+- **AS-14252** Fixed a bug that caused authentication to fail when discovering IxOS-based devices.
+
+- **AS-14306** Fixed a bug that, under certain conditions, caused a sensor threshold alarm event to be closed and opened. While the result was the same, it caused extra logging and, in some cases, extra notifications. The bug fix will close any open sensor threshold alarm events where applicable. The system will re-evaluate and open new alarm events where needed with the next monitoring cycle.
+
 *********************************
 Hyperview 4.2 (December 12, 2023)
 *********************************
 This section covers significant changes and bug fixes in Hyperview 4.2.x since version 4.1.X
 
-.. note:: This release has changes and improvements to the Data Collector software. It is strongly recommended to update your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
+.. important::
+   This release has changes and improvements to the Data Collector software. We strongly recommend updating your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
 
 =======================================
 Enhanced Licensed Feature: Connectivity
@@ -61,7 +150,8 @@ This section covers significant changes and bug fixes in Hyperview 4.1.x since v
 
    <div class="pb-3"><iframe src="https://player.vimeo.com/video/888833956?h=1f86b7e17a&color=6ca6ed&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
 
-.. note:: This release has changes and improvements to the Data Collector software. It is strongly recommended to update your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
+.. important::
+   This release has changes and improvements to the Data Collector software. We strongly recommend updating your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
 
 =====================================================
 New Licensed Feature - Equinix Smart View integration
@@ -138,7 +228,8 @@ This section covers significant changes and bug fixes in Hyperview 4.0.x since v
 
 	<div class="pb-3"><iframe src="https://player.vimeo.com/video/856952277?h=db346fc3e3&color=6ca6ed&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
 
-.. note:: This release has changes and improvements to the Data Collector software. It is strongly recommended to update your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
+.. important::
+   This release has changes and improvements to the Data Collector software. We strongly recommend updating your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
 
 ============================================================
 Enhanced Licensed Feature: Connectivity - Circuit Management
@@ -158,7 +249,7 @@ Enhanced Licensed Feature: Outlet Control
 =========================================
 Outlet Control has been enhanced to allow administrators to control multiple outlets at the same time.
 
-The rack PDU layout has been enhanced to allow the selection of multiple outlets at once and then initiate an action to control turn on, off or cycle selected outlets.
+The rack PDU layout has been enhanced to allow the selection of multiple outlets at once and then initiate an action to control turning on, off, or cycling selected outlets.
 
 For power-consuming devices, such as servers, the Information -> Power page has been improved to allow for outlet control actions on multiple power sources. The page was further enhanced to display the latest available output total power and load for connected power providers if that data is available.
 
@@ -177,12 +268,12 @@ User Inbox is a new standard feature in Hyperview. It allows users to view all t
 Enhanced Feature - SNMPv3 authentication and privacy
 ====================================================
 - The **Linux Data Collector** SNMPv3 system has been improved to support SHA256, SHA384 and SHA512 for authentication and AES192 and AES256 for Privacy
-- SNMPv3 authentication and privacy password length is now enforced to be at least 8 characters to comply with RFC-3414
+- SNMPv3 authentication and privacy password length is now enforced to be at least eight characters to comply with RFC-3414
 
 ==============================
 Enhanced Feature - API Clients
 ==============================
-- Previously API client permissions such as Role and Access Policies were not editable. With this version, API user permissions can be modified by an Administrator
+- Previously, API client permissions such as Role and Access Policies were not editable. With this version, API user permissions can be modified by an Administrator
 
 ===========================================
 Enhanced Feature - Power Path Visualization
@@ -229,7 +320,7 @@ Notable bug fixes
 - **AS-13088** Fixed a bug that caused shape type edits to not work after a floor plan layout shape is saved
 - **AS-13157** Fixed a bug that caused certain component-level sensors not to trigger thresholds
 - **AS-13257** Fixed a bug that caused the 3D layout popover information to not be localized
-- **AS-13360** Fixed a bug in the asset discovery report, where under certain conditions the "Credential Description" remained empty if the asset fails to discover with SNMPv3
+- **AS-13360** Fixed a bug in the asset discovery report, where under certain conditions, the "Credential Description" remained empty if the asset failed to discover with SNMPv3
 - **AS-13435** Fixed a bug that could cause a delete operation to deadlock when deleting a large number of assets
 
 ========================

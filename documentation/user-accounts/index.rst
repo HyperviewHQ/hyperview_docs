@@ -5,7 +5,7 @@
 User Accounts
 *************
 
-You need a user account or API client account to use Hyperview. Every account is associated with a role that dictates how you can generally interact with assets, and which application features you will have access to.
+You need a user account or API client account to use Hyperview. Every account has a role that dictates which assets can be accessed and which application features you can access.
 
 Available roles are:
 
@@ -20,9 +20,9 @@ Available roles are:
    * - Administrator
      - Has unrestricted, system-wide access in Hyperview and is not impacted by asset access policies
    * - Data Center Manager
-     - Has complete asset management privileges, but cannot run or configure discoveries, administer accounts, view the application log, or make system-wide changes
+     - Has complete asset management privileges but cannot run or configure discoveries, administer accounts, view the application log, or make system-wide changes
    * - Power User
-     - Has Data Center Manager-level privileges, but cannot delete or bulk delete records
+     - Has Data Center Manager-level privileges but cannot delete or bulk-delete records
    * - Reporting
      - Has read-only access to Hyperview for reporting purposes
    * - Read Only
