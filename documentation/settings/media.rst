@@ -30,6 +30,9 @@
 .. |locale| image:: /settings/media/locale.png
    :class: border-black
 
+.. |catalog-data| image:: /settings/media/catalog-data.png
+   :class: border-black
+
 .. |sensors_1| image:: /settings/media/sensors_1.png
    :class: border-black
 
@@ -43,4 +46,13 @@
    :class: border-black
 
 .. |access_policies_2| image:: /settings/media/access_policies_2.png
+   :class: border-black
+
+.. |alarm_policies_1| image:: /settings/media/alarm-policies_1.png
+   :class: border-black
+
+.. |alarm_policies_2| image:: /settings/media/alarm-policies_2.png
+   :class: border-black
+
+.. |add-notification-channel| image:: /settings/media/add-notification-channel.png
    :class: border-black

@@ -139,7 +139,7 @@ You can generate a sensor graph by clicking the corresponding Graph button in th
 
 Graphs can be generated for both numeric and string values over a UTC time interval. You can select a different interval (or specify a custom one) using the dropdown list.
 
-Sensor data points appear in the graph when you hover on it. The number of data points will depend on :ref:`your polling interval<Configuring-sensors-doc>`, device reachability, and the UTC time interval for the graph (using a time interval of 7 days or more will show daily summary data points instead of raw sensor data).
+Sensor data points appear in the graph when you hover on it. The number of data points will depend on :ref:`your polling interval<Polling-interval-doc>`, device reachability, and the UTC time interval for the graph (using a time interval of 7 days or more will show daily summary data points instead of raw sensor data).
 
 .. note:: Sensor data retention thresholds for your Hyperview instance are listed on the License page (*Settings → License*). Daily sensor data summaries can be stored for up to ten years, depending on your license.
 
