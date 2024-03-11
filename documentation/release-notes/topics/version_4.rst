@@ -2,9 +2,9 @@
 Version 4
 #########
 
-*******************
-Hyperview 4.3 (TBD)
-*******************
+******************************
+Hyperview 4.3 (March 11, 2024)
+******************************
 This section covers significant changes and bug fixes in Hyperview 4.3.x since version 4.2.X
 
 .. important::
@@ -40,7 +40,7 @@ Enhanced Feature: Notifications -> Alarm Policies
 ========================================================
 Enhanced Feature: Notifications -> Notification Channels
 ========================================================
-- This feature allows Administrators to create an Alarm Policy to channel notifications to an external communication or alerting system such as Microsoft Teams.
+- This feature allows administrators to create an Alarm Policy to channel notifications to an external system such as Microsoft Teams.
 
 - This release adds the integration with Microsoft Teams. Administrators can configure a link to a specific Microsoft Teams channel. Administrators can add multiple channels and target them with different Alarm Policies.
 
@@ -69,6 +69,11 @@ Other notable changes and improvements
 - Tape Drive can now be added as a custom component on device asset types.
 
 - We added a shortcut to the asset sensors list from the Information menu: *Information -> Sensors List*.
+
+============
+Known issues
+============
+- **AS-14401** Custom property columns will appear in the order they are added to the grid and not in alphabetical order. 
 
 =================
 Notable bug fixes
