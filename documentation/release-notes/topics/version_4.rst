@@ -94,6 +94,11 @@ Notable bug fixes
 
 - **AS-14306** Fixed a bug that, under certain conditions, caused a sensor threshold alarm event to be closed and opened. While the result was the same, it caused extra logging and, in some cases, extra notifications. The bug fix will close any open sensor threshold alarm events where applicable. The system will re-evaluate and open new alarm events where needed with the next monitoring cycle.
 
+========================
+Changes in version 4.3.1
+========================
+- **AS-14434** Fixed a bug in the Linux version of the Data Collector that could cause the discovery or the monitoring service to run out of available UDP sockets under load.
+
 *********************************
 Hyperview 4.2 (December 12, 2023)
 *********************************
