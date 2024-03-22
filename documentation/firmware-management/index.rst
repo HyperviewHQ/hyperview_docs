@@ -7,7 +7,7 @@ Firmware Management
 
 Hyperview Firmware Management is a separately licensed set of features that lets you view and interact with firmware records. Firmware Management is powered by the Hyperview Catalog service.
 
-With a Firmware Management license you can, for example:
+With a Firmware Management license, you can, for example:
 
 * Look up assets that have a specific firmware version installed
 * Review firmware versions and associated assets
@@ -23,7 +23,9 @@ With a Firmware Management license you can, for example:
 ==========================
 Supported hardware vendors
 ==========================
-* Panduit
+* Panduit UPS products
+* Panduit Gen5 PDU products
+* nVent Enlogic PDU products
 
 .. note:: We are actively working to add information to make Firmware Management more useful. If you are a customer who wants to use Firmware Management for certain hardware, please encourage your hardware vendor to reach out to us. If you are a vendor who wants consumers to benefit from Firmware Management, please |contact|.
 
@@ -34,7 +36,7 @@ Supported hardware vendors
 ===========================
 What is "managed firmware"?
 ===========================
-Firmware is considered "managed" if it has the necessary product mappings in Catalog so that Hyperview can surface relevant data and metadata. These include mapped firmware versions, installers, and release notes. At a minimum, managed firmware will have a known firmware version.
+Firmware is considered "managed" if it has the necessary product mappings in the Catalog so that Hyperview can surface relevant data and metadata. These include mapped firmware versions, installers, and release notes. At a minimum, managed firmware will have a known firmware version.
 
 Note that firmware can only be managed for discoverable physical devices. These include:
 
@@ -75,13 +77,13 @@ Hyperview uses the Firmware Version property (asset → *Information → Propert
 * Upon :ref:`discovering assets<Discoveries-doc>` with discoverable firmware versions
 * When a Power User or above updates the Firmware Version property of a manually created asset
 
-In both contexts, an asset is considered to have "managed firmware" only if the asset's firmware group is mapped in Hyperview Catalog. (A "firmware group" consists of firmware versions for a specific product model.)
+In both contexts, an asset is considered to have "managed firmware" only if the asset's firmware group is mapped in the Hyperview Catalog. (A "firmware group" consists of firmware versions for a specific product model.)
 
 Upon discovery, the Firmware Version property becomes read-only to prevent human error (it automatically gets updated upon rediscovery if the installed version has changed). If you merge two assets with discovered and manually updated Firmware Version values, the discovered value is retained and rendered read-only. In other words, discovered firmware versions are always preferred.
 
 |fv-property|
 
-.. tip: You should only enter a Firmware Version manually if the property is not discoverable for the device, and you are committed to maintaining firmware versions for it. The Source column in an asset's Properties page indicates if the Firmware Version value was manually entered ("User") or discovered (will mention the protocol used for the discovery, such as "SNMP").
+.. tip: You should only manually enter a Firmware Version if the property is not discoverable for the device and you are committed to maintaining firmware versions. The Source column in an asset's Properties page indicates if the Firmware Version value was manually entered ("User") or discovered (will mention the protocol used for the discovery, such as "SNMP").
 
 ============================================
 Who can access Firmware Management features?
@@ -103,7 +105,7 @@ The Firmware grid (*Assets → Firmware*) only gets populated when there is at l
 * Administrators can run discoveries to detect assets with firmware version metadata.
 * Power Users and above can specify a Firmware Version value for manually created assets.
 
-In both cases you must :ref:`have access<Who-can-access-doc>` to the asset records to be able to see them.
+In both cases, you must :ref:`have access<Who-can-access-doc>` to the asset records to see them.
 
 =====================================================
 Reviewing firmware installations for a firmware group
@@ -129,17 +131,17 @@ Note that the Information → Firmware page will indicate the currently installe
 
 |info-firmware|
 
-The Unmanaged firmware tab *Assets → Firmware → Unmanaged* will contain a list of all detected firmware, firmware versions and installations.
+The Unmanaged firmware tab *Assets → Firmware → Unmanaged* will contain a list of all detected firmware, firmware versions, and installations.
 
 |unmanaged-firmware|
 
 Updating / Downloading a firmware version / Viewing firmware release notes
 --------------------------------------------------------------------------
-The Firmware and Information → Firmware pages both feature Update, View Release Notes and Download Firmware buttons, which allow you to update a firmware version, look up its release notes or download it respectively.
+The Firmware and Information → Firmware pages both feature Update, View Release Notes, and Download Firmware buttons, which allow you to update a firmware version, look up its release notes, or download it, respectively.
 
 |versions|
 
-.. note:: The exact file format of the firmware installer and release notes file depends on the manufacturer. The functions will only be active if the corresponding firmware is mapped in Hyperview Catalog.
+.. note:: The exact file format of the firmware installer and release notes file depends on the manufacturer. The functions will only be active if the corresponding firmware is mapped in the Hyperview Catalog.
 
 ==================================
 Alarm events for outdated firmware
@@ -148,11 +150,11 @@ An alarm event is generated at the asset level (asset → *Events*) whenever Hyp
 
 * (For all eligible assets) The event is closed manually.
 * (For assets with discovered firmware) The latest mapped firmware version is installed.
-* (For manually created assets) The asset's Firmware Version is updated to the latest mapped firmware version.
-* (For all eligible assets) The asset's Firmware Version is updated to an unmapped firmware version.
-* (For manually created assets) The asset's Firmware Version is set to blank.
+* (For manually created assets) The asset's firmware version has been updated to the latest mapped firmware version.
+* (For all eligible assets) The asset's firmware version has been updated to an unmapped version.
+* (For manually created assets) The asset's Firmware Version is blank.
 * (For all eligible assets) The asset's Model value changes.
 
 |events|
 
-If you upgrade to a later, but not the latest firmware version, the alarm event will be automatically updated to reflect the currently installed version.
+If you upgrade to a later, but not the latest, firmware version, the alarm event will be automatically updated to reflect the currently installed version.
