@@ -99,6 +99,11 @@ Changes in version 4.3.1
 ========================
 - **AS-14434** Fixed a bug in the Linux version of the Data Collector that could cause the discovery or the monitoring service to run out of available UDP sockets under load.
 
+========================
+Changes in version 4.3.2
+========================
+- **AS-14448** Fixed a bug that, if triggered, could cause data grids not to display correctly. 
+
 *********************************
 Hyperview 4.2 (December 12, 2023)
 *********************************
