@@ -7,10 +7,6 @@ Hyperview 4.4 (TBD)
 *******************
 This section covers significant changes and bug fixes in Hyperview 4.4.x since version 4.3.x
 
-.. raw:: html
-
-   <div class="pb-3"><iframe src="https://player.vimeo.com/video/924652434?h=ea659bea42&color=6ca6ed&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
-
 .. important::
    1. This release has changes and improvements to the Data Collector software. We strongly recommend updating your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
    2. Support for the *Windows* version of the Data Collector will end on *January 31, 2025*. Customers are encouraged to switch to the Linux version before then. Detailed :ref:`installation instructions <Setting-up-data-collectors-doc>` are in the product documentation.
