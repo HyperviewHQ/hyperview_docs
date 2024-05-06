@@ -3,9 +3,54 @@ Version 4
 #########
 
 ******************************
+Hyperview 4.4 (TBD))
+******************************
+This section covers significant changes and bug fixes in Hyperview 4.4.x since version 4.3.x
+
+.. raw:: html
+
+   <div class="pb-3"><iframe src="https://player.vimeo.com/video/924652434?h=ea659bea42&color=6ca6ed&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+
+.. important::
+   1. This release has changes and improvements to the Data Collector software. We strongly recommend updating your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
+   2. Support for the *Windows* version of the Data Collector will end on *January 31, 2025*. Customers are encouraged to switch to the Linux version before then. Detailed :ref:`installation instructions <Setting-up-data-collectors-doc>` are in the product documentation.
+   3. `CentOS Linux 7 End of Life, is June 30, 2024, <https://blog.centos.org/2023/04/end-dates-are-coming-for-centos-stream-8-and-centos-linux-7/>`_. With that, installing the Data Collector will not be supported on this version of CentOS. If you are using this version of Linux, you must update to a :ref:`supported version <linux-prerequisites>` to use the latest version of the Data Collector.
+
+
+===============================
+New Feature - Business Entities
+===============================
+
+
+=======================================================================
+Enhanced Licensed Feature: Transfer switch outlet control & layout page
+=======================================================================
+
+This release adds two enhancements to transfer switch power devices;
+
+- Layout page: This allows customers to create power associations to detected outlets.
+- Outlet control: If available and there is an existing control definition, Data center managers will be able to perform outlet control operations detected outlets.
+
+
+======================================
+Other notable changes and improvements
+======================================
+
+
+============
+Known issues
+============
+
+
+=================
+Notable bug fixes
+=================
+
+
+******************************
 Hyperview 4.3 (March 11, 2024)
 ******************************
-This section covers significant changes and bug fixes in Hyperview 4.3.x since version 4.2.X
+This section covers significant changes and bug fixes in Hyperview 4.3.x since version 4.2.x
 
 .. raw:: html
 
@@ -107,7 +152,7 @@ Changes in version 4.3.2
 *********************************
 Hyperview 4.2 (December 12, 2023)
 *********************************
-This section covers significant changes and bug fixes in Hyperview 4.2.x since version 4.1.X
+This section covers significant changes and bug fixes in Hyperview 4.2.x since version 4.1.x
 
 .. important::
    This release has changes and improvements to the Data Collector software. We strongly recommend updating your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
