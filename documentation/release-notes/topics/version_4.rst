@@ -20,7 +20,14 @@ This section covers significant changes and bug fixes in Hyperview 4.4.x since v
 ===============================
 New Feature - Business Entities
 ===============================
+Business Entities allow customers to track, customers, partners, and department associations to assets, connections and circuits. Business Entities can have contacts, and addresses as well as:
 
+- Documents, for example, to track contract copies
+- Custom properties.
+- Access Control.
+- Change Log.
+
+The bulk actions system has also been updated to allow Business Entities to be associated in bulk with assets, connections and circuits.
 
 =======================================================================
 Enhanced Licensed Feature: Transfer switch outlet control & layout page

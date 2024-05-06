@@ -6,15 +6,15 @@ Outlet Control
 
 .. warning:: Outlet control operations will affect connected devices. These operations have the same effect as the corresponding physical actions. It is the responsibility of the user to assess the situation and act accordingly.
 
-Hyperview Outlet Control has been designed to help you manage and control the power state of compatible Smart Power Distribution Units (rPDUs) while maintaining a detailed record of all actions taken by users.
+Hyperview Outlet Control has been designed to help you manage and control the power state of compatible Smart Power Distribution Units (rPDUs) and Transfer Switches (TSs), while maintaining a detailed record of all actions taken by users.
 
 This feature allows you to:
 
-- Turn on compatible rPDUs - Remotely power up a single or a group of outlets, ensuring that power is allocated only when and where it is required.
+- Turn on compatible device outlets - Remotely power up a single or a group of outlets, ensuring that power is allocated only when and where it is required.
 
-- Turn off compatible rPDUs - Remotely power down a single or a group of outlets, allowing you to save energy and reduce operational costs.
+- Turn off compatible device outlets - Remotely power down a single or a group of outlets, allowing you to save energy and reduce operational costs.
 
-- Power cycle compatible rPDUs - Remotely power cycle a single or a group of outlets, enabling you to reset unresponsive equipment and troubleshoot potential issues without the need for onsite intervention.
+- Power cycle compatible device outlets - Remotely power cycle a single or a group of outlets, enabling you to reset unresponsive equipment and troubleshoot potential issues without the need for onsite intervention.
 
 Work Orders maintain a comprehensive audit trail of all control requests made by users, allowing you to review historical actions and ensure accountability for any changes made.
 
@@ -44,11 +44,11 @@ If you would like Hyperview to add support for a new model or manufacturer pleas
 ====================
 Using outlet control
 ====================
-For an rPDU, outlet control functions are exposed on the Layout page. Please note the following requirements:
+Outlet control functions are exposed on the Layout page. Please note the following requirements:
 
 1. A Control license. This enables the Outlet Control, Firmware Management and Rack Security features
-2. A supported rack PDU
-3. A configured rack PDU. I.e. The rack PDU itself is configured to allow outlet control and the appropriate :ref:`control operations<Control-operations-doc>` parameters set.
+2. A supported device
+3. A configured device. I.e. The device is configured to allow outlet control and the appropriate :ref:`control operations<Control-operations-doc>` parameters set.
 
 .. note:: All user roles can access the Layout page for outlet control, but only Administrator and Data Center Manager users can initiate a control action.
 
@@ -95,12 +95,12 @@ Once a power-cycle request is made a work order is created and assigned. Progres
    :alt: Power Cycle Work Order
    :class: border-black
 
-.. note:: To make sure the latest outlet status is displayed, Outlet Control operations will trigger a sensor refresh on affected rack PDU. Due to the distributed nature of the application, the refresh operation may take a few minutes to complete.
+.. note:: To make sure the latest outlet status is displayed, Outlet Control operations will trigger a sensor refresh on affected device. Due to the distributed nature of the application, the refresh operation may take a few minutes to complete.
 
 ====================
 Troubleshooting Tips
 ====================
-There can be a lot of hardware, software and configuration variations within an rPDU model family. When troubleshooting issues with Outlet Control please consider the following troubleshooting tips:
+There can be a lot of hardware, software and configuration variations within an device model family. When troubleshooting issues with Outlet Control please consider the following troubleshooting tips:
 
 - License is enabled. You can verify that the Outlet Control license flag is enabled for your Hyperview instance by navigating to Settings -> License.
 
