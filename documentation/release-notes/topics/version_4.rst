@@ -2,9 +2,9 @@
 Version 4
 #########
 
-******************************
-Hyperview 4.4 (TBD))
-******************************
+*******************
+Hyperview 4.4 (TBD)
+*******************
 This section covers significant changes and bug fixes in Hyperview 4.4.x since version 4.3.x
 
 .. raw:: html
@@ -22,37 +22,40 @@ New Feature - Business Entities
 ===============================
 Business Entities allow customers to track, customers, partners, and department associations to assets, connections and circuits. Business Entities can have contacts, and addresses as well as:
 
-- Documents, for example, to track contract copies
-- Custom properties.
 - Access Control.
 - Change Log.
-
-The bulk actions system has also been updated to allow Business Entities to be associated in bulk with assets, connections and circuits.
+- Custom properties.
+- Documents.
+- Work Notes.
 
 =======================================================================
 Enhanced Licensed Feature: Transfer switch outlet control & layout page
 =======================================================================
-
 This release adds two enhancements to transfer switch power devices;
 
 - Layout page: This allows customers to create power associations to detected outlets.
 - Outlet control: If available and there is an existing control definition, Data center managers will be able to perform outlet control operations detected outlets.
 
+==================================
+Enhanced Feature: New Bulk Actions
+==================================
+The bulk actions system has been updated to allow Business Entities to be associated in bulk with assets.
 
-======================================
-Other notable changes and improvements
-======================================
+===============================================
+Enhanced Feature: Connection and Circuit import
+===============================================
+The Connections and circuits import system has been updated to allow for updating and setting of business entities.
 
-
-============
-Known issues
-============
-
+=================================
+Enhanced Feature: Advanced Search
+=================================
+Advanced Search has been updated to allow users to search and filter by Business Entity.
 
 =================
 Notable bug fixes
 =================
-
+- **AS-13547** Fixed a bug that allowed administrators, under certain conditions, to save SNMPv3 credentials without a password even if one is required.
+- **AS-14366** Fixed a bug that allowed administrators, under certain conditions, to delete a credential that is in use for control operations.
 
 ******************************
 Hyperview 4.3 (March 11, 2024)
