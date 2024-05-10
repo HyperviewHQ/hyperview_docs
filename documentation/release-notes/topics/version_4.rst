@@ -16,18 +16,18 @@ This section covers significant changes and bug fixes in Hyperview 4.4.x since v
 ===============================
 New Feature - Business Entities
 ===============================
-Business Entities allow customers to track, customers, partners, and department associations to assets, connections and circuits. Business Entities can have contacts, and addresses as well as:
+Business Entities allow customers to track customers, partners, and department associations to assets, connections and circuits. Business Entities can have contacts and addresses as well as:
 
-- Access Control.
-- Change Log.
-- Custom properties.
-- Documents.
-- Work Notes.
+- Access Control
+- Change Log
+- Custom properties
+- Documents
+- Work Notes
 
 =======================================================================
 Enhanced Licensed Feature: Transfer switch outlet control & layout page
 =======================================================================
-This release adds two enhancements to transfer switch power devices;
+This release adds two enhancements to transfer switch power devices:
 
 - Layout page: This allows customers to create power associations to detected outlets.
 - Outlet control: If available and there is an existing control definition, Data center managers will be able to perform outlet control operations detected outlets.
@@ -40,7 +40,7 @@ The bulk actions system has been updated to allow Business Entities to be associ
 ===============================================
 Enhanced Feature: Connection and Circuit import
 ===============================================
-The Connections and circuits import system has been updated to allow for updating and setting of business entities.
+The Connections and Circuits import system has been updated to allow for updating and setting of business entities.
 
 =================================
 Enhanced Feature: Advanced Search
