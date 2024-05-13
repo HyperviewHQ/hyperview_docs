@@ -20,7 +20,7 @@ Business Entities allow customers to track customers, partners, and department a
 
 - Access Control
 - Change Log
-- Custom properties
+- Custom Properties
 - Documents
 - Work Notes
 
@@ -40,7 +40,7 @@ The bulk actions system has been updated to allow Business Entities to be associ
 ===============================================
 Enhanced Feature: Connection and Circuit import
 ===============================================
-The Connections and Circuits import system has been updated to allow for updating and setting of business entities.
+The Connections and Circuits import system has been updated to allow for updating and setting of Business Entities.
 
 =================================
 Enhanced Feature: Advanced Search
