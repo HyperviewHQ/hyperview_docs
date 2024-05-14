@@ -2,10 +2,61 @@
 Version 4
 #########
 
+****************************
+Hyperview 4.4 (May 13, 2024)
+****************************
+This section covers significant changes and bug fixes in Hyperview 4.4.x since version 4.3.x
+
+.. important::
+   1. This release has changes and improvements to the Data Collector software. We strongly recommend updating your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
+   2. Support for the *Windows* version of the Data Collector will end on *January 31, 2025*. Customers are encouraged to switch to the Linux version before then. Detailed :ref:`installation instructions <Setting-up-data-collectors-doc>` are in the product documentation.
+   3. `CentOS Linux 7 End of Life, is June 30, 2024, <https://blog.centos.org/2023/04/end-dates-are-coming-for-centos-stream-8-and-centos-linux-7/>`_. With that, installing the Data Collector will not be supported on this version of CentOS. If you are using this version of Linux, you must update to a :ref:`supported version <linux-prerequisites>` to use the latest version of the Data Collector.
+
+
+===============================
+New Feature - Business Entities
+===============================
+Business Entities allow customers to track customers, partners, and department associations to assets, connections and circuits. Business Entities can have contacts and addresses as well as:
+
+- Access Control
+- Change Log
+- Custom Properties
+- Documents
+- Work Notes
+
+=======================================================================
+Enhanced Licensed Feature: Transfer switch outlet control & layout page
+=======================================================================
+This release adds two enhancements to transfer switch power devices:
+
+- Layout page: This allows customers to create power associations to detected outlets.
+- Outlet control: If available and there is an existing control definition, Data center managers will be able to perform outlet control operations detected outlets.
+
+==================================
+Enhanced Feature: New Bulk Actions
+==================================
+The bulk actions system has been updated to allow Business Entities to be associated in bulk with assets.
+
+===============================================
+Enhanced Feature: Connection and Circuit import
+===============================================
+The Connections and Circuits import system has been updated to allow for updating and setting of Business Entities.
+
+=================================
+Enhanced Feature: Advanced Search
+=================================
+Advanced Search has been updated to allow users to search and filter by Business Entity.
+
+=================
+Notable bug fixes
+=================
+- **AS-13547** Fixed a bug that allowed administrators, under certain conditions, to save SNMPv3 credentials without a password even if one is required.
+- **AS-14366** Fixed a bug that allowed administrators, under certain conditions, to delete a credential that is in use for control operations.
+
 ******************************
 Hyperview 4.3 (March 11, 2024)
 ******************************
-This section covers significant changes and bug fixes in Hyperview 4.3.x since version 4.2.X
+This section covers significant changes and bug fixes in Hyperview 4.3.x since version 4.2.x
 
 .. raw:: html
 
@@ -102,12 +153,12 @@ Changes in version 4.3.1
 ========================
 Changes in version 4.3.2
 ========================
-- **AS-14448** Fixed a bug that, if triggered, could cause data grids not to display correctly. 
+- **AS-14448** Fixed a bug that, if triggered, could cause data grids not to display correctly.
 
 *********************************
 Hyperview 4.2 (December 12, 2023)
 *********************************
-This section covers significant changes and bug fixes in Hyperview 4.2.x since version 4.1.X
+This section covers significant changes and bug fixes in Hyperview 4.2.x since version 4.1.x
 
 .. important::
    This release has changes and improvements to the Data Collector software. We strongly recommend updating your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
