@@ -2,9 +2,9 @@
 Version 4
 #########
 
-*******************
-Hyperview 4.4 (TBD)
-*******************
+****************************
+Hyperview 4.4 (May 13, 2024)
+****************************
 This section covers significant changes and bug fixes in Hyperview 4.4.x since version 4.3.x
 
 .. important::
@@ -153,7 +153,7 @@ Changes in version 4.3.1
 ========================
 Changes in version 4.3.2
 ========================
-- **AS-14448** Fixed a bug that, if triggered, could cause data grids not to display correctly. 
+- **AS-14448** Fixed a bug that, if triggered, could cause data grids not to display correctly.
 
 *********************************
 Hyperview 4.2 (December 12, 2023)
