@@ -76,6 +76,10 @@ Availability of bulk actions depends on two factors: your :ref:`user role<User-a
      - Updates a specific property for the selected assets
      - Power User
      - Infrastructure Management
+   * - *Update Business Entity*
+     - Updates or sets the Business Entity associated with the asset
+     - Power User
+     - Infrastructure Management 
    * - *Update Custom Property*
      - Updates a specific custom property for the selected assets
      - Power User
