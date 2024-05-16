@@ -53,6 +53,11 @@ Notable bug fixes
 - **AS-13547** Fixed a bug that allowed administrators, under certain conditions, to save SNMPv3 credentials without a password even if one is required.
 - **AS-14366** Fixed a bug that allowed administrators, under certain conditions, to delete a credential that is in use for control operations.
 
+========================
+Changes in version 4.4.1
+========================
+- **AS-14694** Update database driver
+
 ******************************
 Hyperview 4.3 (March 11, 2024)
 ******************************
