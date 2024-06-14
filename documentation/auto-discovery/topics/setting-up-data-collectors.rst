@@ -78,18 +78,47 @@ Linux Environment Dependencies
 
 **Please use apt, yum, or dnf, depending on the distribution, to install the following packages**
 
-* bind9-host (for the *host* command)
-* coreutils (for the *cut* command)
-* *grep* (for pattern matching)
-* mawk or gawk (for the *awk* command)
-* newt or whiptail (for the *whiptail* command)
-* *sed* (for file editing)
-* *tar* (to unpack the archive)
-* *uuidgen* (to generate UUIDs)
-* docker-ce (for the *docker* command) [#]_
-* docker-compose-plugin (for the *docker compose* command)
-* *jq* (for JSON file manipulation) [#]_
-* libicu (for Unicode support)
+.. list-table::
+   :header-rows: 1
+   :align: left
+   :widths: 33, 33, 33
+
+   * - Command
+     - APT Package
+     - RPM Package
+   * - *awk*
+     - gawk or mawk
+     - gawk
+   * - *cut*
+     - coreutils
+     - coreutils
+   * - *docker* [#]_
+     - docker-ce and docker-compose-plugin
+     - docker-ce and docker-compose-plugin
+   * - *grep*
+     - grep
+     - grep
+   * - *host*
+     - bind9-host
+     - bind-utils
+   * - *jq* [#]_
+     - jq
+     - jq
+   * - *libicu*
+     - libicu72
+     - libicu
+   * - *sed*
+     - sed
+     - sed
+   * - *tar*
+     - tar
+     - tar
+   * - *uuidgen*
+     - uuid-runtime
+     - util-linux
+   * - *whiptail*
+     - whiptail
+     - newt
 
 .. [#] Docker Inc. provides `detailed installation documentation <https://docs.docker.com/engine/install/>`_.
 
