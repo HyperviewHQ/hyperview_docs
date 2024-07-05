@@ -2,6 +2,84 @@
 Version 4
 #########
 
+*******************
+Hyperview 4.5 (TBD)
+*******************
+This section covers significant changes and bug fixes in Hyperview 4.5.x since version 4.4.x
+
+.. important::
+   1. This release has changes and improvements to the Data Collector software. We strongly recommend updating your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
+   2. Support for the *Windows* version of the Data Collector will end on *January 31, 2025*. Customers are encouraged to switch to the Linux version before then. Detailed :ref:`installation instructions <Setting-up-data-collectors-doc>` are in the product documentation.
+   3. `CentOS Linux 7 End of Life, is June 30, 2024, <https://blog.centos.org/2023/04/end-dates-are-coming-for-centos-stream-8-and-centos-linux-7/>`_. With that, installing the Data Collector will not be supported on this version of CentOS. If you are using this version of Linux, you must update to a :ref:`supported version <linux-prerequisites>` to use the latest version of the Data Collector.
+
+
+=================================================
+New Licensed Feature - Carbon footprint reporting
+=================================================
+
+Workload type has been added as a standard property for Racks.
+
+Workload type is also settable in bulk.
+
+Average Scope 2 Carbon Offset % has been added as a property on locations.
+
+=======================
+New Feature - Dark mode
+=======================
+Hyperview now has a dark mode GUI theme. The Hyperview GUI will by default set the theme automatically based on the user system preferences. The theme can also be specifically set by the user from the **Account -> Appearance** menu.
+
+===================================
+Enhanced Feature: Business Entities
+===================================
+Business Entity has been added as an optional column in the following grids:
+
+1. Location -> Information -> Assets
+2. Assets by type
+3. Connectivity -> Connection
+4. Connectivity -> Circuits
+
+An "Open in Advanced Search" button has been added to the Business Entity Asset Associations GUI.
+
+===================================
+Enhanced Feature: Dashboard widgets
+===================================
+- Network dashboard widget
+- Model properties widget
+
+Where applicable these two widgets will be in the default asset dashboard. If the dashboard has been customized, then the widgets can be selected and placed on the dashboard.
+
+===================================
+Enhanced Feature: Custom Components
+===================================
+The following new custom components have been added to allow customers to log peripherals and components that may not be possible to detect with auto discovery:
+
+- Tool
+- Chassis Component
+- PCI Card
+- Heat Sink
+- Tracking Hardware
+- Generic Component
+
+==========================================
+Enhanced Licensed Feature: Firmware update
+==========================================
+- Support for the Panduit Gen6 rack PDU products has been added.
+
+======================================
+Other notable changes and improvements
+======================================
+- USB has been added to the list of port types.
+- The hostname property can now be deleted.
+- Discovery state is now available in Advanced Search filters.
+
+=================
+Notable bug fixes
+=================
+- **AS-14510** Fixed a bug that caused some invalid email address formats to be accepted as valid.
+- **AS-14543** Fixed a bug that made it not possible to delete a numeric custom property if a default value is not set.
+- **AS-14598** Fixed a bug that caused an error message to not be displayed after attempting to link a manual sensor to an asset that already has a sensor of the same type.
+- **AS-14568** Fixed a bug that caused the Camera asset type to not be selectable in Advanced Search filters.
+
 ****************************
 Hyperview 4.4 (May 13, 2024)
 ****************************

@@ -25,6 +25,7 @@ Supported hardware vendors
 ==========================
 * Panduit UPS products
 * Panduit Gen5 PDU products
+* Panduit Gen6 PDU products
 * nVent Enlogic PDU products
 
 .. note:: We are actively working to add information to make Firmware Management more useful. If you are a customer who wants to use Firmware Management for certain hardware, please encourage your hardware vendor to reach out to us. If you are a vendor who wants consumers to benefit from Firmware Management, please |contact|.
