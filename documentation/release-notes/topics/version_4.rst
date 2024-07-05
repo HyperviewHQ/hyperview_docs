@@ -43,8 +43,8 @@ An "Open in Advanced Search" button has been added to the Business Entity Asset 
 ===================================
 Enhanced Feature: Dashboard widgets
 ===================================
-- Network dashboard widget
-- Model properties widget
+- Network dashboard widget. This will display the discovered and monitored IP address for the device.
+- Model information widget. This will display product images and device properties.
 
 Where applicable these two widgets will be in the default asset dashboard. If the dashboard has been customized, then the widgets can be selected and placed on the dashboard.
 
