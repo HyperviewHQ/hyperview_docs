@@ -12,7 +12,6 @@ This section covers significant changes and bug fixes in Hyperview 4.5.x since v
    2. Support for the *Windows* version of the Data Collector will end on *January 31, 2025*. Customers are encouraged to switch to the Linux version before then. Detailed :ref:`installation instructions <Setting-up-data-collectors-doc>` are in the product documentation.
    3. `CentOS Linux 7 End of Life, is June 30, 2024, <https://blog.centos.org/2023/04/end-dates-are-coming-for-centos-stream-8-and-centos-linux-7/>`_. With that, installing the Data Collector will not be supported on this version of CentOS. If you are using this version of Linux, you must update to a :ref:`supported version <linux-prerequisites>` to use the latest version of the Data Collector.
 
-
 =================================================
 New Licensed Feature - Carbon footprint reporting
 =================================================
@@ -27,6 +26,11 @@ Average Scope 2 Carbon Offset % has been added as a property on locations.
 New Feature - Dark mode
 =======================
 Hyperview now has a dark mode GUI theme. The Hyperview GUI will by default set the theme automatically based on the user system preferences. The theme can also be specifically set by the user from the **Account -> Appearance** menu.
+
+================================
+New Feature - In-app Help bubble
+================================
+
 
 ===================================
 Enhanced Feature: Business Entities
@@ -71,6 +75,7 @@ Other notable changes and improvements
 - USB has been added to the list of port types.
 - The hostname property can now be deleted.
 - Discovery state is now available in Advanced Search filters.
+- Temperature and Humidity can now be added manual sensors.
 
 =================
 Notable bug fixes
