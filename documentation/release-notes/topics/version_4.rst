@@ -75,7 +75,7 @@ Other notable changes and improvements
 - USB has been added to the list of port types.
 - The hostname property can now be deleted.
 - Discovery state is now available in Advanced Search filters.
-- Temperature and Humidity can now be added manual sensors.
+- Temperature and Humidity can now be added to manual sensors.
 
 =================
 Notable bug fixes
