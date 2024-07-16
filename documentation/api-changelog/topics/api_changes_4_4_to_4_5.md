@@ -1,4 +1,4 @@
-# API Changelog 4.3 to 4.4
+# API Changelog 4.4 to 4.5
 
 ## What's New
 
@@ -1951,7 +1951,8 @@ Changed: `assetType` in `query`
 
 
 Changed: `hasChildrenAssetType` in `query`
-> An optional list of asset types to filter what assets are used when determining if an asset
+> An optional list of asset types to filter what assets are used when determining if an asset
+
 > has children.
 
 
