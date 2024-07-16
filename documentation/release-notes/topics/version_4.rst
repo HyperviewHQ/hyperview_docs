@@ -12,20 +12,24 @@ This section covers significant changes and bug fixes in Hyperview 4.5.x since v
    2. Support for the *Windows* version of the Data Collector will end on *January 31, 2025*. Customers are encouraged to switch to the Linux version before then. Detailed :ref:`installation instructions <Setting-up-data-collectors-doc>` are in the product documentation.
    3. Microsoft has `announced <https://devblogs.microsoft.com/microsoft365dev/retirement-of-office-365-connectors-within-microsoft-teams/>`_ the sudden and quick retirement of the Webhook interface within MSTeams. This impacts the Notifications Channels functionality. We are evaluating options and will be addressing this in an upcoming release.
 
-=================================================
-New Licensed Feature - Carbon footprint reporting
-=================================================
+===========================================================
+New Licensed Feature - Reporting/Carbon footprint reporting
+===========================================================
+This release introduces a Reports section into the Hyperview application. The first report we are introducing is the Carbon footprint report. With this release, you will be able to track a Location's carbon footprint. Track the carbon footprint of Rack workloads and assess the impact of the average offset percentage on your carbon footprint in aggregate and per location.
 
-Workload type has been added as a standard property for Racks.
+To support this report report:
+- Workload type has been added as a standard property for Racks.
+- Workload type is also settable in bulk.
+- Average Scope 2 Carbon Offset % has been added as a property on locations.
 
-Workload type is also settable in bulk.
+More enhancements and reports are planned in the coming releases of Hyperview this year and beyond.
 
-Average Scope 2 Carbon Offset % has been added as a property on locations.
+.. note:: Please contact the Hyperview sales or support teams for more information.
 
 =======================
 New Feature - Dark mode
 =======================
-Hyperview now has a dark mode GUI theme. The Hyperview GUI will by default set the theme automatically based on the user system preferences. The theme can also be specifically set by the user from the **Account -> Appearance** menu.
+This release introduces a dark-mode GUI theme. The Hyperview GUI will by default set the theme automatically based on the user system preferences. The theme can also be specifically set by the user from the **Account -> Appearance** menu.
 
 ================================
 New Feature - In-app Help bubble
