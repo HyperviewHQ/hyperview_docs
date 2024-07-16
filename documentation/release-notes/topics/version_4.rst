@@ -10,7 +10,7 @@ This section covers significant changes and bug fixes in Hyperview 4.5.x since v
 .. important::
    1. This release has changes and improvements to the Data Collector software. We strongly recommend updating your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
    2. Support for the *Windows* version of the Data Collector will end on *January 31, 2025*. Customers are encouraged to switch to the Linux version before then. Detailed :ref:`installation instructions <Setting-up-data-collectors-doc>` are in the product documentation.
-   3. `CentOS Linux 7 End of Life, is June 30, 2024, <https://blog.centos.org/2023/04/end-dates-are-coming-for-centos-stream-8-and-centos-linux-7/>`_. With that, installing the Data Collector will not be supported on this version of CentOS. If you are using this version of Linux, you must update to a :ref:`supported version <linux-prerequisites>` to use the latest version of the Data Collector.
+   3. Microsoft has `announced <https://devblogs.microsoft.com/microsoft365dev/retirement-of-office-365-connectors-within-microsoft-teams/>`_ the sudden and quick retirement of the Webhook interface within MSTeams. This impacts the Notifications Channels functionality. We are evaluating options and will be addressing this in an upcoming release.
 
 =================================================
 New Licensed Feature - Carbon footprint reporting
@@ -30,7 +30,7 @@ Hyperview now has a dark mode GUI theme. The Hyperview GUI will by default set t
 ================================
 New Feature - In-app Help bubble
 ================================
-
+With this release, we are introducing a new in-app help system powered by `Userflow <https://userflow.com/>`_. Where applicable, We are planning a phased roll-out to customers.
 
 ===================================
 Enhanced Feature: Business Entities
@@ -76,6 +76,11 @@ Other notable changes and improvements
 - The hostname property can now be deleted.
 - Discovery state is now available in Advanced Search filters.
 - Temperature and Humidity can now be added to manual sensors.
+
+============
+Known issues
+============
+- **AS-15227** The All location carbon footprint report is accessible by All users if the Reporting license is enabled.
 
 =================
 Notable bug fixes
