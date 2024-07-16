@@ -90,9 +90,10 @@ Known issues
 Notable bug fixes
 =================
 - **AS-14510** Fixed a bug that caused some invalid email address formats to be accepted as valid.
+- **AS-14532** Fixed a bug that caused the Asset Type field to be marked as optional when adding custom properties.
 - **AS-14543** Fixed a bug that made it not possible to delete a numeric custom property if a default value is not set.
-- **AS-14598** Fixed a bug that caused an error message to not be displayed after attempting to link a manual sensor to an asset that already has a sensor of the same type.
 - **AS-14568** Fixed a bug that caused the Camera asset type to not be selectable in Advanced Search filters.
+- **AS-14598** Fixed a bug that caused an error message to not be displayed after attempting to link a manual sensor to an asset that already has a sensor of the same type.
 
 ****************************
 Hyperview 4.4 (May 13, 2024)
