@@ -15,12 +15,13 @@ This section covers significant changes and bug fixes in Hyperview 4.5.x since v
 ===========================================================
 New Licensed Feature - Reporting/Carbon footprint reporting
 ===========================================================
-This release introduces a Reports section into the Hyperview application. The first report we are introducing is the Carbon footprint report. With this release, you will be able to track a Location's carbon footprint. Track the carbon footprint of Rack workloads and assess the impact of the average offset percentage on your carbon footprint in aggregate and per location.
+This release introduces a Reports section into the Hyperview application. The first report we are introducing is the Carbon Footprint report. With this release, you will be able to track a location's carbon footprint. Track the carbon footprint of rack workloads and assess the impact of the average offset percentage on your carbon footprint in aggregate and per location.
 
-To support this report report:
-- Workload type has been added as a standard property for Racks.
-- Workload type is also settable in bulk.
+To support this report:
+- Workload Type has been added to all asset types.
+- Workload Type is settable in bulk.
 - Average Scope 2 Carbon Offset % has been added as a property on locations.
+- PUE Setting has been added as a property for locations.
 
 More enhancements and reports are planned in the coming releases of Hyperview this year and beyond.
 
@@ -32,9 +33,9 @@ New Feature - Dark mode
 This release introduces a dark-mode GUI theme. The Hyperview GUI will by default set the theme automatically based on the user system preferences. The theme can also be specifically set by the user from the **Account -> Appearance** menu.
 
 ================================
-New Feature - In-app Help bubble
+New Feature - In-app help bubble
 ================================
-With this release, we are introducing a new in-app help system powered by `Userflow <https://userflow.com/>`_. Where applicable, We are planning a phased roll-out to customers.
+With this release, we are introducing a new in-app help system powered by `Userflow <https://userflow.com/>`_. Where applicable, we are planning a phased roll-out to customers.
 
 ===================================
 Enhanced Feature: Business Entities
@@ -43,7 +44,7 @@ Business Entity has been added as an optional column in the following grids:
 
 1. Location -> Information -> Assets
 2. Assets by type
-3. Connectivity -> Connection
+3. Connectivity -> Connections
 4. Connectivity -> Circuits
 
 An "Open in Advanced Search" button has been added to the Business Entity Asset Associations GUI.
@@ -59,7 +60,7 @@ Where applicable these two widgets will be in the default asset dashboard. If th
 ===================================
 Enhanced Feature: Custom Components
 ===================================
-The following new custom components have been added to allow customers to log peripherals and components that may not be possible to detect with auto discovery:
+The following new custom components have been added to allow customers to log peripherals and components that may not be possible to detect with auto-discovery:
 
 - Tool
 - Chassis Component
@@ -77,14 +78,14 @@ Enhanced Licensed Feature: Firmware update
 Other notable changes and improvements
 ======================================
 - USB has been added to the list of port types.
-- The hostname property can now be deleted.
-- Discovery state is now available in Advanced Search filters.
+- The Host Name property can now be deleted.
+- Discovery State is now available in Advanced Search filters.
 - Temperature and Humidity can now be added to manual sensors.
 
 ============
 Known issues
 ============
-- **AS-15227** The All location carbon footprint report is accessible by All users if the Reporting license is enabled.
+- **AS-15227** The All location carbon footprint report is accessible by all users if the Reporting license is enabled.
 
 =================
 Notable bug fixes
