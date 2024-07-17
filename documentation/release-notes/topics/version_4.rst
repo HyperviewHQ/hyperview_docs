@@ -30,7 +30,7 @@ More enhancements and reports are planned in the coming releases of Hyperview th
 =======================
 New Feature - Dark mode
 =======================
-This release introduces a dark-mode GUI theme. The Hyperview GUI will by default set the theme automatically based on the user system preferences. The theme can also be specifically set by the user from the **Account -> Appearance** menu.
+This release introduces a dark mode GUI theme. The Hyperview GUI will by default set the theme automatically based on the user system preferences. The theme can also be specifically set by the user from the **Account -> Appearance** menu.
 
 ================================
 New Feature - In-app help bubble
