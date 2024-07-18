@@ -10,7 +10,7 @@ This section covers significant changes and bug fixes in Hyperview 4.5.x since v
 .. important::
    1. This release has changes and improvements to the Data Collector software. We strongly recommend updating your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
    2. Support for the *Windows* version of the Data Collector will end on *January 31, 2025*. Customers are encouraged to switch to the Linux version before then. Detailed :ref:`installation instructions <Setting-up-data-collectors-doc>` are in the product documentation.
-   3. Microsoft has `announced <https://devblogs.microsoft.com/microsoft365dev/retirement-of-office-365-connectors-within-microsoft-teams/>`_ the sudden and quick retirement of the Webhook interface within MSTeams. This impacts the Notifications Channels functionality. We are evaluating options and will be addressing this in an upcoming release.
+   3. Microsoft has `announced <https://devblogs.microsoft.com/microsoft365dev/retirement-of-office-365-connectors-within-microsoft-teams/>`_ the sudden and quick retirement of the Webhook interface within Microsoft Teams. This impacts the Notifications Channels functionality. We are evaluating options and will be addressing this in an upcoming release.
 
 ===========================================================
 New Licensed Feature - Reporting/Carbon footprint reporting
