@@ -2,6 +2,100 @@
 Version 4
 #########
 
+*******************
+Hyperview 4.5 (TBD)
+*******************
+This section covers significant changes and bug fixes in Hyperview 4.5.x since version 4.4.x
+
+.. important::
+   1. This release has changes and improvements to the Data Collector software. We strongly recommend updating your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
+   2. Support for the *Windows* version of the Data Collector will end on *January 31, 2025*. Customers are encouraged to switch to the Linux version before then. Detailed :ref:`installation instructions <Setting-up-data-collectors-doc>` are in the product documentation.
+   3. Microsoft has `announced <https://devblogs.microsoft.com/microsoft365dev/retirement-of-office-365-connectors-within-microsoft-teams/>`_ the sudden and quick retirement of the Webhook interface within Microsoft Teams. This impacts the Notifications Channels functionality. We are evaluating options and will be addressing this in an upcoming release.
+
+===========================================================
+New Licensed Feature - Reporting/Carbon footprint reporting
+===========================================================
+This release introduces a Reports section into the Hyperview application. The first report we are introducing is the Carbon Footprint report. With this release, you will be able to track a location's carbon footprint. Track the carbon footprint of rack workloads and assess the impact of the average offset percentage on your carbon footprint in aggregate and per location.
+
+To support this report:
+- Workload Type has been added to all asset types.
+- Workload Type is settable in bulk.
+- Average Scope 2 Carbon Offset % has been added as a property on locations.
+- PUE Setting has been added as a property for locations.
+
+More enhancements and reports are planned in the coming releases of Hyperview this year and beyond.
+
+.. note:: Please contact the Hyperview sales or support teams for more information.
+
+=======================
+New Feature - Dark mode
+=======================
+This release introduces a dark mode GUI theme. The Hyperview GUI will by default set the theme automatically based on the user system preferences. The theme can also be specifically set by the user from the **Account -> Appearance** menu.
+
+================================
+New Feature - In-app help bubble
+================================
+With this release, we are introducing a new in-app help system powered by `Userflow <https://userflow.com/>`_. Where applicable, we are planning a phased roll-out to customers.
+
+===================================
+Enhanced Feature: Business Entities
+===================================
+Business Entity has been added as an optional column in the following grids:
+
+1. Location -> Information -> Assets
+2. Assets by type
+3. Connectivity -> Connections
+4. Connectivity -> Circuits
+
+An "Open in Advanced Search" button has been added to the Business Entity Asset Associations GUI.
+
+===================================
+Enhanced Feature: Dashboard widgets
+===================================
+- Network dashboard widget. This will display the discovered and monitored IP address for the device.
+- Model information widget. This will display product images and device properties.
+
+Where applicable these two widgets will be in the default asset dashboard. If the dashboard has been customized, then the widgets can be selected and placed on the dashboard.
+
+===================================
+Enhanced Feature: Custom Components
+===================================
+The following new custom components have been added to allow customers to log peripherals and components that may not be possible to detect with auto-discovery:
+
+- Tool
+- Chassis Component
+- PCI Card
+- Heat Sink
+- Tracking Hardware
+- Generic Component
+
+==========================================
+Enhanced Licensed Feature: Firmware update
+==========================================
+- Support for the Panduit Gen6 rack PDU products has been added.
+
+======================================
+Other notable changes and improvements
+======================================
+- USB has been added to the list of port types.
+- The Host Name property can now be deleted.
+- Discovery State is now available in Advanced Search filters.
+- Temperature and Humidity can now be added to manual sensors.
+
+============
+Known issues
+============
+- **AS-15227** The All location carbon footprint report is accessible by all users if the Reporting license is enabled.
+
+=================
+Notable bug fixes
+=================
+- **AS-14510** Fixed a bug that caused some invalid email address formats to be accepted as valid.
+- **AS-14532** Fixed a bug that caused the Asset Type field to be marked as optional when adding custom properties.
+- **AS-14543** Fixed a bug that made it not possible to delete a numeric custom property if a default value is not set.
+- **AS-14568** Fixed a bug that caused the Camera asset type to not be selectable in Advanced Search filters.
+- **AS-14598** Fixed a bug that caused an error message to not be displayed after attempting to link a manual sensor to an asset that already has a sensor of the same type.
+
 ****************************
 Hyperview 4.4 (May 13, 2024)
 ****************************
