@@ -73,7 +73,7 @@ The following new custom components have been added to allow customers to log pe
 Enhanced Feature: Computed sensors
 ==================================
 The Location asset type will have the following new computed sensors:
-- PUE. This is an explicit sensor in addition to the 3 PUE calculations. This sensor is configured from the location Properties page.
+- PUE. This is an explicit sensor in addition to the current three PUE computed sensors. This sensor is configured from the location Properties page.
 - Carbon emission equivalent.
 - Carbon emission equivalent with offset.
 
