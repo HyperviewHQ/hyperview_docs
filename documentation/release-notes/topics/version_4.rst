@@ -69,6 +69,18 @@ The following new custom components have been added to allow customers to log pe
 - Tracking Hardware
 - Generic Component
 
+==================================
+Enhanced Feature: Computed sensors
+==================================
+The Location asset type will have the following new computed sensors:
+- PUE. This is an explicit sensor in addition to the 3 PUE calculations. This sensor is configured from the location Properties page.
+- Carbon emission equivalent.
+- Carbon emission equivalent with offset.
+
+The Rack asset type will have the following new computed sensors added:
+- Carbon emission equivalent.
+- Carbon emission equivalent with offset. The offset percentage is configured in the location Properties page.
+
 ==========================================
 Enhanced Licensed Feature: Firmware update
 ==========================================
@@ -95,6 +107,12 @@ Notable bug fixes
 - **AS-14543** Fixed a bug that made it not possible to delete a numeric custom property if a default value is not set.
 - **AS-14568** Fixed a bug that caused the Camera asset type to not be selectable in Advanced Search filters.
 - **AS-14598** Fixed a bug that caused an error message to not be displayed after attempting to link a manual sensor to an asset that already has a sensor of the same type.
+
+========================
+Changes in version 4.5.1
+========================
+- **AS-15280** Fixed a bug that under certain conditions could cause the carbon footprint report not to load.
+- **AS-15325** Fixed a bug that could cause the rack elevation asset labels to not show properly in light mode.
 
 ****************************
 Hyperview 4.4 (May 13, 2024)
