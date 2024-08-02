@@ -7,6 +7,10 @@ Hyperview 4.5 (July 23, 2024)
 *****************************
 This section covers significant changes and bug fixes in Hyperview 4.5.x since version 4.4.x
 
+.. raw:: html
+
+   <div class="pb-3"><iframe src="https://player.vimeo.com/video/994173410?h=7bff7ad020&color=6ca6ed&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+
 .. important::
    1. This release has changes and improvements to the Data Collector software. We strongly recommend updating your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
    2. Support for the *Windows* version of the Data Collector will end on *January 31, 2025*. Customers are encouraged to switch to the Linux version before then. Detailed :ref:`installation instructions <Setting-up-data-collectors-doc>` are in the product documentation.
@@ -73,13 +77,15 @@ The following new custom components have been added to allow customers to log pe
 Enhanced Feature: Computed sensors
 ==================================
 The Location asset type will have the following new computed sensors:
+
 - PUE. This is an explicit sensor in addition to the current three PUE computed sensors. This sensor is configured from the location Properties page.
 - Carbon emission equivalent.
-- Carbon emission equivalent with offset.
+- Carbon emission equivalent with offset. The offset percentage is configured from the Location Properties page.
 
 The Rack asset type will have the following new computed sensors added:
+
 - Carbon emission equivalent.
-- Carbon emission equivalent with offset. The offset percentage is configured in the location Properties page.
+- Carbon emission equivalent with offset. The offset percentage is configured from the Rack Properties page.
 
 ==========================================
 Enhanced Licensed Feature: Firmware update
