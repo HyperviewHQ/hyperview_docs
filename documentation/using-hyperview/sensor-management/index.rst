@@ -43,7 +43,3 @@ Sensors and Analyzers
 Sensors and licensing
 =====================
 
-
-
-
-
