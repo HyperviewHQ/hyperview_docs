@@ -34,12 +34,43 @@ For Modbus TCP or BACnet IP network-connected assets, a sensor definition is con
 
 A Manual sensor profile will indicate to Hyperview that the user will manually manage sensors and sensor data.
 
+.. important:: An asset can have only one monitoring profile. Switching an asset's Sensor Monitoring Profile will delete previous sensors and create new ones where applicable. You can manage this setting from the asset's *Information -> Sensor Monitoring* page.
+
+
 =====================
 Sensors and Analyzers
 =====================
+Analyzers are part of the Hyperview expert system. They are called upon to help normalize data, for example, by calculating a power sensor if the asset provides no direct information but provides enough information to calculate it. They are also called upon to calculate computed sensors from information supplied by the user. For example, we can use asset elevation information to calculate operational information like total rack capacity in a location or maximum available contiguous space in a rack to aid in future asset placement.
 
+Analyzers perform a critical role in normalizing the data for assets across manufacturers and models. Furthermore, they perform near real-time analytics on critical metrics, such as energy metering for racks and locations, rack Delta-T, Power Utilization Effectiveness, and Carbon footprint equivalency. The analysis covers the following areas:
+
+1. Power
+2. Energy
+3. Temperature and Humidity
+4. Space utilization
+5. Carbon footprint
+
+Computed sensors are created and associated with the appropriate assets to hold the analysis results. The Hyperview export system monitors the data and event flow and performs analysis in near real-time. Some analytics, such as daily aggregations and statistical summaries, are performed on a schedule.
 
 =====================
 Sensors and licensing
 =====================
+
+Sensors in Hyperview are created through various methods:
+
+1. Asset sensors are automatically discovered and monitored.
+2. Applying a BACnet or Modbus definition to an asset.
+3. Manually created if the asset has a manual sensor monitoring profile.
+4. Computed by an analyzer
+
+Asset counts can change and thus impact licensing through the following methods:
+
+1. Adding or discovering more assets.
+2. Connecting sensors to an existing asset, For example, adding a sensor bundle to a rack PDU.
+3. An improvement or bug fix in the discovery system that allows the discovery of more sensors, for example, a new or updated device definition.
+4. More Analyzers to provide more intelligence and metrics. This will add more computed sensors.
+
+If your sensor or asset count exceeds the license threshold, The primary account contact will get an email notification. Your account manager will also contact you.
+
+.. important:: Under no circumstance will Hyperview delete assets or sensors. We will always work with you to answer and rectify any licensing issues.
 
