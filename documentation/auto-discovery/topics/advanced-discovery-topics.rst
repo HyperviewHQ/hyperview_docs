@@ -10,7 +10,6 @@ Advanced discovery topics
 =================================
 SNMP privacy with AES 192 and 256
 =================================
-
 The Linux version of the Data Collector is capable of using AES-192 and AES-256 when communicating with SNMP devices. When using these algorithms it is important to note that they are not standardized across all manufacturers and SNMP implementations. There are two major non-compatible implementations. `RFC-3826 <https://datatracker.ietf.org/doc/html/rfc3826>`_ outlines arguably the closest thing to a standard. Most new devices that support AES-192/256 will support this implementation. However, some may follow an older reference implementation written by Cisco while the standard was still being discussed in the early 2000s.
 
 The Linux version of the Data Collector is compatible with RFC-3826, also known as the Blumenthal implementation.
@@ -19,7 +18,6 @@ To determine what a device supports, check the device's interface, manual, or da
 
 Example
 -------
-
 Assuming the device is configured with SHA1 for Authentication and AES-256 for Privacy.
 
 Devices that use RFC-3826 will respond with this configuration to the command:
@@ -39,7 +37,6 @@ Devices that use the Cisco implementation will respond with this configuration t
 ====================
 Obtaining SNMP walks
 ====================
-
 Hyperview uses SNMP walks to enhance device definitions to model and support devices that are discoverable with the SNMP protocol. The **snmpwalk file** is used to simulate the device and to test definitions.
 
 Installing the applicable net-snmp package alongside the (Linux) Data Collector software is recommended. If that is not possible, it can be installed on any machine with network line of sight to the target device.
@@ -118,7 +115,6 @@ Docker
 
 Walk file handling
 ^^^^^^^^^^^^^^^^^^
-
 Once the walk is obtained, inspect that it is complete. Look for a "``No more variables left in this MIB View (It is past the end of the MIB tree)``" message at the end of the file. Transfer the file to Hyperview support by uploading it to the applicable support ticket.
 
 Utilities like scp, sftp or `winscp <https://winscp.net/>`_ can be used to transfer files around if there is a need.
@@ -130,7 +126,6 @@ If these options are not possible, then contact Hyperview Support.
 ====================================================
 Downloading the Linux Data Collector via Artifactory
 ====================================================
-
 `Artifactory <https://jfrog.com/artifactory/>`_ is an artifact repository that some organizations use to centralize the management of their software supply chain. If you have a requirement to use this solution for your Linux Data Collector then you will have to customize the **docker-compose.yaml** file that ships with the Linux Data Collector installation package.
 
 Once the **docker-compose.yaml** file is configured to your satisfaction then follow the :ref:`standard installation instructions <Setup-data-collectors>`.
@@ -144,7 +139,6 @@ Hyperview only tests and supports the default configuration that ships with the 
 ============================
 Docker daemon log management
 ============================
-
 By default, the Docker software does not perform log rotation for the "local/JSON" logging driver. For a standard installation of the Linux Data Collector on a standalone machine, it is easy to miss setting that up and risk potential disk space exhaustion. This is especially relevant if you are running the Data Collector software in **trace mode** while troubleshooting an issue.
 
 `Docker documentation <https://docs.docker.com/config/containers/logging/>`_ recommends configuring log rotation for the local/JSON logging driver by editing **/etc/docker/daemon.json**. A configuration example is below.
@@ -158,3 +152,30 @@ By default, the Docker software does not perform log rotation for the "local/JSO
         "max-file": "3"
       }
     }
+
+==============================
+HTTP/HTTPS Proxy configuration
+==============================
+
+Docker daemon
+-------------
+Docker publishes `detailed instructions <https://docs.docker.com/engine/daemon/proxy/>`_ on how to configure the docker daemon to use a proxy server.
+
+User environment
+----------------
+Ensure that the user environment is configured. This is by ensuring the following environment variables have the correct values.
+
+- HTTP_PROXY
+- http_proxy
+- HTTPS_PROXY
+- https_proxy
+- NO_PROXY
+- no_proxy
+
+Proxy software
+--------------
+The proxy software needs to allow access to these host names/URLs.
+
+1. Your Hyperview instance address. This is created when you activate your subscription.
+2. Data collector installer download URL. The data collector installer is hosted on Microsoft Azure Blob Storage. You can obtain the URL from your instance by navigating to *Discoveries -> Data Collectors -> Download Data Collector*.
+3. Data collector docker registry address. The data collector docker images are hosted in a private Microsoft Azure container registry. You can obtain the registry address from the docker-compose file bundled with the installer. Please note that each registry has two addresses, an API/REST address and a data address. Usually allowing *<registry name>.azurecr.io*, and *<proxy config wildcard>.data.azurecr.io* is adequate.
