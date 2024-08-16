@@ -174,8 +174,8 @@ Ensure that the user environment is configured. This is by ensuring the followin
 
 Proxy software
 --------------
-The proxy software needs to allow access to three services.
+The proxy software needs to allow access to these host names/URLs.
 
-1. Your Hyperview instance hostname/URL. This URL is created when you activate your subscription.
-2. Data collector installer. The data collector installer is hosted on Microsoft Azure Blob Storage. You can obtain the address from your instance by navigating to *Discoveries -> Data Collectors -> Download Data Collector*.
-3. Data collector docker containers. These are hosted in a private Microsoft Azure container registry. You can obtain the registry address from the docker-compose file bundled with the installer. Please note that each registry has two addresses, an API/REST address and a data address. Usually allowing the API/REST endpoint address,<registry name>.azurecr.io, and <proxy config wildcard>.data.azurecr.io is adequate.
+1. Your Hyperview instance address. This is created when you activate your subscription.
+2. Data collector installer download URL. The data collector installer is hosted on Microsoft Azure Blob Storage. You can obtain the URL from your instance by navigating to *Discoveries -> Data Collectors -> Download Data Collector*.
+3. Data collector docker registry address. The data collector docker images are hosted in a private Microsoft Azure container registry. You can obtain the registry address from the docker-compose file bundled with the installer. Please note that each registry has two addresses, an API/REST address and a data address. Usually allowing *<registry name>.azurecr.io*, and *<proxy config wildcard>.data.azurecr.io* is adequate.
