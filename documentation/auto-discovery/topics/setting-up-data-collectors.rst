@@ -187,6 +187,9 @@ Please ensure the Data Collector can reach the targeted assets on the applicable
    * - BACnet IP
      - 47808
      - Not required
+   * - ICMP Ping
+     - N/A
+     - Not required
    * - IPMI
      - 623
      - Username & Password
