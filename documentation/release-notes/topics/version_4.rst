@@ -17,12 +17,12 @@ Enhanced Feature: Alarm event management
 ========================================
 The alarm grid has been improved to show the alarm event category.
 
-===========================================
-Enhanced Feature: Alarm event notifications
-===========================================
-Alarm event categories have been added as a criteria for a alarm events. A Hyperview administrator is now able to select a specific alarm event category or all catagories when defining a policy.
+===================================================
+Enhanced Feature: Alarm event notification policies
+===================================================
+Alarm event categories have been added as a criteria for alarm events. A Hyperview administrator is now able to select a specific alarm event category or all categories when defining a policy.
 
-Alarm even category options are:
+Alarm event category options are:
 
 - All Categories
 - AssetTracker Status
@@ -45,7 +45,12 @@ A Mute action can be cancelled from the **Actions -> Cancel Mute Notifications**
 ================================================================
 Enhanced Feature: Bulk actions -> Mute/Cancel Mute Notifications
 ================================================================
-Mute and Cancel Mute Notifications can also be performed as a bulk action on a list of assets. The action is available from Advanced Search, Information -> Assets and the Assets By Type Bulk Actions menu.
+Mute and Cancel Mute Notifications can also be performed as a bulk action on a list of assets. The bulk action is available from:
+
+- Advanced Search
+- Information -> Assets
+- Business Entity -> Associations -> Assets
+- Assets By Type
 
 ===================================
 Enhanced Feature: Dashboard widgets
@@ -56,9 +61,9 @@ A widget was added to display asset documents and links.
 Other notable changes and improvements
 ======================================
 - The asset Actions menu has been enhanced to group related actions.
-- Server assets types can bow be changed into Storage types and ViceVersa.
+- Server asset types can now be changed into Storage types and ViceVersa.
 - Various minor improvements to the Carbon Footprint report have been done.
-- Enhanced that Add New page of Assets, Connections and Circuits to detect unsaved changes and warn the user if they try to navigate to another page before saving.
+- Enhanced the Add New page of Assets, Connections and Circuits to detect unsaved changes and warn the user if they try to navigate to another page before saving.
 - Enhanced the Rack asset type to have Lifecycle information.
 - String Type custom properties will be made clickable if the user enters a valid URL.
 
