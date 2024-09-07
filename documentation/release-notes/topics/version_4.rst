@@ -70,7 +70,6 @@ Other notable changes and improvements
 =================
 Notable bug fixes
 =================
-- **AS-14401** Fixed a bug that caused Circuit custom properties not appear in alphabetical order when added to a data grid.
 - **AS-15377** Fixed a bug that caused the Business Entity field to disappear when resizing the Add New page between desktop and mobile resolution.
 - **AS-15770** Fixed a bug that under certain circumstances caused the Business Entity association of an asset to be deleted if the Sensor Monitoring Profile is changed.
 - **AS-14681** Fixed a bug that caused the user to be redirected to a 404 page when double clicking on a tile in 3D view.
