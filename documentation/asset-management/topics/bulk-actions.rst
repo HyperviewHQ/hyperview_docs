@@ -60,6 +60,14 @@ Availability of bulk actions depends on two factors: your :ref:`user role<User-a
      - Turns off asset monitoring for the selected assets
      - Power User
      - Infrastructure Management
+   * - *Mute Notifications*
+     - Disables sending notifications for a specified period
+     - Power User
+     - Infrastructure Management
+   * - *Cancel Mute Notifications*
+     - Enables Notifications
+     - Power User
+     - Infrastructure Management
    * - *Start Watching*
      - Starts watching the selected assets for the current user
      - Read Only
@@ -79,7 +87,7 @@ Availability of bulk actions depends on two factors: your :ref:`user role<User-a
    * - *Update Business Entity*
      - Updates or sets the Business Entity associated with the asset
      - Power User
-     - Infrastructure Management 
+     - Infrastructure Management
    * - *Update Custom Property*
      - Updates a specific custom property for the selected assets
      - Power User

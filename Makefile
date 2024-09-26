@@ -32,7 +32,7 @@ docker_build:
 	docker build --pull -t hvdocs:latest .
 
 docker_stop:
-	docker container stop hvdocs && docker container rm hvdocs
+	docker container stop hvdocs || true && docker container rm hvdocs || true
 
 docker_start:
 	docker run --name hvdocs -d -p 127.0.0.1:80:8080 hvdocs:latest

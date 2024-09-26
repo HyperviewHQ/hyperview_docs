@@ -2,6 +2,78 @@
 Version 4
 #########
 
+**********************************
+Hyperview 4.6 (September 26, 2024)
+**********************************
+This section covers significant changes and bug fixes in Hyperview 4.6.x since version 4.5.x
+
+.. important::
+   1. This release has changes and improvements to the Data Collector software. We strongly recommend updating your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
+   2. Support for the *Windows* version of the Data Collector will end on *January 31, 2025*. Customers are encouraged to switch to the Linux version before then. Detailed :ref:`installation instructions <Setting-up-data-collectors-doc>` are in the product documentation.
+   3. Microsoft has `announced <https://devblogs.microsoft.com/microsoft365dev/retirement-of-office-365-connectors-within-microsoft-teams/>`_ the sudden and quick retirement of the Webhook interface within Microsoft Teams. This impacts the Notifications Channels functionality. We are evaluating options and will be addressing this in an upcoming release.
+
+========================================
+Enhanced Feature: Alarm event management
+========================================
+The alarm grid has been improved to show the alarm event category.
+
+===================================================
+Enhanced Feature: Alarm event notification policies
+===================================================
+Alarm event categories have been added as a criteria for alarm events. A Hyperview administrator is now able to select a specific alarm event category or all categories when defining a policy.
+
+Alarm event category options are:
+
+- All Categories
+- AssetTracker Status
+- Data Collector Status
+- Firmware Status
+- Host Unreachable
+- Sensor Threshold Check
+- SNMP Trap
+- Unknown Trap
+
+Existing notification policies will have the "All Categories" option selected by default. This can be changed by editing the policy.
+
+=======================================================
+Enhanced Feature: Asset alarm event notification muting
+=======================================================
+Assets undergoing maintenance or causing excessive notifications can now be muted for a specific period of time. The functionality is available under the **Actions -> Mute Notifications** menu.
+
+A Mute action can be cancelled from the **Actions -> Cancel Mute Notifications** menu.
+
+================================================================
+Enhanced Feature: Bulk actions -> Mute/Cancel Mute Notifications
+================================================================
+Mute and Cancel Mute Notifications can also be performed as a bulk action on a list of assets. The bulk action is available from:
+
+- Advanced Search
+- Information -> Assets
+- Business Entity -> Associations -> Assets
+- Assets By Type
+
+===================================
+Enhanced Feature: Dashboard widgets
+===================================
+A widget was added to display asset documents and links.
+
+======================================
+Other notable changes and improvements
+======================================
+- The asset Actions menu has been enhanced to group related actions.
+- Server asset types can now be changed into Storage types and ViceVersa.
+- Various minor improvements to the Carbon Footprint report have been done.
+- Enhanced the Add New page of Assets, Connections and Circuits to detect unsaved changes and warn the user if they try to navigate to another page before saving.
+- Enhanced the Rack asset type to have Lifecycle information.
+- String Type custom properties will be made clickable if the user enters a valid URL.
+
+=================
+Notable bug fixes
+=================
+- **AS-15377** Fixed a bug that caused the Business Entity field to disappear when resizing the Add New page between desktop and mobile resolution.
+- **AS-15770** Fixed a bug that under certain circumstances caused the Business Entity association of an asset to be deleted if the Sensor Monitoring Profile is changed.
+- **AS-14681** Fixed a bug that caused the user to be redirected to a 404 page when double clicking on a tile in 3D view.
+
 *****************************
 Hyperview 4.5 (July 23, 2024)
 *****************************
