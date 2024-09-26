@@ -2,9 +2,9 @@
 Version 4
 #########
 
-*******************
-Hyperview 4.6 (TBD)
-*******************
+**********************************
+Hyperview 4.6 (September 26, 2024)
+**********************************
 This section covers significant changes and bug fixes in Hyperview 4.6.x since version 4.5.x
 
 .. important::
