@@ -1,6 +1,8 @@
+---
+sd_hide_title: true
+---
 
-:sd_hide_title:
-
+```{eval-rst}
 .. div::
    :style: padding: 0 0.5rem 0.6rem 0; background-color: #201e30; background-image: radial-gradient(circle at center center, #201e30 15%,#6ca6ed 400%); clip-path: polygon(0px 0px, 100% 0%, 100% 100%, 0% calc(100% - 1.5rem)); -webkit-clip-path: polygon(0px 0px, 100% 0%, 100% 100%, 0% calc(100% - 1.5rem));
 
@@ -12,15 +14,17 @@
       .. grid-item::
 
          .. image:: ../_static/dc-illustrate.png
-			:width: 200
-			:alt: DC Illustration
+                        :width: 200
+                        :alt: DC Illustration
 
       .. grid-item::
-		 :class: sd-text-white sd-fs-2
+                 :class: sd-text-white sd-fs-2
 
-		 Hyperview Documentation
+                 Hyperview Documentation
 
+```
 
+```{eval-rst}
 .. grid:: 2
    :gutter: 2 3 3 3
    :margin: 4 4 1 2
@@ -61,9 +65,9 @@
       Manage the firmware of your connected assets.
 
    .. grid-item-card:: :fas:`fa-solid fa-power-off` Outlet Control
-	  :link: outlet-control/index.html
+          :link: outlet-control/index.html
 
-	  Control smart rack PDU outlets remotely.
+          Control smart rack PDU outlets remotely.
 
    .. grid-item-card:: :fas:`fa-solid fa-lock` Rack Security
       :link: rack-security/index.html
@@ -104,23 +108,25 @@
       :link: redoc-static.html
 
       Explore the Hyperview API.
+```
 
-.. toctree::
-   :maxdepth: 1
-   :hidden:
+```{toctree}
+:hidden: true
+:maxdepth: 1
 
-   quickstart/index
-   asset-management/index
-   auto-discovery/index
-   catalog-management/index
-   document-management/index
-   work-notes/index
-   firmware-management/index
-   outlet-control/index
-   rack-security/index
-   assettracker/index
-   user-accounts/index
-   settings/index
-   using-hyperview/index
-   release-notes/index
-   api-changelog/index
+quickstart/index
+asset-management/index
+auto-discovery/index
+catalog-management/index
+document-management/index
+work-notes/index
+firmware-management/index
+outlet-control/index
+rack-security/index
+assettracker/index
+user-accounts/index
+settings/index
+using-hyperview/index
+release-notes/index
+api-changelog/index
+```
