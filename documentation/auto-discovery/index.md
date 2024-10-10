@@ -1,9 +1,6 @@
-.. include:: /auto-discovery/media.rst
-.. _Discoveries-doc:
+(discoveries-doc)=
 
-**************
-Auto Discovery
-**************
+# Auto Discovery
 
 Hyperview’s agentless auto-discovery detects and monitors devices across your IT infrastructure. This includes servers, network devices, environmental monitors, PDUs, power meters, air handling systems, and any other assets that are connected to your network.
 
@@ -11,21 +8,26 @@ The term *discovery* refers to a single auto-discovery configuration that will s
 
 Upon running the discovery, the Data Collector software will automatically find and organize devices that are connected to the specified IP addresses. Moreover, the application will continuously review and optimize the data to create up-to-date virtual representations of the assets ("digital twins"), complete with device specifications and visual renderings based on the Hyperview Catalog.
 
-.. note:: You must set up Data Collectors before you can discover assets. See :ref:`Setup-data-collectors`. Only Administrators have access to discovery features.
+:::{note}
+You must set up Data Collectors before you can discover assets. See {ref}`Setup-data-collectors`. Only Administrators have access to discovery features.
+:::
 
-|static|
+```{image} /auto-discovery/media/static.png
+:class: border-black
+```
 
-.. toctree::
-   :maxdepth: 2
+```{toctree}
+:maxdepth: 2
 
-   topics/protocols
-   topics/collected-data
-   topics/setting-up-data-collectors
-   topics/adding-or-deleting-discoveries
-   topics/configuring-discoveries
-   topics/running-discoveries
-   topics/reviewing-discovery-reports
-   topics/maintaining-data-collectors
-   topics/best-practices
-   topics/advanced-discovery-topics
-   topics/troubleshooting-tools
+topics/protocols
+topics/collected-data
+topics/setting-up-data-collectors
+topics/adding-or-deleting-discoveries
+topics/configuring-discoveries
+topics/running-discoveries
+topics/reviewing-discovery-reports
+topics/maintaining-data-collectors
+topics/best-practices
+topics/advanced-discovery-topics
+topics/troubleshooting-tools
+```
