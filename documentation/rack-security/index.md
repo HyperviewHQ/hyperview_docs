@@ -16,7 +16,7 @@ Rack Security currently supports Panduit SmartZone G5 rack PDUs with Rack Access
 
 ## Linking rack door sensors
 
-With Rack Security, you do not need to manually link door sensors — they will be automatically linked in Hyperview when you add the connected rack PDU to the rack. To do so:
+With Rack Security, you do not need to manually link door sensors, they will be automatically linked in Hyperview when you add the connected rack PDU to the rack. To do so:
 
 1. Discover the rack PDU.
 2. Drag the rack PDU under the target rack in the Asset Hierarchy. The location of the sensor, i.e. Front or Rear is inferred from the rack PDU configuration.
