@@ -12,12 +12,6 @@ Usage examples include, but aren't limited to:
 - Audit assets to address placement collisions.
 - Scan asset tags using a barcode scanner to quickly populate relevant fields.
 
-```{image} media/healthy.png
-:alt: AssetTrack page
-:class: border-black
-:width: 1919px
-```
-
 :::{note}
 - Hyperview AssetTracker is licensed per rack
 - AssetTracker Hardware is procured separately
