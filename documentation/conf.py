@@ -14,9 +14,9 @@ show_version = "false"
 show_breadcrumb_rel_links = "false"
 
 # The short X.Y version
-#version = '3.15'
+# version = '3.15'
 # The full version, including alpha/beta/rc tags
-#release = '3.15'
+# release = '3.15'
 
 # -- General configuration ---------------------------------------------------
 
@@ -25,12 +25,16 @@ show_breadcrumb_rel_links = "false"
 # needs_sphinx = '1.0'
 
 # Add any Sphinx extension module names here, as strings.
-
 extensions = [
     'sphinx_design',
     'sphinxcontrib.gtagjs',
     'myst_parser',
     'sphinx_copybutton',
+]
+
+# Enable myst extensions
+myst_enable_extensions = [
+    "colon_fence",
 ]
 
 # The suffix(es) of source filenames.
