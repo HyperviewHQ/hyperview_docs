@@ -2,6 +2,8 @@
 sd_hide_title: true
 ---
 
+(index-doc)=
+
 ```{eval-rst}
 .. div::
    :style: padding: 0 0.5rem 0.6rem 0; background-color: #201e30; background-image: radial-gradient(circle at center center, #201e30 15%,#6ca6ed 400%); clip-path: polygon(0px 0px, 100% 0%, 100% 100%, 0% calc(100% - 1.5rem)); -webkit-clip-path: polygon(0px 0px, 100% 0%, 100% 100%, 0% calc(100% - 1.5rem));

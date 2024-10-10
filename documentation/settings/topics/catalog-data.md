@@ -1,9 +1,7 @@
-.. include:: /settings/media.rst
-.. _Catalog-data-settings-doc:
+(catalog-data-settings-doc)=
 
-************
-Catalog Data
-************
+# Catalog Data
+
 Administrators can automatically send feedback requests to Hyperview if previously unknown model information is discovered or manually added.
 
 This data is anonymized and aggregated by Hyperview. It will be added to the global catalog and shared with all customers once reviewed, validated, and accepted.
@@ -13,4 +11,6 @@ This data is anonymized and aggregated by Hyperview. It will be added to the glo
 
 A success message will appear.
 
-|catalog-data|
+```{image} /settings/media/catalog-data.png
+:class: border-black
+```

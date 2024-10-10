@@ -1,17 +1,12 @@
-.. include:: /settings/media.rst
-.. _modbus:
+(modbus)=
 
-*******************************
-Managing Modbus TCP definitions
-*******************************
+# Managing Modbus TCP definitions
 
 Modbus TCP is a communication protocol typically used by facility or building level assets. Hyperview allows the creation of Modbus TCP definitions to handle the monitoring of such equipment separate from auto-discoveries.
 
 A Modbus TCP definition can be assigned to any number of assets to enable monitoring on that asset if they share the same object mapping, but only one definition can be applied to an individual asset at a time.
 
-==============================
-Adding a Modbus TCP definition
-==============================
+## Adding a Modbus TCP definition
 
 1. Go to *Settings → Modbus TCP Definitions*.
 2. Click *Add*. Alternatively, if you have no Modbus TCP definitions, click *Add new Modbus TCP definition.*
@@ -19,12 +14,15 @@ Adding a Modbus TCP definition
 
 A success message will appear, and the Overview page of the new Modbus TCP definition will be displayed. Proceed to add sensor definitions.
 
-.. tip:: Refer to the "Adding a single asset" section in :ref:`assets` for steps to manually add assets with a Modbus TCP monitoring profile.
+:::{tip}
+Refer to the "Adding a single asset" section in {ref}`assets` for steps to manually add assets with a Modbus TCP monitoring profile.
+:::
 
-|modbus_1|
+```{image} /settings/media/modbus_1.png
+:class: border-black
+```
 
-Adding a numeric sensor definition
-----------------------------------
+### Adding a numeric sensor definition
 
 1. While editing or adding the Modbus TCP definition, click the *Numeric Sensors* tab.
 2. Click *Add*. Alternatively, if there are no existing sensor definitions, click *Add Numeric Sensor.*
@@ -33,39 +31,37 @@ Adding a numeric sensor definition
 
 A success message will appear, and the numeric sensor definition will be listed in the grid. Repeat the steps to add additional sensor definitions as appropriate.
 
-Adding a non-numeric sensor definition
---------------------------------------
+### Adding a non-numeric sensor definition
 
 1. While editing or adding the Modbus TCP definition, click the *Non-numeric Sensors* tab.
 2. Click *Add*. Alternatively, if there are no existing sensor definitions, click *Add Non-numeric Sensor.*
 3. Provide values for Object Instance, Type, Sensor Type, Sensor Name. Additionally, you can modify Value mappings (for all types) or add Value mappings (for non-binary types).
 4. Click *Save*.
 
-|modbus_2|
+```{image} /settings/media/modbus_2.png
+:class: border-black
+```
 
 A success message will appear, and the non-numeric sensor definition will be listed in the grid. Repeat the steps to add additional sensor definitions as appropriate.
 
-================================
-Updating a Modbus TCP definition
-================================
+## Updating a Modbus TCP definition
 
 1. Go to *Settings → Modbus TCP Definitions → Edit.*
 2. Update values from the *Overview* or *Numeric Sensors* tab as required, and save your changes.
 
 A success message will appear for each change, and the current page will reload to reflect the change.
 
-Updating or deleting a sensor definition
-----------------------------------------
+### Updating or deleting a sensor definition
+
 While on the Numeric Sensors tab or the Non-numeric Sensors tab for a Modbus TCP definition:
 
-* Click *Edit* to update values for an existing sensor definition. Click *Save* to save the updated sensor definition.
-* Click *Delete → Delete* to delete an existing sensor definition.
+- Click *Edit* to update values for an existing sensor definition. Click *Save* to save the updated sensor definition.
+- Click *Delete → Delete* to delete an existing sensor definition.
 
 A success message will appear in each case, and the current page will reload to reflect the change.
 
-================================
-Deleting a Modbus TCP definition
-================================
+## Deleting a Modbus TCP definition
+
 You cannot delete a Modbus TCP definition that has associated assets. After you have updated associated assets (from each asset's *Information → Monitoring* page):
 
 1. Go to *Settings → Modbus TCP Definitions*.
