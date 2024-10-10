@@ -68,12 +68,12 @@ Use your favorite text or code editor. For [VSCode](https://code.visualstudio.co
 
 * Install Visual Studio Code Extension: EditorConfig for VS Code
 
-* Install Visual Studio Code Extension: SpellChecker
+* Install Visual Studio Code Extension: Code Spell Checker
 
-* reStructuredText [reference](http://www.sphinx-doc.org/en/stable/rest.html)
+* Install Visual Studio Code Extension: MyST-Markdown
 
 ## Resources ##
 
-* [How to generate beautiful technical documentation](http://tjelvarolsson.com/blog/how-to-generate-beautiful-technical-documentation/)
-* [Sublime and Sphinx guide](https://sublime-and-sphinx-guide.readthedocs.io/en/latest/index.html)
+* [MyST](https://mystmd.org/)
+* [MyST Parser](https://myst-parser.readthedocs.io/en/latest/index.html)
 * [Sphinx Project](https://www.sphinx-doc.org/)
