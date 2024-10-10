@@ -68,9 +68,9 @@ Use your favorite text or code editor. For [VSCode](https://code.visualstudio.co
 
 * Install Visual Studio Code Extension: EditorConfig for VS Code
 
-* Install Visual Studio Code Extension: SpellChecker
+* Install Visual Studio Code Extension: Code Spell Checker
 
-* reStructuredText [reference](http://www.sphinx-doc.org/en/stable/rest.html)
+* Install Visual Studio Code Extension: MyST-Markdown
 
 ## Resources ##
 
