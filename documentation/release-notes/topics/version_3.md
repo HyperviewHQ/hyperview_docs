@@ -580,7 +580,7 @@ Multi-level heat maps are now available as a layer in 3D layouts for racks that 
 ### API changes
 
 :::{tip}
-As of version 3.6 API changes are now in the [API Changelog](../../api-changelog/index.md) section of the documentation.
+As of version 3.6 API changes are now in the [API Changelog](#api-changelog-doc) section of the documentation.
 :::
 
 ### Notable bug fixes
