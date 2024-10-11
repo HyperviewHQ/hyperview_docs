@@ -8,7 +8,9 @@ This is the Hyperview documentation repository.
 
 The following steps assume that you are using a package manager such as [scoop](https://scoop.sh/), [apt](https://www.debian.org/), [dnf](https://getfedora.org/) or [brew](https://brew.sh/) installed.
 
-* Install Python 3, NodeJS-LTS and Make using your favorite package manager. For example on Windows run the following commands.
+* Install Python 3, NodeJS-LTS and Make using your favorite package manager.
+
+For example, on Windows run the following commands:
 
 ```console
 scoop install python
@@ -25,6 +27,7 @@ python3 -m venv .
 * Activate virtual environment
 
 ```bash
+# Linux, WSL, MacOS, Git-bash
 source bin/activate
 ```
 
