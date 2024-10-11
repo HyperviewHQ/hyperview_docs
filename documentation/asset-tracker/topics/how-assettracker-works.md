@@ -2,7 +2,7 @@
 
 # How AssetTracker works
 
-AssetTracker builds on Hyperview's existing architecture by adding specialized hardware and software to achieve automated Rack U-level tracking across one or more data centers.
+AssetTracker builds on Hyperview's capabilities by adding specialized hardware and software to achieve automated Rack U-level tracking across one or more data centers.
 
 ## Terminology
 
@@ -20,6 +20,12 @@ The Data Collector's AssetTracker component consists of two components:
 1. MQTT Broker listening on port 1883/TCP. This component handles incoming communication from the asset tracking hardware.
 2. MQTT Message Service. This component handles the communication with the Hyperview API.
 
+These components are configured during the installation process. The installation process creates a random password to access the MQTT broker. You can reveal this password by running the `show_mqtt_broker_credentials.sh` script from the `/opt/datacollector/bin/` directory. Please take care to keep this password private.
+
+:::{tip}
+Always ensure that you are running the latest version of the data collector software.
+:::
+
 ## Hardware
 
 Master modules are powered by an AssetTracker gateway. Gateways, _depending on the model_, are powered by a POE power source or an AC power source. Gateways are configured to communicate with a dedicated Data Collector which in turn communicates with Hyperview.
@@ -28,7 +34,7 @@ Master Modules are 6 RUs long and can be expanded using extension modules. Each 
 
 The serial number is associated with a and the address is used when daisy chaining multiple modules to the same Gateway, Each daisy chain must have _unique_ master module addresses. Please note that not all gateway models allow for daisy chaining.
 
-```{image} /asset-tracker/media/AT-diagram1.png
+```{image} /asset-tracker/media/assettracker_diagram1.png
 :alt: AssetTracker deployment diagram 1
 :class: border-black
 ```
@@ -41,8 +47,8 @@ Users can specify Master Module IDs (for racks) and Asset Tag IDs (for racked de
 
 Detected AssetTracker Master Modules appear on the AssetTracker page (*Assets → AssetTracker*). Tagged assets can be reviewed from the parent rack's Asset Audit page (rack → *Information → Asset Audit*).
 
-```{image} /asset-tracker/media/AT-diagram2.png
-:alt: AssetTrack deployment diagram 2
+```{image} /asset-tracker/media/assettracker_diagram3.png
+:alt: AssetTrack deployment diagram 3
 :class: border-black
 ```
 
