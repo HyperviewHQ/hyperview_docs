@@ -7,7 +7,7 @@ AssetTracker builds on Hyperview's capabilities by adding specialized hardware a
 ## Terminology
 
 - **Gateway**, the is the devices that handles communication between the hardware and the data collector.
-- **Hub**, this is a connection hub for the various components and the gateway.
+- **Expansion Hub**, this is a connection hub for the various components and the gateway.
 - **Master Module**, this is the main module in a rack assembly
 - **Extension Module**, this is an extension connected to the master module or another extension module.
 - **Asset Tag**, this is the magnetic RFID that connects the asset to the AssetTracker strip.
