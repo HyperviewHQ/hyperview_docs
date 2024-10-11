@@ -24,8 +24,14 @@ python3 -m venv .
 
 * Activate virtual environment
 
-```console
+```bash
 source bin/activate
+```
+
+```powershell
+.\bin\Activate.ps1
+# OR
+.\Scripts\activate.ps1
 ```
 
 * Install Sphinx and Redoc CLI; Using your favorite console app, run the following command from the **repository root**.

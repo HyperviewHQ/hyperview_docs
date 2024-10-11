@@ -19,6 +19,30 @@ Please [contact](https://www.hyperviewhq.com/contact/) the Hyperview Sales or Su
 
 ## Installation
 
+### Selecting a hardware Configuration
+
+AssetTracker can be installed in two different configurations:
+
+1. One-to-One: One Hub to one Gateway
+2. Serial Bus: Up to 5 Hubs to one Gateway
+3. One to many: up to 24 Hubs to one Gateway
+
+```{figure} /asset-tracker/media/assettracker_diagram2.png
+:alt: AssetTracker deployment diagram 3
+:class: border-black
+
+Example Serial Bus Deployment
+```
+
+For installing AssetTracker in multiple racks in a row, you may daisy-chain up to 5 (five) Hubs to a single gateway. The maximum length of the cables from the Gateway to the last Hub in the chain must not exceed _20 meters (65 feet)_.
+
+Each Master Module has an address between 1 (one) and 5 (five). Each Master module must have a unique address in the Serial Bus configuration. The address specification is printed on the Master Module tag.
+
+```{image} /asset-tracker/media/master_modules_1.png
+:alt: Master Modules image 1
+:class: border-black
+```
+
 ### Network requirements
 
 :::{important}
@@ -50,27 +74,6 @@ AssetTracker modules come in a 5U and 6U modular design that can be connected fo
 - Verify there is enough space for the modules and 3M adhesive.
 - Verify there is enough space to mount and remove equipment from the rack.
 
-### Selecting a Configuration
-
-AssetTracker can be installed in two different configurations:
-
-1. One-to-One: One Hub to one Gateway
-2. Serial Bus: Up to 5 Hubs to one Gateway
-
-```{image} /asset-tracker/media/assettracker_diagram2.png
-:alt: AssetTracker deployment diagram 3
-:class: border-black
-```
-
-For installing AssetTracker in multiple racks in a row, you may daisy-chain up to 5 (five) Hubs to a single gateway. The maximum length of the cables from the Gateway to the last Hub in the chain must not exceed _20 meters (65 feet)_.
-
-Each Master Module has an address between 1 (one) and 5 (five). Each Master module must have a unique address in the Serial Bus configuration. The address specification is printed on the Master Module tag.
-
-```{image} /asset-tracker/media/master_modules_1.png
-:alt: Master Modules image 1
-:class: border-black
-```
-
 ### Assembling Modules
 
 Identify the Master Module. The Master module has a SATA port above the top-most magnet position. The Extension Modules have male connectors on the top-end.
@@ -86,3 +89,7 @@ Lay the modules on a flat surface and snap the male connector Extension Module t
 :alt: Master Module and Extension
 :class: border-black
 ```
+
+## Configuring Modules
+
+Please reference the Configuration Tool User Manual to configure the gateways to communicate with a Hyperview Data Collector. The documentation is available through the Hyperview [help desk](https://system.hyperviewhq.com/helpdesk) upon request.
