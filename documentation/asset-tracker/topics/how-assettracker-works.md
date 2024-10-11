@@ -6,12 +6,12 @@ AssetTracker builds on Hyperview's existing architecture by adding specialized h
 
 ## Terminology
 
-- Gateway, the is the devices that handles communication between the hardware and the data collector.
-- Hub, this is a connection hub for the various components and the gateway.
-- Master Module, this is the main module in a rack assembly
-- Extension Module, this is an extension connected to the master module or another extension module.
-- Asset Tag, this is the magnetic RFID that connects the asset to the AssetTracker strip.
-- AssetTracker strip, this is the combination of a Master and extension modules installed in an equipment rack and connected to a Gateway.
+- **Gateway**, the is the devices that handles communication between the hardware and the data collector.
+- **Hub**, this is a connection hub for the various components and the gateway.
+- **Master Module**, this is the main module in a rack assembly
+- **Extension Module**, this is an extension connected to the master module or another extension module.
+- **Asset Tag**, this is the magnetic RFID that connects the asset to the AssetTracker strip.
+- **AssetTracker Strip**, this is the combination of a Master and extension modules installed in an equipment rack and connected to a Gateway.
 
 ## Software
 
@@ -22,11 +22,11 @@ The Data Collector's AssetTracker component consists of two components:
 
 ## Hardware
 
-Master modules are powered by an AssetTracker gateway. Gateways, **depending on the model**, are powered by a POE power source or an AC power source. Gateways are configured to communicate with a dedicated Data Collector which in turn communicates with Hyperview.
+Master modules are powered by an AssetTracker gateway. Gateways, _depending on the model_, are powered by a POE power source or an AC power source. Gateways are configured to communicate with a dedicated Data Collector which in turn communicates with Hyperview.
 
-Master Modules are 6 RUs long and can be expanded using extension modules. Each module has a unique **serial number/ID** and **address**. Extension modules come in a 5U and 6U modular design that can be connected together based on the rack size. Use a combination of the 5U and 6U modules to fit exactly, or close as possible to the rack height.
+Master Modules are 6 RUs long and can be expanded using extension modules. Each module has a unique _serial number/ID_ and _address_. Extension modules come in a 5U and 6U modular design that can be connected together based on the rack size. Use a combination of the 5U and 6U modules to fit exactly, or close as possible to the rack height.
 
-The serial number is associated with a and the address is used when daisy chaining multiple modules to the same Gateway, Each daisy chain must have **unique** master module addresses. Please note that not all gateway models allow for daisy chaining.
+The serial number is associated with a and the address is used when daisy chaining multiple modules to the same Gateway, Each daisy chain must have _unique_ master module addresses. Please note that not all gateway models allow for daisy chaining.
 
 ```{image} /asset-tracker/media/AT-diagram1.png
 :alt: AssetTracker deployment diagram 1
@@ -68,14 +68,14 @@ The module will appear on the AssetTracker page (*Assets → AssetTracker*) with
 
 ### Aligning RUs
 
-Depending on your set-up you may need to explicitly configure rack units. For example, your AssetTracker assembly (master module plus extension) could be smaller than the physical rack, or you might want the RU count to go up to 52U instead of 42U.
+Depending on your set-up you may need to explicitly configure rack units. For example, your AssetTracker Strip could be smaller than the physical rack, or you might want the RU count to go up to 52U instead of 42U.
 
 To align RUs, open the Properties page (rack → *Information → Properties*) and provide values as needed.
 
 - The **Expected Rack Units** value should match the RU length of the AssetTracker assembly.
 - The **Top of Rack Offset (RU)** value should match the number of RUs you want to offset the top of the rack by. This can be a positive or negative value depending on whether the top of the AssetTracker assembly is below or above the top of the physical asset.
 
-For instance, if the rack has 44 RUs but the AssetTracker assembly is only 42U, set Expected Rack Units to 42. If the AssetTracker assembly is installed from the top of the rack as suggested, leave Top of Rack Offset (RU) blank or set to 0. Alternatively, if the assembly is installed from the bottom of the rack, set Top of Rack Offset (RU) to 2.
+For instance, if the rack has 44 RUs but the AssetTracker Strip is only 42U, set Expected Rack Units to 42. If the AssetTracker Strip is installed from the top of the rack as suggested, leave Top of Rack Offset (RU) blank or set to 0. Alternatively, if the assembly is installed from the bottom of the rack, set Top of Rack Offset (RU) to 2.
 
 ## Adding and auditing asset tags
 
@@ -127,7 +127,6 @@ These kinds of placement conflicts are referred to as "collisions". Hyperview is
 ```{image} /asset-tracker/media/events.png
 :alt: AssetTracker events page
 :class: border-black
-:width: 1920px
 ```
 
 ### Possible warnings
