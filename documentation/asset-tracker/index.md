@@ -23,5 +23,4 @@ Usage examples include, but aren't limited to:
 topics/assettracker-hardware
 topics/how-assettracker-works
 topics/setup-and-configuration
-topics/moving-and-deleting-modules
 ```
