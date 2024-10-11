@@ -20,6 +20,6 @@ Usage examples include, but aren't limited to:
 ```{toctree}
 :maxdepth: 2
 
-topics/assettracker-hardware
 topics/how-assettracker-works
+topics/assettracker-hardware
 ```
