@@ -1,6 +1,5 @@
 SOURCEDIR = "./documentation"
 BUILDDIR = "./site/documentation/_build"
-REDOCCLI = "./node_modules/.bin/redocly"
 REDOCTARGET = "https://nightly.hyperviewhq.com/api/docs/manager/4.0/swagger.json"
 
 docker:
@@ -21,7 +20,7 @@ html:
 	python3 -msphinx -M html $(SOURCEDIR) $(BUILDDIR)
 
 redoc:
-	$(REDOCCLI) build-docs $(REDOCTARGET) -t redoc-template/hyperview.hbs
+	./node_modules/.bin/redocly build-docs $(REDOCTARGET) -t redoc-template/hyperview.hbs
 
 redoc_publish:
 	mv redoc-static.html site/documentation/_build/html
