@@ -32,6 +32,7 @@ source bin/activate
 ```
 
 ```powershell
+# Windows may differ based on the python version
 .\bin\Activate.ps1
 # OR
 .\Scripts\activate.ps1
