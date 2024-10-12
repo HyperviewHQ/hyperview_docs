@@ -106,13 +106,40 @@ Master Module and Extension Module ends
 
 ### Installing Modules
 
-Once the AssetTracker Strip is installed, it needs to be connected to a Expansion Hub. Connect the Master Module (SATA Port) to the Expansion Hub (V5 Port) with the RJ45 to SATA Cable. Take care to connect the Master module _first_.
+Once the AssetTracker Strip is assembled and installed in the selected position, it needs to be connected to a Expansion Hub.Connect the RJ45 to SATA cable to the Master Module (SATA Port) and then to the Expansion Hub (V5 Port) with the RJ45 to SATA Cable. Secure the Expansion hub to the side using the provided 3M adhesive tape or another appropriate means.
 
-```{figure} /asset-tracker/media/master_module_to_hub.png
-:alt: Master Module to Expansion Hub
+```{figure} /asset-tracker/media/master_module_to_hub_1.png
+:alt: Master Module to Expansion Hub example 1
 :class: border-black
 
-Master Module to Expansion Hub Example
+Master Module to Expansion Hub example 1
+```
+
+```{figure} /asset-tracker/media/master_module_to_hub_2.png
+:alt: Master Module to Expansion Hub example 2
+:class: border-black
+
+Master Module to Expansion Hub example 2
+```
+
+Connect the _RS485 In_ interface of the Expansion Hub to the _U Level_ port of the Gateway.
+
+```{figure} /asset-tracker/media/expansion_hub_to_gateway_1.png
+:alt: Expansion Hub to Gateway example 1
+:class: border-black
+
+Expansion Hub to Gateway example 1
+```
+
+```{figure} /asset-tracker/media/expansion_hub_to_gateway_2.png
+:alt: Expansion Hub to Gateway example 2
+:class: border-black
+
+Expansion Hub to Gateway example 2
+```
+
+```{tip}
+If you are installing a multiple Hubs to a single V5008MQ Gateway in a Serial Bus deployment, please use unique Master Module addresses and maintain the length of the assembly under 20 meters (65 feet).
 ```
 
 ## Configuring Modules

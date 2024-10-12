@@ -12,13 +12,13 @@ Usage examples include, but aren't limited to:
 - Audit assets to address placement collisions.
 - Scan asset tags using a barcode scanner to quickly populate relevant fields.
 
-:::{note}
+:::{important}
 - Hyperview AssetTracker is licensed per rack
 - AssetTracker Hardware is procured separately
 :::
 
 ```{toctree}
-:maxdepth: 2
+:maxdepth: 3
 
 topics/how-assettracker-works
 topics/assettracker-hardware
