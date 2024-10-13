@@ -10,17 +10,17 @@ The following steps assume that you are using a package manager such as [scoop](
 
 * Install Python 3, NodeJS-LTS and Make using your favorite package manager.
 
-For example, on Windows run the following commands:
+For example, on Microsoft Windows run the following commands:
 
-```console
+```powershell
 scoop install python
 scoop install nodejs-lts
 scoop install make
 ```
 
-* Initialize a virtual environment in the root of the repository
+* Initialize a virtual environment in the root of the repository. Note that bash (or git-bash on Microsoft Windows) is the recommended shell environment.
 
-```console
+```bash
 python3 -m venv .
 ```
 
@@ -31,16 +31,9 @@ python3 -m venv .
 source bin/activate
 ```
 
-```powershell
-# Windows may differ based on the python version
-.\bin\Activate.ps1
-# OR
-.\Scripts\activate.ps1
-```
-
 * Install Sphinx and Redoc CLI; Using your favorite console app, run the following command from the **repository root**.
 
-```console
+```bash
 make setup
 ```
 
@@ -48,13 +41,13 @@ make setup
 
 * To make the HTML version of the documentation run the following command.
 
-```console
+```bash
 make site
 ```
 
 * To browse the site on your machine, you need to have [Docker](https://docs.docker.com/get-docker/) installed. Then run the following commands.
 
-```console
+```bash
 # To build the local docker container
 make docker_build
 
