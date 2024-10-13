@@ -12,7 +12,7 @@ Hyperview's automated asset tracking system can be tested and certified on addit
 
 The supported hardware models are:
 
-1. The V5008MQ Smart Gateway (MQTT) running firmware version 3.x
+1. The V5008 AIoT Smart Gateway (MQTT) running firmware version 3.x
 2. The V6800 AIoT Gateway (MQTT) running firmware version 1.x
 
 Please [contact](https://www.hyperviewhq.com/contact/) the Hyperview Sales or Support teams for more information.
@@ -23,9 +23,9 @@ Please [contact](https://www.hyperviewhq.com/contact/) the Hyperview Sales or Su
 
 AssetTracker can be installed in two different configurations:
 
-1. One-to-One: One Expansion Hub to one Gateway (V5008MQ)
-2. Serial Bus: Up to 5 Expansion Hubs to one Gateway (V5008MQ)
-3. One to many: up to 24 Expansion Hubs to one Gateway (V6800)
+1. One-to-One: One Expansion Hub to one Gateway (V5008 AIoT)
+2. Serial Bus: Up to 5 Expansion Hubs to one Gateway (V5008 AIoT)
+3. One to many: up to 24 Expansion Hubs to one Gateway (V6800 AIoT)
 
 ```{figure} /asset-tracker/media/assettracker_diagram2.png
 :alt: AssetTracker deployment diagram 3
@@ -138,8 +138,47 @@ Expansion Hub to Gateway example 1
 Expansion Hub to Gateway example 2
 ```
 
+If applicable,connect the Gateway to a POE power source.
+
 ```{tip}
-If you are installing a multiple Hubs to a single V5008MQ Gateway in a Serial Bus deployment, please use unique Master Module addresses and maintain the length of the assembly under 20 meters (65 feet).
+If you are installing a multiple Hubs to a single V5008 AIoT Gateway in a Serial Bus deployment, please use unique Master Module addresses and maintain the length of the assembly under 20 meters (65 feet).
+```
+
+### Installing Asset Tags
+
+```{image} /asset-tracker/media/asset_tag_1.png
+:alt: Asset Tag
+:class: border-black
+```
+
+- Clean the surface of the asset from dust.
+- Remove the adhesive cover from the asset tag.
+- Attach the asset tag to the asset. Ensure the tag is firmly attached to the asset in a secure location. Avoid air inlets and outlets, asset serial number, identification tags, chassis LCD screens, etc.
+- Connect the magnet of the asset tag to the AssetTracker Strip. Ensure that it is associated to the top-most RU module position for the asset. For example, if you are tagging a 4U device placed between RU 20 and 23, then associate the tag to the RU23 position.
+
+```{figure} /asset-tracker/media/asset_tag_to_asset_tracker_1.png
+:alt: Asset Tag to AssetTracker Strip
+:class: border-black
+
+Asset Tag to AssetTracker Strip
+```
+
+### V5008 AIoT network diagram
+
+```{figure} /asset-tracker/media/v5008_network_diagram_1.png
+:alt: V5008 AIoT network diagram
+:class: border-black
+
+V5008 AIoT network diagram
+```
+
+### V6800 AIoT network diagram
+
+```{figure} /asset-tracker/media/v6800_network_diagram_1.png
+:alt: V6800 AIoT network diagram
+:class: border-black
+
+V6800 AIoT network diagram
 ```
 
 ## Configuring Modules
