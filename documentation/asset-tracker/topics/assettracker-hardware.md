@@ -24,19 +24,19 @@ Please [contact](https://www.hyperviewhq.com/contact/) the Hyperview Sales or Su
 AssetTracker can be installed in two different configurations:
 
 1. One-to-One: One Expansion Hub to one Gateway (V5008 AIoT)
-2. Serial Bus: Up to 5 Expansion Hubs to one Gateway (V5008 AIoT)
+2. Daisy Chain: Up to 5 Expansion Hubs to one Gateway (V5008 AIoT)
 3. One to many: up to 24 Expansion Hubs to one Gateway (V6800 AIoT)
 
 ```{figure} /asset-tracker/media/assettracker_diagram2.png
 :alt: AssetTracker deployment diagram 3
 :class: border-black
 
-Example Serial Bus Deployment
+Example Daisy Chain Deployment
 ```
 
-For installing AssetTracker in multiple racks in a row, you may daisy-chain up to 5 (five) Expansion Hubs to a single gateway. The maximum length of the cables from the Gateway to the last Expansion Hub in the chain must not exceed _20 meters (65 feet)_.
+For installing AssetTracker in multiple racks in a row, you may daisy-chain up to five Expansion Hubs to a single gateway. The maximum length of the cables from the Gateway to the last Expansion Hub in the chain must not exceed _20 meters (65 feet)_.
 
-Each Master Module has an address between 1 (one) and 5 (five). Each Master module must have a _unique_ address in the Serial Bus configuration. The address specification is printed on the Master Module tag.
+Each Master Module has an address between 1 (one) and 5 (five). Each Master Module must have a _unique_ address in the Daisy Chain configuration. The address specification is printed on the Master Module tag.
 
 ```{figure} /asset-tracker/media/master_modules_1.png
 :alt: Master Modules image 1
@@ -138,11 +138,19 @@ Expansion Hub to Gateway example 1
 Expansion Hub to Gateway example 2
 ```
 
-If applicable,connect the Gateway to a POE power source.
+If the Gateway a _V5008 AIoT_, Up to five total Hubs can be daisy chained together. Connect the _RS485 Out_ Port from the Hub connected to the Gateway to the _RS485 In_ Port of an additional Hub. Note the following:
 
-```{tip}
-If you are installing a multiple Hubs to a single V5008 AIoT Gateway in a Serial Bus deployment, please use unique Master Module addresses and maintain the length of the assembly under 20 meters (65 feet).
+- The maximum cable length from the Gateway to the last Hub in the chain must not exceed 20 meters (65 feet).
+- Master Module addresses must be unique.
+
+```{figure} /asset-tracker/media/expansion_hub_to_hub_1.png
+:alt: Expansion Hub to Expansion Hub
+:class: border-black
+
+Expansion Hub Expansion Hub to Expansion Hub
 ```
+
+If applicable, connect the Gateway to a POE power source.
 
 ### Installing Asset Tags
 
