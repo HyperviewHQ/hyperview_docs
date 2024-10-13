@@ -59,7 +59,7 @@ The Data Collector must initiate all communication between the Data Collector an
 ```
 
 :::{note}
-- See {ref}[SNMP-AES_192_256](#snmp-aes-192-256) for more information on AES192 and AES256 support.
+- See [SNMP-AES_192_256](#snmp-aes-192-256) for more information on AES192 and AES256 support.
 - The Windows version has limited SNMPv3 support. It does not support SNMPv3 SHA256, SHA384, and SHA512 for authentication and AES192 and AES256 for privacy.
 :::
 
