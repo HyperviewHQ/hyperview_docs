@@ -1,8 +1,6 @@
 # Hyperview Documentation
 
-## What is this repository for? ##
-
-This is the Hyperview documentation repository.
+Hyperview documentation is written in [MyST](https://mystmd.org/) a Markdown variant designed for technical documentation and scientific communication. The site generator is [Sphinx](https://www.sphinx-doc.org/).
 
 ## Quickstart ##
 
