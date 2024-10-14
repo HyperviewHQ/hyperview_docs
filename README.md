@@ -1,4 +1,4 @@
-# README #
+# Hyperview Documentation
 
 ## What is this repository for? ##
 
