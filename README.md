@@ -18,9 +18,9 @@ scoop install nodejs-lts
 scoop install make
 ```
 
-* Initialize a virtual environment in the root of the repository. 
+* Initialize a virtual environment in the root of the repository.
 
-> **_Note_** bash (or git-bash on Microsoft Windows) is the recommended shell environment.
+> **_NOTE:_** bash (git-bash on Microsoft Windows) is the recommended shell environment.
 
 ```bash
 python3 -m venv .
