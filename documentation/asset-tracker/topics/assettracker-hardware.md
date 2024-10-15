@@ -160,9 +160,9 @@ If applicable, connect the Gateway to a POE power source.
 ```
 
 - Clean the surface of the asset from dust.
-- Remove the adhesive cover from the asset tag.
-- Attach the asset tag to the asset. Ensure the tag is firmly attached to the asset in a secure location. Avoid air inlets and outlets, asset serial number, identification tags, chassis LCD screens, etc.
-- Connect the magnet of the asset tag to the AssetTracker Strip. Ensure that it is associated to the top-most RU module position for the asset. For example, if you are tagging a 4U device placed between RU 20 and 23, then associate the tag to the RU23 position.
+- Remove the adhesive cover from the Asset Tag.
+- Attach the Asset Tag to the asset. Ensure the tag is firmly attached to the asset in a secure location. Avoid air inlets and outlets, asset serial number, identification tags, chassis LCD screens, etc.
+- Connect the magnet of the Asset Tag to the AssetTracker Strip. Ensure that it is associated to the top-most RU module position for the asset. For example, if you are tagging a 4U device placed between RU 20 and 23, then associate the tag to the RU23 position.
 
 ```{figure} /asset-tracker/media/asset_tag_to_asset_tracker_1.png
 :alt: Asset Tag to AssetTracker Strip

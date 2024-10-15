@@ -47,7 +47,7 @@ Only the V5008 AIoT Gateway allows for daisy chaining.
 
 ## Tracking assets
 
-Asset Tags are connected to assets in the rack and magnetically connected to the AssetTracker Strip. Each asset tag has its unique ID. You can scan asset tags using a compatible barcode or QR code scanner to input AssetTracker ID values directly in Hyperview.
+Asset Tags are connected to assets in the rack and magnetically connected to the AssetTracker Strip. Each Asset Tag has its unique ID. You can scan Asset Tags using a compatible barcode or QR code scanner to input AssetTracker ID values directly in Hyperview.
 
 Users can specify Master Module IDs (for racks) and Asset Tag IDs (for racked devices) while creating or updating relevant assets.
 
@@ -71,7 +71,7 @@ Create or update a rack in Hyperview to correspond to the physical rack that wil
 > - You can provide the Master Module ID (the serial number of the physical Master Module) while creating the rack.
 > - If the rack already exists, you can update its properties (rack → *Information → Properties*) to include the Master Module ID.
 
-The module will appear on the AssetTracker page (*Assets → AssetTracker*) within a few minutes. Proceed to add asset tags.
+The module will appear on the AssetTracker page (*Assets → AssetTracker*) within a few minutes. Proceed to add Asset Tags.
 
 ```{image} /asset-tracker/media/properties.png
 :alt: AssetTracker properties page
@@ -89,14 +89,14 @@ To align RUs, open the Properties page (rack → *Information → Properties*) a
 
 For instance, if the rack has 44 RUs but the AssetTracker Strip is only 42U, set Expected Rack Units to 42. If the AssetTracker Strip is installed from the top of the rack as suggested, leave Top of Rack Offset (RU) blank or set to 0. Alternatively, if the assembly is installed from the bottom of the rack, set Top of Rack Offset (RU) to 2.
 
-## Adding and auditing asset tags
+## Adding and auditing Asset Tags
 
 1. Create or update an asset in Hyperview that corresponds to a device in the target rack.
 
-   - You can provide the AssetTracker ID (the serial number of the intended asset tag) while creating the asset. Note that the asset tag can be quickly scanned using a compatible barcode or QR code scanner to populate this value.
+   - You can provide the AssetTracker ID (the serial number of the intended Asset Tag) while creating the asset. Note that the Asset Tag can be quickly scanned using a compatible barcode or QR code scanner to populate this value.
    - If the asset already exists, you can update its properties (asset → *Information → Properties*) to include the AssetTracker ID, or use the Asset Audit page (asset → *Information → Asset Audit*) to update the AssetTracker ID value.
 
-2. Place the adhesive part of the asset tag onto the device. Ensure the tag is secure.
+2. Place the adhesive part of the Asset Tag onto the device. Ensure the tag is secure.
 
 3. Place the tag itself on the rack's AssetTracker module. You must place the tag on the topmost U-location occupied by the asset being tagged.
 
@@ -107,7 +107,7 @@ For instance, if the rack has 44 RUs but the AssetTracker Strip is only 42U, set
 :class: border-black
 ```
 
-Assuming there are no placement collisions or errors, the asset will be moved to the correct rack U in the Rack Elevation within a few minutes. It will also be shown on the Asset Audit page for the rack (rack → *Information → Asset Audit*). Proceed to add more asset tags for other racked devices. Please contact Hyperview Support if you need to attach Extension Modules.
+Assuming there are no placement collisions or errors, the asset will be moved to the correct rack U in the Rack Elevation within a few minutes. It will also be shown on the Asset Audit page for the rack (rack → *Information → Asset Audit*). Proceed to add more Asset Tags for other racked devices. Please contact Hyperview Support if you need to attach Extension Modules.
 
 :::{tip}
 You can use the Expected Rack Units and Top of Rack Offset (RU) fields on the rack's Properties page (*rack → Information → Properties*) to fine-tune your setup or accommodate additional assembly configurations and rack sizes, as needed. Please attach Master Modules and Extension Modules accordingly.
@@ -122,7 +122,7 @@ You can use the Expected Rack Units and Top of Rack Offset (RU) fields on the ra
 
 Repeat the steps for additional modules that you want to retire or remove as needed.
 
-## Searching asset tags and modules
+## Searching Asset Tags and modules
 
 To find existing AssetTracker tags and modules to move (or audit), use the search bar or [the Filters panel in the Advanced Search page](#Search-features).
 
@@ -130,7 +130,7 @@ To find existing AssetTracker tags and modules to move (or audit), use the searc
 
 Under certain circumstances AssetTracker will fail to move an asset into the intended rack U. This could be due to:
 
-- The asset tag is placed in the wrong slot on the AssetTracker module or the wrong module.
+- The Asset Tag is placed in the wrong slot on the AssetTracker module or the wrong module.
 - The model information for the incoming asset, the existing asset, or both is incorrect.
 - An untagged asset already exists in the target position.
 
@@ -144,7 +144,7 @@ These kinds of placement conflicts are referred to as "collisions". Hyperview is
 ### Possible warnings
 
 - **Unknown Module:** Issued for the All location when AssetTracker detects a module that is not associated with a rack.
-- **Unknown Tag:** Issued at the rack level when a detected asset tag is not associated with a Hyperview asset.
+- **Unknown Tag:** Issued at the rack level when a detected Asset Tag is not associated with a Hyperview asset.
 - **Collision:** Issued at the rack level when a detected tagged asset collides with another asset in the same position.
 - **Heartbeat Stopped:** Issued at the rack level when a module has not reported its status for more than 30 minutes.
 - **Module and Rack Size Mismatch:** Issued at the rack level when a module reports a size that does not match the rack it is associated with in Hyperview.
@@ -163,7 +163,7 @@ The following table describes placement outcomes for an AssetTracker-licensed da
 :header-rows: 1
 *  - Scenario
    - Outcome
-*  - Asset tag is accidentally or intentionally removed
+*  - Asset Tag is accidentally or intentionally removed
    - The asset is moved to the current rack's Unplaced grid
 *  - Tagged asset is moved within a tracked rack
    - The asset's RU is automatically updated in Hyperview
