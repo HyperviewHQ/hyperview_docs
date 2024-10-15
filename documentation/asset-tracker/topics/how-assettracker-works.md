@@ -189,7 +189,7 @@ AssetTracker has the following known limitations. We aim to address some of thes
 ## Tested barcode scanners
 
 :::{note}
-The following barcode scanners have been tested officially tested for AssetTracker. However, other scanners should work as well (provided they are properly configured; please refer to your scanner's documentation). The scanner must be connected to a device running Hyperview on a supported web browser to be able to input AssetTracker IDs.
+The following barcode scanners have been tested with AssetTracker. However, other scanners should work as well provided they are properly configured; please refer to your scanner's documentation. The scanner must be connected to a device running Hyperview on a supported web browser to be able to input AssetTracker IDs.
 :::
 
 - **NETUM NT-1228BL.** You must configure the device by scanning the Terminator barcode (3030052 CR).
