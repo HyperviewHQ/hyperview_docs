@@ -9,7 +9,7 @@ AssetTracker builds on Hyperview's capabilities by adding specialized hardware a
 - **Gateway**, the is the devices that handles communication between the hardware and the data collector.
 - **Expansion Hub**, this is a connection hub for the various components and the gateway.
 - **Master Module**, this is the main module in a rack assembly
-- **Extension Module**, this is an extension connected to the master module or another extension module.
+- **Extension Module**, this is an extension connected to the Master Module or another extension module.
 - **Asset Tag**, this is the magnetic RFID that connects the asset to the AssetTracker strip.
 - **AssetTracker Strip**, this is the combination of a Master and extension modules installed in an equipment rack and connected to a Gateway.
 
@@ -28,11 +28,11 @@ Always ensure that you are running the latest version of the data collector soft
 
 ## Hardware
 
-Master modules are powered by an AssetTracker gateway. Gateways, _depending on the model_, are powered by a POE power source or an AC power source. Gateways are configured to communicate with a dedicated Data Collector which in turn communicates with Hyperview.
+Master Modules are powered by an AssetTracker gateway. Gateways, _depending on the model_, are powered by a POE power source or an AC power source. Gateways are configured to communicate with a dedicated Data Collector which in turn communicates with Hyperview.
 
 Master Modules are 6 RUs long and can be expanded using extension modules. Each module has a unique _serial number/ID_ and _address_. Extension modules come in a 5U and 6U modular design that can be connected together based on the rack size. Use a combination of the 5U and 6U modules to fit exactly, or close as possible to the rack height.
 
-The serial number is associated with a and the address is used when daisy chaining multiple modules to the same Gateway, Each daisy chain must have _unique_ master module addresses. Please note that not all gateway models allow for daisy chaining.
+The serial number is associated with a and the address is used when daisy chaining multiple modules to the same Gateway, Each daisy chain must have _unique_ Master Module addresses. Please note that not all gateway models allow for daisy chaining.
 
 ```{image} /asset-tracker/media/assettracker_diagram1.png
 :alt: AssetTracker deployment diagram 1
@@ -62,7 +62,7 @@ You must [contact our support team](https://system.hyperviewhq.com/helpdesk) to 
 
 Create or update a rack in Hyperview to correspond to the physical rack that will be tracked.
 
-> - You can provide the Master Module ID (the serial number of the physical master module) while creating the rack.
+> - You can provide the Master Module ID (the serial number of the physical Master Module) while creating the rack.
 > - If the rack already exists, you can update its properties (rack → *Information → Properties*) to include the Master Module ID.
 
 The module will appear on the AssetTracker page (*Assets → AssetTracker*) within a few minutes. Proceed to add asset tags.
@@ -104,7 +104,7 @@ For instance, if the rack has 44 RUs but the AssetTracker Strip is only 42U, set
 Assuming there are no placement collisions or errors, the asset will be moved to the correct rack U in the Rack Elevation within a few minutes. It will also be shown on the Asset Audit page for the rack (rack → *Information → Asset Audit*). Proceed to add more asset tags for other racked devices. Please contact Hyperview Support if you need to attach extension modules.
 
 :::{tip}
-You can use the Expected Rack Units and Top of Rack Offset (RU) fields on the rack's Properties page (*rack → Information → Properties*) to fine-tune your setup or accommodate additional assembly configurations and rack sizes, as needed. Please attach master modules and extension modules accordingly.
+You can use the Expected Rack Units and Top of Rack Offset (RU) fields on the rack's Properties page (*rack → Information → Properties*) to fine-tune your setup or accommodate additional assembly configurations and rack sizes, as needed. Please attach Master Modules and extension modules accordingly.
 :::
 
 ## Deleting modules
