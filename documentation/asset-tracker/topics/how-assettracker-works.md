@@ -10,7 +10,7 @@ AssetTracker builds on Hyperview's capabilities by adding specialized hardware a
 - **Expansion Hub**, this is a connection hub for the various components and the gateway.
 - **Master Module**, this is the main module in a rack assembly
 - **Extension Module**, this is an extension connected to the Master Module or another Extension Module.
-- **Asset Tag**, this is the magnetic RFID that connects the asset to the AssetTracker strip.
+- **Asset Tag**, this is the magnetic RFID that connects the asset to the AssetTracker Strip.
 - **AssetTracker Strip**, this is the combination of a Master and Extension Modules installed in an equipment rack and connected to a Gateway.
 
 ## Software
@@ -41,7 +41,7 @@ The serial number is associated with a and the address is used when daisy chaini
 
 ## Tracking assets
 
-Asset Tags are connected to assets in the rack and magnetically connected to the AssetTracker strip. Each asset tag has its unique ID. You can scan asset tags using a compatible barcode or QR code scanner to input AssetTracker ID values directly in Hyperview.
+Asset Tags are connected to assets in the rack and magnetically connected to the AssetTracker Strip. Each asset tag has its unique ID. You can scan asset tags using a compatible barcode or QR code scanner to input AssetTracker ID values directly in Hyperview.
 
 Users can specify Master Module IDs (for racks) and Asset Tag IDs (for racked devices) while creating or updating relevant assets.
 
@@ -109,7 +109,7 @@ You can use the Expected Rack Units and Top of Rack Offset (RU) fields on the ra
 
 ## Deleting modules
 
-1. Detach the AssetTracker strip from the gateway. If it is part of a daisy chain, take care to reconnect things appropriately to maintain power and communication.
+1. Detach the AssetTracker Strip from the gateway. If it is part of a daisy chain, take care to reconnect things appropriately to maintain power and communication.
 2. Open the AssetTracker page (*Assets → AssetTracker*) and select the corresponding module.
 3. Click *Delete → Delete*.
 4. Clear the Master Module ID property from the applicable rack.
