@@ -75,7 +75,7 @@ In all these cases please:
 - Verify that there is not interference with power, network and other infrastructure.
 - Verify that the AssetTracker Strip is supported on a flat surface with no mechanical stress or pressure on it.
 
-Use the adhesive where possible and if needed use plastic zip ties for re-enforcement. Take care not to add pressure, puncture the casing or create mechanical stress on the assembled device.
+Use the adhesive where possible and if needed use plastic zip ties for reinforcement. Take care not to add pressure, puncture the casing or create mechanical stress on the assembled device.
 
 ```{figure} /asset-tracker/media/installation_example_1.png
 :alt: Master Module and SATA cable
