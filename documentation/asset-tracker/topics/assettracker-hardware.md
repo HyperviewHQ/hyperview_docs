@@ -106,7 +106,7 @@ Master Module and Extension Module ends
 
 ### Installing Modules
 
-Once the AssetTracker Strip is assembled and installed in the selected position, it needs to be connected to a Expansion Hub.Connect the RJ45 to SATA cable to the Master Module (SATA Port) and then to the Expansion Hub (V5 Port) with the RJ45 to SATA Cable. Secure the Expansion hub to the side using the provided 3M adhesive tape or another appropriate means.
+Once the AssetTracker Strip is assembled and installed in the selected position, it needs to be connected to a Expansion Hub. Connect the RJ45 to SATA cable to the Master Module (SATA Port) and then to the Expansion Hub (V5 Port) with the RJ45 to SATA Cable. Secure the Expansion Hub to the side using the provided 3M adhesive tape or another appropriate means.
 
 ```{figure} /asset-tracker/media/master_module_to_hub_1.png
 :alt: Master Module to Expansion Hub example 1
