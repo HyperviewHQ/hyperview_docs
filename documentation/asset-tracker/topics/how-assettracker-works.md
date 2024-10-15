@@ -34,7 +34,7 @@ Master Modules are 6 RUs long and can be expanded using Extension Modules. Each 
 
 Extension Modules come in 5U or 6U length options. Use a combination of the 5U and 6U modules to fit exactly, or as close as possible, to the rack height.
 
-The serial number is associated with the rack and the address is used when daisy chaining multiple modules to the same Gateway, Each daisy chain must have _unique_ Master Module addresses.
+The serial number is associated with the rack and the address is used when daisy chaining multiple modules to the same Gateway. Each daisy chain must have _unique_ Master Module addresses.
 
 ```{important}
 Only the V5008 AIoT gateway allows for daisy chaining.
