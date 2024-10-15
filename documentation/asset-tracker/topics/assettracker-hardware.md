@@ -34,7 +34,7 @@ AssetTracker can be installed in two different configurations:
 Example Daisy Chain Deployment
 ```
 
-For installing AssetTracker in multiple racks in a row, you may daisy-chain up to five Expansion Hubs to a single gateway. The maximum length of the cables from the Gateway to the last Expansion Hub in the chain must not exceed _20 meters (65 feet)_.
+For installing AssetTracker in multiple racks in a row, you may daisy-chain up to five Expansion Hubs to a single Gateway. The maximum length of the cables from the Gateway to the last Expansion Hub in the chain must not exceed _20 meters (65 feet)_.
 
 Each Master Module has an address between 1 (one) and 5 (five). Each Master Module must have a _unique_ address in the Daisy Chain configuration. The address specification is printed on the Master Module tag.
 
@@ -51,9 +51,9 @@ Master Modules with ID and address (Circled)
 You must [contact our support team](https://system.hyperviewhq.com/helpdesk) to get access to the latest vendor configuration software and documentation.
 :::
 
-- The Gateway uses port 5656/TCP for management and configuration. The configuration must be done using the supplied tool. It is strongly recommended that the tool be on the same network segment as the gateway to minimize network related issues.
+- The Gateway uses port 5656/TCP for management and configuration. The configuration must be done using the supplied tool. It is strongly recommended that the tool be on the same network segment as the Gateway to minimize network related issues.
 
-- The Gateway communicates with the data collector over port 1883/TCP. Communication is from the gateway to the Data Collector. The {ref}`Data Collector setup documentation<Setting-up-data-collectors-doc>` has more information on the network requirements.
+- The Gateway communicates with the data collector over port 1883/TCP. Communication is from the Gateway to the Data Collector. The {ref}`Data Collector setup documentation<Setting-up-data-collectors-doc>` has more information on the network requirements.
 
 ### AssetTracker Strip sizing
 

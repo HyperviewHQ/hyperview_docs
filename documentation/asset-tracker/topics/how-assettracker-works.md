@@ -7,7 +7,7 @@ AssetTracker builds on Hyperview's capabilities by adding specialized hardware a
 ## Terminology
 
 - **Gateway**, this is the device that handles communication between the hardware and the data collector.
-- **Expansion Hub**, this is a connection hub for the various components and the gateway.
+- **Expansion Hub**, this is a connection hub for the various components and the Gateway.
 - **Master Module**, this is the main module in a rack assembly
 - **Extension Module**, this is an extension connected to the Master Module or another Extension Module.
 - **Asset Tag**, this is the magnetic RFID that connects the asset to the AssetTracker Strip.
@@ -28,7 +28,7 @@ Always ensure that you are running the latest version of the data collector soft
 
 ## Hardware
 
-Master Modules are powered by an AssetTracker gateway. Gateways, _depending on the model_, are powered by a POE power source or an AC power source. Gateways are configured to communicate with a dedicated Data Collector which in turn communicates with Hyperview.
+Master Modules are powered by an AssetTracker Gateway. Gateways, _depending on the model_, are powered by a POE power source or an AC power source. Gateways are configured to communicate with a dedicated Data Collector which in turn communicates with Hyperview.
 
 Master Modules are 6 RUs long and can be expanded using Extension Modules. Each module has a unique _serial number/ID_ and an _address_.
 
@@ -37,7 +37,7 @@ Extension Modules come in 5U or 6U length options. Use a combination of the 5U a
 The serial number is associated with the rack and the address is used when daisy chaining multiple modules to the same Gateway. Each daisy chain must have _unique_ Master Module addresses.
 
 ```{important}
-Only the V5008 AIoT gateway allows for daisy chaining.
+Only the V5008 AIoT Gateway allows for daisy chaining.
 ```
 
 ```{image} /asset-tracker/media/assettracker_diagram1.png
@@ -115,7 +115,7 @@ You can use the Expected Rack Units and Top of Rack Offset (RU) fields on the ra
 
 ## Deleting modules
 
-1. Detach the AssetTracker Strip from the gateway. If it is part of a daisy chain, take care to reconnect things appropriately to maintain power and communication.
+1. Detach the AssetTracker Strip from the Gateway. If it is part of a daisy chain, take care to reconnect things appropriately to maintain power and communication.
 2. Open the AssetTracker page (*Assets → AssetTracker*) and select the corresponding module.
 3. Click *Delete → Delete*.
 4. Clear the Master Module ID property from the applicable rack.
