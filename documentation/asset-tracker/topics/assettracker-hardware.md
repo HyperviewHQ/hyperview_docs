@@ -86,7 +86,7 @@ Rack installation example
 
 ### Assembling Modules
 
-Identify the Master Module. The Master module has a SATA port above the top-most magnet position. The Extension Modules have male connectors on the top-end.
+Identify the Master Module. The Master Module has a SATA port above the top-most magnet position. The Extension Modules have male connectors on the top-end.
 
 ```{figure} /asset-tracker/media/master_module_and_cable.png
 :alt: Master Module and cable
