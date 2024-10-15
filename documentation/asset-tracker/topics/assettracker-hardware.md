@@ -138,7 +138,7 @@ Expansion Hub to Gateway example 1
 Expansion Hub to Gateway example 2
 ```
 
-If the Gateway is a _V5008 AIoT_, Up to five total Hubs can be daisy chained together. Connect the _RS485 Out_ Port from the Hub connected to the Gateway to the _RS485 In_ Port of an additional Hub. Note the following:
+If the Gateway is a _V5008 AIoT_, up to five total Hubs can be daisy chained together. Connect the _RS485 Out_ Port from the Hub connected to the Gateway to the _RS485 In_ Port of an additional Hub. Note the following:
 
 - The maximum cable length from the Gateway to the last Hub in the chain must not exceed 20 meters (65 feet).
 - Master Module addresses must be unique.
