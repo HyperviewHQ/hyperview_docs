@@ -30,9 +30,15 @@ Always ensure that you are running the latest version of the data collector soft
 
 Master Modules are powered by an AssetTracker gateway. Gateways, _depending on the model_, are powered by a POE power source or an AC power source. Gateways are configured to communicate with a dedicated Data Collector which in turn communicates with Hyperview.
 
-Master Modules are 6 RUs long and can be expanded using Extension Modules. Each module has a unique _serial number/ID_ and _address_. Extension Modules come in a 5U and 6U modular design that can be connected together based on the rack size. Use a combination of the 5U and 6U modules to fit exactly, or close as possible to the rack height.
+Master Modules are 6 RUs long and can be expanded using Extension Modules. Each module has a unique _serial number/ID_ and an _address_.
 
-The serial number is associated with a and the address is used when daisy chaining multiple modules to the same Gateway, Each daisy chain must have _unique_ Master Module addresses. Please note that not all gateway models allow for daisy chaining.
+Extension Modules come in 5U or 6U length options. Use a combination of the 5U and 6U modules to fit exactly, or as close as possible, to the rack height.
+
+The serial number is associated with the rack and the address is used when daisy chaining multiple modules to the same Gateway, Each daisy chain must have _unique_ Master Module addresses.
+
+```{important}
+Only the V5008 AIoT gateway allows for daisy chaining.
+```
 
 ```{image} /asset-tracker/media/assettracker_diagram1.png
 :alt: AssetTracker deployment diagram 1
