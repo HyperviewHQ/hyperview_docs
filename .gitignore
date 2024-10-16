@@ -2,6 +2,8 @@ bin
 lib
 lib64
 _build
+scripts
+Scripts
 .vscode
 node_modules
 pyvenv.cfg
