@@ -77,7 +77,7 @@ sd_hide_title: true
       Control rack access remotely.
 
    .. grid-item-card:: :fas:`fa-solid fa-tag` AssetTracker
-      :link: assettracker/index.html
+      :link: asset-tracker/index.html
 
       Automatically track asset moves using our RFID technology.
 
@@ -125,7 +125,7 @@ work-notes/index
 firmware-management/index
 outlet-control/index
 rack-security/index
-assettracker/index
+asset-tracker/index
 user-accounts/index
 settings/index
 using-hyperview/index
