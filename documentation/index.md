@@ -8,22 +8,16 @@ sd_hide_title: true
 .. div::
    :style: padding: 0 0.5rem 0.6rem 0; background-color: #201e30; background-image: radial-gradient(circle at center center, #201e30 15%,#6ca6ed 400%); clip-path: polygon(0px 0px, 100% 0%, 100% 100%, 0% calc(100% - 1.5rem)); -webkit-clip-path: polygon(0px 0px, 100% 0%, 100% 100%, 0% calc(100% - 1.5rem));
 
-   .. grid:: 2
+   .. grid:: 1
       :reverse:
       :gutter: 2 3 3 3
       :margin: 4 4 1 2
 
       .. grid-item::
 
-         .. image:: ../_static/dc-illustrate.png
-                        :width: 200
-                        :alt: DC Illustration
-
-      .. grid-item::
-                 :class: sd-text-white sd-fs-2
-
-                 Hyperview Documentation
-
+         .. image:: ../_static/docs_header.jpg
+                        :width: 1104
+                        :alt: Docs Header Image
 ```
 
 ```{eval-rst}
