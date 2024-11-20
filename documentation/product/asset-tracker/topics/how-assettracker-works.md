@@ -40,7 +40,7 @@ The serial number is associated with the rack and the address is used when daisy
 Only the V5008 AIoT Gateway allows for daisy chaining.
 ```
 
-```{image} /asset-tracker/media/assettracker_diagram1.png
+```{image} /product/asset-tracker/media/assettracker_diagram1.png
 :alt: AssetTracker deployment diagram 1
 :class: border-black
 ```
@@ -53,7 +53,7 @@ Users can specify Master Module IDs (for racks) and Asset Tag IDs (for racked de
 
 Detected AssetTracker Master Modules appear on the AssetTracker page (*Assets → AssetTracker*). Tagged assets can be reviewed from the parent rack's Asset Audit page (rack → *Information → Asset Audit*).
 
-```{image} /asset-tracker/media/assettracker_diagram3.png
+```{image} /product/asset-tracker/media/assettracker_diagram3.png
 :alt: AssetTrack deployment diagram 3
 :class: border-black
 ```
@@ -73,7 +73,7 @@ Create or update a rack in Hyperview to correspond to the physical rack that wil
 
 The module will appear on the AssetTracker page (*Assets → AssetTracker*) within a few minutes. Proceed to add Asset Tags.
 
-```{image} /asset-tracker/media/properties.png
+```{image} /product/asset-tracker/media/properties.png
 :alt: AssetTracker properties page
 :class: border-black
 ```
@@ -102,7 +102,7 @@ For instance, if the rack has 44 RUs but the AssetTracker Strip is only 42U, set
 
    - For example, if you are tagging a 4-U device placed between locations 20 and 23, place the tag on location 23.
 
-```{image} /asset-tracker/media/asset-audit.png
+```{image} /product/asset-tracker/media/asset-audit.png
 :alt: Asset audit page
 :class: border-black
 ```
@@ -136,7 +136,7 @@ Under certain circumstances AssetTracker will fail to move an asset into the int
 
 These kinds of placement conflicts are referred to as "collisions". Hyperview issues a warning whenever it encounters collisions (and/or other issues) so that you can take the appropriate corrective action.
 
-```{image} /asset-tracker/media/events.png
+```{image} /product/asset-tracker/media/events.png
 :alt: AssetTracker events page
 :class: border-black
 ```

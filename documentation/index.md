@@ -68,7 +68,7 @@ Control rack access remotely.
 :::
 
 :::{grid-item-card} {fas}`fa-solid fa-tag` AssetTracker
-:link: asset-tracker/index.html
+:link: product/asset-tracker/index.html
 
 Automatically track asset moves using our RFID technology.
 :::
@@ -125,7 +125,7 @@ product/work-notes/index
 product/firmware-management/index
 product/outlet-control/index
 product/rack-security/index
-asset-tracker/index
+product/asset-tracker/index
 user-accounts/index
 settings/index
 using-hyperview/index
