@@ -22,7 +22,7 @@ The Dashboard page acts as the "landing page" for a given asset. It features:
 
 All assets have a Dashboard page. However, the availability of a given widget, asset page, or command depends on the asset type.
 
-```{image} /asset-management/media/dashboard.png
+```{image} /product/asset-management/media/dashboard.png
 :class: border-black
 ```
 
@@ -44,7 +44,7 @@ Note that the Layout page's user interface differs based on the asset type:
 
 The following screenshot shows the Layout page for the All location.
 
-```{image} /asset-management/media/map_layout.png
+```{image} /product/asset-management/media/map_layout.png
 :class: border-black
 ```
 
@@ -52,7 +52,7 @@ The following screenshot shows the Layout page for the All location.
 
 The Events page is available for all asset types. It shows alarm event notifications for the asset (for example, if a particular sensor threshold was reached or exceeded).
 
-```{image} /asset-management/media/events.png
+```{image} /product/asset-management/media/events.png
 :class: border-black
 ```
 
@@ -64,7 +64,7 @@ The Events page for the All location (*Asset Hierarchy → All*) indicates {ref}
 
 The Access Control page lets you view or update the asset's current access policy. It also includes a link to navigate to {ref}`the Access Policies page<Manage-access-policies-doc>`.
 
-```{image} /asset-management/media/access_control.png
+```{image} /product/asset-management/media/access_control.png
 :class: border-black
 ```
 

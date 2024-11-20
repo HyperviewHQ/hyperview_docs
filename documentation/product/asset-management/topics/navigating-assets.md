@@ -24,7 +24,7 @@ Locations appear in the Asset Hierarchy. They are not shown in the Asset Types t
 For a list of supported asset types in Hyperview, see {ref}`Supported asset types<Supported-asset-types-doc>`.
 :::
 
-```{image} /asset-management/media/types_tree.png
+```{image} /product/asset-management/media/types_tree.png
 :class: border-black
 ```
 
@@ -40,7 +40,7 @@ The Asset Hierarchy tree presents assets within a hierarchical tree structure. T
 Partially discovered assets appear as the Unknown asset type in the Asset Types tree. They do not appear in the Asset Hierarchy.
 :::
 
-```{image} /asset-management/media/asset_hierarchy.png
+```{image} /product/asset-management/media/asset_hierarchy.png
 :class: border-black
 ```
 

@@ -14,13 +14,13 @@ sd_hide_title: true
 :margin: 4 4 1 2
 
 :::{grid-item-card} {fas}`fa-solid fa-rocket` Quickstart
-:link: quickstart/index.html
+:link: product/quickstart/index.html
 
 Basic concepts and instructions to get up and running.
 :::
 
 :::{grid-item-card} {fas}`fa-solid fa-server` Asset Management
-:link: asset-management/index.html
+:link: product/asset-management/index.html
 
 Asset management and related functionality.
 :::
@@ -116,8 +116,8 @@ Explore the Hyperview API.
 :hidden: true
 :maxdepth: 1
 
-quickstart/index
-asset-management/index
+product/quickstart/index
+product/asset-management/index
 auto-discovery/index
 catalog-management/index
 document-management/index

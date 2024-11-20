@@ -12,7 +12,7 @@ A "bulk action" is an action that you can perform against multiple records. For 
 This topic does not cover {ref}`bulk importing assets<Adding-assets-doc>` or bulk importing custom properties as they are not available from the *Bulk Actions* menu. Furthermore, bulk actions related to {ref}`user administration<User-administration-doc>` are not covered here.
 :::
 
-```{image} /asset-management/media/bulkactions.png
+```{image} /product/asset-management/media/bulkactions.png
 :class: border-black
 ```
 
@@ -134,7 +134,7 @@ Clicking the selection checkbox in the grid header selects all rows on the **cur
 3. (Optional, but strongly recommended) Select the "Receive email notification..." option to receive an email notification when the bulk action is complete.
 4. Click *Delete*. The modal will close. A success message will indicate that the bulk action is in the processing queue.
 
-```{image} /asset-management/media/bulkdelete.png
+```{image} /product/asset-management/media/bulkdelete.png
 :class: border-black
 ```
 
@@ -149,7 +149,7 @@ Clicking the selection checkbox in the grid header selects all rows on the **cur
 7. (Optional) To specify an End of Life Date, select the corresponding checkbox and date.
 8. Click *Update*. The modal will close. A success message will indicate that the bulk action is in the processing queue.
 
-```{image} /asset-management/media/bulkupdatelifecycle.png
+```{image} /product/asset-management/media/bulkupdatelifecycle.png
 :class: border-black
 ```
 
@@ -218,7 +218,7 @@ If you selected the email notification option, you will receive an email once th
 - The number of assets affected
 - The bulk action status for each selected asset
 
-```{image} /asset-management/media/bulkdeleteemail.png
+```{image} /product/asset-management/media/bulkdeleteemail.png
 :class: border-black
 ```
 

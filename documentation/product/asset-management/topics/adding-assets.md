@@ -53,7 +53,7 @@ You cannot bulk import Location or Rack type assets.
    +------------------+--------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------+
    ```
 
-```{image} /asset-management/media/import_bulkfile.png
+```{image} /product/asset-management/media/import_bulkfile.png
 :class: border-black
 ```
 
@@ -65,14 +65,14 @@ You cannot bulk import Location or Rack type assets.
    - Select the target location for the assets. The default location is All.
    - Select or drag the updated CSV file to upload.
 
-```{image} /asset-management/media/import_bulkfileselect.png
+```{image} /product/asset-management/media/import_bulkfileselect.png
 :class: border-black
 ```
 
 1. Once the file is uploaded, verify the list of assets. Troubleshoot, update, and re-upload the file as needed.
 2. Click *Import*.
 
-```{image} /asset-management/media/import_bulk.png
+```{image} /product/asset-management/media/import_bulk.png
 :class: border-black
 ```
 
@@ -114,7 +114,7 @@ You can manually add an asset in Hyperview from one of the following places:
 
 4. Click *Add and Continue* to start with blank fields for subsequent entries, or *Add and Reset* to repeat your entered values (except for Name) for subsequent entries.
 
-```{image} /asset-management/media/manualadd_addandcontinue.png
+```{image} /product/asset-management/media/manualadd_addandcontinue.png
 :class: border-black
 ```
 
@@ -124,11 +124,11 @@ A success message will be shown. The asset will appear in the Asset Hierarchy un
 
 You can add a location or non-location asset directly from the Asset Hierarchy's right-click context menu. Simply right-click the intended parent location or asset, and select *Add New Asset* or *Add New Location* as appropriate.
 
-```{image} /asset-management/media/manualadd-rightclick-contextmenu.png
+```{image} /product/asset-management/media/manualadd-rightclick-contextmenu.png
 :class: border-black
 ```
 
-```{image} /asset-management/media/manualadd-rightclick-location.png
+```{image} /product/asset-management/media/manualadd-rightclick-location.png
 :class: border-black
 ```
 
@@ -138,7 +138,7 @@ The rest of the process is identical to what's described in the previous subsect
 
 You can also add child assets directly from the parent asset record:
 
-```{image} /asset-management/media/add_childasset.png
+```{image} /product/asset-management/media/add_childasset.png
 :class: border-black
 ```
 

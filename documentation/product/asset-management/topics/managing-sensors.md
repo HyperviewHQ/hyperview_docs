@@ -6,7 +6,7 @@ Assuming you have {ref}`access privileges<Who-can-access-doc>`, you can manage s
 
 What sensors are available depends on the asset itself. Hyperview supports hundreds and thousands of sensor types across its product catalog, such as power sensors, airflow sensors, analog input sensors, temperature sensors, fan speed sensors, humidity sensors, and so on.
 
-```{image} /asset-management/media/sensors_page.png
+```{image} /product/asset-management/media/sensors_page.png
 :class: border-black
 ```
 
@@ -51,7 +51,7 @@ To link a sensor:
    You cannot link a sensor type that is already linked to the target asset. For temperature and humidity sensors, you can only specify unoccupied positions (Grid Coordinate X and Grid Coordinate Y values, or Front or Rear rack U).
    :::
 
-```{image} /asset-management/media/link_modal.png
+```{image} /product/asset-management/media/link_modal.png
 :class: border-black
 ```
 
@@ -100,7 +100,7 @@ You can only add manual sensors to an asset if its Sensor Monitoring Profile (*I
 
 You can add manual sensors to any asset type.
 
-```{image} /asset-management/media/manualsensor_asset.png
+```{image} /product/asset-management/media/manualsensor_asset.png
 :class: border-black
 ```
 
@@ -114,7 +114,7 @@ A success message will appear, and the sensor will be listed in the grid.
 
 You can only add manual sensors to PDU/RPP, rack PDU, and busway asset components.
 
-```{image} /asset-management/media/manualsensor_component.png
+```{image} /product/asset-management/media/manualsensor_component.png
 :class: border-black
 ```
 
@@ -166,7 +166,7 @@ Sensor graphs can be exported in JPEG, PDF, PNG, and SVG formats.
 
 The file will download to your browser's default download location.
 
-```{image} /asset-management/media/export_graphimage.png
+```{image} /product/asset-management/media/export_graphimage.png
 :class: border-black
 ```
 
@@ -180,7 +180,7 @@ You can export sensor data for a specific timeframe (up to seven consecutive day
 
 The file will download to your browser's default download location.
 
-```{image} /asset-management/media/export_sensor.png
+```{image} /product/asset-management/media/export_sensor.png
 :class: border-black
 ```
 

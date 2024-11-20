@@ -25,7 +25,7 @@ An asset's access policy is essentially a whitelist of users and user groups tha
 
 Only Administrators can set or {ref}`manage access policies<Manage-access-policies-doc>`. To set an access policy for an asset:
 
-```{image} /asset-management/media/access_control.png
+```{image} /product/asset-management/media/access_control.png
 :class: border-black
 ```
 

@@ -16,7 +16,7 @@ These operations require appropriate authentication. The control operations page
 
 Equivalent bulk actions allow for the bulk configuration of these credentials.
 
-```{image} /asset-management/media/information-control-operations.png
+```{image} /product/asset-management/media/information-control-operations.png
 :alt: Information Control Operations
 :class: border-black
 :width: 1503px
