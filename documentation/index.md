@@ -10,6 +10,8 @@ sd_hide_title: true
 ```
 #
 
+
+{.frontpage-heading1}
 # Asset Management
 
 ::::{grid} 2
@@ -55,6 +57,8 @@ Add operational notes, tag team members, and annotate assets.
 
 ::::
 
+
+{.frontpage-heading1}
 # Asset Control
 
 ::::{grid} 2
@@ -82,6 +86,7 @@ Control rack access remotely.
 ::::
 
 
+{.frontpage-heading1}
 # RFID Asset Tracking
 
 ::::{grid} 2
@@ -97,7 +102,8 @@ Automatically track asset moves using our RFID technology.
 ::::
 
 
-# Product Settings
+{.frontpage-heading1}
+# Using Hyperview
 
 ::::{grid} 2
 :gutter: 2 3 3 3
@@ -109,14 +115,6 @@ Automatically track asset moves using our RFID technology.
 Step-by-step instructions to configure system-wide application settings.
 :::
 
-::::
-
-# Using Hyperview
-
-::::{grid} 2
-:gutter: 2 3 3 3
-:margin: 4 4 1 2
-
 :::{grid-item-card} {fas}`fa-solid fa-laptop` Using Hyperview
 :link: product/using-hyperview/index.html
 
@@ -125,6 +123,8 @@ Quick search, advanced search, data extraction, and much more.
 
 ::::
 
+
+{.frontpage-heading1}
 # Other Resources
 
 ::::{grid} 2
@@ -154,20 +154,9 @@ Explore the Hyperview API.
 
 ```{toctree}
 :hidden: true
-:maxdepth: 1
+:maxdepth: 2
 
-product/quickstart/index
-product/asset-management/index
-product/document-management/index
-product/auto-discovery/index
-product/catalog-management/index
-product/work-notes/index
-product/firmware-management/index
-product/outlet-control/index
-product/rack-security/index
-product/asset-tracker/index
-product/settings/index
-product/using-hyperview/index
+product/index
 release-notes/index
 api-changelog/index
 ```
