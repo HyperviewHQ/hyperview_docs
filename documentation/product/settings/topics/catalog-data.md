@@ -11,6 +11,6 @@ This data is anonymized and aggregated by Hyperview. It will be added to the glo
 
 A success message will appear.
 
-```{image} /settings/media/catalog-data.png
+```{image} /product/settings/media/catalog-data.png
 :class: border-black
 ```

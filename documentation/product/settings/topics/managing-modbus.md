@@ -18,7 +18,7 @@ A success message will appear, and the Overview page of the new Modbus TCP defin
 Refer to the "Adding a single asset" section in {ref}`assets` for steps to manually add assets with a Modbus TCP monitoring profile.
 :::
 
-```{image} /settings/media/modbus_1.png
+```{image} /product/settings/media/modbus_1.png
 :class: border-black
 ```
 
@@ -38,7 +38,7 @@ A success message will appear, and the numeric sensor definition will be listed 
 3. Provide values for Object Instance, Type, Sensor Type, Sensor Name. Additionally, you can modify Value mappings (for all types) or add Value mappings (for non-binary types).
 4. Click *Save*.
 
-```{image} /settings/media/modbus_2.png
+```{image} /product/settings/media/modbus_2.png
 :class: border-black
 ```
 

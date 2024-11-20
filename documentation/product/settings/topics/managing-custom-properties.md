@@ -18,7 +18,7 @@ You can manage custom property groups and custom properties from *Settings → C
 
 A success message will appear, and the custom property group will be listed in the grid. Repeat the steps to add additional custom property groups as needed.
 
-```{image} /settings/media/custom_properties_1.png
+```{image} /product/settings/media/custom_properties_1.png
 :class: border-black
 ```
 
@@ -37,7 +37,7 @@ A success message will appear, and the custom property group will be listed in t
 
 A success message will appear, and the custom property will be listed in the grid. Repeat the steps to add additional custom properties as needed.
 
-```{image} /settings/media/custom_properties_2.png
+```{image} /product/settings/media/custom_properties_2.png
 :class: border-black
 ```
 
@@ -57,7 +57,7 @@ A success message will appear, and the current page will reload to reflect your 
 1. Go to *Settings → Custom Properties → Properties*.
 2. Click *Edit* → update custom property values as required → *Save*.
 
-```{image} /settings/media/custom_properties_3.png
+```{image} /product/settings/media/custom_properties_3.png
 :class: border-black
 ```
 

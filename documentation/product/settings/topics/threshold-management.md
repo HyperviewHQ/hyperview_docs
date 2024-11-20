@@ -6,7 +6,7 @@ By default Hyperview ships with a number of application-defined sensor threshold
 
 For example, you can define a sensor threshold to throw a warning whenever a server’s temperature exceeds 85°F or goes below 50°F. If the threshold is reached, Hyperview will create an alarm event. Depending on the event severity and event notification rules, a notification email will also get sent.
 
-```{image} /settings/media/sensors_2.png
+```{image} /product/settings/media/sensors_2.png
 :class: border-black
 ```
 
@@ -55,7 +55,7 @@ You cannot update an application-defined sensor threshold. However, you can disa
 3. Add or remove values for the AND condition fields as needed.
 4. Click *Save*.
 
-```{image} /settings/media/sensors_3.png
+```{image} /product/settings/media/sensors_3.png
 :class: border-black
 ```
 

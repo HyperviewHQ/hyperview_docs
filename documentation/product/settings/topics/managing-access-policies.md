@@ -6,7 +6,7 @@ Access policies are rules that dictate which users or groups can access a secura
 
 An access policy can be associated with any number of securable objects. However, a securable object can only have one active access policy. All Hyperview systems ship with a Default access policy that applies to all securable objects, unless another access policy is applied. You can use the Access Policies grid (*Settings → Access Policies*) to look up existing access policies.
 
-```{image} /settings/media/access_policies_1.png
+```{image} /product/settings/media/access_policies_1.png
 :class: border-black
 ```
 
@@ -29,7 +29,7 @@ A success message will appear, and the access policy will be listed in the grid.
 
 A success message will appear, and the current page will reload to reflect your changes.
 
-```{image} /settings/media/access_policies_2.png
+```{image} /product/settings/media/access_policies_2.png
 :class: border-black
 ```
 

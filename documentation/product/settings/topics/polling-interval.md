@@ -10,7 +10,7 @@ The polling interval indicates the time between one successful attempt (or retry
 
 The default sensor polling interval is 10 minutes, which implies that all sensor data in your Hyperview instance typically refreshes every 10 minutes. The minimum polling interval is 5 minutes. The maximum polling interval is 24 hours.
 
-```{image} /settings/media/sensors_1.png
+```{image} /product/settings/media/sensors_1.png
 :class: border-black
 ```
 

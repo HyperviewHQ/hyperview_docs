@@ -37,7 +37,7 @@ Password values must be 6-100 characters long and have at least one lowercase le
 
 A message will appear confirming your changes have been saved.
 
-```{image} /user-accounts/media/password.png
+```{image} /product/using-hyperview/user-accounts/media/password.png
 :class: border-black
 ```
 
@@ -76,7 +76,7 @@ It is recommended that the username portion of your external login account (for 
 
 The page will reload, showing a confirmation message and the newly created external login.
 
-```{image} /user-accounts/media/addedexternallogin.png
+```{image} /product/using-hyperview/user-accounts/media/addedexternallogin.png
 :class: border-black
 ```
 
@@ -114,7 +114,7 @@ Setting up two-factor authentication is not allowed for user accounts that have 
    Remember to copy and save your recovery codes to a safe, trusted destination. This **should not** be on the mobile phone you will be using for two-factor authentication. Otherwise, if you lose your device you will permanently lose access to your Hyperview account.
    :::
 
-```{image} /user-accounts/media/2FA.png
+```{image} /product/using-hyperview/user-accounts/media/2FA.png
 :class: border-black
 ```
 

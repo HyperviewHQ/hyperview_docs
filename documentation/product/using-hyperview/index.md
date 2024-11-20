@@ -9,4 +9,5 @@ extracting-data/index
 layout-management/index
 search/index
 sensor-management/index
+user-accounts/index
 ```

@@ -8,10 +8,14 @@ sd_hide_title: true
 :alt: Docs Header Image
 :width: 1104
 ```
+#
+
+# Asset Management
 
 ::::{grid} 2
 :gutter: 2 3 3 3
 :margin: 4 4 1 2
+
 
 :::{grid-item-card} {fas}`fa-solid fa-rocket` Quickstart
 :link: product/quickstart/index.html
@@ -49,6 +53,14 @@ Access the product catalog and add your device models and images.
 Add operational notes, tag team members, and annotate assets.
 :::
 
+::::
+
+# Asset Control
+
+::::{grid} 2
+:gutter: 2 3 3 3
+:margin: 4 4 1 2
+
 :::{grid-item-card} {fas}`fa-solid fa-star` Firmware Management
 :link: product/firmware-management/index.html
 
@@ -67,29 +79,57 @@ Control smart rack PDU outlets remotely.
 Control rack access remotely.
 :::
 
+::::
+
+
+# RFID Asset Tracking
+
+::::{grid} 2
+:gutter: 2 3 3 3
+:margin: 4 4 1 2
+
 :::{grid-item-card} {fas}`fa-solid fa-tag` AssetTracker
 :link: product/asset-tracker/index.html
 
 Automatically track asset moves using our RFID technology.
 :::
 
+::::
+
+
+# Product Settings
+
+::::{grid} 2
+:gutter: 2 3 3 3
+:margin: 4 4 1 2
+
 :::{grid-item-card} {fas}`fa-solid fa-gear` Settings
-:link: settings/index.html
+:link: product/settings/index.html
 
 Step-by-step instructions to configure system-wide application settings.
 :::
 
-:::{grid-item-card} {fas}`fa-solid fa-users` User Accounts
-:link: user-accounts/index.html
+::::
 
-User roles, profile management, and user account administration.
-:::
+# Using Hyperview
+
+::::{grid} 2
+:gutter: 2 3 3 3
+:margin: 4 4 1 2
 
 :::{grid-item-card} {fas}`fa-solid fa-laptop` Using Hyperview
-:link: using-hyperview/index.html
+:link: product/using-hyperview/index.html
 
 Quick search, advanced search, data extraction, and much more.
 :::
+
+::::
+
+# Other Resources
+
+::::{grid} 2
+:gutter: 2 3 3 3
+:margin: 4 4 1 2
 
 :::{grid-item-card} {fas}`fa-solid fa-clipboard` Release Notes
 :link: release-notes/index.html
@@ -126,9 +166,8 @@ product/firmware-management/index
 product/outlet-control/index
 product/rack-security/index
 product/asset-tracker/index
-user-accounts/index
-settings/index
-using-hyperview/index
+product/settings/index
+product/using-hyperview/index
 release-notes/index
 api-changelog/index
 ```

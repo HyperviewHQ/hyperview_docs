@@ -14,7 +14,7 @@ A Bacnet/IP definition can be assigned to any number of assets to enable monitor
 
 A success message will appear, and the Overview page of the new BACnet/IP definition will be displayed. Proceed to add sensor definitions.
 
-```{image} /settings/media/monitoring_03.png
+```{image} /product/settings/media/monitoring_03.png
 :class: border-black
 ```
 
@@ -29,7 +29,7 @@ Refer to the "Adding a single asset" section in {ref}`assets` for steps to manua
 3. Provide values for Object Instance, Type, Sensor Type, Sensor Name, Sensor Unit, and Multiplier. Note that the Sensor Name and Sensor Unit fields will only appear once you have selected a Sensor Type.
 4. Click *Save*.
 
-```{image} /settings/media/monitoring_11.png
+```{image} /product/settings/media/monitoring_11.png
 :class: border-black
 ```
 
@@ -60,7 +60,7 @@ While on the Numeric Sensors tab or the Non-numeric Sensors tab for a BACnet/IP 
 
 A success message will appear in each case, and the current page will reload to reflect the change.
 
-```{image} /settings/media/monitoring_13.png
+```{image} /product/settings/media/monitoring_13.png
 :class: border-black
 ```
 

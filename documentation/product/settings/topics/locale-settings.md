@@ -10,6 +10,6 @@ Administrators can configure application-wide locale settings from the Locale pa
 
 A success message will appear, and the application UI will reload to reflect your changes.
 
-```{image} /settings/media/locale.png
+```{image} /product/settings/media/locale.png
 :class: border-black
 ```

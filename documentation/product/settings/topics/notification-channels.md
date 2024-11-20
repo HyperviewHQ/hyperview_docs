@@ -11,7 +11,7 @@ To enable the integration, enter the following information.
 1. Give the notification channel a name. Use this name to identify the channel when configuring an {ref}`Alarm Policy <Alarm-policies-doc>`.
 2. Copy and paste the webhook URL for the target Microsoft Teams channel.
 
-```{image} /settings/media/add-notification-channel.png
+```{image} /product/settings/media/add-notification-channel.png
 :class: border-black
 ```
 

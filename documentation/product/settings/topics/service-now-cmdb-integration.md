@@ -8,7 +8,7 @@ At this time only the Rome release of ServiceNow has been tested with this integ
 
 The ServiceNow CMDB Sync integration is a data mapping and data push service to the [ServiceNow Import Set API](https://docs.servicenow.com/bundle/rome-application-development/page/integrate/inbound-rest/concept/c_ImportSetAPI.html).
 
-```{image} /settings/media/servicenow_cmdb_diagram.png
+```{image} /product/settings/media/servicenow_cmdb_diagram.png
 :alt: ServiceNow CMDB integration diagram
 :width: 975
 ```
@@ -23,7 +23,7 @@ The ServiceNow CMDB Sync integration is a data mapping and data push service to 
 
 Enter the information prepared earlier in their corresponding configuration field. It is recommended that the entered credentials be tested using the **Test Authentication** button before a sync is attempted.
 
-```{image} /settings/media/servicenow_overview.png
+```{image} /product/settings/media/servicenow_overview.png
 :alt: ServiceNow CMDB integration overview
 :class: border-black
 :width: 1908
@@ -37,7 +37,7 @@ To force a full sync the next time the process runs, reset the last sync date.
 
 Users can customize which asset types to sync. By default, all types are synced.
 
-```{image} /settings/media/servicenow_asset_types.png
+```{image} /product/settings/media/servicenow_asset_types.png
 :alt: ServiceNow CMDB supported asset types
 :class: border-black
 :width: 1801
@@ -47,7 +47,7 @@ Users can customize which asset types to sync. By default, all types are synced.
 
 Property mapping is customizable. Properties can be enabled or disabled, and the corresponding ImportSet field can be customized.
 
-```{image} /settings/media/servicenow_field_mapping.png
+```{image} /product/settings/media/servicenow_field_mapping.png
 :alt: ServiceNow CMDB integration property mapping
 :class: border-black
 :width: 1800
@@ -126,7 +126,7 @@ The ServiceNow CMDB Sync system integrates with Work Orders. Once the feature is
 
 Work orders will be listed in the Hyperview Work Orders area.
 
-```{image} /settings/media/scheduled_work_order.png
+```{image} /product/settings/media/scheduled_work_order.png
 :alt: Scheduled Work Order
 :class: border-black
 :width: 2374
@@ -134,7 +134,7 @@ Work orders will be listed in the Hyperview Work Orders area.
 
 The Work Order details will list the assets that were synced to ServiceNow CMDB. The details page will show an appropriate notification if there are no assets to sync or if there are any errors.
 
-```{image} /settings/media/scheduled_work_order_with_assets.png
+```{image} /product/settings/media/scheduled_work_order_with_assets.png
 :alt: Scheduled Work Order with assets
 :class: border-black
 :width: 2374
