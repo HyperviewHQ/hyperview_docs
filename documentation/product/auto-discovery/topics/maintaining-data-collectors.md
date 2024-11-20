@@ -8,7 +8,7 @@ Data Collectors must be up-to-date and communicate consistently with the Hypervi
 
 The Last Communicated column in the Data Collectors grid indicates the date & time when a particular Data Collector last communicated with Hyperview. The Version column shows the Data Collector version number.
 
-```{image} /auto-discovery/media/dc_grid.png
+```{image} /product/auto-discovery/media/dc_grid.png
 :class: border-black
 ```
 
@@ -19,7 +19,7 @@ Distinct alarm event messages are generated for the **All** location (*Asset Hie
 
 Consult your IT department to address any connectivity issues, and/or update the Data Collector accordingly.
 
-```{image} /auto-discovery/media/events.png
+```{image} /product/auto-discovery/media/events.png
 :class: border-black
 ```
 
@@ -56,7 +56,7 @@ You may want to retire a Data Collector for various reasons, such as:
 
 Retiring a Data Collector will **permanently** remove it from the system. During the retirement process, you must specify a substitute Data Collector that will take over the responsibilities of the Data Collector you are retiring. If you only have one Data Collector, you cannot retire it unless you add a substitute.
 
-```{image} /auto-discovery/media/retire.png
+```{image} /product/auto-discovery/media/retire.png
 :class: border-black
 ```
 

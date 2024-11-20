@@ -17,7 +17,7 @@ With a Firmware Management license, you can, for example:
 Only licensed instances will have relevant features. To confirm if you have a Firmware Management license, check the License page (*Settings → License*, Administrator-only).
 :::
 
-```{image} /firmware-management/media/firmware-page.png
+```{image} /product/firmware-management/media/firmware-page.png
 :class: border-black
 ```
 
@@ -78,7 +78,7 @@ In both contexts, an asset is considered to have "managed firmware" only if the 
 
 Upon discovery, the Firmware Version property becomes read-only to prevent human error (it automatically gets updated upon rediscovery if the installed version has changed). If you merge two assets with discovered and manually updated Firmware Version values, the discovered value is retained and rendered read-only. In other words, discovered firmware versions are always preferred.
 
-```{image} /firmware-management/media/fv-property.png
+```{image} /product/firmware-management/media/fv-property.png
 :class: border-black
 ```
 
@@ -112,7 +112,7 @@ The grid will show assets that have a relevant firmware version installed. Note 
 
 % tip: Double-clicking an asset row will open its Dashboard page.
 
-```{image} /firmware-management/media/installations.png
+```{image} /product/firmware-management/media/installations.png
 :class: border-black
 ```
 
@@ -126,13 +126,13 @@ To look up firmware versions for a given asset:
 
 Note that the Information → Firmware page will indicate the currently installed firmware version with a green checkmark in the Installed column.
 
-```{image} /firmware-management/media/info-firmware.png
+```{image} /product/firmware-management/media/info-firmware.png
 :class: border-black
 ```
 
 The Unmanaged firmware tab *Assets → Firmware → Unmanaged* will contain a list of all detected firmware, firmware versions, and installations.
 
-```{image} /firmware-management/media/unmanaged-firmware.png
+```{image} /product/firmware-management/media/unmanaged-firmware.png
 :class: border-black
 ```
 
@@ -140,7 +140,7 @@ The Unmanaged firmware tab *Assets → Firmware → Unmanaged* will contain a li
 
 The Firmware and Information → Firmware pages both feature Update, View Release Notes, and Download Firmware buttons, which allow you to update a firmware version, look up its release notes, or download it, respectively.
 
-```{image} /firmware-management/media/versions.png
+```{image} /product/firmware-management/media/versions.png
 :class: border-black
 ```
 
@@ -159,7 +159,7 @@ An alarm event is generated at the asset level (asset → *Events*) whenever Hyp
 - (For manually created assets) The asset's Firmware Version is blank.
 - (For all eligible assets) The asset's Model value changes.
 
-```{image} /firmware-management/media/events.png
+```{image} /product/firmware-management/media/events.png
 :class: border-black
 ```
 

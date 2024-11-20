@@ -243,7 +243,7 @@ Firewalls can interfere with Data Collector communication. We recommended that y
 2. Go to *Discoveries → Data Collectors → Download Data Collector*.
 3. Select the Operating System. If you select Linux (AMD64) or Linux (RPI ARM64), download and SHA256 checksum links will appear, which you can use directly from your terminal.
 
-```{image} /auto-discovery/media/download.png
+```{image} /product/auto-discovery/media/download.png
 :class: border-black
 ```
 
@@ -283,14 +283,14 @@ Support for installing the data collector software on Windows will end on Januar
 
 6. Choose a different installation folder or click *Next* to accept the default location.
 
-```{image} /auto-discovery/media/dc_install_3.png
+```{image} /product/auto-discovery/media/dc_install_3.png
 :class: border-black
 ```
 
 1. Click *Install*.
 2. Toward the end of the process, the Data Collector Configuration Tool will appear. You will need to provide details to register your data collector. Refer to the following section ("Registering the Data Collector") for instructions.
 
-```{image} /auto-discovery/media/dc_install_9.png
+```{image} /product/auto-discovery/media/dc_install_9.png
 :class: border-black
 ```
 
@@ -303,7 +303,7 @@ Support for installing the data collector software on Windows will end on Januar
 3. Run the install script as root (`install-dc.sh`).
 4. Accept the EULA by selecting Yes.
 
-```{image} /auto-discovery/media/ldc-eula.png
+```{image} /product/auto-discovery/media/ldc-eula.png
 :class: border-black
 ```
 
@@ -321,7 +321,7 @@ Once you have installed the Data Collector, you need to register it with Hypervi
 2. Go to *Discoveries → Data Collectors → Add*. The "Add Data Collector" modal will open.
 3. Click the copy icon to copy the registration token.
 
-```{image} /auto-discovery/media/dc_install_8.png
+```{image} /product/auto-discovery/media/dc_install_8.png
 :class: border-black
 ```
 
@@ -354,7 +354,7 @@ You can also run the Linux Data Collector Configuration Tool from `/opt/datacoll
 1. Enter the registration token.
 2. Enter your API hostname (for example, "yourinstance.hyperviewhq.com").
 
-```{image} /auto-discovery/media/ldc-install.png
+```{image} /product/auto-discovery/media/ldc-install.png
 :class: border-black
 ```
 
@@ -370,7 +370,7 @@ The Data Collector will be registered.
 
 If the Data Collector was set up correctly. The Services view in Windows (search for the "Services" app from the Windows search bar) will indicate that the Hyperview Data Collector and Hyperview SNMP Trap Listener services are running and set to start automatically, as seen below.
 
-```{image} /auto-discovery/media/services.png
+```{image} /product/auto-discovery/media/services.png
 :class: border-black
 ```
 

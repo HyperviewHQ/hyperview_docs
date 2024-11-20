@@ -25,44 +25,44 @@ Basic concepts and instructions to get up and running.
 Asset management and related functionality.
 :::
 
+:::{grid-item-card} {fas}`fa-solid fa-file` Document Management
+:link: product/document-management/index.html
+
+Attach documents, manuals, contracts, images, and links to your assets.
+:::
+
 :::{grid-item-card} {fas}`fa-solid fa-eye` Auto Discovery
-:link: auto-discovery/index.html
+:link: product/auto-discovery/index.html
 
 Auto-discovering assets and related concepts.
 :::
 
 :::{grid-item-card} {fas}`fa-solid fa-book-open` Catalog Management
-:link: catalog-management/index.html
+:link: product/catalog-management/index.html
 
 Access the product catalog and add your device models and images.
 :::
 
-:::{grid-item-card} {fas}`fa-solid fa-file` Document Management
-:link: document-management/index.html
-
-Attach documents, manuals, contracts, images, and links to your assets.
-:::
-
 :::{grid-item-card} {fas}`fa-solid fa-note-sticky` Work Notes
-:link: work-notes/index.html
+:link: product/work-notes/index.html
 
 Add operational notes, tag team members, and annotate assets.
 :::
 
 :::{grid-item-card} {fas}`fa-solid fa-star` Firmware Management
-:link: firmware-management/index.html
+:link: product/firmware-management/index.html
 
 Manage the firmware of your connected assets.
 :::
 
 :::{grid-item-card} {fas}`fa-solid fa-power-off` Outlet Control
-:link: outlet-control/index.html
+:link: product/outlet-control/index.html
 
 Control smart rack PDU outlets remotely.
 :::
 
 :::{grid-item-card} {fas}`fa-solid fa-lock` Rack Security
-:link: rack-security/index.html
+:link: product/rack-security/index.html
 
 Control rack access remotely.
 :::
@@ -118,13 +118,13 @@ Explore the Hyperview API.
 
 product/quickstart/index
 product/asset-management/index
-auto-discovery/index
-catalog-management/index
-document-management/index
-work-notes/index
-firmware-management/index
-outlet-control/index
-rack-security/index
+product/document-management/index
+product/auto-discovery/index
+product/catalog-management/index
+product/work-notes/index
+product/firmware-management/index
+product/outlet-control/index
+product/rack-security/index
 asset-tracker/index
 user-accounts/index
 settings/index

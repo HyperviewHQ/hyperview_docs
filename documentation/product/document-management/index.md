@@ -42,7 +42,7 @@ The maximum upload size is 10 MB. The default total document storage size is 5 G
 
 All users can access documents, provided they have access privileges (except for Administrators, who have system-wide unrestricted access). You can search for documents, download document files, and view document links.
 
-```{image} /document-management/media/documents.png
+```{image} /product/document-management/media/documents.png
 :class: border-black
 ```
 
@@ -94,7 +94,7 @@ You can add a new document from the Documents grid for all assets (*Assets → D
 
 4. Proceed to add associations (see {ref}`Adding-associations`).
 
-```{image} /document-management/media/add_document_link.png
+```{image} /product/document-management/media/add_document_link.png
 :class: border-black
 ```
 
@@ -128,7 +128,7 @@ You must be a Power User, Data Center Manager, or Administrator to be able to ma
 The Associations tab is also available upon adding a new document from *Assets → Documents*.
 :::
 
-```{image} /document-management/media/associate_document.png
+```{image} /product/document-management/media/associate_document.png
 :class: border-black
 ```
 
@@ -161,7 +161,7 @@ You can bulk-add or bulk-remove document associations while accessing assets fro
 4. Select the checkbox if you want to receive an email notification when the bulk job is completed.
 5. Select the document from the dropdown, and click Add (if you are adding associations) or Remove (if you are removing them).
 
-```{image} /document-management/media/bulk_associate.png
+```{image} /product/document-management/media/bulk_associate.png
 :class: border-black
 ```
 
@@ -181,7 +181,7 @@ You must be a Power User, Data Center Manager, or Administrator to be able to up
 
 3. Click Save. A success message will appear.
 
-```{image} /document-management/media/update_document_file.png
+```{image} /product/document-management/media/update_document_file.png
 :class: border-black
 ```
 
@@ -199,7 +199,7 @@ To update a document's access policy:
 2. Select the intended access policy from the dropdown → Save.
 3. Click Save to confirm. A success message will appear.
 
-```{image} /document-management/media/document_access_control.png
+```{image} /product/document-management/media/document_access_control.png
 :class: border-black
 ```
 

@@ -12,7 +12,7 @@ Upon running the discovery, the Data Collector software will automatically find 
 You must set up Data Collectors before you can discover assets. See {ref}`Setup-data-collectors`. Only Administrators have access to discovery features.
 :::
 
-```{image} /auto-discovery/media/static.png
+```{image} /product/auto-discovery/media/static.png
 :class: border-black
 ```
 

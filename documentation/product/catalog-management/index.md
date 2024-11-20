@@ -8,7 +8,7 @@ You can access the product catalog from Hyperview using the Catalog menu, which 
 
 Power Users and above can add new manufacturers and models (including model properties and images). You can also {ref}`bulk update<Bulk-actions-doc>` assets' model and manufacturer values.
 
-```{image} /catalog-management/media/catalog_manu.png
+```{image} /product/catalog-management/media/catalog_manu.png
 :class: border-black
 ```
 
@@ -33,7 +33,7 @@ You can review a model's metadata and (if available or relevant) images to asses
 
 The Model Info panel will open, showing model information (including model images).
 
-```{image} /catalog-management/media/catalog_modelinfo.png
+```{image} /product/catalog-management/media/catalog_modelinfo.png
 :class: border-black
 ```
 
@@ -66,7 +66,7 @@ A success message will appear. Proceed to add models for the new manufacturer.
 
 4. Click Save. A success message will appear.
 
-```{image} /catalog-management/media/catalog_addmod.png
+```{image} /product/catalog-management/media/catalog_addmod.png
 :class: border-black
 ```
 
