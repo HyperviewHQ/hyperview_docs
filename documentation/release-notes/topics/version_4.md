@@ -17,7 +17,7 @@ Discovery for Cisco switches has been enhanced to auto-detect and track power in
 Discovery for Rittal CMC III monitoring system has been improved to detect more environmental sensors.
 
 :::{important}
-These enhancements requires the latest Linux version of the Data Collector.
+These enhancements require the latest Linux version of the Data Collector.
 :::
 
 ## Hyperview 4.6 (September 26, 2024)
