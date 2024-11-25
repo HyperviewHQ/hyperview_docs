@@ -8,88 +8,128 @@ sd_hide_title: true
 :alt: Docs Header Image
 :width: 1104
 ```
+#
+
+
+{.frontpage-heading1}
+# Asset Management
 
 ::::{grid} 2
 :gutter: 2 3 3 3
 :margin: 4 4 1 2
 
+
 :::{grid-item-card} {fas}`fa-solid fa-rocket` Quickstart
-:link: quickstart/index.html
+:link: product/quickstart/index.html
 
 Basic concepts and instructions to get up and running.
 :::
 
 :::{grid-item-card} {fas}`fa-solid fa-server` Asset Management
-:link: asset-management/index.html
+:link: product/asset-management/index.html
 
 Asset management and related functionality.
 :::
 
+:::{grid-item-card} {fas}`fa-solid fa-file` Document Management
+:link: product/document-management/index.html
+
+Attach documents, manuals, contracts, images, and links to your assets.
+:::
+
 :::{grid-item-card} {fas}`fa-solid fa-eye` Auto Discovery
-:link: auto-discovery/index.html
+:link: product/auto-discovery/index.html
 
 Auto-discovering assets and related concepts.
 :::
 
 :::{grid-item-card} {fas}`fa-solid fa-book-open` Catalog Management
-:link: catalog-management/index.html
+:link: product/catalog-management/index.html
 
 Access the product catalog and add your device models and images.
 :::
 
-:::{grid-item-card} {fas}`fa-solid fa-file` Document Management
-:link: document-management/index.html
-
-Attach documents, manuals, contracts, images, and links to your assets.
-:::
-
 :::{grid-item-card} {fas}`fa-solid fa-note-sticky` Work Notes
-:link: work-notes/index.html
+:link: product/work-notes/index.html
 
 Add operational notes, tag team members, and annotate assets.
 :::
 
+::::
+
+
+{.frontpage-heading1}
+# Asset Control
+
+::::{grid} 2
+:gutter: 2 3 3 3
+:margin: 4 4 1 2
+
 :::{grid-item-card} {fas}`fa-solid fa-star` Firmware Management
-:link: firmware-management/index.html
+:link: product/firmware-management/index.html
 
 Manage the firmware of your connected assets.
 :::
 
 :::{grid-item-card} {fas}`fa-solid fa-power-off` Outlet Control
-:link: outlet-control/index.html
+:link: product/outlet-control/index.html
 
 Control smart rack PDU outlets remotely.
 :::
 
 :::{grid-item-card} {fas}`fa-solid fa-lock` Rack Security
-:link: rack-security/index.html
+:link: product/rack-security/index.html
 
 Control rack access remotely.
 :::
 
+::::
+
+
+{.frontpage-heading1}
+# RFID Asset Tracking
+
+::::{grid} 2
+:gutter: 2 3 3 3
+:margin: 4 4 1 2
+
 :::{grid-item-card} {fas}`fa-solid fa-tag` AssetTracker
-:link: asset-tracker/index.html
+:link: product/asset-tracker/index.html
 
 Automatically track asset moves using our RFID technology.
 :::
 
+::::
+
+
+{.frontpage-heading1}
+# Using Hyperview
+
+::::{grid} 2
+:gutter: 2 3 3 3
+:margin: 4 4 1 2
+
 :::{grid-item-card} {fas}`fa-solid fa-gear` Settings
-:link: settings/index.html
+:link: product/settings/index.html
 
 Step-by-step instructions to configure system-wide application settings.
 :::
 
-:::{grid-item-card} {fas}`fa-solid fa-users` User Accounts
-:link: user-accounts/index.html
-
-User roles, profile management, and user account administration.
-:::
-
 :::{grid-item-card} {fas}`fa-solid fa-laptop` Using Hyperview
-:link: using-hyperview/index.html
+:link: product/using-hyperview/index.html
 
 Quick search, advanced search, data extraction, and much more.
 :::
+
+::::
+
+
+{.frontpage-heading1}
+# Other Resources
+
+::::{grid} 2
+:gutter: 2 3 3 3
+:margin: 4 4 1 2
 
 :::{grid-item-card} {fas}`fa-solid fa-clipboard` Release Notes
 :link: release-notes/index.html
@@ -114,21 +154,9 @@ Explore the Hyperview API.
 
 ```{toctree}
 :hidden: true
-:maxdepth: 1
+:maxdepth: 2
 
-quickstart/index
-asset-management/index
-auto-discovery/index
-catalog-management/index
-document-management/index
-work-notes/index
-firmware-management/index
-outlet-control/index
-rack-security/index
-asset-tracker/index
-user-accounts/index
-settings/index
-using-hyperview/index
+product/index
 release-notes/index
 api-changelog/index
 ```

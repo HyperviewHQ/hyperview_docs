@@ -146,3 +146,8 @@ section[id*="api-changelog"] h3,
 section[id*="api-changelog"] h4 {
     font-size: 1em;
 }
+
+.frontpage-heading1 h1 {
+	color: #6ca6ed;
+	font-size: 1.125em;
+}
