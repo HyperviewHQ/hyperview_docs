@@ -35,6 +35,7 @@ extensions = [
 # Enable myst extensions
 myst_enable_extensions = [
     "colon_fence",
+    "attrs_block",
 ]
 
 # The suffix(es) of source filenames.

@@ -11,6 +11,7 @@ Before version 3.6 API changes were documented in the {ref}`release notes<Releas
 ```{toctree}
 :maxdepth: 2
 
+topics/api_changes_4_6_to_4_7
 topics/api_changes_4_5_to_4_6
 topics/api_changes_4_4_to_4_5
 topics/api_changes_4_3_to_4_4
