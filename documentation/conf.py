@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-#
-# import os
-# import sys
-# sys.path.insert(0, os.path.abspath('.'))
-
-
 # -- Project information -----------------------------------------------------
 
 project = 'Hyperview'
@@ -40,7 +33,8 @@ source_suffix = {
 
 # The master toctree document.
 master_doc = 'index'
-# language = 'en'
+
+language = 'en'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
