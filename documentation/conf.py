@@ -58,9 +58,12 @@ html_show_sourcelink = False
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['../_templates']
+
 html_static_path = ['../_static']
 
 html_baseurl = 'https://docs.hyperviewhq.com'
+
+html_extra_path = ['robots.txt']
 
 html_logo = "../_static/logo.png"
 
