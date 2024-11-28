@@ -10,8 +10,8 @@
 project = 'Hyperview'
 copyright = '2024 Hyperview'
 author = 'Hyperview'
-show_version = "false"
-show_breadcrumb_rel_links = "false"
+show_version = 'false'
+show_breadcrumb_rel_links = 'false'
 
 # -- General configuration ---------------------------------------------------
 
@@ -26,8 +26,8 @@ extensions = [
 
 # Enable myst extensions
 myst_enable_extensions = [
-    "colon_fence",
-    "attrs_block",
+    'colon_fence',
+    'attrs_block',
 ]
 
 # The suffix(es) of source filenames.
@@ -40,7 +40,7 @@ source_suffix = {
 
 # The master toctree document.
 master_doc = 'index'
-language = 'en'
+# language = 'en'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -49,7 +49,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 # -- sphinx-themes -----------------------------------------------------------
 
-html_theme = "furo"
+html_theme = 'furo'
 
 # If true, this will show te view source option in generated html
 html_show_sourcelink = False
@@ -61,13 +61,20 @@ templates_path = ['../_templates']
 
 html_static_path = ['../_static']
 
-html_baseurl = 'https://docs.hyperviewhq.com'
+html_baseurl = 'https://docs.hyperviewhq.com/'
 
 html_extra_path = ['robots.txt']
 
-html_logo = "../_static/logo.png"
+sitemap_url_scheme = '{link}'
 
-html_favicon = "../_static/favicon.ico"
+sitemap_excludes = [
+    'search.html',
+    'genindex.html',
+]
+
+html_logo = '../_static/logo.png'
+
+html_favicon = '../_static/favicon.ico'
 
 html_css_files = [
     'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css',
@@ -79,48 +86,48 @@ html_js_files = [
 ]
 
 html_theme_options = {
-    "sidebar_hide_name": True,
-    "footer_icons": [
+    'sidebar_hide_name': True,
+    'footer_icons': [
         {
-            "name": "GitHub",
-                    "url": "https://github.com/HyperviewHQ/hyperview-docs",
-                    "html": '<i class="fa-solid fa-brands fa-github fa-2x"></i>',
-                    "class": "",
+            'name': 'GitHub',
+            'url': 'https://github.com/HyperviewHQ/hyperview-docs',
+            'html': '<i class="fa-solid fa-brands fa-github fa-2x"></i>',
+            'class': '',
         },
         {
-            "name": "Twitter",
-                    "url": "https://twitter.com/hyperviewhq",
-                    "html": '<i class="fa-solid fa-brands fa-twitter fa-2x"></i>',
-                    "class": "",
+            'name': 'Twitter',
+            'url': 'https://x.com/hyperviewhq',
+            'html': '<i class="fa-solid fa-brands fa-x-twitter fa-2x"></i>',
+            'class': '',
         },
     ],
-    "light_css_variables": {
-        "font-stack": "Poppins, Roboto, Arial, Helvetica, sans-serif",
-        "font-stack--monospace": "Courier, monospace",
-        "color-brand-primary": "#6ca6ed",
-        "color-brand-content": "#6ca6ed"
+    'light_css_variables': {
+        'font-stack': 'Poppins, Roboto, Arial, Helvetica, sans-serif',
+        'font-stack--monospace': 'Courier, monospace',
+        'color-brand-primary': '#6ca6ed',
+        'color-brand-content': '#6ca6ed'
     },
-    "dark_css_variables": {
-        "color-brand-primary": "#6ca6ed",
-        "color-brand-content": "#6ca6ed"
+    'dark_css_variables': {
+        'color-brand-primary': '#6ca6ed',
+        'color-brand-content': '#6ca6ed'
     },
 }
 
 html_context = {
-    "default_mode": "auto",
+    'default_mode': 'auto',
 }
 
 
 # This sets the order of the templates that appear on the side
 html_sidebars = {
-    "**": [
-        "sidebar/scroll-start.html",
-        "../_templates/hv-brand.html",
-        "../_templates/hv-docs-home.html",
-        "sidebar/search.html",
-        "sidebar/navigation.html",
-        "../_templates/hv-api-docs-link.html",
-        "sidebar/scroll-end.html",
+    '**': [
+        'sidebar/scroll-start.html',
+        '../_templates/hv-brand.html',
+        '../_templates/hv-docs-home.html',
+        'sidebar/search.html',
+        'sidebar/navigation.html',
+        '../_templates/hv-api-docs-link.html',
+        'sidebar/scroll-end.html',
     ]
 }
 
