@@ -5,3 +5,4 @@ furo
 sphinxcontrib-gtagjs
 myst-parser
 sphinx-copybutton
+sphinx-sitemap

@@ -13,16 +13,7 @@ author = 'Hyperview'
 show_version = "false"
 show_breadcrumb_rel_links = "false"
 
-# The short X.Y version
-# version = '3.15'
-# The full version, including alpha/beta/rc tags
-# release = '3.15'
-
 # -- General configuration ---------------------------------------------------
-
-# If your documentation needs a minimal Sphinx version, state it here.
-#
-# needs_sphinx = '1.0'
 
 # Add any Sphinx extension module names here, as strings.
 extensions = [
@@ -30,6 +21,7 @@ extensions = [
     'sphinxcontrib.gtagjs',
     'myst_parser',
     'sphinx_copybutton',
+    'sphinx_sitemap',
 ]
 
 # Enable myst extensions
@@ -40,7 +32,6 @@ myst_enable_extensions = [
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
-#
 source_suffix = {
     '.rst': 'restructuredtext',
     '.txt': 'markdown',
@@ -49,15 +40,15 @@ source_suffix = {
 
 # The master toctree document.
 master_doc = 'index'
-
 language = 'en'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
-# This pattern also affects html_static_path and html_extra_path .
+# This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
-# ---sphinx-themes-----
+# -- sphinx-themes -----------------------------------------------------------
+
 html_theme = "furo"
 
 # If true, this will show te view source option in generated html
@@ -68,6 +59,8 @@ html_show_sourcelink = False
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['../_templates']
 html_static_path = ['../_static']
+
+html_baseurl = 'https://docs.hyperviewhq.com'
 
 html_logo = "../_static/logo.png"
 
@@ -131,75 +124,4 @@ html_sidebars = {
 # Google analytics
 gtagjs_ids = [
     'UA-39153802-3',
-]
-
-# -- Options for HTMLHelp output ------------------------------------------
-
-# Output file base name for HTML help builder.
-htmlhelp_basename = 'HyperviewDocumentation'
-
-# -- Options for LaTeX output ---------------------------------------------
-
-latex_elements = {
-    # The paper size ('letterpaper' or 'a4paper').
-    #
-    'papersize': 'letterpaper',
-
-    # The font size ('10pt', '11pt' or '12pt').
-    #
-    'pointsize': '10pt',
-
-    # Additional stuff for the LaTeX preamble.
-    #
-    # 'preamble': '',
-
-    # Latex figure (float) alignment
-    #
-    # 'figure_align': 'htbp',
-}
-
-# Grouping the document tree into LaTeX files. List of tuples
-# (source start file, target name, title,
-#  author, documentclass [howto, manual, or own class]).
-latex_documents = [
-    (
-        master_doc,
-        'HyperviewDocumentation.tex',
-        'Hyperview Documentation',
-        'Hyperview',
-        'manual'
-    ),
-]
-
-
-# -- Options for manual page output ---------------------------------------
-
-# One entry per manual page. List of tuples
-# (source start file, name, description, authors, manual section).
-man_pages = [
-    (
-        master_doc,
-        'Hyperviewdocumentation',
-        'Hyperview Documentation',
-        [author],
-        1
-    )
-]
-
-
-# -- Options for Texinfo output -------------------------------------------
-
-# Grouping the document tree into Texinfo files. List of tuples
-# (source start file, target name, title, author,
-#  dir menu entry, description, category)
-texinfo_documents = [
-    (
-        master_doc,
-        'HyperviewDocumentation',
-        'Hyperview Documentation',
-        author,
-        'Hyperview',
-        'Hyperview Documentation.',
-        'Miscellaneous'
-    ),
 ]
