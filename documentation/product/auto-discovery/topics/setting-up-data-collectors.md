@@ -237,7 +237,7 @@ A compressed Data Collector setup package will be downloaded to your browser's d
 4. Proceed to register the Data Collector.
 
 :::{tip}
-For testing purposes if you would like to skip hardware tests you can run the installer or the updater scripts with the SKIP_HW_TEST environment variable set to YES. `SKIP_HW_TEST=YES ./install-dc.sh`
+If you would like to skip hardware tests, e.g. for testing purposes, you can run the installer or the updater scripts with the **SKIP_HW_TEST** environment variable set to YES. `SKIP_HW_TEST=YES ./install-dc.sh`.
 :::
 
 (register)=
