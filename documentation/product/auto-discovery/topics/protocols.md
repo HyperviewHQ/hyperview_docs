@@ -58,13 +58,31 @@ Standards-based protocols (such as WMI, IPMI, and VMware) are typically from a s
 :align: left
 :widths: 50, 50
 * - Asset Type Examples
-  - Windows OS servers
+  - Microsoft Windows servers
 * - Default Port
   - 135 (configurable)
 * - Information
   - Windows OS properties
 * - Credentials
   - Windows login
+* - Point of Contact
+  - Individual assets
+:::
+
+**IxOS**
+
+:::{list-table}
+:header-rows: 1
+:align: left
+:widths: 50, 50
+* - Asset Type Examples
+  - Keysight Ixia/IxOS devices
+* - Default Port
+  - 443 (configurable)
+* - Information
+  - Device properties
+* - Credentials
+  - Login credentials
 * - Point of Contact
   - Individual assets
 :::
@@ -100,6 +118,10 @@ The following tables describe SNMP and SSH support.
   - Community String (v1, v2c), Username/password/Passphrase (v3)
 * - Point of Contact
   - Individual assets
+:::
+
+:::{note}
+- See [SNMP-AES_192_256](#snmp-aes-192-256) for more information on AES192 and AES256 support.
 :::
 
 **SSH**
@@ -166,8 +188,4 @@ Since every BACnet/IP and Modbus TCP implementation is unique, you must create c
 
 ### Other protocols
 
-Hyperview has support for the MQTT protocol. If you have MQTT-based hardware that you would like supported please contact the Hyperview support team.
-
-:::{note}
-Support for MQTT is limited to the Linux Data Collector.
-:::
+Hyperview has support for the MQTT protocol. If you have MQTT-based hardware that you would like supported please contact the [Hyperview support team](https://system.hyperviewhq.com/helpdesk).

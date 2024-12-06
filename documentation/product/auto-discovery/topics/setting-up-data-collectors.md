@@ -12,43 +12,6 @@ The Data Collector must initiate all communication between the Data Collector an
 
 (setup-data-collectors)=
 
-## Protocol Support
-
-:::{list-table}
-:header-rows: 1
-:align: left
-:widths: 50, 50
-
-* - Protocol
-  - Supported
-* - SNMP V1/V2c/V3
-  - Yes
-* - IPMI
-  - Yes
-* - SSH
-  - Yes
-* - Modbus/TCP
-  - Yes
-* - BACnet IP
-  - Yes
-* - VMware
-  - Yes
-* - Firmware update
-  - Yes
-* - WMI
-  - Yes
-* - IxOS
-  - Yes
-* - AssetTracker
-  - Yes
-* - MQTT Broker
-  - Yes
-:::
-
-:::{note}
-- See [SNMP-AES_192_256](#snmp-aes-192-256) for more information on AES192 and AES256 support.
-:::
-
 ## Prerequisites
 
 You must install the Hyperview Data Collector on at least one machine (physical or virtual, running a supported operating system) with network access to your devices. You **cannot** install multiple instances of the Data Collector on the same device or register the same device with more than one Hyperview instance.
