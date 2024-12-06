@@ -12,27 +12,25 @@ Only licensed instances will have relevant features. To confirm if you have a Do
 
 A "document" can be a file or a URL. The following file types are supported:
 
-```{eval-rst}
-.. list-table::
-   :header-rows: 1
-   :align: left
-   :widths: 30, 70
-
-   * - Category
-     - Supported file types
-   * - Document format
-     - .doc, .docx, .odt, .pdf, .rtf, .txt
-   * - Image
-     - .bmp, .dib, .gif, .ico, .jfi, .jfif, jif, .jpe, .jpeg, .jpg, .png, .svg, .tif, .tiff
-   * - List/Spreadsheet
-     - .csv, .ods, .xls, .xlsx
-   * - Presentation
-     - .odp, .pps, .ppsx, .ppt, .pptx
-   * - Visio
-     - .vsd, .vss, .vst, .vdx, .vsx, .vtx, .vsdx, .vssx, .vstx, .vsdm, .vssm, .vstm, .vsw, .vsl
-   * - Other
-     - .mib, .xml, .zip
-```
+:::{list-table}
+:header-rows: 1
+:align: left
+:widths: 30, 70
+* - Category
+  - Supported file types
+* - Document format
+  - .doc, .docx, .odt, .pdf, .rtf, .txt
+* - Image
+  - .bmp, .dib, .gif, .ico, .jfi, .jfif, jif, .jpe, .jpeg, .jpg, .png, .svg, .tif, .tiff
+* - List/Spreadsheet
+  - .csv, .ods, .xls, .xlsx
+* - Presentation
+  - .odp, .pps, .ppsx, .ppt, .pptx
+* - Visio
+  - .vsd, .vss, .vst, .vdx, .vsx, .vtx, .vsdx, .vssx, .vstx, .vsdm, .vssm, .vstm, .vsw, .vsl
+* - Other
+  - .mib, .xml, .zip
+:::
 
 :::{note}
 The maximum upload size is 10 MB. The default total document storage size is 5 GB.

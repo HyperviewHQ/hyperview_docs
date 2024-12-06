@@ -10,24 +10,22 @@ Available roles are:
 All users (including those with read-only roles) can manage their account profile, saved searches, and asset watchlist.
 :::
 
-```{eval-rst}
-.. list-table::
-   :header-rows: 1
-   :align: left
-
-   * - Role
-     - Privileges
-   * - Administrator
-     - Has unrestricted, system-wide access in Hyperview and is not impacted by asset access policies
-   * - Data Center Manager
-     - Has complete asset management privileges but cannot run or configure discoveries, administer accounts, view the application log, or make system-wide changes
-   * - Power User
-     - Has Data Center Manager-level privileges but cannot delete or bulk-delete records
-   * - Reporting
-     - Has read-only access to Hyperview for reporting purposes
-   * - Read Only
-     - Has read-only access to Hyperview
-```
+:::{list-table}
+:header-rows: 1
+:align: left
+* - Role
+  - Privileges
+* - Administrator
+  - Has unrestricted, system-wide access in Hyperview and is not impacted by asset access policies
+* - Data Center Manager
+  - Has complete asset management privileges but cannot run or configure discoveries, administer accounts, view the application log, or make system-wide changes
+* - Power User
+  - Has Data Center Manager-level privileges but cannot delete or bulk-delete records
+* - Reporting
+  - Has read-only access to Hyperview for reporting purposes
+* - Read Only
+  - Has read-only access to Hyperview
+:::
 
 You can perform tasks related to user accounts from the Account Management portal (*Account → Account Management*).
 
