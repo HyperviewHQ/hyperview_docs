@@ -91,51 +91,32 @@ All API changes are reflected in the corresponding Open API (aka Swagger) interf
 
 The following routes have been added to the Hyperview API:
 
-```{eval-rst}
-+-----------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
 | **New API Route**                                               | **Description**                                                                                            |
-+-----------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| --------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
 | ``GET /api/v2/asset/sensorsDailySummaries/numeric``             | Returns a list of numeric sensor daily summaries for each provided sensor ID for a specific UTC time range |
-+-----------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
 | ``GET /api/v2/asset/sensorsDailySummaries/numeric/{timeRange}`` | Returns a list of numeric sensor daily summaries for each provided sensor ID for a given time range option |
-+-----------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
 | ``GET /api/v2/asset/sensorsDailySummaries/string``              | Returns a list of string sensor daily summaries for each provided sensor ID for a specific UTC time range  |
-+-----------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
 | ``GET /api/v2/asset/sensorsDailySummaries/string/{timeRange}``  | Returns a list of string sensor daily summaries for each provided sensor ID for a given time range option  |
-+-----------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
-```
 
 #### New /asset/sensorsDataPoints endpoints
 
 The following routes have been added to the Hyperview API:
 
-```{eval-rst}
-+-----------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
 | **New API Route**                                               | **Description**                                                                                            |
-+-----------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| --------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
 | ``GET /api/v2/asset/sensorsDataPoints/numeric``                 | Returns a list of numeric sensor data points for each provided sensor ID for a specific UTC time range     |
-+-----------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
 | ``GET /api/v2/asset/sensorsDataPoints/numeric/{timeRange}``     | Returns a list of numeric sensor data points for each provided sensor ID for a given time range option     |
-+-----------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
 | ``GET /api/v2/asset/sensorsDataPoints/string``                  | Returns a list of string sensor data points for each provided sensor ID for a specific UTC time range      |
-+-----------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
 | ``GET /api/v2/asset/sensorsDataPoints/string/{timeRange}``      | Returns a list of string sensor data points for each provided sensor ID for a given time range option      |
-+-----------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
-```
 
 #### New /setting/assetTypeDashboardSettings endpoints
 
 The following routes have been added to the Hyperview API:
 
-```{eval-rst}
-+-----------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
 | **New API Route**                                               | **Description**                                                                                            |
-+-----------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| --------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
 | ``GET /api/v2/setting/assetTypeDashboardSettings/{assetTypeId}``| Returns a dashboard setting for a specific asset type                                                      |
-+-----------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
 | ``PUT /api/v2/setting/assetTypeDashboardSettings``              | Updates a dashboard setting and returns the updated dashboard setting                                      |
-+-----------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
-```
 
 #### Other notable changes
 
@@ -327,55 +308,32 @@ All API changes are reflected in the corresponding Open API (aka Swagger) interf
 
 The following document management routes have been added to the Hyperview API:
 
-```{eval-rst}
-+----------------------------------------------------------------------------+-----------------------------------------------------------------------------+
 | **New API Route**                                                          | **Description**                                                             |
-+----------------------------------------------------------------------------+-----------------------------------------------------------------------------+
+| -------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
 | ``POST /api/v2/asset/bulk/assets/addDocumentAssociation``                  | Sends a bulk request to associate a single document with one or more assets |
-+----------------------------------------------------------------------------+-----------------------------------------------------------------------------+
 | ``POST /api/v2/asset/bulk/assets/removeDocumentAssociation``               | Sends a bulk request to remove an existing document association             |
-+----------------------------------------------------------------------------+-----------------------------------------------------------------------------+
 | ``GET /api/v2/setting/documentAccessPolicies/{documentId}``                | Returns the access policy ID associated with a document                     |
-+----------------------------------------------------------------------------+-----------------------------------------------------------------------------+
 | ``PUT /api/v2/setting/documentAccessPolicies/{documentId}``                | Updates the access policy ID associated with a document                     |
-+----------------------------------------------------------------------------+-----------------------------------------------------------------------------+
 | ``POST /api/v2/asset/documentAssociations``                                | Creates an association between an asset and a document                      |
-+----------------------------------------------------------------------------+-----------------------------------------------------------------------------+
 | ``DELETE /api/v2/asset/documentAssociations/{assetDocumentAssociationId}`` | Deletes the access policy ID associated with a document                     |
-+----------------------------------------------------------------------------+-----------------------------------------------------------------------------+
 | ``GET /api/v2/asset/documentAssociations/documentDetails/{assetId}``       | Returns a list of associated document details for an asset                  |
-+----------------------------------------------------------------------------+-----------------------------------------------------------------------------+
 | ``GET /api/v2/asset/documentAssociations/assets/{documentId}``             | Returns a list of associated assets for a document                          |
-+----------------------------------------------------------------------------+-----------------------------------------------------------------------------+
 | ``GET /api/v2/setting/documentDetails/{documentDetailsId}``                | Returns details for a single document                                       |
-+----------------------------------------------------------------------------+-----------------------------------------------------------------------------+
 | ``GET /api/v2/setting/documentDetails``                                    | Returns a collection of document details                                    |
-+----------------------------------------------------------------------------+-----------------------------------------------------------------------------+
 | ``GET /api/v2/setting/documentManagement/storageSize``                     | Returns the used and maximum storage size (in gigabytes)                    |
-+----------------------------------------------------------------------------+-----------------------------------------------------------------------------+
 | ``GET /api/v2/setting/documents/{documentId}``                             | Downloads a document                                                        |
-+----------------------------------------------------------------------------+-----------------------------------------------------------------------------+
 | ``PUT /api/v2/setting/documents/{documentId}``                             | Updates a document                                                          |
-+----------------------------------------------------------------------------+-----------------------------------------------------------------------------+
 | ``DELETE /api/v2/setting/documents/{documentId}``                          | Deletes a document                                                          |
-+----------------------------------------------------------------------------+-----------------------------------------------------------------------------+
 | ``POST /api/v2/setting/documents``                                         | Uploads a document and saves its details                                    |
-+----------------------------------------------------------------------------+-----------------------------------------------------------------------------+
-```
 
 #### New manual sensor endpoints
 
 The following manual sensor routes have been added to the Hyperview API:
 
-```{eval-rst}
-+--------------------------------------------------------------------+---------------------------------------+
 | **New API Route**                                                  | **Description**                       |
-+--------------------------------------------------------------------+---------------------------------------+
+| ------------------------------------------------------------------ | ------------------------------------- |
 | ``POST /api/v2/asset/manualSensors``                               | Creates one or more manual sensors    |
-+--------------------------------------------------------------------+---------------------------------------+
 | ``PUT /api/v2/asset/manualSensors/numericSensor/{sensorId}/value`` | Updates a numeric manual sensor value |
-+--------------------------------------------------------------------+---------------------------------------+
-```
 
 #### Deprecations
 
@@ -391,25 +349,15 @@ All URL-versioned data collector endpoints (`/api/v1/dataCollector/`) in the Dat
 
 The following properties have been updated across the Hyperview API. Depending on how you have integrated against the relevant endpoints, you may need to update existing integrations.
 
-```{eval-rst}
-+------------------------------------------------+---------------------------+-----------------------------------------+
 | **API Route**                                  | **Old Property Name**     | **New Property Name**                   |
-+------------------------------------------------+---------------------------+-----------------------------------------+
+| ---------------------------------------------- | ------------------------- | --------------------------------------- |
 | ``POST /asset/assets``                         | ``monitoringProfile``     | ``sensorMonitoringProfile``             |
-+------------------------------------------------+---------------------------+-----------------------------------------+
 | ``GET /asset/assets``                          | ``monitoringProfileType`` | ``sensorMonitoringProfileType``         |
-+------------------------------------------------+---------------------------+-----------------------------------------+
 | ``GET /asset/assets/id``                       | ``monitoringProfileType`` | ``sensorMonitoringProfileType``         |
-+------------------------------------------------+---------------------------+-----------------------------------------+
 | ``PUT /asset/monitorOnlyCommunicationSetting`` | ``monitoringProfileType`` | ``sensorMonitoringProfileType``         |
-+------------------------------------------------+---------------------------+-----------------------------------------+
 | ``GET /asset/shelvedAssets/rackId``            | ``monitoringProfileType`` | ``sensorMonitoringProfileType``         |
-+------------------------------------------------+---------------------------+-----------------------------------------+
 | ``GET /setting/license``                       | ``floorMountedDevices``   | None (now appears under ``thresholds``) |
-+------------------------------------------------+---------------------------+-----------------------------------------+
 | ``GET /setting/license``                       | ``monitoredIpAddresses``  | None (now appears under ``thresholds``) |
-+------------------------------------------------+---------------------------+-----------------------------------------+
-```
 
 ### Notable bug fixes
 
