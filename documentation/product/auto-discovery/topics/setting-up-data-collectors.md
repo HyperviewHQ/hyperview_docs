@@ -47,47 +47,19 @@ Please let us know if you would like us to support more Linux distributions.[Con
 
 Depending on the Linux distribution used, please use apt, or dnf to install the following packages
 
-:::{list-table}
-:header-rows: 1
-:align: left
-:widths: 33, 33, 33
-* - Command
-  - APT Package
-  - RPM Package
-* - *awk*
-  - gawk or mawk
-  - gawk
-* - *cut*
-  - coreutils
-  - coreutils
-* - *docker*
-  - docker-ce and docker-compose-plugin
-  - docker-ce and docker-compose-plugin
-* - *grep*
-  - grep
-  - grep
-* - *host*
-  - bind9-host
-  - bind-utils
-* - *jq*
-  - jq
-  - jq
-* - *libicu*
-  - libicu72
-  - libicu
-* - *sed*
-  - sed
-  - sed
-* - *tar*
-  - tar
-  - tar
-* - *uuidgen*
-  - uuid-runtime
-  - util-linux
-* - *whiptail*
-  - whiptail
-  - newt
-:::
+| Command    | Deb/APT Package                     | RPM/Dnf Package                     |
+| ---------- | ----------------------------------- | ----------------------------------- |
+| *awk*      | gawk or mawk                        | gawk                                |
+| *cut*      | coreutils                           | coreutils                           |
+| *docker*   | docker-ce and docker-compose-plugin | docker-ce and docker-compose-plugin |
+| *grep*     | grep                                | grep                                |
+| *host*     | bind9-host                          | bind-utils                          |
+| *jq*       | jq                                  | jq                                  |
+| *libicu*   | libicu72                            | libicu                              |
+| *sed*      | sed                                 | sed                                 |
+| *tar*      | tar                                 | tar                                 |
+| *uuidgen*  | uuid-runtime                        | util-linux                          |
+| *whiptail* | whiptail                            | newt                                |
 
 :::{note}
 - Docker Inc. provides [detailed installation documentation](https://docs.docker.com/engine/install/).
@@ -250,3 +222,5 @@ Verify that Docker containers with the following names are running using `docker
 - dc-docker-stack-mqtt-broker-1
 - dc-docker-stack-mqtt-service-1
 - dc-docker-stack-snmptrapreceiver-service-1
+
+Next verify the last communicated timestamp in your Hyperview instance **Discoveries ->  Data Collectors** list. It should update approximately every 30 seconds. You can use the refresh button to update the data in the table.
