@@ -25,7 +25,7 @@ You must install the Hyperview Data Collector on at least one machine (physical 
 - 64 GB of free space in the /opt partition or where the /opt directory resides
 
 :::{tip}
-If you plan to use a Raspberry Pi for data collection, the **minimum** hardware requirements are a Raspberry Pi 4B 8GB model and a physical SSD or NVMe for storage.
+If you plan to use a Raspberry Pi for data collection, the **minimum** hardware requirements are a Raspberry Pi4b 8GB model and a physical SSD or NVMe for storage.
 :::
 
 ### Supported Linux Distributions
@@ -127,6 +127,15 @@ A compressed Data Collector setup package will be downloaded to your browser's d
 
 1. Extract the downloaded Data Collector tar file to a local folder.
 2. Run the install script as root (`install-dc.sh`).
+
+:::{tip}
+If you would like to skip hardware tests, e.g. for testing purposes, you can run the installer or the updater scripts with the **SKIP_HW_TEST** environment variable set to YES.
+
+```bash
+SKIP_HW_TEST=YES ./install-dc.sh`
+```
+:::
+
 3. Accept the EULA by selecting Yes.
 
 ```{image} /product/auto-discovery/media/ldc-eula.png
@@ -134,10 +143,6 @@ A compressed Data Collector setup package will be downloaded to your browser's d
 ```
 
 4. Proceed to register the Data Collector.
-
-:::{tip}
-If you would like to skip hardware tests, e.g. for testing purposes, you can run the installer or the updater scripts with the **SKIP_HW_TEST** environment variable set to YES. `SKIP_HW_TEST=YES ./install-dc.sh`.
-:::
 
 (register)=
 
