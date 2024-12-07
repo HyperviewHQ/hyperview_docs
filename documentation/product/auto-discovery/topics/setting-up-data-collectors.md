@@ -149,7 +149,7 @@ Firewalls can interfere with Data Collector communication. We recommended that y
 :class: border-black
 ```
 
-1. Click Download or use the `wget` Linux command to download the file.
+4. Click Download or use the `wget` Linux command to download the file.
 
 :::{note}
 Please download the Data Collector version relevant to your CPU architecture. The Linux (AMD64) Data Collector is intended for Intel and AMD CPU-based systems. Linux (RPI ARM64) Data Collector is for Raspberry Pi systems.
@@ -157,7 +157,7 @@ Please download the Data Collector version relevant to your CPU architecture. Th
 
 A compressed Data Collector setup package will be downloaded to your browser's default download location. The filename will resemble linuxDataCollector-9999.tgz", where "9999" represents the version number.
 
-2. (_Optional_) Download the SHA256SUM file using wget and then use the `sha256sum -c <filename>` command to verify file integrity. If you are on Windows, then PowerShell `Get-FileHash -Algorithm SHA256 <filename>` command will give you the hash of the downloaded file and you can then do manual verification by comparing the downloaded hash file with the result of the command.
+5. (_Optional_) Download the SHA256SUM file using wget and then use the `sha256sum -c <filename>` command to verify file integrity. If you are on Windows, then PowerShell `Get-FileHash -Algorithm SHA256 <filename>` command will give you the hash of the downloaded file and you can then do manual verification by comparing the downloaded hash file with the result of the command.
 
 ## Installing the Data Collector
 
