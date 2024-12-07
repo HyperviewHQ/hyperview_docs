@@ -76,64 +76,28 @@ The Data Collector uses HTTPS/TLS (TCP/443) to communicate with Hyperview. The d
 
 Please ensure the Data Collector can reach the targeted assets on the applicable ports for your site. Below is a list of the default ports the Data Collector will use; other ports can be used if needed.
 
-:::{list-table}
-:header-rows: 1
-:align: left
-* - Protocol
-  - Ports
-  - Credential Requirements
-* - SNMP
-  - 161 (gets, sets)
-  - Community string or SNMPv3 credentials
-* - Modbus/TCP
-  - 502
-  - Not required
-* - BACnet IP
-  - 47808
-  - Not required
-* - ICMP Ping
-  - N/A
-  - Not required
-* - IPMI
-  - 623
-  - Username & Password
-* - SSH
-  - 22
-  - Username & Password or Username & Key
-* - WMI
-  - 135
-  - Username & Password
-* - VMware
-  - 443
-  - Username & Password
-* - IxOS
-  - 443
-  - Username & Password
-* - Firmware update
-  - 443 or 80
-  - Username & Password
-:::
+| Protocol        | Port             | Credential Requirements                |
+| --------------- | ---------------- | -------------------------------------- |
+| SNMP            | 161 (gets, sets) | Community string or SNMPv3 credentials |
+| Modbus/TCP      | 502              | Not required                           |
+| BACnet IP       | 47808            | Not required                           |
+| ICMP Ping       | N/A              | Not required                           |
+| IPMI            | 623              | Username & Password                    |
+| SSH             | 22               | Username & Password or Username & Key  |
+| WMI             | 135              | Username & Password                    |
+| VMware          | 443              | Username & Password                    |
+| IxOS            | 443              | Username & Password                    |
+| Firmware Update | 443 or 80        | Username & Password                    |
 
 ### Assets to Data Collector
 
 Please ensure the asset can reach the targeted Data Collector on the applicable ports for your site. Below is a list of the default ports the Data Collector will use; other ports can be used if needed or applicable.
 
-:::{list-table}
-:header-rows: 1
-:align: left
-* - Protocol
-  - Ports
-  - Credential Requirements
-* - SNMP traps
-  - 162
-  - None
-* - AssetTracker
-  - 4242
-  - Not required
-* - AssetTracker Gen2/MQTT Port
-  - 1883
-  - Username & Password
-:::
+| Protocol               | Port | Credential Requirements |
+| ---------------------- | ---- | ----------------------- |
+| SNMP traps             | 162  | Not required            |
+| AssetTracker Gen1      | 4242 | Not required            |
+| AssetTracker Gen2/MQTT | 1883 | Username & Password     |
 
 ### Firewall considerations
 
