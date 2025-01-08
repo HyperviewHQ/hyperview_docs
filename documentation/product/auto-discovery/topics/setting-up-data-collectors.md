@@ -193,3 +193,7 @@ Verify that Docker containers with the following names are running using `docker
 - dc-docker-stack-snmptrapreceiver-service-1
 
 Next verify the last communicated timestamp in your Hyperview instance **Discoveries ->  Data Collectors** list. It should update approximately every 30 seconds. You can use the refresh button to update the data in the table.
+
+## Reinstalling or uninstalling Data Collectors
+
+By default, the Data Collector is installed in the /opt/datacollector directory. To reinstall the data collector
