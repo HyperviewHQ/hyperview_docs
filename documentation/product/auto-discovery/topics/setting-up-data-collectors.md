@@ -192,8 +192,27 @@ Verify that Docker containers with the following names are running using `docker
 - dc-docker-stack-mqtt-service-1
 - dc-docker-stack-snmptrapreceiver-service-1
 
-Next verify the last communicated timestamp in your Hyperview instance **Discoveries ->  Data Collectors** list. It should update approximately every 30 seconds. You can use the refresh button to update the data in the table.
+Next verify the last communicated timestamp in your Hyperview instance **Discoveries ->  Data Collectors** list.
+It should update approximately every 30 seconds. You can use the refresh button to update the data in the table.
 
 ## Reinstalling or uninstalling Data Collectors
 
-By default, the Data Collector is installed in the /opt/datacollector directory. To reinstall the data collector
+The Data Collector core software runs as a set of Docker containers. In addition to those, configuration files,
+some [troubleshooting tools](troubleshooting-tools-doc), logs and temporary files are all kept in `/opt/datacollector`.
+
+To reinstall the Data Collector software, uninstall it first then install it.
+
+### Uninstall
+
+1. Shutdown the docker containers
+
+```bash
+cd /opt/datacollector/dc-docker-stack/
+docker compose down
+```
+
+2. Backup or rename the `/opt/datacollector` directory **If needed**
+
+3. Delete the `/opt/datacollector` directory
+
+Once the uninstallation is done, perform a re-installation following the standard instructions.
