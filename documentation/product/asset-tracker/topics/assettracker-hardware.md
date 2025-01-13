@@ -60,7 +60,7 @@ To configure a network adapter so that it is on the same subnet as the AssetTrac
 2. Right-Click and select Properties for an ethernet adapter.
 3. Open the Properties for Internet Protocol Version 4 (TCP/IPv4)
 4. Select "Use the following IP address:"
-	- IP Address: 192.168.100.### (where ### is an available IP address within the Class C range.
+	- IP Address: 192.168.100.### (where ### is an available IP address within the Class C range)
 	- Subnet Mask: 255.255.255.0
 	- Default Gateway: IP Address of the network switch or router you are connected into.
 :::
