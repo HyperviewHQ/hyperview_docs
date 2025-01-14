@@ -56,13 +56,19 @@ You must [contact our support team](https://system.hyperviewhq.com/helpdesk) to 
 :::{note}
 To configure a network adapter so that it is on the same subnet as the AssetTracker hardware, it is recommended to follow these steps:
 
-1. Run (Win+R) ncpa.cpl to open the Network Connections applet.
-2. Right-Click and select Properties for the ethernet adapter.
+1. Run (Win+R) ncpa.cpl to open the Network Connections applet
+2. Right-Click and select Properties for the ethernet adapter
 3. Open the Properties for Internet Protocol Version 4 (TCP/IPv4)
 4. Select "Use the following IP address:"
 	- IP Address: 192.168.100.### (where ### is an available IP address)
-	- Subnet Mask: 255.255.255.0
+	- Subnet Mask: 255.255.0.0
 	- Default Gateway: IP Address of the network switch or router
+```{figure} /product/asset-tracker/media/network_adapter_properties.png
+:alt: Windows Network Adapter Properties
+:class: border-black
+
+Example Windows Network Connections Configuration
+```
 :::
 
 - The Gateway communicates with the data collector over port 1883/TCP. Communication is from the Gateway to the Data Collector. The {ref}`Data Collector setup documentation<Setting-up-data-collectors-doc>` has more information on the network requirements.
