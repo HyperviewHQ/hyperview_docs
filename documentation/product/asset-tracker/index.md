@@ -22,4 +22,5 @@ Usage examples include, but aren't limited to:
 
 topics/how-assettracker-works
 topics/assettracker-hardware
+topics/v5008mq-configuration-guide
 ```
