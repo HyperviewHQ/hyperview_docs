@@ -51,7 +51,10 @@ See {ref}`AssetTracker Hardware documentation<assettracker-network-requirements>
 	:class: border-black
 	```
 	- Update the following parameters:
-		- IP Address – IP address you want to assign the AssetTracker gateway. Default value is either 192.168.100.100 or 192.168.0.200. Value is only modified once the AssetTracker modules have been rebooted which should be performed last.
+		- IP Address – The IP address you want to assign the AssetTracker gateway. Default value is either 192.168.100.100 or 192.168.0.200. Value is only modified once the AssetTracker modules have been rebooted which should be performed last.
+		:::{note}
+		For v3.1 or newer V5008MQ gateway models you may also use the DHCP option to automatically assign an IP address to the gateway.
+		:::
 		- Subnet Mask – Default value is 255.255.0.0. Can be modified.
 		- Default Gateway – Default value is 192.168.0.1. Can be modified.
 		- Server IP – The IP address of the Hyperview Data Collector host that the gateway will communicate with. Can be modified.
