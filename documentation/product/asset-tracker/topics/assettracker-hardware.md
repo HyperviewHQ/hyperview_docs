@@ -44,7 +44,7 @@ Each Master Module has an address between 1 (one) and 5 (five). Each Master Modu
 
 Master Modules with ID and address (Circled)
 ```
-
+(assettracker-network-requirements)=
 ### Network requirements
 
 :::{important}
