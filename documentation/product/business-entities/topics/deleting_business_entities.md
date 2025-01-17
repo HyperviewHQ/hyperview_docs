@@ -1,6 +1,6 @@
 # Deleting Business Entities
 
-## Use the following steps to remove a Business Entity from Hyperview.
+Use the following steps to remove a Business Entity from Hyperview.
 
 1.  Navigate to the Business Entities &gt; Overview page.
 
