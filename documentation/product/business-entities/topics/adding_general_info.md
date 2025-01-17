@@ -3,6 +3,8 @@
 This allows you to edit entity names, types, and add addresses and contacts,
 thereby enhancing the information stored in the system.
 
+Use the following steps to add or edit General for a Business Entity.
+
 1.  Navigate to Business Entities &gt; Overview page.
 
 2.  Click "Details" for a target Business Entity.
