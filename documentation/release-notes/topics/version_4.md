@@ -32,6 +32,9 @@ information is in the [Microsoft documentation](https://support.microsoft.com/en
 3. The view filter for rack total power has been proved to dynamically read the rack design value from the parent location and adjust
    the color schema based on the setting.
 
+### Other notable changes and improvements
+
+- Camera can now be added manually to Hyperview. Prior to this, the Camera asset type could only be discovered.
 
 
 ## Hyperview 4.7 (November 25, 2024)
