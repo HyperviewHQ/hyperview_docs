@@ -36,7 +36,7 @@ information is in the [Microsoft documentation](https://support.microsoft.com/en
 
 - Camera can now be added manually to Hyperview. Prior to this, the Camera asset type could only be discovered.
 - The Circuit Name property with-in connectivity has been renamed to Circuit ID to be more inline with industry conventions.
-
+- The email provider has been changed from Twilio SendGrid to Microsoft Azure Communication Services.
 
 ## Hyperview 4.7 (November 25, 2024)
 
