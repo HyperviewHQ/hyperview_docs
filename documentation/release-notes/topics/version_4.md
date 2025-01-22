@@ -32,11 +32,24 @@ information is in the [Microsoft documentation](https://support.microsoft.com/en
 3. The view filter for rack total power has been proved to dynamically read the rack design value from the parent location and adjust
    the color schema based on the setting.
 
+### Enhanced Feature: Rack Power Widget
+
+To allow for better power planning, The Rack Power Widget has been enhanced to show total template power for devices in the rack and actual plus planned power.
+
+The extra information will appear as constant lines in the graph and uses asset model information.
+
+### Enhanced Feature: Rack Layout
+
+The rack layout has been enhanced to allow customers to place assets in the front and rear of the rack in the same rack unit.
+
+
+
 ### Other notable changes and improvements
 
 - Camera can now be added manually to Hyperview. Prior to this, the Camera asset type could only be discovered.
 - The Circuit Name property with-in connectivity has been renamed to Circuit ID to be more inline with industry conventions.
 - The email provider has been changed from Twilio SendGrid to Microsoft Azure Communication Services.
+
 
 ## Hyperview 4.7 (November 25, 2024)
 
