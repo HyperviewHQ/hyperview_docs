@@ -2,6 +2,17 @@
 
 Access and filter change logs for business entities, allowing users to track modifications and updates.
 
+```{note}
+Business Entity change logs will track the user who interacted with the following changes:
+- General detail updates
+- Custom property updates
+- Document associations
+- Asset associations
+- Connection associations
+- Circuit associations
+- Access Control updates
+```
+
 1.  Navigate to the Details of an existing Business Entity.
 
 2.  Click "Change Log" tab for the Business Entity.

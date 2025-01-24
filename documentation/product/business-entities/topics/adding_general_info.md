@@ -1,13 +1,12 @@
 # Adding General Info to a Business Entity
 
-This allows you to edit entity names, types, and add addresses and contacts,
-thereby enhancing the information stored in the system.
+Enhance the information stored in the system for Business Entities by providing entity names, types, addresses and contacts.
 
-Use the following steps to add or edit General for a Business Entity.
+Use the following steps to add or edit general info for a Business Entity.
 
-1.  Navigate to Business Entities &gt; Overview page.
+1.  Navigate to the Business Entities &gt; Overview page.
 
-2.  Click "Details" for a target Business Entity.
+2.  Click the "Details" button for a target Business Entity.
 
 ```{image} /product/business-entities/media/adding_general_info/image1.jpeg
 :class: border-black
@@ -25,7 +24,7 @@ Use the following steps to add or edit General for a Business Entity.
 :class: border-black
 ```
 
-5.  Click the "Type" field and select a type from the dropdown list.
+5.  Select a Business Entity type from the dropdown list.
 
 ```{image} /product/business-entities/media/adding_general_info/image4.jpeg
 :class: border-black
@@ -55,7 +54,7 @@ Use the following steps to add or edit General for a Business Entity.
 :class: border-black
 ```
 
-10.  Click "Save" button to ensure the information is saved.
+10.  Click "Save" button on the General Info page to ensure updates are saved.
 
 ```{image} /product/business-entities/media/adding_general_info/image9.jpeg
 :class: border-black

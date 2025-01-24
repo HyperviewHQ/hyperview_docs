@@ -10,8 +10,7 @@ Manage custom properties of Business Entities in Hyperview, allowing for users t
 :class: border-black
 ```
 
-3.  To manage Custom Properties click the "Manage Custom Properties"
-    button and follow the {ref}`Managing Custom Properties documentation<managing-custom-properties-doc>` steps.
+3.  To manage Custom Properties click the "Manage Custom Properties" button and follow the {ref}`Managing Custom Properties documentation<managing-custom-properties-doc>` steps.
 
 ```{image} /product/business-entities/media/managing-custom-properties-for-business-entities/image2.jpeg
 :class: border-black

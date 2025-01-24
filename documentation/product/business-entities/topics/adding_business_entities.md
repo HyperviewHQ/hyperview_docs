@@ -1,6 +1,6 @@
 # Adding Business Entities
 
-Use the following steps to add a Business Entity in Hyperview.
+Create a new Business Entity in Hyperview by following these steps.
 
 1.  Open the Business Entities feature menu.
 
