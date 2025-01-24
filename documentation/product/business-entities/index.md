@@ -8,6 +8,10 @@ The Business Entities feature allows users to add, customers, vendors, departmen
 :maxdepth: 2
 
 topics/adding_business_entities
-topics/adding_general_info
 topics/deleting_business_entities
+topics/adding_general_info
+topics/managing-custom-properties-for-business-entities
+topics/managing-business-entity-associations
+topics/change-logs-for-business-entities
+topics/managing-access-control-for-business-entities
 ```
