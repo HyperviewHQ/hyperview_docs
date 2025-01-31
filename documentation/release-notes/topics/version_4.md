@@ -8,9 +8,9 @@ This section covers significant changes and bug fixes in Hyperview 4.8.x since v
 1. This release has changes and improvements to the Data Collector software. We strongly recommend updating your installed Data
    Collectors to the latest version to maintain an optimal monitoring and discovery experience.
 
-2. Support for the *Windows* version of the Data Collector has ended on *January 31, 2025*. Customers are encouraged to switch
-   to the Linux version before then. Detailed {ref}`installation instructions <Setting-up-data-collectors-doc>` are in the
-   product documentation.
+2. Support for the *Windows* version of the Data Collector has ended on *January 31, 2025*. Customers must switch
+   to the Linux version of the Data Collector. Detailed {ref}`installation instructions <Setting-up-data-collectors-doc>`
+   are in the product documentation.
 :::
 
 ### Enhanced Feature: Microsoft Teams Notification Channels
@@ -46,6 +46,10 @@ To allow for better power planning, The Rack Power Widget has been enhanced to s
 
 The extra information will appear as constant lines in the graph and uses asset model information.
 
+### Enhanced Feature: Bulk actions
+
+The Bulk Actions -> Update Asset Property bulk action has been updated to add Template Power.
+
 ### Enhanced Feature: Rack layout
 
 The rack layout has been enhanced to allow customers to place assets in the front and rear of the rack in the same rack unit.
@@ -65,7 +69,7 @@ The discovery engine has been enhanced to support more asset variations from ven
 - Camera can now be added manually to Hyperview. Prior to this, the Camera asset type could only be discovered.
 - The Circuit Name property with-in connectivity has been renamed to Circuit ID to be more inline with industry conventions.
 - The email provider has been changed from Twilio SendGrid to Microsoft Azure Communication Services.
-
+- The Template Power asset property can now be edited by users regardless of the source.
 
 ## Hyperview 4.7 (November 25, 2024)
 
