@@ -15,7 +15,7 @@ The **All** location has Map Mode enabled by default. The map will automatically
 
 ## Editing the layout
 
-1. Browse to the location (*Assets → Overview → Asset Hierarchy →* location).
+1. Browse to the location (*Assets → Overview → Hierarchy →* location).
 2. Click the *Layout* tab to open the Layout page.
 3. Click *Edit*. Alternatively, if there is currently no layout, click *Edit layout*.
 
@@ -34,7 +34,7 @@ Map Mode displays child locations in an embedded Google Maps view. For instance,
 
 ### Setting up Map Mode
 
-01. Browse to a data center location (*Assets → Overview → Asset Hierarchy →* location).
+01. Browse to a data center location (*Assets → Overview → Hierarchy →* location).
 02. Open the location's Properties page (*Information → Properties*).
 03. Make sure the Address field (under Contact) is populated. If it is empty or needs to be updated, click on the pen icon for the field and start typing the location's street address.
 04. Matching addresses will appear in the dropdown list as you type. Select the correct address.
@@ -79,7 +79,7 @@ Floor Plan Mode displays a location's floor plan. For example, you can add a bac
 <div class="pb-3"><iframe src="https://player.vimeo.com/video/519224361" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
 ```
 
-1. Browse to a data center location (*Assets → Overview → Asset Hierarchy →* location).
+1. Browse to a data center location (*Assets → Overview → Hierarchy →* location).
 2. Click *Layout → Edit → Mode → Floor Plan Mode*. You can proceed to add a background image, a grid, and other objects as needed.
 3. Click *Save* when you are done.
 

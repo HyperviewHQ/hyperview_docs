@@ -153,7 +153,7 @@ Alternatively, to remove document associations per asset:
 
 You can bulk-add or bulk-remove document associations while accessing assets from an Assets By Type, Assets By Location, or Advanced Search grid. The steps are identical for all three grids.
 
-1. Browse to the Assets By Type or Assets By Location grid, or perform an Advanced Search to find the intended assets. For example, to view all Virtual Servers, open *Assets → Asset Types → Virtual Server*.
+1. Browse to the Assets By Type or Assets By Location grid, or perform an Advanced Search to find the intended assets. For example, to view all Virtual Servers, open *Assets → Types → Virtual Server*.
 2. Select the assets that you want to associate with a certain document.
 3. Click *Bulk Actions → Add Document Association* to add associations, or *Bulk Actions → Remove Document Association* to remove them. A corresponding modal will open.
 4. Select the checkbox if you want to receive an email notification when the bulk job is completed.
