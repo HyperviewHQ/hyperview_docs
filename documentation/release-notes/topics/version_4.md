@@ -7,6 +7,7 @@ This section covers significant changes and bug fixes in Hyperview 4.7.x since v
 :::{important}
 1. This release has changes and improvements to the Data Collector software. We strongly recommend updating your installed Data
    Collectors to the latest version to maintain an optimal monitoring and discovery experience.
+
 2. Support for the *Windows* version of the Data Collector has ended on *January 31, 2025*. Customers are encouraged to switch
    to the Linux version before then. Detailed {ref}`installation instructions <Setting-up-data-collectors-doc>` are in the
    product documentation.
@@ -15,34 +16,49 @@ This section covers significant changes and bug fixes in Hyperview 4.7.x since v
 ### Enhanced Feature: Microsoft Teams Notification Channels
 
 Microsoft has [announced](https://devblogs.microsoft.com/microsoft365dev/retirement-of-office-365-connectors-within-microsoft-teams/)
-the sudden and quick retirement of the Webhook interface within Microsoft Teams. With this change we have updated the functionality to
-support the recommended approach.
+the sudden and quick retirement of the Webhook interface within Microsoft Teams. With this change we have updated the
+functionality to support the recommended approach.
 
-The functionality will still use webhooks, albeit, the webhook will need to be created using a Workflow instead of a Connector. More
-information is in the [Microsoft documentation](https://support.microsoft.com/en-us/office/create-incoming-webhooks-with-workflows-for-microsoft-teams-8ae491c7-0394-4861-ba59-055e33f75498).
+The functionality will still use webhooks, albeit, the webhook will need to be created using a Workflow instead of a Connector.
+More information is in the [Microsoft documentation](https://support.microsoft.com/en-us/office/create-incoming-webhooks-with-workflows-for-microsoft-teams-8ae491c7-0394-4861-ba59-055e33f75498).
+
+:::{important}
+If you have setup webhooks using the deprecated Webhook interface, please convert to the new method to avoid an
+interruption in notifications. Contact Hyperview support if you need any assistance or advice on the matter.
+:::
+
+### Enhanced Feature: Notification template
+
+The alarm event notification template has been improved to add more information. The new template will have more comprehensive summary information and a details sections that will have more detailed information on a sample of most critical events. Links back to Hyperview will be provided to take action and get more information where applicable.
 
 ### Enhanced Feature: Layout editor
 
-1. The initial tile offset grids can now be set and edited to cater for room layouts that start with partial tiles.
-
-2. A new "Multi Select" menu has been added the layout header action item group to allow for group select of various layout components.
+1. A new "Multi Select" menu has been added the layout header action item group to allow for group select of various layout components.
    Capabilities have been added for select all, select all shapes, select all Racks, and select all assets as well as a rectangular
    selection box that can be drawn on the layout. Once selected items can be removed or group edited depending on context.
 
-3. The view filter for rack total power has been proved to dynamically read the rack design value from the parent location and adjust
+2. The view filter for rack total power has been proved to dynamically read the rack design value from the parent location and adjust
    the color schema based on the setting.
 
-### Enhanced Feature: Rack Power Widget
+### Enhanced Feature: Rack power widget
 
 To allow for better power planning, The Rack Power Widget has been enhanced to show total template power for devices in the rack and actual plus planned power.
 
 The extra information will appear as constant lines in the graph and uses asset model information.
 
-### Enhanced Feature: Rack Layout
+### Enhanced Feature: Rack layout
 
 The rack layout has been enhanced to allow customers to place assets in the front and rear of the rack in the same rack unit.
 
+### Enhanced Feature:  Asset power sensors
 
+The power analyzer will now take into consideration other available power information such as metered outlets connected to the asset and will calculate power metrics where applicable.
+
+This will add new computed sensors on the assets to track this data.
+
+### Enhanced Feature: Discovery engine
+
+The discovery engine has been enhanced to support more asset variations from vendors like Vertiv/Liebert, Schneider Electric/APC and others. Customers are required to have the latest version of the Linux Data Collector to take advantage of these improvements.
 
 ### Other notable changes and improvements
 
