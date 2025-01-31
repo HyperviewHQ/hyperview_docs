@@ -240,7 +240,7 @@ The Advanced Search grid is intended for querying records. However, any grid in 
 For example:
 
 - You can search for an asset's Change Log entries (*Information → Change Log*) by User.
-- You can search Assets By Type grids (*Asset Types → any asset type*) by Name, Data Center, Location, Manufacturer or Model.
+- You can search Assets By Type grids (*Types → any asset type*) by Name, Data Center, Location, Manufacturer or Model.
 
 ```{image} /product/using-hyperview/search/media/changelog_search.png
 :class: border-black
@@ -254,7 +254,7 @@ For certain kinds of pages, you can open your current grid in Advanced Search by
 
 Supported pages are:
 
-- Assets By Type pages (for example, *Asset Types → Rack → Open in Advanced Search* opens the Rack Assets By Type page in Advanced Search)
+- Assets By Type pages (for example, *Types → Rack → Open in Advanced Search* opens the Rack Assets By Type page in Advanced Search)
 - Assets By Location pages (for example, browse to a location → *Information → Assets → Open in Advanced Search* opens the location's Assets grid in Advanced Search)
 
 ```{image} /product/using-hyperview/search/media/location_assets.png

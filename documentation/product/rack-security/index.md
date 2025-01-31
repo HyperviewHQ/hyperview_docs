@@ -106,7 +106,7 @@ To view the security status of racks under a given location, go to the location'
 
 ### In the Hierarchy
 
-Lock icons will appear in the asset hierarchy tree for racks that have security sensors.
+Lock icons will appear in the Asset Hierarchy tree for racks that have security sensors.
 
 ```{image} media/hierarchy_icon.png
 :alt: Location hierarchy icon popover
