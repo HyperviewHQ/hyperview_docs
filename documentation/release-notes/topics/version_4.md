@@ -2,7 +2,7 @@
 
 ## Hyperview 4.8 (TBD)
 
-This section covers significant changes and bug fixes in Hyperview 4.7.x since version 4.6.x
+This section covers significant changes and bug fixes in Hyperview 4.8.x since version 4.7.x
 
 :::{important}
 1. This release has changes and improvements to the Data Collector software. We strongly recommend updating your installed Data
