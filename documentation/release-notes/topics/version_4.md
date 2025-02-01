@@ -60,7 +60,7 @@ The power analyzer will now take into consideration other available power inform
 
 This will add new computed sensors on the assets to track this data.
 
-### Enhanced Feature: Discovery engine
+### Enhanced Feature: Discovery
 
 The discovery engine has been enhanced to support more asset variations from vendors like Vertiv/Liebert, Schneider Electric/APC and others. Customers are required to have the latest version of the Linux Data Collector to take advantage of these improvements.
 
