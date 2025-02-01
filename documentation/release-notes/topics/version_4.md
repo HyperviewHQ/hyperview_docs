@@ -58,7 +58,9 @@ The rack layout has been enhanced to allow customers to place assets in the fron
 
 The power analyzer will now take into consideration other available power information such as metered outlets connected to the asset and will calculate power metrics where applicable.
 
-This will add new computed sensors on the assets to track this data.
+:::{note}
+This will add new computed sensors to track this data.
+:::
 
 ### Enhanced Feature: Discovery
 
