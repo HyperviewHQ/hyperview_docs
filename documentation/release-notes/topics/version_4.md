@@ -23,7 +23,7 @@ The functionality will still use webhooks, albeit, the webhook will need to be c
 More information is in the [Microsoft documentation](https://support.microsoft.com/en-us/office/create-incoming-webhooks-with-workflows-for-microsoft-teams-8ae491c7-0394-4861-ba59-055e33f75498).
 
 :::{important}
-If you have setup webhooks using the deprecated Webhook interface, please convert to the new method to avoid an
+If you have setup notifications using the deprecated Webhook interface, please convert to the new method to avoid an
 interruption in notifications. Contact Hyperview support if you need any assistance or advice on the matter.
 :::
 
