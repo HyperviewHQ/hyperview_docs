@@ -32,12 +32,12 @@ If you plan to use a Raspberry Pi for data collection, the **minimum** hardware 
 
 The following distributions are tested to run the Hyperview Data Collector.
 
+  - Red Hat Enterprise Linux 8 & 9 with the [official instructions](https://docs.docker.com/engine/install/rhel/)
+  - Ubuntu Server LTS 22.04 & 24.04
   - CentOS 9
   - Rocky Linux 9 (Using the CentOS 9 instructions)
   - Alma Linux 9 (Using the CentOS 9 instructions)
   - Debian 11 or 12
-  - Ubuntu Server LTS 22.04+
-  - **BETA** Red Hat Enterprise Linux 8 & 9 with the [official instructions](https://docs.docker.com/engine/install/rhel/)
 
 :::{tip}
 Please let us know if you would like us to support more Linux distributions.[Contact Support](https://system.hyperviewhq.com/helpdesk).
