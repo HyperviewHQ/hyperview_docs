@@ -11,6 +11,9 @@ This section covers significant changes and bug fixes in Hyperview 4.8.x since v
 2. Support for the *Windows* version of the Data Collector has ended on *January 31, 2025*. Customers must switch
    to the Linux version of the Data Collector. Detailed {ref}`installation instructions <Setting-up-data-collectors-doc>`
    are in the product documentation.
+
+3. The email provider has been changed from Twilio SendGrid to Microsoft Azure Communication Services. Notification emails will
+   come from a **DoNotReply** email under an **azurecomm.net** domain.
 :::
 
 ### Enhanced Feature: Microsoft Teams Notification Channels
@@ -26,10 +29,6 @@ More information is in the [Microsoft documentation](https://support.microsoft.c
 If you have setup notifications using the deprecated Webhook interface, please convert to the new method to avoid an
 interruption in notifications. Contact Hyperview support if you need any assistance or advice on the matter.
 :::
-
-### Enhanced Feature: Notification template
-
-The alarm event notification template has been improved to add more information. The new template will have more comprehensive summary information and a details sections that will have more detailed information on a sample of most critical events. Links back to Hyperview will be provided to take action and get more information where applicable.
 
 ### Enhanced Feature: Layout editor
 
@@ -70,8 +69,20 @@ The discovery engine has been enhanced to support more asset variations from ven
 
 - Camera can now be added manually to Hyperview. Prior to this, the Camera asset type could only be discovered.
 - The Circuit Name property with-in connectivity has been renamed to Circuit ID to be more inline with industry conventions.
-- The email provider has been changed from Twilio SendGrid to Microsoft Azure Communication Services.
 - The Template Power asset property can now be edited by users regardless of the source.
+- The notification event template has been updated to provide more information.
+- Bulk import validation has been improved with more extensive data validation, better pre flight checks and more clear error messages.
+- Improved access policy checks when using layout editor.
+- Improved access policy checks when using the Carbon footprint report.
+- Improved the Date/time picker in the mute notifications modal on mobile devices.
+
+### Notable bug fixes
+
+- **AS-15776** Fixed a bug that caused type specific customer properties to not be created if an asset changes type.
+- **AS-16450** Fixed a bug that caused the outlet location to not appear in the power path PDU/RPP Asset info grid.
+- **AS-16561** Fixed a bug that caused discoveries to fail if the discovery name is very long.
+- **AS-15759** Fixed a bug that caused the weight to not show properly if selected a a column in advanced search.
+- **AS-16358** Fixed a bug that caused the output total power sensor to not be computed after the Bank Power Sensors, for certain asset types and where those assets also have bank power sensors but no output total power sensors.
 
 ## Hyperview 4.7 (November 25, 2024)
 
