@@ -12,15 +12,16 @@ This section covers significant changes and bug fixes in Hyperview 4.8.x since v
    to the Linux version of the Data Collector. Detailed {ref}`installation instructions <Setting-up-data-collectors-doc>`
    are in the product documentation.
 
-3. The email provider has been changed from Twilio SendGrid to Microsoft Azure Communication Services. Notification emails will
-   come from a **DoNotReply** email under an **azurecomm.net** domain.
+3. The communication provider for email notification has been changed from Twilio SendGrid to Microsoft Azure Communication
+   Services. Notification emails will come from a **DoNotReply@<SUBDOMAIN>.azurecomm.net** domain. The Subdomain
+   will change based on the azure region.
 :::
 
 ### Enhanced Feature: Microsoft Teams Notification Channels
 
 Microsoft has [announced](https://devblogs.microsoft.com/microsoft365dev/retirement-of-office-365-connectors-within-microsoft-teams/)
 the sudden and quick retirement of the Webhook interface within Microsoft Teams. With this change we have updated the
-functionality to support the recommended approach.
+functionality to support the new recommended approach.
 
 The functionality will still use webhooks, albeit, the webhook will need to be created using a Workflow instead of a Connector.
 More information is in the [Microsoft documentation](https://support.microsoft.com/en-us/office/create-incoming-webhooks-with-workflows-for-microsoft-teams-8ae491c7-0394-4861-ba59-055e33f75498).
@@ -41,7 +42,8 @@ interruption in notifications. Contact Hyperview support if you need any assista
 
 ### Enhanced Feature: Rack power widget
 
-To allow for better power planning, The Rack Power Widget has been enhanced to show total template power for devices in the rack and actual plus planned power.
+To allow for better power planning, The Rack Power Widget has been enhanced to show total template power for devices in the rack and
+planned power.
 
 The extra information will appear as constant lines in the graph and uses asset model information.
 
@@ -53,9 +55,10 @@ The Bulk Actions -> Update Asset Property bulk action has been updated to add Te
 
 The rack layout has been enhanced to allow customers to place assets in the front and rear of the rack in the same rack unit.
 
-### Enhanced Feature:  Asset power sensors
+### Enhanced Feature: Asset power sensors
 
-The power analyzer will now take into consideration other available power information such as metered outlets connected to the asset and will calculate power metrics where applicable.
+The power analyzer will now take into consideration other available power information such as metered outlets connected to the asset
+and will calculate power metrics where applicable.
 
 :::{note}
 This will add new computed sensors to track this data.
@@ -67,22 +70,22 @@ The discovery engine has been enhanced to support more asset variations from ven
 
 ### Other notable changes and improvements
 
-- Camera can now be added manually to Hyperview. Prior to this, the Camera asset type could only be discovered.
+- The Camera asset type can now be added manually. Prior to this, the Camera asset type could only be discovered.
 - The Circuit Name property with-in connectivity has been renamed to Circuit ID to be more inline with industry conventions.
 - The Template Power asset property can now be edited by users regardless of the source.
 - The notification event template has been updated to provide more information.
-- Bulk import validation has been improved with more extensive data validation, better pre flight checks and more clear error messages.
+- Bulk import validation has been improved with more extensive data validation, and more clear error messages.
 - Improved access policy checks when using layout editor.
 - Improved access policy checks when using the Carbon footprint report.
-- Improved the Date/time picker in the mute notifications modal on mobile devices.
+- Improved the Date/time picker in the mute notifications modal to work better on smaller mobile device screens.
 
 ### Notable bug fixes
 
-- **AS-15776** Fixed a bug that caused type specific customer properties to not be created if an asset changes type.
+- **AS-15776** Fixed a bug that caused type specific custom properties to not be created if an asset changes type.
 - **AS-16450** Fixed a bug that caused the outlet location to not appear in the power path PDU/RPP Asset info grid.
 - **AS-16561** Fixed a bug that caused discoveries to fail if the discovery name is very long.
-- **AS-15759** Fixed a bug that caused the weight to not show properly if selected a a column in advanced search.
-- **AS-16358** Fixed a bug that caused the output total power sensor to not be computed after the Bank Power Sensors, for certain asset types and where those assets also have bank power sensors but no output total power sensors.
+- **AS-15759** Fixed a bug that caused the weight to not show properly in advanced search.
+- **AS-16358** Fixed a bug that caused the output total power sensor to not be computed after the Bank Power Sensors.
 
 ## Hyperview 4.7 (November 25, 2024)
 
