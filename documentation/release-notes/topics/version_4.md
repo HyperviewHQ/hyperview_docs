@@ -12,9 +12,8 @@ This section covers significant changes and bug fixes in Hyperview 4.8.x since v
    to the Linux version of the Data Collector. Detailed {ref}`installation instructions <Setting-up-data-collectors-doc>`
    are in the product documentation.
 
-3. The communication provider for email notification has been changed from Twilio SendGrid to Microsoft Azure Communication
-   Services. Notification emails will come from a **DoNotReply@SUBDOMAIN.azurecomm.net** domain. The SUBDOMAIN
-   will change based on the azure region.
+3. The communication provider for email alarm event notifications has been changed from Twilio SendGrid to Microsoft Azure
+   Communication Services.
 :::
 
 ### Enhanced Feature: Microsoft Teams Notification Channels
