@@ -36,18 +36,18 @@ sudo ./update-dc.sh
 
 ## Reconfiguring Data Collectors
 
-Execute the `reconfigure.sh` script located at `/opt/datacollector/bin` as root.
+Execute the `reconfigure.sh` script located at `/opt/datacollector/bin`.
 
 ```bash
 cd /opt/datacollector/bin
-./update-dc.sh
+sudo ./reconfigure.sh
 ```
 
 To skip hardware checks.
 
 ```bash
 cd /opt/datacollector/bin
-SKIP_HW_TEST=YES ./update-dc.sh`
+sudo SKIP_HW_TEST=YES ./reconfigure.sh`
 ```
 
 ## Retiring a Data Collector
