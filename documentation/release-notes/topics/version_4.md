@@ -70,7 +70,7 @@ The discovery engine has been enhanced to support more asset variations from ven
 ### Other notable changes and improvements
 
 - The Camera asset type can now be added manually. Prior to this, the Camera asset type could only be discovered.
-- The Circuit Name property with-in connectivity has been renamed to Circuit ID to be more inline with industry conventions.
+- The Circuit Name property within connectivity has been renamed to Circuit ID to be more inline with industry conventions.
 - The Template Power asset property can now be edited by users regardless of the source.
 - The notification event template has been updated to provide more information.
 - Bulk import validation has been improved with more extensive data validation, and more clear error messages.
