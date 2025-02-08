@@ -73,7 +73,7 @@ The discovery engine has been enhanced to support more asset variations from ven
 - The Circuit Name property within connectivity has been renamed to Circuit ID to be more inline with industry conventions.
 - The Template Power asset property can now be edited by users regardless of the source.
 - The notification event template has been updated to provide more information.
-- Bulk import validation has been improved with more extensive data validation, and more clear error messages.
+- Bulk import validation has been improved with more extensive data validation, and clearer error messages.
 - Improved access policy checks when using layout editor.
 - Improved access policy checks when using the Carbon Footprint report.
 - Improved the Date/time picker in the mute notifications modal to work better on smaller mobile device screens.
