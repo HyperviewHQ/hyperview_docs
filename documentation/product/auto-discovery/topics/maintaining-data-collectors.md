@@ -27,23 +27,28 @@ To receive email notifications if any of these alarm events trigger, simply add 
 
 ## Updating Data Collectors
 
-### For Windows Data Collectors
-
-Uninstall the existing Data Collector, then proceed to {ref}`set up the new Data Collector <Setup-data-collectors>`.
-
-### For Linux Data Collectors
-
 Execute the `update-dc.sh` script located at `/opt/datacollector/bin`. Your existing configuration will be retained. You do not have to uninstall your current Linux Data Collector.
+
+```bash
+cd /opt/datacollector/bin
+sudo ./update-dc.sh
+```
 
 ## Reconfiguring Data Collectors
 
-### For Windows Data Collectors
+Execute the `reconfigure.sh` script located at `/opt/datacollector/bin`.
 
-Run the Windows Data Collector Configuration Tool, which is located at `C:\\Program Files\\Hyperview\\Hyperview Data Collector\\configurationTool\\AgentConfigurer.exe` (assuming you installed the Data Collector at the default location). Repeat the steps outlined in {ref}`Register` to perform a full re-registration.
+```bash
+cd /opt/datacollector/bin
+sudo ./reconfigure.sh
+```
 
-### For Linux Data Collectors
+To skip hardware checks.
 
-Execute the `recofigure.sh` script located at `/opt/datacollector/bin`.
+```bash
+cd /opt/datacollector/bin
+sudo SKIP_HW_TEST=YES ./reconfigure.sh`
+```
 
 ## Retiring a Data Collector
 

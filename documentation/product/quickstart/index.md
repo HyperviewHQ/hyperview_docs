@@ -54,7 +54,7 @@ Locations in Hyperview are considered groups for containing assets. The default 
 <div class="pb-3"><iframe src="https://player.vimeo.com/video/487009215" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
 ```
 
-Once you've created a location, it will appear in the Asset Hierarchy (*Assets → Overview → Asset Hierarchy*) under its parent. Proceed to add a location layout and location map.
+Once you've created a location, it will appear in the Asset Hierarchy (*Assets → Overview → Hierarchy*) under its parent. Proceed to add a location layout and location map.
 
 ```{raw} html
 <div class="pb-3"><iframe src="https://player.vimeo.com/video/519224361" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
