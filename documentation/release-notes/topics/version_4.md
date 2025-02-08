@@ -13,7 +13,7 @@ This section covers significant changes and bug fixes in Hyperview 4.8.x since v
    are in the product documentation.
 
 3. The communication provider for email alarm event notifications has been changed from Twilio SendGrid to Microsoft Azure
-   Communication Services.
+   Communication Services. The emails will continue ro come from __no-reply@hyperviewhq.com__,
 :::
 
 ### Enhanced Feature: Microsoft Teams Notification Channels
