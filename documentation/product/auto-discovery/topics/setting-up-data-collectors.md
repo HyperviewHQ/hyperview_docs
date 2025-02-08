@@ -126,13 +126,17 @@ A compressed Data Collector setup package will be downloaded to your browser's d
 ## Installing the Data Collector
 
 1. Extract the downloaded Data Collector tar file to a local folder.
-2. Run the install script as root (`install-dc.sh`).
+2. Run the install script as __root__ or via __sudo__ (`install-dc.sh`).
+
+```bash
+sudo ./install-dc.sh`
+```
 
 :::{tip}
 If you would like to skip hardware tests, e.g. for testing purposes, you can run the installer or the updater scripts with the **SKIP_HW_TEST** environment variable set to YES.
 
 ```bash
-SKIP_HW_TEST=YES ./install-dc.sh`
+sudo SKIP_HW_TEST=YES ./install-dc.sh`
 ```
 :::
 
