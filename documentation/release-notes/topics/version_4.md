@@ -75,7 +75,7 @@ The discovery engine has been enhanced to support more asset variations from ven
 - The notification event template has been updated to provide more information.
 - Bulk import validation has been improved with more extensive data validation, and more clear error messages.
 - Improved access policy checks when using layout editor.
-- Improved access policy checks when using the Carbon footprint report.
+- Improved access policy checks when using the Carbon Footprint report.
 - Improved the Date/time picker in the mute notifications modal to work better on smaller mobile device screens.
 
 ### Notable bug fixes
