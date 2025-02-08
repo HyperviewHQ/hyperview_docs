@@ -41,7 +41,7 @@ interruption in notifications. Contact Hyperview support if you need any assista
 
 ### Enhanced Feature: Rack power widget
 
-To allow for better power planning, The Rack Power Widget has been enhanced to show total template power for devices in the rack and
+To allow for better power planning, The Rack Power widget has been enhanced to show total template power for devices in the rack and
 planned power.
 
 The extra information will appear as constant lines in the graph and uses asset model information.
