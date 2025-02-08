@@ -39,7 +39,7 @@ interruption in notifications. Contact Hyperview support if you need any assista
 2. The view filter for rack total power has been improved to dynamically read the rack design value from the parent location and adjust
    the color schema based on the setting.
 
-### Enhanced Feature: Rack power widget
+### Enhanced Feature: Rack Power widget
 
 To allow for better power planning, The Rack Power widget has been enhanced to show total template power for devices in the rack and
 planned power.
