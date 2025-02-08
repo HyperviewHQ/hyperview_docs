@@ -34,7 +34,7 @@ interruption in notifications. Contact Hyperview support if you need any assista
 
 1. A new "Multi Select" menu has been added the layout header action item group to allow for group select of various layout components.
    Capabilities have been added for select all, select all shapes, select all Racks, and select all assets as well as a rectangular
-   selection box that can be drawn on the layout. Once selected items can be removed or group edited depending on context.
+   selection box that can be drawn on the layout. Once selected, items can be removed or group edited depending on context.
 
 2. The view filter for rack total power has been improved to dynamically read the rack design value from the parent location and adjust
    the color schema based on the setting.
