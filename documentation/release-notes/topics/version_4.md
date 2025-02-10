@@ -13,7 +13,7 @@ This section covers significant changes and bug fixes in Hyperview 4.8.x since v
    are in the product documentation.
 
 3. The communication provider for email alarm event notifications has been changed from Twilio SendGrid to Microsoft Azure
-   Communication Services. The emails will continue ro come from __no-reply@hyperviewhq.com__,
+   Communication Services. The emails will continue to come from __no-reply@hyperviewhq.com__,
 :::
 
 ### Enhanced Feature: Microsoft Teams Notification Channels
@@ -41,7 +41,7 @@ interruption in notifications. Contact Hyperview support if you need any assista
 
 ### Enhanced Feature: Rack Power widget
 
-To allow for better power planning, The Rack Power widget has been enhanced to show total template power for devices in the rack and
+To allow for better power planning, the Rack Power widget has been enhanced to show total template power for devices in the rack and
 planned power.
 
 The extra information will appear as constant lines in the graph and uses asset model information.
