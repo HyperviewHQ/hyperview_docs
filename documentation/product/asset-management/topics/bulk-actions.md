@@ -20,100 +20,98 @@ This topic does not cover {ref}`bulk importing assets<Adding-assets-doc>` or bul
 
 Availability of bulk actions depends on two factors: your {ref}`user role<User-accounts-doc>` and your {ref}`feature licenses<View-license-doc>`. The following bulk actions are currently supported in Hyperview:
 
-```{eval-rst}
-.. list-table::
-   :header-rows: 1
-   :align: left
-
-   * - Bulk Action
-     - Description
-     - Minimum User Role
-     - Relevant Feature License
-   * - *Add Document Association*
-     - Associates a document with the selected assets
-     - Power User
-     - Document Management
-   * - *Remove Document Association*
-     - Removes a document association from the selected assets
-     - Power User
-     - Document Management
-   * - *Add Patch Panel Network Port(s)*
-     - Add new ports to selected patch panels
-     - Power User
-     - Connectivity
-   * - *Add Network Port(s)*
-     - Add new ports to selected assets
-     - Power User
-     - Connectivity
-   * - *Update Network Ports*
-     - Update port properties for selected assets
-     - Power User
-     - Connectivity
-   * - *Delete*
-     - Deletes the selected assets
-     - Data Center Manager
-     - Infrastructure Management
-   * - *Enable Monitoring*
-     - Turns on asset monitoring for the selected assets
-     - Power User
-     - Infrastructure Management
-   * - *Disable Monitoring*
-     - Turns off asset monitoring for the selected assets
-     - Power User
-     - Infrastructure Management
-   * - *Mute Notifications*
-     - Disables sending notifications for a specified period
-     - Power User
-     - Infrastructure Management
-   * - *Cancel Mute Notifications*
-     - Enables Notifications
-     - Power User
-     - Infrastructure Management
-   * - *Start Watching*
-     - Starts watching the selected assets for the current user
-     - Read Only
-     - Infrastructure Management
-   * - *Stop Watching*
-     - Stops watching the selected assets for the current user
-     - Read Only
-     - Infrastructure Management
-   * - *Update Access Policy*
-     - Updates the access policy for selected assets
-     - Administrator
-     - Infrastructure Management
-   * - *Update Asset Property*
-     - Updates a specific property for the selected assets
-     - Power User
-     - Infrastructure Management
-   * - *Update Business Entity*
-     - Updates or sets the Business Entity associated with the asset
-     - Power User
-     - Infrastructure Management
-   * - *Update Custom Property*
-     - Updates a specific custom property for the selected assets
-     - Power User
-     - Infrastructure Management
-   * - *Update Lifecycle*
-     - Updates asset lifecycle properties of the selected assets
-     - Power User
-     - Infrastructure Management
-   * - *Update Model*
-     - Updates the type, model, and manufacturer for selected assets
-     - Power User
-     - Infrastructure Management
-   * - *Update Control Operations Data Collector*
-     - Updates the control operations Data Collector for selected assets
-     - Administrator
-     - Rack Security or Firmware Management
-   * - *Update Firmware Control Credentials*
-     - Updates firmware control credentials for the selected assets
-     - Administrator
-     - Rack Security or Firmware Management
-   * - *Update SNMP Control Credentials*
-     - Updates SNMP control credentials for the selected assets
-     - Administrator
-     - Rack Security or Firmware Management
-```
+:::{list-table}
+:header-rows: 1
+:align: left
+* - Bulk Action
+  - Description
+  - Minimum User Role
+  - Relevant Feature License
+* - *Add Document Association*
+  - Associates a document with the selected assets
+  - Power User
+  - Document Management
+* - *Remove Document Association*
+  - Removes a document association from the selected assets
+  - Power User
+  - Document Management
+* - *Add Patch Panel Network Port(s)*
+  - Add new ports to selected patch panels
+  - Power User
+  - Connectivity
+* - *Add Network Port(s)*
+  - Add new ports to selected assets
+  - Power User
+  - Connectivity
+* - *Update Network Ports*
+  - Update port properties for selected assets
+  - Power User
+  - Connectivity
+* - *Delete*
+  - Deletes the selected assets
+  - Data Center Manager
+  - Infrastructure Management
+* - *Enable Monitoring*
+  - Turns on asset monitoring for the selected assets
+  - Power User
+  - Infrastructure Management
+* - *Disable Monitoring*
+  - Turns off asset monitoring for the selected assets
+  - Power User
+  - Infrastructure Management
+* - *Mute Notifications*
+  - Disables sending notifications for a specified period
+  - Power User
+  - Infrastructure Management
+* - *Cancel Mute Notifications*
+  - Enables Notifications
+  - Power User
+  - Infrastructure Management
+* - *Start Watching*
+  - Starts watching the selected assets for the current user
+  - Read Only
+  - Infrastructure Management
+* - *Stop Watching*
+  - Stops watching the selected assets for the current user
+  - Read Only
+  - Infrastructure Management
+* - *Update Access Policy*
+  - Updates the access policy for selected assets
+  - Administrator
+  - Infrastructure Management
+* - *Update Asset Property*
+  - Updates a specific property for the selected assets
+  - Power User
+  - Infrastructure Management
+* - *Update Business Entity*
+  - Updates or sets the Business Entity associated with the asset
+  - Power User
+  - Infrastructure Management
+* - *Update Custom Property*
+  - Updates a specific custom property for the selected assets
+  - Power User
+  - Infrastructure Management
+* - *Update Lifecycle*
+  - Updates asset lifecycle properties of the selected assets
+  - Power User
+  - Infrastructure Management
+* - *Update Model*
+  - Updates the type, model, and manufacturer for selected assets
+  - Power User
+  - Infrastructure Management
+* - *Update Control Operations Data Collector*
+  - Updates the control operations Data Collector for selected assets
+  - Administrator
+  - Rack Security or Firmware Management
+* - *Update Firmware Control Credentials*
+  - Updates firmware control credentials for the selected assets
+  - Administrator
+  - Rack Security or Firmware Management
+* - *Update SNMP Control Credentials*
+  - Updates SNMP control credentials for the selected assets
+  - Administrator
+  - Rack Security or Firmware Management
+:::
 
 ## Performing a bulk action
 

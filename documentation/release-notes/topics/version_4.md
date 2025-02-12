@@ -1,5 +1,91 @@
 # Version 4
 
+## Hyperview 4.8 (February 14, 2025)
+
+This section covers significant changes and bug fixes in Hyperview 4.8.x since version 4.7.x
+
+:::{important}
+1. This release has changes and improvements to the Data Collector software. We strongly recommend updating your installed Data
+   Collectors to the latest version to maintain an optimal monitoring and discovery experience.
+
+2. Support for the *Windows* version of the Data Collector has ended on *January 31, 2025*. Customers must switch
+   to the Linux version of the Data Collector. Detailed {ref}`installation instructions <Setting-up-data-collectors-doc>`
+   are in the product documentation.
+
+3. The communication provider for email alarm event notifications has been changed from Twilio SendGrid to Microsoft Azure
+   Communication Services. The emails will continue to come from __no-reply@hyperviewhq.com__,
+:::
+
+### Enhanced Feature: Microsoft Teams Notification Channels
+
+Microsoft has [announced](https://devblogs.microsoft.com/microsoft365dev/retirement-of-office-365-connectors-within-microsoft-teams/)
+the sudden and quick retirement of the Webhook interface within Microsoft Teams. With this change we have updated the
+functionality to support the new recommended approach.
+
+The functionality will still use webhooks, albeit, the webhook will need to be created using a Workflow instead of a Connector.
+More information is in the [Microsoft documentation](https://support.microsoft.com/en-us/office/create-incoming-webhooks-with-workflows-for-microsoft-teams-8ae491c7-0394-4861-ba59-055e33f75498).
+
+:::{important}
+If you have set up notifications using the deprecated Webhook interface, please convert to the new method to avoid an
+interruption in notifications. Contact Hyperview support if you need any assistance or advice on the matter.
+:::
+
+### Enhanced Feature: Layout editor
+
+1. A new "Multi Select" menu has been added to the layout header action item group to allow for group select of various layout components.
+   Capabilities have been added for select all, select all shapes, select all Racks, and select all assets as well as a rectangular
+   selection box that can be drawn on the layout. Once selected, items can be removed or group edited depending on context.
+
+2. The view filter for rack total power has been improved to dynamically read the rack design value from the parent location and adjust
+   the color schema based on the setting.
+
+### Enhanced Feature: Rack Power widget
+
+To allow for better power planning, the Rack Power widget has been enhanced to show total template power for devices in the rack and
+planned power.
+
+The extra information will appear as constant lines in the graph and uses asset model information.
+
+### Enhanced Feature: Bulk actions
+
+The Bulk Actions -> Update Asset Property bulk action has been updated to add Template Power.
+
+### Enhanced Feature: Rack layout
+
+The rack layout has been enhanced to allow customers to place assets in the front and rear of the rack in the same rack unit.
+
+### Enhanced Feature: Asset power sensors
+
+The power analyzer will now take into consideration other available power information such as metered outlets connected to the asset
+and will calculate power metrics where applicable.
+
+:::{note}
+This will add new computed sensors to track this data.
+:::
+
+### Enhanced Feature: Discovery
+
+The discovery engine has been enhanced to support more asset variations from vendors like Vertiv/Liebert, Schneider Electric/APC and others. Customers are required to have the latest version of the Linux Data Collector to take advantage of these improvements.
+
+### Other notable changes and improvements
+
+- The Camera asset type can now be added manually. Prior to this, the Camera asset type could only be discovered.
+- The Circuit Name property within connectivity has been renamed to Circuit ID to be more inline with industry conventions.
+- The Template Power asset property can now be edited by users regardless of the source.
+- The notification event template has been updated to provide more information.
+- Bulk import validation has been improved with more extensive data validation, and clearer error messages.
+- Improved access policy checks when using layout editor.
+- Improved access policy checks when using the Carbon Footprint report.
+- Improved the Date/time picker in the mute notifications modal to work better on smaller mobile device screens.
+
+### Notable bug fixes
+
+- **AS-15776** Fixed a bug that caused type specific custom properties to not be created if an asset changes type.
+- **AS-16450** Fixed a bug that caused the outlet location to not appear in the power path PDU/RPP Asset info grid.
+- **AS-16561** Fixed a bug that caused discoveries to fail if the discovery name is very long.
+- **AS-15759** Fixed a bug that caused the weight to not show properly in advanced search.
+- **AS-16358** Fixed a bug that caused the output total power sensor to not be computed after the Bank Power Sensors.
+
 ## Hyperview 4.7 (November 25, 2024)
 
 This section covers significant changes and bug fixes in Hyperview 4.7.x since version 4.6.x

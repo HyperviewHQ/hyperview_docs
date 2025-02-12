@@ -12,27 +12,25 @@ Only licensed instances will have relevant features. To confirm if you have a Do
 
 A "document" can be a file or a URL. The following file types are supported:
 
-```{eval-rst}
-.. list-table::
-   :header-rows: 1
-   :align: left
-   :widths: 30, 70
-
-   * - Category
-     - Supported file types
-   * - Document format
-     - .doc, .docx, .odt, .pdf, .rtf, .txt
-   * - Image
-     - .bmp, .dib, .gif, .ico, .jfi, .jfif, jif, .jpe, .jpeg, .jpg, .png, .svg, .tif, .tiff
-   * - List/Spreadsheet
-     - .csv, .ods, .xls, .xlsx
-   * - Presentation
-     - .odp, .pps, .ppsx, .ppt, .pptx
-   * - Visio
-     - .vsd, .vss, .vst, .vdx, .vsx, .vtx, .vsdx, .vssx, .vstx, .vsdm, .vssm, .vstm, .vsw, .vsl
-   * - Other
-     - .mib, .xml, .zip
-```
+:::{list-table}
+:header-rows: 1
+:align: left
+:widths: 30, 70
+* - Category
+  - Supported file types
+* - Document format
+  - .doc, .docx, .odt, .pdf, .rtf, .txt
+* - Image
+  - .bmp, .dib, .gif, .ico, .jfi, .jfif, jif, .jpe, .jpeg, .jpg, .png, .svg, .tif, .tiff
+* - List/Spreadsheet
+  - .csv, .ods, .xls, .xlsx
+* - Presentation
+  - .odp, .pps, .ppsx, .ppt, .pptx
+* - Visio
+  - .vsd, .vss, .vst, .vdx, .vsx, .vtx, .vsdx, .vssx, .vstx, .vsdm, .vssm, .vstm, .vsw, .vsl
+* - Other
+  - .mib, .xml, .zip
+:::
 
 :::{note}
 The maximum upload size is 10 MB. The default total document storage size is 5 GB.
@@ -155,7 +153,7 @@ Alternatively, to remove document associations per asset:
 
 You can bulk-add or bulk-remove document associations while accessing assets from an Assets By Type, Assets By Location, or Advanced Search grid. The steps are identical for all three grids.
 
-1. Browse to the Assets By Type or Assets By Location grid, or perform an Advanced Search to find the intended assets. For example, to view all Virtual Servers, open *Assets → Asset Types → Virtual Server*.
+1. Browse to the Assets By Type or Assets By Location grid, or perform an Advanced Search to find the intended assets. For example, to view all Virtual Servers, open *Assets → Types → Virtual Server*.
 2. Select the assets that you want to associate with a certain document.
 3. Click *Bulk Actions → Add Document Association* to add associations, or *Bulk Actions → Remove Document Association* to remove them. A corresponding modal will open.
 4. Select the checkbox if you want to receive an email notification when the bulk job is completed.

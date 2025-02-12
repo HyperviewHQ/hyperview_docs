@@ -2,66 +2,15 @@
 
 # Setting up Data Collectors
 
-The Hyperview Data Collector collects and relays data back to the Hyperview platform. It covers the following functional areas: discovery, monitoring, control operations (for example, {ref}`setting control credentials <Setting-control-credentials>`), and trap listening.
+The Hyperview Data Collector collects and relays data back to the Hyperview platform. It covers the following functional areas: discovery, monitoring, control operations (for example, {ref}`setting control credentials <Setting-control-credentials>`), RFID asset tracking, and trap listening.
 
-You must register a Data Collector before it can relay information. You can only trigger the registration from the machine that hosts the Data Collector, and the process requires a unique, one-time-use Registration Token for that particular Data Collector.
+You must register a Data Collector before it can relay information. You can only trigger the registration from the machine that hosts the Data Collector, and the process requires a unique, limited time, single use Registration Token for that particular Data Collector.
 
-Once registered, the Data Collector saves the key in a local configuration file in a secure manner. It then polls the Hyperview platform for data collection jobs.
+Once registered, the Data Collector saves the access credentials in a local configuration file. It then polls the Hyperview platform for data collection jobs.
 
 The Data Collector must initiate all communication between the Data Collector and Hyperview. All communication is encrypted using TLS.
 
 (setup-data-collectors)=
-
-## Data Collector Protocol Support
-
-```{eval-rst}
-.. list-table::
-   :header-rows: 1
-   :align: left
-   :widths: 33, 33, 33
-
-   * - Protocol
-     - Linux
-     - Windows
-   * - SNMP V1/V2c/V3
-     - Yes
-     - Yes
-   * - IPMI
-     - Yes
-     - Yes
-   * - SSH
-     - Yes
-     - Yes
-   * - Modbus/TCP
-     - Yes
-     - Yes
-   * - BACnet IP
-     - Yes
-     - Yes
-   * - VMware
-     - Yes
-     - Yes
-   * - Firmware update
-     - Yes
-     - Yes
-   * - WMI
-     - Yes
-     - Yes
-   * - IxOS
-     - Yes
-     - Yes
-   * - AssetTracker
-     - Yes
-     - **No**
-   * - MQTT Broker
-     - Yes
-     - **No**
-```
-
-:::{note}
-- See [SNMP-AES_192_256](#snmp-aes-192-256) for more information on AES192 and AES256 support.
-- The Windows version has limited SNMPv3 support. It does not support SNMPv3 SHA256, SHA384, and SHA512 for authentication and AES192 and AES256 for privacy.
-:::
 
 ## Prerequisites
 
@@ -69,96 +18,53 @@ You must install the Hyperview Data Collector on at least one machine (physical 
 
 (linux-prerequisites)=
 
-### Linux Environment Dependencies
+### Minimum Hardware Requirements (AMD64/X86_64/RPI ARM64)
 
-**Please use apt, yum, or dnf, depending on the distribution, to install the following packages**
+- 4 CPU cores
+- 8 GB of RAM
+- 64 GB of free space in the /opt partition or where the /opt directory resides
 
-```{eval-rst}
-.. list-table::
-   :header-rows: 1
-   :align: left
-   :widths: 33, 33, 33
+:::{tip}
+If you plan to use a Raspberry Pi for data collection, the **minimum** hardware requirements are a Raspberry Pi4b 8GB model and a physical SSD or NVMe for storage.
+:::
 
-   * - Command
-     - APT Package
-     - RPM Package
-   * - *awk*
-     - gawk or mawk
-     - gawk
-   * - *cut*
-     - coreutils
-     - coreutils
-   * - *docker*
-     - docker-ce and docker-compose-plugin
-     - docker-ce and docker-compose-plugin
-   * - *grep*
-     - grep
-     - grep
-   * - *host*
-     - bind9-host
-     - bind-utils
-   * - *jq*
-     - jq
-     - jq
-   * - *libicu*
-     - libicu72
-     - libicu
-   * - *sed*
-     - sed
-     - sed
-   * - *tar*
-     - tar
-     - tar
-   * - *uuidgen*
-     - uuid-runtime
-     - util-linux
-   * - *whiptail*
-     - whiptail
-     - newt
-```
+### Supported Linux Distributions
+
+The following distributions are tested to run the Hyperview Data Collector.
+
+  - Red Hat Enterprise Linux 8 & 9 with the [official instructions](https://docs.docker.com/engine/install/rhel/)
+  - Ubuntu Server LTS 22.04 & 24.04
+  - CentOS 9
+  - Rocky Linux 9 (Using the CentOS 9 instructions)
+  - Alma Linux 9 (Using the CentOS 9 instructions)
+  - Debian 11 or 12
+
+:::{tip}
+Please let us know if you would like us to support more Linux distributions.[Contact Support](https://system.hyperviewhq.com/helpdesk).
+:::
+
+### Software Dependencies
+
+Depending on the Linux distribution used, please use apt, or dnf to install the following packages
+
+| Command    | Deb/APT Package                     | RPM/Dnf Package                     |
+| ---------- | ----------------------------------- | ----------------------------------- |
+| *awk*      | gawk or mawk                        | gawk                                |
+| *cut*      | coreutils                           | coreutils                           |
+| *docker*   | docker-ce and docker-compose-plugin | docker-ce and docker-compose-plugin |
+| *grep*     | grep                                | grep                                |
+| *host*     | bind9-host                          | bind-utils                          |
+| *jq*       | jq                                  | jq                                  |
+| *libicu*   | libicu72                            | libicu                              |
+| *sed*      | sed                                 | sed                                 |
+| *tar*      | tar                                 | tar                                 |
+| *uuidgen*  | uuid-runtime                        | util-linux                          |
+| *whiptail* | whiptail                            | newt                                |
 
 :::{note}
 - Docker Inc. provides [detailed installation documentation](https://docs.docker.com/engine/install/).
 - The `jq` package may not be available from the official RedHat repository for RedHat Enterprise Linux or derivatives. If that is the case, the Extra Packages for Enterprise Linux [EPEL](https://docs.fedoraproject.org/en-US/epel/) project will have it.
 :::
-
-### Minimum requirements for a Linux (AMD64/X86_64)
-
-- 4 CPU cores
-
-- 8 GB of RAM
-
-- 64 GB of free space in the /opt partition or where the /opt directory resides
-
-- One of the following supported Linux distributions installed:
-
-  - CentOS 9
-  - Rocky Linux 9 (Using the CentOS 9 instructions)
-  - Alma Linux 9 (Using the CentOS 9 instructions)
-  - Debian 11 or 12
-  - Ubuntu Server LTS 20.04 or 22.04
-  - **BETA** Red Hat Enterprise Linux 8 & 9 with the [official instructions](https://docs.docker.com/engine/install/rhel/)
-
-### Minimum requirements for a Linux (RPI ARM64) Data Collector device
-
-- Raspberry Pi 4 Model B (8GB)
-- 64 GB of free space (note: you must be using an SSD drive)
-- Only Ubuntu Server LTS 20.04 and 22.04 are supported
-
-### Minimum requirements for a Windows Data Collector server
-
-- 4 CPU cores
-
-- 8 GB of RAM
-
-- 64 GB of free space
-
-- One of the following supported Windows versions installed:
-
-  - Windows Server 2016 (for production or testing)
-  - Windows Server 2019 (for production or testing)
-  - Windows Server 2022 (for production or testing)
-  - Windows 10 (testing only)
 
 ## Network requirements
 
@@ -170,68 +76,28 @@ The Data Collector uses HTTPS/TLS (TCP/443) to communicate with Hyperview. The d
 
 Please ensure the Data Collector can reach the targeted assets on the applicable ports for your site. Below is a list of the default ports the Data Collector will use; other ports can be used if needed.
 
-```{eval-rst}
-.. list-table::
-   :header-rows: 1
-   :align: left
-
-   * - Protocol
-     - Ports
-     - Credential Requirements
-   * - SNMP
-     - 161 (gets, sets)
-     - Community string or SNMPv3 credentials
-   * - Modbus/TCP
-     - 502
-     - Not required
-   * - BACnet IP
-     - 47808
-     - Not required
-   * - ICMP Ping
-     - N/A
-     - Not required
-   * - IPMI
-     - 623
-     - Username & Password
-   * - SSH
-     - 22
-     - Username & Password or Username & Key
-   * - WMI
-     - 135
-     - Username & Password
-   * - VMware
-     - 443
-     - Username & Password
-   * - IxOS
-     - 443
-     - Username & Password
-   * - Firmware update
-     - 443 or 80
-     - Username & Password
-```
+| Protocol        | Port             | Credential Requirements                |
+| --------------- | ---------------- | -------------------------------------- |
+| SNMP            | 161 (gets, sets) | Community string or SNMPv3 credentials |
+| Modbus/TCP      | 502              | Not required                           |
+| BACnet IP       | 47808            | Not required                           |
+| ICMP Ping       | N/A              | Not required                           |
+| IPMI            | 623              | Username & Password                    |
+| SSH             | 22               | Username & Password or Username & Key  |
+| WMI             | 135              | Username & Password                    |
+| VMware          | 443              | Username & Password                    |
+| IxOS            | 443              | Username & Password                    |
+| Firmware Update | 443 or 80        | Username & Password                    |
 
 ### Assets to Data Collector
 
 Please ensure the asset can reach the targeted Data Collector on the applicable ports for your site. Below is a list of the default ports the Data Collector will use; other ports can be used if needed or applicable.
 
-```{eval-rst}
-.. list-table::
-   :header-rows: 1
-   :align: left
-
-   * - Protocol
-     - Ports
-     - Credential Requirements
-   * - SNMP traps
-     - 162
-     - None
-   * - AssetTracker
-     - 4242
-     - Not required
-   * - AssetTracker Gen2/MQTT Port
-     - 1883
-     - Username & Password
-```
+| Protocol               | Port | Credential Requirements |
+| ---------------------- | ---- | ----------------------- |
+| SNMP traps             | 162  | Not required            |
+| AssetTracker Gen1      | 4242 | Not required            |
+| AssetTracker Gen2/MQTT | 1883 | Username & Password     |
 
 ### Firewall considerations
 
@@ -247,67 +113,40 @@ Firewalls can interfere with Data Collector communication. We recommended that y
 :class: border-black
 ```
 
-1. Click Download.
+4. Click Download or use the `wget` Linux command to download the file.
 
 :::{note}
-If you are using Linux, please download the Data Collector type relevant to your CPU architecture. The Linux (AMD64) Data Collector is intended for Intel and AMD CPU-based systems. Linux (RPI ARM64) Data Collector is for Raspberry Pi 4B systems.
+Please download the Data Collector version relevant to your CPU architecture. The Linux (AMD64) Data Collector is intended for Intel and AMD CPU-based systems. Linux (RPI ARM64) Data Collector is for Raspberry Pi systems.
 :::
 
-A compressed Data Collector setup package will be downloaded to your browser's default download location. The filename will resemble "dataCollector-9999.zip" (or "linuxDataCollector-9999.tgz" for Linux), where "9999" represents the version number.
+A compressed Data Collector setup package will be downloaded to your browser's default download location. The filename will resemble linuxDataCollector-9999.tgz", where "9999" represents the version number.
+
+5. (_Optional_) Download the SHA256SUM file using wget and then use the `sha256sum -c <filename>` command to verify file integrity. If you are on Windows, then PowerShell `Get-FileHash -Algorithm SHA256 <filename>` command will give you the hash of the downloaded file and you can then do manual verification by comparing the downloaded hash file with the result of the command.
 
 ## Installing the Data Collector
 
-### Windows installation
+1. Extract the downloaded Data Collector tar file to a local folder.
+2. Run the install script as __root__ or via __sudo__ (`install-dc.sh`).
 
-:::{warning}
-Support for installing the data collector software on Windows will end on January 31, 2025. Customers using Windows should make arrangements to switch to Linux by that time.
+```bash
+sudo ./install-dc.sh`
+```
+
+:::{tip}
+If you would like to skip hardware tests, e.g. for testing purposes, you can run the installer or the updater scripts with the **SKIP_HW_TEST** environment variable set to YES.
+
+```bash
+sudo SKIP_HW_TEST=YES ./install-dc.sh`
+```
 :::
 
-1. Extract the downloaded Data Collector zip file to a local folder
-
-2. Browse to the folder and double-click "setup.exe"
-
-   :::{tip}
-   Some security software (such as Microsoft Defender SmartScreen) or Windows features (such as UAC) may interrupt the installation. In such cases, you will need to manually allow the Data Collector installer to run, typically via a "run anyway" or similar action.
-   :::
-
-3. Depending on your environment, you might get prompted to install one or more of the following: .NET framework, Visual C++ runtime libraries, WinPcap. If you do, click *Install* and install the prerequisite software using default values.
-
-   :::{note}
-   While installing WinPCap ensure the "Automatically start the WinPcap drive at boot time" option is selected.
-   :::
-
-4. Click *Next* to start the Data Collector setup.
-
-5. Accept the license terms by selecting "I accept..." and then clicking *Next*.
-
-6. Choose a different installation folder or click *Next* to accept the default location.
-
-```{image} /product/auto-discovery/media/dc_install_3.png
-:class: border-black
-```
-
-1. Click *Install*.
-2. Toward the end of the process, the Data Collector Configuration Tool will appear. You will need to provide details to register your data collector. Refer to the following section ("Registering the Data Collector") for instructions.
-
-```{image} /product/auto-discovery/media/dc_install_9.png
-:class: border-black
-```
-
-1. Click *Finish* to complete the installation.
-
-### Linux installation (for both AMD64 and RPI ARM64)
-
-1. Extract the downloaded Data Collector tar file to a local folder.
-2. (Optional) Check the package SHA256 hash.
-3. Run the install script as root (`install-dc.sh`).
-4. Accept the EULA by selecting Yes.
+3. Accept the EULA by selecting Yes.
 
 ```{image} /product/auto-discovery/media/ldc-eula.png
 :class: border-black
 ```
 
-1. Proceed to register the Data Collector.
+4. Proceed to register the Data Collector.
 
 (register)=
 
@@ -321,31 +160,13 @@ Once you have installed the Data Collector, you need to register it with Hypervi
 2. Go to *Discoveries → Data Collectors → Add*. The "Add Data Collector" modal will open.
 3. Click the copy icon to copy the registration token.
 
-```{image} /product/auto-discovery/media/dc_install_8.png
+```{image} /product/auto-discovery/media/add_data_collector.png
 :class: border-black
 ```
 
-1. Click *OK* to close the modal.
+4. Click *OK* to close the modal.
 
-### Registering a Windows Data Collector
-
-:::{tip}
-You can also run the Windows Data Collector Configuration Tool from `C:\\Program Files\\Hyperview\\Hyperview Data Collector\\configurationTool\\AgentConfigurer.exe`, assuming you have installed the Data Collector at the default location.
-:::
-
-1. Paste the registration token and enter your API hostname (for example, "yourcompany.hyperviewhq.com").
-
-2. Click Advanced to specify additional values, or leave it as default.
-
-   - If you want the Data Collector to use a specific port to communicate with Hyperview, enter an API Port Number.
-   - Specify an alternate API Endpoint Name if applicable. Note that `API` is the only endpoint name that is currently supported.
-   - Select the Use HTTPS checkbox. Note that all our customer-facing APIs are HTTPS/TLS. HTTP is used for internal testing and in special situations under the supervision of Hyperview Support.
-   - In certain scenarios, the Data Collector can only communicate via a proxy server. Specify the Proxy URL if applicable.
-   - If you are using a custom BACnet device ID, select "Use Custom BACnet Server Device ID" and enter the custom device ID. (If you do not provide the custom device ID, the device will still get discovered but will be assigned a default ID.)
-
-3. Click *Register* to complete the Data Collector registration.
-
-### Registering a Linux Data Collector (for both AMD64 and RPI ARM64)
+### Registering a Data Collector (for both AMD64 and RPI ARM64)
 
 :::{tip}
 You can also run the Linux Data Collector Configuration Tool from `/opt/datacollector/bin`.
@@ -358,29 +179,15 @@ You can also run the Linux Data Collector Configuration Tool from `/opt/datacoll
 :class: border-black
 ```
 
-1. Enter the API Port Number, or leave it at default (443).
-2. Select the protocol (HTTPS or HTTP), or leave it at default (HTTPS).
-3. (Optional) Enter proxy details.
+3. Enter the API Port Number, or leave it at default (443).
+4. Select the protocol (HTTPS or HTTP), or leave it at default (HTTPS).
+5. (Optional) Enter proxy details.
 
 The Data Collector will be registered.
 
 ## Verifying your Data Collector setup
 
-### Microsoft Windows
-
-If the Data Collector was set up correctly. The Services view in Windows (search for the "Services" app from the Windows search bar) will indicate that the Hyperview Data Collector and Hyperview SNMP Trap Listener services are running and set to start automatically, as seen below.
-
-```{image} /product/auto-discovery/media/services.png
-:class: border-black
-```
-
-:::{note}
-Please ensure the default SNMP Service in Windows is disabled to avoid potential errors due to port conflicts.
-:::
-
-### Linux
-
-Verify that Docker containers with the following names are running:
+Verify that Docker containers with the following names are running using `docker ps`:
 
 - dc-docker-stack-assettracker-service-1
 - dc-docker-stack-discovery-service-1
@@ -388,3 +195,28 @@ Verify that Docker containers with the following names are running:
 - dc-docker-stack-mqtt-broker-1
 - dc-docker-stack-mqtt-service-1
 - dc-docker-stack-snmptrapreceiver-service-1
+
+Next verify the last communicated timestamp in your Hyperview instance **Discoveries ->  Data Collectors** list.
+It should update approximately every 30 seconds. You can use the refresh button to update the data in the table.
+
+## Reinstalling or uninstalling Data Collectors
+
+The Data Collector core software runs as a set of Docker containers. In addition to those, configuration files,
+some [troubleshooting tools](troubleshooting-tools-doc), logs and temporary files are all kept in `/opt/datacollector`.
+
+To reinstall the Data Collector software, uninstall it first then install it.
+
+### Uninstall
+
+1. Shutdown the docker containers
+
+```bash
+cd /opt/datacollector/dc-docker-stack/
+docker compose down
+```
+
+2. Backup or rename the `/opt/datacollector` directory **If needed**
+
+3. Delete the `/opt/datacollector` directory
+
+Once the uninstallation is done, perform a re-installation following the standard instructions.
