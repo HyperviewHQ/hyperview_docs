@@ -1,6 +1,6 @@
 # Version 4
 
-## Hyperview 4.8 (TBD)
+## Hyperview 4.8 (February 14, 2025)
 
 This section covers significant changes and bug fixes in Hyperview 4.8.x since version 4.7.x
 
