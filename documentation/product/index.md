@@ -7,6 +7,7 @@
 quickstart/index
 asset-management/index
 document-management/index
+business-entities/index
 auto-discovery/index
 catalog-management/index
 work-notes/index

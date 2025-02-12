@@ -12,7 +12,7 @@ You can only navigate to assets that you {ref}`have access to<Who-can-access-doc
 
 The Asset Types tree shows asset types (along with the device count per type) that you have access privileges to.
 
-1. Go to *Assets → Overview → Asset Types* to open the Asset Types tree.
+1. Go to *Assets → Overview → Types* to open the Asset Types tree.
 2. Click an asset type to open its Assets by Type page. For example, if you click Network Device, the Network Devices Assets By Type page will open.
 3. Click an asset to open its Dashboard.
 
@@ -32,7 +32,7 @@ For a list of supported asset types in Hyperview, see {ref}`Supported asset type
 
 The Asset Hierarchy tree presents assets within a hierarchical tree structure. The All location acts as the root node for all assets. Organizations typically create locations and sub-locations corresponding to their data centers, which in turn have other kinds of assets.
 
-1. Go to *Assets → Overview → Asset Hierarchy* to open the Asset Hierarchy.
+1. Go to *Assets → Overview → Hierarchy* to open the Asset Hierarchy.
 2. Expand nodes until arrive at your intended asset.
 3. Click the asset to open its Dashboard.
 

@@ -17,4 +17,4 @@ To enable the integration, enter the following information.
 
 ### Configuring Microsoft Teams
 
-To generate a webhook URL from Microsoft Teams, follow the instructions outlined in Microsoft Docs on how to [Create Incoming Webhooks](https://learn.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook).
+To generate a webhook URL from Microsoft Teams, follow the instructions outlined in Microsoft Docs on how to [Create Incoming Webhooks with Workflows](https://support.microsoft.com/en-us/office/create-incoming-webhooks-with-workflows-for-microsoft-teams-8ae491c7-0394-4861-ba59-055e33f75498).

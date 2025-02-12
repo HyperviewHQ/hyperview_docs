@@ -27,39 +27,53 @@ You cannot bulk import Location or Rack type assets.
 
 2. Update the file for assets that you wish to import. Available columns are:
 
-   ```{eval-rst}
-   +------------------+--------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------+
-   | **Column**       | **Description**                                                                                        | **Requirement**                                                      |
-   +------------------+--------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------+
-   | Name             | The name of the asset you are importing                                                                | Required                                                             |
-   +------------------+--------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------+
-   | LifecycleState   | The asset lifecycle state (Active, Planned, Procurement, Staging, or Retired)                          | Optional                                                             |
-   +------------------+--------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------+
-   | AssetType        | The :ref:`asset type<Supported-asset-types-doc>`, such as Server, PDU, etc (but not Rack or Location)  | Required                                                             |
-   +------------------+--------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------+
-   | Manufacturer     | The asset manufacturer name                                                                            | Required                                                             |
-   +------------------+--------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------+
-   | Model            | The asset model name                                                                                   | Required                                                             |
-   +------------------+--------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------+
-   | SerialNumber     | The asset serial number                                                                                | Required for non-rack assets (optional for Rack)                     |
-   +------------------+--------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------+
-   | RackName         | The name of the rack where the asset will be placed                                                    | Optional (only allowed for rackable assets)                          |
-   +------------------+--------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------+
-   | RackUNumber      | The number of the rack unit where the asset will be placed                                             | Optional (only relevant for non-Zero U assets)                       |
-   +------------------+--------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------+
-   | RackSide         | The rack side (Front, Rear, or Unknown) where the asset will be placed                                 | Required for 0+ U assets (not allowed for unplaced rackable assets)  |
-   +------------------+--------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------+
-   | RackPosition     | The rack position (Left, Right, Top, Bottom, Above, Below, or Unknown) where the asset will be placed  | Required for 0+ U assets (not allowed for unplaced rackable assets)  |
-   +------------------+--------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------+
-   ```
+:::{list-table}
+:header-rows: 1
+:align: left
+:widths: 30, 45, 35
+
+* - Column
+  - Name
+  - Requirement
+* - Name
+  - The name of the asset you are importing
+  - Required
+* - LifecycleState
+  - The asset lifecycle state (Active, Planned, Procurement, Staging, or Retired)
+  - Optional
+* - AssetType
+  - The :ref:`asset type<Supported-asset-types-doc>`, such as Server, PDU, etc (but not Rack or Location)
+  - Required
+* - Manufacturer
+  - The asset manufacturer name
+  - Required
+* - Model
+  - The asset model name
+  - Required
+* - SerialNumber
+  - The asset serial number
+  - Required (_optional for Rack_)
+* - RackName
+  - The name of the rack where the asset will be placed
+  - Optional (only allowed for rackable assets)
+* - RackUNumber
+  - The rack unit where the asset will be placed
+  - Optional (only relevant for non-Zero U assets)
+* - RackSide
+  - The rack side (Front, Rear, or Unknown) where the asset will be placed
+  - Required for 0+ U assets (not allowed for unplaced rackable assets)
+* - RackPosition
+  - The rack position (Left, Right, Top, Bottom, Above, Below, or Unknown) where the asset will be placed
+  - Required for 0+ U assets (not allowed for unplaced rackable assets)
+:::
 
 ```{image} /product/asset-management/media/import_bulkfile.png
 :class: border-black
 ```
 
-1. Save the updated file.
+3. Save the updated file.
 
-2. Click *Select Location and File*. Provide values as follows:
+4. Click *Select Location and File*. Provide values as follows:
 
    - Select the "Assets" template.
    - Select the target location for the assets. The default location is All.
@@ -69,8 +83,8 @@ You cannot bulk import Location or Rack type assets.
 :class: border-black
 ```
 
-1. Once the file is uploaded, verify the list of assets. Troubleshoot, update, and re-upload the file as needed.
-2. Click *Import*.
+5. Once the file is uploaded, verify the list of assets. Troubleshoot, update, and re-upload the file as needed.
+6. Click *Import*.
 
 ```{image} /product/asset-management/media/import_bulk.png
 :class: border-black

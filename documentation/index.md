@@ -37,6 +37,12 @@ Asset management and related functionality.
 Attach documents, manuals, contracts, images, and links to your assets.
 :::
 
+:::{grid-item-card} {fas}`fa-solid fa-building` Business Entities
+:link: product/business-entities/index.html
+
+Link assets, connections, circuits, documents and custom properties to vendors, departments and customers.
+:::
+
 :::{grid-item-card} {fas}`fa-solid fa-eye` Auto Discovery
 :link: product/auto-discovery/index.html
 

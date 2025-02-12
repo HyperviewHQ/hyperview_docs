@@ -1,3 +1,5 @@
+(troubleshooting-tools-doc)=
+
 # Troubleshooting Tools
 
 The Linux version of the Data Collector comes with a set of troubleshooting tools that can help in troubleshooting discovery and monitoring issues.
