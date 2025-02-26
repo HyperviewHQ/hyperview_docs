@@ -19,7 +19,7 @@ Only data needed to perform the aforementioned tasks is collected. Below is a li
 The following list may change based on the capabilities of the target systems, vendors, firmware versions, allowed access, and protocol versions. While every effort has been made to ensure the list is comprehensive, Hyperview is a continuously developed product that operates in a multi-vendor environment where networked assets are constantly changing, and where vendors extend standard protocols or implement them in a non-standard way. As a result, there may be some variation in what data is collected and monitored between vendors and generations of hardware/firmware.
 :::
 
-## BMC-based Protocols: IPMI, iLo, ILOM, and iDRAC
+## IPMI
 
 - Firmware version
 - Make and model of the device
@@ -53,6 +53,10 @@ SNMP is a definitions-based protocol and supports a large variety of devices, ty
 - MAC addresses per port
 - Identification and inventory information
 - VLAN information
+- Fan sensors
+- CPU Utilization
+- Power sensors
+- Temperature sensors
 
 ### Busway
 
@@ -309,7 +313,9 @@ SNMP is a definitions-based protocol and supports a large variety of devices, ty
 - Total VA
 - Total VAR
 
-## SSH for Linux/Unix
+## SSH
+
+### Linux/Unix
 
 - Installed software list
 - CPU information
@@ -320,9 +326,11 @@ SNMP is a definitions-based protocol and supports a large variety of devices, ty
 - Disk capacity sensor
 - Storage hardware information
 
-## Windows WMI
+## WMI
 
-- Installed software list (apt/rpm tool)
+### Windows Server
+
+- Installed software list
 - CPU information
 - CPU utilization
 - RAM information
