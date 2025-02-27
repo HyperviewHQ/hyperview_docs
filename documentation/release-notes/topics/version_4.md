@@ -2,6 +2,10 @@
 
 ## Hyperview 4.8 (February 14, 2025)
 
+```{raw} html
+<div class="pb-3"><iframe src="https://scribehow.com/embed/Hyperview_48_Release_Features__XH3wlZfGR0uar-0IStD2mQ?removeLogo=true&as=video" width="100%" height="640" allowfullscreen frameborder="0"></iframe></div>
+```
+
 This section covers significant changes and bug fixes in Hyperview 4.8.x since version 4.7.x
 
 :::{important}
