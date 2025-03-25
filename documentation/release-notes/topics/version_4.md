@@ -15,7 +15,7 @@ This section covers significant changes and bug fixes in Hyperview 4.9.x since v
 
 ### Enhanced Feature: Asset Tracker Rack Environmental Monitoring
 
-Customers that have purchased Asset Tracker Hardware and License can now add an environmental sensor bundle to get in rack environmental monitoring.
+Customers that have purchased Asset Tracker Hardware and License can now add an environmental sensor bundle to get in-rack environmental monitoring.
 
 :::{note}
 Please contact the Hyperview sales or support teams for more information.
