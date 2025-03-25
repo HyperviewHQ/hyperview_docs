@@ -1,5 +1,27 @@
 # Version 4
 
+## Hyperview 4.9 (March 13, 2025)
+
+This section covers significant changes and bug fixes in Hyperview 4.9.x since version 4.8.x
+
+:::{important}
+1. This release has changes and improvements to the Data Collector software. We strongly recommend updating your installed Data
+   Collectors to the latest version to maintain an optimal monitoring and discovery experience.
+
+2. Support for the *Windows* version of the Data Collector has ended on *January 31, 2025*. Customers must switch
+   to the Linux version of the Data Collector. Detailed {ref}`installation instructions <Setting-up-data-collectors-doc>`
+   are in the product documentation.
+:::
+
+### Enhanced Feature: Asset Tracker Rack Environmental Monitoring
+
+Customers that have purchased Asset Tracker Hardware and License can now add an environmental sensor bundle to get in-rack environmental monitoring.
+
+:::{note}
+Please contact the Hyperview sales or support teams for more information.
+:::
+
+
 ## Hyperview 4.8 (February 14, 2025)
 
 ```{raw} html
