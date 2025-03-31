@@ -59,6 +59,7 @@ Depending on the Linux distribution used, please use apt, or dnf to install the 
 | *sed*      | sed                                 | sed                                 |
 | *tar*      | tar                                 | tar                                 |
 | *uuidgen*  | uuid-runtime                        | util-linux                          |
+| *wget*     | wget                                | wget                                |
 | *whiptail* | whiptail                            | newt                                |
 
 :::{note}
@@ -71,6 +72,15 @@ Depending on the Linux distribution used, please use apt, or dnf to install the 
 ### Data Collector to Hyperview
 
 The Data Collector uses HTTPS/TLS (TCP/443) to communicate with Hyperview. The direction is **outbound** from the Data Collector to Hyperview.
+
+The data collector software needs to communicate with the following hosts:
+
+- Instance URL: https://INSTANCE_NAME.hyperviewhq.com/
+- Download repository: https://hvstorewestus2.blob.core.windows.net/datacollectors
+- Container repository API: https://hvpublic.azurecr.io
+- Container repository data endpoint: https://hvpublic.westus2.data.azurecr.io
+
+Please make sure these are in communication allow lists if applicable or required by your network security policy.
 
 ### Data Collector to assets
 
