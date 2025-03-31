@@ -21,6 +21,10 @@ Customers that have purchased Asset Tracker Hardware and License can now add an 
 Please contact the Hyperview sales or support teams for more information.
 :::
 
+### Changes in version 4.9.1
+
+- **AS-17433** Update to base package dependencies.
+
 
 ## Hyperview 4.8 (February 14, 2025)
 
