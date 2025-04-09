@@ -84,3 +84,13 @@ Floor Plan Mode displays a location's floor plan. For example, you can add a bac
 3. Click *Save* when you are done.
 
 Once the floor plan layout is saved, you can interact with it by switching from 2D to 3D, showing or hiding toggles and layers, looking up assets contained in racks, and so on (provided you have saved relevant data).
+
+#### Considerations For Background Images
+
+1. Ensure that the background images are not too large. Consider using images that fit on a 1080p screen or 1920 x 1080. Images that are too large can cause slowness and scaling issues and may not work when viewing the layout on smaller screens like tablets and laptops.
+
+2. Use PNG images where possible.
+
+3. Use transparency strategically, especially if transitioning from light to dark mode.
+
+4. Use labels and shapes where possible instead of editing the image.
