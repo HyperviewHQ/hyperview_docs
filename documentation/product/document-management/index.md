@@ -48,8 +48,8 @@ All users can access documents, provided they have access privileges (except for
 
 You can search for documents from:
 
-- The Documents grid (*Assets → Documents*)
-- An asset's Documents grid (browse to asset → *Information → Documents*)
+- The Documents section of the product.
+- An asset's Documents grid (browse to asset → *Information → Documents*).
 
 Simply search for the document using the Search Documents row at the top of the grid.
 
@@ -71,14 +71,14 @@ Power Users and above can also view links while viewing or updating document det
 
 You must be a Power User, Data Center Manager, or Administrator to be able to add a document. If you are adding documents from *Information → Documents* and are a Data Center Manager or Power User, you must also have access to the underlying asset.
 
-You can add a new document from the Documents grid for all assets (*Assets → Documents*) or an asset's Documents grid (*Information → Documents*). The steps are similar, but the outcome is slightly different:
+You can add a new document from the Documents grid for all assets (*Documents*) or an asset's Documents grid (*Information → Documents*). The steps are similar, but the outcome is slightly different:
 
-- Adding a document from *Assets → Documents* will add the document.
+- Adding a document from *Documents* will add the document.
 - Adding a document from *Information → Documents* will add the document, as well as create the asset-document association.
 
-### Adding a document from *Assets → Documents*
+### Adding a document from *Documents*
 
-1. Go to *Assets → Documents → Add*.
+1. Go to *Documents → Add*.
 
 2. Enter details as follows:
 
@@ -118,12 +118,12 @@ You must be a Power User, Data Center Manager, or Administrator to be able to ma
 
 ### Adding document associations
 
-1. Go to *Assets → Documents → Edit → Associations*.
+1. Go to *Documents → Edit → Associations*.
 2. Click the Add button → select the intended asset from the dropdown → Add.
 3. Repeat step 2 to add more associations, as needed.
 
 :::{tip}
-The Associations tab is also available upon adding a new document from *Assets → Documents*.
+The Associations tab is also available upon adding a new document from *Documents*.
 :::
 
 ```{image} /product/document-management/media/associate_document.png
@@ -139,7 +139,7 @@ Alternatively, to add document associations per asset:
 
 ### Removing document associations
 
-1. Go to *Assets → Documents → Edit → Associations*.
+1. Go to *Documents → Edit → Associations*.
 2. Click the Remove button for the relevant asset.
 3. Repeat step 2 to remove more associations, as needed.
 
@@ -169,7 +169,7 @@ A success message will appear confirming that the bulk job has been initiated.
 
 You must be a Power User, Data Center Manager, or Administrator to be able to update a document's details (the information that is displayed in the document's Overview page, and in the grid).
 
-1. Go to *Assets → Documents → Edit*.
+1. Go to *Documents → Edit*.
 
 2. Update details under Overview as needed:
 
@@ -193,7 +193,7 @@ Access policies determine who can access a certain securable object, such as a d
 
 To update a document's access policy:
 
-1. Go to *Assets → Documents → Edit → Access Control*.
+1. Go to *Documents → Edit → Access Control*.
 2. Select the intended access policy from the dropdown → Save.
 3. Click Save to confirm. A success message will appear.
 
@@ -207,6 +207,6 @@ Administrators can manage access policies using (*Access Control → Manage Acce
 
 You must be a Data Center Manager or Administrator to be able to delete documents.
 
-1. Browse to *Assets → Documents*.
+1. Browse to *Documents*.
 2. Click the ellipsis (three dots) for the target document → Delete.
 3. Click Delete to confirm. A success message will appear.

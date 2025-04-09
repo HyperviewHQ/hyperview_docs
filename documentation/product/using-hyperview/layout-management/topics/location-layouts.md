@@ -89,7 +89,7 @@ Once the floor plan layout is saved, you can interact with it by switching from 
 
 1. Ensure that the background images are not too large. Consider using images that fit on a 1080p screen or 1920 x 1080. Images that are too large can cause slowness and scaling issues and may not work when viewing the layout on smaller screens like tablets and laptops.
 
-2. Use PNG images where possible.
+2. Use PNG or SVG where possible for architectural/blueprint images.
 
 3. Use transparency strategically, especially if transitioning from light to dark mode.
 
