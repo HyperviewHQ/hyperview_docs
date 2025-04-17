@@ -23,7 +23,7 @@ You can bulk import assets using a CSV template that you can download from the a
 You cannot bulk import Location or Rack type assets.
 :::
 
-1. Go to *Assets → Bulk Import → Download Template File → Assets*. A CSV template for bulk importing assets will be downloaded to your browser’s default download directory. Rename and move the file to a different folder as needed.
+1. Go to *Assets → Import → Download Template File → Assets*. A CSV template for bulk importing assets will be downloaded to your browser’s default download directory. Rename and move the file to a different folder as needed.
 
 2. Update the file for assets that you wish to import. Available columns are:
 
