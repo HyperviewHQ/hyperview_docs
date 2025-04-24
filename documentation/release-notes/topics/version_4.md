@@ -25,6 +25,9 @@ Please contact the Hyperview sales or support teams for more information.
 
 - **AS-17433** Update to base package dependencies.
 
+### Changes in version 4.9.2
+
+- **AS-17689** Fixed a bug that caused connections not to display on the ports or layout pages of assets, patch panels and network devices.
 
 ## Hyperview 4.8 (February 14, 2025)
 
