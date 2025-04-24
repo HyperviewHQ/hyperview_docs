@@ -40,7 +40,8 @@ The following distributions are tested to run the Hyperview Data Collector.
   - **Debian 11 & 12** with the [official instructions](https://docs.docker.com/engine/install/debian/)
 
 :::{tip}
-- Please ensure that the Podman container management software is not installed to ensure that it does not conflict with Docker.
+- Please ensure that the **Podman** container management software is not installed.
+- Please ensure that the **snap** version of Docker is not installed.
 - Let us know if you would like us to support more Linux distributions. [Contact Support](https://system.hyperviewhq.com/helpdesk).
 :::
 
