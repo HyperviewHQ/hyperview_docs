@@ -145,10 +145,10 @@ sudo ./install-dc.sh
 ```
 
 :::{tip}
-If you would like to skip hardware tests, e.g. for testing purposes, you can run the installer or the updater scripts with the **SKIP_HW_TEST** environment variable set to YES.
+If you would like to skip hardware tests, e.g. for testing purposes, you can run the installer or the updater scripts with the **SKIP_TESTS** environment variable set to YES.
 
 ```bash
-sudo SKIP_HW_TEST=YES ./install-dc.sh
+sudo SKIP_TESTS=YES ./install-dc.sh
 ```
 :::
 

@@ -47,7 +47,7 @@ To skip hardware checks.
 
 ```bash
 cd /opt/datacollector/bin
-sudo SKIP_HW_TEST=YES ./reconfigure.sh`
+sudo SKIP_TESTS=YES ./reconfigure.sh`
 ```
 
 ## Retiring a Data Collector
