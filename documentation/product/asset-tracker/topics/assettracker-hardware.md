@@ -165,10 +165,21 @@ If the Gateway is a _V5008 AIoT_, up to five total Hubs can be daisy chained tog
 :alt: Expansion Hub to Expansion Hub
 :class: border-black
 
-Expansion Hub Expansion Hub to Expansion Hub
+Expansion Hub to Expansion Hub
 ```
 
 If applicable, connect the Gateway to a POE power source.
+
+### Installing Temperature and Humidity sensors
+
+A Temperature and Humidity sensor package can be connected to the expansion Hub. Sensors must be connected to the Temperature and Humidity RJ11 port on the expansion hub. Up to three sensors can be daisy chained. Each sensor must have a **unique** address, typically 10, 11 and 12. The sensor address will be printed on the sensor.
+
+```{figure} /product/asset-tracker/media/expansion_hub_to_sensors_1.png
+:alt: Expansion Hub to sensors
+:class: border-black
+
+Expansion Hub to sensors
+```
 
 ### Installing Asset Tags
 
