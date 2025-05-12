@@ -33,7 +33,7 @@ A "document" can be a file or a URL. The following file types are supported:
 :::
 
 :::{note}
-The maximum upload size is 10 MB. The default total document storage size is 5 GB.
+The maximum upload size is 20 MB.
 :::
 
 ## Accessing documents
