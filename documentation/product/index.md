@@ -14,6 +14,7 @@ work-notes/index
 firmware-management/index
 outlet-control/index
 rack-security/index
+connectivity/index
 asset-tracker/index
 settings/index
 using-hyperview/index
