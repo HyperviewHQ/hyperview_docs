@@ -91,8 +91,9 @@ snmpwalk -v2c -c public -ObentU 192.168.10.10 . > /my_home_dir/snmpwalks/newrack
 gzip /my_home_dir/snmpwalks/newrackpdu.snmpwalk
 ```
 
-:::{note}
-The **-ObentU** command option is required and important to be able to parse the output with our tools.
+:::{important}
+- The **-ObentU** command option is required and important to be able to parse the output with our tools.
+- The **period character** or **"."** at the end of the command is required and important.
 :::
 
 #### Docker
@@ -106,8 +107,9 @@ docker run -it --entrypoint snmpwalk  hvpublic.azurecr.io/hv-net-snmp-tools:late
 gzip /my_home_dir/snmpwalks/newrackpdu.snmpwalk
 ```
 
-:::{note}
-The **-ObentU** command option is required and important to be able to parse the output with our tools.
+:::{important}
+- The **-ObentU** command option is required and important to be able to parse the output with our tools.
+- The **period character** or **"."** at the end of the command is required and important.
 :::
 
 #### Walk file handling
