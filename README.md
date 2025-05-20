@@ -57,7 +57,7 @@ make docker_stop
 # To start the docker container
 make docker_start
 ```
-* Navigate to 127.0.0.1 to browse the docs site.
+* Navigate to [localhost:8080](http://127.0.0.1:8080) to browse the docs site.
 
 ## API Changes ##
 
