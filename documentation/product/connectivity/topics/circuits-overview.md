@@ -38,13 +38,13 @@ Users can improve the documentation of the physical network layer, enhance opera
 :class: border-black
 ```
 
-6.	Connections contain editable custom properties, the same that you would find on any other Asset in Hyperview.
+6.	Circuits contain editable custom properties, the same that you would find on any other Asset in Hyperview.
 
 ```{image} /product/connectivity/media/circuits-overview/image7.jpg
 :class: border-black
 ```
 
-7.	Documentation can also be added and linked to Connections.
+7.	Documents can also be added and linked to Circuits.
 
 ```{image} /product/connectivity/media/circuits-overview/image8.jpg
 :class: border-black
