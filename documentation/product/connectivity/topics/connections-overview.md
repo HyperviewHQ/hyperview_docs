@@ -40,7 +40,7 @@ Users can improve the documentation of the physical network layer, enhance opera
 :class: border-black
 ```
 
-7.	Documentation can also be added and linked to Connections.
+7.	Documents can also be added and linked to Connections.
 
 ```{image} /product/connectivity/media/connections-overview/image7.jpg
 :class: border-black
