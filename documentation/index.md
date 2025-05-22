@@ -12,18 +12,11 @@ sd_hide_title: true
 
 
 {.frontpage-heading1}
-# Asset Management
+# Product Documentation
 
 ::::{grid} 2
 :gutter: 2 3 3 3
 :margin: 4 4 1 2
-
-
-:::{grid-item-card} {fas}`fa-solid fa-rocket` Quickstart
-:link: product/quickstart/index.html
-
-Basic concepts and instructions to get up and running.
-:::
 
 :::{grid-item-card} {fas}`fa-solid fa-server` Asset Management
 :link: product/asset-management/index.html
@@ -61,15 +54,17 @@ Access the product catalog and add your device models and images.
 Add operational notes, tag team members, and annotate assets.
 :::
 
-::::
+:::{grid-item-card} {fas}`fa-solid fa-tag` AssetTracker
+:link: product/asset-tracker/index.html
 
+Automatically audit and track asset moves using RFID technology.
+:::
 
-{.frontpage-heading1}
-# Asset Control
+:::{grid-item-card} {fas}`fa-solid fa-circle-nodes` Connectivity
+:link: product/connectivity/index.html
 
-::::{grid} 2
-:gutter: 2 3 3 3
-:margin: 4 4 1 2
+Document, visualize, track and audit the physical network layer.
+:::
 
 :::{grid-item-card} {fas}`fa-solid fa-star` Firmware Management
 :link: product/firmware-management/index.html
@@ -89,36 +84,26 @@ Control smart rack PDU outlets remotely.
 Control rack access remotely.
 :::
 
-::::
+:::{grid-item-card} {fas}`fa-solid fa-gear` Settings
+:link: product/settings/index.html
 
-
-{.frontpage-heading1}
-# RFID Asset Tracking
-
-::::{grid} 2
-:gutter: 2 3 3 3
-:margin: 4 4 1 2
-
-:::{grid-item-card} {fas}`fa-solid fa-tag` AssetTracker
-:link: product/asset-tracker/index.html
-
-Automatically track asset moves using our RFID technology.
+Configure system-wide application settings.
 :::
 
 ::::
 
 
 {.frontpage-heading1}
-# Using Hyperview
+# User Guide
 
 ::::{grid} 2
 :gutter: 2 3 3 3
 :margin: 4 4 1 2
 
-:::{grid-item-card} {fas}`fa-solid fa-gear` Settings
-:link: product/settings/index.html
+:::{grid-item-card} {fas}`fa-solid fa-rocket` Quickstart
+:link: product/quickstart/index.html
 
-Step-by-step instructions to configure system-wide application settings.
+Basic concepts and instructions to get up and running.
 :::
 
 :::{grid-item-card} {fas}`fa-solid fa-laptop` Using Hyperview
