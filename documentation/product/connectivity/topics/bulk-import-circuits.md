@@ -26,7 +26,7 @@ This guide simplifies the bulk importing of circuits, making it easier to manage
 :class: border-black
 ```
 
-:::{note}
+:::{important}
 The template can be used to import new circuits or update existing circuits.
 
 Required Properties:
@@ -77,8 +77,8 @@ Custom Properties:
 :class: border-black
 ```
 
-:::{note}
-Once the import process is complete, validate the Result column to ensure the connections were successfully imported.
+:::{important}
+Once the import process is complete, validate the Result column to ensure the circuits were successfully imported.
 
 If a Circuit fails to import, an error will be displayed in the result column. The error message will indicate what the cause of the error was. Typical errors include:
 - Connection does not exist.

@@ -1,6 +1,8 @@
 # Circuits Overview
 
-Manage and navigating the Circuits feature in Hyperview, offering users the ability to customize their data view, access detailed circuit information, and edit properties efficiently. With the ability to track changes, manage access control, and document connections, users can enhance their operational oversight and streamline their workflow.
+The Circuits feature in Hyperview allows users to document A to Z connectivity for the network's physical layer. Users can access detailed circuit information and add and edit properties efficiently. The feature automatically tracks changes and allows users to document related connections.
+
+Users can improve the documentation of the physical network layer, enhance operational oversight, and streamline change and audit workflows.
 
 1.	Click "Circuits"
 
