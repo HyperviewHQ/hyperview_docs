@@ -2,7 +2,7 @@
 
 # Connectivity
 
-The Connectivity feature allows users to add and manage connections and circuits. It provides a convenient way to store, manage, and report on network connections between assets.
+The Connectivity feature allows users to document, visualize and audit the physical network layer of their network. It provides a convenient way to store, manage, and report on network Connections (A to B) and Circuits (A to Z) between assets.
 
 ```{toctree}
 :maxdepth: 2
