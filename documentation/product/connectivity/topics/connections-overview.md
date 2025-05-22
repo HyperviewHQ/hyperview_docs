@@ -1,6 +1,8 @@
 # Connections Overview
 
-View and manage existing Connections within Hyperview, highlighting essential features like customizable data visibility, detailed editing options, and access control policies. By understanding how to leverage Connections effectively, users can enhance their data management, track changes, and maintain organized work notes for improved collaboration.
+The Connections feature allows users to document A to B connectivity between assets. Users can access detailed connection information, add and edit properties efficiently, and automatically track changes to connections.
+
+Users can improve the documentation of the physical network layer, enhance operational oversight, and streamline change and audit workflows.
 
 1.	Click "Connections"
 
