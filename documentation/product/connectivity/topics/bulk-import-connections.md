@@ -26,7 +26,7 @@ This guide provides the process for importing and updating connections in Hyperv
 :class: border-black
 ```
 
-:::{note}
+:::{important}
 The template can be used to import new connections or update existing connections.
 
 Required Properties:
@@ -93,7 +93,7 @@ Custom Properties:
 :class: border-black
 ```
 
-:::{note}
+:::{important}
 If a connection fails to import, an error will be displayed in the result column. The error message will indicate what the cause of the error was. Typical errors include:
 - Termination device does not exist.
 - Connection ID does not exist.
