@@ -24,10 +24,6 @@ Users can improve the documentation of the physical network layer, enhance opera
 
 4.	Select a Circuit, then click the "Circuit Info" button to view more information about the Circuit.
 
-```{image} /product/connectivity/media/circuits-overview/image4.jpeg
-:class: border-black
-```
-
 ```{image} /product/connectivity/media/circuits-overview/image5.jpeg
 :class: border-black
 ```

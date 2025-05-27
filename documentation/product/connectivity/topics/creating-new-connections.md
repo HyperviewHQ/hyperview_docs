@@ -30,7 +30,7 @@ This guide provides a step-by-step process for creating new connections in Hyper
 The Connection Name field is optional. If not filled, Hyperview will generate a Connection Name based on the Media Type property and the automatically generated Connection ID.
 :::
 
-5.	Drop down the optional "Media Type" field and select an available Media Type from the options.
+5.	Drop down the required "Media Type" field and select an available Media Type from the options.
 
 ```{image} /product/connectivity/media/creating-new-connections/image5.jpeg
 :class: border-black
@@ -82,7 +82,8 @@ The Asset Selector menu has a built-in search feature allowing you to quickly fi
 :class: border-black
 ```
 
-:::{note}The ports populated in the Port Picker menu are populated based on the available ports on the asset in Hyperview. If you do not see expected available port in this menu, then you may need to configure the ports from the asset's Information > Network Ports page.
+:::{note}
+The ports populated in the Port Picker menu are populated based on the available ports on the asset in Hyperview. If you do not see expected available port in this menu, then you may need to configure the ports from the asset's Information > Network Ports page.
 
 Multiple connections can also be created for the same port!
 :::
