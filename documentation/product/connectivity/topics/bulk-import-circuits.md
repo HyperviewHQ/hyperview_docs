@@ -4,25 +4,25 @@ This guide simplifies the bulk importing of circuits, making it easier to manage
 
 1.	Navigate to the Connectivity > Import page.
 
-```{image} /product/connectivity/media/bulk-import-connections/image1.jpg
+```{image} /product/connectivity/media/bulk-import-circuits/image1.jpeg
 :class: border-black
 ```
 
 2.	Open the Download Template File menu.
 
-```{image} /product/connectivity/media/bulk-import-connections/image2.jpg
+```{image} /product/connectivity/media/bulk-import-circuits/image2.jpeg
 :class: border-black
 ```
 
 3.	Download the Circuits template file.
 
-```{image} /product/connectivity/media/bulk-import-connections/image3.jpg
+```{image} /product/connectivity/media/bulk-import-circuits/image3.jpeg
 :class: border-black
 ```
 
 4.	Enter the required information in the Import Circuits template spreadsheet.
 
-```{image} /product/connectivity/media/bulk-import-connections/image4.jpg
+```{image} /product/connectivity/media/bulk-import-circuits/image4.jpeg
 :class: border-black
 ```
 
@@ -49,31 +49,31 @@ Custom Properties:
 
 5.	Click Select File.
 
-```{image} /product/connectivity/media/bulk-import-connections/image5.jpg
+```{image} /product/connectivity/media/bulk-import-circuits/image5.jpeg
 :class: border-black
 ```
 
 6.	Open the Template picker and select Circuits.
 
-```{image} /product/connectivity/media/bulk-import-connections/image6.jpg
+```{image} /product/connectivity/media/bulk-import-circuits/image6.jpeg
 :class: border-black
 ```
 
 7.	Click Select File and locate the Import Circuits spreadsheet.
 
-```{image} /product/connectivity/media/bulk-import-connections/image7.jpg
+```{image} /product/connectivity/media/bulk-import-circuits/image7.jpeg
 :class: border-black
 ```
 
 8.	Click Select.
 
-```{image} /product/connectivity/media/bulk-import-connections/image8.jpg
+```{image} /product/connectivity/media/bulk-import-circuits/image8.jpeg
 :class: border-black
 ```
 
 9.	The spreadsheet content will appear on the Import page. After verifying the content, click the Import button to initiate the import process.
 
-```{image} /product/connectivity/media/bulk-import-connections/image9.jpg
+```{image} /product/connectivity/media/bulk-import-circuits/image9.jpeg
 :class: border-black
 ```
 
@@ -88,16 +88,16 @@ If a Circuit fails to import, an error will be displayed in the result column. T
 
 10.	Export the import results if needed.
 
-```{image} /product/connectivity/media/bulk-import-connections/image10.jpg
+```{image} /product/connectivity/media/bulk-import-circuits/image10.jpeg
 :class: border-black
 ```
 
 11.	Imported circuits can be found in the Connectivity > Circuits page.
 
-```{image} /product/connectivity/media/bulk-import-connections/image11.jpg
+```{image} /product/connectivity/media/bulk-import-circuits/image11.jpeg
 :class: border-black
 ```
 
-```{image} /product/connectivity/media/bulk-import-connections/image12.jpg
+```{image} /product/connectivity/media/bulk-import-circuits/image12.jpeg
 :class: border-black
 ```
