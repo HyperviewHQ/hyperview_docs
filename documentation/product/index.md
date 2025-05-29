@@ -5,15 +5,15 @@
 :maxdepth: 2
 
 asset-management/index
-document-management/index
-business-entities/index
 auto-discovery/index
-catalog-management/index
-work-notes/index
-firmware-management/index
-outlet-control/index
-rack-security/index
+business-entities/index
 connectivity/index
+catalog-management/index
+outlet-control/index
+firmware-management/index
+rack-security/index
 asset-tracker/index
+work-notes/index
+document-management/index
 settings/index
 ```

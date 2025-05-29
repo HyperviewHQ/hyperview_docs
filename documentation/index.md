@@ -24,10 +24,10 @@ sd_hide_title: true
 Asset management and related functionality.
 :::
 
-:::{grid-item-card} {fas}`fa-solid fa-file` Document Management
-:link: product/document-management/index.html
+:::{grid-item-card} {fas}`fa-solid fa-eye` Auto Discovery
+:link: product/auto-discovery/index.html
 
-Attach documents, manuals, contracts, images, and links to your assets.
+Auto-discovering assets and related concepts.
 :::
 
 :::{grid-item-card} {fas}`fa-solid fa-building` Business Entities
@@ -36,10 +36,10 @@ Attach documents, manuals, contracts, images, and links to your assets.
 Link assets, connections, circuits, documents and custom properties to vendors, departments and customers.
 :::
 
-:::{grid-item-card} {fas}`fa-solid fa-eye` Auto Discovery
-:link: product/auto-discovery/index.html
+:::{grid-item-card} {fas}`fa-solid fa-circle-nodes` Connectivity
+:link: product/connectivity/index.html
 
-Auto-discovering assets and related concepts.
+Document, visualize, track and audit the physical network layer.
 :::
 
 :::{grid-item-card} {fas}`fa-solid fa-book-open` Catalog Management
@@ -48,22 +48,10 @@ Auto-discovering assets and related concepts.
 Access the product catalog and add your device models and images.
 :::
 
-:::{grid-item-card} {fas}`fa-solid fa-note-sticky` Work Notes
-:link: product/work-notes/index.html
+:::{grid-item-card} {fas}`fa-solid fa-power-off` Outlet Control
+:link: product/outlet-control/index.html
 
-Add operational notes, tag team members, and annotate assets.
-:::
-
-:::{grid-item-card} {fas}`fa-solid fa-tag` AssetTracker
-:link: product/asset-tracker/index.html
-
-Automatically audit and track asset moves using RFID technology.
-:::
-
-:::{grid-item-card} {fas}`fa-solid fa-circle-nodes` Connectivity
-:link: product/connectivity/index.html
-
-Document, visualize, track and audit the physical network layer.
+Control smart rack PDU outlets remotely.
 :::
 
 :::{grid-item-card} {fas}`fa-solid fa-star` Firmware Management
@@ -72,16 +60,28 @@ Document, visualize, track and audit the physical network layer.
 Manage the firmware of your connected assets.
 :::
 
-:::{grid-item-card} {fas}`fa-solid fa-power-off` Outlet Control
-:link: product/outlet-control/index.html
-
-Control smart rack PDU outlets remotely.
-:::
-
 :::{grid-item-card} {fas}`fa-solid fa-lock` Rack Security
 :link: product/rack-security/index.html
 
 Control rack access remotely.
+:::
+
+:::{grid-item-card} {fas}`fa-solid fa-tag` AssetTracker
+:link: product/asset-tracker/index.html
+
+Automatically audit and track asset moves using RFID technology.
+:::
+
+:::{grid-item-card} {fas}`fa-solid fa-note-sticky` Work Notes
+:link: product/work-notes/index.html
+
+Add operational notes, tag team members, and annotate assets.
+:::
+
+:::{grid-item-card} {fas}`fa-solid fa-file` Document Management
+:link: product/document-management/index.html
+
+Attach documents, manuals, contracts, images, and links to your assets.
 :::
 
 :::{grid-item-card} {fas}`fa-solid fa-gear` Settings
@@ -118,25 +118,19 @@ Extract and export various data.
 Map and floor plan visualization in 2D and 3D.
 :::
 
-:::{grid-item-card} {fas}`fa-solid fa-map` Layout Management
-:link: user-guide/layout-management/index.html
-
-Map and floor plan visualization in 2D and 3D.
-:::
-
 :::{grid-item-card} {fas}`fa-solid fa-magnifying-glass` Search
 :link: user-guide/search/index.html
 
 Search application data.
 :::
 
-:::{grid-item-card} {fas}`fa-solid fa-sensor-management` Sensor Management
+:::{grid-item-card} {fas}`fa-solid fa-temperature-quarter` Sensor Management
 :link: user-guide/sensor-management/index.html
 
 Sensor types, monitoring and sensor analytics.
 :::
 
-:::{grid-item-card} {fas}`fa-solid fa-user` Sensor Management
+:::{grid-item-card} {fas}`fa-solid fa-user` Account Management
 :link: user-guide/user-accounts/index.html
 
 Account management, roles and security.
