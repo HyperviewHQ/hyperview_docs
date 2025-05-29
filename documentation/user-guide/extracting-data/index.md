@@ -15,11 +15,11 @@ You can export grid data from any page in Hyperview that has an *Export* link. E
 
 For multi-page grids — that is, grids which are spread across multiple pages — you can click the *Export* link on any grid page to export the entire grid. The exported file will reflect the sort order and any filters that are currently applied.
 
-```{image} /product/using-hyperview/extracting-data/media/abt_export.png
+```{image} /user-guide/extracting-data/media/abt_export.png
 :class: border-black
 ```
 
-```{image} /product/using-hyperview/extracting-data/media/excel.png
+```{image} /user-guide/extracting-data/media/excel.png
 :class: border-black
 ```
 

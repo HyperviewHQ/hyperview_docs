@@ -8,13 +8,13 @@ You can perform searches in Hyperview from three different places: Quick Search,
 
 Quick Search lets you quickly lookup assets from the Search panel (*Search → Quick*). Search results appear as soon as you type a matching character string. Clicking on a search result opens the corresponding asset Dashboard.
 
-```{image} /product/using-hyperview/search/media/qs.png
+```{image} /user-guide/search/media/qs.png
 :class: border-black
 ```
 
 The Advanced Search page is also accessible from the Search panel (*Search → Advanced*). Unlike Quick Search, matches for Advanced Search queries only appear once you press Enter. Search results appear in a grid, allowing to perform relevant actions such as Export and Bulk Delete. Double-clicking a matching asset opens its Dashboard.
 
-```{image} /product/using-hyperview/search/media/as.png
+```{image} /user-guide/search/media/as.png
 :class: border-black
 ```
 
@@ -140,7 +140,7 @@ Note that the default Location is All.
 1. Click *Filters* on the Advanced Search page (or the *View Filters* link upon opening the page). The Filters panel will open.
 2. Select Type, Location, Manufacturer, Model, Status, and Lifecycle State values as needed.
 
-```{image} /product/using-hyperview/search/media/as_filtersp.png
+```{image} /user-guide/search/media/as_filtersp.png
 :class: border-black
 ```
 
@@ -155,7 +155,7 @@ Note that the default Location is All.
    3. Relevant fields will appear. Provide values as required.
    4. Click *Add*. The filter will appear under Property and Sensor Filters in the panel.
 
-```{image} /product/using-hyperview/search/media/as_filter.png
+```{image} /user-guide/search/media/as_filter.png
 :class: border-black
 ```
 
@@ -174,7 +174,7 @@ To add or remove columns:
 4. Select columns that you want to add, and de-select ones that you want to remove from the grid.
 5. Click *Add → Apply Filters*. The page will refresh to reflect your changes.
 
-```{image} /product/using-hyperview/search/media/as_columns.png
+```{image} /user-guide/search/media/as_columns.png
 :class: border-black
 ```
 
@@ -191,7 +191,7 @@ The Advanced Search page lets you save searches to be re-run later. There are tw
 
 Any user can perform an Advanced Search by applying filters, writing a manual query, or both, and then save it. Personal saved searches appear under My Searches in the Search panel. They are only available to the user who created them. Administrators can save and manage global searches, which are available to all users and appear under Global Searches in the Saved Searches panel.
 
-```{image} /product/using-hyperview/search/media/as_savedsearches.png
+```{image} /user-guide/search/media/as_savedsearches.png
 :class: border-black
 ```
 
@@ -200,7 +200,7 @@ Any user can perform an Advanced Search by applying filters, writing a manual qu
 1. Perform an Advanced Search.
 2. Click *Save*. The Save Advanced Search modal will appear.
 
-```{image} /product/using-hyperview/search/media/as_savingasearch.png
+```{image} /user-guide/search/media/as_savingasearch.png
 :class: border-black
 ```
 
@@ -227,7 +227,7 @@ Like most grids in Hyperview, you can {ref}`export Advanced Search results<Extra
 
 You can also {ref}`perform bulk actions<Bulk-actions-doc>` against Advanced Search results. For example, you can bulk delete one or more assets matching your query.
 
-```{image} /product/using-hyperview/search/media/as_bulk.png
+```{image} /user-guide/search/media/as_bulk.png
 :class: border-black
 ```
 
@@ -242,7 +242,7 @@ For example:
 - You can search for an asset's Change Log entries (*Information → Change Log*) by User.
 - You can search Assets By Type grids (*Types → any asset type*) by Name, Data Center, Location, Manufacturer or Model.
 
-```{image} /product/using-hyperview/search/media/changelog_search.png
+```{image} /user-guide/search/media/changelog_search.png
 :class: border-black
 ```
 
@@ -257,10 +257,10 @@ Supported pages are:
 - Assets By Type pages (for example, *Types → Rack → Open in Advanced Search* opens the Rack Assets By Type page in Advanced Search)
 - Assets By Location pages (for example, browse to a location → *Information → Assets → Open in Advanced Search* opens the location's Assets grid in Advanced Search)
 
-```{image} /product/using-hyperview/search/media/location_assets.png
+```{image} /user-guide/search/media/location_assets.png
 :class: border-black
 ```
 
-```{image} /product/using-hyperview/search/media/location_assets_as.png
+```{image} /user-guide/search/media/location_assets_as.png
 :class: border-black
 ```

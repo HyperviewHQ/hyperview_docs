@@ -101,16 +101,47 @@ Configure system-wide application settings.
 :margin: 4 4 1 2
 
 :::{grid-item-card} {fas}`fa-solid fa-rocket` Quickstart
-:link: product/quickstart/index.html
+:link: user-guide/quickstart/index.html
 
 Basic concepts and instructions to get up and running.
 :::
 
-:::{grid-item-card} {fas}`fa-solid fa-laptop` Using Hyperview
-:link: product/using-hyperview/index.html
+:::{grid-item-card} {fas}`fa-solid fa-table` Extracting Data
+:link: user-guide/extracting-data/index.html
 
-Quick search, advanced search, data extraction, and much more.
+Extract and export various data.
 :::
+
+:::{grid-item-card} {fas}`fa-solid fa-map` Layout Management
+:link: user-guide/layout-management/index.html
+
+Map and floor plan visualization in 2D and 3D.
+:::
+
+:::{grid-item-card} {fas}`fa-solid fa-map` Layout Management
+:link: user-guide/layout-management/index.html
+
+Map and floor plan visualization in 2D and 3D.
+:::
+
+:::{grid-item-card} {fas}`fa-solid fa-magnifying-glass` Search
+:link: user-guide/search/index.html
+
+Search application data.
+:::
+
+:::{grid-item-card} {fas}`fa-solid fa-sensor-management` Sensor Management
+:link: user-guide/sensor-management/index.html
+
+Sensor types, monitoring and sensor analytics.
+:::
+
+:::{grid-item-card} {fas}`fa-solid fa-user` Sensor Management
+:link: user-guide/user-accounts/index.html
+
+Account management, roles and security.
+:::
+
 
 ::::
 
@@ -148,6 +179,7 @@ Explore the Hyperview API.
 :maxdepth: 2
 
 product/index
+user-guide/index
 release-notes/index
 api-changelog/index
 ```

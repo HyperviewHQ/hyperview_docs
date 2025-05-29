@@ -4,7 +4,6 @@
 ```{toctree}
 :maxdepth: 2
 
-quickstart/index
 asset-management/index
 document-management/index
 business-entities/index
@@ -17,5 +16,4 @@ rack-security/index
 connectivity/index
 asset-tracker/index
 settings/index
-using-hyperview/index
 ```

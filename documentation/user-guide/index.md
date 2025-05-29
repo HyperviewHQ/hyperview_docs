@@ -5,6 +5,7 @@ Now that you are familiar with the main features of Hyperview, you are ready to 
 ```{toctree}
 :maxdepth: 2
 
+quickstart/index
 extracting-data/index
 layout-management/index
 search/index

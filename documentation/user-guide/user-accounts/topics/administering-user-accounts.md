@@ -12,7 +12,7 @@ A "domain" implies a corporate email domain. Most organizations have one unique 
 You must add a domain before you can add any users. The primary domain for your organization will be created during the Hyperview onboarding process.
 :::
 
-```{image} /product/using-hyperview/user-accounts/media/domains.png
+```{image} /user-guide/user-accounts/media/domains.png
 :class: border-black
 ```
 
@@ -65,7 +65,7 @@ You can force users to log into Hyperview using their **configured external logi
 
 To enforce external login for a user, turn on the External Login Required toggle in the user grid. Once this is turned on, the user can no longer access Hyperview using a username/password combination.
 
-```{image} /product/using-hyperview/user-accounts/media/enforce_external_login.png
+```{image} /user-guide/user-accounts/media/enforce_external_login.png
 :class: border-black
 ```
 
@@ -97,7 +97,7 @@ Locking or deleting an account is immediate, however, if the user is logged in w
 
 You can perform bulk actions against selected user rows in the Users grid. The following bulk actions can be performed: Lock, Unlock, Add To Group, Remove From Group, Enable External Login Required, Disable External Login Required, Delete.
 
-```{image} /product/using-hyperview/user-accounts/media/user_bulk.png
+```{image} /user-guide/user-accounts/media/user_bulk.png
 :class: border-black
 ```
 
@@ -132,7 +132,7 @@ You can click the *Export* button to export the grid in Excel (.xlsx) format. Al
 
 A "group" in Hyperview terminology implies a group of users. The advantage of using groups is that you can associate groups with access policies (from *Settings* → *Access Policies*), which makes it a lot easier to configure asset-level access across a large number of people.
 
-```{image} /product/using-hyperview/user-accounts/media/groups.png
+```{image} /user-guide/user-accounts/media/groups.png
 :class: border-black
 ```
 
@@ -169,7 +169,7 @@ Unprovisioned users who do not belong to a configured Azure AD domain will get a
 The Azure AD domain must be a login domain (not an alias). For associated user accounts, the username must be the primary email account/username for the user and have the same domain as the intended Azure AD domain.
 :::
 
-```{image} /product/using-hyperview/user-accounts/media/ad_domain.png
+```{image} /user-guide/user-accounts/media/ad_domain.png
 :class: border-black
 ```
 
@@ -188,7 +188,7 @@ A success message will appear, and the Azure AD domain will be listed in the Use
 
 A success message will appear, and the domain details will be updated in the User Provisioning grid.
 
-```{image} /product/using-hyperview/user-accounts/media/edit_ad_domain.png
+```{image} /user-guide/user-accounts/media/edit_ad_domain.png
 :class: border-black
 ```
 
@@ -209,7 +209,7 @@ You can create user accounts for API clients, which let you programmatically int
 2. Provide values for Description, Role, and Access Policies. If you are unsure of which access policy to use for the API client, select Default.
 3. Click *Add and Download Credentials*. A "client_credential.json" will be downloaded to your browser's default download location. A confirmation message will appear in Hyperview, and the API client will be listed.
 
-```{image} /product/using-hyperview/user-accounts/media/addapiclient.png
+```{image} /user-guide/user-accounts/media/addapiclient.png
 :class: border-black
 ```
 
