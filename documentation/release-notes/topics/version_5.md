@@ -16,7 +16,7 @@ This section covers significant changes and bug fixes in Hyperview 5.0.x since v
 
 An **opt-in** AI assistant beta is being introduced in this version of Hyperview. Hyperview Administrators are able to enable this functionality. Once enabled, Hyperview users can use it to get information about the application, navigate, search and perform read only actions.
 
-A **Settings -> General -> AI Assistant** page has been added to allow administrators to enable or disable the AI Assistant.
+A **Settings -> General -> AI Assistant** page has been added to allow administrators to enable or disable the AI Assistant. The AI Assistant is disabled by default.
 
 Feedback is welcome as we improve this functionality.
 
