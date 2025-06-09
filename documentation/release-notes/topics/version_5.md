@@ -70,6 +70,6 @@ A **Settings -> General -> Data Sharing** page has been added to allow administr
 - Dashboard widget responsive behavior has been enhanced.
 - A Lifecycle page has been added to the Location asset type.
 - The Data Collector installer has been updated to allow administrators to skip pre-flight checks before installation.
-- Max file size upload has been increased to 20MB across the application.
+- Max upload file size has been increased to 20MB across the application.
 
 ### Notable bug fixes
