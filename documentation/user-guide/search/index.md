@@ -12,7 +12,7 @@ Quick Search lets you quickly lookup assets from the Search panel (*Search → Q
 :class: border-black
 ```
 
-The Advanced Search page is also accessible from the Search panel (*Search → Advanced*). Search results appear in a grid, allowing to perform relevant actions such as Export and Bulk Delete. Double-clicking a matching asset opens its Dashboard.
+The Advanced Search page is also accessible from the Search panel (*Search → Advanced*). Search results appear in a grid, allowing users to perform relevant actions such as Export and Bulk Delete. Double-clicking a matching asset opens its Dashboard.
 
 ```{image} /user-guide/search/media/as.png
 :class: border-black
