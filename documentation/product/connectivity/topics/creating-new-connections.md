@@ -83,7 +83,7 @@ The Asset Selector menu has a built-in search feature allowing you to quickly fi
 ```
 
 :::{note}
-The ports populated in the Port Picker menu are populated based on the available ports on the asset in Hyperview. If you do not see expected available port in this menu, then you may need to configure the ports from the asset's Information > Network Ports page.
+The ports populated in the Port Picker menu are populated based on the available ports on the asset in Hyperview. If you do not see the expected available port(s) in this menu, then you may need to configure the ports from the asset's Information > Network Ports page.
 
 Multiple connections can also be created for the same port!
 :::
