@@ -27,7 +27,7 @@ The search system has been rebuilt in this version of Hyperview. Improvements in
 Search UX has been improved by including a docking option to allow customers to interact with the search system, recall previous searches or interact with the AI Assistant as needed without leaving the quick search interface.
 
 :::{important}
-If you are using the search API in any custom scripts please make sure to test and update them if needed to maintain compatibility with this version of the API.
+If you are using the search API in any custom scripts, please make sure to test and update them if needed to maintain compatibility with this version of the API.
 :::
 
 ### Enhanced Feature: Business Entities
