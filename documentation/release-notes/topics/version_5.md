@@ -44,7 +44,7 @@ The BACnet definitions builder has been enhanced to allow customer to poll for m
 
 ### Enhanced Feature: Modbus & BACnet monitoring
 
-The definitions builder has een enhanced to allow customers to define a multiplier to scale generic sensors.
+The definitions builder has been enhanced to allow customers to define a multiplier to scale generic sensors.
 
 ### Enhanced Feature: Location 2D and 3D Layout
 
