@@ -12,7 +12,7 @@ Quick Search lets you quickly lookup assets from the Search panel (*Search → Q
 :class: border-black
 ```
 
-The Advanced Search page is also accessible from the Search panel (*Search → Advanced*). Unlike Quick Search, matches for Advanced Search queries only appear once you press Enter. Search results appear in a grid, allowing to perform relevant actions such as Export and Bulk Delete. Double-clicking a matching asset opens its Dashboard.
+The Advanced Search page is also accessible from the Search panel (*Search → Advanced*). Search results appear in a grid, allowing to perform relevant actions such as Export and Bulk Delete. Double-clicking a matching asset opens its Dashboard.
 
 ```{image} /user-guide/search/media/as.png
 :class: border-black
@@ -28,77 +28,29 @@ Virtually all asset and asset-related fields in Hyperview are searchable, includ
 
 For example, if you search for `critical`, all assets with a Critical status — as well as assets that have the word "Critical" as part of an asset tag, custom property, access policy, or another field — will populate search results.
 
-### Double quotes and case sensitivity
+### Double quotes
 
 You can use double quotes to enforce exact matches for a word or phrase. For example, to only find assets that specifically mention Rack E-1, search `"Rack E-1"`.
 
-Search words and phrases are considered to be case insensitive unless enclosed in double quotes. For example, `server 11` will match on both "server 11" and "Server 11", but `"Server 11"` will only match asset records that mention "Server 11".
+All search words and phrases are considered to be case insensitive. For example, `"Server 11"` will match on both "server 11" and "Server 11".
 
 ### Finding dates and numbers
 
-You can search for date values in YYYY-MM-DD format. For instance, to find asset records mentioning 9/1/2021, search `2021-09-01`. You can refine your query by specifying additional terms you are interested in, such as `2021-09-01 && HP`.
+You can search for date values in YYYY-MM-DD format. For instance, to find asset records mentioning 9/1/2021, search `2021-09-01`. You can refine your query by specifying additional terms or phrases you are interested in, such as `2021-09-01 HP`.
 
 You can also search for asset records that mention a specific integer or floating point number. For example, searching for `325` will only return records that
 mention 325; you do not need to enclose the number with double quotes. Similarly, searching for `325.25` will only return records that mention 325.25.
 
 :::{note}
-We recommend using filters to search property, custom property, and sensor values. Refer to the "Advanced Search-only features" section below.
+We recommend using filters to filter by property, custom property, and sensor values. Refer to the "Advanced Search-only features" section below.
 :::
 
-### Using wildcards
+### The NOT operator
 
-You can use `*` as a placeholder for some part of a word, or `?` for a single character. For example, `Rack E*` will return all records starting with (or mention records starting with) Rack E, such as Rack E, Rack E-1, Rack E 1001, and so on. On the other hand, `Rack E-?` will return all records (or those that mention relevant records) with names named like Rack E-1, Rack E-2, and so on.
+`-` is the NOT operator.
 
-Note that wildcard queries can use an enormous amount of memory, and don't perform very well (particularly if there is a wildcard at the beginning of a word). We recommend only using wildcards when absolutely necessary.
-
-### Whitespaces and empty queries
-
-Whitespace is not considered an operator. Moreover, certain operators (see below) will not work if they have any whitespaces between them and the search term that is intended to be included or excluded.
-
-### Using the AND operator
-
-`AND`, `&&`, and `+` are variations of the AND operator.
-
-- `server AND critical` or `server && critical` will only return asset records matching both "server" and "critical".
-- `server +critical` will return records that *must* include "critical" and may also have "server" (records matching both terms will get a boost in search results).
-
-For `+` usage, further note that using `+server +critical` will return all asset records with both "server and "critical".
-
-### Using the OR operator
-
-`OR` and `||` represent the OR operator. They are identical from an end user standpoint.
-
-- `HP OR Dell` or `HP || Dell` will return records matching either "HP" or "Dell".
-
-### Using the NOT operator
-
-`NOT`, `!`, and `-` are variations of the NOT operator. They are identical from an end user standpoint.
-
-- `server NOT HP`, `server !HP`, or `server -HP` will only return records matching "server" that do not include "HP".
-
-### Reserved characters and escaping
-
-The following special characters are reserved: `+ - = && || ! ( ) { } [ ] ^ " ~ * ? : \ / < >`.
-
-`<` and `>` cannot be escaped. To avoid confusion, we recommend that you do not include `<` or `>` while naming assets, properties, or custom properties.
-
-If any of `+ - = && || ! ( ) { } [ ] ^ " ~ * ? : \ /` appear in a word or phrase that you are querying, you must escape each occurrence by prefixing it with `\\`. Note that this only applies to special characters in your natural search data; it does *not* apply to special characters you added to refine your query (such as a `+` used as an AND operator).
-
-:::{note}
-Although your search query might work without escaping, this is not guaranteed. Always escape applicable special characters in your query.
-:::
-
-### Grouping subqueries
-
-You can group a subquery by enclosing it within parentheses. For example, `Panduit AND (Rack OR "Rack PDU")` will return all records mentioning "Panduit" and either (or both) of "Rack" and "Rack PDU".
-
-Note that `"Rack PDU"` is enclosed with double quotes in the search query as it includes a white space. Alternatively, the query could be written as `Panduit AND (Rack OR (Rack PDU))` or `+Panduit +(Rack || (Rack PDU))`. In other words: you can group subqueries as well as phrases.
-
-:::{note}
-If your search query is comprised of multiple subqueries, you *must* group subqueries that use any of the following to ensure correct operator precedence: `AND && OR || NOT !`.
-:::
-
-______________________________________________________________________
+- `server -HP` will only return records matching "server" that do not include "HP".
+___________________________________________
 
 ## Advanced Search-only features
 
