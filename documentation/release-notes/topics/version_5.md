@@ -54,7 +54,7 @@ Users can now provide horizontal and vertical offsets on grids to place them mor
 
 - Rittal smart Rack PDU support has been improved.
 - Cisco switch and environmental monitor support has been improved to discover and monitor more sensors and device models.
-- General improvements have been added to Lenovo, Panduit, APC, HPE, Veriv and Eaton Server, CRAC, PDU and UPS equipment.
+- General improvements have been added to Lenovo, Panduit, APC, HPE, Vertiv and Eaton Server, CRAC, PDU and UPS equipment.
 
 ### Enhanced Feature: Settings
 
