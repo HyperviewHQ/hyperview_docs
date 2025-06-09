@@ -63,6 +63,7 @@ To configure a network adapter so that it is on the same subnet as the AssetTrac
 	- IP Address: 192.168.100.### (where ### is an available IP address)
 	- Subnet Mask: 255.255.0.0
 	- Default Gateway: IP Address of the network switch or router
+
 ```{figure} /product/asset-tracker/media/network_adapter_properties.png
 :alt: Windows Network Adapter Properties
 :class: border-black
