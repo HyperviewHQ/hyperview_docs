@@ -22,7 +22,7 @@ Feedback is welcome as we improve this functionality.
 
 ### Enhanced Feature: Quick and Advanced Search
 
-The search system has been rebuilt in this version of Hyperview. Improvements include an updated interface, keyboard shortcut and speed and performance improvements.
+The search system has been rebuilt in this version of Hyperview. Improvements include an updated interface, keyboard shortcuts, speed, and performance improvements.
 
 Search UX has been improved by including a docking option to allow customers to interact with the search system, recall previous searches or interact with the AI Assistant as needed without leaving the quick search interface.
 
