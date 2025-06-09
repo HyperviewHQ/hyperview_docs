@@ -36,7 +36,7 @@ The Associated Assets list has been improved to include the Lifecycle State.
 
 ### Enhanced Feature: Connectivity
 
-Hyperview Users can now set a port side on Network device ports. This is to allow for more precise meta data management while documenting physical network layer infrastructure.
+Hyperview Users can now set a port side on network device ports. This is to allow for more precise metadata management while documenting physical network layer infrastructure.
 
 ### Enhanced Feature: BACnet Monitoring
 
