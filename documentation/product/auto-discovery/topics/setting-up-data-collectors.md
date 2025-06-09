@@ -18,7 +18,7 @@ You must install the Hyperview Data Collector on at least one machine (physical 
 
 You **cannot** install multiple instances of the Data Collector on the same device or register the same device with more than one Hyperview instance.
 
-Data Collectors must have **unique** names. If you are planning to use the Data Collector with {ref}`Asset Tracker<assettracker-doc>` (RFID asset tracking solution), or as an SNMP trap aggregator, its IP address must remain static.
+Data Collectors must have **unique** names. If you are planning to use the Data Collector with {ref}`AssetTracker<assettracker-doc>` (RFID asset tracking solution), or as an SNMP trap aggregator, its IP address must remain static.
 
 (linux-prerequisites)=
 
