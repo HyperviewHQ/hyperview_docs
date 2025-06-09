@@ -14,7 +14,7 @@ This section covers significant changes and bug fixes in Hyperview 5.0.x since v
 
 ### New Feature: AI Assistant Beta
 
-An **opt-in** AI assistant beta is being introduced in this version of Hyperview. Hyperview Administrators are able to enable this functionality. Once enabled, Hyperview users can use it to get information about the application, navigate, search and perform read only actions.
+An **opt-in** AI Assistant beta is being introduced in this version of Hyperview. Hyperview Administrators are able to enable this functionality. Once enabled, Hyperview users can use it to get information about the application, navigate, search and perform read only actions.
 
 A **Settings -> General -> AI Assistant** page has been added to allow administrators to enable or disable the AI Assistant. The AI Assistant is disabled by default.
 
@@ -24,7 +24,7 @@ Feedback is welcome as we improve this functionality.
 
 The search system has been rebuilt in this version of Hyperview. Improvements include an updated interface, keyboard shortcut and speed and performance improvements.
 
-Search UX has been improved by including a docking option to allow customers to interact with the search system, recall previous searches or interact with the AI assistant as needed without leaving the quick search interface.
+Search UX has been improved by including a docking option to allow customers to interact with the search system, recall previous searches or interact with the AI Assistant as needed without leaving the quick search interface.
 
 :::{important}
 If you are using the search API in any custom scripts please make sure to test and update them if needed to maintain compatibility with this version of the API.
