@@ -67,7 +67,7 @@ A **Settings -> General -> Data Sharing** page has been added to allow administr
 ### Other notable changes and improvements
 
 - The API version has been updated to version 5.0.
-- Dashboards widget responsive behavior has been enhanced.
+- Dashboard widget responsive behavior has been enhanced.
 - A Lifecycle page has been added to the Location asset type.
 - The Data Collector installer has been updated to allow administrators to skip pre-flight checks before installation.
 - Max file size upload has been increased to 20MB across the application.
