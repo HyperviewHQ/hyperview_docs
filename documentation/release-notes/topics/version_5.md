@@ -40,11 +40,11 @@ Hyperview Users can now set a port side on network device ports. This is to allo
 
 ### Enhanced Feature: BACnet Monitoring
 
-The BACnet definitions builder has been enhanced to allow customer to poll for multi-state value object types.
+The BACnet definition builder has been enhanced to support the multi-state value object type.
 
 ### Enhanced Feature: Modbus & BACnet monitoring
 
-The definitions builder has been enhanced to allow customers to define a multiplier to scale generic sensors.
+The definition builder has been enhanced to support the scaling of generic numeric sensors with a multiplier.
 
 ### Enhanced Feature: Location 2D and 3D Layout
 
