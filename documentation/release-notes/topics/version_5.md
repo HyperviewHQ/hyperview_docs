@@ -73,3 +73,9 @@ A **Settings -> General -> Data Sharing** page has been added to allow administr
 - Max upload file size has been increased to 20MB across the application.
 
 ### Notable bug fixes
+
+- **AS-16918** Fixed a bug that caused an error to be displayed if a user adds a circuit without a circuit ID.
+- **AS-16953** Fixed a bug that, under certain conditions, caused a rack elevation asset label to be displayed on the wrong side.
+- **AS-16978** Fixed a bug that, under certain conditions, caused an unhandled error when uploading circuits.
+- **AS-17380** Fixed a bug that, under certain conditions, caused Memory and Storage components to not be created when performing SSH discovery.
+- **AS-17436** Fixed a bug that, under certain conditions, caused memory size to not be calculated correctly when converting to higher capacities.
