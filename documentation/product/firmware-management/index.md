@@ -88,9 +88,7 @@ Upon discovery, the Firmware Version property becomes read-only to prevent human
 
 Any user can access Firmware Management page as long as they are using a Firmware Management-licensed instance (see {ref}`View license<View-license-doc>`).
 
-:::{note}
-Only Administrator and Data Center Manager users can initiate a firmware update.
-:::
+Only Administrators and Data Center Managers can initiate a firmware update.
 
 ## Navigating Firmware Management pages
 
