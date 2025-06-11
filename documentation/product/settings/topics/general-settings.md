@@ -5,6 +5,7 @@
 ```{toctree}
 :maxdepth: 2
 
-catalog-data
+ai-assistant
+data-sharing
 locale-settings
 ```

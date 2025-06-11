@@ -14,7 +14,11 @@ The Data Collector must initiate all communication between the Data Collector an
 
 ## Prerequisites
 
-You must install the Hyperview Data Collector on at least one machine (physical or virtual, running a supported operating system) with network access to your devices. You **cannot** install multiple instances of the Data Collector on the same device or register the same device with more than one Hyperview instance.
+You must install the Hyperview Data Collector on at least one machine (physical or virtual, running a supported operating system) with network access to your devices.
+
+You **cannot** install multiple instances of the Data Collector on the same device or register the same device with more than one Hyperview instance.
+
+Data Collectors must have **unique** names. If you are planning to use the Data Collector with {ref}`AssetTracker<assettracker-doc>` (RFID asset tracking solution), or as an SNMP trap aggregator, its IP address must remain static.
 
 (linux-prerequisites)=
 
@@ -32,14 +36,14 @@ If you plan to use a Raspberry Pi for data collection, the **minimum** hardware 
 
 The following distributions are tested to run the Hyperview Data Collector.
 
-  - **Red Hat Enterprise Linux 8 & 9** with the [official instructions](https://docs.docker.com/engine/install/rhel/)
-  - **CentOS 9** with the [official instructions](https://docs.docker.com/engine/install/centos/)
-  - **Rocky Linux 9** with the [RHEL 9 instructions](https://docs.docker.com/engine/install/rhel/)
-  - **Alma Linux 9** with the [CentOS 9 instructions](https://docs.docker.com/engine/install/centos/)
-  - **Ubuntu Server LTS 22.04 & 24.04** with the [official instruction](https://docs.docker.com/engine/install/ubuntu/)
-  - **Debian 11 & 12** with the [official instructions](https://docs.docker.com/engine/install/debian/)
+  - **Red Hat Enterprise Linux 8 & 9**
+  - **CentOS 9**
+  - **Rocky Linux 9**
+  - **Alma Linux 9**
+  - **Ubuntu Server LTS 22.04 & 24.04**
+  - **Debian 11 & 12**
 
-:::{tip}
+:::{important}
 - Please ensure that the **Podman** container management software is not installed.
 - Please ensure that the **snap** version of Docker is not installed.
 - Let us know if you would like us to support more Linux distributions. [Contact Support](https://system.hyperviewhq.com/helpdesk).
@@ -66,6 +70,8 @@ Depending on the Linux distribution used, please use apt, or dnf to install the 
 
 :::{note}
 - Docker Inc. provides [detailed installation documentation](https://docs.docker.com/engine/install/).
+- Please use the RHEL Docker CE installation instructions for Rocky Linux.
+- Please use the CentOS Docker CE installation instructions for Alma Linux.
 - The `jq` package may not be available from the official RedHat repository for RedHat Enterprise Linux or derivatives. If that is the case, the Extra Packages for Enterprise Linux [EPEL](https://docs.fedoraproject.org/en-US/epel/) project will have it.
 :::
 
