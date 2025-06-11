@@ -63,6 +63,7 @@ To configure a network adapter so that it is on the same subnet as the AssetTrac
 	- IP Address: 192.168.100.### (where ### is an available IP address)
 	- Subnet Mask: 255.255.0.0
 	- Default Gateway: IP Address of the network switch or router
+
 ```{figure} /product/asset-tracker/media/network_adapter_properties.png
 :alt: Windows Network Adapter Properties
 :class: border-black
@@ -172,13 +173,22 @@ If applicable, connect the Gateway to a POE power source.
 
 ### Installing Temperature and Humidity sensors
 
-A Temperature and Humidity sensor package can be connected to the expansion Hub. Sensors must be connected to the Temperature and Humidity RJ11 port on the expansion hub. Up to three sensors can be daisy chained. Each sensor must have a **unique** address, typically 10, 11 and 12. The sensor address will be printed on the sensor.
+A Temperature and Humidity sensor package can be connected to the expansion Hub. Sensors must be connected to the Temperature and Humidity RJ11 port on the expansion hub. Up to six sensors can be daisy chained. Each sensor must have a **unique** address, typically 10 to 15. The sensor address will be printed on the sensor.
 
 ```{figure} /product/asset-tracker/media/expansion_hub_to_sensors_1.png
 :alt: Expansion Hub to sensors
 :class: border-black
 
 Expansion Hub to sensors
+```
+
+With a six sensor deployment, three temperature zones (front and back) can be monitored in a rack. Hyperview will automatically calculate the temperature averages and Delta-T values for the zones.
+
+```{figure} /product/asset-tracker/media/rack_with_sensors.png
+:alt: Expansion Hub to sensors
+:class: border-black
+
+A Rack With Six Temperature and Humidity Sensors
 ```
 
 ### Installing Asset Tags
