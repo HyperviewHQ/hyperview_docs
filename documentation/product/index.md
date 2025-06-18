@@ -1,5 +1,5 @@
 
-# Product Documentation
+# Product Guide
 
 ```{toctree}
 :maxdepth: 2
