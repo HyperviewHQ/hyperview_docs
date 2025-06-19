@@ -12,7 +12,7 @@ sd_hide_title: true
 
 
 {.frontpage-heading1}
-# Product Documentation
+# Product Guide
 
 ::::{grid} 2
 :gutter: 2 3 3 3
