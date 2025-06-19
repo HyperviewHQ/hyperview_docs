@@ -79,3 +79,7 @@ A **Settings -> General -> Data Sharing** page has been added to allow administr
 - **AS-16978** Fixed a bug that, under certain conditions, caused an unhandled error when uploading circuits.
 - **AS-17380** Fixed a bug that, under certain conditions, caused Memory and Storage components to not be created when performing SSH discovery.
 - **AS-17436** Fixed a bug that, under certain conditions, caused memory size to not be calculated correctly when converting to higher capacities.
+
+### Changes in version 5.0.1
+
+- **AS-18075** Fixed a bug that, under certain conditions, caused saved searches not to work properly with the new search system.
