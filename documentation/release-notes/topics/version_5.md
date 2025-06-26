@@ -2,6 +2,10 @@
 
 ## Hyperview 5.0 (June 12, 2025)
 
+```{raw} html
+<div class="pb-3"><iframe src="https://scribehow.com/embed/Hyperview_50_Release_Features__nroPpUJxTtWeEHoi7Ey3GA?removeLogo=true&as=video" width="100%" height="640" allow="fullscreen" style="aspect-ratio: 16 / 12; border: 0; min-height: 480px"></iframe></div>
+```
+
 This section covers significant changes and bug fixes in Hyperview 5.0.x since version 4.9.x
 
 :::{important}
