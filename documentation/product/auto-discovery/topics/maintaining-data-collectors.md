@@ -34,6 +34,13 @@ cd /opt/datacollector/bin
 sudo ./update-dc.sh
 ```
 
+To skip hardware checks.
+
+```bash
+cd /opt/datacollector/bin
+sudo SKIP_TESTS=YES ./update-dc.sh`
+```
+
 ## Reconfiguring Data Collectors
 
 Execute the `reconfigure.sh` script located at `/opt/datacollector/bin`.
