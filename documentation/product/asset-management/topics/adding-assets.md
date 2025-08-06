@@ -92,7 +92,76 @@ You cannot bulk import Location or Rack type assets.
 
 The import process may take several minutes or more if you are importing a large number of assets. Upon import, the assets will appear in the Asset Hierarchy under your specified location.
 
-______________________________________________________________________
+### Bulk import error handling
+
+The Bulk Asset Import process uses the spreadsheet to match the assets to their model data stored in the catalog. The fields require exact matches to validate which manufacturer, model, type, rack, and physical location the assets should be created in.
+
+#### AssetType is not supported
+
+This error occurs when the Type field does not match an existing known Asset Type in the Hyperview catalog. The list of common Asset Types is as follows.
+
+- BladeEnclosure
+- BladeNetwork
+- BladeServer
+- BladeStorage
+- Busway
+- Camera
+- Chiller
+- Crac
+- Crah
+- DcRectifier
+- Environmental
+- FireControlPanel
+- Generator
+- InRowCooling
+- KvmSwitch
+- Location
+- Monitor
+- NetworkDevice
+- NetworkStorage
+- NodeServer
+- OtherDevice
+- PatchPanel
+- PduAndRpp
+- PowerMeter
+- Rack
+- RackPdu
+- Server
+- SmallUps
+- TransferSwitch
+- Ups
+- UtilityBreaker
+- VirtualServer
+
+#### RackUNumber must be a number or empty
+
+The Rack U value must be a number and not a range. Hyperview measures the physical asset placement from the topmost RU of an asset, and the physical height of the asset (RU Height) is documented in the product catalog for that asset's model. For example, a 2U asset that is placed at Rack U 20 will occupy Units 19 and 20. Hyperview Rack U numbers start at 1 from the bottom of the rack.
+
+#### Failed to validate model, manufacturer or rack name
+
+This error occurs when the model, manufacturer, or rack name value does not match any existing model value in the product catalog. This typically means that the model does not exist in the catalog yet, but could also be due to a typo in the model name or that the model name differs slightly between the input data and the catalog data. The import process uses an exact match with the provided data against the catalog to identify the product models.
+
+Users have two methods of adding unsupported models to the {ref}`Catalog<catalog-management-doc>`, as the bulk import process does not create model data for you.
+
+1.  Navigate to the Catalog > Manufacturers and Catalog > Models page in your Hyperview instance, then create the new model and add product specifications. A new manufacturer can also be added if there is a need.
+
+2.  Generate and send the list of product models to the Hyperview support team via a help desk ticket and we can help to add and sync the models to your instance.
+
+#### Model is required
+
+This occurs when the Model field for an asset is left empty. A model value is required to import an asset.
+
+#### Rack name must exist
+
+This occurs when the Rack Name value does not match an existing rack in the location which you are importing assets into. Before the bulk import process can be run the racks must exist in the desired location in Hyperview.
+
+#### Rack side must be valid
+
+This error occurs when the Rack Side value does not match a known rack side in the platform. The accepted values are "Front" or "Rear". It can also be "Unknown" or Empty if the imported asset is Zero-U.
+
+#### Serial Number is required
+
+There are two primary rules for assets in Hyperview. An asset must have a name and the name must not be a duplicate within the designated location, and an asset must have a unique serial number which is not duplicate within the whole environment. In the case of assets which do not have physical serial numbers, it is recommended to use a placeholder value, for example, _HV-PHSN-000-0001_. Using a predictable pattern for the placeholder serial numbers makes it easy to search for and report on these assets if there is a need.
 
 ## Manually adding an asset
 
