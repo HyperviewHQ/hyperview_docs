@@ -53,20 +53,20 @@ The following distributions are tested to run the Hyperview Data Collector.
 
 Depending on the Linux distribution used, please use apt, or dnf to install the following packages
 
-| Command    | Deb/APT Package                      | RPM/Dnf Package                     |
-| ---------- | ------------------------------------ | ----------------------------------- |
-| *awk*      | gawk or mawk                         | gawk                                |
-| *cut*      | coreutils                            | coreutils                           |
-| *docker*   | docker-ce and docker-compose-plugin  | docker-ce and docker-compose-plugin |
-| *grep*     | grep                                 | grep                                |
-| *host*     | bind9-host                           | bind-utils                          |
-| *jq*       | jq                                   | jq                                  |
-| *libicu*   | libicu72 or libicu74 depending on OS | libicu                              |
-| *sed*      | sed                                  | sed                                 |
-| *tar*      | tar                                  | tar                                 |
-| *uuidgen*  | uuid-runtime                         | util-linux                          |
-| *wget*     | wget                                 | wget                                |
-| *whiptail* | whiptail                             | newt                                |
+| Command    | Deb/APT Package                                | RPM/Dnf Package                     |
+| ---------- | ---------------------------------------------- | ----------------------------------- |
+| *awk*      | gawk or mawk                                   | gawk                                |
+| *cut*      | coreutils                                      | coreutils                           |
+| *docker*   | docker-ce and docker-compose-plugin            | docker-ce and docker-compose-plugin |
+| *grep*     | grep                                           | grep                                |
+| *host*     | bind9-host                                     | bind-utils                          |
+| *jq*       | jq                                             | jq                                  |
+| *libicu*   | libicu72, libicu74 or libicu76 depending on OS | libicu                              |
+| *sed*      | sed                                            | sed                                 |
+| *tar*      | tar                                            | tar                                 |
+| *uuidgen*  | uuid-runtime                                   | util-linux                          |
+| *wget*     | wget                                           | wget                                |
+| *whiptail* | whiptail                                       | newt                                |
 
 :::{note}
 - Docker Inc. provides [detailed installation documentation](https://docs.docker.com/engine/install/).
