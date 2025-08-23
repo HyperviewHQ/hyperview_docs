@@ -41,7 +41,7 @@ The following distributions are tested to run the Hyperview Data Collector.
   - **Rocky Linux 9**
   - **Alma Linux 9**
   - **Ubuntu Server LTS 22.04 & 24.04**
-  - **Debian 11 & 12**
+  - **Debian 11, 12 & 13**
 
 :::{important}
 - Please ensure that the **Podman** container management software is not installed.
