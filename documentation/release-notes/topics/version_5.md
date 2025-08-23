@@ -1,5 +1,60 @@
 # Version 5
 
+## Hyperview 5.1 (Aug 22, 2025)
+
+This section covers significant changes and bug fixes in Hyperview 5.1.x since version 5.0.x
+
+:::{important}
+1. This release has changes and improvements to the Data Collector software. We strongly recommend updating
+   your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery
+   experience.
+
+2. Customers using Hyperview open-source tools such as hvcli/asset tool must update to the latest version.
+:::
+
+### New Licensed Feature: Accelerated Polling
+
+### Enhanced Feature: New Associations Widget
+
+### Enhanced Feature: Data Grids
+
+Grid Double Click Action
+Grid horizontal scrolling
+
+### Enhanced Feature: Manual Sensors
+
+Manual environmental sensor (multiple sensors per device)
+
+### Enhanced Feature: Catalog
+
+Model cloning in catalog
+
+### Enhanced Feature: Modular Patch Panels
+
+### Enhanced Feature: Chart Time Range Selector
+
+### Enhanced Feature: 2D and 3D Layout
+
+Custom properties filter in layout
+
+### Enhanced Feature: DC Energy Management
+
+Rectifier support for telco deployments
+
+### Enhanced Feature: Localization
+
+French language support
+
+### Enhanced Feature: Rack Accessories
+
+Blanking panels and cable management
+
+### Other notable changes and improvements
+
+- Occupied units
+- Asset tag for component
+- Direct sensor linking
+
 ## Hyperview 5.0 (June 12, 2025)
 
 ```{raw} html
