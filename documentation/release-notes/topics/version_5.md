@@ -14,7 +14,7 @@ This section covers significant changes and bug fixes in Hyperview 5.1.x since v
 
 ### New Licensed Feature: Accelerated Polling
 
-This feature allows administrators to specify sub five minute polling periods up to once every minute.
+This feature allows administrators to specify sub-five minute polling periods up to once every minute.
 
 :::{note}
 Please contact the Hyperview sales or support teams for more information.
