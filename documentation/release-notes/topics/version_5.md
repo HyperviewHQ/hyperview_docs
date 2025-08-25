@@ -68,7 +68,7 @@ Customers that are managing the telemetry from temperature and humidity sensors 
 
 ### Enhanced Feature: Patch Panel Management
 
-Support for patch panels has been enhanced. Modular patch panels can now have extra meta data that would make it easier to manage and report on slot number, module meta data and other useful attributes.
+Support for patch panels has been enhanced. Modular patch panels can now have extra metadata that would make it easier to manage and report on slot number, module information and other useful attributes.
 
 Port naming has been improved to allow for an extra expansion variable for the slot number.
 
