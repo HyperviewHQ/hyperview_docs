@@ -52,7 +52,7 @@ Grids now support two modes. The first is adaptive mode (the current default), w
 
 ### Enhanced Feature: DC Power / Rectifier Support
 
-A new asset type has been added for DC rectifiers for DC-powered data centers.
+A new asset type called DC Rectifier has been added to support DC-powered data centers.
 
 The discovery engine has been enhanced to add support for DC rectifier discovery and monitoring.
 
