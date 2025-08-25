@@ -34,7 +34,7 @@ This new widget (Associations) displays asset association to business entities, 
 
 ### Enhanced Feature: Catalog
 
-This features improves the usability of the catalog by allowing users that want to customize existing models to easily clone existing data and perform the needed customization, for example, chance product images.
+This feature improves the usability of the catalog by allowing users that want to customize existing models to easily clone existing data and perform the needed customization, for example, change product images.
 
 ### Enhanced Feature: Chart time range selector
 
