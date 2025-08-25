@@ -20,13 +20,13 @@ This feature allows administrators to specify sub five minute polling periods up
 Please contact the Hyperview sales or support teams for more information.
 :::
 
-### Enhanced Feature: 2D and 3D Layout
+### Enhanced Feature: 2D, 3D, Map, Multi-Rack and Rack Layout
 
 The 2D layout editor has been improved to allow for snapping to rack. This will improve the UX of placing multiple racks next to each other by allowing for more precise placement.
 
-A new view filter was added to the Location layout. This will allow Hyperview users to filter and report on various ad-hoc data in the system.
+A new **Custom Property** filter was added to the **View** menu of the Rack and Location 2D, 3D, Map and Multi-Rack layout section. This will allow Hyperview users to filter and report on various ad-hoc data in the system.
 
-For example, If you have a custom property that classifies assets by network location, such DMZ, Production, Test and you have that data captured in Hyperview. You will be able to create a report that would quickly visualize the location and distribution of assets that carry these properties.
+For example, If you have a custom property that classifies assets by network location, such DMZ, Production or Test, and you have that data captured in Hyperview, you will be able to create a report that would quickly visualize the location and distribution of assets that carry these properties.
 
 Please refer to the Hyperview product documentation and user guide for more information.
 
