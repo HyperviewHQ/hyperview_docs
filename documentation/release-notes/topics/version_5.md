@@ -89,6 +89,11 @@ Please refer to the Hyperview product documentation and user guide for more info
 
 ### Notable bug fixes
 
+- **AS-18152** Fixed a bug that caused certain data coming from external integration not to appear in advanced search.
+- **AS-17991** Fixed a bug that caused the wrong location name to be displayed in the discovery report.
+- **AS-17260** Fixed a bug that caused asset bulk import to fail on certain assets.
+- **AS-16208** Fixed a bug that caused the data grid in adaptive mode not to display information if the cell data is very long.
+
 ## Hyperview 5.0 (June 12, 2025)
 
 ```{raw} html
