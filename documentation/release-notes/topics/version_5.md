@@ -86,6 +86,7 @@ Please refer to the Hyperview product documentation and user guide for more info
 - Asset tag for component: Custom components can now have an optional asset tag property.
 - Direct rack sensor linking: Directly detected rack sensors can now be linked to a specific position in a rack.
 - Work Orders access has been limited to Power Users and above roles.
+- The Quick Search panel has been improved to increase speed. Furthermore, help text was added to highlight fuzzy versus exact-match search queries.
 
 ### Notable bug fixes
 
