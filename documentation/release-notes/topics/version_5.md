@@ -14,46 +14,75 @@ This section covers significant changes and bug fixes in Hyperview 5.1.x since v
 
 ### New Licensed Feature: Accelerated Polling
 
-### Enhanced Feature: New Associations Widget
+This feature allows administrators to specify sub five minute polling periods up to once every minute.
 
-### Enhanced Feature: Data Grids
-
-Grid Double Click Action
-Grid horizontal scrolling
-
-### Enhanced Feature: Manual Sensors
-
-Manual environmental sensor (multiple sensors per device)
-
-### Enhanced Feature: Catalog
-
-Model cloning in catalog
-
-### Enhanced Feature: Modular Patch Panels
-
-### Enhanced Feature: Chart Time Range Selector
+:::{note}
+Please contact the Hyperview sales or support teams for more information.
+:::
 
 ### Enhanced Feature: 2D and 3D Layout
 
-Custom properties filter in layout
+A new view filter was added to the Location layout. This will allow Hyperview users to filter and report on various ad-hoc data in the system.
 
-### Enhanced Feature: DC Energy Management
+For example, If you have a custom property that classifies assets by network location, such DMZ, Production, Test and you have that data captured in Hyperview. You will be able to create a report that would quickly visualize the location and distribution of assets that carry these properties.
 
-Rectifier support for telco deployments
+Please refer to the Hyperview product documentation and user guide for more information.
+
+### Enhanced Feature: Asset Dashboard
+
+This new widget (Associations) displays asset association to business entities, linked sensors, power providers and network connections and circuits. It provides one view to see these dependencies and connections in one place.
+
+### Enhanced Feature: Catalog
+
+This features improves the usability of the catalog by allowing users that want to customize existing models to easily clone existing data and perform the needed customization, for example, chance product images.
+
+### Enhanced Feature: Chart time range selector
+
+The time range selector for charts has been improved to add support for local time based charts where possible. Previously, The time range selector allowed only for UTC based time ranges.
+
+### Enhanced Feature: Data Grids
+
+Grid double click action has been improved to be more consistent and available on more more data grids. This will improve the navigation experience within the product.
+
+Grids now have 2 modes, an adaptive mode, which is the existing default, where rows would compress to should applicable data depending on the width of the screen. And a non-adaptive mode, where grids will enable horizontal scrolling to show columns extra column. The mode is activated by a button next to the grid column selector.
+
+### Enhanced Feature: DC Power / Rectifier Support
+
+A new asset type has been added for DC rectifiers for DC-powered data centers.
+
+The discovery engine has been enhanced to add support for DC rectifier discovery and monitoring.
+
+The power analysis engine for location has also been improved to take DC power in various power analysis pipelines if configured to do so.
 
 ### Enhanced Feature: Localization
 
-French language support
+French language support has been added to the product UI.
 
-### Enhanced Feature: Rack Accessories
+### Enhanced Feature: Manual Sensors
 
-Blanking panels and cable management
+Customers that are managing the telemetry from temperature and humidity sensors, can now add more than one sensor per device. Prior to this release assets were limited to one manual temperature and humidity sensor.
+
+### Enhanced Feature: Patch Panel Management
+
+Support for patch panels has been enhanced. Modular patch panels can now have extra meta data that would make it easier to manage and report on slot number, module meta data and other useful attributes.
+
+Port naming has been improved to allow for an extra expansion variable for the slot number.
+
+### Enhanced Feature: Rack Management
+
+Blanking panels and cable management have been added as rack accessories. This will allow Hyperview users to visualize them in rack elevations.
+
+A **Tools** menu has been added to the Rack Layout page to allow Hyperview users to manage the placement of these accessories.
+
+Please refer to the Hyperview product documentation and user guide for more information.
 
 ### Other notable changes and improvements
 
-- Occupied units
-- Asset tag for component
-- Direct sensor linking
+- Occupied units: Racked devices should display the occupied rack unit range for the asset.
+- Asset tag for component: Custom components can now have an optional asset tag property.
+- Direct rack sensor linking: Directly detected rack sensors can now be linked to a specific position in a rack.
+
+### Notable bug fixes
 
 ## Hyperview 5.0 (June 12, 2025)
 
