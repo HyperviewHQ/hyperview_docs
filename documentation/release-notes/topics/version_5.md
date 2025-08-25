@@ -40,7 +40,7 @@ This feature improves the usability of the catalog by allowing users that want t
 
 ### Enhanced Feature: Chart time range selector
 
-The time range selector for charts has been improved to add support for local time based charts where possible. Previously, The time range selector allowed only for UTC based time ranges.
+The time range selector for charts has been improved to add support for local-time and UTC time ranges. Previously, the time range selector allowed only for UTC based time ranges. Once selected, the chart will show the selected option.
 
 ### Enhanced Feature: Data Grids
 
