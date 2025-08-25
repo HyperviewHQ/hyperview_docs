@@ -64,7 +64,7 @@ French language support has been added to the product UI.
 
 ### Enhanced Feature: Manual Sensors
 
-Customers that are managing the telemetry from temperature and humidity sensors, can now add more than one sensor per device. Prior to this release assets were limited to one manual temperature and humidity sensor.
+Customers that are managing the telemetry from temperature and humidity sensors can now add more than one sensor per device. Prior to this release assets were limited to one manual temperature and humidity sensor.
 
 ### Enhanced Feature: Patch Panel Management
 
