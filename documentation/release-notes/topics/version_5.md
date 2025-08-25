@@ -22,6 +22,8 @@ Please contact the Hyperview sales or support teams for more information.
 
 ### Enhanced Feature: 2D and 3D Layout
 
+The 2D layout editor has been improved to allow for snapping to rack. This will improve the UX of placing multiple racks next to each other by allowing for more precise placement.
+
 A new view filter was added to the Location layout. This will allow Hyperview users to filter and report on various ad-hoc data in the system.
 
 For example, If you have a custom property that classifies assets by network location, such DMZ, Production, Test and you have that data captured in Hyperview. You will be able to create a report that would quickly visualize the location and distribution of assets that carry these properties.
@@ -81,6 +83,7 @@ Please refer to the Hyperview product documentation and user guide for more info
 - Occupied units: Racked devices should display the occupied rack unit range for the asset.
 - Asset tag for component: Custom components can now have an optional asset tag property.
 - Direct rack sensor linking: Directly detected rack sensors can now be linked to a specific position in a rack.
+- Work Orders access has been limited to Power Users and above roles.
 
 ### Notable bug fixes
 
