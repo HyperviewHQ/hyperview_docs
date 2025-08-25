@@ -46,7 +46,7 @@ The time range selector for charts has been improved to add support for local-ti
 
 Grid double click action has been improved to be more consistent and available on more data grids. This will improve the navigation experience within the product.
 
-Grids now have 2 modes, an adaptive mode, which is the existing default, where rows would compress to should applicable data depending on the width of the screen. And a non-adaptive mode, where grids will enable horizontal scrolling to show columns extra column. The mode is activated by a button next to the grid column selector.
+Grids now have two modes, an adaptive mode, which is the existing default, where rows would compress to show applicable data depending on the width of the screen. And a non-adaptive mode, where grids will enable horizontal scrolling to show extra columns. The mode is activated by a button next to the grid column selector.
 
 ### Enhanced Feature: DC Power / Rectifier Support
 
