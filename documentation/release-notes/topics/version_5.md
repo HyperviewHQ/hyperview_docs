@@ -24,7 +24,7 @@ Please contact the Hyperview sales or support teams for more information.
 
 The 2D layout editor has been improved to allow for snapping to rack. This will improve the UX of placing multiple racks next to each other by allowing for more precise placement.
 
-The 2D layout editor has been improved to auto-hide the controls while editing the layout.
+The 2D layout editor has been improved to auto-hide the controls while drawing a grid.
 
 A new **Custom Property** filter was added to the **View** menu of the Rack and Location 2D, 3D, Map and Multi-Rack layout section. This will allow Hyperview users to filter and report on various ad-hoc data in the system.
 
