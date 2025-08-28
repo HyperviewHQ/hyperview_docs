@@ -95,6 +95,10 @@ Please refer to the Hyperview product documentation and user guide for more info
 - **AS-17260** Fixed a bug that caused asset bulk import to fail on certain assets.
 - **AS-16208** Fixed a bug that caused the data grid in adaptive mode not to display information if the cell data is very long.
 
+### Changes in version 5.1.1
+
+- **AS-18717** Fixed a misconfiguration in one of the default location dashboard widgets.
+
 ## Hyperview 5.0 (June 12, 2025)
 
 ```{raw} html
