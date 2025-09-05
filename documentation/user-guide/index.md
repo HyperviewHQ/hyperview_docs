@@ -7,8 +7,9 @@ Now that you are familiar with the main features of Hyperview, you are ready to 
 
 quickstart/index
 extracting-data/index
-layout-management/index
 search/index
+layout-management/index
+alarm-management/index
 sensor-management/index
 user-accounts/index
 ```
