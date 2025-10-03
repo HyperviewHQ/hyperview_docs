@@ -60,6 +60,8 @@ These properties contain asset information such as serial number, firmware versi
 
 These properties are usually filled in from the product catalog. More information about model data and how it is managed is provided in the {ref}`Catalog Management <Catalog-management-doc>` section.
 
+Important model properties include its dimensions (width, height, depth), weight and power properties.
+
 ## Power
 
 These properties apply to power-providing and power-consuming assets. They hold information such as the number of phases, rated power, number of outlets, power factor and other power properties.
@@ -70,14 +72,28 @@ Power properties are especially important for power-providing assets such as rac
 
 ### Location-specific power properties
 
+- **DC Rectifier PUE(1/2/3)** controls if DC Rectifier power is added to IT Energy when PUE is calculated for the location.
 - **Design Value** is the power budget in Watts for the location, this setting influences alarm event thresholds and power charts for the location.
 - **IT Energy Setting** controls how the IT Energy sensor for the location is derived, and it selects the appropriate PUE calculation for the location.
+- **PUE Setting** sets the preferred PUE source (PUE 1, PUE 2 or PUE 3).
 - **Rack Total Power Setting** sets the initial default total power sensor calculation for child racks created under the location. Users can override this setting per rack.
 
 ### Rack-specific power properties
 
 - **Design Value** is the power budget in Watts for the rack, this setting influences alarm event thresholds and power charts for the rack. The default setting of this value is copied from the parent location's "Rack Design" property at creation. Users can override this setting for specific racks.
 - **Rack Total Power Setting** controls the calculation method for the Total Power sensor. The default method is copied from the parent location at creation. Users can override this setting per rack.
+
+:::{note}
+Design values are used to track power budgets for racks and locations. Default thresholds track if assets are within design values and will create alarm events if they are above the set thresholds (80% by default).
+:::
+
+### Model-specific power properties
+
+- **Rated Power** is the maximum amount of power the equipment is designed to safely deliver or handle under normal conditions.
+- **Rated Voltage** is the voltage level the equipment is designed to operate at.
+- **Rated Current** is the maximum current the equipment can safely carry or supply.
+- **Rated VA (Volt Amps)** is the maximum apparent power the equipment can handle, combining both the usable power (watts) and any extra demand caused by how devices draw current.
+- **Power Factor** is the ratio of real power (watts) to apparent power (volt-amps). It shows how efficiently the equipment uses the electricity it draws.
 
 ## SNMP
 
