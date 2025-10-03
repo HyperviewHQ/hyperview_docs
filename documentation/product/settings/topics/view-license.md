@@ -60,6 +60,7 @@ The General Information section of the License page lists:
 
 The Features section lists what Hyperview feature licenses you have. Available licenses are:
 
+- Accelerated Polling (add-on)
 - AI Assistant (default application license)
 - {ref}`AssetTracker<AssetTracker-doc>` (add-on)
 - Connectivity Management (add-on)
