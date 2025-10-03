@@ -188,4 +188,12 @@ Since every BACnet/IP and Modbus TCP implementation is unique, you must create c
 
 ### Other protocols
 
-Hyperview has support for the MQTT protocol. If you have MQTT-based hardware that you would like supported please contact the [Hyperview support team](https://system.hyperviewhq.com/helpdesk).
+**MQTT**
+
+Hyperview uses the MQTT protocol for RFID asset tracking and environmental monitoring. MQTT message payloads can vary drastically between devices. A definition is typically needed to enable monitoring of new MQTT hardware.
+
+If you have MQTT-based hardware that you would like supported please contact the [Hyperview support team](https://system.hyperviewhq.com/helpdesk).
+
+**ICMP Ping**
+
+Hyperview uses ICMP Ping for reachability monitoring. This allows the Hyperview monitoring system to identify assets that are no longer reachable by their assigned data collector.
