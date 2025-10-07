@@ -4,7 +4,11 @@
 
 Steps for configuring the DIT tool to connect with your Hyperview instance, ensuring you can effectively manage Modbus TCP and BACnet IP definitions with an API client. Establish a connection and access a range of commands, enhancing the ability to utilize Hyperview's features efficiently.
 
-1.  Navigate to "C:\Users\userName\\\..\..hyperview".
+```{raw} html
+<div class="pb-3"><iframe src="https://scribehow.com/embed/Configuring_the_Definition_Import_Tool__U4k4rtS2Q8SLZ38_aQ4MKA?removeLogo=true&as=video" width="100%" height="640" allowfullscreen frameborder="0"></iframe></div>
+```
+
+1.  Navigate to "C:\Users\userName\..hyperview".
 
 ```{image} /product/settings/media/configuring-dit/image1.jpeg
 :class: border-black

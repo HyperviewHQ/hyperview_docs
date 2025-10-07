@@ -4,6 +4,10 @@
 
 Steps for downloading the Definition Import Tool (DIT), enabling users to import and manage Modbus TCP and BACnet IP definitions in their Hyperview instances. Note the importance of configuring API access, which is crucial for the tool's functionality.
 
+```{raw} html
+<div class="pb-3"><iframe src="https://scribehow.com/embed/Downloading_the_Definition_Import_Tool__AupDNSWKSEeBgbxZT--GsQ?removeLogo=true&as=video" width="100%" height="640" allowfullscreen frameborder="0"></iframe></div>
+```
+
 1.  Navigate to
     [<u>https://github.com/HyperviewHQ/</u>](https://github.com/HyperviewHQ/)
 
