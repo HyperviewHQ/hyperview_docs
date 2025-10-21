@@ -1,5 +1,31 @@
 # Version 5
 
+## Hyperview 5.2 (TBD)
+
+This section covers significant changes and bug fixes in Hyperview 5.2.x since version 5.1.x
+
+:::{important}
+1. This release has changes and improvements to the Data Collector software. We strongly recommend updating
+   your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery
+   experience.
+
+2. Customers using Hyperview open-source tools such as hvcli must update to the latest version.
+:::
+
+### Enhanced Feature: Connectivity
+
+### Enhanced Feature: Search & Advanced Search
+
+### Enahnced Feature: Data Collector
+
+### Enhanced Feature: Modbus Monitoring
+
+### Other notable changes and improvements
+
+
+### Notable bug fixes
+
+
 ## Hyperview 5.1 (Aug 22, 2025)
 
 ```{raw} html
