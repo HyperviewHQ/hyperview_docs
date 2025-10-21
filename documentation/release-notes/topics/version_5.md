@@ -22,7 +22,7 @@ Quick Search has been updated to include discovered asset host name.
 
 Advanced Search filter builder has been updated to include host name as a property filter.
 
-### Enahnced Feature: Data Collector
+### Enhanced Feature: Data Collector
 
 Various optimizations have been added to enhance monitoring and communication performance with the Hyperview API.
 
