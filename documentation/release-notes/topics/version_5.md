@@ -14,14 +14,34 @@ This section covers significant changes and bug fixes in Hyperview 5.2.x since v
 
 ### Enhanced Feature: Connectivity
 
-### Enhanced Feature: Search & Advanced Search
+Carrier has been added as a standard property on Circuits. This field is searchable, sortable and importable via the standard import template.
+
+### Enhanced Feature: Quick Search & Advanced Search
+
+Quick Search has been updated to include discovered asset host name.
+
+Advanced Search filter builder has been updated to include host name as a property filter.
 
 ### Enahnced Feature: Data Collector
 
+Various optimizations have been added to enhance monitoring and communication performance with the Hyperview API.
+
+:::{note}
+Customers must update to the 5.2.X version of the data collector to take advantage of these improvements.
+:::
+
 ### Enhanced Feature: Modbus Monitoring
+
+The Modbus definition builder has been enhanced to support 64 bit input and holding registers.
+
+:::{note}
+Customers must update to the 5.2.X version of the data collector to take advantage of these improvements.
+:::
 
 ### Other notable changes and improvements
 
+- Desired Temperature was added as an asset property to the following asset types; CRAC, CRAH, Chiller, In Row Cooling, Environmental monitor,  Rack PDU, Small UPS, and Location. This is in addition to the Rack asset type. Adding this property will allow customers to create more granular threshold alarm events for these asset types.
+- Enumerated sensor readings via the API have been extended to add the raw value. Customers consuming sensor updates via the API can get the string and raw enumerated values using the same API call.
 
 ### Notable bug fixes
 
