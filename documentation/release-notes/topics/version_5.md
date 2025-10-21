@@ -27,7 +27,7 @@ Advanced Search filter builder has been updated to include host name as a proper
 Various optimizations have been added to enhance monitoring and communication performance with the Hyperview API.
 
 :::{note}
-Customers must update to the 5.2.X version of the data collector to take advantage of these improvements.
+Customers must update to the 5.2.x version of the data collector to take advantage of these improvements.
 :::
 
 ### Enhanced Feature: Modbus Monitoring
@@ -35,7 +35,7 @@ Customers must update to the 5.2.X version of the data collector to take advanta
 The Modbus definition builder has been enhanced to support 64 bit input and holding registers.
 
 :::{note}
-Customers must update to the 5.2.X version of the data collector to take advantage of these improvements.
+Customers must update to the 5.2.x version of the data collector to take advantage of these improvements.
 :::
 
 ### Other notable changes and improvements
