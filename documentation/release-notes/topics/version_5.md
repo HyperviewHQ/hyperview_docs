@@ -46,6 +46,11 @@ Customers must update to the 5.2.x version of the data collector to take advanta
 
 ### Notable bug fixes
 
+- **AS-15269** Fixed a bug that could cause an asset location move to be reverted.
+- **AS-19118** Fixed a bug that caused the incorrect unit of measure to be displayed in an alarm event message.
+- **AS-19119** Fixed a bug that caused the incorrect event message template to be used for some sensor threshold alarm events.
+- **AS-18557** Fixed a bug that could cause the mouse wheel zoom functionality to not work properly on Firefox.
+- **AS-18952** Fixed a bug that could cause the Business Entity to be missing from Circuit & Connection Info panels.
 
 ## Hyperview 5.1 (August 22, 2025)
 
