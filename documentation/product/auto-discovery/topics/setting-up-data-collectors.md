@@ -42,6 +42,7 @@ The following distributions are tested to run the Hyperview Data Collector.
   - **Alma Linux 9**
   - **Ubuntu Server LTS 22.04 & 24.04**
   - **Debian 11, 12 & 13**
+  - **OpenSUSE Leap 15 & 16**
 
 :::{important}
 - Please ensure that the **Podman** container management software is not installed.
@@ -51,25 +52,26 @@ The following distributions are tested to run the Hyperview Data Collector.
 
 ### Software Dependencies
 
-Depending on the Linux distribution used, please use apt, or dnf to install the following packages
+Depending on the Linux distribution used, please use apt, dnf, or zypper to install the following packages
 
-| Command    | Deb/APT Package                                | RPM/Dnf Package                     |
-| ---------- | ---------------------------------------------- | ----------------------------------- |
-| *awk*      | gawk or mawk                                   | gawk                                |
-| *cut*      | coreutils                                      | coreutils                           |
-| *docker*   | docker-ce and docker-compose-plugin            | docker-ce and docker-compose-plugin |
-| *grep*     | grep                                           | grep                                |
-| *host*     | bind9-host                                     | bind-utils                          |
-| *jq*       | jq                                             | jq                                  |
-| *libicu*   | libicu72, libicu74 or libicu76 depending on OS | libicu                              |
-| *sed*      | sed                                            | sed                                 |
-| *tar*      | tar                                            | tar                                 |
-| *uuidgen*  | uuid-runtime                                   | util-linux                          |
-| *wget*     | wget                                           | wget                                |
-| *whiptail* | whiptail                                       | newt                                |
+| Command    | Deb/APT Package                                | RPM/Dnf/Zypper Package                        |
+| ---------- | ---------------------------------------------- | --------------------------------------------- |
+| *awk*      | gawk or mawk                                   | gawk                                          |
+| *cut*      | coreutils                                      | coreutils                                     |
+| *docker*   | docker-ce and docker-compose-plugin            | docker-ce and docker-compose-plugin           |
+| *grep*     | grep                                           | grep                                          |
+| *host*     | bind9-host                                     | bind-utils                                    |
+| *jq*       | jq                                             | jq                                            |
+| *libicu*   | libicu72, libicu74 or libicu76 depending on OS | libicu, libicu65, or libicu77 depending on OS |
+| *sed*      | sed                                            | sed                                           |
+| *tar*      | tar                                            | tar                                           |
+| *uuidgen*  | uuid-runtime                                   | util-linux                                    |
+| *wget*     | wget                                           | wget                                          |
+| *whiptail* | whiptail                                       | newt                                          |
 
 :::{note}
 - Docker Inc. provides [detailed installation documentation](https://docs.docker.com/engine/install/).
+- OpenSUSE and SUSE Linux Enterprise Server. Please use the OS vendor provided Docker Open Source Engine and Docker Compose Packages.
 - Please use the RHEL Docker CE installation instructions for Rocky Linux.
 - Please use the CentOS Docker CE installation instructions for Alma Linux.
 - The `jq` package may not be available from the official RedHat repository for RedHat Enterprise Linux or derivatives. If that is the case, the Extra Packages for Enterprise Linux [EPEL](https://docs.fedoraproject.org/en-US/epel/) project will have it.
