@@ -1,6 +1,66 @@
 # Version 5
 
-## Hyperview 5.1 (Aug 22, 2025)
+## Hyperview 5.2 (October 22, 2025)
+
+This section covers significant changes and bug fixes in Hyperview 5.2.x since version 5.1.x
+
+:::{important}
+1. This release has changes and improvements to the Data Collector software. We strongly recommend updating
+   your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery
+   experience.
+
+2. Customers using Hyperview open-source tools such as hvcli must update to the latest version.
+:::
+
+### Enhanced Feature: Connectivity
+
+Carrier has been added as a standard property on Circuits. This field is searchable, sortable and importable via the standard import template.
+
+### Enhanced Feature: Quick Search & Advanced Search
+
+Quick Search has been updated to include discovered asset host name.
+
+Advanced Search filter builder has been updated to include host name as a property filter.
+
+### Enhanced Feature: Data Collector
+
+Various optimizations have been added to enhance monitoring and communication performance with the Hyperview API.
+
+OpenSUSE LEAP 15 and 16 have been tested and are now supported for running the data collector software.
+
+:::{note}
+Customers must update to the 5.2.x version of the data collector to take advantage of these improvements.
+:::
+
+### Enhanced Feature: Modbus Monitoring
+
+The Modbus definition builder has been enhanced to support 64 bit input and holding registers.
+
+:::{note}
+Customers must update to the 5.2.x version of the data collector to take advantage of these improvements.
+:::
+
+### Other notable changes and improvements
+
+- Desired Temperature was added as an asset property to the following asset types; CRAC, CRAH, Chiller, In Row Cooling, Environmental Monitor,  Rack PDU, Small UPS, and Location. This is in addition to the Rack asset type. Adding this property will allow customers to create more granular threshold alarm events for these asset types.
+- Enumerated sensor readings via the API have been extended to add the raw value. Customers consuming sensor updates via the API can get the string and raw enumerated values using the same API call.
+- Improvements have been added to the handling of long user-set names for various entities in the application.
+
+### Notable bug fixes
+
+- **AS-15269** Fixed a bug that could cause an asset location move to be reverted.
+- **AS-19118** Fixed a bug that caused the incorrect unit of measure to be displayed in an alarm event message.
+- **AS-19119** Fixed a bug that caused the incorrect event message template to be used for some sensor threshold alarm events.
+- **AS-18557** Fixed a bug that could cause the mouse wheel zoom functionality to not work properly on Firefox.
+- **AS-18952** Fixed a bug that could cause the Business Entity to be missing from Circuit & Connection Info panels.
+
+## Hyperview 5.1 (August 22, 2025)
+
+```{raw} html
+<div class="pb-3">
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1125547131?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Hyperview DCIM 5.1 Software Release"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+</div>
+```
 
 This section covers significant changes and bug fixes in Hyperview 5.1.x since version 5.0.x
 
