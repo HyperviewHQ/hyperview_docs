@@ -7,6 +7,5 @@
 
 managing-bacnet
 managing-modbus
-installing-dit
-configuring-dit
+definition-import-tool
 ```
