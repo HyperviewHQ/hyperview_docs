@@ -54,6 +54,10 @@ Customers must update to the 5.2.x version of the data collector to take advanta
 - **AS-18557** Fixed a bug that could cause the mouse wheel zoom functionality to not work properly on Firefox.
 - **AS-18952** Fixed a bug that could cause the Business Entity to be missing from Circuit & Connection Info panels.
 
+### Changes in version 5.2.1
+
+- **AS-19160** Fixed a bug the could cause the Connect/Disconnect Asset button to not show on the Rack PDU and Transfer Switch layout page when Outlet Control is not licensed.
+
 ## Hyperview 5.1 (August 22, 2025)
 
 ```{raw} html
