@@ -1,21 +1,16 @@
 (installing-dit)=
 
-# Downloading the Definition Import Tool
+# Downloading and Configuring the Definition Import Tool (DIT)
 
-Steps for downloading the Definition Import Tool (DIT), enabling users to import and manage Modbus TCP and BACnet IP definitions in their Hyperview instances. Note the importance of configuring API access, which is crucial for the tool's functionality.
+Follow the steps below for instruction on downloading and configuring the Definition Import Tool (DIT).
 
-```{raw} html
-<div class="pb-3"><iframe src="https://scribehow.com/embed/Downloading_the_Definition_Import_Tool__AupDNSWKSEeBgbxZT--GsQ?removeLogo=true&as=video" width="100%" height="640" allowfullscreen frameborder="0"></iframe></div>
-```
-
-1.  Navigate to
-    [<u>https://github.com/HyperviewHQ/</u>](https://github.com/HyperviewHQ/)
+1.  Navigate to the [Hyperview GitHub page](https://github.com/HyperviewHQ/)
 
 ```{image} /product/settings/media/installing-dit/image1.jpeg
 :class: border-black
 ```
 
-2.  Click "definition\_import\_tool" repository.
+2.  Click the "definition\_import\_tool" repository.
 
 ```{image} /product/settings/media/installing-dit/image2.jpeg
 :class: border-black
@@ -28,6 +23,10 @@ Steps for downloading the Definition Import Tool (DIT), enabling users to import
 ```
 
 4.  Download either the Linux or Windows zip file based on your OS.
+
+:::{note}
+If you are using a different OS, you can build from source and file a feature request to support it.
+:::
 
 ```{image} /product/settings/media/installing-dit/image4.jpeg
 :class: border-black
@@ -45,9 +44,7 @@ Steps for downloading the Definition Import Tool (DIT), enabling users to import
 :class: border-black
 ```
 
-```{note}
-The dit tool uses an API client to communicate with the
-Hyperview instance, and following these initial steps does not create
-that user for you. Follow the {ref}`Configuring DIT<configuring-dit>` documentation to setup
+```{important}
+The dit tool uses an API client to communicate with the Hyperview instance. Follow the {ref}`Configuring DIT<configuring-dit>` documentation to setup
 API access for the tool.
 ```
