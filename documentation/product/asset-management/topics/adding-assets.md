@@ -42,7 +42,7 @@ You cannot bulk import Location or Rack type assets.
   - The asset lifecycle state (Active, Planned, Procurement, Staging, or Retired)
   - Optional
 * - AssetType
-  - The :ref:`asset type<Supported-asset-types-doc>`, such as Server, PDU, etc (but not Rack or Location)
+  - The {ref}`asset type<Supported-asset-types-doc>`, such as Server, PDU, etc (but not Rack or Location)
   - Required
 * - Manufacturer
   - The asset manufacturer name

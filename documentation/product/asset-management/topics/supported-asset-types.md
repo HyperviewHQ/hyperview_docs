@@ -19,6 +19,7 @@ The following asset types are supported in Hyperview.
 
 ### Power
 
+- DC Rectifier
 - Generator
 - PDU/RPP
 - Power Meter
