@@ -199,6 +199,7 @@ A success message will appear, and the domain details will be updated in the Use
 
 A success message will appear, and the domain will no longer be listed in the User Provisioning grid.
 
+(managing-api-clients-doc)=
 ## Managing API clients
 
 You can create user accounts for API clients, which let you programmatically integrate with Hyperview's RESTful APIs.
