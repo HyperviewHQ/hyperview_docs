@@ -26,7 +26,7 @@ Advanced Search filter builder has been updated to include host name as a proper
 
 Various optimizations have been added to enhance monitoring and communication performance with the Hyperview API.
 
-OpenSUSE LEAP 15 and 16 have been tested and are now supported for running the data collector software.
+openSUSE Leap 15 and 16 have been tested and are now supported for running the data collector software.
 
 :::{note}
 Customers must update to the 5.2.x version of the data collector to take advantage of these improvements.
