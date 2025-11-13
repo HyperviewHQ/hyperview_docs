@@ -6,6 +6,25 @@ Modbus TCP is a communication protocol typically used by facility or building le
 
 A Modbus TCP definition can be assigned to any number of assets to enable monitoring on that asset if they share the same object mapping, but only one definition can be applied to an individual asset at a time.
 
+## Modbus Register Addresses
+Modbus uses a 5-digit address format to define register types and their address space. Each register type is defined in a specific location and correlated address as per the table below.
+
+| Register Type     | Reference Range     | Access           | Prefix   |
+| ----------------- | ------------------- | ---------------- | -------- |
+| Coils             | 00001 - 09999       | Read Only        | 0        |
+| Discrete Inputs   | 10001 - 29999       | Read Only        | 1        |
+| Input Registers   | 30001 - 39999       | Read Only        | 3        |
+| Holding Registers | 40001 - 49999       | Read Only        | 4        |
+
+More information regarding the Modbus TCP protocol can be found in the following resources.
+
+- [Modbus.org](https://www.modbus.org/)
+- [Modbus Wikipedia Page](https://en.wikipedia.org/wiki/Modbus)
+
+:::{tip}
+Hyperview uses a starting index of 1 for Modbus addresses. If you are experiencing unexpected behavior with the sensor readings, then the asset you are monitoring may have a starting index of 0. If this is the case then you can increased the address in the Hyperview definition by 1 and validate the results.
+:::
+
 ## Adding a Modbus TCP definition
 
 1. Go to *Settings → Modbus TCP Definitions*.
