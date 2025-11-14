@@ -7,14 +7,20 @@ Modbus TCP is a communication protocol typically used by facility or building le
 A Modbus TCP definition can be assigned to any number of assets to enable monitoring on that asset if they share the same object mapping, but only one definition can be applied to an individual asset at a time.
 
 ## Modbus Register Addresses
-Modbus uses a 5-digit address format to define register types and their address space. Each register type is defined in a specific location and correlated address as per the table below.
+Modbus TCP uses the 6-digit address length format to dictate register types and their address. Each register type is defined within a specific location and correlated address as per the table below.
 
-| Register Type     | Reference Range     | Access           | Prefix   |
-| ----------------- | ------------------- | ---------------- | -------- |
-| Coils             | 00001 - 09999       | Read Only        | 0        |
-| Discrete Inputs   | 10001 - 29999       | Read Only        | 1        |
-| Input Registers   | 30001 - 39999       | Read Only        | 3        |
-| Holding Registers | 40001 - 49999       | Read Only        | 4        |
+| Register Type     | Reference Range | Prefix | Full Address    | Access    |
+| ----------------- | --------------- | ------ | --------------- | --------- |
+| Coils             | 00001 - 65536   | 0      | 000001 - 065536 | Read Only |
+| Discrete Inputs   | 00001 - 65536   | 1      | 100001 - 265536 | Read Only |
+| Input Registers   | 00001 - 65536   | 3      | 300001 - 365536 | Read Only |
+| Holding Registers | 00001 - 65536   | 4      | 400001 - 465536 | Read Only |
+
+Hyperview allows you to enter the 5-digit reference range to the address, and will use the register type prefix to identify the full address.
+
+:::{note}
+If an example Holding Register resides at address 421026, then it has a reference value of of 21026 without the appended prefix.
+:::
 
 More information regarding the Modbus TCP protocol can be found in the following resources.
 
@@ -22,7 +28,7 @@ More information regarding the Modbus TCP protocol can be found in the following
 - [Modbus Wikipedia Page](https://en.wikipedia.org/wiki/Modbus)
 
 :::{tip}
-Hyperview uses a starting index of 1 for Modbus addresses. If you are experiencing unexpected behavior with the sensor readings, then the asset you are monitoring may have a starting index of 0. If this is the case then you can increased the address in the Hyperview definition by 1 and validate the results.
+Hyperview uses a starting index of 0 for Modbus TCP addresses. If you are experiencing unexpected behavior with the sensor readings, then the asset you are monitoring may have a starting index of 1. If this is the case then you can increased the address in the Hyperview definition by 1 to validate the results.
 :::
 
 ## Adding a Modbus TCP definition
