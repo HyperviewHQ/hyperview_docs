@@ -2,6 +2,12 @@
 
 ## Hyperview 5.2 (October 22, 2025)
 
+```{raw} html
+<div class="pb-3">
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1134355917?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Hyperview DCIM 5.2 Software Release"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+</div>
+```
+
 This section covers significant changes and bug fixes in Hyperview 5.2.x since version 5.1.x
 
 :::{important}
@@ -57,6 +63,11 @@ Customers must update to the 5.2.x version of the data collector to take advanta
 ### Changes in version 5.2.1
 
 - **AS-19160** Fixed a bug the could cause the Connect/Disconnect Asset button to not show on the Rack PDU and Transfer Switch layout page when Outlet Control is not licensed.
+
+### Changes in version 5.2.2
+
+- **AS-19317** Fixed a bug that, under certain conditions, could cause updates to existing Modbus Definitions not to save.
+
 
 ## Hyperview 5.1 (August 22, 2025)
 
