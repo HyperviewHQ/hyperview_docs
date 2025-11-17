@@ -19,7 +19,8 @@ Modbus TCP uses the 6-digit address length format to dictate register types and 
 Hyperview allows you to enter the 5-digit reference range to the address, and will use the register type prefix to identify the full address.
 
 :::{note}
-If an example Holding Register resides at address 421026, then it has a reference value of of 21026 without the appended prefix.
+- If an example Holding Register resides at address 421026, then it has a reference value of 21026 without the appended prefix.
+- While some register types are read/write, Hyperview is a read only system and does not perform write operations with Modbus TCP.
 :::
 
 More information regarding the Modbus TCP protocol can be found in the following resources.
