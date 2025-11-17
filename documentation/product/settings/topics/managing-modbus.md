@@ -29,7 +29,7 @@ More information regarding the Modbus TCP protocol can be found in the following
 - [Modbus Wikipedia Page](https://en.wikipedia.org/wiki/Modbus)
 
 :::{tip}
-Hyperview uses a starting index of 0 for Modbus TCP addresses. If you are experiencing unexpected behavior with the sensor readings, then the register you are monitoring may have a starting index of 1. If this is the case then you can increase the address in the Hyperview definition by 1 to validate the results.
+Hyperview uses a starting index of 0 for Modbus TCP addresses. If you are experiencing unexpected behavior with the sensor readings, then the register you are monitoring may have a starting index of 1. If this is the case, then you can increase the address in the Hyperview definition by 1 to validate the results.
 :::
 
 ## Adding a Modbus TCP definition
