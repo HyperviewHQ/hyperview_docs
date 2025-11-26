@@ -1,5 +1,22 @@
 # Version 5
 
+## Hyperview 5.3 (November 24, 2025)
+
+This section covers significant changes and bug fixes in Hyperview 5.3.x since version 5.2.x
+
+:::{important}
+1. This release has changes and improvements to the Data Collector software. We strongly recommend updating
+   your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery
+   experience.
+
+2. Customers using Hyperview open-source tools such as hvcli must update to the latest version.
+:::
+
+### Enhanced Feature: Sensor management
+
+An enhancement to sensor management was added that allows users to change sensor names. Users with a Power User or higher role can edit any asset sensor and change its name.
+
+
 ## Hyperview 5.2 (October 22, 2025)
 
 ```{raw} html
