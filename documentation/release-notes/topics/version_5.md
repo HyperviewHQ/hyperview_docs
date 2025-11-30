@@ -16,6 +16,9 @@ This section covers significant changes and bug fixes in Hyperview 5.3.x since v
 
 An enhancement to sensor management was added that allows users to change sensor names. Users with a Power User or higher role can edit any asset sensor and change its name.
 
+### Changes in version 5.3.1
+
+- **AS-19476** Update to package dependencies.
 
 ## Hyperview 5.2 (October 22, 2025)
 
