@@ -1,5 +1,42 @@
 # Version 5
 
+## Hyperview 5.4 (TBD)
+
+This section covers significant changes and bug fixes in Hyperview 5.4.x since version 5.3.x
+
+:::{important}
+1. This release has changes and improvements to the Data Collector software. We strongly recommend updating
+   your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery
+   experience.
+
+2. Customers using Hyperview open-source tools such as hvcli must update to the latest version.
+:::
+
+### Enhanced Feature: Sensor Management
+
+### Enhanced Feature: BACnet Monitoring
+
+:::{note}
+Customers must update to the 5.2.x version of the data collector to take advantage of these improvements.
+:::
+
+### Enhanced Feature: Location Dashboard Widgets
+
+### Enhanced Feature: Quick & Advanced Search
+
+### Enhanced Feature: Layout View By Business Entity
+
+### Enhanced Feature: Trap Management
+
+### Enhanced Feature: Sensor Data Export In User Locale
+
+### Enhanced Feature: Firmware Management
+
+### Enhanced Feature: AssetTracker
+
+### Notable bug fixes
+
+
 ## Hyperview 5.3 (November 24, 2025)
 
 ```{raw} html
@@ -18,7 +55,7 @@ This section covers significant changes and bug fixes in Hyperview 5.3.x since v
 2. Customers using Hyperview open-source tools such as hvcli must update to the latest version.
 :::
 
-### Enhanced Feature: Sensor management
+### Enhanced Feature: Sensor Management
 
 An enhancement to sensor management was added that allows users to change sensor names. Users with a Power User or higher role can edit any asset sensor and change its name.
 
