@@ -5,31 +5,28 @@
 This section covers significant changes and bug fixes in Hyperview 5.4.x since version 5.3.x
 
 :::{important}
-1. This release has changes and improvements to the Data Collector software. We strongly recommend updating
-   your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery
-   experience.
-
-2. Customers using Hyperview open-source tools such as hvcli must update to the latest version.
+1. This release has changes and improvements to the Data Collector software. We strongly recommend updating your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
+2. Customers using Hyperview's open-source tools, such as hvcli, must update to the latest version.
 :::
 
 ### Enhanced Feature: Sensor Management
 
-Sensor management has been enhanced to support per-sensor access control. This is useful for situations where customers want to limit user access to specific sensors on assets.
+Sensor management has been enhanced to support per-sensor access control. This is useful when customers want to limit user access to specific sensors on assets.
 
 ### Enhanced Feature: BACnet Monitoring
 
 BACnet/IP monitoring has been enhanced to support more complicated network topologies.
 
 :::{note}
-Customers must update to the 5.4.x version of the data collector to take advantage of these improvements.
+Customers must update to 5.4.x version of the data collector to take advantage of these improvements.
 :::
 
 ### Enhanced Feature: Location Dashboard Widgets
 
-The following new widgets have been added to the the Location Dashboard:
+The following new widgets have been added to the Location Dashboard:
 
-1. Rack Power Rankings - Top 10. This widget will display the current top 10 racks in terms of power consumption.
-2. Power Usage. Location Facility Power to IT power line graph.
+1. Rack Power Rankings - Top 10. This widget displays the current top 10 racks by power consumption.
+2. Power Usage. Location Facility Power to the IT power line graph.
 3. Average Temperature. Location average temperature over time line graph.
 4. Average Humidity. Location average Humidity over time line graph.
 
@@ -39,7 +36,7 @@ The widgets can also be added to any custom Location dashboard.
 
 An exact/fuzzy match search toggle has been added to the search bar in Quick and Advanced Search.
 
-The Advanced Search query builder was enhanced to add an "Is Equal to Any Of" filter. This will allow users to create searches that could match multiple potential values to a property or custom property. E.g., Matching a set of possible serial numbers.
+The Advanced Search query builder was enhanced to add an “Is Equal to Any Of” filter. This will allow users to create searches that could match multiple potential values to a property or custom property. E.g., Matching a set of possible serial numbers.
 
 ### Enhanced Feature: Location Layout View
 
@@ -47,11 +44,11 @@ The Location Layout View has been enhanced to allow users to visualize business 
 
 ### Enhanced Feature: Alarm Event Management
 
-SNMP Trap alarm events have been enhanced with an extra action to display the raw trap variable data coming from the device. This is useful when troubleshooting any SNMP Trap related issues such as Unknown Traps.
+SNMP Trap alarm events have been enhanced with an extra action to display the raw trap variable data coming from the device. This is useful when troubleshooting any SNMP Trap-related issues, such as Unknown Traps.
 
 ### Enhanced Feature: Sensor Data Export
 
-Sensor data export has been enhanced to offer an extra option to translate the reading timestamps to local time.
+Sensor data export has been enhanced to include an additional option to convert the reading timestamps to local time.
 
 ### Enhanced Feature: Firmware Management
 
@@ -62,7 +59,7 @@ Firmware management interfaces and data grids have been enhanced to display if a
 Hardware support for Asset Tracker has been improved:
 
 1. The C68 Expansion Hub is now supported.
-2. Single and dual door sensors are now supported. Dual door sensors are supported with the C68 Expansion Hub only.
+2. Single and dual-door sensors are now supported. Dual-door sensors are supported only with the C68 Expansion Hub.
 
 ### Notable bug fixes
 
