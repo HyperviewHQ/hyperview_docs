@@ -18,17 +18,17 @@ Sensor management has been enhanced to support per-sensor access control. This i
 BACnet/IP monitoring has been enhanced to support more complicated network topologies.
 
 :::{note}
-Customers must update to 5.4.x version of the data collector to take advantage of these improvements.
+Customers must update to 5.4.x version of the Data Collector to take advantage of these improvements.
 :::
 
 ### Enhanced Feature: Location Dashboard Widgets
 
 The following new widgets have been added to the Location Dashboard:
 
-1. Rack Power Rankings - Top 10. This widget displays the current top 10 racks by power consumption.
-2. Power Usage. Location Facility Power to the IT power line graph.
-3. Average Temperature. Location average temperature over time line graph.
-4. Average Humidity. Location average Humidity over time line graph.
+1. Rack Power Rankings - Top 10: The current top 10 racks by power consumption.
+2. Power Usage: Total Facility Power to the IT Energy line graph.
+3. Average Temperature: Location Average Temperature over time line graph.
+4. Average Humidity: Location Average Humidity over time line graph.
 
 The widgets can also be added to any custom Location dashboard.
 
@@ -56,7 +56,7 @@ Firmware management interfaces and data grids have been enhanced to display if a
 
 ### Enhanced Feature: AssetTracker
 
-Hardware support for Asset Tracker has been improved:
+Hardware support for AssetTracker has been improved:
 
 1. The C68 Expansion Hub is now supported.
 2. Single and dual-door sensors are now supported. Dual-door sensors are supported only with the C68 Expansion Hub.
