@@ -61,6 +61,10 @@ Hardware support for AssetTracker has been improved:
 1. The C68 Expansion Hub is now supported.
 2. Single and dual-door sensors are now supported. Dual-door sensors are supported only with the C68 Expansion Hub.
 
+:::{important}
+The C68 Expansion Hub and door sensors may not be compatible with older gateways or older firmware versions. Please ensure that the gateway hardware and firmware have appropriate support.
+:::
+
 ### Notable bug fixes
 
 
