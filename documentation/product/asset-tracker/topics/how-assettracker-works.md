@@ -6,12 +6,12 @@ AssetTracker builds on Hyperview's capabilities by adding specialized hardware a
 
 ## Terminology
 
-- **Gateway**, this is the device that handles communication between the hardware and the data collector.
-- **Expansion Hub**, this is a connection hub for the various components and the Gateway.
-- **Master Module**, this is the main module in a rack assembly
-- **Extension Module**, this is an extension connected to the Master Module or another Extension Module.
-- **Asset Tag**, this is the magnetic RFID that connects the asset to the AssetTracker Strip.
-- **AssetTracker Strip**, this is the combination of a Master and Extension Modules installed in an equipment rack and connected to a Gateway.
+- **Gateway**: The device that handles communication between the hardware and the data collector.
+- **Expansion Hub**: This is a connection hub for the various components and the Gateway.
+- **Master Module**: The main module in a rack assembly.
+- **Extension Module**: An extension connected to the Master Module or another Extension Module.
+- **Asset Tag**: This is the magnetic RFID that connects the asset to the AssetTracker Strip.
+- **AssetTracker Strip**: This is the combination of a Master and Extension Modules installed in an equipment rack and connected to a Gateway.
 
 ## Software
 
@@ -20,7 +20,7 @@ The Data Collector's AssetTracker component consists of two components:
 1. MQTT Broker listening on port 1883/TCP. This component handles incoming communication from the asset tracking hardware.
 2. MQTT Message Service. This component handles the communication with the Hyperview API.
 
-These components are configured during the installation process. The installation process creates a random password to access the MQTT broker. You can reveal this password by running the `show_mqtt_broker_credentials.sh` script from the `/opt/datacollector/bin/` directory. Please take care to keep this password private.
+These components are configured during installation. The installation process creates a random password to access the MQTT broker. You can reveal this password by running the `show_mqtt_broker_credentials.sh` script from the `/opt/datacollector/bin/` directory. Please keep this password private.
 
 :::{tip}
 Always ensure that you are running the latest version of the data collector software.
@@ -28,13 +28,13 @@ Always ensure that you are running the latest version of the data collector soft
 
 ## Hardware
 
-Master Modules are powered by an AssetTracker Gateway. Gateways, _depending on the model_, are powered by a POE power source or an AC power source. Gateways are configured to communicate with a dedicated Data Collector which in turn communicates with Hyperview.
+Master Modules are powered by an AssetTracker Gateway. Gateways, depending on the model, are powered by a PoE source or an AC power source. Gateways are configured to communicate with a dedicated Data Collector, which in turn communicates with Hyperview.
 
-Master Modules are 6 RUs long and can be expanded using Extension Modules. Each module has a unique _serial number/ID_ and an _address_.
+Master Modules are 6 RUs long and can be expanded using Extension Modules. Each module has a unique serial number/ID and an address.
 
-Extension Modules come in 5U or 6U length options. Use a combination of the 5U and 6U modules to fit exactly, or as close as possible, to the rack height.
+Extension Modules are available in 5U or 6U lengths. Use a combination of the 5U and 6U modules to fit exactly, or as close as possible, to the rack height.
 
-The serial number is associated with the rack and the address is used when daisy chaining multiple modules to the same Gateway. Each daisy chain must have _unique_ Master Module addresses.
+The serial number is associated with the rack, and the address is used when daisy-chaining multiple modules to the same Gateway. Each daisychain must have unique Master Module addresses.
 
 ```{important}
 Only the V5008 AIoT Gateway allows for daisy chaining.
