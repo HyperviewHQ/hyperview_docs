@@ -65,8 +65,15 @@ Hardware support for AssetTracker has been improved:
 The C68 Expansion Hub and door sensors may not be compatible with older gateways or older firmware versions. Please ensure that the gateway hardware and firmware have appropriate support.
 :::
 
+### Other notable changes and improvements
+
+- PDUs/RPPs can be bulk imported with a dedicated template.
+- Various areas of the product were enhanced to support deep linking to associated assets and entities.
+
 ### Notable bug fixes
 
+- **AS-16555** Fixed a bug that could cause some properties be missing when manually creating a PDU/RPP asset.
+- **AS-19182** Fixed a bug that could cause toast notifications not to appear after a user action.
 
 ## Hyperview 5.3 (November 24, 2025)
 
