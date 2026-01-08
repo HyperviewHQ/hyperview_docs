@@ -67,7 +67,7 @@ The C68 Expansion Hub and door sensors may not be compatible with older gateways
 
 ### Other notable changes and improvements
 
-- PDUs/RPPs can be bulk imported with a dedicated template.
+- PDUs/RPPs can be bulk-imported with a dedicated template.
 - Various areas of the product were enhanced to support deep linking to associated assets and entities.
 
 ### Notable bug fixes
