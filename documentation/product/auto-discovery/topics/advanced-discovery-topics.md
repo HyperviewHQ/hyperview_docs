@@ -187,15 +187,21 @@ The Hyperview user environment may require additional configuration to enable mo
 
 ### Data Collector Configuration for Advanced BACnet Monitoring
 
-Configure the Hyperview Data Collector to run on host network mode. Add a property for "network_mode: host" to the monitoring-services in the /opt/datacollector/dc-docker-stack/docker-compose.yaml file, then restart the Data Collector containers.
+Two configuration changes are needed in order to enable advanced BACnet monitoring.
+
+1. Configure the Hyperview Data Collector to run on host network mode. Add a property for "network_mode: host" to the monitoring-services in the /opt/datacollector/dc-docker-stack/docker-compose.yaml file, then restart the Data Collector containers.
+
+2. Configure the Hyperview Data Collector to enable broadcast mode. Add "- BACNET_BROADCAST_ENABLED=true" to the environment variables of the monitoring-service in the /opt/datacollector/dc-docker-stack/docker-compose.yaml file, then restart the Data Collector containers.
+
 ```
 ...
   monitoring-service:
-    image: hvpublic.azurecr.io/dc-monitoring-service:5.1.0.42-FrostedCereal-stable
+    image: hvpublic.azurecr.io/dc-monitoring-service:{productVersion}
     restart: always
     network_mode: host
     environment:
       - DOTNET_ENVIRONMENT=Production
+      - BACNET_BROADCAST_ENABLED=true
     ports:
       - "47808:47808/udp"
     volumes:
@@ -203,6 +209,10 @@ Configure the Hyperview Data Collector to run on host network mode. Add a proper
       - /opt/datacollector/var:/datacollector
 ...
 ```
+
+:::{note}
+The {productVersion} image will contain the Hyperview Data Collector version and build name.
+:::
 
 Some Linux distributions have a default firewall active. To configure the firewall to open the BAC0 (47808) port run the following command on the host.
 ```
