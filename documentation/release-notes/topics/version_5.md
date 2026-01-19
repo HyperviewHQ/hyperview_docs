@@ -61,6 +61,8 @@ Hardware support for AssetTracker has been improved:
 1. The C68 Expansion Hub is now supported.
 2. Single and dual-door sensors are now supported. Dual-door sensors are supported only with the C68 Expansion Hub.
 
+**Door Status Sensor** was added as a new standard asset property on racks, with a default of _None_. Where applicable, Hyperview users must set it to the correct option.
+
 :::{important}
 The C68 Expansion Hub and door sensors may not be compatible with older gateways or older firmware versions. Please ensure that the gateway hardware and firmware have appropriate support.
 :::
