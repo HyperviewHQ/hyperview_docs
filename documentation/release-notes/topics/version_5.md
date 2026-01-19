@@ -25,7 +25,7 @@ Customers must update to 5.4.x version of the Data Collector to take advantage o
 
 The following new widgets have been added to the Location Dashboard:
 
-1. Rack Power Rankings - Top 10: The current top 10 racks by power consumption.
+1. Rack Power Ranking - Top 10: The current top 10 racks by power consumption.
 2. Power Usage: Total Facility Power to the IT Energy line graph.
 3. Average Temperature: Location Average Temperature over time line graph.
 4. Average Humidity: Location Average Humidity over time line graph.
@@ -72,7 +72,7 @@ The C68 Expansion Hub and door sensors may not be compatible with older gateways
 
 ### Notable bug fixes
 
-- **AS-16555** Fixed a bug that could cause some properties be missing when manually creating a PDU/RPP asset.
+- **AS-16555** Fixed a bug that could cause some properties to be missing when manually creating a PDU/RPP asset.
 - **AS-19182** Fixed a bug that could cause toast notifications not to appear after a user action.
 
 ## Hyperview 5.3 (November 24, 2025)

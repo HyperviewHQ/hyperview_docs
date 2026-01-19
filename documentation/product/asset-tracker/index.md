@@ -16,7 +16,7 @@ Usage examples include, but aren't limited to:
 
 :::{important}
 - Hyperview AssetTracker is licensed per rack.
-- AssetTracker Hardware must be procured separately.
+- AssetTracker hardware must be procured separately.
 :::
 
 ```{toctree}

@@ -194,7 +194,9 @@ Two configuration changes are needed in order to enable advanced BACnet monitori
 2. Configure the Hyperview Data Collector to enable broadcast mode. Add "- BACNET_BROADCAST_ENABLED=true" to the environment variables of the monitoring-service in the /opt/datacollector/dc-docker-stack/docker-compose.yaml file, then restart the Data Collector containers.
 
 ```
-...
+.
+.
+.
   monitoring-service:
     image: hvpublic.azurecr.io/dc-monitoring-service:{productVersion}
     restart: always
@@ -207,7 +209,9 @@ Two configuration changes are needed in order to enable advanced BACnet monitori
     volumes:
       - /opt/datacollector/etc:/opt/datacollector/etc
       - /opt/datacollector/var:/datacollector
-...
+.
+.
+.
 ```
 
 :::{note}
