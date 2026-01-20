@@ -230,6 +230,12 @@ Changed content type : `application/json`
 ### `GET` /api/asset/assetPropertyValues/strings/{assetPropertyKey}
 
 
+#### Parameters:
+
+Changed: `assetPropertyKey` in `path`
+> A asset property key.
+
+
 ### `GET` /api/asset/availableFirmwareVersions/{assetId}
 
 
@@ -368,6 +374,12 @@ Changed content type : `application/json`
 ### `GET` /api/asset/customComponents/assetPropertyValueStrings
 
 
+#### Parameters:
+
+Changed: `assetPropertyKey` in `query`
+> An asset property key.
+
+
 ### `GET` /api/setting/customPropertyGroup
 
 
@@ -405,6 +417,12 @@ Changed content type : `application/json`
 
 
 ### `GET` /api/asset/enumAssetProperties/{id}
+
+
+#### Parameters:
+
+Changed: `id` in `path`
+> The ID of an enum.
 
 
 ### `GET` /api/setting/enumCustomAssetProperties/{customAssetPropertyKeyId}
@@ -611,18 +629,111 @@ Changed content type : `application/json`
 ### `GET` /api/asset/assetProperties/{id}
 
 
+#### Return Type:
+
+Changed response : **200 OK**
+> OK
+
+
+* Changed content type : `application/json`
+
+    Changed items (object):
+
+    * Changed property `type` (string)
+
+        Added enum value:
+
+        * `assetTrackerDoorStatusSensor`
 ### `PUT` /api/asset/assetProperties/{id}
 
 
+#### Request:
+
+Changed content type : `application/json`
+
+* Changed property `type` (string)
+
+    Added enum value:
+
+    * `assetTrackerDoorStatusSensor`
+#### Return Type:
+
+Changed response : **200 OK**
+> OK
+
+
+* Changed content type : `application/json`
+
+    * Changed property `type` (string)
+
+        Added enum value:
+
+        * `assetTrackerDoorStatusSensor`
 ### `GET` /api/asset/assetProperties/{id}/{assetPropertyKey}
 
 
+#### Parameters:
+
+Changed: `assetPropertyKey` in `path`
+> An asset property key.
+
+
+#### Return Type:
+
+Changed response : **200 OK**
+> OK
+
+
+* Changed content type : `application/json`
+
+    * Changed property `type` (string)
+
+        Added enum value:
+
+        * `assetTrackerDoorStatusSensor`
 ### `POST` /api/asset/assetProperties
 
 
+#### Request:
+
+Changed content type : `application/json`
+
+* Changed property `type` (string)
+
+    Added enum value:
+
+    * `assetTrackerDoorStatusSensor`
+#### Return Type:
+
+Changed response : **201 Created**
+> Created
+
+
+* Changed content type : `application/json`
+
+    * Changed property `type` (string)
+
+        Added enum value:
+
+        * `assetTrackerDoorStatusSensor`
 ### `GET` /api/setting/assetPropertyKeys
 
 
+#### Return Type:
+
+Changed response : **200 OK**
+> OK
+
+
+* Changed content type : `application/json`
+
+    Changed items (object):
+
+    * Changed property `id` (string)
+
+        Added enum value:
+
+        * `assetTrackerDoorStatusSensor`
 ### `GET` /api/asset/assetTrackerMasterModuleData
 
 
@@ -704,6 +815,15 @@ Changed response : **200 OK**
 ### `POST` /api/asset/bulk/assets/updateAssetProperty
 
 
+#### Request:
+
+Changed content type : `application/json`
+
+* Changed property `assetPropertyKeyId` (string)
+
+    Added enum value:
+
+    * `assetTrackerDoorStatusSensor`
 ### `GET` /api/asset/buswayTapOff/{assetId}
 
 
@@ -997,15 +1117,48 @@ Changed response : **200 OK**
 ### `GET` /api/setting/sensorThreshold
 
 
+#### Return Type:
+
+Changed response : **200 OK**
+> OK
+
+
+* Changed content type : `application/json`
+
+    Changed items (object):
+
+    * Changed property `comparisonAssetPropertyKey1` (string)
+
+        Added enum value:
+
+        * `assetTrackerDoorStatusSensor`
 ### `POST` /api/setting/sensorThreshold
 
 
+#### Request:
+
+Changed content type : `application/json`
+
+* Changed property `comparisonAssetPropertyKey1` (string)
+
+    Added enum value:
+
+    * `assetTrackerDoorStatusSensor`
 ### `DELETE` /api/setting/sensorThreshold/{sensorThresholdId}
 
 
 ### `PUT` /api/setting/sensorThreshold/{sensorThresholdId}
 
 
+#### Request:
+
+Changed content type : `application/json`
+
+* Changed property `comparisonAssetPropertyKey1` (string)
+
+    Added enum value:
+
+    * `assetTrackerDoorStatusSensor`
 ### `GET` /api/setting/sensorTypeAssetType
 
 
@@ -1021,6 +1174,8 @@ Changed response : **200 OK**
 * Changed content type : `application/json`
 
     Changed items (object):
+
+    * Added property `sourceDeviceAssetId` (string)
 
     * Added property `sourceAssetAccessState` (string)
 
@@ -1211,12 +1366,69 @@ Changed response : **200 OK**
 ### `GET` /api/asset/componentAssets/{assetId}
 
 
+#### Return Type:
+
+Changed response : **200 OK**
+> OK
+
+
+* Changed content type : `application/json`
+
+    Changed items (object):
+
+    * Changed property `properties` (array)
+
+        Changed items (object):
+
+        * Changed property `type` (string)
+
+            Added enum value:
+
+            * `assetTrackerDoorStatusSensor`
 ### `GET` /api/asset/componentAssets/{assetId}/virtualComponents
 
 
+#### Return Type:
+
+Changed response : **200 OK**
+> OK
+
+
+* Changed content type : `application/json`
+
+    Changed items (object):
+
+    * Changed property `properties` (array)
+
+        Changed items (object):
+
+        * Changed property `type` (string)
+
+            Added enum value:
+
+            * `assetTrackerDoorStatusSensor`
 ### `GET` /api/asset/componentAssets/{assetId}/networkComponents
 
 
+#### Return Type:
+
+Changed response : **200 OK**
+> OK
+
+
+* Changed content type : `application/json`
+
+    Changed items (object):
+
+    * Changed property `properties` (array)
+
+        Changed items (object):
+
+        * Changed property `type` (string)
+
+            Added enum value:
+
+            * `assetTrackerDoorStatusSensor`
 ### `GET` /api/asset/containedAssets/elevation/{parentId}
 
 
@@ -1357,6 +1569,19 @@ Changed content type : `application/json`
 ### `POST` /api/asset/assets
 
 
+#### Request:
+
+Changed content type : `application/json`
+
+* Changed property `creatableAssetProperties` (array)
+
+    Changed items (object):
+
+    * Changed property `type` (string)
+
+        Added enum value:
+
+        * `assetTrackerDoorStatusSensor`
 ### `GET` /api/asset/controlOperations/{assetId}
 
 
@@ -1364,5 +1589,4 @@ Changed content type : `application/json`
 
 
 ### `POST` /api/setting/discoveryProtocolSettings/protocolCredentials
-
 
