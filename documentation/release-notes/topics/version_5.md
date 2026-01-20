@@ -75,7 +75,11 @@ The C68 Expansion Hub and door sensors may not be compatible with older gateways
 ### Notable bug fixes
 
 - **AS-16555** Fixed a bug that could cause some properties to be missing when manually creating a PDU/RPP asset.
+- **AS-17598** Fixed a bug that could cause the temperature Heat Map coordinates to be incorrectly positioned.
+- **AS-18340** Fixed a bug that could cause asset models with special characters to fail asset import.
 - **AS-19182** Fixed a bug that could cause toast notifications not to appear after a user action.
+- **AS-19616** Fixed a bug that could cause Quick Search to fail under certain conditions.
+
 
 ## Hyperview 5.3 (November 24, 2025)
 
