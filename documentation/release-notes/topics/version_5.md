@@ -1,12 +1,13 @@
 # Version 5
 
-## Hyperview 5.4 (TBD)
+## Hyperview 5.4 (January 23, 2026)
 
 This section covers significant changes and bug fixes in Hyperview 5.4.x since version 5.3.x
 
 :::{important}
 1. This release has changes and improvements to the Data Collector software. We strongly recommend updating your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
 2. Customers using Hyperview's open-source tools, such as hvcli, must update to the latest version.
+3. To ensure the new "Access Policy" column displays in the correct order within the Sensors List, users may need to clear their browser cache.
 :::
 
 ### Enhanced Feature: Sensor Management
