@@ -81,6 +81,10 @@ The C68 Expansion Hub and door sensors may not be compatible with older gateways
 - **AS-19182** Fixed a bug that could cause toast notifications not to appear after a user action.
 - **AS-19616** Fixed a bug that could cause Quick Search to fail under certain conditions.
 
+### Changes in version 5.4.1
+
+- **AS-19842** Fixed a bug in the V5008 Smart Gateway binary deserialization protocol adapter that caused an incompatibility with newer firmware versions.
+
 
 ## Hyperview 5.3 (November 24, 2025)
 
