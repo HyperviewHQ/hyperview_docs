@@ -1,7 +1,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Hyperview'
-copyright = '2025 Hyperview'
+copyright = '2026 Hyperview'
 author = 'Hyperview'
 show_version = 'false'
 show_breadcrumb_rel_links = 'false'
