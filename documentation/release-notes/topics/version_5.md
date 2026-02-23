@@ -91,6 +91,10 @@ The C68 Expansion Hub and door sensors may not be compatible with older gateways
 
 - **AS-19842** Fixed a bug in the V5008 Smart Gateway binary deserialization protocol adapter that caused an incompatibility with newer firmware versions.
 
+### Changes in version 5.4.2
+
+- **AS-20022** Fixed a bug in document metadata input validation.
+- **AS-20036** Fixed a bug that caused assets with some special characters in the name to fail validation.
 
 ## Hyperview 5.3 (November 24, 2025)
 
