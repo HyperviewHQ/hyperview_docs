@@ -80,12 +80,12 @@ The module will appear on the AssetTracker page (*Assets → AssetTracker*) with
 
 ### Aligning RUs
 
-Depending on your set-up you may need to explicitly configure rack units. For example, your AssetTracker Strip could be smaller than the physical rack, or you might want the RU count to go up to 52U instead of 42U.
+Depending on your set-up, you may need to explicitly configure rack units. For example, your AssetTracker Strip could be smaller than the physical rack.
 
 To align RUs, open the Properties page (rack → *Information → Properties*) and provide values as needed.
 
 - The **Expected Rack Units** value should match the RU length of the AssetTracker assembly.
-- The **Top of Rack Offset (RU)** value should match the number of RUs you want to offset the top of the rack by. This can be a positive or negative value depending on whether the top of the AssetTracker assembly is below or above the top of the physical asset.
+- The **Top of Rack Offset (RU)** value should match the number of RUs you want to offset the top of the rack by. This can be a positive or negative value, depending on whether the top of the AssetTracker assembly is above or below the top of the physical asset.
 
 For instance, if the rack has 44 RUs but the AssetTracker Strip is only 42U, set Expected Rack Units to 42. If the AssetTracker Strip is installed from the top of the rack as suggested, leave Top of Rack Offset (RU) blank or set to 0. Alternatively, if the assembly is installed from the bottom of the rack, set Top of Rack Offset (RU) to 2.
 
