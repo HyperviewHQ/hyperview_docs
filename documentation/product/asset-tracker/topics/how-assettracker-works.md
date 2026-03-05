@@ -2,13 +2,13 @@
 
 # How AssetTracker works
 
-AssetTracker builds on Hyperview's capabilities by adding specialized hardware and software to achieve automated Rack U-level tracking across one or more data centers.
+AssetTracker builds on Hyperview’s capabilities by adding specialized hardware and software to achieve automated Rack U-level asset tracking across one or more data centers.
 
 ## Terminology
 
 - **Gateway**: The device that handles communication between the hardware and the data collector.
-- **Expansion Hub**: This is a connection hub for the various components and the Gateway.
 - **Master Module**: The main module in a rack assembly.
+- **Expansion Hub**: This is a connection hub for the various components and the Gateway. There are two types of Expansion Hubs: the C60 and the C68. The C68 is used for more complex deployments, and when used, its serial number and address replace the Master Module’s.
 - **Extension Module**: An extension connected to the Master Module or another Extension Module.
 - **Asset Tag**: This is the magnetic RFID that connects the asset to the AssetTracker Strip.
 - **AssetTracker Strip**: This is the combination of a Master and Extension Modules installed in an equipment rack and connected to a Gateway.
@@ -28,7 +28,7 @@ Always ensure that you are running the latest version of the data collector soft
 
 ## Hardware
 
-Master Modules are powered by an AssetTracker Gateway. Gateways, depending on the model, are powered by a PoE source or an AC power source. Gateways are configured to communicate with a dedicated Data Collector, which in turn communicates with Hyperview.
+Master Modules are powered by a Gateway. Depending on the model, gateways are powered by PoE or AC power. Gateways are configured to communicate with a dedicated Data Collector, which in turn communicates with Hyperview.
 
 Master Modules are 6 RUs long and can be expanded using Extension Modules. Each module has a unique serial number/ID and an address.
 
@@ -58,7 +58,7 @@ Detected AssetTracker Master Modules appear on the AssetTracker page (*Assets �
 :class: border-black
 ```
 
-Once installed and configured, AssetTracker automatically handles asset moves. Assuming there are no collisions if you physically move a tagged device, the corresponding asset in Hyperview will get moved to the new position during the next monitoring cycle. Asset move events appear in the rack and asset Change Log pages. If the asset does not get moved, proceed to the AssetTracker page (*Assets → AssetTracker*) to review and address any relevant issues.
+Once installed and configured, AssetTracker automatically handles asset moves. Assuming there are no collisions, when you move a tagged device, the corresponding asset in Hyperview will get moved to the new position during the next monitoring cycle. Asset move events appear in the rack and asset Change Log pages. If the asset does not get moved, proceed to the AssetTracker page (*Assets → AssetTracker*) to review and address any relevant issues.
 
 ## Adding modules
 
@@ -66,10 +66,10 @@ Once installed and configured, AssetTracker automatically handles asset moves. A
 You must [contact our support team](https://system.hyperviewhq.com/helpdesk) to get access to the latest vendor configuration software and documentation.
 :::
 
-Create or update a rack in Hyperview to correspond to the physical rack that will be tracked.
+To configure a rack:
 
-> - You can provide the Master Module ID (the serial number of the physical Master Module) while creating the rack.
-> - If the rack already exists, you can update its properties (rack → *Information → Properties*) to include the Master Module ID.
+> - Provide the Master Module ID (the serial number of the physical Master Module) while creating the rack.
+> - If the rack already exists, update its properties (rack → *Information → Properties*) with the Module ID.
 
 The module will appear on the AssetTracker page (*Assets → AssetTracker*) within a few minutes. Proceed to add Asset Tags.
 
