@@ -128,7 +128,7 @@ To find existing AssetTracker tags and modules to move (or audit), use the searc
 
 ## Collisions and warnings
 
-Under certain circumstances AssetTracker will fail to move an asset into the intended rack U. This could be due to:
+Under certain circumstances, AssetTracker will fail to move an asset into the intended rack U. This could be due to:
 
 - The Asset Tag is placed in the wrong slot on the AssetTracker module or the wrong module.
 - The model information for the incoming asset, the existing asset, or both is incorrect.
@@ -168,9 +168,9 @@ The following table describes placement outcomes for an AssetTracker-licensed da
 *  - Tagged asset is moved within a tracked rack
    - The asset's RU is automatically updated in Hyperview
 *  - Tagged asset is moved to another tracked rack
-   - The asset's rack and RU is automatically updated in Hyperview
+   - The asset's rack and RU are automatically updated in Hyperview
 *  - Tagged asset is moved to an untracked rack
-   - The asset is moved to the original rack's Unplaced grid, RU values must be updated manually
+   - The asset is moved to the original rack's Unplaced grid; RU values must be updated manually
 *  - Untagged asset is moved to a tracked rack
    - Undetected, RU values must be updated manually
 *  - Untagged asset is moved to an untracked rack
@@ -188,9 +188,9 @@ AssetTracker has the following known limitations. We aim to address some of thes
 
 ## Tested barcode scanners
 
-The following barcode scanners have been tested with AssetTracker. However, other scanners should work as well provided they are properly configured; please refer to your scanner's documentation.
+The following barcode scanners have been tested with AssetTracker. However, other scanners should work as well, provided they are properly configured; please refer to your scanner's documentation.
 
-The scanner must be connected to a device running Hyperview on a supported web browser to be able to input AssetTracker IDs.
+The scanner must be connected to a device running Hyperview in a supported web browser to enter AssetTracker IDs.
 
 - **NETUM NT-1228BL.** You must configure the device by scanning the Terminator barcode (3030052 CR).
 - **KOAMTAC KDC300.** The specific model we tested is KDC300iM-SR.
