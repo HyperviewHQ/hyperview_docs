@@ -15,13 +15,12 @@ The following subsystems can create alarm events and trigger an alarm notificati
 
 ## Alarm Events
 
-Alarm Events are created on assets and can be viewed from the Events tab of the asset. Furthermore,
-Alarm Events can change the status of an asset. The asset will have the status of the most critical
-Alarm Event triggered on it.
+Alarm Events are created on assets and can be viewed in the asset's Events tab. Furthermore,
+Alarm Events can change an asset's status. The asset will have the status of the most critical open Alarm Event triggered on it.
 
 ## Alarm Policies
 
-An Alarm Event can trigger a notification. Notification can be sent to a user, a group or to a {ref}`Notification <notifications-doc>`
+An Alarm Event can trigger a notification. Notification can be sent to a user, a group, or to a {ref}`Notification <notifications-doc>`
 Channel.
 
 
