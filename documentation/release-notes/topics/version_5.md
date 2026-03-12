@@ -96,6 +96,11 @@ The C68 Expansion Hub and door sensors may not be compatible with older gateways
 - **AS-20022** Fixed a bug in document metadata input validation.
 - **AS-20036** Fixed a bug that caused assets with some special characters in the name to fail validation.
 
+### Changes in version 5.4.3
+
+- **AS-20182** Update frontend dependencies.
+- **AS-20183** Update backend dependencies.
+
 ## Hyperview 5.3 (November 24, 2025)
 
 ```{raw} html
