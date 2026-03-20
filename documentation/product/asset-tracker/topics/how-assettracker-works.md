@@ -2,16 +2,16 @@
 
 # How AssetTracker works
 
-AssetTracker builds on Hyperview's capabilities by adding specialized hardware and software to achieve automated Rack U-level tracking across one or more data centers.
+AssetTracker builds on Hyperview’s capabilities by adding specialized hardware and software to achieve automated Rack U-level asset tracking across one or more data centers.
 
 ## Terminology
 
-- **Gateway**, this is the device that handles communication between the hardware and the data collector.
-- **Expansion Hub**, this is a connection hub for the various components and the Gateway.
-- **Master Module**, this is the main module in a rack assembly
-- **Extension Module**, this is an extension connected to the Master Module or another Extension Module.
-- **Asset Tag**, this is the magnetic RFID that connects the asset to the AssetTracker Strip.
-- **AssetTracker Strip**, this is the combination of a Master and Extension Modules installed in an equipment rack and connected to a Gateway.
+- **Gateway**: The device that handles communication between the hardware and the data collector.
+- **Master Module**: The main module in a rack assembly.
+- **Expansion Hub**: This is a connection hub for the various components and the Gateway. There are two types of Expansion Hubs: the C60 and the C68. The C68 is used for more complex deployments, and when used, its serial number and address replace the Master Module’s.
+- **Extension Module**: An extension connected to the Master Module or another Extension Module.
+- **Asset Tag**: This is the magnetic RFID that connects the asset to the AssetTracker Strip.
+- **AssetTracker Strip**: This is the combination of a Master and Extension Modules installed in an equipment rack and connected to a Gateway.
 
 ## Software
 
@@ -20,7 +20,7 @@ The Data Collector's AssetTracker component consists of two components:
 1. MQTT Broker listening on port 1883/TCP. This component handles incoming communication from the asset tracking hardware.
 2. MQTT Message Service. This component handles the communication with the Hyperview API.
 
-These components are configured during the installation process. The installation process creates a random password to access the MQTT broker. You can reveal this password by running the `show_mqtt_broker_credentials.sh` script from the `/opt/datacollector/bin/` directory. Please take care to keep this password private.
+These components are configured during installation. The installation process creates a random password to access the MQTT broker. You can reveal this password by running the `show_mqtt_broker_credentials.sh` script from the `/opt/datacollector/bin/` directory. Please keep this password private.
 
 :::{tip}
 Always ensure that you are running the latest version of the data collector software.
@@ -28,13 +28,13 @@ Always ensure that you are running the latest version of the data collector soft
 
 ## Hardware
 
-Master Modules are powered by an AssetTracker Gateway. Gateways, _depending on the model_, are powered by a POE power source or an AC power source. Gateways are configured to communicate with a dedicated Data Collector which in turn communicates with Hyperview.
+Master Modules are powered by a Gateway. Depending on the model, gateways are powered by PoE or AC power. Gateways are configured to communicate with a dedicated Data Collector, which in turn communicates with Hyperview.
 
-Master Modules are 6 RUs long and can be expanded using Extension Modules. Each module has a unique _serial number/ID_ and an _address_.
+Master Modules are 6 RUs long and can be expanded using Extension Modules. Each module has a unique serial number/ID and an address.
 
-Extension Modules come in 5U or 6U length options. Use a combination of the 5U and 6U modules to fit exactly, or as close as possible, to the rack height.
+Extension Modules are available in 5U or 6U lengths. Use a combination of the 5U and 6U modules to fit exactly, or as close as possible, to the rack height.
 
-The serial number is associated with the rack and the address is used when daisy chaining multiple modules to the same Gateway. Each daisy chain must have _unique_ Master Module addresses.
+The serial number is associated with the rack, and the address is used when daisy-chaining multiple modules to the same Gateway. Each daisychain must have unique Master Module addresses.
 
 ```{important}
 Only the V5008 AIoT Gateway allows for daisy chaining.
@@ -58,7 +58,7 @@ Detected AssetTracker Master Modules appear on the AssetTracker page (*Assets �
 :class: border-black
 ```
 
-Once installed and configured, AssetTracker automatically handles asset moves. Assuming there are no collisions if you physically move a tagged device, the corresponding asset in Hyperview will get moved to the new position during the next monitoring cycle. Asset move events appear in the rack and asset Change Log pages. If the asset does not get moved, proceed to the AssetTracker page (*Assets → AssetTracker*) to review and address any relevant issues.
+Once installed and configured, AssetTracker automatically handles asset moves. Assuming there are no collisions, when you move a tagged device, the corresponding asset in Hyperview will get moved to the new position during the next monitoring cycle. Asset move events appear in the rack and asset Change Log pages. If the asset does not get moved, proceed to the AssetTracker page (*Assets → AssetTracker*) to review and address any relevant issues.
 
 ## Adding modules
 
@@ -66,10 +66,10 @@ Once installed and configured, AssetTracker automatically handles asset moves. A
 You must [contact our support team](https://system.hyperviewhq.com/helpdesk) to get access to the latest vendor configuration software and documentation.
 :::
 
-Create or update a rack in Hyperview to correspond to the physical rack that will be tracked.
+To configure a rack:
 
-> - You can provide the Master Module ID (the serial number of the physical Master Module) while creating the rack.
-> - If the rack already exists, you can update its properties (rack → *Information → Properties*) to include the Master Module ID.
+> - Provide the Master Module ID (the serial number of the physical Master Module) while creating the rack.
+> - If the rack already exists, update its properties (rack → *Information → Properties*) with the Module ID.
 
 The module will appear on the AssetTracker page (*Assets → AssetTracker*) within a few minutes. Proceed to add Asset Tags.
 
@@ -80,12 +80,12 @@ The module will appear on the AssetTracker page (*Assets → AssetTracker*) with
 
 ### Aligning RUs
 
-Depending on your set-up you may need to explicitly configure rack units. For example, your AssetTracker Strip could be smaller than the physical rack, or you might want the RU count to go up to 52U instead of 42U.
+Depending on your set-up, you may need to explicitly configure rack units. For example, your AssetTracker Strip could be smaller than the physical rack.
 
 To align RUs, open the Properties page (rack → *Information → Properties*) and provide values as needed.
 
 - The **Expected Rack Units** value should match the RU length of the AssetTracker assembly.
-- The **Top of Rack Offset (RU)** value should match the number of RUs you want to offset the top of the rack by. This can be a positive or negative value depending on whether the top of the AssetTracker assembly is below or above the top of the physical asset.
+- The **Top of Rack Offset (RU)** value should match the number of RUs you want to offset the top of the rack by. This can be a positive or negative value, depending on whether the top of the AssetTracker assembly is above or below the top of the physical asset.
 
 For instance, if the rack has 44 RUs but the AssetTracker Strip is only 42U, set Expected Rack Units to 42. If the AssetTracker Strip is installed from the top of the rack as suggested, leave Top of Rack Offset (RU) blank or set to 0. Alternatively, if the assembly is installed from the bottom of the rack, set Top of Rack Offset (RU) to 2.
 
@@ -128,7 +128,7 @@ To find existing AssetTracker tags and modules to move (or audit), use the searc
 
 ## Collisions and warnings
 
-Under certain circumstances AssetTracker will fail to move an asset into the intended rack U. This could be due to:
+Under certain circumstances, AssetTracker will fail to move an asset into the intended rack U. This could be due to:
 
 - The Asset Tag is placed in the wrong slot on the AssetTracker module or the wrong module.
 - The model information for the incoming asset, the existing asset, or both is incorrect.
@@ -168,9 +168,9 @@ The following table describes placement outcomes for an AssetTracker-licensed da
 *  - Tagged asset is moved within a tracked rack
    - The asset's RU is automatically updated in Hyperview
 *  - Tagged asset is moved to another tracked rack
-   - The asset's rack and RU is automatically updated in Hyperview
+   - The asset's rack and RU are automatically updated in Hyperview
 *  - Tagged asset is moved to an untracked rack
-   - The asset is moved to the original rack's Unplaced grid, RU values must be updated manually
+   - The asset is moved to the original rack's Unplaced grid; RU values must be updated manually
 *  - Untagged asset is moved to a tracked rack
    - Undetected, RU values must be updated manually
 *  - Untagged asset is moved to an untracked rack
@@ -188,9 +188,9 @@ AssetTracker has the following known limitations. We aim to address some of thes
 
 ## Tested barcode scanners
 
-The following barcode scanners have been tested with AssetTracker. However, other scanners should work as well provided they are properly configured; please refer to your scanner's documentation.
+The following barcode scanners have been tested with AssetTracker. However, other scanners should work as well, provided they are properly configured; please refer to your scanner's documentation.
 
-The scanner must be connected to a device running Hyperview on a supported web browser to be able to input AssetTracker IDs.
+The scanner must be connected to a device running Hyperview in a supported web browser to enter AssetTracker IDs.
 
 - **NETUM NT-1228BL.** You must configure the device by scanning the Terminator barcode (3030052 CR).
 - **KOAMTAC KDC300.** The specific model we tested is KDC300iM-SR.

@@ -1,6 +1,208 @@
 # Version 5
 
-## Hyperview 5.1 (Aug 22, 2025)
+## Hyperview 5.4 (January 23, 2026)
+
+```{raw} html
+<div class="pb-3">
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1163397174?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Hyperview DCIM 5.4 Software Release"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+</div>
+```
+
+This section covers significant changes and bug fixes in Hyperview 5.4.x since version 5.3.x
+
+:::{important}
+1. This release has changes and improvements to the Data Collector software. We strongly recommend updating your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
+2. Customers using Hyperview's open-source tools, such as hvcli, must update to the latest version.
+3. To ensure the new "Access Policy" column displays in the correct order within the Sensors List, users may need to clear their browser cache.
+:::
+
+### Enhanced Feature: Sensor Management
+
+Sensor management has been enhanced to support per-sensor access control. This is useful when customers want to limit user access to specific sensors on assets.
+
+### Enhanced Feature: BACnet Monitoring
+
+BACnet/IP monitoring has been enhanced to support more complicated network topologies.
+
+:::{note}
+Customers must update to 5.4.x version of the Data Collector to take advantage of these improvements.
+:::
+
+### Enhanced Feature: Location Dashboard Widgets
+
+The following new widgets have been added to the Location Dashboard:
+
+1. Rack Power Ranking - Top 10: The current top 10 racks by power consumption.
+2. Power Usage: Total Facility Power to the IT Energy line graph.
+3. Average Temperature: Location Average Temperature over time line graph.
+4. Average Humidity: Location Average Humidity over time line graph.
+
+The widgets can also be added to any custom Location dashboard.
+
+### Enhanced Feature: Quick & Advanced Search
+
+An exact/fuzzy match search toggle has been added to the search bar in Quick and Advanced Search.
+
+The Advanced Search query builder was enhanced to add an “Is Equal to Any Of” filter. This will allow users to create searches that could match multiple potential values to a property or custom property. E.g., Matching a set of possible serial numbers.
+
+### Enhanced Feature: Location Layout View
+
+The Location Layout View has been enhanced to allow users to visualize business entities on the layout. E.g., to visualize the racks owned by various departments in the organization.
+
+### Enhanced Feature: Alarm Event Management
+
+SNMP Trap alarm events have been enhanced with an extra action to display the raw trap variable data coming from the device. This is useful when troubleshooting any SNMP Trap-related issues, such as Unknown Traps.
+
+### Enhanced Feature: Sensor Data Export
+
+Sensor data export has been enhanced to include an additional option to convert the reading timestamps to local time.
+
+### Enhanced Feature: Firmware Management
+
+Firmware management interfaces and data grids have been enhanced to display if a device is configured for firmware update control operations. A bulk action has been added to allow users to update the device control operations credentials from the firmware management interface.
+
+### Enhanced Feature: AssetTracker
+
+Hardware support for AssetTracker has been improved:
+
+1. The C68 Expansion Hub is now supported.
+2. Single and dual-door sensors are now supported. Dual-door sensors are supported only with the C68 Expansion Hub.
+
+**Door Status Sensor** was added as a new standard asset property on racks, with a default of _None_. Where applicable, Hyperview users must set it to the correct option.
+
+:::{important}
+The C68 Expansion Hub and door sensors may not be compatible with older gateways or older firmware versions. Please ensure that the gateway hardware and firmware have appropriate support.
+:::
+
+### Other notable changes and improvements
+
+- PDUs/RPPs can be bulk-imported with a dedicated template.
+- Various areas of the product were enhanced to support deep linking to associated assets and entities.
+
+### Notable bug fixes
+
+- **AS-16555** Fixed a bug that could cause some properties to be missing when manually creating a PDU/RPP asset.
+- **AS-17598** Fixed a bug that could cause the temperature Heat Map coordinates to be incorrectly positioned.
+- **AS-18340** Fixed a bug that could cause asset models with special characters to fail asset import.
+- **AS-19182** Fixed a bug that could cause toast notifications not to appear after a user action.
+- **AS-19616** Fixed a bug that could cause Quick Search to fail under certain conditions.
+
+### Changes in version 5.4.1
+
+- **AS-19842** Fixed a bug in the V5008 Smart Gateway binary deserialization protocol adapter that caused an incompatibility with newer firmware versions.
+
+### Changes in version 5.4.2
+
+- **AS-20022** Fixed a bug in document metadata input validation.
+- **AS-20036** Fixed a bug that caused assets with some special characters in the name to fail validation.
+
+### Changes in version 5.4.3
+
+- **AS-20182** Update frontend dependencies.
+- **AS-20183** Update backend dependencies.
+
+## Hyperview 5.3 (November 24, 2025)
+
+```{raw} html
+<div class="pb-3">
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1143606694?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Hyperview DCIM 5.3 Software Release"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+</div>
+```
+
+This section covers significant changes and bug fixes in Hyperview 5.3.x since version 5.2.x
+
+:::{important}
+1. This release has changes and improvements to the Data Collector software. We strongly recommend updating
+   your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery
+   experience.
+
+2. Customers using Hyperview open-source tools such as hvcli must update to the latest version.
+:::
+
+### Enhanced Feature: Sensor Management
+
+An enhancement to sensor management was added that allows users to change sensor names. Users with a Power User or higher role can edit any asset sensor and change its name.
+
+### Changes in version 5.3.1
+
+- **AS-19476** Update to package dependencies.
+
+## Hyperview 5.2 (October 22, 2025)
+
+```{raw} html
+<div class="pb-3">
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1134355917?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Hyperview DCIM 5.2 Software Release"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+</div>
+```
+
+This section covers significant changes and bug fixes in Hyperview 5.2.x since version 5.1.x
+
+:::{important}
+1. This release has changes and improvements to the Data Collector software. We strongly recommend updating
+   your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery
+   experience.
+
+2. Customers using Hyperview open-source tools such as hvcli must update to the latest version.
+:::
+
+### Enhanced Feature: Connectivity
+
+Carrier has been added as a standard property on Circuits. This field is searchable, sortable and importable via the standard import template.
+
+### Enhanced Feature: Quick Search & Advanced Search
+
+Quick Search has been updated to include discovered asset host name.
+
+Advanced Search filter builder has been updated to include host name as a property filter.
+
+### Enhanced Feature: Data Collector
+
+Various optimizations have been added to enhance monitoring and communication performance with the Hyperview API.
+
+openSUSE Leap 15 and 16 have been tested and are now supported for running the data collector software.
+
+:::{note}
+Customers must update to the 5.2.x version of the data collector to take advantage of these improvements.
+:::
+
+### Enhanced Feature: Modbus Monitoring
+
+The Modbus definition builder has been enhanced to support 64 bit input and holding registers.
+
+:::{note}
+Customers must update to the 5.2.x version of the data collector to take advantage of these improvements.
+:::
+
+### Other notable changes and improvements
+
+- Desired Temperature was added as an asset property to the following asset types; CRAC, CRAH, Chiller, In Row Cooling, Environmental Monitor,  Rack PDU, Small UPS, and Location. This is in addition to the Rack asset type. Adding this property will allow customers to create more granular threshold alarm events for these asset types.
+- Enumerated sensor readings via the API have been extended to add the raw value. Customers consuming sensor updates via the API can get the string and raw enumerated values using the same API call.
+- Improvements have been added to the handling of long user-set names for various entities in the application.
+
+### Notable bug fixes
+
+- **AS-15269** Fixed a bug that could cause an asset location move to be reverted.
+- **AS-19118** Fixed a bug that caused the incorrect unit of measure to be displayed in an alarm event message.
+- **AS-19119** Fixed a bug that caused the incorrect event message template to be used for some sensor threshold alarm events.
+- **AS-18557** Fixed a bug that could cause the mouse wheel zoom functionality to not work properly on Firefox.
+- **AS-18952** Fixed a bug that could cause the Business Entity to be missing from Circuit & Connection Info panels.
+
+### Changes in version 5.2.1
+
+- **AS-19160** Fixed a bug the could cause the Connect/Disconnect Asset button to not show on the Rack PDU and Transfer Switch layout page when Outlet Control is not licensed.
+
+### Changes in version 5.2.2
+
+- **AS-19317** Fixed a bug that, under certain conditions, could cause updates to existing Modbus Definitions not to save.
+
+
+## Hyperview 5.1 (August 22, 2025)
+
+```{raw} html
+<div class="pb-3">
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1125547131?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Hyperview DCIM 5.1 Software Release"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+</div>
+```
 
 This section covers significant changes and bug fixes in Hyperview 5.1.x since version 5.0.x
 
