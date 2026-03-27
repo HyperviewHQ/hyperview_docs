@@ -195,7 +195,7 @@ A Rack With Six Temperature and Humidity Sensors
 
 #### Rack Door Sensors
 
-Rack door sensors can be attached Expansion Hubs. The C60 Expansion Hub can have a single door sensor. The C68 Expansion Hub can have a dual door sensor. Please note that the gateway must have the appropriate firmware to support the sensors.
+Rack door sensors can be attached to Expansion Hubs. The C60 Expansion Hub can have a single door sensor. The C68 Expansion Hub can support a dual-door sensor. Please note that the gateway must have the appropriate firmware to support the sensors.
 
 ```{figure} /product/asset-tracker/media/rack_door_sensor_placement.png
 :alt: A Rack with a door sensor
@@ -204,10 +204,10 @@ Rack door sensors can be attached Expansion Hubs. The C60 Expansion Hub can have
 A Rack With A Door Sensor
 ```
 
-The ideal distance between the sensor and the rack door—when the door is fully closed—is roughly 1 cm to 10 cm. This range gives the infrared sensor the most reliable read distance and minimizes false positives from surface reflection.
+The ideal distance between the sensor and the rack door when the door is fully closed is roughly 1 cm to 10 cm. This range gives the infrared sensor the most reliable detection range and minimizes false positives caused by surface reflection.
 
 ```{figure} /product/asset-tracker/media/rack_door_sensor_placement_top_view.png
-:alt: A Rack with a door sensor top view
+:alt: A Rack with a door sensor, top view
 :class: border-black
 
 A Rack With A Door Sensor Top View
