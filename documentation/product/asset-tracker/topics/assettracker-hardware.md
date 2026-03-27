@@ -252,10 +252,10 @@ V6800 AIoT network diagram
 
 ### Modbus address mapping
 
-Master Modules or C68 Expansion Modules (depending on configuration): 1–5
-Temperature and Humidity Sensors: 10–15
-Noise Sensors: 16–18
-Door Sensors: User fixed system assigned addresses
+- Master Modules or C68 Expansion Modules (depending on configuration): 1–5
+- Temperature and Humidity Sensors: 10–15
+- Noise Sensors: 16–18
+- Door Sensors: User fixed system assigned addresses
 
 ## Configuring Modules
 
