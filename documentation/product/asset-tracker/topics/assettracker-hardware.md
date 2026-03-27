@@ -171,7 +171,9 @@ Expansion Hub to Expansion Hub
 
 If applicable, connect the Gateway to a POE power source.
 
-### Installing Temperature and Humidity sensors
+### Installing Temperature, Humidity and Rack Door Sensors
+
+#### Temperature and Humidity
 
 A Temperature and Humidity sensor package can be connected to the expansion Hub. Sensors must be connected to the Temperature and Humidity RJ11 port on the expansion hub. Up to six sensors can be daisy-chained. Each sensor must have a **unique** address, typically 10 to 15. The sensor address will be printed on the sensor.
 
@@ -189,6 +191,26 @@ With a six-sensor deployment, three temperature zones (front and back) can be mo
 :class: border-black
 
 A Rack With Six Temperature and Humidity Sensors
+```
+
+#### Rack Door Sensors
+
+Rack door sensors can be attached Expansion Hubs. The C60 Expansion Hub can have a single door sensor. The C68 Expansion Hub can have a dual door sensor. Please note that the gateway must have the appropriate firmware to support the sensors.
+
+```{figure} /product/asset-tracker/media/rack_door_sensor_placement.png
+:alt: A Rack with a door sensor
+:class: border-black
+
+A Rack With A Door Sensor
+```
+
+The ideal distance between the sensor and the rack door—when the door is fully closed—is roughly 1 cm to 10 cm. This range gives the infrared sensor the most reliable read distance and minimizes false positives from surface reflection.
+
+```{figure} /product/asset-tracker/media/rack_door_sensor_placement_top_view.png
+:alt: A Rack with a door sensor top view
+:class: border-black
+
+A Rack With A Door Sensor Top View
 ```
 
 ### Installing Asset Tags
