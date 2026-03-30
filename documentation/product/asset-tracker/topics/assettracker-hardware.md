@@ -213,6 +213,10 @@ The ideal distance between the sensor and the rack door when the door is fully c
 A Rack With A Door Sensor Top View
 ```
 
+:::{important}
+Once a door sensor is installed on a rack, the "Door Status Sensor" Property must be set. Configure this property by navigating to the Information -> Properties page of the rack.
+:::
+
 ### Installing Asset Tags
 
 ```{image} /product/asset-tracker/media/asset_tag_1.png
