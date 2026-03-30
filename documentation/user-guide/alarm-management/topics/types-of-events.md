@@ -1,8 +1,14 @@
-# Types of Events
+# Types of Alarm Events
 
 Hyperview provides multiple alarm event source methods, such as reachability, SNMP traps, and sensor thresholds. This section outlines the differences between these methods, how they work, and what to expect from them.
 
-## Reachability Alarm Events
+## AssetTracker Status
+
+## Data Collector Status
+
+## Firmware Status
+
+## Host Unreachable
 
 ```{image} /user-guide/alarm-management/media/types-of-events/image1.jpeg
 :class: border-black
@@ -17,7 +23,20 @@ Typical causes of the "not reachable" event are as follows:
 - The asset has been reconfigured with a different IP address, and the Data Collector is no longer able to reach its last known address.
 ```
 
-## SNMP Trap Alarm Events
+## Sensor Threshold
+
+```{image} /user-guide/alarm-management/media/types-of-events/image3.jpeg
+:class: border-black
+```
+
+Hyperview is capable of comparing monitored and calculated sensor values from assets against a set threshold to generate alarm events for them. Sensor Threshold alarm events automatically manage their states, meaning they activate when the threshold is reached and close when resolved.
+
+```{note}
+See the {ref}`Sensor Threshold Management <sensor-threshold-management-doc>` documentation for detailed
+configuration options.
+```
+
+## SNMP Trap
 
 ```{image} /user-guide/alarm-management/media/types-of-events/image2.jpeg
 :class: border-black
@@ -31,17 +50,8 @@ Look for an SNMP Trap configuration page and set the destination (sometimes refe
 
 In most cases, SNMP Trap events will automatically handle their Active Closed statuses, meaning they can close themselves with Clear traps.
 
-Hyperview tries to interpret traps coming in from devices. Traps that cannot be interpreted are added as Unknown Traps. Contact the Hyperview support to add the appropriate mapping for these traps. 
+## Unknown Trap
 
-## Hyperview Sensor Threshold Alarm Events
+Hyperview tries to interpret traps coming in from devices. Traps that cannot be interpreted are added as Unknown Traps. Contact the Hyperview support to add the appropriate mapping for these traps.
 
-```{image} /user-guide/alarm-management/media/types-of-events/image3.jpeg
-:class: border-black
-```
 
-Hyperview is capable of comparing monitored and calculated sensor values from assets against a set threshold to generate alarm events for them. Sensor Threshold alarm events automatically manage their states, meaning they activate when the threshold is reached and close when resolved.
-
-```{note}
-See the {ref}`Sensor Threshold Management <sensor-threshold-management-doc>` documentation for detailed
-configuration options.
-```
