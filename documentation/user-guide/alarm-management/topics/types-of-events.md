@@ -4,6 +4,8 @@ Hyperview provides multiple alarm event source methods, such as reachability, SN
 
 ## AssetTracker Status
 
+These alarm events track issues related to Asset Tracker modules no longer sending heartbeat signals, new Modules reporting to the data collector that are not associated with a rack and new asset tags that are not associated with assets.
+
 ## Data Collector Status
 
 ## Firmware Status
