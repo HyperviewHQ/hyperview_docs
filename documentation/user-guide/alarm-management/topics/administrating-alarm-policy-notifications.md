@@ -56,7 +56,7 @@ If "Sensor Threshold" alarm events are selected, you can further filter the list
 9.  Add the users who should receive the alarm notifications.
 
 :::{important}
-Non-administrator users will receive alarm events for the assets they have access to. 
+Non-administrator users will receive alarm events only for the assets they have access to. This may result in a user not receiving notifications for assets whose access policy has changed. Please ensure that you design your alarm policies with that in mind.
 :::
 
 ```{image} /user-guide/alarm-management/media/administrating-alarm-policy-notifications/image9.jpeg
@@ -66,7 +66,7 @@ Non-administrator users will receive alarm events for the assets they have acces
 10.  Select the groups who should receive the alarm notifications.
 
 :::{important}
-Non-administrator users will receive alarm events for the assets they have access to. 
+Non-administrator users will receive alarm events only for the assets they have access to. This may result in a user not receiving notifications for assets whose access policy has changed. Please ensure that you design your alarm policies with that in mind.
 :::
 
 ```{image} /user-guide/alarm-management/media/administrating-alarm-policy-notifications/image10.jpeg
