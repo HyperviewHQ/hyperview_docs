@@ -2,13 +2,19 @@
 
 Hyperview provides multiple alarm event source methods, such as reachability, SNMP traps, and sensor thresholds. This section outlines the differences between these methods, how they work, and what to expect from them.
 
+Hyperview tracks the events and will attempt to close them if the underlying issue is resolved. This is not always possible. Users with appropriate access can acknowledge and close events if they do not autoclose.
+
 ## AssetTracker Status
 
-These alarm events track issues related to Asset Tracker modules no longer sending heartbeat signals, new Modules reporting to the data collector that are not associated with a rack and new asset tags that are not associated with assets.
+These alarm events track issues related to Asset Tracker modules no longer sending heartbeat signals, new Modules reporting to the data collector that are not associated with a rack, and new asset tags that are not associated with assets.
 
 ## Data Collector Status
 
+These alarm events track the communication status and software version status of the data collectors. They are tracked under the *ALL* location events. 
+
 ## Firmware Status
+
+These alarm events are triggered for hardware supported by the firmware update feature. They are tracked on the asset that requires an update and are usually triggered after a discovery. 
 
 ## Host Unreachable
 
@@ -31,7 +37,7 @@ Typical causes of the "not reachable" event are as follows:
 :class: border-black
 ```
 
-Hyperview is capable of comparing monitored and calculated sensor values from assets against a set threshold to generate alarm events for them. Sensor Threshold alarm events automatically manage their states, meaning they activate when the threshold is reached and close when resolved.
+Hyperview can compare monitored and calculated sensor values from assets against a set threshold to generate alarm events. Sensor Threshold alarm events automatically manage their states, meaning they activate when the threshold is reached and close when resolved.
 
 ```{note}
 See the {ref}`Sensor Threshold Management <sensor-threshold-management-doc>` documentation for detailed
@@ -54,6 +60,6 @@ In most cases, SNMP Trap events will automatically handle their Active Closed st
 
 ## Unknown Trap
 
-Hyperview tries to interpret traps coming in from devices. Traps that cannot be interpreted are added as Unknown Traps. Contact the Hyperview support to add the appropriate mapping for these traps.
+Traps that cannot be interpreted are added as Unknown Traps. Contact the Hyperview support to add the appropriate mapping for these traps.
 
 
