@@ -1,15 +1,8 @@
-# Administrating Alarm Policy Notifications
+# Administering Alarm Policy Notifications
 
-Manage alarm policy notifications, ensuring that the right users receive timely alerts. Allows for tailored notifications based on asset types, severity, and user groups.
+Manage alarm policy notifications to ensure the right users receive timely alerts. Allows for tailored notifications based on asset types, severity, and user groups.
 
-```{raw} html
-<div class="pb-3"><iframe src="https://scribehow.com/embed/Administrating_Alarm_Policy_Notifications__vRLtQheETgmIx6j8h1cHMg?removeLogo=true&as=video" width="100%" height="640" allowfullscreen frameborder="0"></iframe></div>
-```
-
-1.  Navigate to the Alarm Policies page from the Settings &gt;
-    Notifications menu. The Alarm Policy page displays a list of
-    existing alarm policies and their Name, Asset Location, Asset Types,
-    Severity, Categories, Users, Groups, and Channels.
+1.  Navigate to the Alarm Policies page from the Settings -> Notifications menu. The Alarm Policy page displays a list of existing alarm policies, including Name, Asset Location, Asset Types, Severity, Categories, Users, Groups, and Channels.
 
 ```{image} /user-guide/alarm-management/media/administrating-alarm-policy-notifications/image1.jpeg
 :class: border-black
@@ -57,13 +50,24 @@ Manage alarm policy notifications, ensuring that the right users receive timely 
 :class: border-black
 ```
 
+If "Sensor Threshold" alarm events are selected, you can further filter the list to specific thresholds that apply to this policy.
+
+
 9.  Add the users who should receive the alarm notifications.
+
+:::{important}
+Non-administrator users will receive alarm events for the assets they have access to. 
+:::
 
 ```{image} /user-guide/alarm-management/media/administrating-alarm-policy-notifications/image9.jpeg
 :class: border-black
 ```
 
 10.  Select the groups who should receive the alarm notifications.
+
+:::{important}
+Non-administrator users will receive alarm events for the assets they have access to. 
+:::
 
 ```{image} /user-guide/alarm-management/media/administrating-alarm-policy-notifications/image10.jpeg
 :class: border-black
@@ -88,7 +92,7 @@ Manage alarm policy notifications, ensuring that the right users receive timely 
 :class: border-black
 ```
 
-14.  To remove an existing alarm policy click the Delete button.
+14.  To remove an existing alarm policy, click the Delete button.
 
 ```{image} /user-guide/alarm-management/media/administrating-alarm-policy-notifications/image14.jpeg
 :class: border-black
