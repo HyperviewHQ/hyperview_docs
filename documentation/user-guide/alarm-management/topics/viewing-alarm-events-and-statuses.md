@@ -1,6 +1,6 @@
 # Viewing Alarm Events and Statuses
 
-By utilizing the color-coded system and interactive features, users can quickly access detailed information and enhance their decision-making processes based on asset alarm status.
+By using the color-coded system and interactive features, users can quickly access detailed information and improve decision-making based on asset alarm status.
 
 ## Location Layout - Map
 
@@ -24,7 +24,7 @@ Asset and location status colors are displayed in the hierarchy tree.
 ```
 
 ```{note}
-The color key for statuses are as follows.
+The color key for statuses is as follows.
 
 - Green - Normal
 - Orange - Warning
@@ -52,7 +52,7 @@ The Asset Status widget can be added to any location dashboard and will
 summarize the status counts of all assets nested within that location.
 ```
 
-Clicking on the View Assets button will open an advanced search filter which displays those assets.
+Clicking the View Assets button opens an advanced search filter that displays those assets.
 
 ```{image} /user-guide/alarm-management/media/viewing-alarm-events-and-statuses/image5.jpeg
 :class: border-black
@@ -60,7 +60,7 @@ Clicking on the View Assets button will open an advanced search filter which dis
 
 ## Global Events Page
 
-All status events within the platform can be viewed from the Assets &gt; Events page.
+All status events within the platform can be viewed from the Assets -> Events page.
 
 ```{image} /user-guide/alarm-management/media/viewing-alarm-events-and-statuses/image6.jpeg
 :class: border-black
