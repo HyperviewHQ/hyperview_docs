@@ -29,8 +29,6 @@ Alarm policies have been enhanced to allow users to select individual sensor thr
 
 Administrators can now update Access Policies in bulk for Business Entities, Connections, and Circuits.
 
-### Enhanced Feature: Document Management - Malware Scanning 
-
 ### Enhanced Licensed Feature: Rack Security - Tanlock Support
 
 Support for Tanlock Smart Rack/Cabinet locks has been improved to also include the ability to remotely unlock a Rack from Hyperiew. 
@@ -47,6 +45,7 @@ Platform Status is now accessible via the product's help menu. Users can subscri
 
 - The Location Rack Power Ranking - Top 10 Widget was enhanced to handle long names in a better way.
 - The Credentials grid now has an optional column to show the assets that use the credential for control operations.
+- Document management has been enhanced to scan any uploaded documents for malware.
 
 ### Notable bug fixes
 
