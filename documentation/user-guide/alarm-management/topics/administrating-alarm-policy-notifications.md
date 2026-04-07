@@ -22,6 +22,10 @@ Manage alarm policy notifications to ensure the right users receive timely alert
 
 4.  Select a Location from the location picker.
 
+:::{note}
+The policy will apply to the selected location and any descendants.
+:::
+
 ```{image} /user-guide/alarm-management/media/administrating-alarm-policy-notifications/image4.jpeg
 :class: border-black
 ```
