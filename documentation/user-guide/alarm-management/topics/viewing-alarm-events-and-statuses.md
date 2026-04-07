@@ -4,7 +4,7 @@ By using the color-coded system and interactive features, users can quickly acce
 
 ## Location Layout - Map
 
-Location statuses are elevated to the Location Layout - Map View.
+Location statuses are elevated to the Location Layout - Map view.
 
 ```{image} /user-guide/alarm-management/media/viewing-alarm-events-and-statuses/image1.jpeg
 :class: border-black
