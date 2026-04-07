@@ -1,5 +1,38 @@
 # Version 5
 
+## Hyperview 5.5 (TBD)
+
+This section covers significant changes and bug fixes in Hyperview 5.5.x since version 5.4.x
+
+:::{important}
+1. This release has changes and improvements to the Data Collector software. We strongly recommend updating your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
+2. Customers using Hyperview's open-source tools, such as hvcli, must update to the latest version.
+3. To ensure the new "Access Policy" column displays in the correct order within the Sensors List, users may need to clear their browser cache.
+:::
+
+### Enhanced Feature: SAML 2.0 Single Sign-On Support
+
+### Enhanced Feature: Advanced Search - Sensor Search 
+
+### Enhanced Feature: Advanced Search - Multi Asset type selection
+
+### Enhanced Feature: Advanced search - Separate component serial numbers from device serial numbers
+
+### Enhanced Feature: Alarm Policies - individual threshold-based alarms 
+
+### Enhanced Feature: Bulk update access policies for Connectivity and Business Entities 
+
+### Enhanced Feature: Business entity custom properties in asset search 
+
+### Enhanced Feature: Rack Security - Tanlock Support
+
+### Enhanced Feature: Document Management - Malware Scanning 
+
+### New Feature: Status Page 
+
+### Notable bug fixes
+
+
 ## Hyperview 5.4 (January 23, 2026)
 
 ```{raw} html
