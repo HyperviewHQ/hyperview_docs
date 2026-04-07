@@ -12,26 +12,48 @@ This section covers significant changes and bug fixes in Hyperview 5.5.x since v
 
 ### Enhanced Feature: SAML 2.0 Single Sign-On Support
 
-### Enhanced Feature: Advanced Search - Sensor Search 
+Hyperview administrators can now configure SAML 2.0 IDP for single sign-on. This is in addition to the built-in "Sign in with Microsoft" functionality, which uses the OpenID Connect.
 
-### Enhanced Feature: Advanced Search - Multi Asset type selection
+### Enhanced Feature: Advanced Search
 
-### Enhanced Feature: Advanced search - Separate component serial numbers from device serial numbers
+- A new Sensor Search section was added to Advanced Search. Users will be able to use this new functionality to manage sensors in bulk and search for sensors across all asset types.
+- The Asset Type filter in Advanced Search has been enhanced to support selecting multiple types at the same time.
+- Component serial numbers have been separated from asset serial numbers.
+- Custom properties from Business Entities can be added to Advanced Search columns. 
 
-### Enhanced Feature: Alarm Policies - individual threshold-based alarms 
+### Enhanced Feature: Notification - Alarm Policies
 
-### Enhanced Feature: Bulk update access policies for Connectivity and Business Entities 
+Alarm policies have been enhanced to allow users to select individual sensor thresholds if the policy includes the Sensor Threshold category. This will allow administrators to be more precise when creating these policies.
 
-### Enhanced Feature: Business entity custom properties in asset search 
+### Enhanced Feature: Bulk update access policies for Connectivity and Business Entities
 
-### Enhanced Feature: Rack Security - Tanlock Support
+Administrators can now update Access Policies in bulk for Business Entities, Connections, and Circuits.
 
 ### Enhanced Feature: Document Management - Malware Scanning 
 
-### New Feature: Status Page 
+### Enhanced Licensed Feature: Rack Security - Tanlock Support
+
+Support for Tanlock Smart Rack/Cabinet locks has been improved to also include the ability to remotely unlock a Rack from Hyperiew. 
+
+:::{note}
+This feature requires the "Control" add-on. It can only be accessed by users with the appropriate role and access to the asset.
+:::
+
+### New Feature: Status Page
+
+Platform Status is now accessible via the product's help menu. Users can subscribe to updates on all the latest operational updates on the Hyperview platform 
+
+### Other notable changes and improvements
+
+- The Location Rack Power Ranking - Top 10 Widget was enhanced to handle long names in a better way.
+- The Credentials grid now has an optional column to show the assets that use the credential for control operations.
 
 ### Notable bug fixes
 
+- **AS-19787** Fixed a bug that suppressed an error message to the user if the layout background image dimensions are too large.
+- **AS-19986** Fixed a bug that prevented devices with an updated direction from being placed near the border of auto-generated Layout grids.
+- **AS-19988** Fixed a bug that caused connection bulk import to fail if the connection name is missing.
+- **AS-20193** Fixed a bug that required users to set unnecessary properties when adding custom patch panel models to the Hyperview Catalog.
 
 ## Hyperview 5.4 (January 23, 2026)
 
