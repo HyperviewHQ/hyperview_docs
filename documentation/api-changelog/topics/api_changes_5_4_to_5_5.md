@@ -14,7 +14,7 @@
 
 ### `GET` /api/product/userProductImages/images/{productImageId}
 
-> Returns a product image as a base 64 string.
+> returns a base64-encoded product image.
 
 
 ## What's Deprecated
