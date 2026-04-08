@@ -10,11 +10,11 @@ These alarm events track issues related to Asset Tracker modules no longer sendi
 
 ## Data Collector Status
 
-These alarm events track the communication status and software version status of the data collectors. They are tracked under the *ALL* location events. 
+These alarm events track the communication status and software version status of the data collectors. They are tracked under the *ALL* location events.
 
 ## Firmware Status
 
-These alarm events are triggered for hardware supported by the firmware update feature. They are tracked on the asset that requires an update and are usually triggered after a discovery. 
+These alarm events are triggered for hardware supported by the firmware update feature. They are tracked on the asset that requires an update and are usually triggered after a discovery.
 
 ## Host Unreachable
 
@@ -60,6 +60,4 @@ In most cases, SNMP Trap events will automatically handle their Active Closed st
 
 ## Unknown Trap
 
-Traps that cannot be interpreted are added as Unknown Traps. Contact the Hyperview support to add the appropriate mapping for these traps.
-
-
+Traps that cannot be interpreted are added as Unknown Traps. Please contact the Hyperview support team to add the appropriate mapping for these traps.
