@@ -175,7 +175,7 @@ If applicable, connect the Gateway to a POE power source.
 
 #### Temperature and Humidity Sensors
 
-A Temperature and Humidity sensor package can be connected to the Expansion Hub. Sensors must be connected to the Temperature and Humidity RJ11 port on the Expansion hub. Up to six sensors can be daisy-chained. Each sensor must have a **unique** address, typically 10 to 15. The address will be printed on the sensor.
+A Temperature and Humidity sensor package can be connected to the Expansion Hub. Sensors must be connected to the Temperature and Humidity RJ11 port on the Expansion Hub. Up to six sensors can be daisy-chained. Each sensor must have a **unique** address, typically 10 to 15. The address will be printed on the sensor.
 
 ```{figure} /product/asset-tracker/media/expansion_hub_to_sensors_1.png
 :alt: Expansion Hub to sensors
