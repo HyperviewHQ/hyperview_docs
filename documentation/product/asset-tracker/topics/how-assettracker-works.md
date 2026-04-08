@@ -2,7 +2,7 @@
 
 # How AssetTracker works
 
-AssetTracker builds on Hyperview’s capabilities by adding specialized hardware and software to achieve automated Rack U-level asset tracking across one or more data centers.
+AssetTracker builds on Hyperview's capabilities by adding specialized hardware and software to achieve automated Rack U-level asset tracking across one or more data centers.
 
 ## Terminology
 
