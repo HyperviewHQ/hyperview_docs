@@ -29,9 +29,9 @@ Alarm policies have been enhanced to allow users to select individual sensor thr
 
 Administrators can now update Access Policies in bulk for Business Entities, Connections, and Circuits.
 
-### Enhanced Licensed Feature: Rack Security - Tanlock Support
+### Enhanced Licensed Feature: Rack Security - TANlock Support
 
-Support for Tanlock Smart Rack/Cabinet locks has been improved to also include the ability to remotely unlock a Rack from Hyperview.
+Support for TANlock Smart Rack/Cabinet locks has been improved to also include the ability to remotely unlock a Rack from Hyperview.
 
 :::{note}
 This feature requires the "Control" add-on. It can only be accessed by users with the appropriate role and access to the asset.
