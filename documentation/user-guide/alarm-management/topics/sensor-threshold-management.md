@@ -46,7 +46,7 @@ Manage sensor thresholds effectively in Hyperview, allowing users to customize a
 :class: border-black
 ```
 
-8.  Select a comparison type. This allows the sensor value of the chosen type to be compared to either a constant static value or a property  from the asset.
+8.  Select a comparison type. This allows the sensor value of the chosen type to be compared to either a constant static value or a property from the asset.
 
 ```{image} /user-guide/alarm-management/media/sensor-threshold-management/image8.jpeg
 :class: border-black
