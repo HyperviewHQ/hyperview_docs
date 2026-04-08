@@ -100,3 +100,7 @@ Non-administrator users will receive alarm events only for the assets they have 
 ```{image} /user-guide/alarm-management/media/administrating-alarm-policy-notifications/image14.jpeg
 :class: border-black
 ```
+
+## Muting notifications
+
+Asset notifications can be muted without impacting a notification policy. For example, if an asset or set of assets are undergoing maintenance. Individual assets can be muted using the Actions -> Mute Notifications menu. Multiple assets can be muted using a Mute Notifications Bulk Action from any asset list grid. e.g. Advanced Search.
