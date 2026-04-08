@@ -19,8 +19,7 @@ Alarm Events are created on assets and can be viewed in the asset's Events tab. 
 
 ## Alarm Policies
 
-An Alarm Event can trigger a notification. Notifications can be sent to a user, a group, or to a {ref}`Notification <notifications-doc>`
-Channel.
+An Alarm Event can trigger a notification. Notifications can be sent to a user, a group, or to a {ref}`Notification <notifications-doc>` Channel.
 
 
 ```{toctree}
