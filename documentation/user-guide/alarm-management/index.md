@@ -20,7 +20,7 @@ Alarm Events can change an asset's status. The asset will have the status of the
 
 ## Alarm Policies
 
-An Alarm Event can trigger a notification. Notification can be sent to a user, a group, or to a {ref}`Notification <notifications-doc>`
+An Alarm Event can trigger a notification. Notifications can be sent to a user, a group, or to a {ref}`Notification <notifications-doc>`
 Channel.
 
 
