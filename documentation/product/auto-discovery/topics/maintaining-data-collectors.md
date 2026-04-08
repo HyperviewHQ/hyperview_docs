@@ -38,7 +38,7 @@ To skip hardware checks.
 
 ```bash
 cd /opt/datacollector/bin
-sudo SKIP_TESTS=YES ./update-dc.sh`
+sudo SKIP_TESTS=YES ./update-dc.sh
 ```
 
 ## Reconfiguring Data Collectors
@@ -54,7 +54,7 @@ To skip hardware checks.
 
 ```bash
 cd /opt/datacollector/bin
-sudo SKIP_TESTS=YES ./reconfigure.sh`
+sudo SKIP_TESTS=YES ./reconfigure.sh
 ```
 
 ## Retiring a Data Collector
