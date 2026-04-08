@@ -1,6 +1,6 @@
 # Version 5
 
-## Hyperview 5.5 (TBD)
+## Hyperview 5.5 (April 08, 2026)
 
 This section covers significant changes and bug fixes in Hyperview 5.5.x since version 5.4.x
 
