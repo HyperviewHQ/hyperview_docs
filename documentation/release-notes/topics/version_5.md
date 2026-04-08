@@ -19,7 +19,7 @@ Hyperview administrators can now configure SAML 2.0 IDP for single sign-on. This
 - A new Sensor Search section was added to Advanced Search. Users will be able to use this new functionality to manage sensors in bulk and search for sensors across all asset types.
 - The Asset Type filter in Advanced Search has been enhanced to support selecting multiple types at the same time.
 - Component serial numbers have been separated from asset serial numbers.
-- Custom properties from Business Entities can be added to Advanced Search columns. 
+- Custom properties from Business Entities can be added to Advanced Search columns.
 
 ### Enhanced Feature: Notification - Alarm Policies
 
@@ -31,7 +31,7 @@ Administrators can now update Access Policies in bulk for Business Entities, Con
 
 ### Enhanced Licensed Feature: Rack Security - Tanlock Support
 
-Support for Tanlock Smart Rack/Cabinet locks has been improved to also include the ability to remotely unlock a Rack from Hyperiew. 
+Support for Tanlock Smart Rack/Cabinet locks has been improved to also include the ability to remotely unlock a Rack from Hyperview.
 
 :::{note}
 This feature requires the "Control" add-on. It can only be accessed by users with the appropriate role and access to the asset.
@@ -39,7 +39,7 @@ This feature requires the "Control" add-on. It can only be accessed by users wit
 
 ### New Feature: Status Page
 
-Platform Status is now accessible via the product's help menu. Users can subscribe to updates on all the latest operational updates on the Hyperview platform 
+Platform Status is now accessible via the product's help menu. Users can subscribe to updates on all the latest operational updates on the Hyperview platform
 
 ### Other notable changes and improvements
 
