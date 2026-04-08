@@ -40,8 +40,7 @@ Typical causes of the "not reachable" event are as follows:
 Hyperview can compare monitored and calculated sensor values from assets against a set threshold to generate alarm events. Sensor Threshold alarm events automatically manage their states, meaning they activate when the threshold is reached and close when resolved.
 
 ```{note}
-See the {ref}`Sensor Threshold Management <sensor-threshold-management-doc>` documentation for detailed
-configuration options.
+See the {ref}`Sensor Threshold Management <sensor-threshold-management-doc>` documentation for detailed configuration options.
 ```
 
 ## SNMP Trap
