@@ -8,8 +8,7 @@ Manage global events within Hyperview, enabling users to efficiently acknowledge
 :class: border-black
 ```
 
-2.  Expand additional event information by clicking the arrow icon for that event. Event information includes the Asset Name, State, Event Message, Severity, Location, Start and End Time, Event Category, and
-    Acknowledged state.
+2.  Expand additional event information by clicking the arrow icon for that event. Event information includes the Asset Name, State, Event Message, Severity, Location, Start and End Time, Event Category, and Acknowledged state.
 
 ```{image} /user-guide/alarm-management/media/global-events/image2.jpeg
 :class: border-black
