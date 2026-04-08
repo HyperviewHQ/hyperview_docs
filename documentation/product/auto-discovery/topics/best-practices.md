@@ -8,7 +8,7 @@
 - Wherever possible, avoid configuring discoveries with large IP address ranges. Instead, configure smaller IP address ranges to keep the potential number of scanned devices manageable.
 - If you know the exact devices you want to discover and monitor within a specific discovery, use the list option to add the exact IP addresses.
 - Data Collector servers should be located in, or as geographically close as possible to, the data centers they are covering.
-- Ensure that NTP time synchronization is enabled on the machine running the data collector software. An incorrect clock can cause monitoring and API authentication issues.
+- Ensure that NTP time synchronization is enabled on the machine running the Data Collector software. An incorrect clock can cause monitoring and API authentication issues.
 
 ## Discovering Linux hosts
 
