@@ -39,7 +39,7 @@ This feature requires the "Control" add-on. It can only be accessed by users wit
 
 ### New Feature: Status Page
 
-Platform Status is now accessible via the product's help menu. Users can subscribe to updates on all the latest operational updates on the Hyperview platform.
+Platform Status is now accessible via the product's help menu. Users can subscribe to the latest operational updates on the Hyperview platform.
 
 ### Other notable changes and improvements
 
