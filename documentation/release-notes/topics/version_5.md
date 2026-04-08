@@ -1,5 +1,58 @@
 # Version 5
 
+## Hyperview 5.5 (TBD)
+
+This section covers significant changes and bug fixes in Hyperview 5.5.x since version 5.4.x
+
+:::{important}
+1. This release has changes and improvements to the Data Collector software. We strongly recommend updating your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
+2. Customers using Hyperview's open-source tools, such as hvcli, must update to the latest version.
+:::
+
+### Enhanced Feature: SAML 2.0 Single Sign-On Support
+
+Hyperview administrators can now configure a SAML 2.0 compliant IdP for single sign-on. This is in addition to the built-in "Sign in with Microsoft" functionality, which uses OpenID Connect.
+
+### Enhanced Feature: Advanced Search
+
+- A new Sensor Search section was added to Advanced Search. Users will be able to use this new functionality to manage sensors in bulk and search for sensors across all asset types.
+- The Asset Type filter in Advanced Search has been enhanced to support selecting multiple types at the same time.
+- Component serial numbers have been separated from asset serial numbers.
+- Custom properties from Business Entities can be added to Advanced Search columns and can be used in search filters.
+
+### Enhanced Feature: Notification - Alarm Policies
+
+Alarm policies have been enhanced to allow users to select individual sensor thresholds if the policy includes the Sensor Threshold category. This will allow administrators to be more precise when creating these policies.
+
+### Enhanced Feature: Bulk update access policies for Connectivity and Business Entities
+
+Administrators can now update Access Policies in bulk for Business Entities, Connections, and Circuits.
+
+### Enhanced Licensed Feature: Rack Security - TANlock Support
+
+Support for TANlock Smart Rack/Cabinet locks has been improved to include remote unlocking of a Rack door from Hyperview.
+
+:::{note}
+This feature requires the "Control" add-on. It can only be accessed by users with the appropriate role and access to the asset.
+:::
+
+### New Feature: Status Page
+
+Platform Status is now accessible via the product's help menu. Users can subscribe to the latest operational updates on the Hyperview platform.
+
+### Other notable changes and improvements
+
+- The Location Rack Power Ranking - Top 10 Widget was enhanced to handle long names in a better way.
+- The Credentials grid now has an optional column to show the assets that use the credential for control operations.
+- Document management has been enhanced to scan any uploaded documents for malware.
+
+### Notable bug fixes
+
+- **AS-19787** Fixed a bug that suppressed an error message to the user if the layout background image dimensions are too large.
+- **AS-19986** Fixed a bug that prevented devices with an updated direction from being placed near the border of auto-generated Layout grids.
+- **AS-19988** Fixed a bug that caused connection bulk import to fail if the connection name is missing.
+- **AS-20193** Fixed a bug that required users to set unnecessary properties when adding custom patch panel models to the Hyperview Catalog.
+
 ## Hyperview 5.4 (January 23, 2026)
 
 ```{raw} html

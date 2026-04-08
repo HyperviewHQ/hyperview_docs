@@ -112,6 +112,39 @@ gzip /my_home_dir/snmpwalks/newrackpdu.snmpwalk
 - The **period character** or **"."** at the end of the command is required and important.
 :::
 
+#### Additional SNMP Walk Options
+Users may encounter cases where timeouts, failures, or errors may occur when walking a device. Use the following combination of snmpwalk options to circumvent most of these issues.
+
+- Adjusting Number of Retries
+
+Use this option when the snmpwalk encounters a timeout.
+```
+snmpwalk -v2c -r 3 -c public -ObentU 192.168.10.10 . > /my_home_dir/snmpwalks/newrackpdu.snmpwalk
+```
+- Adjusting Timeout in Seconds
+
+Use this option when the snmpwalk encounters a timeout.
+```
+snmpwalk -v2c -t 10 -c public -ObentU 192.168.10.10 . > /my_home_dir/snmpwalks/newrackpdu.snmpwalk
+```
+- Enable Skipping "OID Not Increasing" Errors
+
+Use this option when the snmpwalk encounters the "OID not increasing" error.
+```
+snmpwalk -v2c -c public -ObentU -C c 192.168.10.10 . > /my_home_dir/snmpwalks/newrackpdu.snmpwalk
+```
+- Using Bulk Walk
+
+Use this option on high-latency networks to perform the walk in batches instead of single OIDs at a time.
+```
+snmpbulkwalk -v2c -c public -ObentU 192.168.10.10 . > /my_home_dir/snmpwalks/newrackpdu.snmpwalk
+```
+
+:::{important}
+- Any combination of the additional SNMP walk options can be used together to resolve walk issues with equipment.
+- A full list of additional options is available via net-snmp by running the `snmpwalk --help` command.
+:::
+
 #### Walk file handling
 
 Once the walk is obtained, inspect that it is complete. Look for a "`No more variables left in this MIB View (It is past the end of the MIB tree)`" message at the end of the file. Transfer the file to Hyperview support by uploading it to the applicable support ticket.

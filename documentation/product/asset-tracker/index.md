@@ -4,7 +4,7 @@
 
 Hyperview AssetTracker is an RFID asset management solution that lets you track and audit assets. Relevant features are only available on AssetTracker-licensed instances.
 
-AssetTracker hardware supports the addition of additional optional environmental monitoring sensors, such as temperature and humidity.
+AssetTracker hardware supports the addition of optional environmental monitoring sensors, such as temperature, humidity, and door sensors.
 
 Usage examples include, but aren't limited to:
 

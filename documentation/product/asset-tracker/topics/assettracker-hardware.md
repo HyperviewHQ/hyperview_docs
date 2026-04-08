@@ -4,10 +4,10 @@
 
 ## Supported hardware
 
-The AssetTracker RFID solution is currently certified on [Digitalor](https://www.digitalor.com/en/) asset tracking hardware.
+The AssetTracker RFID solution is currently certified with [Digitalor](https://www.digitalor.com/en/) asset-tracking hardware.
 
 :::{tip}
-Hyperview's automated asset tracking system can be tested and certified on additional asset-tracking hardware solutions. We encourage vendors to contact Hyperview if they are interested in having their asset-tracking hardware system certified.
+Hyperview's automated asset-tracking system can be tested and certified with additional asset-tracking hardware solutions. We encourage vendors to contact Hyperview if they are interested in having their asset-tracking hardware system certified.
 :::
 
 The supported hardware models are:
@@ -19,7 +19,7 @@ Please [contact](https://www.hyperviewhq.com/contact/) the Hyperview Sales or Su
 
 ## Installation
 
-### Selecting a hardware Configuration
+### Selecting a Hardware Configuration
 
 AssetTracker can be installed in two different configurations:
 
@@ -51,13 +51,13 @@ Master Modules with ID and address (Circled)
 You must [contact our support team](https://system.hyperviewhq.com/helpdesk) to get access to the latest vendor configuration software and documentation.
 :::
 
-- The Gateway uses port 5656/TCP for management and configuration. The configuration must be done using the supplied tool. It is strongly recommended that the tool be on the same network segment as the Gateway to minimize network related issues.
+- The Gateway uses port 5656/TCP for management and configuration. The configuration must be done using the supplied tool. It is strongly recommended that the tool be on the same network segment as the Gateway to minimize network-related issues.
 
 :::{note}
 To configure a network adapter so that it is on the same subnet as the AssetTracker hardware, it is recommended to follow these steps:
 
 1. Run (Win+R) ncpa.cpl to open the Network Connections applet
-2. Right-Click and select Properties for the ethernet adapter
+2. Right-Click and select Properties for the Ethernet adapter
 3. Open the Properties for Internet Protocol Version 4 (TCP/IPv4)
 4. Select "Use the following IP address:"
 	- IP Address: 192.168.100.### (where ### is an available IP address)
@@ -76,25 +76,25 @@ Example Windows Network Connections Configuration
 
 ### AssetTracker Strip sizing
 
-AssetTracker modules come in a 5U and 6U modular design that can be connected for configuration on any rack RU size. Based on the rack size, use a combination of the 5U and 6U modules to fit exactly, or close to the rack height.
+AssetTracker modules come in 5U and 6U lengths and can be configured to fit any rack RU size.
 
 ### Installation locations
 
-Typical installation locations include but are not limited to:
+Typical installation locations include, but are not limited to:
 
 - Rack side panel
 - Rack door
 - Rack front panel
 
-In all these cases please:
+In all these cases, please:
 
 - Verify there is enough space for the modules and 3M adhesive.
 - Verify there is enough space to mount and remove equipment from the rack.
 - Verify the door can be opened and closed without interference.
-- Verify that there is not interference with power, network and other infrastructure.
+- Verify that there is no interference with power, network, and other infrastructure.
 - Verify that the AssetTracker Strip is supported on a flat surface with no mechanical stress or pressure on it.
 
-Use the adhesive where possible and if needed use plastic zip ties for reinforcement. Take care not to add pressure, puncture the casing or create mechanical stress on the assembled device.
+Use the adhesive where possible, and if needed, use plastic zip ties for reinforcement. Take care not to add pressure, puncture the casing, or create mechanical stress on the assembled device.
 
 ```{figure} /product/asset-tracker/media/installation_example_1.png
 :alt: Master Module and SATA cable
@@ -105,7 +105,7 @@ Rack installation example
 
 ### Assembling Modules
 
-Identify the Master Module. The Master Module has a SATA port above the top-most magnet position. The Extension Modules have male connectors on the top-end.
+Identify the Master Module. The Master Module has a SATA port above the top-most magnet position. The Extension Modules have male connectors at the top end.
 
 ```{figure} /product/asset-tracker/media/master_module_and_cable.png
 :alt: Master Module and cable
@@ -114,7 +114,7 @@ Identify the Master Module. The Master Module has a SATA port above the top-most
 Master Module and SATA Cable
 ```
 
-Lay the modules on a flat surface and snap the male connector Extension Module to the female connector of the Master Module. Continue connecting Extension Modules ensuring that the Master Module is the top-most module in the chain.
+Lay the modules on a flat surface, then snap the male connector on the Extension Module into the female connector on the Master Module. Continue connecting Extension Modules, ensuring that the Master Module is the top-most module in the chain.
 
 ```{figure} /product/asset-tracker/media/master_and_extension.png
 :alt: Master Module and Extension
@@ -125,7 +125,7 @@ Master Module and Extension Module ends
 
 ### Installing Modules
 
-Once the AssetTracker Strip is assembled and installed in the selected position, it needs to be connected to a Expansion Hub. Connect the RJ45 to SATA cable to the Master Module (SATA Port) and then to the Expansion Hub (V5 Port) with the RJ45 to SATA Cable. Secure the Expansion Hub to the side using the provided 3M adhesive tape or another appropriate means.
+Once the AssetTracker Strip is assembled and installed in the selected position, it needs to be connected to an Expansion Hub. Connect the RJ45-to-SATA cable from the Master Module (SATA Port) to the Expansion Hub (V5 Port). Secure the Expansion Hub to the side using the provided 3M adhesive tape or another appropriate means.
 
 ```{figure} /product/asset-tracker/media/master_module_to_hub_1.png
 :alt: Master Module to Expansion Hub example 1
@@ -157,7 +157,7 @@ Expansion Hub to Gateway example 1
 Expansion Hub to Gateway example 2
 ```
 
-If the Gateway is a _V5008 AIoT_, up to five total Hubs can be daisy chained together. Connect the _RS485 Out_ Port from the Hub connected to the Gateway to the _RS485 In_ Port of an additional Hub. Note the following:
+If the Gateway is a _V5008 AIoT_, up to 5 Hubs can be daisy-chained together. Connect the _RS485 Out_ Port from the Hub connected to the Gateway to the _RS485 In_ Port of an additional Hub. Note the following:
 
 - The maximum cable length from the Gateway to the last Hub in the chain must not exceed 20 meters (65 feet).
 - Master Module addresses must be unique.
@@ -171,9 +171,11 @@ Expansion Hub to Expansion Hub
 
 If applicable, connect the Gateway to a POE power source.
 
-### Installing Temperature and Humidity sensors
+### Sensors
 
-A Temperature and Humidity sensor package can be connected to the expansion Hub. Sensors must be connected to the Temperature and Humidity RJ11 port on the expansion hub. Up to six sensors can be daisy chained. Each sensor must have a **unique** address, typically 10 to 15. The sensor address will be printed on the sensor.
+#### Temperature and Humidity Sensors
+
+A Temperature and Humidity sensor package can be connected to the Expansion Hub. Sensors must be connected to the Temperature and Humidity RJ11 port on the Expansion Hub. Up to six sensors can be daisy-chained. Each sensor must have a **unique** address, typically 10 to 15. The address will be printed on the sensor.
 
 ```{figure} /product/asset-tracker/media/expansion_hub_to_sensors_1.png
 :alt: Expansion Hub to sensors
@@ -182,7 +184,7 @@ A Temperature and Humidity sensor package can be connected to the expansion Hub.
 Expansion Hub to sensors
 ```
 
-With a six sensor deployment, three temperature zones (front and back) can be monitored in a rack. Hyperview will automatically calculate the temperature averages and Delta-T values for the zones.
+With a six-sensor deployment, three temperature zones (front and back) can be monitored in a rack. Hyperview will automatically calculate the temperature averages and Delta-T values for the zones.
 
 ```{figure} /product/asset-tracker/media/rack_with_sensors.png
 :alt: Expansion Hub to sensors
@@ -190,6 +192,30 @@ With a six sensor deployment, three temperature zones (front and back) can be mo
 
 A Rack With Six Temperature and Humidity Sensors
 ```
+
+#### Rack Door Sensors
+
+Rack door sensors can be attached to Expansion Hubs. The C60 Expansion Hub can have a single door sensor. The C68 Expansion Hub can support a dual-door sensor. Please note that the gateway must have the appropriate firmware to support the sensors.
+
+```{figure} /product/asset-tracker/media/rack_door_sensor_placement.png
+:alt: A Rack with a door sensor
+:class: border-black
+
+A Rack With A Door Sensor
+```
+
+The ideal distance between the sensor and the rack door when the door is fully closed is roughly 1 cm to 10 cm. This range gives the infrared sensor the most reliable detection range and minimizes false positives caused by surface reflection.
+
+```{figure} /product/asset-tracker/media/rack_door_sensor_placement_top_view.png
+:alt: A Rack with a door sensor, top view
+:class: border-black
+
+A Rack With A Door Sensor Top View
+```
+
+:::{important}
+Once a door sensor is installed on a rack, the "Door Status Sensor" Property must be set. Configure this property by navigating to the Information -> Properties page of the rack.
+:::
 
 ### Installing Asset Tags
 
@@ -200,8 +226,8 @@ A Rack With Six Temperature and Humidity Sensors
 
 - Clean the surface of the asset from dust.
 - Remove the adhesive cover from the Asset Tag.
-- Attach the Asset Tag to the asset. Ensure the tag is firmly attached to the asset in a secure location. Avoid air inlets and outlets, asset serial number, identification tags, chassis LCD screens, etc.
-- Connect the magnet of the Asset Tag to the AssetTracker Strip. Ensure that it is associated to the top-most RU module position for the asset. For example, if you are tagging a 4U device placed between RU 20 and 23, then associate the tag to the RU23 position.
+- Attach the Asset Tag to the asset. Ensure the tag is firmly attached to the asset in a secure location. Avoid air inlets and outlets, asset serial numbers, identification tags, chassis LCD screens, etc.
+- Connect the magnet of the Asset Tag to the AssetTracker Strip. Ensure it is associated with the asset's top-most RU module position. For example, if you are tagging a 4U device placed between RU 20 and 23, then associate the tag with the RU23 position.
 
 ```{figure} /product/asset-tracker/media/asset_tag_to_asset_tracker_1.png
 :alt: Asset Tag to AssetTracker Strip
@@ -227,6 +253,13 @@ V5008 AIoT network diagram
 
 V6800 AIoT network diagram
 ```
+
+### Modbus address mapping
+
+- Master Modules or C68 Expansion Modules (depending on configuration): 1–5
+- Temperature and Humidity Sensors: 10–15
+- Noise Sensors: 16–18
+- Door Sensors: User fixed system assigned addresses
 
 ## Configuring Modules
 

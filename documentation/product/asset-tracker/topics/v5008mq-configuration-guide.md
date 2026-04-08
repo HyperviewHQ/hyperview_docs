@@ -11,7 +11,7 @@ You must [contact our support team](https://system.hyperviewhq.com/helpdesk) to 
 :::
 
 ## Obtaining Hyperview MQTT Broker Credentials
-1.	Login to the Hyperview Linux Data Collector host.
+1.	Log in to the Hyperview Linux Data Collector host.
 2.	Navigate to the following directory:
 ```
 /opt/datacollector/bin
@@ -28,8 +28,8 @@ You must [contact our support team](https://system.hyperviewhq.com/helpdesk) to 
 See {ref}`AssetTracker Hardware documentation<assettracker-network-requirements>` for details on configuring IP address on the same subnet as the AssetTracker gateway.
 :::
 3.	Connect to the gateway from the configuration tool.
-	- Enter the IP Address and Port of the V5008MQ to the “Add gateway device” section. The default IP address is either 192.168.100.100 or 192.168.0.200.
-	- Click the Add button (near IP and Port fields).
+	- Enter the IP Address and Port of the V5008MQ in the “Add gateway device” section. The default IP address is either 192.168.100.100 or 192.168.0.200.
+	- Click the Add button (near the IP and Port fields).
 	```{figure} /product/asset-tracker/media/config_tool_add_button.png
 	:alt: Configuration tool add button
 	:class: border-black
@@ -51,9 +51,9 @@ See {ref}`AssetTracker Hardware documentation<assettracker-network-requirements>
 	:class: border-black
 	```
 	- Update the following parameters:
-		- IP Address – The IP address you want to assign the AssetTracker gateway. Default value is either 192.168.100.100 or 192.168.0.200. Value is only modified once the AssetTracker modules have been rebooted which should be performed last.
+		- IP Address – The IP address you want to assign to the AssetTracker gateway. The default value is either 192.168.100.100 or 192.168.0.200. Value is only modified once the AssetTracker modules have been rebooted, which should be performed last.
 		:::{note}
-		For v3.1 or newer V5008MQ gateway models you may also use the DHCP option to automatically assign an IP address to the gateway.
+		For v3.1 or newer V5008MQ gateway models, you may also use the DHCP option to automatically assign an IP address to the gateway.
 		:::
 		- Subnet Mask – Default value is 255.255.0.0. Can be modified.
 		- Default Gateway – Default value is 192.168.0.1. Can be modified.
@@ -67,7 +67,7 @@ See {ref}`AssetTracker Hardware documentation<assettracker-network-requirements>
 	:alt: Set gateway settings
 	:class: border-black
 	```
-	- Enter the MQTT Broker Credentials to the Username and Password fields. See above section for obtaining the credentials from the Data Collector.
+	- Enter the MQTT Broker Credentials in the Username and Password fields. See the above section for obtaining the credentials from the Data Collector.
 	```{figure} /product/asset-tracker/media/config_tool_mqtt_creds.png
 	:alt: Add Hyperview MQTT credentials
 	:class: border-black
