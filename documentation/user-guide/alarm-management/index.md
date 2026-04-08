@@ -32,5 +32,5 @@ topics/viewing-alarm-events-and-statuses
 topics/asset-specific-events
 topics/global-events
 topics/sensor-threshold-management
-topics/administrating-alarm-policy-notifications
+topics/administering-alarm-policy-notifications
 ```
