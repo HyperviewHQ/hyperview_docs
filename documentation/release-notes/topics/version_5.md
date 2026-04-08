@@ -18,7 +18,7 @@ Hyperview administrators can now configure a SAML 2.0 compliant IdP for single s
 - A new Sensor Search section was added to Advanced Search. Users will be able to use this new functionality to manage sensors in bulk and search for sensors across all asset types.
 - The Asset Type filter in Advanced Search has been enhanced to support selecting multiple types at the same time.
 - Component serial numbers have been separated from asset serial numbers.
-- Custom properties from Business Entities can be added to Advanced Search columns.
+- Custom properties from Business Entities can be added to Advanced Search columns and can be used in filters.
 
 ### Enhanced Feature: Notification - Alarm Policies
 
