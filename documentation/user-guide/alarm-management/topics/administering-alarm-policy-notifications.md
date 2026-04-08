@@ -89,8 +89,7 @@ Non-administrator users will receive alarm events only for the assets they have 
 :class: border-black
 ```
 
-13.  Any existing alarm policy can be configured by clicking the Edit
-    button.
+13.  Any existing alarm policy can be configured by clicking the Edit button.
 
 ```{image} /user-guide/alarm-management/media/administrating-alarm-policy-notifications/image13.jpeg
 :class: border-black
