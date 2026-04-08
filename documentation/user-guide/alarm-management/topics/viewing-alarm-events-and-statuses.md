@@ -11,8 +11,7 @@ Location statuses are elevated to the Location Layout - Map view.
 ```
 
 ```{note}
-Clicking on the location nodes on the map view displays a status
-tooltip.
+Clicking on the location nodes on the map view displays a status tooltip.
 ```
 
 ## Hierarchy Tree
