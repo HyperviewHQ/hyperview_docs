@@ -12,7 +12,7 @@ This section covers significant changes and bug fixes in Hyperview 5.5.x since v
 
 ### Enhanced Feature: SAML 2.0 Single Sign-On Support
 
-Hyperview administrators can now configure SAML 2.0 IDP for single sign-on. This is in addition to the built-in "Sign in with Microsoft" functionality, which uses OpenID Connect.
+Hyperview administrators can now configure a SAML 2.0 compliant IdP for single sign-on. This is in addition to the built-in "Sign in with Microsoft" functionality, which uses OpenID Connect.
 
 ### Enhanced Feature: Advanced Search
 
