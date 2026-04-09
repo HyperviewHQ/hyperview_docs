@@ -45,6 +45,7 @@ Platform Status is now accessible via the product's help menu. Users can subscri
 - The Location Rack Power Ranking - Top 10 Widget was enhanced to handle long names in a better way.
 - The Credentials grid now has an optional column to show the assets that use the credential for control operations.
 - Document management has been enhanced to scan any uploaded documents for malware.
+- Enhanced the rack elevation view to provide more information when an asset is clicked.
 
 ### Notable bug fixes
 
