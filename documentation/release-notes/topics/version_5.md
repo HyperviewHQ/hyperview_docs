@@ -54,6 +54,14 @@ Platform Status is now accessible via the product's help menu. Users can subscri
 - **AS-19988** Fixed a bug that caused connection bulk import to fail if the connection name is missing.
 - **AS-20193** Fixed a bug that required users to set unnecessary properties when adding custom patch panel models to the Hyperview Catalog.
 
+### Changes in version 5.5.1
+
+- **AS-20362** Fixed a bug that caused some notifications not to be sent under certain conditions.
+
+### Changes in version 5.5.2
+
+- **AS-20409** Update package dependencies.
+
 ## Hyperview 5.4 (January 23, 2026)
 
 ```{raw} html
