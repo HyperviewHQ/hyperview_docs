@@ -62,6 +62,10 @@ Platform Status is now accessible via the product's help menu. Users can subscri
 
 - **AS-20409** Update package dependencies.
 
+### Changes in version 5.5.3
+
+- **AS-20433** Updated search indexer to improve speed.
+
 ## Hyperview 5.4 (January 23, 2026)
 
 ```{raw} html
