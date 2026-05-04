@@ -66,6 +66,10 @@ Platform Status is now accessible via the product's help menu. Users can subscri
 
 - **AS-20433** Updated search indexer to improve speed.
 
+### Changes in version 5.5.4
+
+- **AS-20366** Fixed a bug that could cause increased memory usage.
+
 ## Hyperview 5.4 (January 23, 2026)
 
 ```{raw} html
