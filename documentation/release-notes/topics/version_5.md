@@ -70,6 +70,11 @@ Platform Status is now accessible via the product's help menu. Users can subscri
 
 - **AS-20366** Fixed a bug that could cause increased memory usage.
 
+### Changes in version 5.5.5
+
+- **AS-20536** Update Data Collector package dependencies.
+- **AS-20537** Update application package dependencies.
+
 ## Hyperview 5.4 (January 23, 2026)
 
 ```{raw} html
