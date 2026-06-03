@@ -36,6 +36,12 @@ The following new asset types have been added to the product.
 
 ## Hyperview 5.5 (April 08, 2026)
 
+```{raw} html
+<div class="pb-3">
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1185461092?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Hyperview DCIM 5.5 Software Release"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+</div>
+```
+
 This section covers significant changes and bug fixes in Hyperview 5.5.x since version 5.4.x
 
 :::{important}
