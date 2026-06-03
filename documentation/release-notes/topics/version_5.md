@@ -1,5 +1,39 @@
 # Version 5
 
+## Hyperview 5.6 (June 02, 2026)
+
+This section covers significant changes and bug fixes in Hyperview 5.6.x since version 5.5.x
+
+:::{important}
+1. This release has changes and improvements to the Data Collector software. We strongly recommend updating your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
+2. Customers using Hyperview's open-source tools, such as hvcli, must update to the latest version.
+:::
+
+### Enhanced Feature: Modbus and BACnet definitions
+
+- Modbus and BACnet definitions have an optional description field that can be used by customers.
+- Modbus and BACnet numeric sensors can now support offset and multiplier calculations.
+- Modbus and BACnet definitions have a new tab that shows the associated assets.
+- Modbus definitions can now allow you to address multiple device addresses for the same asset.
+
+### Enhanced Feature: DCIM - New power providing assets
+
+The following new asset types have been added to the product.
+
+- Battery Bank
+- Switchboard
+- Switchgear
+
+### Other notable changes and improvements
+
+- To help with troubleshooting and verification of SNMP-based sensors, the Sensor List and Sensor Search have the option to display OID.
+
+### Notable bug fixes
+
+- **AS-20086** Fixed a bug that could cause the asset audit page to display Dashboard links for unsupported asset types.
+- **AS-20327** Fixed a bug that could cause the dashboard Auto-Refresh to freeze.
+- **AS-20584** Fixed a bug that could cause component asset sensors to not be returned in Advanced Search results when filtering.
+
 ## Hyperview 5.5 (April 08, 2026)
 
 This section covers significant changes and bug fixes in Hyperview 5.5.x since version 5.4.x
