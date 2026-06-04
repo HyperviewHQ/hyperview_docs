@@ -16,7 +16,7 @@ This section covers significant changes and bug fixes in Hyperview 5.6.x since v
 - Modbus and BACnet definitions have a new tab that shows the associated assets.
 - Modbus definitions can now allow you to address multiple device addresses for the same asset.
 
-### Enhanced Feature: DCIM - New power providing assets
+### Enhanced Feature: New power-providing assets
 
 The following new asset types have been added to the product.
 
