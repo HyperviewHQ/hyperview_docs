@@ -25,9 +25,10 @@ Adding rackable (non Zero U) assets to racks can be performed using two differen
 
 :::{note}
 Rackable assets will require an RU location and Rack Side value.
+
 - Available RU locations are determined based on the free space within the rack and the size of the asset model being added to the rack.
 - Rack Side is determined by which side of the rack the asset is located (Front or Rear).
-:::
+  :::
 
 ### Moving Assets
 
@@ -71,24 +72,26 @@ Adding Zero U and Unplaced assets to racks can be performed using two different 
 
 :::{note}
 Zero U assets will require a Rack Side and Rack Position value.
+
 - Rack Side is determined by which side of the rack the asset is located (Front or Rear).
 - Rack Position is determined by the relative position of the Zero U device within or about the rack.
 
 Available Rack Positions:
-* Left
-* Right
-* Top
-* Bottom
-* Above
-* Below
-* Unknown
-:::
+
+- Left
+- Right
+- Top
+- Bottom
+- Above
+- Below
+- Unknown
+  :::
 
 ## Shelves
 
 ### Adding Shelves
 
-Add a shelf to the rack by clicking the Add Shelf button. The add shelf model will pop-up requesting the Start Location and End Location for the shelf space. The Start Location is the topmost RU space the shelf will consume. The End Location is the bottommost RU space the shelf will consume. The available RU selections are determined by the available contiguous space within the rack. Once created the shelf will be visible in the rack elevation.
+Add a shelf to the rack by clicking the Add Shelf button. The add shelf modal will pop-up requesting the Start Location and End Location for the shelf space. The Start Location is the topmost RU space the shelf will consume. The End Location is the bottommost RU space the shelf will consume. The available RU selections are determined by the available contiguous space within the rack. Once created the shelf will be visible in the rack elevation.
 
 :::{note}
 Shelves within the rack elevation do not display the front or rear images for assets on the shelf in the rack elevation view.
@@ -125,13 +128,13 @@ The Rack Layout page can be exported in JPG, PDF, or PNG format by clicking the 
 
 ## Tools Menu
 
-The Tools menu lets you fill unused rack space with blanking panels and cable management. Open it from the more options (⋯) menu near the View and Export Page buttons, then select *Tools*.
+The Tools menu lets you fill unused rack space with blanking panels and cable management. Open it from the more options (⋯) menu near the View and Export Page buttons, then select _Tools_.
 
 Blanking panels and cable management are applied to the current rack side. Use the Front View / Rear View options in the Options Menu (described above) to switch sides before applying a tool.
 
 ### Blanking Panel - Add / Remove
 
-Select this tool, then click individual Rack U positions in the rack elevation to add or remove a blanking panel on the current rack side. Click *Save* to apply your changes, or *Cancel* to discard them.
+Select this tool, then click individual Rack U positions in the rack elevation to add or remove a blanking panel on the current rack side. Click _Save_ to apply your changes, or _Cancel_ to discard them.
 
 ### Blanking Panel - Fill Empty Space
 
@@ -143,7 +146,7 @@ Removes all blanking panels from the rack.
 
 ### Cable Management - Add / Remove
 
-Select this tool, then click individual Rack U positions in the rack elevation to add or remove cable management on the current rack side. Click *Save* to apply your changes, or *Cancel* to discard them.
+Select this tool, then click individual Rack U positions in the rack elevation to add or remove cable management on the current rack side. Click _Save_ to apply your changes, or _Cancel_ to discard them.
 
 ### Cable Management - Fill Empty Space
 
@@ -152,3 +155,4 @@ Fills every empty Rack U position on the current rack side with cable management
 ### Cable Management - Clear All
 
 Removes all cable management from the rack.
+
