@@ -199,6 +199,8 @@ A success message will appear, and the domain details will be updated in the Use
 
 A success message will appear, and the domain will no longer be listed in the User Provisioning grid.
 
+(configuring-saml-sso-doc)=
+
 ## Configuring SAML single sign-on (SSO)
 
 Administrators can configure a SAML 2.0 compliant identity provider (IdP) for single sign-on. This is in addition to the built-in "Sign in with Microsoft" external login, which uses OpenID Connect.

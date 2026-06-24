@@ -70,4 +70,6 @@ The Features section lists what Hyperview feature licenses you have. Available l
 - Infrastructure Management (default application license)
 - {ref}`Outlet Control<outlet-control-doc>` (add-on)
 - {ref}`Rack Security<rack-security-doc>` (add-on)
+- Reporting (add-on)
+- {ref}`SAML Authentication<configuring-saml-sso-doc>` (default application license)
 - {ref}`ServiceNow CMDB Integration<servicenow-cmdb-integration-doc>` (add-on)
