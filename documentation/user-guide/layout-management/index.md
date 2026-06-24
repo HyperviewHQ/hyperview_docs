@@ -11,4 +11,5 @@ Certain asset types in Hyperview have a Layout page that allows you to interact 
 :maxdepth: 2
 
 topics/location-layouts
+topics/rack-layouts
 ```
