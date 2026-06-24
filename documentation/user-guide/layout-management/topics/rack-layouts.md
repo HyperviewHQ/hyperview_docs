@@ -125,10 +125,30 @@ The Rack Layout page can be exported in JPG, PDF, or PNG format by clicking the 
 
 ## Tools Menu
 
+The Tools menu lets you fill unused rack space with blanking panels and cable management. Open it from the more options (⋯) menu near the View and Export Page buttons, then select *Tools*.
+
+Blanking panels and cable management are applied to the current rack side. Use the Front View / Rear View options in the Options Menu (described above) to switch sides before applying a tool.
+
 ### Blanking Panel - Add / Remove
+
+Select this tool, then click individual Rack U positions in the rack elevation to add or remove a blanking panel on the current rack side. Click *Save* to apply your changes, or *Cancel* to discard them.
 
 ### Blanking Panel - Fill Empty Space
 
+Fills every empty Rack U position on the current rack side with blanking panels in a single action.
+
+### Blanking Panel - Clear All
+
+Removes all blanking panels from the rack.
+
 ### Cable Management - Add / Remove
 
+Select this tool, then click individual Rack U positions in the rack elevation to add or remove cable management on the current rack side. Click *Save* to apply your changes, or *Cancel* to discard them.
+
 ### Cable Management - Fill Empty Space
+
+Fills every empty Rack U position on the current rack side with cable management in a single action.
+
+### Cable Management - Clear All
+
+Removes all cable management from the rack.
