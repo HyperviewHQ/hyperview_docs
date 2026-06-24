@@ -9,7 +9,7 @@ Power Users and above can bulk import and manually add assets. Certain asset typ
 - Power Meter and Unknown asset types are discovery-only.
 - Location and Rack asset types can only be added manually.
 
-This topic covers bulk importing and manually adding assets. For a complete list of asset types, see {ref}`Supported asset types<Supported-asset-types-doc>`. To discover assets, refer to {ref}`Discoveries<Discoveries-doc>` and related topics.
+This topic covers bulk importing and manually adding assets. For a complete list of asset types, see {ref}`Supported asset types<supported-asset-types-doc>`. To discover assets, refer to {ref}`Discoveries<discoveries-doc>` and related topics.
 
 ## Bulk importing assets
 
@@ -42,7 +42,7 @@ You cannot bulk import Location or Rack type assets.
   - The asset lifecycle state (Active, Planned, Procurement, Staging, or Retired)
   - Optional
 * - AssetType
-  - The {ref}`asset type<Supported-asset-types-doc>`, such as Server, PDU, etc (but not Rack or Location)
+  - The {ref}`asset type<supported-asset-types-doc>`, such as Server, PDU, etc. (but not Rack or Location)
   - Required
 * - Manufacturer
   - The asset manufacturer name
@@ -192,7 +192,7 @@ You can manually add an asset in Hyperview from one of the following places:
    :::
 
    :::{tip}
-   Create a Data Collector before adding an asset with a BACnet/IP or Modbus TCP sensor monitoring profile. See {ref}`Setup-data-collectors` for instructions.
+   Create a Data Collector before adding an asset with a BACnet/IP or Modbus TCP sensor monitoring profile. See {ref}`setup-data-collectors` for instructions.
    :::
 
 4. Click *Add and Continue* to start with blank fields for subsequent entries, or *Add and Reset* to repeat your entered values (except for Name) for subsequent entries.

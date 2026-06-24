@@ -19,12 +19,15 @@ The following asset types are supported in Hyperview.
 
 ### Power
 
+- Battery Bank
 - DC Rectifier
 - Generator
 - PDU/RPP
 - Power Meter
 - Rack PDU
 - Small UPS
+- Switchboard
+- Switchgear
 - Transfer Switch
 - UPS
 - Utility Breaker
@@ -55,7 +58,7 @@ The following asset types are supported in Hyperview.
 - Unknown (discovery-only; cannot be added or imported manually)
 
 :::{tip}
-You can use {ref}`the Asset Types tree<Navigating-assets-doc>` to see which asset types (except Location) are present in your system. If you are not an Administrator, you will only see asset types corresponding to devices that you {ref}`have access to<Who-can-access-doc>`.
+You can use {ref}`the Asset Types tree<navigating-assets-doc>` to see which asset types (except Location) are present in your system. If you are not an Administrator, you will only see asset types corresponding to devices that you {ref}`have access to<who-can-access-doc>`.
 :::
 
 ## Component asset types
@@ -63,7 +66,7 @@ You can use {ref}`the Asset Types tree<Navigating-assets-doc>` to see which asse
 The following asset types are only supported as component assets — that is, assets that constitute other assets. Component assets appear on the Components (*asset → Information → Components*) and Network Components (*asset → Information → Network Components*) pages in Hyperview.
 
 :::{note}
-Component assets are auto-detected by Hyperview. You can {ref}`search for them<Search-features>`, but you cannot {ref}`add or import them manually<Adding-assets-doc>`.
+Component assets are auto-detected by Hyperview. You can {ref}`search for them<search-features>`, but you cannot {ref}`add or import them manually<adding-assets-doc>`.
 :::
 
 - Application

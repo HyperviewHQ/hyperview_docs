@@ -1207,7 +1207,7 @@ Changed: `assetType` in `query`
 
 
 Changed: `hasChildrenAssetType` in `query`
-> An optional list of asset types to filter what assets are used when determining if an asset
+> An optional list of asset types to filter what assets are used when determining if an asset
 > has children.
 
 

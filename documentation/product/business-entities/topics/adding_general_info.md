@@ -30,7 +30,7 @@ Use the following steps to add or edit general info for a Business Entity.
 :class: border-black
 ```
 
-6.  Click "Add" button for Addresses.
+6.  Click the "Add" button for Addresses.
 
 ```{image} /product/business-entities/media/adding_general_info/image5.jpeg
 :class: border-black
@@ -42,19 +42,19 @@ Use the following steps to add or edit general info for a Business Entity.
 :class: border-black
 ```
 
-8.  Click "Add" button for Contacts.
+8.  Click the "Add" button for Contacts.
 
 ```{image} /product/business-entities/media/adding_general_info/image7.jpeg
 :class: border-black
 ```
 
-9.  Complete the "Add New Contact" form, then click "Save"
+9.  Complete the "Add New Contact" form, then click "Save".
 
 ```{image} /product/business-entities/media/adding_general_info/image8.jpeg
 :class: border-black
 ```
 
-10.  Click "Save" button on the General Info page to ensure updates are saved.
+10.  Click the "Save" button on the General Info page to ensure updates are saved.
 
 ```{image} /product/business-entities/media/adding_general_info/image9.jpeg
 :class: border-black

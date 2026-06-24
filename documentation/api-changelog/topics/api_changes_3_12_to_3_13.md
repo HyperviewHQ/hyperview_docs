@@ -1066,7 +1066,7 @@ Changed response : **200 OK**
             * `iso`
 ### `GET` /api/asset/assetTrackerContainedAssets
 
-> Returns a list of AssetTracker assets or placeholder assets that are contained inside the
+> Returns a list of AssetTracker assets or placeholder assets that are contained inside the
 > given AssetTracker parent.
 
 

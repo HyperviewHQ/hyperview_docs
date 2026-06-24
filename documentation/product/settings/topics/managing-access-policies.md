@@ -11,7 +11,7 @@ An access policy can be associated with any number of securable objects. However
 ```
 
 :::{tip}
-Create user groups before adding access policies. Refer to "Managing groups" in {ref}`User-administration-doc` for details. You can associate an asset with an existing access policy from the Access Control page (browse to asset → *Access Control*).
+Create user groups before adding access policies. Refer to "Managing groups" in {ref}`user-administration-doc` for details. You can associate an asset with an existing access policy from the Access Control page (browse to asset → *Access Control*).
 :::
 
 ## Adding an access policy

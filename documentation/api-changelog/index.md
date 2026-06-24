@@ -5,7 +5,7 @@
 API changes are reflected in the corresponding Open API (aka Swagger) interfaces, which can be accessed from the *Help* menu in Hyperview.
 
 :::{tip}
-Before version 3.6 API changes were documented in the {ref}`release notes<Release-notes-doc>`
+Before version 3.6 API changes were documented in the {ref}`release notes<release-notes-doc>`
 :::
 
 ```{toctree}

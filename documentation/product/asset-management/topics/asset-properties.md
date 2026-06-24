@@ -28,7 +28,7 @@ For manually added assets, these properties can be set individually or in bulk u
 
 ## Contact
 
-These are location-specific properties. They contain, the address, latitude, longitude and the location's human contact information.
+These are location-specific properties. They contain the address, latitude, longitude and the location's human contact information.
 
 The Address property is always checked using the Google Maps API and once a match is found, the validated address is stored along with the latitude and longitude reported by the API.
 
@@ -50,7 +50,7 @@ These properties apply to racks and assets that can be mounted in a rack. The **
 
 The **Master Module ID** property is rack specific and it holds the ID of the master module assigned to the rack.
 
-More information is provided in the {ref}`AssetTracker <AssetTracker-doc>` section.
+More information is provided in the {ref}`AssetTracker <assettracker-doc>` section.
 
 ## General
 
@@ -58,7 +58,7 @@ These properties contain asset information such as serial number, firmware versi
 
 ## Model
 
-These properties are usually filled in from the product catalog. More information about model data and how it is managed is provided in the {ref}`Catalog Management <Catalog-management-doc>` section.
+These properties are usually filled in from the product catalog. More information about model data and how it is managed is provided in the {ref}`Catalog Management <catalog-management-doc>` section.
 
 Important model properties include its dimensions (width, height, depth), weight and power properties.
 

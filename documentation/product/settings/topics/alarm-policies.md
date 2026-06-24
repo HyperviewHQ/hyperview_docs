@@ -2,7 +2,7 @@
 
 # Alarm Policies
 
-Alarm policies allow administrators to direct alarm events to specific users, groups or {ref}`notification channels <Notification-channels-doc>`. Follow these steps to configure an Alarm Policy.
+Alarm policies allow administrators to direct alarm events to specific users, groups or {ref}`notification channels <notification-channels-doc>`. Follow these steps to configure an Alarm Policy.
 
 ```{image} /product/settings/media/alarm-policies_1.png
 :class: border-black
@@ -16,4 +16,5 @@ Alarm policies allow administrators to direct alarm events to specific users, gr
 ```
 
 3. Select the minimum alarm event severity that will trigger this policy.
-4. Select the combination of users, groups, and channels to receive notifications.
+4. Select the event Categories the policy applies to. By default, it applies to all categories. If you include the Sensor Threshold category, you can keep **All Sensor Thresholds** selected, or clear it to choose specific thresholds from the **Sensor Thresholds** list — letting you target the policy to individual sensor thresholds.
+5. Select the combination of users, groups, and channels to receive notifications.

@@ -34,7 +34,7 @@ Master Modules are 6 RUs long and can be expanded using Extension Modules. Each 
 
 Extension Modules are available in 5U or 6U lengths. Use a combination of the 5U and 6U modules to fit exactly, or as close as possible, to the rack height.
 
-The serial number is associated with the rack, and the address is used when daisy-chaining multiple modules to the same Gateway. Each daisychain must have unique Master Module addresses.
+The serial number is associated with the rack, and the address is used when daisy-chaining multiple modules to the same Gateway. Each daisy chain must have unique Master Module addresses.
 
 ```{important}
 Only the V5008 AIoT Gateway allows for daisy chaining.
@@ -54,7 +54,7 @@ Users can specify Master Module IDs (for racks) and Asset Tag IDs (for racked de
 Detected AssetTracker Master Modules appear on the AssetTracker page (*Assets → AssetTracker*). Tagged assets can be reviewed from the parent rack's Asset Audit page (rack → *Information → Asset Audit*).
 
 ```{image} /product/asset-tracker/media/assettracker_diagram3.png
-:alt: AssetTrack deployment diagram 3
+:alt: AssetTracker deployment diagram 3
 :class: border-black
 ```
 

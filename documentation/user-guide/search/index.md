@@ -4,15 +4,26 @@
 
 You can perform searches in Hyperview from three different places: Quick Search, Advanced Search, and within specific grids. Regardless of where you are searching from, search results will only reflect assets that you have access to.
 
+Quick Search and Advanced Search are both opened from the **Search** box in the top bar (or by pressing *Ctrl+K*). The search palette has three tabs:
+
+- **Quick** — fast, type-as-you-go asset lookup.
+- **Advanced** — filter-based querying with a results grid.
+- **AI Assistant** — ask questions in natural language. Refer to {ref}`ai-assistant` for details.
+
 ## Quick Search and Advanced Search
 
-Quick Search lets you quickly lookup assets from the Search panel (*Search → Quick*). Search results appear as soon as you type a matching character string. Clicking on a search result opens the corresponding asset Dashboard.
+Quick Search lets you quickly lookup assets from the search palette (*Search → Quick*). Search results appear as soon as you type a matching character string. Clicking on a search result opens the corresponding asset Dashboard.
 
 ```{image} /user-guide/search/media/qs.png
 :class: border-black
 ```
 
-The Advanced Search page is also accessible from the Search panel (*Search → Advanced*). Search results appear in a grid, allowing users to perform relevant actions such as Export and Bulk Delete. Double-clicking a matching asset opens its Dashboard.
+The Advanced Search page is also accessible from the search palette (*Search → Advanced*). Search results appear in a grid, allowing users to perform relevant actions such as Export and Bulk Delete. Double-clicking a matching asset opens its Dashboard.
+
+Advanced Search has two tabs:
+
+- **Assets** — search for assets (described throughout this section).
+- **Sensors** — search for sensors across all asset types, and manage sensors in bulk. The Sensors tab has its own search box, filters, columns, and Export. For SNMP-based sensors, you can add the **OID** column to help verify and troubleshoot sensor readings.
 
 ```{image} /user-guide/search/media/as.png
 :class: border-black
@@ -72,7 +83,7 @@ Filters are more structured and efficient compared to manual queries; we recomme
 
 The following filters are available:
 
-- Type
+- Type (you can select multiple asset types at once)
 - Location
 - Manufacturer
 - Model
@@ -175,9 +186,9 @@ Selecting a saved search populates the Filters panel and/or the Search Assets ro
 
 ### Generic grid operations
 
-Like most grids in Hyperview, you can {ref}`export Advanced Search results<Extracting-data-doc>` as a spreadsheet. This can be incredibly useful when you are producing reports or asset inventory records.
+Like most grids in Hyperview, you can {ref}`export Advanced Search results<extracting-data-doc>` as a spreadsheet. This can be incredibly useful when you are producing reports or asset inventory records.
 
-You can also {ref}`perform bulk actions<Bulk-actions-doc>` against Advanced Search results. For example, you can bulk delete one or more assets matching your query.
+You can also {ref}`perform bulk actions<bulk-actions-doc>` against Advanced Search results. For example, you can bulk delete one or more assets matching your query.
 
 ```{image} /user-guide/search/media/as_bulk.png
 :class: border-black

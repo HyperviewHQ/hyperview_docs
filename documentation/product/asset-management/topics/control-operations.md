@@ -26,7 +26,7 @@ Equivalent bulk actions allow for the bulk configuration of these credentials.
 
 ### Data collector
 
-Sets the data collector responsible that will receive the request.
+Sets the data collector that will receive the request.
 
 ### SNMP
 

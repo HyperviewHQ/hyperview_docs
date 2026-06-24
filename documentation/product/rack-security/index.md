@@ -2,7 +2,7 @@
 
 # Rack Security
 
-Hyperview Rack Security lets you visualize and interact with rack door access controls for security-enabled racks. It is a separately licensed set of features that are only available for Rack Security-licensed instances, and only apply to security-enabled racks. For compatibility information see {ref}`Supported-hardware`.
+Hyperview Rack Security lets you visualize and interact with rack door access controls for security-enabled racks. It is a separately licensed set of features that are only available for Rack Security-licensed instances, and only apply to security-enabled racks. For compatibility information see {ref}`supported-hardware`.
 
 :::{note}
 To confirm if you have a Rack Security license, check the License page (*Settings → License*, Administrator-only).
@@ -16,7 +16,7 @@ Rack Security currently supports Panduit SmartZone G5 rack PDUs with Rack Access
 
 ## Linking rack door sensors
 
-With Rack Security, you do not need to manually link door sensors, they will be automatically linked in Hyperview when you add the connected rack PDU to the rack. To do so:
+With Rack Security, you do not need to manually link door sensors; they will be automatically linked in Hyperview when you add the connected rack PDU to the rack. To do so:
 
 1. Discover the rack PDU.
 2. Drag the rack PDU under the target rack in the Asset Hierarchy. The location of the sensor, i.e. Front or Rear is inferred from the rack PDU configuration.
@@ -46,7 +46,7 @@ If a rack PDU requires access control credentials (typically to allow remote doo
 
 If the intended credentials do not exist, you can add them via *Manage Credentials → Add*. You may need to refresh the Control Operations page for the new credentials to appear in the dropdown list.
 
-Control credentials can also be added in bulk using a {ref}`bulk action<Bulk-actions-doc>` from Advanced Search, an "Assets by Type" grid or the information -> Assets grid.
+Control credentials can also be added in bulk using a {ref}`bulk action<bulk-actions-doc>` from Advanced Search, an "Assets by Type" grid or the Information -> Assets grid.
 
 ## Viewing a rack's security status
 
@@ -122,7 +122,7 @@ Lock icons will appear in the Asset Hierarchy tree for racks that have security 
 
 ## Unlocking rack doors
 
-Administrators and Data Center Managers can remotely unlock security-enabled rack doors using the Unlock Front Door and Unlock Rear Door commands (provided control credentials have been already set on applicable rack PDUs; see {ref}`Setting-control-credentials`). The door unlock commands can be accessed from either of the following places.
+Administrators and Data Center Managers can remotely unlock security-enabled rack doors using the Unlock Front Door and Unlock Rear Door commands (provided control credentials have been already set on applicable rack PDUs; see {ref}`setting-control-credentials`). The door unlock commands can be accessed from either of the following places.
 
 From the right-click menu from the security-enabled rack in the Asset Hierarchy tree:
 
@@ -196,7 +196,7 @@ Any user can receive read-only event notifications for security-enabled rack doo
 
 ## Troubleshooting notes
 
-- You will need to add the Data Collector server's IP address in the rack PDU  admin panel (open the rack PDU's IP address in your browser) to receive applicable trap events. You will also need to verify your email address for Hyperview (*Account → Profile → Send verification email* → verify).
+- You will need to add the Data Collector server's IP address in the rack PDU admin panel (open the rack PDU's IP address in your browser) to receive applicable trap events. You will also need to verify your email address for Hyperview (*Account → Profile → Send verification email* → verify).
 - Due to the polling interval and other data transmission factors, the rack PDU's Events page might not list the door unlock event until several minutes after the event has taken place.
 - After sending an unlock request to an electronic lock in Hyperview, it may take up to 30 seconds before the request is received by the lock.
 - After manually locking and unlocking a mechanical lock it may take Hyperview up to 4 minutes to detect the change. This will be improved in the future.

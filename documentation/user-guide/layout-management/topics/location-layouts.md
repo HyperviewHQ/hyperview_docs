@@ -49,7 +49,7 @@ Once the map is saved, you can click a pin to see the child location's name and 
 
 ### Navigating to child location layouts
 
-You can access the Layout page of a child location by double-clicking its pin. This can be quite handy if you want to get quickly look up a data center's floor plan layout, then use the Back button on your browser to return to the map and look up another floor plan layout, and so on.
+You can access the Layout page of a child location by double-clicking its pin. This can be quite handy if you want to quickly look up a data center's floor plan layout, then use the Back button on your browser to return to the map and look up another floor plan layout, and so on.
 
 ### Using the View menu
 
@@ -67,11 +67,11 @@ You can also interact with a location map as follows:
 - Dragging the person icon onto the map opens Street View for that particular geographic location.
 - The plus and minus buttons let you zoom in and out. You can also use your mouse's scroll wheel to the same effect.
 
-Furthermore, you can click the "Keyboard shortcuts" in the bottom-right of the map to view Google Maps keyboard shortcuts.
+Furthermore, you can click the "Keyboard shortcuts" link in the bottom-right of the map to view Google Maps keyboard shortcuts.
 
 ## Using Floor Plan Mode
 
-Floor Plan Mode displays a location's floor plan. For example, you can add a background image, grids, tiles, shapes, and labels to a location layout until you arrive at an accurate representation of your data center floor's plan. You can also add racks, select a particular asset data view (such as Rack Space Utilization), and visualize heatmaps and environmental sensors.
+Floor Plan Mode displays a location's floor plan. For example, you can add a background image, grids, tiles, shapes, and labels to a location layout until you arrive at an accurate representation of your data center floor plan. You can also add racks, select a particular asset data view (such as Rack Space Utilization), and visualize heatmaps and environmental sensors.
 
 ### Setting up Floor Plan Mode
 

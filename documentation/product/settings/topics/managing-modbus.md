@@ -4,7 +4,7 @@
 
 Modbus TCP is a communication protocol typically used by facility or building level assets. Hyperview allows the creation of Modbus TCP definitions to handle the monitoring of such equipment separate from auto-discoveries.
 
-A Modbus TCP definition can be assigned to any number of assets to enable monitoring on that asset if they share the same object mapping, but only one definition can be applied to an individual asset at a time.
+A Modbus TCP definition can be assigned to any number of assets to enable monitoring on those assets if they share the same object mapping, but only one definition can be applied to an individual asset at a time. A single asset can be monitored across multiple Modbus device addresses using the same definition.
 
 ## Modbus Register Addresses
 Modbus TCP uses the 6-digit address length format to dictate register types and their address. Each register type is defined within a specific location and correlated address as per the table below.
@@ -12,7 +12,7 @@ Modbus TCP uses the 6-digit address length format to dictate register types and 
 | Register Type     | Reference Range | Prefix | Full Address    | Access    |
 | ----------------- | --------------- | ------ | --------------- | --------- |
 | Coils             | 00001 - 65536   | 0      | 000001 - 065536 | Read Only |
-| Discrete Inputs   | 00001 - 65536   | 1      | 100001 - 265536 | Read Only |
+| Discrete Inputs   | 00001 - 65536   | 1      | 100001 - 165536 | Read Only |
 | Input Registers   | 00001 - 65536   | 3      | 300001 - 365536 | Read Only |
 | Holding Registers | 00001 - 65536   | 4      | 400001 - 465536 | Read Only |
 
@@ -36,7 +36,7 @@ Hyperview uses a starting index of 0 for Modbus TCP addresses. If you are experi
 
 1. Go to *Settings → Modbus TCP Definitions*.
 2. Click *Add*. Alternatively, if you have no Modbus TCP definitions, click *Add new Modbus TCP definition.*
-3. Enter a Name and Asset Type for the definition, and click *Save*.
+3. Enter a Name and Asset Type for the definition. You can optionally enter a Description. Click *Save*.
 
 A success message will appear, and the Overview page of the new Modbus TCP definition will be displayed. Proceed to add sensor definitions.
 
@@ -52,8 +52,9 @@ Refer to the "Adding a single asset" section in {ref}`assets` for steps to manua
 
 1. While editing or adding the Modbus TCP definition, click the *Numeric Sensors* tab.
 2. Click *Add*. Alternatively, if there are no existing sensor definitions, click *Add Numeric Sensor.*
-3. Provide values for Address, Type, Data Type, Sensor Type, Sensor Name, Sensor Unit, and Multiplier. Note that the Sensor Name and Sensor Unit fields will only appear once you have selected a Sensor Type.
-4. Click *Save*.
+3. Provide values for Address, Type, Data Type, Sensor Type, Sensor Name, and Sensor Unit. Note that the Sensor Name and Sensor Unit fields will only appear once you have selected a Sensor Type.
+4. Under *Data Interpretation*, choose the Order of Operations and provide a Multiplier and Offset to apply to raw values. A Formula Preview shows how the raw value will be transformed.
+5. Click *Save*.
 
 A success message will appear, and the numeric sensor definition will be listed in the grid. Repeat the steps to add additional sensor definitions as appropriate.
 
@@ -88,7 +89,7 @@ A success message will appear in each case, and the current page will reload to 
 
 ## Deleting a Modbus TCP definition
 
-You cannot delete a Modbus TCP definition that has associated assets. After you have updated associated assets (from each asset's *Information → Monitoring* page):
+You can see which assets use a definition on the definition's *Associations* tab. You cannot delete a Modbus TCP definition that has associated assets. After you have updated associated assets (from each asset's *Information → Monitoring* page):
 
 1. Go to *Settings → Modbus TCP Definitions*.
 2. Click *Delete → Delete* for the intended definition.

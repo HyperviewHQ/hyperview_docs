@@ -8,7 +8,7 @@ The following subsystems can create alarm events and trigger an alarm notificati
 
 1. SNMP trap parsing and aggregation.
 2. Configured sensor thresholds.
-3. Asset Tracker (RFID asset tracking).
+3. AssetTracker (RFID asset tracking).
 4. Data Collector health.
 5. Asset firmware updates (for supported vendors).
 6. Host reachability.

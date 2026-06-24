@@ -5,7 +5,7 @@
 You can navigate to a certain asset from several places in Hyperview. All assets have a Dashboard page that leads to related pages.
 
 :::{note}
-You can only navigate to assets that you {ref}`have access to<Who-can-access-doc>`.
+You can only navigate to assets that you {ref}`have access to<who-can-access-doc>`.
 :::
 
 ## Using the Asset Types tree
@@ -21,7 +21,7 @@ Locations appear in the Asset Hierarchy. They are not shown in the Asset Types t
 :::
 
 :::{tip}
-For a list of supported asset types in Hyperview, see {ref}`Supported asset types<Supported-asset-types-doc>`.
+For a list of supported asset types in Hyperview, see {ref}`Supported asset types<supported-asset-types-doc>`.
 :::
 
 ```{image} /product/asset-management/media/types_tree.png
@@ -33,7 +33,7 @@ For a list of supported asset types in Hyperview, see {ref}`Supported asset type
 The Asset Hierarchy tree presents assets within a hierarchical tree structure. The All location acts as the root node for all assets. Organizations typically create locations and sub-locations corresponding to their data centers, which in turn have other kinds of assets.
 
 1. Go to *Assets → Overview → Hierarchy* to open the Asset Hierarchy.
-2. Expand nodes until arrive at your intended asset.
+2. Expand nodes until you arrive at your intended asset.
 3. Click the asset to open its Dashboard.
 
 :::{note}
@@ -48,9 +48,9 @@ Partially discovered assets appear as the Unknown asset type in the Asset Types 
 
 Besides the Asset Types and Asset Hierarchy trees, you can navigate to an asset from several other places in the application.
 
-You can {ref}`search for an asset<Search-features>` using Quick Search or Advanced Search. Additionally, you can directly open an asset's Dashboard page by clicking or double-clicking a corresponding row. Eligible grids include, but are not limited to:
+You can {ref}`search for an asset<search-features>` using Quick Search or Advanced Search. Additionally, you can directly open an asset's Dashboard page by clicking or double-clicking a corresponding row. Eligible grids include, but are not limited to:
 
-- {ref}`Discovery reports<Discovery-reports-doc>`
+- {ref}`Discovery reports<discovery-reports-doc>`
 - The Assets page of the parent asset (*Information → Assets*)
 - The Watched Assets page (*Account → Watched Assets*), provided you are watching the asset
 

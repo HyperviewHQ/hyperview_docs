@@ -71,7 +71,7 @@ Note that firmware can only be managed for discoverable physical devices. These 
 
 Hyperview uses the Firmware Version property (asset → *Information → Properties*) to store and identify an asset's current firmware version. Firmware versions are detected in either of the following contexts:
 
-- Upon {ref}`discovering assets<Discoveries-doc>` with discoverable firmware versions
+- Upon {ref}`discovering assets<discoveries-doc>` with discoverable firmware versions
 - When a Power User or above updates the Firmware Version property of a manually created asset
 
 In both contexts, an asset is considered to have "managed firmware" only if the asset's firmware group is mapped in the Hyperview Catalog. (A "firmware group" consists of firmware versions for a specific product model.)
@@ -86,7 +86,7 @@ Upon discovery, the Firmware Version property becomes read-only to prevent human
 
 ## Who can access Firmware Management features?
 
-Any user can access Firmware Management page as long as they are using a Firmware Management-licensed instance (see {ref}`View license<View-license-doc>`).
+Any user can access the Firmware Management page as long as they are using a Firmware Management-licensed instance (see {ref}`View license<view-license-doc>`).
 
 Only Administrators and Data Center Managers can initiate a firmware update.
 
@@ -104,7 +104,7 @@ The Firmware grid (*Assets → Firmware*) only gets populated when there is at l
 - Administrators can run discoveries to detect assets with firmware version metadata.
 - Power Users and above can specify a Firmware Version value for manually created assets.
 
-In both cases, you must {ref}`have access<Who-can-access-doc>` to the asset records to see them.
+In both cases, you must {ref}`have access<who-can-access-doc>` to the asset records to see them.
 
 ## Reviewing firmware installations for a firmware group
 
@@ -121,10 +121,10 @@ The grid will show assets that have a relevant firmware version installed. Note 
 ## Reviewing firmware versions
 
 For Managed Firmware, to look up versions at the firmware group level:
-\* Go to *Assets → Firmware → Managed → Details → Versions*.
+- Go to *Assets → Firmware → Managed → Details → Versions*.
 
 To look up firmware versions for a given asset:
-\* Browse to the asset → *Information → Firmware*.
+- Browse to the asset → *Information → Firmware*.
 
 Note that the Information → Firmware page will indicate the currently installed firmware version with a green checkmark in the Installed column.
 
@@ -152,7 +152,7 @@ The exact file format of the firmware installer and release notes file depends o
 
 ## Alarm events for outdated firmware
 
-An alarm event is generated at the asset level (asset → *Events*) whenever Hyperview detects outdated firmware (see "How are firmware versions detected?" above). The event stays active until one of the following things happen:
+An alarm event is generated at the asset level (asset → *Events*) whenever Hyperview detects outdated firmware (see "How are firmware versions detected?" above). The event stays active until one of the following things happens:
 
 - (For all eligible assets) The event is closed manually.
 - (For assets with discovered firmware) The latest mapped firmware version is installed.

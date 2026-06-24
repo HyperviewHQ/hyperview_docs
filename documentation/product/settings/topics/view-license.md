@@ -36,11 +36,11 @@ An asset is any physical or virtual device within your digital infrastructure th
 
 ### What kinds of sensors are supported?
 
-Hyperview currently supports direct, computed, linked and manual sensors for assets (see {ref}`Managing sensors<Managing-sensors-doc>`). What sensors are available for a given asset depends on the asset itself.
+Hyperview currently supports direct, computed, linked and manual sensors for assets (see {ref}`Managing sensors<managing-sensors-doc>`). What sensors are available for a given asset depends on the asset itself.
 
 ### What is "Max Storage Size (GB)"?
 
-The Document Management license, which is a feature add-on, increases document management capacity to 50MB per asset from 5MB. The Threshold indicates how much space you have to store document files for your assets. For more information see {ref}`Document Management<Document-management-doc>`. The calculation takes into account the total space used by user-uploaded documents and by User Inbox messages.
+The Document Management license, which is a feature add-on, increases document management capacity to 50MB per asset from 5MB. The Threshold indicates how much space you have to store document files for your assets. For more information see {ref}`Document Management<document-management-doc>`. The calculation takes into account the total space used by user-uploaded documents and by User Inbox messages.
 
 ### What are "Raw Sensor Data (Days)" and "Sensor Daily Summary (Days)"?
 
@@ -62,12 +62,14 @@ The Features section lists what Hyperview feature licenses you have. Available l
 
 - Accelerated Polling (add-on)
 - AI Assistant (default application license)
-- {ref}`AssetTracker<AssetTracker-doc>` (add-on)
+- {ref}`AssetTracker<assettracker-doc>` (add-on)
 - Connectivity Management (add-on)
-- {ref}`Document Management<Document-management-doc>` (add-on)
-- {ref}`Equinix Smart View Integration<Equinix-smart-view-integration-doc>` (add-on)
-- {ref}`Firmware Management<Firmware-management-doc>` (add-on)
+- {ref}`Document Management<document-management-doc>` (add-on)
+- {ref}`Equinix Smart View Integration<equinix-smart-view-integration-doc>` (add-on)
+- {ref}`Firmware Management<firmware-management-doc>` (add-on)
 - Infrastructure Management (default application license)
-- {ref}`Outlet Control<Outlet-control-doc>` (add-on)
-- {ref}`Rack Security<Rack-security-doc>` (add-on)
-- {ref}`ServiceNow CMDB Integration<Servicenow-cmdb-integration-doc>` (add-on)
+- {ref}`Outlet Control<outlet-control-doc>` (add-on)
+- {ref}`Rack Security<rack-security-doc>` (add-on)
+- Reporting (add-on)
+- {ref}`SAML Authentication<configuring-saml-sso-doc>` (default application license)
+- {ref}`ServiceNow CMDB Integration<servicenow-cmdb-integration-doc>` (add-on)
