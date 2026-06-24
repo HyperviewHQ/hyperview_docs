@@ -6,7 +6,7 @@ Only Administrator users can perform user administration tasks.
 
 ## Managing domains
 
-A "domain" implies a corporate email domain. Most organizations have one unique domain, but others may have different domains for sub-organizations.
+Domains are the allowed email domains for accounts that can log in to the platform. An account's email address must use one of the configured domains. Most organizations have one unique domain, but others may have different domains for sub-organizations.
 
 :::{note}
 You must add a domain before you can add any users. The primary domain for your organization will be created during the Hyperview onboarding process.
@@ -24,6 +24,8 @@ You must add a domain before you can add any users. The primary domain for your 
 The page will refresh showing a confirmation message and the newly added domain.
 
 ### Removing a domain
+
+You cannot remove a domain that has associated accounts. To remove such a domain, first delete or reassign the accounts that use it.
 
 - Click the domain's *Remove* button.
 
@@ -61,7 +63,7 @@ A success message will appear, and the user details will be updated in the Users
 
 ### Enforcing external login
 
-You can force users to log into Hyperview using their **configured external login** (refer to "Managing external logins" in {ref}`My-account-doc`). As of Hyperview 1.5, Microsoft is the only supported external login provider.
+You can force users to log into Hyperview using their **configured external login** (refer to "Managing external logins" in {ref}`My-account-doc`). Microsoft (via OpenID Connect) is the built-in external login provider. Administrators can also configure SAML 2.0 single sign-on; see "Configuring SAML single sign-on (SSO)" below.
 
 To enforce external login for a user, turn on the External Login Required toggle in the user grid. Once this is turned on, the user can no longer access Hyperview using a username/password combination.
 
@@ -159,45 +161,75 @@ You cannot delete groups that have associated users. As of Hyperview 1.5, you mu
 
 A success message will appear, and the group will no longer be listed in the Groups grid.
 
-## User provisioning with Azure AD
+## User provisioning
 
-You can auto-provision user accounts for Azure Active Directory domains that are mapped to specific user roles and groups. For example, you can create an Azure AD domain for Data Center Managers who are spread across groups called "DCM 1", "DCM 2", and "DCM 3" groups. Corresponding users will be auto-provisioned upon logging into Hyperview with their Microsoft login; you do not need to manually create user accounts for them.
+You can auto-provision user accounts for users who sign in through an external identity provider — either Microsoft (Azure AD) or a SAML 2.0 identity provider. You map a domain to a default user role and default groups; matching users are provisioned automatically the first time they sign in with their external login, so you do not need to create their accounts manually.
 
-Unprovisioned users who do not belong to a configured Azure AD domain will get an "Access Denied" error upon trying to log in with their external login credentials.
+For example, you can provision a domain for Data Center Managers who belong to groups called "DCM 1", "DCM 2", and "DCM 3". Corresponding users will be auto-provisioned the first time they sign in.
+
+Unprovisioned users who do not belong to a configured domain will get an "Access Denied" error when they try to sign in with their external login credentials.
 
 :::{note}
-The Azure AD domain must be a login domain (not an alias). For associated user accounts, the username must be the primary email account/username for the user and have the same domain as the intended Azure AD domain.
+The domain must be a login domain (not an alias). For associated user accounts, the username must be the user's primary email address and use the same domain as the configured provisioning domain.
 :::
 
-```{image} /user-guide/user-accounts/media/ad_domain.png
+```{image} /user-guide/user-accounts/media/user_provisioning.png
 :class: border-black
 ```
 
-### Adding an Azure AD domain
+### Adding a provisioning domain
 
-1. Go to *User Provisioning → Add Azure AD Domain*.
-2. Provide the Azure AD domain name (which should correspond to your corporate domain). Also specify the default user role and any default (optional) user groups for auto-provisioned users.
+1. Go to *User Provisioning → Add Domain*.
+2. Select the Domain, then specify the Default Role and any (optional) Default Groups for auto-provisioned users.
 3. Click *Add*.
 
-A success message will appear, and the Azure AD domain will be listed in the User Provisioning grid.
+A success message will appear, and the domain will be listed in the User Provisioning grid.
 
-### Updating an Azure AD domain
+### Updating a provisioning domain
 
 1. Click the corresponding *Edit* button in the User Provisioning grid.
 2. Update details as required and click *Save*.
 
 A success message will appear, and the domain details will be updated in the User Provisioning grid.
 
-```{image} /user-guide/user-accounts/media/edit_ad_domain.png
+### Deleting a provisioning domain
+
+1. Click the corresponding *Delete* button in the User Provisioning grid.
+2. Confirm the deletion.
+
+A success message will appear, and the domain will no longer be listed in the User Provisioning grid.
+
+## Configuring SAML single sign-on (SSO)
+
+Administrators can configure a SAML 2.0 compliant identity provider (IdP) for single sign-on. This is in addition to the built-in "Sign in with Microsoft" external login, which uses OpenID Connect.
+
+Go to *SAML SSO Configuration* in the user management portal, under User Administration.
+
+:::{important}
+Hyperview does not support IdP-initiated SSO. Hyperview is compliant with NIST SP 800-63C at FAL2 (Federation Assurance Level 2), which requires federation transactions to be initiated by the application, and prohibits the application from accepting unsolicited authentication assertions. See <https://pages.nist.gov/800-63-4/sp800-63c.html#fal2>
+
+Hyperview may appear in an IdP "launcher" or landing page listing available apps, but attempting to sign in via this flow will fail. Suppressing the application from appearing in the IdP launcher cannot be configured by Hyperview's metadata and is IdP-specific. In Entra ID, visibility is configured in the Enterprise Application object's Properties, with the "Visible to users?" toggle, which is enabled by default.
+:::
+
+```{image} /user-guide/user-accounts/media/saml_sso_configuration.png
 :class: border-black
 ```
 
-### Deleting an Azure AD domain
+### Service provider details
 
-1. Click the corresponding *Delete* button in the User Provisioning grid.
-2. Click *Delete* in the Delete Azure AD Domain modal.
+Hyperview provides the service provider data you need to enter into your identity provider:
 
-A success message will appear, and the domain will no longer be listed in the User Provisioning grid.
+- Entity ID
+- Assertion Consumer Service URL
+- Sign on URL
+- Token Encryption Certificate (click *Download Certificate*)
+
+### Identity provider details
+
+1. Enter a Provider Name (a friendly name such as "Azure Entra ID", "Okta", or "Ping Identity").
+2. Provide your identity provider's SAML details using a Metadata URL, a Metadata File Upload, or Manual Configuration, then click *Submit*.
+3. Optionally, use *Require SAML SSO Log In for Selected Domain* to enforce SAML SSO for a domain.
+4. Click *Save*.
 
 (managing-api-clients-doc)=
 ## Managing API clients

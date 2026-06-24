@@ -16,4 +16,5 @@ Alarm policies allow administrators to direct alarm events to specific users, gr
 ```
 
 3. Select the minimum alarm event severity that will trigger this policy.
-4. Select the combination of users, groups, and channels to receive notifications.
+4. Select the event Categories the policy applies to. By default, it applies to all categories. If you include the Sensor Threshold category, you can keep **All Sensor Thresholds** selected, or clear it to choose specific thresholds from the **Sensor Thresholds** list — letting you target the policy to individual sensor thresholds.
+5. Select the combination of users, groups, and channels to receive notifications.

@@ -1,15 +1,22 @@
 * text=auto eol=lf
 
-*.rs   text eol=lf
-*.py   text eol=lf
-*.js   text eol=lf
-*.ts   text eol=lf
-*.toml text eol=lf
-*.md   text eol=lf
-*.yml  text eol=lf
-*.yaml text eol=lf
-*.json text eol=lf
-*.xml  text eol=lf
-*.sh   text eol=lf
-*.sql  text eol=lf
-*.txt  text eol=lf
+*.cs     text eol=crlf
+*.csproj text eol=crlf
+*.js     text eol=lf
+*.json   text eol=lf
+*.md     text eol=lf
+*.props  text eol=crlf
+*.ps1    text eol=crlf
+*.py     text eol=lf
+*.rs     text eol=lf
+*.sh     text eol=lf
+*.slnx   text eol=crlf
+*.sql    text eol=lf
+*.toml   text eol=lf
+*.ts     text eol=lf
+*.txt    text eol=lf
+*.xml    text eol=lf
+*.xsd    text eol=crlf
+*.yaml   text eol=lf
+*.yml    text eol=lf
+

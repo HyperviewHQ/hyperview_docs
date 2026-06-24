@@ -791,7 +791,7 @@ Changed response : **200 OK**
 
 ### `GET` /api/asset/sensorsDailySummaries/numeric
 
-> Returns a list of numeric sensor daily summaries for each provided sensor ID for a specific
+> Returns a list of numeric sensor daily summaries for each provided sensor ID for a specific
 > UTC time range.
 
 
@@ -800,31 +800,31 @@ Changed response : **200 OK**
 
 ### `GET` /api/asset/sensorsDailySummaries/string
 
-> Returns a list of string sensor daily summaries for each provided sensor ID for a specific
+> Returns a list of string sensor daily summaries for each provided sensor ID for a specific
 > UTC time range.
 
 
 ### `GET` /api/asset/sensorsDailySummaries/string/{timeRange}
 
-> Returns a list of string sensor daily summaries for each provided sensor ID for a given time
+> Returns a list of string sensor daily summaries for each provided sensor ID for a given time
 > range option.
 
 
 ### `GET` /api/asset/sensorsDataPoints/numeric
 
-> Returns a list of numeric sensor data points for each provided sensor ID for a specific UTC
+> Returns a list of numeric sensor data points for each provided sensor ID for a specific UTC
 > time range.
 
 
 ### `GET` /api/asset/sensorsDataPoints/numeric/{timeRange}
 
-> Returns a list of numeric sensor data points for each provided sensor ID for a given time
+> Returns a list of numeric sensor data points for each provided sensor ID for a given time
 > range option.
 
 
 ### `GET` /api/asset/sensorsDataPoints/string
 
-> Returns a list of string sensor data points for each provided sensor ID for a specific UTC
+> Returns a list of string sensor data points for each provided sensor ID for a specific UTC
 > time range.
 
 

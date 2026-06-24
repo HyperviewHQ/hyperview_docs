@@ -10,7 +10,7 @@ A Bacnet/IP definition can be assigned to any number of assets to enable monitor
 
 1. Go to *Settings → BACnet/IP Definitions*.
 2. Click *Add*. Alternatively, if you have no BACnet/IP definitions, click *Add new BACnet/IP definition.*
-3. Enter a Name and Asset Type for the definition, and click *Save*.
+3. Enter a Name and Asset Type for the definition. You can optionally enter a Description. Click *Save*.
 
 A success message will appear, and the Overview page of the new BACnet/IP definition will be displayed. Proceed to add sensor definitions.
 
@@ -26,8 +26,9 @@ Refer to the "Adding a single asset" section in {ref}`assets` for steps to manua
 
 1. While editing or adding the BACnet/IP definition, click the *Numeric Sensors* tab.
 2. Click *Add*. Alternatively, if there are no existing sensor definitions, click *Add Numeric Sensor.*
-3. Provide values for Object Instance, Type, Sensor Type, Sensor Name, Sensor Unit, and Multiplier. Note that the Sensor Name and Sensor Unit fields will only appear once you have selected a Sensor Type.
-4. Click *Save*.
+3. Provide values for Object Instance, Type, Sensor Type, Sensor Name, and Sensor Unit. Note that the Sensor Name and Sensor Unit fields will only appear once you have selected a Sensor Type.
+4. Under *Data Interpretation*, choose the Order of Operations and provide a Multiplier and Offset to apply to raw values. A Formula Preview shows how the raw value will be transformed.
+5. Click *Save*.
 
 ```{image} /product/settings/media/monitoring_11.png
 :class: border-black
@@ -66,7 +67,7 @@ A success message will appear in each case, and the current page will reload to 
 
 ## Deleting a BACnet/IP definition
 
-You cannot delete a BACnet/IP definition that has associated assets. After you have updated associated assets (from each asset's *Information → Monitoring* page):
+You can see which assets use a definition on the definition's *Associations* tab. You cannot delete a BACnet/IP definition that has associated assets. After you have updated associated assets (from each asset's *Information → Monitoring* page):
 
 1. Go to *Settings → BACnet/IP Definitions*.
 2. Click *Delete → Delete* for the intended definition.

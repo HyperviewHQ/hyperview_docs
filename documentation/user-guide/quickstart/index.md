@@ -9,6 +9,10 @@ The following high-level diagram depicts the application onboarding process from
 :width: 1920
 ```
 
+:::{tip}
+The **Help** menu links to product resources, including the **API Explorer**, **Documentation**, **Support**, and **Platform Status** — where you can subscribe to operational updates for the Hyperview platform.
+:::
+
 ## Prerequisites
 
 ### Supported web browsers

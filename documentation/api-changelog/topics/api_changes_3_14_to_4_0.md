@@ -89,7 +89,7 @@
 
 ### `GET` /api/user/userInboxNotifications/{userInboxNotificationId}
 
-> Returns the user inbox notification content. Also updates the user inbox notification status
+> Returns the user inbox notification content. Also updates the user inbox notification status
 > to Read when markAsRead is true.
 
 
@@ -358,7 +358,7 @@ Deleted: `updateChildren` in `query`
 
 
 #### Request:
-> An object containing the IDs of the assets to delete and whether or not the current user
+> An object containing the IDs of the assets to delete and whether or not the current user
 > should receive a notification when the deletion job is done.
 
 
@@ -372,7 +372,7 @@ Changed content type : `application/json`
 
 
 #### Request:
-> An object containing the IDs of the assets to associate with the document ID, and whether or
+> An object containing the IDs of the assets to associate with the document ID, and whether or
 > not the current user should receive a notification when the job is done.
 
 
@@ -386,7 +386,7 @@ Changed content type : `application/json`
 
 
 #### Request:
-> An object containing the IDs of the assets associated with the document ID, and whether or
+> An object containing the IDs of the assets associated with the document ID, and whether or
 > not the current user should receive a notification when the job is done.
 
 
@@ -400,7 +400,7 @@ Changed content type : `application/json`
 
 
 #### Request:
-> An object containing the IDs of assets to be watched by the current user and whether or not
+> An object containing the IDs of assets to be watched by the current user and whether or not
 > the current user should receive a notification when the job is done.
 
 
@@ -414,7 +414,7 @@ Changed content type : `application/json`
 
 
 #### Request:
-> An object containing the IDs of assets to be unwatched by the current user and whether or
+> An object containing the IDs of assets to be unwatched by the current user and whether or
 > not the current user should receive a notification when the job is done.
 
 
@@ -428,7 +428,7 @@ Changed content type : `application/json`
 
 
 #### Request:
-> An object containing the IDs of assets to disable monitoring and whether or not the current
+> An object containing the IDs of assets to disable monitoring and whether or not the current
 > user should receive a notification when the job is done.
 
 
@@ -442,7 +442,7 @@ Changed content type : `application/json`
 
 
 #### Request:
-> An object containing the IDs of assets to enable monitoring and whether or not the current
+> An object containing the IDs of assets to enable monitoring and whether or not the current
 > user should receive a notification when the job is done.
 
 
@@ -456,8 +456,8 @@ Changed content type : `application/json`
 
 
 #### Request:
-> An object containing the IDs of assets to either remove or update the association with the
-> control credential ID and whether or not the current user should receive a notification when
+> An object containing the IDs of assets to either remove or update the association with the
+> control credential ID and whether or not the current user should receive a notification when
 > the job is done.
 
 
@@ -471,7 +471,7 @@ Changed content type : `application/json`
 
 
 #### Request:
-> An object containing the IDs of the assets to associate with the access policy ID, and
+> An object containing the IDs of the assets to associate with the access policy ID, and
 > whether or not the current user should receive a notification when the job is done.
 
 
@@ -485,7 +485,7 @@ Changed content type : `application/json`
 
 
 #### Request:
-> An object containing the IDs of the assets to associate with the product ID, and whether or
+> An object containing the IDs of the assets to associate with the product ID, and whether or
 > not the current user should receive a notification when the job is done.
 
 
@@ -499,8 +499,8 @@ Changed content type : `application/json`
 
 
 #### Request:
-> An object containing the IDs of assets to either remove or update the association with the
-> firmware credential ID and whether or not the current user should receive a notification
+> An object containing the IDs of assets to either remove or update the association with the
+> firmware credential ID and whether or not the current user should receive a notification
 > when the job is done.
 
 
@@ -514,8 +514,8 @@ Changed content type : `application/json`
 
 
 #### Request:
-> An object containing the IDs of assets to be updated with a new data collector ID for
-> control operations and whether or not the current user should receive a notification when
+> An object containing the IDs of assets to be updated with a new data collector ID for
+> control operations and whether or not the current user should receive a notification when
 > the job is done.
 
 
@@ -529,7 +529,7 @@ Changed content type : `application/json`
 
 
 #### Request:
-> An object containing asset id and access policy id for updating the asset descendants'
+> An object containing asset id and access policy id for updating the asset descendants'
 > access policies and whether the current user should receive a notification when the job is done.
 
 
@@ -1122,7 +1122,7 @@ Changed content type : `application/json`
 
 
 #### Request:
-> An object containing the IDs of assets to be updated with a new custom property value and
+> An object containing the IDs of assets to be updated with a new custom property value and
 > whether or not the current user should receive a notification when the job is done.
 
 
@@ -1136,7 +1136,7 @@ Changed content type : `application/json`
 
 
 #### Request:
-> An object containing the IDs of assets to be updated with new life cycle property values and
+> An object containing the IDs of assets to be updated with new life cycle property values and
 > whether or not the current user should receive a notification when the job is done.
 
 
@@ -1150,7 +1150,7 @@ Changed content type : `application/json`
 
 
 #### Request:
-> An object containing the IDs of assets to be updated with a new asset property value and
+> An object containing the IDs of assets to be updated with a new asset property value and
 > whether or not the current user should receive a notification when the job is done.
 
 
@@ -1490,7 +1490,7 @@ Changed: `assetType` in `query`
 
 
 Changed: `hasChildrenAssetType` in `query`
-> An optional list of asset types to filter what assets are used when determining if an asset
+> An optional list of asset types to filter what assets are used when determining if an asset
 > has children.
 
 

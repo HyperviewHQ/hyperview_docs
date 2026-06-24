@@ -7,7 +7,7 @@ You may want to extract data from Hyperview to generate reports, import the data
 - By exporting grid data as a spreadsheet
 - By writing an API client that integrates with the Hyperview API
 
-This topic covers exporting grid data. You can explore the Hyperview API in OpenAPI/Swagger format from *Help → Hyperview API* (only recommended for technical audiences).
+This topic covers exporting grid data. You can explore the Hyperview API in OpenAPI/Swagger format from *Help → API Explorer* (only recommended for technical audiences).
 
 ## Exporting grid data
 

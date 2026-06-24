@@ -19,12 +19,15 @@ The following asset types are supported in Hyperview.
 
 ### Power
 
+- Battery Bank
 - DC Rectifier
 - Generator
 - PDU/RPP
 - Power Meter
 - Rack PDU
 - Small UPS
+- Switchboard
+- Switchgear
 - Transfer Switch
 - UPS
 - Utility Breaker
