@@ -69,7 +69,7 @@ Custom Properties:
 :class: border-black
 ```
 
-8.	If an assets ports are not populated on the asset already, you may select the Auto Generate Ports option to have Hyperview create the port when importing the connections.
+8.	If an asset's ports are not populated on the asset already, you may select the Auto Generate Ports option to have Hyperview create the port when importing the connections.
 
 ```{image} /product/connectivity/media/bulk-import-connections/image8.jpeg
 :class: border-black
@@ -97,7 +97,7 @@ Custom Properties:
 If a connection fails to import, an error will be displayed in the result column. The error message will indicate what the cause of the error was. Typical errors include:
 - Termination device does not exist.
 - Connection ID does not exist.
-- Termination port does not exist (when auto-generate ports option is disabled)
+- Termination port does not exist (when the Auto Generate Ports option is disabled).
 - Custom Property field does not exist.
 :::
 

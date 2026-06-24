@@ -6,7 +6,7 @@ Hyperview provides an extensive product catalog that is actively updated and mai
 
 You can access the product catalog from Hyperview using the Catalog menu, which has dedicated pages for product models (*Catalog → Models*) and manufacturers (*Catalog → Manufacturers*). Both pages feature a searchable grid that lets you find records by Name. You can also sort and filter rows by specific column values.
 
-Power Users and above can add new manufacturers and models (including model properties and images). You can also {ref}`bulk update<Bulk-actions-doc>` assets' model and manufacturer values.
+Power Users and above can add new manufacturers and models (including model properties and images). You can also {ref}`bulk update<bulk-actions-doc>` assets' model and manufacturer values.
 
 ```{image} /product/catalog-management/media/catalog_manu.png
 :class: border-black
@@ -109,7 +109,7 @@ Power Users and above can update User-added catalog records.
 
 ### Bulk updating models for asset records
 
-You can {ref}`bulk update<Bulk-actions-doc>` the Model and Manufacturer values for assets from the Advanced Search, Assets By Type, and Assets By Location pages (*supported page → Bulk Actions → Update Model*).
+You can {ref}`bulk update<bulk-actions-doc>` the Model and Manufacturer values for assets from the Advanced Search, Assets By Type, and Assets By Location pages (*supported page → Bulk Actions → Update Model*).
 
 ## Deleting catalog records
 

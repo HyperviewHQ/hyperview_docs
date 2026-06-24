@@ -18,7 +18,7 @@ Single-clicking an asset will display a tooltip for the asset.
 
 ### Adding Rackable Assets
 
-Adding rackable (non zero-u) assets to racks can be performed in two different methods.
+Adding rackable (non Zero U) assets to racks can be performed using two different methods.
 
 1. Drag the asset from the hierarchy tree onto the rack in the hierarchy tree.
 2. Navigate to the asset's Information > Properties page and edit the Location property to set the rack.
@@ -64,7 +64,7 @@ Navigate to specific assets from the Zero U and Unplaced Assets section by doubl
 
 ### Adding Assets
 
-Adding Zero U and Unplaced assets to racks can be performed in two different methods.
+Adding Zero U and Unplaced assets to racks can be performed using two different methods.
 
 1. Drag the asset from the hierarchy tree onto the rack in the hierarchy tree.
 2. Navigate to the asset's Information > Properties page and edit the Location property to set the rack.

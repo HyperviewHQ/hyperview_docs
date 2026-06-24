@@ -24,9 +24,9 @@ For multi-page grids â€” that is, grids which are spread across multiple pages â
 ```
 
 :::{note}
-For {ref}`Advanced Search queries<Search-features>` the maximum export size is 10,000 rows.
+For {ref}`Advanced Search queries<search-features>` the maximum export size is 10,000 rows.
 :::
 
 :::{tip}
-The Sensors page also lets you export raw sensor data and sensor graphs. See {ref}`Managing sensors <Managing-sensors-doc>`.
+The Sensors page also lets you export raw sensor data and sensor graphs. See {ref}`Managing sensors <managing-sensors-doc>`.
 :::

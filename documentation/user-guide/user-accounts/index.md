@@ -29,8 +29,8 @@ All users (including those with read-only roles) can manage their account profil
 
 You can perform tasks related to user accounts from the Account Management portal (*Account → Account Management*).
 
-- For profile management, see {ref}`Managing your user profile<My-account-doc>`.
-- For user administration, see {ref}`Administering user accounts<User-administration-doc>`.
+- For profile management, see {ref}`Managing your user profile<my-account-doc>`.
+- For user administration, see {ref}`Administering user accounts<user-administration-doc>`.
 
 To exit the Account Management portal and return to the Hyperview screen, simply click the Hyperview logo or press the Back button in your browser.
 

@@ -4,7 +4,7 @@
 
 Modbus TCP is a communication protocol typically used by facility or building level assets. Hyperview allows the creation of Modbus TCP definitions to handle the monitoring of such equipment separate from auto-discoveries.
 
-A Modbus TCP definition can be assigned to any number of assets to enable monitoring on that asset if they share the same object mapping, but only one definition can be applied to an individual asset at a time. A single asset can be monitored across multiple Modbus device addresses using the same definition.
+A Modbus TCP definition can be assigned to any number of assets to enable monitoring on those assets if they share the same object mapping, but only one definition can be applied to an individual asset at a time. A single asset can be monitored across multiple Modbus device addresses using the same definition.
 
 ## Modbus Register Addresses
 Modbus TCP uses the 6-digit address length format to dictate register types and their address. Each register type is defined within a specific location and correlated address as per the table below.
@@ -12,7 +12,7 @@ Modbus TCP uses the 6-digit address length format to dictate register types and 
 | Register Type     | Reference Range | Prefix | Full Address    | Access    |
 | ----------------- | --------------- | ------ | --------------- | --------- |
 | Coils             | 00001 - 65536   | 0      | 000001 - 065536 | Read Only |
-| Discrete Inputs   | 00001 - 65536   | 1      | 100001 - 265536 | Read Only |
+| Discrete Inputs   | 00001 - 65536   | 1      | 100001 - 165536 | Read Only |
 | Input Registers   | 00001 - 65536   | 3      | 300001 - 365536 | Read Only |
 | Holding Registers | 00001 - 65536   | 4      | 400001 - 465536 | Read Only |
 

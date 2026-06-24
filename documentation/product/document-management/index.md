@@ -21,7 +21,7 @@ A "document" can be a file or a URL. The following file types are supported:
 * - Document format
   - .doc, .docx, .odt, .pdf, .rtf, .txt
 * - Image
-  - .bmp, .dib, .gif, .ico, .jfi, .jfif, jif, .jpe, .jpeg, .jpg, .png, .svg, .tif, .tiff
+  - .bmp, .dib, .gif, .ico, .jfi, .jfif, .jif, .jpe, .jpeg, .jpg, .png, .svg, .tif, .tiff
 * - List/Spreadsheet
   - .csv, .ods, .xls, .xlsx
 * - Presentation
@@ -85,12 +85,12 @@ You can add a new document from the Documents grid for all assets (*Documents*) 
    > - Specify the Type (File or Link).
    > - Provide a name for the document.
    > - Provide a brief description.
-   > - Select or drag-and-drop the file (if uploading a file; see {ref}`Document-file-types`), or enter the full URL, including the protocol (if adding a link).
+   > - Select or drag-and-drop the file (if uploading a file; see {ref}`document-file-types`), or enter the full URL, including the protocol (if adding a link).
    > - Select an existing Access Policy from the dropdown (note: Power Users and Data Center Managers can only view and select access policies that they are a member of).
 
 3. Click Save. A success message will appear.
 
-4. Proceed to add associations (see {ref}`Adding-associations`).
+4. Proceed to add associations (see {ref}`adding-associations`).
 
 ```{image} /product/document-management/media/add_document_link.png
 :class: border-black
@@ -105,7 +105,7 @@ You can add a new document from the Documents grid for all assets (*Documents*) 
    > - Specify the Type (File or Link).
    > - Provide a name for the document.
    > - Provide a brief description.
-   > - Select or drag-and-drop the file (if uploading a file; see {ref}`Document-file-types`), or enter the full URL, including the protocol (if adding a link).
+   > - Select or drag-and-drop the file (if uploading a file; see {ref}`document-file-types`), or enter the full URL, including the protocol (if adding a link).
    > - Select an Access Policy from the dropdown, or leave the asset defaults (note: Power Users and Data Center Managers can only view and select access policies that they are a member of).
 
 3. Click Save. A success message will appear.
@@ -175,7 +175,7 @@ You must be a Power User, Data Center Manager, or Administrator to be able to up
 
    > - Update the document name.
    > - Update the description.
-   > - Replace the file (see {ref}`Document-file-types`) or update the URL (remember to include the protocol), depending on whether the document is a file or a link.
+   > - Replace the file (see {ref}`document-file-types`) or update the URL (remember to include the protocol), depending on whether the document is a file or a link.
 
 3. Click Save. A success message will appear.
 
@@ -183,7 +183,7 @@ You must be a Power User, Data Center Manager, or Administrator to be able to up
 :class: border-black
 ```
 
-To update the access policy, proceed to the *Access Control* tab (see {ref}`Updating-access-policy`). To modify document associations, go to the *Associations* tab (see {ref}`Adding-associations`).
+To update the access policy, proceed to the *Access Control* tab (see {ref}`updating-access-policy`). To modify document associations, go to the *Associations* tab (see {ref}`adding-associations`).
 
 (updating-access-policy)=
 
@@ -201,7 +201,7 @@ To update a document's access policy:
 :class: border-black
 ```
 
-Administrators can manage access policies using (*Access Control → Manage Access Policies*). Refer to {ref}`Manage-access-policies-doc` for instructions.
+Administrators can manage access policies from *Access Control → Manage Access Policies*. Refer to {ref}`manage-access-policies-doc` for instructions.
 
 ## Deleting documents
 

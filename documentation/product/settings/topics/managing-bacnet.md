@@ -4,7 +4,7 @@
 
 BACnet/IP is a communication protocol typically used by facility or building level assets. Hyperview allows the creation of BACnet/IP definitions to handle the monitoring of such equipment separate from auto-discoveries.
 
-A Bacnet/IP definition can be assigned to any number of assets to enable monitoring on that asset if they share the same object mapping, but only one definition can be applied to an individual asset at a time.
+A BACnet/IP definition can be assigned to any number of assets to enable monitoring on those assets if they share the same object mapping, but only one definition can be applied to an individual asset at a time.
 
 ## Adding a BACnet/IP definition
 

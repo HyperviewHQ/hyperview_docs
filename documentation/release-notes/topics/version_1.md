@@ -798,7 +798,7 @@ This section covers significant new features, enhancements, and bug fixes in the
 
 #### External Login feature
 
-Users can use third-party credentials to single sign-on to Hyperview. Currently, only Microsoft Authentication is supported. The associated Microsoft account (such as a Microsoft 365 account)must be linked to the current Hyperview user before using the feature.
+Users can use third-party credentials to single sign-on to Hyperview. Currently, only Microsoft Authentication is supported. The associated Microsoft account (such as a Microsoft 365 account) must be linked to the current Hyperview user before using the feature.
 
 #### SNMP trap management
 
@@ -806,7 +806,7 @@ Starting with this version, Hyperview features improved asset event management. 
 
 #### Asset notification subscriptions
 
-Starting with 1.0. you can subscribe to asset events by adding “watches”. If an event is received for a watched asset, then the Hyperview users who are watching it will receive a change notification email.
+Starting with 1.0, you can subscribe to asset events by adding “watches”. If an event is received for a watched asset, then the Hyperview users who are watching it will receive a change notification email.
 
 #### IxOS REST protocol support
 

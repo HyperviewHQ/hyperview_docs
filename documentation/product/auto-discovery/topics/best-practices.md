@@ -36,7 +36,7 @@ Consider using an automation tool such as [Ansible](https://www.ansible.com/) if
 
 ### Using SSH keys for discovery
 
-If you plan to use a username and private key instead username and password for Data Collector authentication, generate the private key in RSA format.
+If you plan to use a username and private key instead of a username and password for Data Collector authentication, generate the private key in RSA format.
 
 ```
 ssh-keygen -m PEM -t rsa -b 4096

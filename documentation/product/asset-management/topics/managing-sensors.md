@@ -2,9 +2,9 @@
 
 # Managing sensors
 
-Assuming you have {ref}`access privileges<Who-can-access-doc>`, you can manage sensors associated with an asset from the Sensors page (*Information → Sensors*).
+Assuming you have {ref}`access privileges<who-can-access-doc>`, you can manage sensors associated with an asset from the Sensors page (*Information → Sensors*).
 
-What sensors are available depends on the asset itself. Hyperview supports hundreds and thousands of sensor types across its product catalog, such as power sensors, airflow sensors, analog input sensors, temperature sensors, fan speed sensors, humidity sensors, and so on.
+What sensors are available depends on the asset itself. Hyperview supports thousands of sensor types across its product catalog, such as power sensors, airflow sensors, analog input sensors, temperature sensors, fan speed sensors, humidity sensors, and so on.
 
 ```{image} /product/asset-management/media/sensors_page.png
 :class: border-black
@@ -28,7 +28,7 @@ The following sensor types are linkable:
 - Output total power sensors
 - Certain humidity sensors (Humidity, Supply Humidity, and Return Humidity)
 - Certain temperature sensors (Ambient Temperature, Temperature, Supply Temperature, and Return Temperature)
-- Rack door sensors (automatically linked; only relevant to {ref}`Rack Security licensees<Rack-security-doc>`)
+- Rack door sensors (automatically linked; only relevant to {ref}`Rack Security licensees<rack-security-doc>`)
 
 To link a sensor:
 
@@ -146,7 +146,7 @@ You can generate a sensor graph by clicking the corresponding Graph button in th
 
 Graphs can be generated for both numeric and string values over a UTC time interval. You can select a different interval (or specify a custom one) using the dropdown list.
 
-Sensor data points appear in the graph when you hover on it. The number of data points will depend on {ref}`your polling interval<Polling-interval-doc>`, device reachability, and the UTC time interval for the graph (using a time interval of 7 days or more will show daily summary data points instead of raw sensor data).
+Sensor data points appear in the graph when you hover on it. The number of data points will depend on {ref}`your polling interval<polling-interval-doc>`, device reachability, and the UTC time interval for the graph (using a time interval of 7 days or more will show daily summary data points instead of raw sensor data).
 
 :::{note}
 Sensor data retention thresholds for your Hyperview instance are listed on the License page (*Settings → License*). Daily sensor data summaries can be stored for up to ten years, depending on your license.
@@ -185,5 +185,5 @@ The file will download to your browser's default download location.
 ```
 
 :::{tip}
-You can also export the entire grid. See {ref}`Extracting Data<Extracting-data-doc>` for instructions.
+You can also export the entire grid. See {ref}`Extracting Data<extracting-data-doc>` for instructions.
 :::

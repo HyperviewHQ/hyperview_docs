@@ -35,7 +35,7 @@ You can specify IP addresses to include or exclude from your discovery as follow
 > - Provide a Description (optional).
 > - Specify the IP address or range using relevant Type-specific fields.
 
-it is recommended to keep the total number of IP addresses in a Discovery under 1,000 to keep the runtime manageable. It is also best practice to separate discoveries by location and where applicable by network function (e.g. IT network vs facilities network) to keep things organized, secure and easier to troubleshoot issues if they arise.
+It is recommended to keep the total number of IP addresses in a Discovery under 1,000 to keep the runtime manageable. It is also best practice to separate discoveries by location and where applicable by network function (e.g. IT network vs facilities network) to keep things organized, secure and easier to troubleshoot issues if they arise.
 
 ## Updating protocol settings
 

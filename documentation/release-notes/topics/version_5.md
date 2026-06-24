@@ -290,7 +290,7 @@ Customers must update to the 5.2.x version of the data collector to take advanta
 
 ### Other notable changes and improvements
 
-- Desired Temperature was added as an asset property to the following asset types; CRAC, CRAH, Chiller, In Row Cooling, Environmental Monitor,  Rack PDU, Small UPS, and Location. This is in addition to the Rack asset type. Adding this property will allow customers to create more granular threshold alarm events for these asset types.
+- Desired Temperature was added as an asset property to the following asset types; CRAC, CRAH, Chiller, In Row Cooling, Environmental Monitor, Rack PDU, Small UPS, and Location. This is in addition to the Rack asset type. Adding this property will allow customers to create more granular threshold alarm events for these asset types.
 - Enumerated sensor readings via the API have been extended to add the raw value. Customers consuming sensor updates via the API can get the string and raw enumerated values using the same API call.
 - Improvements have been added to the handling of long user-set names for various entities in the application.
 

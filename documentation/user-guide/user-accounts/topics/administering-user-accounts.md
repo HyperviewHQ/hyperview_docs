@@ -19,7 +19,7 @@ You must add a domain before you can add any users. The primary domain for your 
 ### Adding a new domain
 
 1\. Go to *Domains → Add Domain*.
-3\. Enter a valid corporate domain.
+2\. Enter a valid corporate domain.
 
 The page will refresh showing a confirmation message and the newly added domain.
 
@@ -37,7 +37,7 @@ A "user", "account" or "user account" in Hyperview terminology refers to a profi
 
 How many users you will need to create will depend on the number of employees in your organization who will need to access Hyperview. Some organizations prefer only to create a handful of users, while others might require all of their employees to be on the system.
 
-Refer to the "User Roles" section in {ref}`User-accounts-doc` for an overview of Hyperview user roles. For information about user accounts for API clients, refer to the "Managing API Clients" section below.
+Refer to the "User Roles" section in {ref}`user-accounts-doc` for an overview of Hyperview user roles. For information about user accounts for API clients, refer to the "Managing API Clients" section below.
 
 ### Adding a user
 
@@ -63,7 +63,7 @@ A success message will appear, and the user details will be updated in the Users
 
 ### Enforcing external login
 
-You can force users to log into Hyperview using their **configured external login** (refer to "Managing external logins" in {ref}`My-account-doc`). Microsoft (via OpenID Connect) is the built-in external login provider. Administrators can also configure SAML 2.0 single sign-on; see "Configuring SAML single sign-on (SSO)" below.
+You can force users to log into Hyperview using their **configured external login** (refer to "Managing external logins" in {ref}`my-account-doc`). Microsoft (via OpenID Connect) is the built-in external login provider. Administrators can also configure SAML 2.0 single sign-on; see "Configuring SAML single sign-on (SSO)" below.
 
 To enforce external login for a user, turn on the External Login Required toggle in the user grid. Once this is turned on, the user can no longer access Hyperview using a username/password combination.
 

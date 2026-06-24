@@ -2,7 +2,7 @@
 
 # Alarm Policies
 
-Alarm policies allow administrators to direct alarm events to specific users, groups or {ref}`notification channels <Notification-channels-doc>`. Follow these steps to configure an Alarm Policy.
+Alarm policies allow administrators to direct alarm events to specific users, groups or {ref}`notification channels <notification-channels-doc>`. Follow these steps to configure an Alarm Policy.
 
 ```{image} /product/settings/media/alarm-policies_1.png
 :class: border-black

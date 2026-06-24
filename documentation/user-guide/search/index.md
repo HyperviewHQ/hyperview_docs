@@ -186,9 +186,9 @@ Selecting a saved search populates the Filters panel and/or the Search Assets ro
 
 ### Generic grid operations
 
-Like most grids in Hyperview, you can {ref}`export Advanced Search results<Extracting-data-doc>` as a spreadsheet. This can be incredibly useful when you are producing reports or asset inventory records.
+Like most grids in Hyperview, you can {ref}`export Advanced Search results<extracting-data-doc>` as a spreadsheet. This can be incredibly useful when you are producing reports or asset inventory records.
 
-You can also {ref}`perform bulk actions<Bulk-actions-doc>` against Advanced Search results. For example, you can bulk delete one or more assets matching your query.
+You can also {ref}`perform bulk actions<bulk-actions-doc>` against Advanced Search results. For example, you can bulk delete one or more assets matching your query.
 
 ```{image} /user-guide/search/media/as_bulk.png
 :class: border-black

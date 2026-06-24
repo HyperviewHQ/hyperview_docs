@@ -21,11 +21,11 @@ Please [contact](https://www.hyperviewhq.com/contact/) the Hyperview Sales or Su
 
 ### Selecting a Hardware Configuration
 
-AssetTracker can be installed in two different configurations:
+AssetTracker can be installed in three different configurations:
 
 1. One-to-One: One Expansion Hub to one Gateway (V5008 AIoT)
 2. Daisy Chain: Up to 5 Expansion Hubs to one Gateway (V5008 AIoT)
-3. One to many: up to 24 Expansion Hubs to one Gateway (V6800 AIoT)
+3. One-to-Many: Up to 24 Expansion Hubs to one Gateway (V6800 AIoT)
 
 ```{figure} /product/asset-tracker/media/assettracker_diagram2.png
 :alt: AssetTracker deployment diagram 3
@@ -72,7 +72,7 @@ Example Windows Network Connections Configuration
 ```
 :::
 
-- The Gateway communicates with the data collector over port 1883/TCP. Communication is from the Gateway to the Data Collector. The {ref}`Data Collector setup documentation<Setting-up-data-collectors-doc>` has more information on the network requirements.
+- The Gateway communicates with the data collector over port 1883/TCP. Communication is from the Gateway to the Data Collector. The {ref}`Data Collector setup documentation<setting-up-data-collectors-doc>` has more information on the network requirements.
 
 ### AssetTracker Strip sizing
 

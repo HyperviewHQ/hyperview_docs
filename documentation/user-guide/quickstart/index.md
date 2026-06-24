@@ -27,7 +27,7 @@ We recommend using your preferred browser's latest stable version for security a
 
 ### Hyperview Data Collector
 
-You must {ref}`install and register the Hyperview Data Collector<Setup-data-collectors>` on at least one server that is networked with your devices to be able to monitor and discover them.
+You must {ref}`install and register the Hyperview Data Collector<setup-data-collectors>` on at least one server that is networked with your devices to be able to monitor and discover them.
 
 (inst-dc)=
 
@@ -44,7 +44,7 @@ We recommend collecting the following information beforehand to streamline the p
 
 ## Setting up domains, groups, and users
 
-A user account in Hyperview corresponds to a real-world user. Individuals can have multiple user accounts to satisfy different job functions (for example, IT Manager and QA). You must create domains, groups, and user accounts. Refer to {ref}`Administering user accounts<User-administration-doc>` for detailed documentation.
+A user account in Hyperview corresponds to a real-world user. Individuals can have multiple user accounts to satisfy different job functions (for example, IT Manager and QA). You must create domains, groups, and user accounts. Refer to {ref}`Administering user accounts<user-administration-doc>` for detailed documentation.
 
 ```{raw} html
 <div class="pb-3"><iframe src="https://player.vimeo.com/video/531998847" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
@@ -94,9 +94,9 @@ You can add shelves to racks for fine-grained asset placement. (Zero U and unpla
 
 ## Adding assets
 
-An "asset" in Hyperview lingo refers to devices and objects at a given location. These include IT equipment, facility infrastructure, containers, virtual machines, blades, and so on (see {ref}`Supported asset types<Supported-asset-types-doc>` for a complete list).
+An "asset" in Hyperview lingo refers to devices and objects at a given location. These include IT equipment, facility infrastructure, containers, virtual machines, blades, and so on (see {ref}`Supported asset types<supported-asset-types-doc>` for a complete list).
 
-You can add assets manually, as you did for locations and racks, but typically, you will want to bulk import or discover them. See {ref}`Adding assets<Adding-assets-doc>` for detailed documentation on bulk importing and manually adding assets. Discoveries are covered in the following section.
+You can add assets manually, as you did for locations and racks, but typically, you will want to bulk import or discover them. See {ref}`Adding assets<adding-assets-doc>` for detailed documentation on bulk importing and manually adding assets. Discoveries are covered in the following section.
 
 ```{raw} html
 <div class="pb-3"><iframe src="https://player.vimeo.com/video/913490838" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
@@ -111,10 +111,10 @@ You can move an asset to a rack (provided there is enough free space).
 
 ## Discovering assets
 
-Hyperview lets you automatically discover and monitor networked devices, such as servers, routers, rack PDUs, and so on. Discoveries also populate device metadata (for example, manufacturer-created product images, sensors, etc) and update existing device records to ensure they are up-to-date. For detailed documentation on discoveries, refer to {ref}`Discoveries<Discoveries-doc>` and associated topics.
+Hyperview lets you automatically discover and monitor networked devices, such as servers, routers, rack PDUs, and so on. Discoveries also populate device metadata (for example, manufacturer-created product images, sensors, etc) and update existing device records to ensure they are up-to-date. For detailed documentation on discoveries, refer to {ref}`Discoveries<discoveries-doc>` and associated topics.
 
 :::{note}
-Before you proceed, please make sure you have {ref}`set up Data Collectors<Setup-data-collectors>`. Only Administrators can perform discovery-related actions.
+Before you proceed, please make sure you have {ref}`set up Data Collectors<setup-data-collectors>`. Only Administrators can perform discovery-related actions.
 :::
 
 ### Adding and configuring a discovery
@@ -149,4 +149,4 @@ A report will be generated once the discovery has finished running. Discovered a
 
 ## What's next?
 
-If you made it this far, congratulations! You've successfully set up the application for your team and mastered the basics. Continue to explore Hyperview documentation to keep learning. To stay informed about the latest features and changes, visit our {ref}`Release notes page<Release-notes-doc>`.
+If you made it this far, congratulations! You've successfully set up the application for your team and mastered the basics. Continue to explore Hyperview documentation to keep learning. To stay informed about the latest features and changes, visit our {ref}`Release notes page<release-notes-doc>`.

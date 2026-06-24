@@ -10,7 +10,7 @@ Users can improve the documentation of the physical network layer, enhance opera
 :class: border-black
 ```
 
-2.	Edit which columns of data are visible on the Circuits overview page by Clicking the Columns Selector icon.
+2.	Edit which columns of data are visible on the Circuits overview page by clicking the Columns Selector icon.
 
 ```{image} /product/connectivity/media/circuits-overview/image2.jpeg
 :class: border-black
