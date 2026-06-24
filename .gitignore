@@ -7,3 +7,9 @@ Scripts
 .vscode
 node_modules
 pyvenv.cfg
+
+# Claude
+.claude/
+.devcontainer/
+CLAUDE.md
+.playwright*/

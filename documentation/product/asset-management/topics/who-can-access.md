@@ -6,7 +6,7 @@ An asset's access policy dictates *who* can access it. However, your user role d
 
 ## How role affects asset access
 
-By default any asset in Hyperview is accessible by any user, as per that {ref}`user's role<User-accounts-doc>`:
+By default any asset in Hyperview is accessible by any user, as per that {ref}`user's role<user-accounts-doc>`:
 
 - If you are a Reporting or Read Only user, you will have only read-only access.
 - If you are a Power User, you will be able to create, update or move assets.
@@ -23,7 +23,7 @@ An asset's access policy is essentially a whitelist of users and user groups tha
 
 ### Configuring Access Control
 
-Only Administrators can set or {ref}`manage access policies<Manage-access-policies-doc>`. To set an access policy for an asset:
+Only Administrators can set or {ref}`manage access policies<manage-access-policies-doc>`. To set an access policy for an asset:
 
 ```{image} /product/asset-management/media/access_control.png
 :class: border-black

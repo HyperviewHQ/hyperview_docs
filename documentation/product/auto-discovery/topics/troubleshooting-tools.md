@@ -11,7 +11,7 @@ Below is a list of those tools and their functions:
 3. ModbusTcpWalkerCli is used for Modbus protocol troubleshooting
 4. PortScannerCli is used to ping remote protocol ports, e.g. port 22 for SSH to see if the device responds
 5. SnmpGetCli is used for SNMP protocol troubleshooting
-6. VmwareDumpCli is used for VMWare protocol troubleshooting
+6. VmwareDumpCli is used for VMware protocol troubleshooting
 
 Other general tools bundled with the data collector are:
 

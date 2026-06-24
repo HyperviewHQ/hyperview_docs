@@ -2,7 +2,7 @@
 
 # Configuring the Definition Import Tool (DIT)
 
-Follow the steps below for instruction on configuring the DIT tool.
+Follow the steps below for instructions on configuring the DIT tool.
 
 1.  Navigate to your user home directory. Typically it is "C:\Users\UserName" on Microsoft Windows and "/home/UserName" on Linux.
 
@@ -43,7 +43,7 @@ See the {ref}`Managing API Clients<managing-api-clients-doc>` documentation for 
 - Replace instanceName with your Hyperview instance URL.
 ```
 
-4.  Execute the DIT tool. If the tool successfully connects to your Hyperview instance, then it will return a list of commands that can
+5.  Execute the DIT tool. If the tool successfully connects to your Hyperview instance, then it will return a list of commands that can
     be used.
 
 ```{image} /product/settings/media/configuring-dit/image4.jpeg

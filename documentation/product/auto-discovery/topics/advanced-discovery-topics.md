@@ -161,7 +161,7 @@ If you are logged in to a remote machine when performing the walk via **ssh/putt
 
 [Artifactory](https://jfrog.com/artifactory/) is an artifact repository that some organizations use to centralize the management of their software supply chain. If you have a requirement to use this solution for your Linux Data Collector then you will have to customize the **docker-compose.yaml** file that ships with the Linux Data Collector installation package.
 
-Once the **docker-compose.yaml** file is configured to your satisfaction then follow the {ref}`standard installation instructions <Setup-data-collectors>`.
+Once the **docker-compose.yaml** file is configured to your satisfaction then follow the {ref}`standard installation instructions <setup-data-collectors>`.
 
 Note that once you run with a customized docker-compose file, you must maintain that between releases. Hyperview may add new services or change default environment variables or startup options for the various containers composing the Linux Data Collector.
 
@@ -222,7 +222,7 @@ The Hyperview user environment may require additional configuration to enable mo
 
 Two configuration changes are needed in order to enable advanced BACnet monitoring.
 
-1. Configure the Hyperview Data Collector to run on host network mode. Add a property for "network_mode: host" to the monitoring-services in the /opt/datacollector/dc-docker-stack/docker-compose.yaml file, then restart the Data Collector containers.
+1. Configure the Hyperview Data Collector to run on host network mode. Add a property for "network_mode: host" to the monitoring-service in the /opt/datacollector/dc-docker-stack/docker-compose.yaml file, then restart the Data Collector containers.
 
 2. Configure the Hyperview Data Collector to enable broadcast mode. Add "- BACNET_BROADCAST_ENABLED=true" to the environment variables of the monitoring-service in the /opt/datacollector/dc-docker-stack/docker-compose.yaml file, then restart the Data Collector containers.
 

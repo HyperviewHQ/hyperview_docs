@@ -16,7 +16,7 @@ Work Notes can have attachments; once added, the attachments will be linked to t
 :width: 1039px
 ```
 
-Work notes can have a priority. Changing the priority of the note will change the color of the notes.
+Work notes can have a priority. Changing the priority of the note will change the color of the note.
 
 ```{image} ./media/worknotes-with-priority.png
 :alt: Work Notes with priority

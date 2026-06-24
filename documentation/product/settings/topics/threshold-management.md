@@ -35,7 +35,7 @@ To prevent duplication, we recommend searching for existing thresholds before ad
 
 4. Click *Add*.
 
-A success message will appear, and the sensor threshold will be listed in the grid. Repeat the steps to more thresholds, as needed.
+A success message will appear, and the sensor threshold will be listed in the grid. Repeat the steps to add more thresholds, as needed.
 
 ## Enabling/disabling a sensor threshold
 

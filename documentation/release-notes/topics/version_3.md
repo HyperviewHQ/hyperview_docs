@@ -163,7 +163,7 @@ This release adds support for Windows Server 2022 for Windows Data Collector dep
 
 ### Notable bug fixes
 
-- **AS-12819** Fixed an issue that caused chart height to not scale property at certain browser zoom levels
+- **AS-12819** Fixed an issue that caused chart height to not scale properly at certain browser zoom levels
 - **AS-12869** Fixed an issue that caused the ServiceNow CMDB Sync, test authentication button, to display a spinner indefinitely under certain edge conditions
 
 ______________________________________________________________________
@@ -261,7 +261,7 @@ Sensor data export has been improved to allow for up to 180 days of raw or daily
 
 ### Known issues
 
-- **AS-12726** Certain Rack PDUs (usually older models) may return unexpected data when an outlet control operation is performed, this may cause the work order to be marked as failed even if it was performed correctly. Standard troubleshooting techniques such as making sure the latest firmware is loaded and restarting the rack PDU controller may resolve the issue. if this fails, please contact Hyperview support.
+- **AS-12726** Certain Rack PDUs (usually older models) may return unexpected data when an outlet control operation is performed, this may cause the work order to be marked as failed even if it was performed correctly. Standard troubleshooting techniques such as making sure the latest firmware is loaded and restarting the rack PDU controller may resolve the issue. If this fails, please contact Hyperview support.
 
 ### Notable bug fixes
 
@@ -1063,7 +1063,7 @@ Control credentials are currently only used for Rack Security-licensed features.
 
 Floor Plan layouts now feature Temperature Heat Map and Environmental Sensors layers. You can toggle them from *location → Layout → View*.
 
-Heat maps depict current temperature ranges using different colors, and are generated based on linked sensor values (avererageTemperatureFront and averageTemperatureRear rack sensors, and placedIndirectSensors location sensors). The color scheme used is consistent with other available layers (such as *View → Average Temperature Front*). Note that the heat map is only generated if the layout has a grid.
+Heat maps depict current temperature ranges using different colors, and are generated based on linked sensor values (averageTemperatureFront and averageTemperatureRear rack sensors, and placedIndirectSensors location sensors). The color scheme used is consistent with other available layers (such as *View → Average Temperature Front*). Note that the heat map is only generated if the layout has a grid.
 
 Environmental sensors (placedIndirectSensors for locations) are represented by a "T" icon for temperature sensors and an "H" icon for humidity sensors.
 

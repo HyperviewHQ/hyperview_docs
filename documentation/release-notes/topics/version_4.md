@@ -9,13 +9,13 @@ This section covers significant changes and bug fixes in Hyperview 4.9.x since v
    Collectors to the latest version to maintain an optimal monitoring and discovery experience.
 
 2. Support for the *Windows* version of the Data Collector has ended on *January 31, 2025*. Customers must switch
-   to the Linux version of the Data Collector. Detailed {ref}`installation instructions <Setting-up-data-collectors-doc>`
+   to the Linux version of the Data Collector. Detailed {ref}`installation instructions <setting-up-data-collectors-doc>`
    are in the product documentation.
 :::
 
-### Enhanced Feature: Asset Tracker Rack Environmental Monitoring
+### Enhanced Feature: AssetTracker Rack Environmental Monitoring
 
-Customers that have purchased Asset Tracker Hardware and License can now add an environmental sensor bundle to get in-rack environmental monitoring.
+Customers that have purchased AssetTracker Hardware and License can now add an environmental sensor bundle to get in-rack environmental monitoring.
 
 :::{note}
 Please contact the Hyperview sales or support teams for more information.
@@ -42,11 +42,11 @@ This section covers significant changes and bug fixes in Hyperview 4.8.x since v
    Collectors to the latest version to maintain an optimal monitoring and discovery experience.
 
 2. Support for the *Windows* version of the Data Collector has ended on *January 31, 2025*. Customers must switch
-   to the Linux version of the Data Collector. Detailed {ref}`installation instructions <Setting-up-data-collectors-doc>`
+   to the Linux version of the Data Collector. Detailed {ref}`installation instructions <setting-up-data-collectors-doc>`
    are in the product documentation.
 
 3. The communication provider for email alarm event notifications has been changed from Twilio SendGrid to Microsoft Azure
-   Communication Services. The emails will continue to come from __no-reply@hyperviewhq.com__,
+   Communication Services. The emails will continue to come from __no-reply@hyperviewhq.com__.
 :::
 
 ### Enhanced Feature: Microsoft Teams Notification Channels
@@ -125,7 +125,7 @@ This section covers significant changes and bug fixes in Hyperview 4.7.x since v
 
 :::{important}
 1. This release has changes and improvements to the Data Collector software. We strongly recommend updating your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
-2. Support for the *Windows* version of the Data Collector will end on *January 31, 2025*. Customers are encouraged to switch to the Linux version before then. Detailed {ref}`installation instructions <Setting-up-data-collectors-doc>` are in the product documentation.
+2. Support for the *Windows* version of the Data Collector will end on *January 31, 2025*. Customers are encouraged to switch to the Linux version before then. Detailed {ref}`installation instructions <setting-up-data-collectors-doc>` are in the product documentation.
 3. Microsoft has [announced](https://devblogs.microsoft.com/microsoft365dev/retirement-of-office-365-connectors-within-microsoft-teams/) the sudden and quick retirement of the Webhook interface within Microsoft Teams. This impacts the Notifications Channels functionality. We are evaluating options and will be addressing this in an upcoming release.
 :::
 
@@ -149,7 +149,7 @@ This section covers significant changes and bug fixes in Hyperview 4.6.x since v
 
 :::{important}
 1. This release has changes and improvements to the Data Collector software. We strongly recommend updating your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
-2. Support for the *Windows* version of the Data Collector will end on *January 31, 2025*. Customers are encouraged to switch to the Linux version before then. Detailed {ref}`installation instructions <Setting-up-data-collectors-doc>` are in the product documentation.
+2. Support for the *Windows* version of the Data Collector will end on *January 31, 2025*. Customers are encouraged to switch to the Linux version before then. Detailed {ref}`installation instructions <setting-up-data-collectors-doc>` are in the product documentation.
 3. Microsoft has [announced](https://devblogs.microsoft.com/microsoft365dev/retirement-of-office-365-connectors-within-microsoft-teams/) the sudden and quick retirement of the Webhook interface within Microsoft Teams. This impacts the Notifications Channels functionality. We are evaluating options and will be addressing this in an upcoming release.
 :::
 
@@ -196,7 +196,7 @@ A widget was added to display asset documents and links.
 ### Other notable changes and improvements
 
 - The asset Actions menu has been enhanced to group related actions.
-- Server asset types can now be changed into Storage types and ViceVersa.
+- Server asset types can now be changed into Storage types and vice versa.
 - Various minor improvements to the Carbon Footprint report have been done.
 - Enhanced the Add New page of Assets, Connections and Circuits to detect unsaved changes and warn the user if they try to navigate to another page before saving.
 - Enhanced the Rack asset type to have Lifecycle information.
@@ -218,7 +218,7 @@ This section covers significant changes and bug fixes in Hyperview 4.5.x since v
 
 :::{important}
 1. This release has changes and improvements to the Data Collector software. We strongly recommend updating your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
-2. Support for the *Windows* version of the Data Collector will end on *January 31, 2025*. Customers are encouraged to switch to the Linux version before then. Detailed {ref}`installation instructions <Setting-up-data-collectors-doc>` are in the product documentation.
+2. Support for the *Windows* version of the Data Collector will end on *January 31, 2025*. Customers are encouraged to switch to the Linux version before then. Detailed {ref}`installation instructions <setting-up-data-collectors-doc>` are in the product documentation.
 3. Microsoft has [announced](https://devblogs.microsoft.com/microsoft365dev/retirement-of-office-365-connectors-within-microsoft-teams/) the sudden and quick retirement of the Webhook interface within Microsoft Teams. This impacts the Notifications Channels functionality. We are evaluating options and will be addressing this in an upcoming release.
 :::
 
@@ -326,7 +326,7 @@ This section covers significant changes and bug fixes in Hyperview 4.4.x since v
 
 :::{important}
 1. This release has changes and improvements to the Data Collector software. We strongly recommend updating your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
-2. Support for the *Windows* version of the Data Collector will end on *January 31, 2025*. Customers are encouraged to switch to the Linux version before then. Detailed {ref}`installation instructions <Setting-up-data-collectors-doc>` are in the product documentation.
+2. Support for the *Windows* version of the Data Collector will end on *January 31, 2025*. Customers are encouraged to switch to the Linux version before then. Detailed {ref}`installation instructions <setting-up-data-collectors-doc>` are in the product documentation.
 3. [CentOS Linux 7 End of Life, is June 30, 2024,](https://blog.centos.org/2023/04/end-dates-are-coming-for-centos-stream-8-and-centos-linux-7/). With that, installing the Data Collector will not be supported on this version of CentOS. If you are using this version of Linux, you must update to a {ref}`supported version <linux-prerequisites>` to use the latest version of the Data Collector.
 :::
 
@@ -378,7 +378,7 @@ This section covers significant changes and bug fixes in Hyperview 4.3.x since v
 
 :::{important}
 1. This release has changes and improvements to the Data Collector software. We strongly recommend updating your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
-2. Support for the *Windows* version of the Data Collector will end on *January 31, 2025*. Customers are encouraged to switch to the Linux version before then. Detailed {ref}`installation instructions <Setting-up-data-collectors-doc>` are in the product documentation.
+2. Support for the *Windows* version of the Data Collector will end on *January 31, 2025*. Customers are encouraged to switch to the Linux version before then. Detailed {ref}`installation instructions <setting-up-data-collectors-doc>` are in the product documentation.
 3. [CentOS Linux 7 End of Life, is June 30, 2024,](https://blog.centos.org/2023/04/end-dates-are-coming-for-centos-stream-8-and-centos-linux-7/). With that, installing the Data Collector will not be supported on this version of CentOS. If you are using this version of Linux, you must update to a {ref}`supported version <linux-prerequisites>` to use the latest version of the Data Collector.
 :::
 
@@ -413,7 +413,7 @@ This section covers significant changes and bug fixes in Hyperview 4.3.x since v
 
 - Data grids will save column selection and sorting order by default.
 - Launch Web Interface has been added as a primary action button on device asset types.
-- Volume Unit has been added as a {ref}`locale setting <Locale-settings-doc>` in the application.
+- Volume Unit has been added as a {ref}`locale setting <locale-settings-doc>` in the application.
 - The Documents section has been moved to be a primary navigation menu item. Previously, it was under the Assets section.
 - The location layout editor now supports adding triangular shapes.
 - Multi-value asset properties like serial numbers, IP addresses, and MAC addresses have been updated to have consistent sorting order in search results and other display contexts, where applicable.

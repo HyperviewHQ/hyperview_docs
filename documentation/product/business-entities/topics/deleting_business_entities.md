@@ -9,7 +9,7 @@ is permanent and irreversible.
 
 1.  Navigate to the Business Entities &gt; Overview page.
 
-2.  Click "Delete" button for a target Business Entity.
+2.  Click the "Delete" button for a target Business Entity.
 
 ```{image} /product/business-entities/media/deleting_business_entities/image1.jpeg
 :class: border-black

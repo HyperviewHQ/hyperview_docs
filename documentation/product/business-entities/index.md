@@ -2,7 +2,7 @@
 
 # Business Entities
 
-The Business Entities feature allows users to add customers, vendors, departments and other entities to associated assets, connections, circuits and documents. Business entities provide a convenient way to store, manage, and report on entity data. Use this feature to track who owns what, key documents and customize it with additional properties using Custom Properties.
+The Business Entities feature allows users to add customers, vendors, departments, and other entities, and associate them with assets, connections, circuits, and documents. Business entities provide a convenient way to store, manage, and report on entity data. Use this feature to track who owns what and which key documents apply, and to customize entities with additional properties using Custom Properties.
 
 ```{toctree}
 :maxdepth: 2

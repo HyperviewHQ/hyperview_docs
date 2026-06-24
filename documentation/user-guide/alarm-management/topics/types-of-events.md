@@ -6,7 +6,7 @@ Hyperview tracks the events and will attempt to close them if the underlying iss
 
 ## AssetTracker Status
 
-These alarm events track issues related to Asset Tracker modules no longer sending heartbeat signals, new Modules reporting to the data collector that are not associated with a rack, and new asset tags that are not associated with assets.
+These alarm events track issues related to AssetTracker modules no longer sending heartbeat signals, new modules reporting to the data collector that are not associated with a rack, and new asset tags that are not associated with assets.
 
 ## Data Collector Status
 
@@ -55,7 +55,7 @@ To leverage SNMP Traps, the assets must be configured to send them to the Hyperv
 
 Look for an SNMP Trap configuration page and set the destination (sometimes referred to as host, recipient, or network management station) as the IP address of the Data Collector.
 
-In most cases, SNMP Trap events will automatically handle their Active Closed statuses, meaning they can close themselves with Clear traps.
+In most cases, SNMP Trap events will automatically handle their Active/Closed statuses, meaning they can close themselves with Clear traps.
 
 ## Unknown Trap
 

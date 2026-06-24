@@ -25,7 +25,7 @@ You must [contact our support team](https://system.hyperviewhq.com/helpdesk) to 
 1.	Run the Configuration Tool (3.1).exe
 2.	Ensure the system running the Configuration Tool is on the same subnet as the V5008MQ gateway.
 :::{note}
-See {ref}`AssetTracker Hardware documentation<assettracker-network-requirements>` for details on configuring IP address on the same subnet as the AssetTracker gateway.
+See {ref}`AssetTracker Hardware documentation<assettracker-network-requirements>` for details on configuring an IP address on the same subnet as the AssetTracker gateway.
 :::
 3.	Connect to the gateway from the configuration tool.
 	- Enter the IP Address and Port of the V5008MQ in the “Add gateway device” section. The default IP address is either 192.168.100.100 or 192.168.0.200.

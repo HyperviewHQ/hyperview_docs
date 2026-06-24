@@ -1,3 +1,5 @@
+(ai-assistant)=
+
 # AI Assistant
 
 Administrators can enable the AI Assistant. This feature is designed to help users answer questions about the application, and perform safe actions such as navigation and summarization.

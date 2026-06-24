@@ -9,7 +9,7 @@ A "bulk action" is an action that you can perform against multiple records. For 
 - Assets By Location
 
 :::{note}
-This topic does not cover {ref}`bulk importing assets<Adding-assets-doc>` or bulk importing custom properties as they are not available from the *Bulk Actions* menu. Furthermore, bulk actions related to {ref}`user administration<User-administration-doc>` are not covered here.
+This topic does not cover {ref}`bulk importing assets<adding-assets-doc>` or bulk importing custom properties as they are not available from the *Bulk Actions* menu. Furthermore, bulk actions related to {ref}`user administration<user-administration-doc>` are not covered here.
 :::
 
 ```{image} /product/asset-management/media/bulkactions.png
@@ -18,7 +18,7 @@ This topic does not cover {ref}`bulk importing assets<Adding-assets-doc>` or bul
 
 ## Supported bulk actions
 
-Availability of bulk actions depends on two factors: your {ref}`user role<User-accounts-doc>` and your {ref}`feature licenses<View-license-doc>`. The following bulk actions are currently supported in Hyperview:
+Availability of bulk actions depends on two factors: your {ref}`user role<user-accounts-doc>` and your {ref}`feature licenses<view-license-doc>`. The following bulk actions are currently supported in Hyperview:
 
 :::{list-table}
 :header-rows: 1
@@ -64,7 +64,7 @@ Availability of bulk actions depends on two factors: your {ref}`user role<User-a
   - Power User
   - Infrastructure Management
 * - *Cancel Mute Notifications*
-  - Enables Notifications
+  - Enables notifications
   - Power User
   - Infrastructure Management
 * - *Start Watching*

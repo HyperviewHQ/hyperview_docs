@@ -6,7 +6,7 @@ Three types of data are collected by Hyperview:
 - Data to monitor the utilization of assets (e.g. power draw or CPU utilization)
 - Data to graph the relationship of an asset in relation to other assets (e.g. network connectivity and power connectivity).
 
-With that in mind, data collection follows these design tenants to ensure security and privacy:
+With that in mind, data collection follows these design tenets to ensure security and privacy:
 
 - *The customer is in control of what protocols to enable.*
 - *The customer is in control of the privilege level of the user used to collect data. Data collection will function with read-only access levels.*
@@ -32,7 +32,7 @@ The following list may change based on the capabilities of the target systems, v
 - Chassis physical security sensor
 - Processor type, make and model
 - Power supply sensors
-- Power state Sensor
+- Power state sensor
 - Memory type, make and model
 - Drive slot configuration
 - BMC LAN information
@@ -160,7 +160,7 @@ SNMP is a definitions-based protocol and supports a large variety of devices, ty
 
 ### In-Row Cooling
 
-- Airflow
+- Air flow
 - Cooling demand
 - Cooling load
 - Cooling output

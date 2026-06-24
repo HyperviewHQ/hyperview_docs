@@ -22,7 +22,7 @@ Only licensed instances will have relevant features. To confirm if you have an O
 
 ## Supported hardware vendors
 
-The Outlet Control feature is **definition based** meaning that the system is adaptive and support can be added quickly with the right information.
+The Outlet Control feature is **definition based**, meaning that the system is adaptive and support can be added quickly with the right information.
 
 At the time of release, a large number of device models from the following vendors are supported:
 
@@ -46,7 +46,7 @@ Outlet control functions are exposed on the Layout page. Please note the followi
 
 1. A Control license. This enables the Outlet Control, Firmware Management and Rack Security features
 2. A supported device
-3. A configured device. I.e. The device is configured to allow outlet control and the appropriate {ref}`control operations<Control-operations-doc>` parameters set.
+3. A configured device. I.e. The device is configured to allow outlet control and the appropriate {ref}`control operations<control-operations-doc>` parameters are set.
 
 :::{note}
 All user roles can access the Layout page for outlet control, but only Administrator and Data Center Manager users can initiate a control action.
@@ -101,17 +101,17 @@ Once a power-cycle request is made a work order is created and assigned. Progres
 ```
 
 :::{note}
-To make sure the latest outlet status is displayed, Outlet Control operations will trigger a sensor refresh on affected device. Due to the distributed nature of the application, the refresh operation may take a few minutes to complete.
+To make sure the latest outlet status is displayed, Outlet Control operations will trigger a sensor refresh on the affected device. Due to the distributed nature of the application, the refresh operation may take a few minutes to complete.
 :::
 
 ## Troubleshooting Tips
 
-There can be a lot of hardware, software and configuration variations within an device model family. When troubleshooting issues with Outlet Control please consider the following troubleshooting tips:
+There can be a lot of hardware, software and configuration variations within a device model family. When troubleshooting issues with Outlet Control please consider the following troubleshooting tips:
 
 - License is enabled. You can verify that the Outlet Control license flag is enabled for your Hyperview instance by navigating to Settings -> License.
 - The device supports outlet control. You can consult your device's datasheet or user manual.
 - The device has been successfully discovered by Hyperview. Manually added devices cannot be controlled.
 - The device is supported for outlet control operations. The system will return an error if the device is not supported. If you believe the device can support outlet control then please contact Hyperview support to help add support for this device.
-- The correct {ref}`control operations<Control-operations-doc>` parameters are set.
+- The correct {ref}`control operations<control-operations-doc>` parameters are set.
 - The selected data collector is reporting and has network access to the device. This can be checked by navigating to the asset -> Information -> Sensors (list view) and checking the last sensor update time, and the assigned data collector.
 - The device is configured to allow outlet control. Some devices allow outlet control to be disabled with a firmware configuration parameter. If that option is set, outlet control operation will not be successful even though the hardware supports it.

@@ -4,7 +4,7 @@ Create a new Business Entity in Hyperview by following these steps.
 
 1.  Open the Business Entities feature menu.
 
-2.  Click "Add New" menu option.
+2.  Click the "Add New" menu option.
 
 ```{image} /product/business-entities/media/adding_business_entities/image1.jpeg
 :class: border-black

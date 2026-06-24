@@ -7,7 +7,7 @@ You may want to extract data from Hyperview to generate reports, import the data
 - By exporting grid data as a spreadsheet
 - By writing an API client that integrates with the Hyperview API
 
-This topic covers exporting grid data. You can explore the Hyperview API in OpenAPI/Swagger format from *Help → Hyperview API* (only recommended for technical audiences).
+This topic covers exporting grid data. You can explore the Hyperview API in OpenAPI/Swagger format from *Help → API Explorer* (only recommended for technical audiences).
 
 ## Exporting grid data
 
@@ -24,9 +24,9 @@ For multi-page grids — that is, grids which are spread across multiple pages �
 ```
 
 :::{note}
-For {ref}`Advanced Search queries<Search-features>` the maximum export size is 10,000 rows.
+For {ref}`Advanced Search queries<search-features>` the maximum export size is 10,000 rows.
 :::
 
 :::{tip}
-The Sensors page also lets you export raw sensor data and sensor graphs. See {ref}`Managing sensors <Managing-sensors-doc>`.
+The Sensors page also lets you export raw sensor data and sensor graphs. See {ref}`Managing sensors <managing-sensors-doc>`.
 :::

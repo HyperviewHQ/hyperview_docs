@@ -14,7 +14,7 @@ This setting is off by default.
 
 ## Diagnostic Data
 
-Administrators can use this setting enable the logging of diagnostic data while troubleshooting issues with Hyperview Support. This setting can be disabled at any time. 
+Administrators can use this setting to enable the logging of diagnostic data while troubleshooting issues with Hyperview Support. This setting can be disabled at any time. 
 
 This setting is off by default.
 

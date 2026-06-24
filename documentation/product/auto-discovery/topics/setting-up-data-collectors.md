@@ -2,7 +2,7 @@
 
 # Setting up Data Collectors
 
-The Hyperview Data Collector collects and relays data back to the Hyperview platform. It covers the following functional areas: discovery, monitoring, control operations (for example, {ref}`setting control credentials <Setting-control-credentials>`), RFID asset tracking, and trap listening.
+The Hyperview Data Collector collects and relays data back to the Hyperview platform. It covers the following functional areas: discovery, monitoring, control operations (for example, {ref}`setting control credentials <setting-control-credentials>`), RFID asset tracking, and trap listening.
 
 You must register a Data Collector before it can relay information. You can only trigger the registration from the machine that hosts the Data Collector, and the process requires a unique, limited time, single use Registration Token for that particular Data Collector.
 
@@ -121,7 +121,7 @@ Please ensure the asset can reach the targeted Data Collector on the applicable 
 
 ### Firewall considerations
 
-Firewalls can interfere with Data Collector communication. We recommended that you test connectivity for the protocols and features you use. The asset discovery report can provide information that may be helpful in troubleshooting connectivity issues.
+Firewalls can interfere with Data Collector communication. We recommend that you test connectivity for the protocols and features you use. The asset discovery report can provide information that may be helpful in troubleshooting connectivity issues.
 
 ## Downloading the Data Collector
 
@@ -139,7 +139,7 @@ Firewalls can interfere with Data Collector communication. We recommended that y
 Please download the Data Collector version relevant to your CPU architecture. The Linux (AMD64) Data Collector is intended for Intel and AMD CPU-based systems. Linux (RPI ARM64) Data Collector is for Raspberry Pi systems.
 :::
 
-A compressed Data Collector setup package will be downloaded to your browser's default download location. The filename will resemble linuxDataCollector-9999.tgz", where "9999" represents the version number.
+A compressed Data Collector setup package will be downloaded to your browser's default download location. The filename will resemble "linuxDataCollector-9999.tgz", where "9999" represents the version number.
 
 5. (_Optional_) Download the SHA256SUM file using wget and then use the `sha256sum -c <filename>` command to verify file integrity. If you are on Windows, then PowerShell `Get-FileHash -Algorithm SHA256 <filename>` command will give you the hash of the downloaded file and you can then do manual verification by comparing the downloaded hash file with the result of the command.
 
