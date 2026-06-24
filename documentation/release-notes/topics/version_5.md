@@ -5,9 +5,10 @@
 This section covers significant changes and bug fixes in Hyperview 5.6.x since version 5.5.x
 
 :::{important}
+
 1. This release has changes and improvements to the Data Collector software. We strongly recommend updating your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
 2. Customers using Hyperview's open-source tools, such as hvcli, must update to the latest version.
-:::
+   :::
 
 ### Enhanced Feature: Modbus and BACnet definitions
 
@@ -34,6 +35,17 @@ The following new asset types have been added to the product.
 - **AS-20327** Fixed a bug that could cause the dashboard Auto-Refresh to freeze.
 - **AS-20584** Fixed a bug that could cause component asset sensors to not be returned in Advanced Search results when filtering.
 
+### Changes in version 5.6.1
+
+- **AS-20634** Fixed a bug that could cause Advanced Search to not return results when filtering on multiple properties.
+- **AS-20635** Fixed a bug that could cause the PDU/RPP layout to not show when merging PDU/RPP assets.
+- **AS-20654** Exposed AssetTracker internal batch polling configuration so it can be set by advanced users and Hyperview support.
+
+### Changes in version 5.6.2
+
+- **AS-20660** Fixed a bug that could cause the asset monitoring state to not save under certain conditions.
+- **AS-20696** Fixed a bug that could cause an asset with Modbus components to save with the wrong address under certain conditions.
+
 ## Hyperview 5.5 (April 08, 2026)
 
 ```{raw} html
@@ -45,9 +57,10 @@ The following new asset types have been added to the product.
 This section covers significant changes and bug fixes in Hyperview 5.5.x since version 5.4.x
 
 :::{important}
+
 1. This release has changes and improvements to the Data Collector software. We strongly recommend updating your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
 2. Customers using Hyperview's open-source tools, such as hvcli, must update to the latest version.
-:::
+   :::
 
 ### Enhanced Feature: SAML 2.0 Single Sign-On Support
 
@@ -126,10 +139,11 @@ Platform Status is now accessible via the product's help menu. Users can subscri
 This section covers significant changes and bug fixes in Hyperview 5.4.x since version 5.3.x
 
 :::{important}
+
 1. This release has changes and improvements to the Data Collector software. We strongly recommend updating your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
 2. Customers using Hyperview's open-source tools, such as hvcli, must update to the latest version.
 3. To ensure the new "Access Policy" column displays in the correct order within the Sensors List, users may need to clear their browser cache.
-:::
+   :::
 
 ### Enhanced Feature: Sensor Management
 
@@ -227,12 +241,13 @@ The C68 Expansion Hub and door sensors may not be compatible with older gateways
 This section covers significant changes and bug fixes in Hyperview 5.3.x since version 5.2.x
 
 :::{important}
+
 1. This release has changes and improvements to the Data Collector software. We strongly recommend updating
    your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery
    experience.
 
 2. Customers using Hyperview open-source tools such as hvcli must update to the latest version.
-:::
+   :::
 
 ### Enhanced Feature: Sensor Management
 
@@ -253,12 +268,13 @@ An enhancement to sensor management was added that allows users to change sensor
 This section covers significant changes and bug fixes in Hyperview 5.2.x since version 5.1.x
 
 :::{important}
+
 1. This release has changes and improvements to the Data Collector software. We strongly recommend updating
    your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery
    experience.
 
 2. Customers using Hyperview open-source tools such as hvcli must update to the latest version.
-:::
+   :::
 
 ### Enhanced Feature: Connectivity
 
@@ -310,7 +326,6 @@ Customers must update to the 5.2.x version of the data collector to take advanta
 
 - **AS-19317** Fixed a bug that, under certain conditions, could cause updates to existing Modbus Definitions not to save.
 
-
 ## Hyperview 5.1 (August 22, 2025)
 
 ```{raw} html
@@ -322,12 +337,13 @@ Customers must update to the 5.2.x version of the data collector to take advanta
 This section covers significant changes and bug fixes in Hyperview 5.1.x since version 5.0.x
 
 :::{important}
+
 1. This release has changes and improvements to the Data Collector software. We strongly recommend updating
    your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery
    experience.
 
 2. Customers using Hyperview open-source tools such as hvcli/asset tool must update to the latest version.
-:::
+   :::
 
 ### New Licensed Feature: Accelerated Polling
 
@@ -425,12 +441,13 @@ Please refer to the Hyperview product documentation and user guide for more info
 This section covers significant changes and bug fixes in Hyperview 5.0.x since version 4.9.x
 
 :::{important}
+
 1. This release has changes and improvements to the Data Collector software. We strongly recommend updating
    your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery
    experience.
 
 2. Customers using Hyperview open-source tools such as asset tool must update to the latest version.
-:::
+   :::
 
 ### New Feature: AI Assistant Beta
 
@@ -481,8 +498,9 @@ Users can now provide horizontal and vertical offsets on grids to place them mor
 A **Settings -> General -> Data Sharing** page has been added to allow administrators to control Catalog and Diagnostic data sharing.
 
 :::{note}
+
 - Data sharing is disabled by default.
-:::
+  :::
 
 ### Other notable changes and improvements
 
@@ -503,3 +521,4 @@ A **Settings -> General -> Data Sharing** page has been added to allow administr
 ### Changes in version 5.0.1
 
 - **AS-18075** Fixed a bug that, under certain conditions, caused saved searches not to work properly with the new search system.
+
