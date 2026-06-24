@@ -4,7 +4,7 @@
 
 The Rack Layout page is typically used to view and interact with the contents of a rack.
 
-By default the Rack Layout page is populated with the assets that are located within the rack — an Administrator, Data Center Manager, or Power User are able to interact with and manage the rack layouts, while Read Only and Reporting users are only able to view the content.
+By default, the Rack Layout page is populated with the assets that are located within the rack. Administrators, Data Center Managers, and Power Users can interact with and manage the rack layout, while Read Only and Reporting users can only view the content.
 
 ## Rack Elevation
 
@@ -18,10 +18,10 @@ Single-clicking an asset will display a tooltip for the asset.
 
 ### Adding Rackable Assets
 
-Adding rackable (non Zero U) assets to racks can be performed using two different methods.
+Adding rackable (non-Zero U) assets to racks can be performed using two different methods:
 
 1. Drag the asset from the hierarchy tree onto the rack in the hierarchy tree.
-2. Navigate to the asset's Information > Properties page and edit the Location property to set the rack.
+2. Navigate to the asset's Information > Properties page and edit the Location property to set the desired rack.
 
 :::{note}
 Rackable assets will require an RU location and Rack Side value.
@@ -65,10 +65,10 @@ Navigate to specific assets from the Zero U and Unplaced Assets section by doubl
 
 ### Adding Assets
 
-Adding Zero U and Unplaced assets to racks can be performed using two different methods.
+Adding Zero U and Unplaced assets to racks can be performed using two different methods:
 
 1. Drag the asset from the hierarchy tree onto the rack in the hierarchy tree.
-2. Navigate to the asset's Information > Properties page and edit the Location property to set the rack.
+2. Navigate to the asset's Information > Properties page and edit the Location property to set the desired rack.
 
 :::{note}
 Zero U assets will require a Rack Side and Rack Position value.
