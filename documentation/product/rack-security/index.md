@@ -15,7 +15,7 @@ To confirm if you have a Rack Security license, check the License page (*Setting
 Rack Security currently supports:
 
 - Panduit SmartZone G5 rack PDUs with Rack Access Control sensors and accessories.
-- TANlock 3 smart rack locks, manufactured by FATH Mechatronics GmbH and distributed by OEM partners such as EATON.
+- TANlock 3 smart rack locks, manufactured by FATH Mechatronics GmbH and distributed by OEM partners such as Eaton.
 
 ## Linking rack door sensors
 
