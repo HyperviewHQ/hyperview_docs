@@ -222,7 +222,7 @@ Any user can receive read-only event notifications for security-enabled rack doo
 
 ## Troubleshooting notes
 
-- To receive applicable trap events, make sure the Hyperview Data Collector is set as one of the device's SNMP trap receivers, as recommended under {ref}`setting-control-credentials`. For a Panduit rack PDU, add the Data Collector server's IP address in the rack PDU admin panel (open the rack PDU's IP address in your browser).
+- To receive applicable trap events, make sure the Hyperview Data Collector is set as one of the device's SNMP trap receivers, as recommended under {ref}`setting-control-credentials`.
 - Due to the polling interval and other data transmission factors, the rack PDU's Events page might not list the door unlock event until several minutes after the event has taken place.
 - After sending an unlock request to an electronic lock in Hyperview, it may take up to 30 seconds before the request is received by the lock.
 - After manually locking and unlocking a mechanical lock it may take Hyperview up to 4 minutes to detect the change. This will be improved in the future.
