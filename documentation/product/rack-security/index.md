@@ -12,14 +12,17 @@ To confirm if you have a Rack Security license, check the License page (*Setting
 
 ## Supported hardware
 
-Rack Security currently supports Panduit SmartZone G5 rack PDUs with Rack Access Control sensors and accessories.
+Rack Security currently supports:
+
+- Panduit SmartZone G5 rack PDUs with Rack Access Control sensors and accessories.
+- TANlock 3 smart rack locks, manufactured by FATH Mechatronics GmbH and distributed by OEM partners such as EATON.
 
 ## Linking rack door sensors
 
 With Rack Security, you do not need to manually link door sensors; they will be automatically linked in Hyperview when you add the connected rack PDU to the rack. To do so:
 
 1. Discover the rack PDU.
-2. Drag the rack PDU under the target rack in the Asset Hierarchy. The location of the sensor, i.e. Front or Rear is inferred from the rack PDU configuration.
+2. Drag the rack PDU under the target rack in the Asset Hierarchy. The location of the sensor, i.e. Front or Rear is inferred from the rack PDU configuration (see {ref}`lock-positioning`).
 
 ```{image} media/rpdu_added.png
 :alt: rPDU Added
@@ -47,6 +50,29 @@ If a rack PDU requires access control credentials (typically to allow remote doo
 If the intended credentials do not exist, you can add them via *Manage Credentials → Add*. You may need to refresh the Control Operations page for the new credentials to appear in the dropdown list.
 
 Control credentials can also be added in bulk using a {ref}`bulk action<bulk-actions-doc>` from Advanced Search, an "Assets by Type" grid or the Information -> Assets grid.
+
+:::{note}
+As a best practice, set the Hyperview Data Collector as one of the SNMP trap receivers on each controlled device (for example, a rack PDU or TANlock lock) so that the device reports its events to Hyperview.
+:::
+
+## Configuring TANlock smart rack locks
+
+TANlock 3 smart rack locks are added to Hyperview as their own assets. To configure a lock:
+
+1. Discover the TANlock device.
+2. Place the device in the rack on the appropriate side (Front or Rear).
+3. Once the rack is configured, set the appropriate SNMP control credentials on the lock (see {ref}`setting-control-credentials`).
+
+Authorized users can then send unlock signals to the lock (see the "Unlocking rack doors" section below).
+
+(lock-positioning)=
+
+## Lock positioning
+
+How Hyperview determines which side of the rack a lock is on (Front or Rear) depends on the product:
+
+- TANlock - after the lock is discovered, you place it on the appropriate rack side (Front or Rear) yourself, as described in "Configuring TANlock smart rack locks" above.
+- Panduit - the smart lock is connected to a rack PDU, and that rack PDU must be placed in the rack. Hyperview detects the lock and its sensors when the rack PDU is discovered. If a lock is detected, its assignment to the Front or Rear of the rack is determined by the rack PDU configuration: a Cold Aisle assignment maps to Front, and a Hot Aisle assignment maps to Rear.
 
 ## Viewing a rack's security status
 
@@ -122,7 +148,7 @@ Lock icons will appear in the Asset Hierarchy tree for racks that have security 
 
 ## Unlocking rack doors
 
-Administrators and Data Center Managers can remotely unlock security-enabled rack doors using the Unlock Front Door and Unlock Rear Door commands (provided control credentials have been already set on applicable rack PDUs; see {ref}`setting-control-credentials`). The door unlock commands can be accessed from either of the following places.
+Administrators and Data Center Managers can remotely unlock security-enabled rack doors using the Unlock Front Door and Unlock Rear Door commands (provided control credentials have been already set on the applicable rack PDU or lock; see {ref}`setting-control-credentials`). The door unlock commands can be accessed from either of the following places.
 
 From the right-click menu from the security-enabled rack in the Asset Hierarchy tree:
 
@@ -196,7 +222,7 @@ Any user can receive read-only event notifications for security-enabled rack doo
 
 ## Troubleshooting notes
 
-- You will need to add the Data Collector server's IP address in the rack PDU admin panel (open the rack PDU's IP address in your browser) to receive applicable trap events. You will also need to verify your email address for Hyperview (*Account → Profile → Send verification email* → verify).
+- To receive applicable trap events, make sure the Hyperview Data Collector is set as one of the device's SNMP trap receivers, as recommended under {ref}`setting-control-credentials`. For a Panduit rack PDU, add the Data Collector server's IP address in the rack PDU admin panel (open the rack PDU's IP address in your browser).
 - Due to the polling interval and other data transmission factors, the rack PDU's Events page might not list the door unlock event until several minutes after the event has taken place.
 - After sending an unlock request to an electronic lock in Hyperview, it may take up to 30 seconds before the request is received by the lock.
 - After manually locking and unlocking a mechanical lock it may take Hyperview up to 4 minutes to detect the change. This will be improved in the future.
