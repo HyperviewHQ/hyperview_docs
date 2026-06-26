@@ -46,6 +46,11 @@ The following new asset types have been added to the product.
 - **AS-20660** Fixed a bug that could cause the asset monitoring state to not save under certain conditions.
 - **AS-20696** Fixed a bug that could cause an asset with Modbus components to save with the wrong address under certain conditions.
 
+### Changes in version 5.6.3
+
+- **AS-20713** Updated frontend dependency packages.
+- **AS-20714** Updated backend dependency packages.
+
 ## Hyperview 5.5 (April 08, 2026)
 
 ```{raw} html
