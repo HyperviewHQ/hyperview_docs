@@ -242,6 +242,10 @@ The Token Encryption Certificate serves two purposes when you configure your ide
 3. Optionally, use *Require SAML SSO Log In for Selected Domain* to enforce SAML SSO for a domain.
 4. Click *Save*.
 
+:::{important}
+If you are using **Entra ID**, please refer to the {ref}`Microsoft Entra ID SAML Configuration Guide<entra-id-saml-configuration-doc>`.
+:::
+
 (managing-api-clients-doc)=
 ## Managing API clients
 

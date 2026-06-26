@@ -39,5 +39,6 @@ To exit the Account Management portal and return to the Hyperview screen, simply
 
 topics/managing-your-user-profile
 topics/administering-user-accounts
+topics/entra-id-saml-configuration-guide
 topics/account-security
 ```
