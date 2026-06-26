@@ -34,7 +34,7 @@ Hyperview uses a starting index of 0 for Modbus TCP addresses. If you are experi
 
 ## Adding a Modbus TCP definition
 
-1. Go to *Settings → Modbus TCP Definitions*.
+1. Go to *Settings → Definitions → Modbus TCP Definitions*.
 2. Click *Add*. Alternatively, if you have no Modbus TCP definitions, click *Add new Modbus TCP definition.*
 3. Enter a Name and Asset Type for the definition. You can optionally enter a Description. Click *Save*.
 
@@ -48,11 +48,29 @@ Refer to the "Adding a single asset" section in {ref}`assets` for steps to manua
 :class: border-black
 ```
 
+### Adding components
+
+Use components when a single asset contains multiple Modbus device (slave) addresses. Each component represents one address and is managed individually under the parent device, so a single definition can cover all of the asset's addresses.
+
+1. While editing or adding the Modbus TCP definition, click the *Components* tab.
+2. Click *Add*. Alternatively, if there are no existing components, click *Add Component.*
+3. Enter a Component Name and click *Save*.
+
+A success message will appear, and the component will be listed in the grid. Repeat the steps to add additional components as appropriate. When adding a numeric or non-numeric sensor definition, you can then assign the sensor to a component using the optional Component field.
+
+```{image} /product/settings/media/modbus_components.png
+:class: border-black
+```
+
+:::{note}
+If you are unsure whether components are appropriate for your setup, contact Hyperview support for guidance.
+:::
+
 ### Adding a numeric sensor definition
 
 1. While editing or adding the Modbus TCP definition, click the *Numeric Sensors* tab.
 2. Click *Add*. Alternatively, if there are no existing sensor definitions, click *Add Numeric Sensor.*
-3. Provide values for Address, Type, Data Type, Sensor Type, Sensor Name, and Sensor Unit. Note that the Sensor Name and Sensor Unit fields will only appear once you have selected a Sensor Type.
+3. Provide values for Address, Type, Data Type, Sensor Type, Sensor Name, and Sensor Unit. Note that the Sensor Unit field will only appear once you have selected a Sensor Type. If the definition has components, you can optionally assign the sensor to a Component (see "Adding components" above).
 4. Under *Data Interpretation*, choose the Order of Operations and provide a Multiplier and Offset to apply to raw values. A Formula Preview shows how the raw value will be transformed.
 5. Click *Save*.
 
@@ -62,7 +80,7 @@ A success message will appear, and the numeric sensor definition will be listed 
 
 1. While editing or adding the Modbus TCP definition, click the *Non-numeric Sensors* tab.
 2. Click *Add*. Alternatively, if there are no existing sensor definitions, click *Add Non-numeric Sensor.*
-3. Provide values for Object Instance, Type, Sensor Type, Sensor Name. Additionally, you can modify Value mappings (for all types) or add Value mappings (for non-binary types).
+3. Provide values for Address, Type, Sensor Type, Sensor Name. Additionally, you can modify Value mappings (for all types) or add Value mappings (for non-binary types). If the definition has components, you can optionally assign the sensor to a Component (see "Adding components" above).
 4. Click *Save*.
 
 ```{image} /product/settings/media/modbus_2.png
@@ -73,7 +91,7 @@ A success message will appear, and the non-numeric sensor definition will be lis
 
 ## Updating a Modbus TCP definition
 
-1. Go to *Settings → Modbus TCP Definitions → Edit.*
+1. Go to *Settings → Definitions → Modbus TCP Definitions → Edit.*
 2. Update values from the *Overview* or *Numeric Sensors* tab as required, and save your changes.
 
 A success message will appear for each change, and the current page will reload to reflect the change.
@@ -91,7 +109,7 @@ A success message will appear in each case, and the current page will reload to 
 
 You can see which assets use a definition on the definition's *Associations* tab. You cannot delete a Modbus TCP definition that has associated assets. After you have updated associated assets (from each asset's *Information → Monitoring* page):
 
-1. Go to *Settings → Modbus TCP Definitions*.
+1. Go to *Settings → Definitions → Modbus TCP Definitions*.
 2. Click *Delete → Delete* for the intended definition.
 
 A success message will appear, and the current page will reload to reflect the change.

@@ -1,0 +1,4 @@
+# Prettier does not understand MyST/Sphinx Markdown directives
+# (:::{...} admonitions, {list-table}, {toctree}, {ref}) and reflows
+# them into broken output. Leave the documentation Markdown untouched.
+documentation/**/*.md
