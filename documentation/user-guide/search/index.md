@@ -22,8 +22,8 @@ The Advanced Search page is also accessible from the **Advanced** tab of the sea
 
 Advanced Search has two tabs:
 
-- **Assets** — search for assets (described throughout this section).
-- **Sensors** — search for sensors across all asset types, and manage sensors in bulk. The Sensors tab has its own search box, filters, columns, and Export. For SNMP-based sensors, you can add the **OID** column to help verify and troubleshoot sensor readings.
+- **Assets** — search for assets. Each result is an asset. This is the default tab, and is described throughout this section.
+- **Sensors** — search for individual sensors across all asset types, and manage them in bulk. Each result is a sensor. The Sensors tab has its own search box, filters, columns, saved searches, Export, and Bulk Actions. Refer to {ref}`sensor-search` for details.
 
 ```{image} /user-guide/search/media/as.png
 :class: border-black
@@ -65,7 +65,7 @@ ___________________________________________
 
 ## Advanced Search-only features
 
-Apart from the features described in the previous section, Advanced Search lets you apply filters, add or remove grid columns, save searches, and perform generic grid operations such as exporting records.
+Apart from the features described in the previous section, Advanced Search lets you apply filters, add or remove grid columns, save searches, and perform generic grid operations such as exporting records. The filters, columns, and saved searches described below apply to the **Assets** tab (asset search); the **Sensors** tab provides its own equivalents, described in {ref}`sensor-search`.
 
 :::{note}
 A single Advanced Search query can return a maximum of 10,000 rows.
@@ -199,6 +199,61 @@ You can also {ref}`perform bulk actions<bulk-actions-doc>` against Advanced Sear
 ```{image} /user-guide/search/media/as_bulk.png
 :class: border-black
 ```
+
+______________________________________________________________________
+
+(sensor-search)=
+
+## Sensor Search
+
+While Asset Search returns assets, **Sensor Search** returns individual sensors. Switch to the **Sensors** tab of Advanced Search to find specific sensor readings, audit sensors of a given type, or manage sensors in bulk — across all asset types, regardless of which assets they belong to.
+
+```{image} /user-guide/search/media/as_sensors.png
+:class: border-black
+```
+
+Sensor Search works like Asset Search, with a few key differences:
+
+- Each row in the results grid is a **sensor**, not an asset. The Source Asset column links back to the asset that owns the sensor.
+- The Sensors tab has its own search box, filters, columns, Saved Searches, Export, and Bulk Actions, all independent from the Assets tab.
+- You search and filter by sensor attributes (such as Sensor Type and Source Protocol) rather than asset attributes.
+
+The searchable-fields behavior, double quotes, number and date matching, and the NOT operator described earlier all apply to the Sensors search box as well.
+
+### Sensor filters
+
+Click *Filters* to open the Filters panel, then narrow results using the following dropdown filters:
+
+- Sensor Location (default is All)
+- Source Asset Type
+- Sensor Type
+- Source Protocol
+- Linked Location
+- Data Collector
+- Access Policy
+- Is Numeric
+
+As with asset filters, sensor filters are AND-ed — results must match every condition you apply. Click *Apply Filters* to run the search, or *Reset* to clear the filters.
+
+### Sensor columns
+
+By default, the grid shows these columns: Sensor Name, Sensor Type, Latest Value, Source Asset, Source Asset Location, Linked Location, Linked Position, Source Protocol, Data Collector, and Last Updated.
+
+Click *Add* in the Columns area of the Filters panel to add or remove columns. Additional available columns include Sensor ID, List Index, Source Asset ID, Access Policy, Is Numeric, Raw Value, and OID.
+
+:::{tip}
+For SNMP-based sensors, add the **OID** column to help verify and troubleshoot sensor readings.
+:::
+
+### Sensor bulk actions
+
+Select one or more sensors using the row checkboxes, then click *Bulk Actions* to:
+
+- **Update Access Policy** — set the access policy on the selected sensors.
+- **Reset Access Policy** — reset the selected sensors to follow the access policy of their parent asset.
+- **Delete** — delete the selected sensors.
+
+You can also {ref}`export sensor results <extracting-data-doc>` as a spreadsheet and save sensor searches, just as you can on the Assets tab.
 
 ______________________________________________________________________
 
