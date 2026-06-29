@@ -215,7 +215,7 @@ While Asset Search returns assets, **Sensor Search** returns individual sensors.
 Sensor Search works like Asset Search, with a few key differences:
 
 - Each row in the results grid is a **sensor**, not an asset. The Source Asset column links back to the asset that owns the sensor.
-- The Sensors tab has its own search box, filters, columns, Saved Searches, Export, and Bulk Actions, all independent from the Assets tab.
+- The Sensors tab has its own search box, filters, columns, saved searches, Export, and Bulk Actions, all independent from the Assets tab.
 - You search and filter by sensor attributes (such as Sensor Type and Source Protocol) rather than asset attributes.
 
 The searchable-fields behavior, double quotes, number and date matching, and the NOT operator described earlier all apply to the Sensors search box as well.
