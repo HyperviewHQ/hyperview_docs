@@ -12,13 +12,13 @@ Quick Search and Advanced Search are both opened from the **Search** box in the 
 
 ## Quick Search and Advanced Search
 
-Quick Search lets you quickly lookup assets from the search palette (*Search → Quick*). Search results appear as soon as you type a matching character string. Clicking on a search result opens the corresponding asset Dashboard.
+Quick Search lets you quickly lookup assets from the **Quick** tab of the search palette. Search results appear as soon as you type a matching character string. Clicking on a search result opens the corresponding asset Dashboard.
 
 ```{image} /user-guide/search/media/qs.png
 :class: border-black
 ```
 
-The Advanced Search page is also accessible from the search palette (*Search → Advanced*). Search results appear in a grid, allowing users to perform relevant actions such as Export and Bulk Delete. Double-clicking a matching asset opens its Dashboard.
+The Advanced Search page is also accessible from the **Advanced** tab of the search palette. Search results appear in a grid, allowing users to perform relevant actions such as Export and Bulk Delete. Double-clicking a matching asset opens its Dashboard.
 
 Advanced Search has two tabs:
 
@@ -81,27 +81,33 @@ Filters are more structured and efficient compared to manual queries; we recomme
 
 #### Available filters
 
-The following filters are available:
+The following filters are available.
+
+Dropdown filters (selected directly in the Filters panel):
 
 - Type (you can select multiple asset types at once)
 - Location
 - Manufacturer
 - Model
 - Status
-- Asset Property (String)
-- Asset Property (Numeric)
-- Custom Property (String)
-- Custom Property (Numeric)
-- Custom Property (Date)
-- Sensor (String)
-- Sensor (Numeric)
+- Lifecycle State
+- Discovery State
+- Business Entity
+- Access Policy
+
+Property and sensor filters (added from the Property and Sensor Filters section — see "Adding filters" below):
+
+- Asset Property
+- Custom Property (Asset)
+- Custom Property (Business Entity)
+- Sensor
 
 Note that the default Location is All.
 
 #### Adding filters
 
 1. Click *Filters* on the Advanced Search page (or the *View Filters* link upon opening the page). The Filters panel will open.
-2. Select Type, Location, Manufacturer, Model, Status, and Lifecycle State values as needed.
+2. Select Location, Type, Manufacturer, Model, Status, Lifecycle State, Discovery State, Business Entity, and Access Policy values as needed.
 
 ```{image} /user-guide/search/media/as_filtersp.png
 :class: border-black
