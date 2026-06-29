@@ -4,7 +4,7 @@
 
 Administrators can configure application-wide locale settings from the Locale page. English, Español, and Français locales are currently supported.
 
-1. Go to *Settings -> General -> Locale*.
+1. Go to *Settings → General → Locale*.
 2. Specify the preferred Language, Length, Temperature, Volume, and Weight Unit.
 3. Click *Save*.
 
