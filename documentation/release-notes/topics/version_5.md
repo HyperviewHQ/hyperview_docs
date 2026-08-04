@@ -51,6 +51,18 @@ The following new asset types have been added to the product.
 - **AS-20713** Updated frontend dependency packages.
 - **AS-20714** Updated backend dependency packages.
 
+### Changes in version 5.6.4
+
+- AS-20718 Fixed a bug that could cause the wrong Modbus slave address to be used for polling Modbus-based sensors when Modbus components are used.
+
+### Changes in version 5.6.5
+
+- AS-20733 Fixed a bug that could cause the sensor access policy changes to not be updated in the sensor search index under certain conditions.
+
+### Changes in version 5.6.6
+
+- AS-20777 Update in-memory database connection settings
+
 ## Hyperview 5.5 (April 08, 2026)
 
 ```{raw} html
