@@ -45,14 +45,37 @@ The following distributions are tested to run the Hyperview Data Collector.
   - **openSUSE Leap 15 & 16**
 
 :::{important}
-- Please ensure that the **Podman** container management software is not installed.
 - Please ensure that the **snap** version of Docker is not installed.
+- Please install only the container runtime you intend to use. Having both Docker and Podman installed on the same machine is not recommended, as it makes troubleshooting considerably harder.
 - Let us know if you would like us to support more Linux distributions. [Contact Support](https://system.hyperviewhq.com/helpdesk).
+:::
+
+(container-runtime)=
+
+### Container Runtime
+
+The Data Collector runs as a set of containers. Two container runtimes are supported, and you only need **one** of them.
+
+| Runtime    | Deployment model                                                                             |
+| ---------- | -------------------------------------------------------------------------------------------- |
+| **Docker** | A Docker Compose stack defined in `/opt/datacollector/dc-docker-stack/docker-compose.yaml`     |
+| **Podman** | Systemd (Quadlet) unit files installed in `/etc/containers/systemd`, managed with `systemctl`  |
+
+On a **new** installation, the installer asks which runtime you would like to use after you accept the EULA. Docker is the default.
+
+On an **existing** installation, the installer detects the runtime already in use and keeps it. You are not asked to choose, and the deployment model is never switched by an update.
+
+:::{important}
+Podman deployments require **Podman 4.4 or newer**, which is the first release to include Quadlet support.
+:::
+
+:::{note}
+To switch an existing Data Collector from one runtime to the other, uninstall it first, then install it again and select the runtime you want.
 :::
 
 ### Software Dependencies
 
-Depending on the Linux distribution used, please use apt, dnf, or zypper to install the following packages
+Depending on the Linux distribution used, please use apt, dnf, or zypper to install the following packages. The *docker* and *podman* entries are alternatives; please install the one matching the container runtime you intend to use.
 
 | Command    | Deb/APT Package                                | RPM/Dnf/Zypper Package                        |
 | ---------- | ---------------------------------------------- | --------------------------------------------- |
@@ -63,7 +86,9 @@ Depending on the Linux distribution used, please use apt, dnf, or zypper to inst
 | *host*     | bind9-host                                     | bind-utils                                    |
 | *jq*       | jq                                             | jq                                            |
 | *libicu*   | libicu72, libicu74 or libicu76 depending on OS | libicu, libicu65, or libicu77 depending on OS |
+| *podman*   | podman (4.4 or newer)                          | podman (4.4 or newer)                         |
 | *sed*      | sed                                            | sed                                           |
+| *systemctl*| systemd (required for Podman deployments)      | systemd (required for Podman deployments)     |
 | *tar*      | tar                                            | tar                                           |
 | *uuidgen*  | uuid-runtime                                   | util-linux                                    |
 | *wget*     | wget                                           | wget                                          |
@@ -71,6 +96,7 @@ Depending on the Linux distribution used, please use apt, dnf, or zypper to inst
 
 :::{note}
 - Docker Inc. provides [detailed installation documentation](https://docs.docker.com/engine/install/).
+- The Podman project provides [detailed installation documentation](https://podman.io/docs/installation). Please confirm that the packaged version is 4.4 or newer before selecting the Podman deployment.
 - openSUSE and SUSE Linux Enterprise Server. Please use the OS vendor provided Docker Open Source Engine and Docker Compose Packages.
 - Please use the RHEL Docker CE installation instructions for Rocky Linux.
 - Please use the CentOS Docker CE installation instructions for Alma Linux.
@@ -90,7 +116,7 @@ The data collector software needs to communicate with the following hosts:
 - Container repository API: https://hvpublic.azurecr.io
 - Container repository data endpoint: https://hvpublic.westus2.data.azurecr.io
 
-Please make sure these are in communication allow lists if applicable or required by your network security policy.
+Please make sure these are in communication allow lists if applicable or required by your network security policy. The container repository endpoints are used by both the Docker and the Podman deployments.
 
 ### Data Collector to assets
 
@@ -166,7 +192,13 @@ sudo SKIP_TESTS=YES ./install-dc.sh
 :class: border-black
 ```
 
-4. Proceed to register the Data Collector.
+4. Select the container runtime, Docker or Podman. See {ref}`Container Runtime <container-runtime>` for the differences between the two deployment models.
+
+:::{note}
+This step only appears on a new installation. If a Data Collector is already installed, the installer keeps the container runtime it is already using and skips this prompt.
+:::
+
+5. Proceed to register the Data Collector.
 
 (register)=
 
@@ -207,6 +239,8 @@ The Data Collector will be registered.
 
 ## Verifying your Data Collector setup
 
+### Docker deployments
+
 Verify that Docker containers with the following names are running using `docker ps`:
 
 - dc-docker-stack-assettracker-service-1
@@ -216,17 +250,50 @@ Verify that Docker containers with the following names are running using `docker
 - dc-docker-stack-mqtt-service-1
 - dc-docker-stack-snmptrapreceiver-service-1
 
+### Podman deployments
+
+Verify that the following systemd services are active using `systemctl list-units 'dc-*.service'`:
+
+- dc-assettracker-service.service
+- dc-discovery-service.service
+- dc-monitoring-service.service
+- dc-mqtt-broker.service
+- dc-mqtt-monitoring-service.service
+- dc-snmptrapreceiver-service.service
+
+These services are generated by Quadlet from the unit files in `/etc/containers/systemd`. A `dc-datacollector-network.service` is generated as well; it creates the network that the MQTT service and the MQTT broker share, and it is started automatically as a dependency.
+
+You can also list the running containers using `podman ps`. Most of them appear with a `systemd-` name prefix, for example `systemd-dc-discovery-service`. The exception is the MQTT broker, which is named `mqtt-broker` so that the MQTT service can reach it by that name.
+
+:::{tip}
+Use `journalctl -u <service name>` to review the logs for an individual service.
+:::
+
 Next verify the last communicated timestamp in your Hyperview instance **Discoveries ->  Data Collectors** list.
 It should update approximately every 30 seconds. You can use the refresh button to update the data in the table.
 
+## Updating Data Collectors
+
+Run the updater as __root__ or via __sudo__.
+
+```bash
+sudo /opt/datacollector/bin/update-dc.sh
+```
+
+The updater retains the container runtime already in use; it does not switch an existing Data Collector from one runtime to the other.
+
+- For a **Docker** deployment, it replaces the Docker Compose file and restarts the stack.
+- For a **Podman** deployment, it replaces the unit files in `/etc/containers/systemd`, pulls the new images with Podman, reloads the systemd daemon, and restarts the services.
+
 ## Reinstalling or uninstalling Data Collectors
 
-The Data Collector core software runs as a set of Docker containers. In addition to those, configuration files,
+The Data Collector core software runs as a set of Docker or Podman containers. In addition to those, configuration files,
 some [troubleshooting tools](troubleshooting-tools-doc), logs and temporary files are all kept in `/opt/datacollector`.
+Podman deployments also install unit files in `/etc/containers/systemd`.
 
 To reinstall the Data Collector software, uninstall it first then install it.
 
-### Uninstall
+### Uninstall (Docker)
 
 1. Shutdown the docker containers
 
@@ -238,5 +305,26 @@ docker compose down
 2. Backup or rename the `/opt/datacollector` directory **If needed**
 
 3. Delete the `/opt/datacollector` directory
+
+### Uninstall (Podman)
+
+1. Stop the services
+
+```bash
+systemctl stop dc-assettracker-service.service dc-discovery-service.service \
+	dc-monitoring-service.service dc-mqtt-monitoring-service.service \
+	dc-mqtt-broker.service dc-snmptrapreceiver-service.service
+```
+
+2. Remove the unit files and reload the systemd daemon
+
+```bash
+rm -f /etc/containers/systemd/dc-*.container /etc/containers/systemd/dc-*.network
+systemctl daemon-reload
+```
+
+3. Backup or rename the `/opt/datacollector` directory **If needed**
+
+4. Delete the `/opt/datacollector` directory
 
 Once the uninstallation is done, perform a re-installation following the standard instructions.
