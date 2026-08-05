@@ -313,7 +313,8 @@ docker compose down
 ```bash
 systemctl stop dc-assettracker-service.service dc-discovery-service.service \
 	dc-monitoring-service.service dc-mqtt-monitoring-service.service \
-	dc-mqtt-broker.service dc-snmptrapreceiver-service.service
+	dc-mqtt-broker.service dc-snmptrapreceiver-service.service \
+	dc-datacollector-network.service
 ```
 
 2. Remove the unit files and reload the systemd daemon
