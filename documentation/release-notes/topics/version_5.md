@@ -61,7 +61,7 @@ The following new asset types have been added to the product.
 
 ### Changes in version 5.6.6
 
-- **AS-20777** Update in-memory database connection settings
+- **AS-20777** Updated in-memory database connection settings
 
 ### Changes in version 5.6.7
 
@@ -69,6 +69,12 @@ The following new asset types have been added to the product.
 - **AS-20481** Fixed a bug in search where applying a Rack type filter also adds a Rack PDU type filter in Advanced Search
 - **AS-20836** General dependency updates
 - **AS-20841** Extended sensor linking to allow users to link energy and dry contact sensors to other assets
+
+### Changes in version 5.6.8
+
+- **AS-20890** Added improvements to the service health check subsystem
+- **AS-20891** Added improvements to the Job management subsystem
+- **AS-20896** Added improvements to the service liveness check subsystem
 
 ## Hyperview 5.5 (April 08, 2026)
 
