@@ -85,7 +85,6 @@ Depending on the Linux distribution, use apt, dnf, or zypper to install the foll
 | *host*     | bind9-host                                     | bind-utils                                    |
 | *jq*       | jq                                             | jq                                            |
 | *libicu*   | libicu72, libicu74 or libicu76 depending on OS | libicu, libicu65, or libicu77 depending on OS |
-| *podman*   | podman (4.4 or newer)                          | podman (4.4 or newer)                         |
 | *sed*      | sed                                            | sed                                           |
 | *systemctl*| systemd (required for Podman deployments)      | systemd (required for Podman deployments)     |
 | *tar*      | tar                                            | tar                                           |
