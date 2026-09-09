@@ -2,7 +2,7 @@
 
 # Setting up Data Collectors
 
-The Hyperview Data Collector collects and relays data back to the Hyperview platform. It covers the following functional areas: discovery, monitoring, control operations (for example, {ref}`setting control credentials <setting-control-credentials>`), RFID asset tracking, and trap listening.
+The Hyperview Data Collector collects and relays data back to the Hyperview platform. It covers the following functional areas: discovery, monitoring, control operations, RFID asset tracking, and trap listening.
 
 You must register a Data Collector before it can relay information. You can trigger registration only from the machine that hosts the Data Collector, and the process requires a unique, limited-time, single-use Registration Token.
 
