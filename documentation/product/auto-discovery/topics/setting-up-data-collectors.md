@@ -36,10 +36,10 @@ If you plan to use a Raspberry Pi for data collection, the **minimum** hardware 
 
 The following distributions are tested to run the Hyperview Data Collector.
 
-  - **Red Hat Enterprise Linux 8 & 9**
-  - **CentOS 9**
-  - **Rocky Linux 9**
-  - **Alma Linux 9**
+  - **Red Hat Enterprise Linux 8, 9 & 10**
+  - **CentOS 9 & 10**
+  - **Rocky Linux 9 & 10**
+  - **Alma Linux 9 & 10**
   - **Ubuntu Server LTS 22.04 & 24.04**
   - **Debian 11, 12 & 13**
   - **openSUSE Leap 15 & 16**
@@ -66,7 +66,8 @@ On a **new** installation, after you accept the EULA, the installer asks which r
 On an **existing** installation, the installer detects the runtime already in use and keeps it. You won't be asked to choose, and an update never switches the deployment model.
 
 :::{important}
-Podman deployments require **Podman 4.4 or newer**, which is the first release to include Quadlet support.
+The Podman deployment is supported on Debian 13 (or newer) and on RHEL 9 and RHEL 10 based distributions, for example Rocky Linux and AlmaLinux. Distribution-packaged Podman on older releases predates Quadlet a
+nd cannot be used.
 :::
 
 :::{note}
@@ -317,8 +318,14 @@ rm -f /etc/containers/systemd/dc-*.container /etc/containers/systemd/dc-*.networ
 systemctl daemon-reload
 ```
 
-3. Backup or rename the `/opt/datacollector` directory **If needed**
+3. Remove the container network
 
-4. Delete the `/opt/datacollector` directory
+```bash
+podman network rm dc-datacollector
+```
+
+4. Backup or rename the `/opt/datacollector` directory **If needed**
+
+5. Delete the `/opt/datacollector` directory
 
 After uninstallation, reinstall following the standard instructions.
