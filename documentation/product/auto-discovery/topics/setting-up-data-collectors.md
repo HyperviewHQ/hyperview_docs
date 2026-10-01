@@ -66,8 +66,7 @@ On a **new** installation, after you accept the EULA, the installer asks which r
 On an **existing** installation, the installer detects the runtime already in use and keeps it. You won't be asked to choose, and an update never switches the deployment model.
 
 :::{important}
-The Podman deployment is supported on Debian 13 (or newer) and on RHEL 9 and RHEL 10 based distributions, for example Rocky Linux and AlmaLinux. Distribution-packaged Podman on older releases predates Quadlet a
-nd cannot be used.
+The Podman deployment is supported on the latest patch version of Debian 13, Ubuntu Server LTS 24.04, and RHEL 9 and RHEL 10 based distributions, for example Rocky Linux and AlmaLinux. Distribution-packaged Podman on older releases predates Quadlet and cannot be used.
 :::
 
 :::{note}
