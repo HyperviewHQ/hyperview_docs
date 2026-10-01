@@ -22,14 +22,14 @@ Data Collectors must have **unique** names. If you are planning to use the Data 
 
 (linux-prerequisites)=
 
-### Minimum Hardware Requirements (AMD64/X86_64/RPI ARM64)
+### Minimum Hardware Requirements (AMD64/x86_64/RPI ARM64)
 
 - 4 CPU cores
 - 8 GB of RAM
 - 64 GB of free space in the /opt partition or where the /opt directory resides
 
 :::{tip}
-If you plan to use a Raspberry Pi for data collection, the **minimum** hardware requirements are a Raspberry Pi 4 B 8GB model and a physical SSD or NVMe for storage.
+If you plan to use a Raspberry Pi for data collection, the **minimum** hardware requirements are a Raspberry Pi 4 B 8 GB model and a physical SSD or NVMe for storage.
 :::
 
 ### Supported Linux Distributions
@@ -39,7 +39,7 @@ The following distributions are tested to run the Hyperview Data Collector.
   - **Red Hat Enterprise Linux 8, 9 & 10**
   - **CentOS 9 & 10**
   - **Rocky Linux 9 & 10**
-  - **Alma Linux 9 & 10**
+  - **AlmaLinux 9 & 10**
   - **Ubuntu Server LTS 22.04 & 24.04**
   - **Debian 11, 12 & 13**
   - **openSUSE Leap 15 & 16**
@@ -66,7 +66,7 @@ On a **new** installation, after you accept the EULA, the installer asks which r
 On an **existing** installation, the installer detects the runtime already in use and keeps it. You won't be asked to choose, and an update never switches the deployment model.
 
 :::{important}
-The Podman deployment is supported on the latest patch version of Debian 13, Ubuntu Server LTS 24.04, and RHEL 9 and RHEL 10 based distributions, for example Rocky Linux and AlmaLinux. Distribution-packaged Podman on older releases predates Quadlet and cannot be used.
+The Podman deployment is supported on the latest patch version of Debian 13, Ubuntu Server LTS 24.04, and RHEL 9- and RHEL 10-based distributions, such as Rocky Linux and AlmaLinux. Distribution-packaged Podman on older releases predates Quadlet and cannot be used.
 :::
 
 :::{note}
@@ -75,9 +75,11 @@ To switch an existing Data Collector from one runtime to another, uninstall it f
 
 ### Software Dependencies
 
-Depending on the Linux distribution, use apt, dnf, or zypper to install the following packages. The *docker* and *podman* entries are alternatives; install the one that matches the container runtime you intend to use.
+Depending on the Linux distribution, use apt, dnf, or zypper to install the following packages.
 
-| Command    | Deb/APT Package                                | RPM/Dnf/Zypper Package                        |
+You must also have **one** of the supported container runtimes installed: Docker Engine with the Docker Compose plugin, or Podman 4.4 or newer. See {ref}`Container Runtime <container-runtime>` for details.
+
+| Command    | Deb/APT Package                                | RPM/DNF/Zypper Package                        |
 | ---------- | ---------------------------------------------- | --------------------------------------------- |
 | *awk*      | gawk or mawk                                   | gawk                                          |
 | *cut*      | coreutils                                      | coreutils                                     |
@@ -95,8 +97,8 @@ Depending on the Linux distribution, use apt, dnf, or zypper to install the foll
 :::{note}
 - Docker Inc. provides [detailed installation documentation](https://docs.docker.com/engine/install/).
 - The Podman project provides [detailed installation documentation](https://podman.io/docs/installation). Please confirm that the packaged version is 4.4 or newer before selecting the Podman deployment.
-- openSUSE and SUSE Linux Enterprise Server. Please use the OS vendor-provided Docker Open Source Engine and Docker Compose Packages.
-- The `jq` package may not be available from the official Red Hat repository for Red Hat Enterprise Linux or derivatives. If so, the Extra Packages for Enterprise Linux [EPEL](https://docs.fedoraproject.org/en-US/epel/) project will have it.
+- For openSUSE and SUSE Linux Enterprise Server, please use the OS vendor-provided Docker Open Source Engine and Docker Compose Packages.
+- The `jq` package may not be available from the official Red Hat repository for Red Hat Enterprise Linux or derivatives. If so, the Extra Packages for Enterprise Linux ([EPEL](https://docs.fedoraproject.org/en-US/epel/)) project will have it.
 :::
 
 ## Network requirements
@@ -105,7 +107,7 @@ Depending on the Linux distribution, use apt, dnf, or zypper to install the foll
 
 The Data Collector uses HTTPS/TLS (TCP/443) to communicate with Hyperview. The direction is **outbound** from the Data Collector to Hyperview.
 
-The data collector software needs to communicate with the following hosts:
+The Data Collector software needs to communicate with the following hosts:
 
 - Instance URL: https://INSTANCE_NAME.hyperviewhq.com/
 - Download repository: https://hvstorewestus2.blob.core.windows.net/datacollectors
@@ -158,12 +160,12 @@ Firewalls can interfere with Data Collector communication. We recommend testing 
 4. Click Download or use the `wget` Linux command to download the file.
 
 :::{note}
-Please download the Data Collector version relevant to your CPU architecture. The Linux (AMD64) Data Collector is intended for Intel and AMD CPU-based systems. Linux (RPI ARM64) Data Collector is for Raspberry Pi systems.
+Please download the Data Collector version relevant to your CPU architecture. The Linux (AMD64) Data Collector is intended for Intel and AMD CPU-based systems. The Linux (RPI ARM64) Data Collector is for Raspberry Pi systems.
 :::
 
 A compressed Data Collector setup package will be downloaded to your browser's default download location. The filename will resemble "linuxDataCollector-9999.tgz", where "9999" represents the version number.
 
-5. (_Optional_) Download the SHA256SUM file using wget and then use the `sha256sum -c <filename>` command to verify file integrity. If you are on Windows, then PowerShell `Get-FileHash -Algorithm SHA256 <filename>` command will give you the hash of the downloaded file and you can then do manual verification by comparing the downloaded hash file with the result of the command.
+5. (_Optional_) Download the SHA256SUM file using wget and then use the `sha256sum -c <filename>` command to verify file integrity. On Windows, run the PowerShell `Get-FileHash -Algorithm SHA256 <filename>` command and compare its output with the hash in the SHA256SUM file.
 
 ## Installing the Data Collector
 
@@ -264,7 +266,7 @@ You can also list the running containers using `podman ps`. Most of them appear 
 Use `journalctl -u <service name>` to review the logs for an individual service.
 :::
 
-Next, verify the last communicated timestamp in your Hyperview instance **Discoveries ->  Data Collectors** list.
+Next, verify the last communicated timestamp in your Hyperview instance *Discoveries → Data Collectors* list.
 It should update approximately every 30 seconds. You can use the refresh button to update the table data.
 
 ## Updating Data Collectors
@@ -295,7 +297,7 @@ cd /opt/datacollector/dc-docker-stack/
 docker compose down
 ```
 
-2. Backup or rename the `/opt/datacollector` directory **If needed**
+2. Back up or rename the `/opt/datacollector` directory if needed
 
 3. Delete the `/opt/datacollector` directory
 
@@ -323,7 +325,7 @@ systemctl daemon-reload
 podman network rm dc-datacollector
 ```
 
-4. Backup or rename the `/opt/datacollector` directory **If needed**
+4. Back up or rename the `/opt/datacollector` directory if needed
 
 5. Delete the `/opt/datacollector` directory
 
