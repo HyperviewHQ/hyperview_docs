@@ -20,7 +20,7 @@ Users can now create custom sensors, which are numeric sensors whose values are 
 
 ### Enhanced Feature: Floor Plan Layout
 
-- A new Fluid Heatmap is available as a beta.
+- A new Fluid Heat Map is available as a **beta**.
 - Assets, tiles, and shapes can now be aligned with each other.
 - Row and column headers are now sticky.
 - Row and column labels now support templates.
