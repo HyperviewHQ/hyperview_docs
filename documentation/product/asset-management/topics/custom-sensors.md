@@ -16,6 +16,7 @@ Assuming you have {ref}`access privileges<who-can-access-doc>`, you can manage a
 
 The Custom Sensors grid lists the following information for each custom sensor:
 
+- **Sensor ID**: the unique sensor ID. This column is __hidden by default__.
 - **Sensor Name**: the name of the custom sensor
 - **Sensor Type**: the sensor type, such as Temperature or Power
 - **Formula**: the formula used to calculate the sensor value, such as `A - B`
