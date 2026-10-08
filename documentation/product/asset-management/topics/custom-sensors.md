@@ -200,7 +200,7 @@ To bulk import custom sensors:
 :::
 
 3. Save the updated file.
-4. On the Import page (*Assets → Import*), click *Select Location and File*. Select the "Custom Sensors" template and a Location, and then select or drag the updated CSV file to upload.
+4. On the Import page (*Assets → Import*), click *Select Location and File*. Select the "Custom Sensors" template, and then select or drag the updated CSV file to upload.
 5. Once the file is uploaded, verify the list of custom sensors. Troubleshoot, update, and re-upload the file as needed.
 6. Click *Import*.
 
