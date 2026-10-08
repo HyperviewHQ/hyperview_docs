@@ -162,7 +162,7 @@ You can update the access policy of multiple custom sensors at once:
 2. Click *Bulk Actions* and select one of the following:
 
    - **Update Access Policy**: applies the selected access policy to the custom sensors.
-   - **Reset Access Policy**: resets the custom sensors' access policy.
+   - **Reset Access Policy**: resets the custom sensors' access policy to the default "inherit from parent".
 
 ## Exporting and importing custom sensors
 
