@@ -131,13 +131,49 @@ Use the Import tab to paste an existing formula. Sensors are referenced using `[
 2. Review the Sensor Mapping:
 
    - Sensors on the source asset (`(0)`) are automatically matched by name where possible. Click the Edit button next to a sensor to change it.
-   - For each other asset ID, click the button to select the corresponding Hyperview asset, and then select the matching sensor for each reference.
+   - For each other asset ID, click the button to select the corresponding Hyperview asset. Once the asset is selected, its sensors are automatically matched by name where possible. Select the matching sensor for each reference that was not matched.
 
 Once all references are mapped, the Rewritten Formula (using variable letters) is shown below the sensor mapping.
 
 ```{image} /product/asset-management/media/customsensor_import.png
 :class: border-black
 ```
+
+#### Example: importing a formula that uses multiple assets
+
+The asset IDs in an imported formula do not need to be Hyperview asset IDs. Each ID other than `(0)` is a placeholder that you map to a Hyperview asset in the Sensor Mapping.
+
+For example, the following formula calculates the difference between the highest exhaust temperature and the lowest inlet temperature across three servers: the source asset (`(0)`) and two other servers (`(1)` and `(2)`):
+
+```
+max([(0).(Exhaust Temp)], [(1).(Exhaust Temp)], [(2).(Exhaust Temp)]) - min([(0).(Inlet Temp)], [(1).(Inlet Temp)], [(2).(Inlet Temp)])
+```
+
+To import this formula:
+
+1. Select the first server as the Source Asset, select "Temperature" as the Type, and enter a Name.
+2. On the Import tab, paste the Formula. The Sensor Mapping shows one section for each asset ID in the formula:
+
+   - **Source ID: 0** is labelled Current Asset. Its Exhaust Temp and Inlet Temp references are matched to the source asset's sensors with the same names.
+   - **Source ID: 1** and **Source ID: 2** each show a "Select the Hyperview asset that corresponds to source ID" button.
+
+3. Click the button for Source ID: 1 and select the second server. If the server has sensors named Exhaust Temp and Inlet Temp, they are matched automatically. Otherwise, select the corresponding sensor for each reference (for example, a sensor named "System Board 1 Exhaust Temp").
+4. Repeat the previous step for Source ID: 2, selecting the third server.
+5. Review the Rewritten Formula. Variable letters are assigned to the references one asset ID at a time, so the formula above is rewritten as:
+
+   ```
+   max(A, C, E) - min(B, D, F)
+   ```
+
+   The variable mapping below the formula lists the asset, sensor, and current value for each variable.
+
+6. Click Test Formula to verify the Result, and then click Add.
+
+:::{note}
+- Sensor names in the pasted formula only need to match the Hyperview sensor names for automatic matching. A reference can be mapped to a sensor with a different name.
+- To map an asset ID to a different asset, click Change and select the asset again.
+- Finish editing the formula before mapping assets. Changing the formula can clear the assets that were selected for the other asset IDs.
+:::
 
 ## Editing a custom sensor
 
@@ -184,24 +220,100 @@ To bulk import custom sensors:
 * - Column
   - Description
 * - Sensor ID
-  - The custom sensor ID. Leave blank when adding a new custom sensor.
+  - The custom sensor ID. Leave blank to add a new custom sensor. Enter the ID of an existing custom sensor to update it.
 * - Sensor Name
   - The name of the custom sensor
 * - Sensor Type
   - The sensor type, such as Temperature
 * - Formula
-  - The formula, using variable letters (for example, `A + B`)
+  - The formula, using variable letters (for example, `A + B`). Enclose the formula in double quotes if it contains a comma (for example, `"max(A, B) - C"`).
 * - Source Asset ID
   - The ID of the source asset
 * - Access Policy
   - The access policy name, or "Inherit from Parent"
 * - Variable A Sensor ID, Variable B Sensor ID, …
-  - The ID of the sensor mapped to each variable in the formula
+  - The ID of the sensor mapped to each variable in the formula. Add one column for each variable used. The sensors can belong to the source asset or to other assets.
 :::
 
 3. Save the updated file.
-4. On the Import page (*Assets → Import*), click *Select Location and File*. Select the "Custom Sensors" template, and then select or drag the updated CSV file to upload.
-5. Once the file is uploaded, verify the list of custom sensors. Troubleshoot, update, and re-upload the file as needed.
+4. On the Import page (*Assets → Import*), click *Select Location and File*. Select the "Custom Sensors" template, and then select or drag the updated CSV file to upload. A location is not needed, because the Source Asset ID column sets the asset for each custom sensor.
+5. Click *Select*. Once the file is uploaded, verify the list of custom sensors. The Action column shows "Create" for rows without a Sensor ID and "Update" for rows with a Sensor ID. Troubleshoot, update, and re-upload the file as needed.
 6. Click *Import*.
+7. Check the Result and Message columns for each row. You can click *Export Results* to download the results, including any error messages.
+
+### Finding the IDs to use in the file
+
+- **Sensor ID** (of an existing custom sensor): on the Custom Sensors page, click *Export → Export for Import*. The exported file contains the ID, formula, and variable sensor IDs of each custom sensor, and can be edited and re-imported to update the custom sensors.
+- **Variable sensor IDs**: on the asset's Sensors page, switch to List View, open the Column Selector, and select the "ID" column.
+- **Source Asset ID**: the asset ID is shown in the browser address bar when the asset is open.
+
+### Example: importing custom sensors from a CSV file
+
+The following example data adds one custom sensor and updates another:
+
+:::{list-table}
+:header-rows: 1
+:align: left
+
+* - Sensor ID
+  - Sensor Name
+  - Sensor Type
+  - Formula
+  - Source Asset ID
+  - Access Policy
+  - Variable A Sensor ID
+  - Variable B Sensor ID
+  - Variable C Sensor ID
+* -
+  - Hottest Server Temperature Rise
+  - Temperature
+  - `max(A, B) - C`
+  - 2b9658cc-646a-440b-99b8-6876620427c0
+  - Inherit from Parent
+  - 019f19d7-da3e-74ee-acc7-d493385da468
+  - 019f19d7-d887-7465-839d-f5d44f1181ba
+  - 019f19d7-d887-7170-aa73-d86d55e2cb2d
+* - 01a11cc9-103d-71bd-81de-f77080a58554
+  - Average Server Temperature
+  - Temperature
+  - `round((A + B + C) / 3, 1)`
+  - 2b9658cc-646a-440b-99b8-6876620427c0
+  - Inherit from Parent
+  - 019f19d7-da3e-74ee-acc7-d493385da468
+  - 019f19d7-d887-7465-839d-f5d44f1181ba
+  - 019f19d7-d887-7170-aa73-d86d55e2cb2d
+:::
+
+In the CSV file, the formulas must be enclosed in double quotes because they contain commas (for example, `"max(A, B) - C"`).
+
+- The first row has no Sensor ID, so a new custom sensor is created on the source asset. Variable A is a sensor on the source asset, and variables B and C are sensors on a different asset.
+- The second row has the Sensor ID of an existing custom sensor, so that custom sensor is updated with the name, formula, and variable sensors in the row.
+
+:::{note}
+The IDs above are examples only. Replace them with the IDs from your own Hyperview instance.
+:::
+
+### Troubleshooting import errors
+
+If a row cannot be imported, its Result is "Error" and the reason is shown in the Message column. Other rows in the file are still imported.
+
+:::{list-table}
+:header-rows: 1
+:align: left
+:widths: 45, 55
+
+* - Message
+  - Cause
+* - Variable 'B' in formula is not defined in sensor mappings.
+  - The formula uses a variable that does not have a sensor ID in the corresponding Variable Sensor ID column.
+* - Sensor does not exist.
+  - A Variable Sensor ID does not match a sensor in Hyperview.
+* - Failed to create custom sensor.
+  - The row could not be saved. Check that the Sensor Type is a valid sensor type and that the Source Asset ID matches an asset in Hyperview.
+:::
+
+:::{note}
+If the Access Policy does not match the name of an access policy, the custom sensor is imported with the "Inherit from Parent" access policy.
+:::
 
 See {ref}`Adding assets<adding-assets-doc>` for more information on bulk importing.

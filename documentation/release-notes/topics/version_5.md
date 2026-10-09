@@ -27,6 +27,14 @@ Users can now create custom sensors, which are numeric sensors whose values are 
 - The pan and zoom of a layout can now be saved.
 - Multiple custom properties can now be selected at the same time.
 
+### New Feature: Rack Temperature Heat Map
+
+Racks can now display a temperature heat map in the 2D, 3D, and rack elevation views.
+
+### Enhanced Feature: Notification - Alarm Policies
+
+"Warning only" has been added as an option for alarm policies.
+
 ### Enhanced Feature: Multi-tab Support
 
 - Multi-tab support has been improved across the application.
