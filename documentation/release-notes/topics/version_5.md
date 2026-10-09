@@ -63,6 +63,16 @@ Advanced Search now supports exact and substring matches.
 
 Podman is now fully supported by the Data Collector installer. See {ref}`Setting up Data Collectors<setting-up-data-collectors-doc>` for more information.
 
+### Notable bug fixes
+
+- **AS-14955** Fixed a bug that caused token refresh to fail if multiple application tabs are open in Chromium-based browsers.
+- **AS-18331** Fixed a bug that caused the Asset Tracker grid to not be sorted chronologically.
+- **AS-19807** Fixed a bug that caused the Rack Space Availability and Rack Space KPIs widgets to not display an alert when the required sensors are missing or when the user does not have access to the sensors.
+- **AS-19818** Fixed a bug that can cause custom models added to the catalog to fail validation.
+- **AS-20608** Fixed a bug that, under certain conditions, may cause changes to the Sensor Monitoring setting to fail to save.
+- **AS-21050** Fixed a bug that, under certain conditions, could cause daily sensor summaries to fail to calculate.
+- **AS-21110** Fixed a bug that caused the Rated Power property to fail to display on the PDU and RPP asset type properties page.
+
 ## Hyperview 5.6 (June 02, 2026)
 
 This section covers significant changes and bug fixes in Hyperview 5.6.x since version 5.5.x
