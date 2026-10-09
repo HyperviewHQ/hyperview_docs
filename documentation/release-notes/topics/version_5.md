@@ -1,6 +1,6 @@
 # Version 5
 
-## Hyperview 5.7 (October 06, 2026)
+## Hyperview 5.7 (October 05, 2026)
 
 This section covers significant changes and bug fixes in Hyperview 5.7.x since version 5.6.x
 
