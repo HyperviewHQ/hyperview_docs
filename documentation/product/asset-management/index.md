@@ -20,5 +20,6 @@ topics/asset-properties
 topics/custom-properties
 topics/bulk-actions
 topics/managing-sensors
+topics/custom-sensors
 topics/control-operations
 ```

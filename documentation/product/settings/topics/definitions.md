@@ -7,5 +7,5 @@
 
 managing-bacnet
 managing-modbus
-definition-import-tool
+hvcli-definitions
 ```

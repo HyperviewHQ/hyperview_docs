@@ -2,19 +2,19 @@
 
 # Setting up Data Collectors
 
-The Hyperview Data Collector collects and relays data back to the Hyperview platform. It covers the following functional areas: discovery, monitoring, control operations (for example, {ref}`setting control credentials <setting-control-credentials>`), RFID asset tracking, and trap listening.
+The Hyperview Data Collector collects and relays data back to the Hyperview platform. It covers the following functional areas: discovery, monitoring, control operations, RFID asset tracking, and trap listening.
 
-You must register a Data Collector before it can relay information. You can only trigger the registration from the machine that hosts the Data Collector, and the process requires a unique, limited time, single use Registration Token for that particular Data Collector.
+You must register a Data Collector before it can relay information. You can trigger registration only from the machine that hosts the Data Collector, and the process requires a unique, limited-time, single-use Registration Token.
 
 Once registered, the Data Collector saves the access credentials in a local configuration file. It then polls the Hyperview platform for data collection jobs.
 
-The Data Collector must initiate all communication between the Data Collector and Hyperview. All communication is encrypted using TLS.
+The Data Collector must initiate all communication with Hyperview. All communication is encrypted using TLS.
 
 (setup-data-collectors)=
 
 ## Prerequisites
 
-You must install the Hyperview Data Collector on at least one machine (physical or virtual, running a supported operating system) with network access to your devices.
+Install the Hyperview Data Collector on at least one machine (physical or virtual, running a supported operating system) with network access to your devices.
 
 You **cannot** install multiple instances of the Data Collector on the same device or register the same device with more than one Hyperview instance.
 
@@ -22,48 +22,73 @@ Data Collectors must have **unique** names. If you are planning to use the Data 
 
 (linux-prerequisites)=
 
-### Minimum Hardware Requirements (AMD64/X86_64/RPI ARM64)
+### Minimum Hardware Requirements (AMD64/x86_64/RPI ARM64)
 
 - 4 CPU cores
 - 8 GB of RAM
 - 64 GB of free space in the /opt partition or where the /opt directory resides
 
 :::{tip}
-If you plan to use a Raspberry Pi for data collection, the **minimum** hardware requirements are a Raspberry Pi4b 8GB model and a physical SSD or NVMe for storage.
+If you plan to use a Raspberry Pi for data collection, the **minimum** hardware requirements are a Raspberry Pi 4 B 8 GB model and a physical SSD or NVMe for storage.
 :::
 
 ### Supported Linux Distributions
 
 The following distributions are tested to run the Hyperview Data Collector.
 
-  - **Red Hat Enterprise Linux 8 & 9**
-  - **CentOS 9**
-  - **Rocky Linux 9**
-  - **Alma Linux 9**
+  - **Red Hat Enterprise Linux 8, 9 & 10**
+  - **CentOS 9 & 10**
+  - **Rocky Linux 9 & 10**
+  - **AlmaLinux 9 & 10**
   - **Ubuntu Server LTS 22.04 & 24.04**
   - **Debian 11, 12 & 13**
   - **openSUSE Leap 15 & 16**
 
 :::{important}
-- Please ensure that the **Podman** container management software is not installed.
 - Please ensure that the **snap** version of Docker is not installed.
+- Please install only the container runtime you intend to use. Having both Docker and Podman installed on the same machine is not recommended, as it makes troubleshooting considerably harder.
 - Let us know if you would like us to support more Linux distributions. [Contact Support](https://system.hyperviewhq.com/helpdesk).
+:::
+
+(container-runtime)=
+
+### Container Runtime
+
+The Data Collector runs as a set of containers. Two container runtimes are supported; you only need **one**.
+
+| Runtime    | Deployment model                                                                             |
+| ---------- | -------------------------------------------------------------------------------------------- |
+| **Docker** | A Docker Compose stack defined in `/opt/datacollector/dc-docker-stack/docker-compose.yaml`     |
+| **Podman** | Systemd (Quadlet) unit files installed in `/etc/containers/systemd`, managed with `systemctl`  |
+
+On a **new** installation, after you accept the EULA, the installer asks which runtime you want to use. Docker is the default.
+
+On an **existing** installation, the installer detects the runtime already in use and keeps it. You won't be asked to choose, and an update never switches the deployment model.
+
+:::{important}
+The Podman deployment is supported on the latest patch version of Debian 13, Ubuntu Server LTS 24.04, and RHEL 9- and RHEL 10-based distributions, such as Rocky Linux and AlmaLinux. Distribution-packaged Podman on older releases predates Quadlet and cannot be used.
+:::
+
+:::{note}
+To switch an existing Data Collector from one runtime to another, uninstall it first, then reinstall it and select the runtime you want.
 :::
 
 ### Software Dependencies
 
-Depending on the Linux distribution used, please use apt, dnf, or zypper to install the following packages
+Depending on the Linux distribution, use apt, dnf, or zypper to install the following packages.
 
-| Command    | Deb/APT Package                                | RPM/Dnf/Zypper Package                        |
+You must also have **one** of the supported container runtimes installed: Docker Engine with the Docker Compose plugin, or Podman 4.4 or newer. See {ref}`Container Runtime <container-runtime>` for details.
+
+| Command    | Deb/APT Package                                | RPM/DNF/Zypper Package                        |
 | ---------- | ---------------------------------------------- | --------------------------------------------- |
 | *awk*      | gawk or mawk                                   | gawk                                          |
 | *cut*      | coreutils                                      | coreutils                                     |
-| *docker*   | docker-ce and docker-compose-plugin            | docker-ce and docker-compose-plugin           |
 | *grep*     | grep                                           | grep                                          |
 | *host*     | bind9-host                                     | bind-utils                                    |
 | *jq*       | jq                                             | jq                                            |
 | *libicu*   | libicu72, libicu74 or libicu76 depending on OS | libicu, libicu65, or libicu77 depending on OS |
 | *sed*      | sed                                            | sed                                           |
+| *systemctl*| systemd (required for Podman deployments)      | systemd (required for Podman deployments)     |
 | *tar*      | tar                                            | tar                                           |
 | *uuidgen*  | uuid-runtime                                   | util-linux                                    |
 | *wget*     | wget                                           | wget                                          |
@@ -71,10 +96,9 @@ Depending on the Linux distribution used, please use apt, dnf, or zypper to inst
 
 :::{note}
 - Docker Inc. provides [detailed installation documentation](https://docs.docker.com/engine/install/).
-- openSUSE and SUSE Linux Enterprise Server. Please use the OS vendor provided Docker Open Source Engine and Docker Compose Packages.
-- Please use the RHEL Docker CE installation instructions for Rocky Linux.
-- Please use the CentOS Docker CE installation instructions for Alma Linux.
-- The `jq` package may not be available from the official RedHat repository for RedHat Enterprise Linux or derivatives. If that is the case, the Extra Packages for Enterprise Linux [EPEL](https://docs.fedoraproject.org/en-US/epel/) project will have it.
+- The Podman project provides [detailed installation documentation](https://podman.io/docs/installation). Please confirm that the packaged version is 4.4 or newer before selecting the Podman deployment.
+- For openSUSE and SUSE Linux Enterprise Server, please use the OS vendor-provided Docker Open Source Engine and Docker Compose Packages.
+- The `jq` package may not be available from the official Red Hat repository for Red Hat Enterprise Linux or derivatives. If so, the Extra Packages for Enterprise Linux ([EPEL](https://docs.fedoraproject.org/en-US/epel/)) project will have it.
 :::
 
 ## Network requirements
@@ -83,18 +107,18 @@ Depending on the Linux distribution used, please use apt, dnf, or zypper to inst
 
 The Data Collector uses HTTPS/TLS (TCP/443) to communicate with Hyperview. The direction is **outbound** from the Data Collector to Hyperview.
 
-The data collector software needs to communicate with the following hosts:
+The Data Collector software needs to communicate with the following hosts:
 
 - Instance URL: https://INSTANCE_NAME.hyperviewhq.com/
 - Download repository: https://hvstorewestus2.blob.core.windows.net/datacollectors
 - Container repository API: https://hvpublic.azurecr.io
 - Container repository data endpoint: https://hvpublic.westus2.data.azurecr.io
 
-Please make sure these are in communication allow lists if applicable or required by your network security policy.
+Please make sure these are in the communication allow lists, if applicable or required by your network security policy. Both the Docker and Podman deployments use the container repository endpoints.
 
 ### Data Collector to assets
 
-Please ensure the Data Collector can reach the targeted assets on the applicable ports for your site. Below is a list of the default ports the Data Collector will use; other ports can be used if needed.
+Please ensure the Data Collector can reach the targeted assets on the applicable ports for your site. Below is a list of the default ports the Data Collector uses; you can use other ports if a Hyperview Administrator configures them while setting up discoveries.
 
 | Protocol        | Port             | Credential Requirements                |
 | --------------- | ---------------- | -------------------------------------- |
@@ -111,7 +135,7 @@ Please ensure the Data Collector can reach the targeted assets on the applicable
 
 ### Assets to Data Collector
 
-Please ensure the asset can reach the targeted Data Collector on the applicable ports for your site. Below is a list of the default ports the Data Collector will use; other ports can be used if needed or applicable.
+Please ensure the asset can reach the targeted Data Collector on the applicable ports for your site. Below are the default ports the Data Collector will use; you can use other ports if needed or applicable.
 
 | Protocol               | Port | Credential Requirements |
 | ---------------------- | ---- | ----------------------- |
@@ -121,7 +145,7 @@ Please ensure the asset can reach the targeted Data Collector on the applicable 
 
 ### Firewall considerations
 
-Firewalls can interfere with Data Collector communication. We recommend that you test connectivity for the protocols and features you use. The asset discovery report can provide information that may be helpful in troubleshooting connectivity issues.
+Firewalls can interfere with Data Collector communication. We recommend testing connectivity for the protocols and features you use. The asset discovery report can provide information that may help troubleshoot connectivity issues.
 
 ## Downloading the Data Collector
 
@@ -136,12 +160,12 @@ Firewalls can interfere with Data Collector communication. We recommend that you
 4. Click Download or use the `wget` Linux command to download the file.
 
 :::{note}
-Please download the Data Collector version relevant to your CPU architecture. The Linux (AMD64) Data Collector is intended for Intel and AMD CPU-based systems. Linux (RPI ARM64) Data Collector is for Raspberry Pi systems.
+Please download the Data Collector version relevant to your CPU architecture. The Linux (AMD64) Data Collector is intended for Intel and AMD CPU-based systems. The Linux (RPI ARM64) Data Collector is for Raspberry Pi systems.
 :::
 
 A compressed Data Collector setup package will be downloaded to your browser's default download location. The filename will resemble "linuxDataCollector-9999.tgz", where "9999" represents the version number.
 
-5. (_Optional_) Download the SHA256SUM file using wget and then use the `sha256sum -c <filename>` command to verify file integrity. If you are on Windows, then PowerShell `Get-FileHash -Algorithm SHA256 <filename>` command will give you the hash of the downloaded file and you can then do manual verification by comparing the downloaded hash file with the result of the command.
+5. (_Optional_) Download the SHA256SUM file using wget and then use the `sha256sum -c <filename>` command to verify file integrity. On Windows, run the PowerShell `Get-FileHash -Algorithm SHA256 <filename>` command and compare its output with the hash in the SHA256SUM file.
 
 ## Installing the Data Collector
 
@@ -153,7 +177,7 @@ sudo ./install-dc.sh
 ```
 
 :::{tip}
-If you would like to skip hardware tests, e.g. for testing purposes, you can run the installer or the updater scripts with the **SKIP_TESTS** environment variable set to YES.
+If you want to skip hardware tests (e.g., for testing), run the installer or updater scripts with the **SKIP_TESTS** environment variable set to YES.
 
 ```bash
 sudo SKIP_TESTS=YES ./install-dc.sh
@@ -166,13 +190,18 @@ sudo SKIP_TESTS=YES ./install-dc.sh
 :class: border-black
 ```
 
-4. Proceed to register the Data Collector.
+4. Select the container runtime, Docker or Podman. See {ref}`Container Runtime <container-runtime>` for the differences between the two deployment models.
+
+:::{note}
+This step only appears on a new installation. If a Data Collector is already installed, the installer keeps the container runtime it is already using and skips this prompt.
+:::
+
+5. Proceed to register the Data Collector.
 
 (register)=
 
-## Registering Data Collectors
 
-Once you have installed the Data Collector, you need to register it with Hyperview using a unique registration token. The Data Collector Configuration Tool (which registers the Data Collector) is automatically triggered during the Data Collector installation. Once the Data Collector is registered, it will be listed in the Data Collectors grid (*Discoveries → Data Collectors*).
+## Registering Data Collectors
 
 ### Getting a registration token
 
@@ -199,13 +228,15 @@ You can also run the Linux Data Collector Configuration Tool from `/opt/datacoll
 :class: border-black
 ```
 
-3. Enter the API Port Number, or leave it at default (443).
-4. Select the protocol (HTTPS or HTTP), or leave it at default (HTTPS).
+3. Enter the API Port Number, or leave it at the default (443).
+4. Select the protocol (HTTPS or HTTP), or leave it at the default (HTTPS).
 5. (Optional) Enter proxy details.
 
 The Data Collector will be registered.
 
 ## Verifying your Data Collector setup
+
+### Docker deployments
 
 Verify that Docker containers with the following names are running using `docker ps`:
 
@@ -216,27 +247,86 @@ Verify that Docker containers with the following names are running using `docker
 - dc-docker-stack-mqtt-service-1
 - dc-docker-stack-snmptrapreceiver-service-1
 
-Next verify the last communicated timestamp in your Hyperview instance **Discoveries ->  Data Collectors** list.
-It should update approximately every 30 seconds. You can use the refresh button to update the data in the table.
+### Podman deployments
+
+Verify that the following systemd services are active using `systemctl list-units 'dc-*.service'`:
+
+- dc-assettracker-service.service
+- dc-discovery-service.service
+- dc-monitoring-service.service
+- dc-mqtt-broker.service
+- dc-mqtt-monitoring-service.service
+- dc-snmptrapreceiver-service.service
+
+Quadlet generates these services from the unit files in `/etc/containers/systemd`. Quadlet also generates a `dc-datacollector-network.service`; it creates the network that the MQTT service and the MQTT broker share, and it starts automatically as a dependency.
+
+You can also list the running containers using `podman ps`. Most of them appear with a `systemd-` name prefix, for example `systemd-dc-discovery-service`. The exception is the MQTT broker, which is named `mqtt-broker` so that the MQTT service can reach it by that name.
+
+:::{tip}
+Use `journalctl -u <service name>` to review the logs for an individual service.
+:::
+
+Next, verify the last communicated timestamp in your Hyperview instance *Discoveries → Data Collectors* list.
+It should update approximately every 30 seconds. You can use the refresh button to update the table data.
+
+## Updating Data Collectors
+
+Run the updater as __root__ or via __sudo__.
+
+```bash
+sudo /opt/datacollector/bin/update-dc.sh
+```
+
+The updater retains the container runtime already in use; it does not switch an existing Data Collector from one runtime to the other.
+
+- For a **Docker** deployment, it replaces the Docker Compose file and restarts the stack.
+- For a **Podman** deployment, it replaces the unit files in `/etc/containers/systemd`, pulls the new images with Podman, reloads the systemd daemon, and restarts the services.
 
 ## Reinstalling or uninstalling Data Collectors
 
-The Data Collector core software runs as a set of Docker containers. In addition to those, configuration files,
-some [troubleshooting tools](troubleshooting-tools-doc), logs and temporary files are all kept in `/opt/datacollector`.
+The Data Collector core software runs as a set of Docker or Podman containers. In addition, configuration files, some [troubleshooting tools](troubleshooting-tools-doc), logs, and temporary files are kept in `/opt/datacollector`. Podman deployments also install unit files in `/etc/containers/systemd`.
 
-To reinstall the Data Collector software, uninstall it first then install it.
+To reinstall the Data Collector software, uninstall it first, then install it.
 
-### Uninstall
+### Uninstall (Docker)
 
-1. Shutdown the docker containers
+1. Shut down the Docker containers
 
 ```bash
 cd /opt/datacollector/dc-docker-stack/
 docker compose down
 ```
 
-2. Backup or rename the `/opt/datacollector` directory **If needed**
+2. Back up or rename the `/opt/datacollector` directory if needed
 
 3. Delete the `/opt/datacollector` directory
 
-Once the uninstallation is done, perform a re-installation following the standard instructions.
+### Uninstall (Podman)
+
+1. Stop the services
+
+```bash
+systemctl stop dc-assettracker-service.service dc-discovery-service.service \
+	dc-monitoring-service.service dc-mqtt-monitoring-service.service \
+	dc-mqtt-broker.service dc-snmptrapreceiver-service.service \
+	dc-datacollector-network.service
+```
+
+2. Remove the unit files and reload the systemd daemon
+
+```bash
+rm -f /etc/containers/systemd/dc-*.container /etc/containers/systemd/dc-*.network
+systemctl daemon-reload
+```
+
+3. Remove the container network
+
+```bash
+podman network rm dc-datacollector
+```
+
+4. Back up or rename the `/opt/datacollector` directory if needed
+
+5. Delete the `/opt/datacollector` directory
+
+After uninstallation, reinstall following the standard instructions.

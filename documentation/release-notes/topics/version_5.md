@@ -1,5 +1,78 @@
 # Version 5
 
+## Hyperview 5.7 (October 05, 2026)
+
+This section covers significant changes and bug fixes in Hyperview 5.7.x since version 5.6.x
+
+:::{important}
+
+1. This release has changes and improvements to the Data Collector software. We strongly recommend updating your installed Data Collectors to the latest version to maintain an optimal monitoring and discovery experience.
+2. "Sign in with Microsoft" is deprecated and will be supported until December 2026. All single sign-on functionality has moved to SAML 2.0. See the {ref}`Entra ID SAML configuration guide<entra-id-saml-configuration-doc>` to migrate.
+   :::
+
+### New Feature: Connectivity Visualization (Phase 1)
+
+The first phase of connectivity visualization has been added to the product. Circuits have a new Network Path tab that shows the assets and connections that make up the circuit. Users can select an asset or connection to view more information about it, and export the network path as a JPG, PDF, or PNG. See {ref}`Circuit Network Path<circuit-network-path-doc>` for more information.
+
+### New Feature: Custom Sensors
+
+Users can now create custom sensors, which are numeric sensors whose values are calculated from a formula that uses other sensors as inputs. Custom sensors can be managed from the new Custom Sensors page (_Assets → Custom Sensors_). See {ref}`Custom sensors<custom-sensors-doc>` for more information.
+
+### Enhanced Feature: Floor Plan Layout
+
+- A new Fluid Heat Map is available as a **beta**.
+- Assets, tiles, and shapes can now be aligned with each other.
+- Row and column headers are now sticky.
+- Row and column labels now support templates.
+- The pan and zoom of a layout can now be saved.
+- Multiple custom properties can now be selected at the same time.
+
+### New Feature: Rack Temperature Heat Map
+
+Racks can now display a temperature heat map in the 2D, 3D, and rack elevation views.
+
+### Enhanced Feature: Notification - Alarm Policies
+
+"Warning only" has been added as an option for alarm policies.
+
+### Enhanced Feature: Multi-tab Support
+
+- Multi-tab support has been improved across the application.
+- UX helpers have been added to open a page or information in a new tab.
+
+### Enhanced Feature: Single Sign-On
+
+"Sign in with Microsoft" is deprecated, and all single sign-on functionality has moved to SAML 2.0. A quick start guide for setting up Microsoft Entra ID is available. See the {ref}`Entra ID SAML configuration guide<entra-id-saml-configuration-doc>` for more information.
+
+### Enhanced Feature: Advanced Search
+
+Advanced Search now supports exact and substring matches.
+
+### Enhanced Feature: Battery Bank
+
+- Battery Bank support has been improved. Smaller, rackable models can now be racked using a user model.
+- Ohm is now a supported sensor measurement unit.
+- Bank voltage and resistance sensor types have been added to the supported sensors.
+
+### Enhanced Feature: Modbus Monitoring
+
+- Modbus monitoring has been enhanced to support a large number of assets and sensors.
+- Corresponding improvements were made to the monitoring pipeline to allow greater sensor throughput and frequency.
+
+### Enhanced Feature: Data Collector
+
+Podman is now fully supported by the Data Collector installer. See {ref}`Setting up Data Collectors<setting-up-data-collectors-doc>` for more information.
+
+### Notable bug fixes
+
+- **AS-14955** Fixed a bug that caused token refresh to fail if multiple application tabs are open in Chromium-based browsers.
+- **AS-18331** Fixed a bug that caused the Asset Tracker grid to not be sorted chronologically.
+- **AS-19807** Fixed a bug that caused the Rack Space Availability and Rack Space KPIs widgets to not display an alert when the required sensors are missing or when the user does not have access to the sensors.
+- **AS-19818** Fixed a bug that can cause custom models added to the catalog to fail validation.
+- **AS-20608** Fixed a bug that, under certain conditions, may cause changes to the Sensor Monitoring setting to fail to save.
+- **AS-21050** Fixed a bug that, under certain conditions, could cause daily sensor summaries to fail to calculate.
+- **AS-21110** Fixed a bug that caused the Rated Power property to fail to display on the PDU and RPP asset type properties page.
+
 ## Hyperview 5.6 (June 02, 2026)
 
 This section covers significant changes and bug fixes in Hyperview 5.6.x since version 5.5.x

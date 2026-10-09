@@ -1,3 +1,5 @@
+(creating-new-circuits-doc)=
+
 # Creating a New Circuit
 
 This guide offers a walkthrough for creating and managing circuits in Hyperview, making it an essential resource for users looking to streamline connectivity tasks. It covers everything from adding new circuits and connections to managing custom properties and access controls. By following this guide, users can efficiently set up and maintain their circuits, ensuring proper organization and compliance.

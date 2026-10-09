@@ -11,6 +11,7 @@ topics/connections-overview
 topics/circuits-overview
 topics/creating-new-connections
 topics/creating-new-circuits
+topics/circuit-network-path
 topics/bulk-import-connections
 topics/bulk-import-circuits
 ```
