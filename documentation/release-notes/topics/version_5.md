@@ -73,6 +73,10 @@ Podman is now fully supported by the Data Collector installer. See {ref}`Setting
 - **AS-21050** Fixed a bug that, under certain conditions, could cause daily sensor summaries to fail to calculate.
 - **AS-21110** Fixed a bug that caused the Rated Power property to fail to display on the PDU and RPP asset type properties page.
 
+### Changes in version 5.7.1
+
+- **AS-21196** Updated backend dependency packages.
+
 ## Hyperview 5.6 (June 02, 2026)
 
 This section covers significant changes and bug fixes in Hyperview 5.6.x since version 5.5.x
